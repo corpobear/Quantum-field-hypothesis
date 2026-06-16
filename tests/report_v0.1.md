@@ -3,7 +3,20 @@
 **Project:** Multi-Channel Information Field Theory / Quantum-field-hypothesis  
 **Author:** Adrian Newton / corpobear  
 **Date:** 2026-06-17  
-**Status:** first numerical stress test against real charged-lepton mass data
+**Status:** first numerical stress test against real charged-lepton mass data  
+**Revision:** v0.1.1 clarification after review
+
+## Revision note v0.1.1
+
+After review, Test 3 was clarified because the original table used the word `input` for electron and muon without showing the calibration steps. That made the tau result look like a possible code mistake.
+
+Recalculation shows that the Test 3 tau value:
+
+```text
+1708.604051 MeV
+```
+
+is consistent with the stated linear-Gaussian MCIFT formula. The issue was reporting clarity, not the arithmetic. This revision now labels electron and muon as **calibrated by construction** and includes the actual calibration trace.
 
 ## 1. Purpose
 
@@ -183,27 +196,82 @@ and uses a linear Gaussian Higgs response:
 H(C_n)=e^{-\frac{(C_n-6)^2}{2\sigma_H^2}}
 ```
 
-The electron and muon masses are used to calibrate `m_0` and `sigma_H`.
+The electron and muon masses are used for calibration:
+
+- electron fixes `m_0`,
+- muon fixes `sigma_H`,
+- tau is then predicted out-of-sample.
 
 This gives:
 
 ```text
-sigma_H = 2.7501384141
+sigma_H^2 = 7.5632612966
+sigma_H   = 2.7501384141
+m_0       = 0.9810733100
 ```
 
-Then tau is predicted without using tau as input.
+### Calibration trace
+
+The model ratio between muon and electron is:
+
+```math
+\frac{m_2}{m_1}
+=
+\frac{(C_2-1)^{3.5}S_2}{(C_1-1)^{3.5}S_1}
+\exp\left(\frac{(C_1-6)^2-(C_2-6)^2}{2\sigma_H^2}\right)
+```
+
+With:
+
+```text
+C_1 = 2, S_1 = 1.5
+C_2 = 4, S_2 = 3.0
+C_3 = 8, S_3 = 2.5
+```
+
+Base muon/electron ratio before the Higgs window:
+
+```text
+[(3^3.5 * 3.0) / (1^3.5 * 1.5)] = 93.5307436087
+```
+
+Real muon/electron ratio:
+
+```text
+105.6583755 / 0.51099895000 = 206.7682829877
+```
+
+Therefore:
+
+```text
+sigma_H^2 = 6 / ln(206.7682829877 / 93.5307436087)
+sigma_H^2 = 7.5632612966
+sigma_H   = 2.7501384141
+```
+
+Then electron fixes:
+
+```text
+m_0 = 0.9810733100
+```
+
+The tau prediction becomes:
+
+```text
+m_tau_pred = 1708.60405054 MeV
+```
 
 ### Result
 
-| Particle | Real mass | Predicted mass | Percent error |
-|---|---:|---:|---:|
-| electron | 0.510999 MeV | input | 0.000% |
-| muon | 105.658376 MeV | input | 0.000% |
-| tau | 1776.860000 MeV | 1708.604051 MeV | -3.841% |
+| Particle | Real mass | Model status | Model mass | Percent error |
+|---|---:|---|---:|---:|
+| electron | 0.510999 MeV | calibrated, fixes m_0 | 0.510999 MeV | 0.000% |
+| muon | 105.658376 MeV | calibrated, fixes sigma_H | 105.658376 MeV | 0.000% |
+| tau | 1776.860000 MeV | out-of-sample prediction | 1708.604051 MeV | -3.841% |
 
 ### Interpretation
 
-This is the first meaningful MCIFT numerical success.
+This is not a code-derived mystery number. It follows directly from the written formula once electron and muon are used to calibrate the two free scale parameters.
 
 A locked simple version of the model predicts tau within about 4 percent from electron and muon inputs.
 
@@ -214,6 +282,8 @@ The model captures a large part of the charged-lepton hierarchy using a fixed co
 ### Weakness
 
 A 3.84 percent miss is much larger than experimental uncertainty. The model is interesting but not precision-level.
+
+Also, because both electron and muon are used for calibration, only the tau row is a real prediction in this test.
 
 ## 7. Test 4: fixed MCIFT core with log-fractal Gaussian Higgs response
 
@@ -232,23 +302,28 @@ but uses a log-fractal Higgs response:
 H(C_n)=e^{-\frac{(\ln C_n-\ln 6)^2}{2w^2}}
 ```
 
-The electron and muon masses are used to calibrate `m_0` and `w`.
+The electron and muon masses are used for calibration:
+
+- electron fixes `m_0`,
+- muon fixes `w`,
+- tau is then predicted out-of-sample.
 
 This gives:
 
 ```text
-w = 0.8106096177
+w^2 = 0.6570879523
+w   = 0.8106096177
 ```
 
 Then tau is predicted without using tau as input.
 
 ### Result
 
-| Particle | Real mass | Predicted mass | Percent error |
-|---|---:|---:|---:|
-| electron | 0.510999 MeV | input | 0.000% |
-| muon | 105.658376 MeV | input | 0.000% |
-| tau | 1776.860000 MeV | 1818.114580 MeV | +2.322% |
+| Particle | Real mass | Model status | Model mass | Percent error |
+|---|---:|---|---:|---:|
+| electron | 0.510999 MeV | calibrated, fixes m_0 | 0.510999 MeV | 0.000% |
+| muon | 105.658376 MeV | calibrated, fixes w | 105.658376 MeV | 0.000% |
+| tau | 1776.860000 MeV | out-of-sample prediction | 1818.114580 MeV | +2.322% |
 
 ### Interpretation
 
@@ -261,6 +336,8 @@ Because MCIFT already assumes fractal complexity growth, a log-scale Higgs respo
 ### Weakness
 
 The prediction is still not precision-level. Also, the model has not yet derived why `w` should have this value.
+
+As in Test 3, only tau is a true prediction. Electron and muon are calibration anchors.
 
 ## 8. Test 5: fitted MCIFT shape parameters
 
@@ -321,7 +398,14 @@ Percent difference from `2/3`:
 -0.000923%
 ```
 
-Solving Koide's formula using only electron and muon masses predicts:
+Solving Koide's formula using only electron and muon masses predicts two mathematical roots:
+
+```text
+low root  = 3.3173565465 MeV
+high root = 1776.9690270830 MeV
+```
+
+The physically relevant high root is:
 
 ```text
 tau = 1776.969027 MeV
@@ -375,20 +459,22 @@ This part remains conceptual only.
 ## 11. Overall strengths
 
 1. The model has a clean internal mechanism for three stable modes and fourth-mode failure.
-2. A fixed-core version gets the tau mass within a few percent using electron and muon inputs.
+2. A fixed-core version gets the tau mass within a few percent using electron and muon calibration.
 3. The fitted fractal dimension lands close to the proposed value `D_f = 3.5`.
 4. The finite Higgs-response window is mathematically useful and appears necessary.
 5. The framework gives one language for particles, mass emergence, channel transfer, and black-hole confinement.
+6. The revised report now exposes the calibration math, making the numerical claims reproducible.
 
 ## 12. Overall weaknesses
 
 1. The model is not yet derived from a Lagrangian or action.
 2. The coherence parameter `a` is not derived.
-3. The Higgs-response width is fitted, not predicted.
+3. The Higgs-response width is fitted from the muon, not predicted.
 4. The current model does not beat the Koide relation.
 5. The black-hole extension has no numerical test yet.
 6. No Lorentz-invariant or gauge-invariant formulation exists yet.
 7. The model has not been tested against quarks, neutrinos, bosons, decay rates, or scattering data.
+8. In Tests 3 and 4, only the tau row is a true prediction; electron and muon are calibration anchors.
 
 ## 13. Current verdict
 
@@ -409,8 +495,49 @@ The next research steps should be:
 5. Use electron and muon only to predict tau with no adjustable post-hoc tuning.
 6. Test whether cluster stability correlates with real lepton lifetimes.
 7. Build a simulation that evolves clusters over channel space.
+8. Add a reproducible script or notebook so future reports are generated from code rather than hand-written numbers.
 
-## 15. Bottom line
+## 15. Reproducibility pseudocode
+
+```python
+import math
+
+me = 0.51099895000
+mmu = 105.6583755
+mtau = 1776.86
+
+a = 3.5
+Df = 3.5
+Cstar = 6
+
+def C(n):
+    return 2**n
+
+def S(n):
+    return a*n - C(n)
+
+def A(n):
+    return (C(n)-1)**Df
+
+ratio_mu = mmu / me
+base_ratio = (A(2)*S(2)) / (A(1)*S(1))
+delta = ((C(1)-Cstar)**2 - (C(2)-Cstar)**2) / 2
+sigma2 = delta / math.log(ratio_mu / base_ratio)
+sigma = math.sqrt(sigma2)
+
+m0 = me / (A(1) * math.exp(-((C(1)-Cstar)**2)/(2*sigma2)) * S(1))
+mtau_pred = m0 * A(3) * math.exp(-((C(3)-Cstar)**2)/(2*sigma2)) * S(3)
+
+print(sigma, m0, mtau_pred)
+```
+
+Expected output:
+
+```text
+2.7501384141 0.9810733100 1708.60405054
+```
+
+## 16. Bottom line
 
 The real data does not validate MCIFT yet, but it also does not kill it.
 
