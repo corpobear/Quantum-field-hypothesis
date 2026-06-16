@@ -1,0 +1,23 @@
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Generated outputs
+build/
+dist/
+*.pdf
+*.aux
+*.log
+*.out
+*.toc
+
+# Python / notebooks, if simulations are added later
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
