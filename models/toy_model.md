@@ -2,7 +2,7 @@
 
 This file collects the current toy-model math for the Multi-Channel Information Field Theory framework.
 
-**Version:** v0.2 vibration, information-exchange, and shadow-amplitude update.
+**Version:** v0.5 vibration, exchange, shadow projection, motion, and entanglement update.
 
 ## 1. Field variable
 
@@ -18,14 +18,14 @@ where:
 - `t` is time,
 - `c` is an internal channel coordinate.
 
-Possible channels include identity, light, Higgs response, phase, charge, knot structure, exchange-rate structure, shadow/complementary amplitude, and black-hole confinement.
+Possible channels include identity, light, Higgs response, phase, charge, knot structure, exchange-rate structure, shadow/complementary amplitude, motion direction, entanglement/shared amplitude, and black-hole confinement.
 
 ## 2. Cluster complexity
 
 The simplest complexity growth law is binary:
 
 ```math
-C_n = 2^n
+C_n=2^n
 ```
 
 This gives:
@@ -45,25 +45,25 @@ Interpretation: each higher mode doubles the information burden.
 A simple coherence law:
 
 ```math
-Q_n = an
+Q_n=an
 ```
 
 Original stability:
 
 ```math
-S_n = Q_n - C_n = an - 2^n
+S_n=Q_n-C_n=an-2^n
 ```
 
 Survival condition:
 
 ```math
-S_n > 0
+S_n>0
 ```
 
 Failure condition:
 
 ```math
-S_n < 0
+S_n<0
 ```
 
 Exactly three stable modes and fourth failure require:
@@ -72,7 +72,7 @@ Exactly three stable modes and fourth failure require:
 \frac{8}{3}<a<4
 ```
 
-Example with `a = 3.5`:
+Example with `a=3.5`:
 
 | Mode | Complexity | Coherence | Stability | Outcome |
 |---:|---:|---:|---:|---|
@@ -86,19 +86,19 @@ Example with `a = 3.5`:
 Cluster catching surface:
 
 ```math
-A_n = (C_n-1)^{D_f}
+A_n=(C_n-1)^{D_f}
 ```
 
 Proposed fractal dimension:
 
 ```math
-D_f = 3.5 + \epsilon
+D_f=3.5+\epsilon
 ```
 
 where `3.5` is interpreted as a three-thread core plus half-dimensional bond:
 
 ```math
-D_f = 3 + \frac{1}{2}
+D_f=3+\frac{1}{2}
 ```
 
 ## 5. Finite Higgs response
@@ -117,31 +117,7 @@ H(C_n)=e^{-\frac{(\ln C_n-\ln C_\star)^2}{2w^2}}
 
 Interpretation: Higgs response is finite and windowed. It does not give infinite mass as complexity grows.
 
-## 6. Original mass formula
-
-Original toy formula:
-
-```math
-m_n = m_0 A_n H(C_n)\max(S_n,0)
-```
-
-Expanded:
-
-```math
-m_n = m_0 (C_n-1)^{D_f}
-H(C_n)
-\max(an-2^n,0)
-```
-
-with:
-
-```math
-C_n=2^n
-```
-
-## 7. Law of vibration and information exchange
-
-The v0.2 model treats knots as internally moving structures.
+## 6. Internal vibration and information exchange
 
 Internal movement creates vibration. Similar information-points vibrating at compatible frequencies open stronger internal communication channels.
 
@@ -181,18 +157,18 @@ Weak-exchange approximation:
 X_n\approx1+\eta\Gamma_n
 ```
 
-## 8. Exchange-updated stability
-
-The original stability was:
-
-```math
-S_n=3.5n-2^n
-```
+## 7. Exchange-updated stability
 
 The exchange-updated stability is:
 
 ```math
-S_n=3.5nX_n-2^n
+S_n=3.5nX_n-C_n
+```
+
+with:
+
+```math
+C_n=2^n
 ```
 
 Interpretation:
@@ -219,12 +195,12 @@ or:
 \eta\Gamma_4<0.1335313926
 ```
 
-## 9. Exchange-updated mass formula
+## 8. Rest-mass formula
 
-The v0.2 exchange-rate mass formula is:
+The exchange-rate rest-mass formula is:
 
 ```math
-m_n=m_0(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0)
+m_{0,n}=m_{scale}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0)
 ```
 
 with:
@@ -233,23 +209,11 @@ with:
 S_n=3.5nX_n-C_n
 ```
 
-and:
+This formula describes rest-mass formation from internal vibratory exchange, coherent complexity, and Higgs response.
 
-```math
-C_n=2^n
-```
+## 9. Shadow/complementary amplitude extension
 
-The key difference from v0.1 is that `X_n` affects both:
-
-```text
-densification
-and
-stability/coherence
-```
-
-## 10. Shadow/complementary amplitude extension
-
-The v0.2 shadow-amplitude extension introduces a complementary inverted information pattern for each visible information cluster.
+Each visible information cluster can have a complementary inverted information pattern.
 
 Visible cluster:
 
@@ -289,7 +253,7 @@ A_n=\sqrt{m_n}
 
 and then square into mass.
 
-## 11. Amplitude correction form
+## 10. Amplitude correction form
 
 Let the base MCIFT model produce:
 
@@ -321,11 +285,41 @@ and:
 m_n=m_n^{base}\Delta_n^2
 ```
 
-This matters because small amplitude corrections become larger mass corrections after squaring.
+Small amplitude corrections become larger mass corrections after squaring.
 
-## 12. Relation to Koide-style amplitude geometry
+## 11. Shadow projection geometry
 
-Koide's charged-lepton relation is naturally written in amplitude space:
+For the tau-like third mode:
+
+```math
+C_3=8
+```
+
+Primary shadow term:
+
+```math
+s_1=\frac{1}{C_3(C_3-1)}=\frac{1}{56}
+```
+
+Echo-shadow term:
+
+```math
+s_2=\frac{s_1}{C_3}=\frac{1}{448}
+```
+
+Amplitude correction:
+
+```math
+\Delta(f)=1+s_1+fs_2
+```
+
+Mass prediction:
+
+```math
+m_\tau(f)=m_\tau^{base}\Delta(f)^2
+```
+
+The global Koide projection clue is:
 
 ```math
 \frac{A_1^2+A_2^2+A_3^2}{(A_1+A_2+A_3)^2}=\frac{2}{3}
@@ -337,9 +331,149 @@ where:
 A_i=\sqrt{m_i}
 ```
 
-The v0.2 shadow-amplitude extension suggests that MCIFT should try to derive this square-root mass geometry from knot structure rather than fitting final masses directly.
+This is equivalent to a 45-degree charged-lepton amplitude angle.
 
-## 13. Channel transfer law
+The local tau echo-shadow completion fraction is modeled as:
+
+```math
+f_0=1-\frac{1}{C_3}=\frac{7}{8}
+```
+
+Then:
+
+```math
+\Delta_{7/8}=1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}=1.0198102679
+```
+
+and:
+
+```math
+m_\tau^{7/8}=1776.97039439\ \text{MeV}
+```
+
+This is nearly identical to the Koide high-root value:
+
+```math
+m_\tau^{Koide}=1776.96902708\ \text{MeV}
+```
+
+## 12. Motion from directional exchange
+
+Balanced internal exchange contributes to rest mass.
+
+Directional exchange creates velocity.
+
+Define directional exchange:
+
+```math
+\vec{\Gamma}_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}\vec d_{ij}
+```
+
+Simple velocity rule:
+
+```math
+\frac{\vec v_n}{c_*}=\frac{\vec{\Gamma}_n}{\Gamma_n}
+```
+
+Bounded form:
+
+```math
+\beta_n=\frac{v_n}{c_*}=\tanh(\mu_n)
+```
+
+where:
+
+```math
+\mu_n=\eta|\vec{\Gamma}_n|
+```
+
+Motion-energy factor:
+
+```math
+\gamma_n=\frac{1}{\sqrt{1-\beta_n^2}}=\cosh(\mu_n)
+```
+
+Effective total mass-energy:
+
+```math
+m_{eff,n}=\gamma_nm_{0,n}
+```
+
+This is a total-energy correction, not a change to invariant rest mass.
+
+## 13. Entanglement as shared amplitude
+
+In this toy model, entanglement does not mean controllable faster-than-light communication.
+
+It is modeled as a shared internal channel state: two knots become correlated strongly enough that part of their internal amplitude is shared rather than duplicated.
+
+For two knots `A` and `B`, define inter-knot entanglement strength:
+
+```math
+\mathcal{E}_{AB}=O_{AB}\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
+```
+
+where:
+
+- `O_AB` is overlap compatibility,
+- `Gamma_AB` is inter-knot exchange rate,
+- `Gamma_c` is a characteristic exchange scale.
+
+Toy mass-defect rule:
+
+```math
+m_{AB}=m_A+m_B-2\epsilon\mathcal{E}_{AB}\sqrt{m_Am_B}
+```
+
+This expresses the idea that entangled knots share amplitude and therefore duplicate less mass-structure.
+
+## 14. Tau echo-entanglement correction
+
+The v0.5 tau correction applies entanglement to the local echo-shadow fraction:
+
+```math
+f_{ent}=f_0(1-E_3)
+```
+
+where:
+
+```math
+f_0=\frac{7}{8}
+```
+
+The Koide residual requires:
+
+```math
+E_3=0.0002008838
+```
+
+or:
+
+```text
+0.02008838 percent
+```
+
+Then:
+
+```math
+f_{ent}=\frac{7}{8}(1-0.0002008838)=0.8748242267
+```
+
+and:
+
+```math
+\Delta_{ent}=1+\frac{1}{56}+0.8748242267\frac{1}{448}=1.0198098755
+```
+
+so:
+
+```math
+m_\tau^{ent}=1708.60405054(1.0198098755)^2=1776.96902708\ \text{MeV}
+```
+
+This matches the Koide high-root tau value by construction because `E_3` is inferred from the Koide residual.
+
+## 15. Channel transfer law
 
 For an incoming cluster `i` and receiving surface `s`:
 
@@ -365,7 +499,15 @@ T_{i\rightarrow s}\propto X_iX_s
 
 when internal vibration and phase coherence support transfer.
 
-## 14. Core model chain
+The entanglement extension suggests channel transfer can become shared-state correlation when:
+
+```math
+\Gamma_{AB}\gg\Gamma_c
+```
+
+and channel overlap is high.
+
+## 16. Core model chain
 
 v0.1 chain:
 
@@ -390,6 +532,28 @@ information cell
 -> squared mass
 ```
 
+v0.3 motion addition:
+
+```text
+balanced internal exchange -> rest mass / densification
+directional exchange -> velocity
+velocity -> total effective energy increase
+```
+
+v0.4 shadow projection addition:
+
+```text
+2/3 = global Koide amplitude-angle projection
+7/8 = local tau echo-shadow completion fraction
+```
+
+v0.5 entanglement addition:
+
+```text
+shared exchange -> entanglement
+entanglement -> shared amplitude -> tiny mass defect
+```
+
 Failure path:
 
 ```text
@@ -406,16 +570,22 @@ extreme coherent complexity
 -> external channel transfer suppressed
 ```
 
-## 15. Status
+## 17. Status
 
-The toy model currently explains structural patterns but does not yet provide a full quantum field Lagrangian or precision mass prediction.
+The toy model currently explains structural patterns but does not yet provide a full quantum field Lagrangian or independent precision mass prediction.
 
-The v0.2 additions improve the mechanism by introducing:
+The v0.5 additions improve the mechanism by introducing:
 
 - vibration-driven information exchange,
 - exchange-driven densification,
 - exchange-updated stability,
 - shadow/complementary amplitude correction,
-- a possible bridge to Koide's square-root mass geometry.
+- Koide-like shadow projection,
+- motion as directional exchange,
+- entanglement as shared-amplitude mass defect.
 
-The next mathematical task is to derive `Gamma_n` and `Delta_n` from a concrete knot geometry rather than fitting them after seeing the charged-lepton masses.
+The next key derivations are:
+
+1. derive the `7/8` tau echo-shadow completion rule from knot geometry,
+2. derive the tiny entanglement factor `E_3 = 0.0002008838` from inter-knot exchange geometry,
+3. derive Koide's 45-degree amplitude relation rather than matching it after the fact.
