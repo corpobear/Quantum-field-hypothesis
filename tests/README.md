@@ -21,51 +21,55 @@ report_v0.9.md    Fibonacci-Higgs source equation reduced tau test
 report_v0.10.md   Funnel-speed Higgs capture-window reduced tau test
 report_v0.11.md   Bounded fourth-mode reservoir field-source test
 report_v0.13.md   Six-side sink dark-manifest ratio test
+report_v0.14_cern_two_drill_event_shape.md   CERN two-drill event-shape published-results comparison
 ```
 
 ---
 
-## Current latest test: v0.13
+## Current latest test: v0.14
+
+v0.14 starts the CERN comparison.
+
+It maps the MCIFT two-drill collision picture to collider observables:
+
+```text
+visible drill activity -> jets and visible transverse energy
+dark side channel -> missing transverse momentum and event imbalance
+```
+
+Main proxy:
+
+```math
+R_{miss}=\frac{E_T^{miss}}{H_T}.
+```
+
+The first comparison uses published ATLAS missing-momentum search results. These searches broadly report agreement with Standard Model expectations in monojet and multijet categories, so the first verdict is:
+
+```text
+not confirmed, not ruled out by this reduced comparison, now constrained
+```
+
+The next step is a direct open-data event-shape test using:
+
+```text
+analysis/cern_two_drill_event_shape_test.py
+```
+
+---
+
+## Previous test: v0.13
 
 v0.13 tests whether an eight-sector knot/shadow geometry can produce a dark-manifest side-sink sector close to the observed dark-to-baryonic matter ratio.
 
-Visible aperture:
-
 ```math
-A_{tip}=\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle.
+\frac{A_{side}}{A_{tip}}=5.417
 ```
 
-Dark side aperture:
-
-```math
-A_{side}=6\left(\frac{1}{56}\right).
-```
-
-Using:
-
-```math
-\langle O_\varphi\rangle=0.9837806705,
-```
-
-the reduced ratio is:
-
-```math
-\frac{A_{side}}{A_{tip}}=5.417.
-```
-
-The Planck 2018 comparison target is approximately:
+compared with:
 
 ```math
 \frac{\Omega_c}{\Omega_b}\approx\frac{0.120}{0.0224}=5.357.
 ```
-
-The toy result is within about 1.1 percent of that target. A small sink-efficiency factor:
-
-```math
-\epsilon_{sink}\approx0.989
-```
-
-matches the central value.
 
 ---
 
