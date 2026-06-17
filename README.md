@@ -34,6 +34,28 @@ coherent information cluster
 
 ---
 
+## Mechanics reference
+
+The current mechanics are consolidated in:
+
+```text
+mechanics/mechanics_v0.13.md
+```
+
+Visual diagrams are generated with Matplotlib by running:
+
+```bash
+python mechanics/plot_mechanics.py
+```
+
+The script writes SVG diagrams into:
+
+```text
+mechanics/figures/
+```
+
+---
+
 ## Latest v0.13 finding
 
 v0.13 tests a six-side sink geometry in the eight-sector knot/shadow model.
@@ -94,6 +116,9 @@ visible-manifest  light-active, mass-active, gravity-active, and knot-coherent
 ## Key files
 
 ```text
+mechanics/README.md
+mechanics/mechanics_v0.13.md
+mechanics/plot_mechanics.py
 paper/main.md
 paper/v0.13_six_side_sink_dark_manifest_addendum.md
 models/six_side_sink_dark_manifest_v0.13.md
