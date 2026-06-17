@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** 0.14 CERN two-drill event-shape comparison
+**Current version:** 0.15 matter-antimatter channel-geometry toy ratio
 
 > This is not established physics and is not a replacement for quantum field theory. It is a speculative framework being developed into a more testable mathematical toy model.
 
@@ -31,6 +31,8 @@ coherent information cluster
 -> channel-specific activation
 -> visible-manifest / dark-manifest split
 -> collider event-shape comparison
+-> antimatter channel-reversed geometry
+-> matter-antimatter toy ratio
 ```
 
 ---
@@ -68,7 +70,46 @@ and commits changed results back into the repo. Without those input CSVs, it ski
 
 ---
 
-## Latest v0.14 CERN-facing test
+## Latest v0.15 matter-antimatter toy ratio
+
+v0.15 defines antimatter as positive-mass channel-reversed geometry, not negative mass.
+
+```text
+matter visible drill      = center-tip collector
+matter dark sink          = side-belt collector
+antimatter dark sink      = Higgs-drop collector
+antimatter light drill    = splash-ring collector with discarded middle
+```
+
+The reduced toy calculation gives:
+
+$$
+\frac{A_M}{A_{\bar M}}=1.28669912372469.
+$$
+
+The corresponding asymmetry parameter is:
+
+$$
+\epsilon_{MCIFT}=0.125376845930524.
+$$
+
+Short verdict:
+
+```text
+matter aperture > antimatter aperture in this toy geometry
+```
+
+This is an internal toy-model consistency result, not physical confirmation of baryon asymmetry.
+
+Run:
+
+```bash
+python analysis/matter_antimatter_toy_v0.15.py
+```
+
+---
+
+## v0.14 CERN-facing test
 
 v0.14 maps the two-drill collision picture to collider observables.
 
@@ -83,10 +124,10 @@ $$
 R_{miss}=\frac{E_T^{miss}}{H_T}.
 $$
 
-The first published-results comparison uses ATLAS monojet and multijet missing-momentum searches. Existing broad published searches report agreement with Standard Model expectations, so the v0.14 verdict is:
+The published-results comparison uses ATLAS/CMS missing-momentum searches. Existing broad published searches report agreement with Standard Model expectations, so the v0.14/v0.14b verdict is:
 
 ```text
-not confirmed, not ruled out by this reduced comparison, now constrained
+not confirmed; constrained by existing missing-momentum searches
 ```
 
 A local open-data scaffold is provided at:
@@ -167,8 +208,13 @@ visible-manifest  light-active, mass-active, gravity-active, and knot-coherent
 ```text
 .github/workflows/generate-mechanics-and-analysis.yml
 analysis/README.md
+analysis/matter_antimatter_toy_v0.15.py
+analysis/results_v0.15/matter_antimatter_toy_ratio.csv
 analysis/cern_two_drill_event_shape_test.py
+models/antimatter_channel_geometry_v0.15.md
 models/two_drill_collision_cern_v0.14.md
+tests/report_v0.15_matter_antimatter_toy_ratio.md
+tests/report_v0.14b_published_limits.md
 tests/report_v0.14_cern_two_drill_event_shape.md
 mechanics/README.md
 mechanics/mechanics_v0.13.md
