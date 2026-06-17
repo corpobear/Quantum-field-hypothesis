@@ -1,18 +1,14 @@
-# Multi-Channel Information Field Theory: A Speculative Framework for Cluster Coherence, Channel Transfer, Mass Emergence, and Black-Hole Confinement
+# Multi-Channel Information Field Theory: A Speculative Framework for Vibration, Information Exchange, Complementary Amplitude, Mass Emergence, and Channel Confinement
 
 **Author:** Adrian Newton / corpobear  
-**Version:** 0.1 initial public draft  
+**Version:** 0.2 vibration, exchange-rate, and complementary-amplitude draft  
 **Status:** speculative theoretical framework / toy field model
 
 ## Abstract
 
-This paper proposes a speculative toy field framework in which physical reality is modeled as a multi-channel information field. In this model, each fundamental information-cell exists across space, time, and internal channel. Particles are interpreted as stable coherent clusters of information-cells. Light acts as a massless activation channel, while mass emerges when activated clusters enter a finite Higgs-response window. Complexity grows through clustered and fractal information structure, but coherence limits which modes can remain stable. The model suggests that three stable particle-like modes may exist before a fourth mode fails as a localized object. Black holes are interpreted as extreme coherent complexity clusters that create an internal channel disconnected from the external light channel, explaining why their interiors are not externally visible. The framework is not presented as a replacement for established quantum field theory, but as a speculative mathematical structure with testable toy-model consequences.
+This paper proposes a speculative toy field framework in which physical reality is modeled as a multi-channel information field. Each fundamental information-cell exists across space, time, and internal channel. Particles are interpreted as stable coherent clusters of information-cells. Light acts as a massless activation channel. A v0.2 extension adds that internal vibration opens information-exchange channels between similar information-points. Resonant exchange creates densification. Mass emerges when activated, internally resonant clusters enter a finite Higgs-response window. The v0.2 model also introduces complementary amplitude: mass may be modeled as the square of an amplitude imbalance between a visible information cluster and a complementary information pattern. This moves the toy model toward square-root mass geometry and may provide a mechanism-path toward Koide-like charged-lepton relations. The framework is not presented as established physics or a replacement for quantum field theory. It is a speculative mathematical structure with toy-model consequences.
 
-## 1. Introduction
-
-Modern physics describes matter and radiation through quantum fields. Particles are excitations of those fields, and mass is associated with coupling to the Higgs field. However, the origin of particle generations, the hierarchy of masses, and the relationship between information, coherence, and mass remain open conceptual questions.
-
-This paper introduces a speculative model in which physical entities arise from clustered information. The central idea is that a fundamental unit of reality is not a single simple object, but a multi-channel information-cell. Such a cell can carry several internal kinds of information simultaneously, separated not by ordinary space but by internal channel.
+## 1. Field variable
 
 The proposed field is written as:
 
@@ -22,178 +18,132 @@ The proposed field is written as:
 
 where `x,y,z` are spatial coordinates, `t` is time, and `c` is an internal channel coordinate.
 
-Particles are treated as stable coherent clusters of this field. Light is treated as a massless activating disturbance. Mass appears when an activated cluster couples to a finite Higgs-response channel. The Higgs response is not assumed to grow infinitely; instead, it is modeled as a bounded response window.
-
-## 2. Fundamental assumptions
-
-### Assumption 1: Reality is a multi-channel information field
-
-A fundamental information-cell is described by:
+Possible internal channels include:
 
 ```math
-\Psi(x,y,z,t,c)
+c \in \{\text{identity}, \text{light}, \text{Higgs}, \text{phase}, \text{charge}, \text{knot}, \text{exchange}, \text{amplitude}, \text{confinement}\}
 ```
 
-The channel coordinate may include internal states such as:
+The core claim is that particles are stable coherent clusters of this multi-channel field.
 
-```math
-c \in \{\text{identity}, \text{light}, \text{Higgs}, \text{phase}, \text{charge}, \text{knot}, \text{black-hole}\}
+## 2. Core assumptions
+
+1. Reality is modeled as a multi-channel information field.
+2. A particle is a coherent information cluster, not a single isolated information-cell.
+3. Light acts as a massless activation channel.
+4. Mass begins at the cluster level.
+5. The Higgs response is finite and windowed, not unlimited.
+6. Internal vibration creates information exchange between similar information-points.
+7. Resonant exchange creates densification.
+8. Mass may be calculated from an amplitude first, then squared.
+9. Extreme coherent complexity may form internally confined channels.
+
+The v0.2 chain is:
+
+```text
+information cell
+-> coherent knot cluster
+-> internal vibration
+-> information exchange rate
+-> resonant densification
+-> complementary amplitude imbalance
+-> Higgs response
+-> squared mass
 ```
-
-Different channels may occupy the same spacetime location while remaining distinct through internal separation.
-
-### Assumption 2: Particles are coherent information clusters
-
-A particle is not a single isolated information-cell. It is a stable cluster of many information-cells whose internal channels remain coherently aligned.
-
-### Assumption 3: Light is a massless activation channel
-
-Light is not treated as rest mass. Instead, light acts as an activation impulse. When light encounters resting information, it may create a ripple. When it encounters an already coherent cluster, it may dissolve into the existing resonance.
-
-### Assumption 4: Mass begins at the cluster level
-
-A single information-cell has almost no mass. Mass emerges when information-cells form a coherent cluster capable of receiving Higgs response.
-
-### Assumption 5: Higgs response is finite
-
-The Higgs channel does not give mass infinitely. It responds most strongly within a finite complexity window, modeled approximately by a Gaussian response.
-
-### Assumption 6: Black holes create internal channel confinement
-
-A black hole forms when coherent complexity becomes so dense that it creates an internal channel separated from the external light channel. External observers cannot see inside because channel transfer from the black-hole channel to the outside light channel is suppressed.
 
 ## 3. Cluster complexity
 
 Let `n` label the cluster mode. The simplest information-growth law considered here is binary growth:
 
 ```math
-C_n = 2^n
+C_n=2^n
 ```
-
-where `C_n` is the cluster complexity of mode `n`.
 
 Thus:
 
 ```math
-C_1 = 2,\quad C_2 = 4,\quad C_3 = 8,\quad C_4 = 16
-```
-
-This gives a natural doubling structure:
-
-```math
-2,\ 4,\ 8,\ 16,\ 32,\dots
+C_1=2,\quad C_2=4,\quad C_3=8,\quad C_4=16
 ```
 
 The interpretation is that each higher mode doubles the information burden of the cluster.
 
 ## 4. Coherence and stability
 
-Complexity alone does not create stable matter. A cluster must remain coherent.
-
-Let `Q_n` represent coherence strength, and `S_n` represent stability:
+Let `Q_n` represent coherence strength and `S_n` represent stability:
 
 ```math
-S_n = Q_n - C_n
+S_n=Q_n-C_n
 ```
 
 A simple toy coherence law is:
 
 ```math
-Q_n = an
+Q_n=an
 ```
 
-so:
+so the original stability law is:
 
 ```math
-S_n = an - 2^n
+S_n=an-2^n
 ```
 
 A cluster survives if:
 
 ```math
-S_n > 0
+S_n>0
 ```
 
 and fails if:
 
 ```math
-S_n < 0
+S_n<0
 ```
 
-For exactly three modes to survive while the fourth fails, the parameter `a` must satisfy:
+For exactly three modes to survive while the fourth fails:
 
 ```math
 S_1>0,\quad S_2>0,\quad S_3>0,\quad S_4<0
 ```
 
-This gives:
+which gives:
 
 ```math
 \frac{8}{3}<a<4
 ```
 
-Thus, within this toy model, if coherence grows roughly linearly while complexity doubles, then three stable modes can naturally occur before a fourth mode fails.
+Thus, if coherence grows roughly linearly while complexity doubles, three stable modes can arise before a fourth mode fails.
 
-## 5. Fractal cluster dimension
+## 5. Fractal catching surface
 
-The mass-catching surface of a cluster is not assumed to be ordinary volume. It is modeled as a fractal information surface.
-
-Let `D_f` be the effective fractal dimension. The cluster catching surface is:
+The mass-catching surface of a cluster is modeled as a fractal information surface:
 
 ```math
-A_n = (C_n - 1)^{D_f}
+A_n=(C_n-1)^{D_f}
 ```
 
-A proposed structural origin of `D_f` is the failure of a four-thread knot. Instead of forming a stable four-thread knot, the system forms a bond between two stable three-thread structures:
+A proposed structural origin of the effective fractal dimension is:
 
 ```math
-T_4 \rightarrow T_3 \leftrightarrow T_3
+D_f=3+\frac{1}{2}=3.5
 ```
 
-The three-thread core contributes:
+where the three-thread core contributes `3` and a shared bond contributes approximately `1/2`.
+
+A small correction may be added:
 
 ```math
-D_{\text{core}} = 3
-```
-
-The shared bond contributes approximately:
-
-```math
-D_{\text{bond}} = \frac{1}{2}
-```
-
-Thus:
-
-```math
-D_f = 3 + \frac{1}{2} = 3.5
-```
-
-A small correction term may be included:
-
-```math
-D_f = 3.5 + \epsilon
+D_f=3.5+\epsilon
 ```
 
 where `epsilon` represents phase, bond, or resonance correction.
 
 ## 6. Finite Higgs response
 
-The Higgs response is modeled as a finite window rather than infinite growth. A Gaussian response may be used:
+The Higgs response is modeled as a finite window. A linear Gaussian response may be used:
 
 ```math
 H(C_n)=e^{-\frac{(C_n-C_\star)^2}{2\sigma_H^2}}
 ```
-
-where:
-
-- `C_star` is the preferred cluster complexity for Higgs response,
-- `sigma_H` is the width of the Higgs response window.
-
-The interpretation is:
-
-- clusters that are too simple catch little Higgs response,
-- clusters in the correct range receive strong response,
-- clusters that are too complex fall outside the window or fail coherence.
 
 A log-fractal version may also be used:
 
@@ -201,22 +151,24 @@ A log-fractal version may also be used:
 H(C_n)=e^{-\frac{(\ln C_n-\ln C_\star)^2}{2w^2}}
 ```
 
-This version may be more natural if cluster growth is scale-based.
+Interpretation:
 
-## 7. Mass emergence
+- clusters that are too simple catch little Higgs response,
+- clusters in the correct range receive strong response,
+- clusters that are too complex fall outside the response window or fail coherence.
 
-The proposed mass rule is:
+## 7. Original mass rule
+
+The original toy mass rule is:
 
 ```math
-m_n = m_0 A_n H(C_n)\max(S_n,0)
+m_n=m_0A_nH(C_n)\max(S_n,0)
 ```
 
-Substituting the terms:
+Expanded:
 
 ```math
-m_n = m_0 (C_n-1)^{D_f}
-e^{-\frac{(C_n-C_\star)^2}{2\sigma_H^2}}
-\max(an-2^n,0)
+m_n=m_0(C_n-1)^{D_f}H(C_n)\max(an-2^n,0)
 ```
 
 with:
@@ -225,23 +177,233 @@ with:
 C_n=2^n
 ```
 
-This equation says:
+This says that mass equals base scale times fractal catching surface times finite Higgs response times survival.
 
-> mass equals base scale times fractal cluster surface times finite Higgs response times survival.
+## 8. Law of vibration and information exchange
 
-If the cluster fails stability, then:
+The v0.2 extension treats knots as internally moving structures.
+
+Internal movement creates vibration. Similar information-points vibrating at compatible frequencies open stronger internal communication channels.
+
+Let:
 
 ```math
-\max(S_n,0)=0
+\Gamma_{ij}
 ```
 
-and the mode does not become a stable particle.
+be the information exchange rate between information-point `i` and information-point `j`.
 
-## 8. Light activation and channel transfer
+A simple pairwise exchange rule is:
+
+```math
+\Gamma_{ij}
+=
+g
+\exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
+\exp\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
+\cos^2(\phi_i-\phi_j)
+```
+
+where:
+
+- `I_i-I_j` measures information mismatch,
+- `omega_i-omega_j` measures vibration-frequency mismatch,
+- `phi_i-phi_j` measures phase mismatch,
+- `g` is base exchange strength.
+
+Exchange is strongest when information, frequency, and phase align.
+
+For the whole knot:
+
+```math
+\Gamma_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}
+```
+
+Define the exchange/densification factor:
+
+```math
+X_n=e^{\eta\Gamma_n}
+```
+
+For weak exchange:
+
+```math
+X_n\approx1+\eta\Gamma_n
+```
+
+## 9. Exchange-updated stability and mass
+
+The exchange-updated stability law is:
+
+```math
+S_n=3.5nX_n-2^n
+```
+
+Interpretation:
+
+```text
+resonant exchange strengthens coherence, but complexity still fights back
+```
+
+The exchange-updated mass formula is:
+
+```math
+m_n=m_0(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0)
+```
+
+with:
+
+```math
+S_n=3.5nX_n-C_n
+```
+
+and:
+
+```math
+C_n=2^n
+```
+
+Thus `X_n` affects both densification and survival.
+
+## 10. Fourth-mode constraint
+
+Mode 4 must still fail if the model is to avoid predicting a stable fourth charged-lepton-like generation.
+
+For mode 4:
+
+```math
+S_4=3.5(4)X_4-16=14X_4-16
+```
+
+Failure requires:
+
+```math
+14X_4-16<0
+```
+
+so:
+
+```math
+X_4<1.1428571429
+```
+
+or:
+
+```math
+\eta\Gamma_4<\ln(1.1428571429)=0.1335313926
+```
+
+This gives a useful constraint: the fourth mode may have exchange, but coherent exchange must remain below the stabilization threshold.
+
+## 11. Complementary amplitude extension
+
+The v0.2 model introduces a complementary amplitude structure.
+
+For every visible information cluster:
+
+```math
+I_n
+```
+
+introduce a complementary information pattern:
+
+```math
+I_n^s
+```
+
+The full knot state is:
+
+```math
+K_n=(I_n,I_n^s)
+```
+
+The mass amplitude is modeled as the imbalance between visible and complementary information:
+
+```math
+A_n=I_n-I_n^s
+```
+
+Mass is then:
+
+```math
+m_n=A_n^2
+```
+
+This means the deeper model should attempt to calculate amplitude first:
+
+```math
+A_n=\sqrt{m_n}
+```
+
+and only then square into mass.
+
+## 12. Amplitude correction form
+
+Let the base MCIFT model produce:
+
+```math
+m_n^{base}
+```
+
+The base amplitude is:
+
+```math
+A_n^{base}=\sqrt{m_n^{base}}
+```
+
+Introduce an amplitude correction:
+
+```math
+\Delta_n
+```
+
+Then:
+
+```math
+A_n=A_n^{base}\Delta_n
+```
+
+and:
+
+```math
+m_n=m_n^{base}\Delta_n^2
+```
+
+A small amplitude correction therefore becomes a larger mass correction after squaring.
+
+In the current charged-lepton toy comparison, the old MCIFT tau prediction was low by about 3.995 percent in mass, but the amplitude correction required is only about 1.978 percent.
+
+## 13. Connection to Koide-style geometry
+
+Koide's charged-lepton relation can be written as:
+
+```math
+\frac{A_1^2+A_2^2+A_3^2}{(A_1+A_2+A_3)^2}=\frac{2}{3}
+```
+
+where:
+
+```math
+A_i=\sqrt{m_i}
+```
+
+This suggests that if MCIFT is to connect to Koide, the model must explain the geometry of the amplitude vector:
+
+```math
+(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})
+```
+
+rather than only fitting the final masses directly.
+
+The v0.2 toy calculation shows that the amplitude correction needed to move the baseline MCIFT tau prediction to the observed tau value is extremely close to the amplitude correction needed to move the same baseline to the Koide high-root tau value. This does not prove MCIFT, but it identifies a possible bridge:
+
+```text
+knot geometry -> complementary amplitude -> square-root mass geometry -> Koide-like relation
+```
+
+## 14. Channel transfer
 
 Light is treated as a massless channel impulse. When it hits a resting information surface, it may create a ripple. When it hits an already-active coherent cluster, it may dissolve into the existing resonance.
-
-The channel-transfer rule depends on coherence, complexity match, and mass/ripple-weight match.
 
 Let an incoming cluster `i` interact with a receiving surface `s`. Then:
 
@@ -253,25 +415,17 @@ e^{-\frac{(C_i-C_s)^2}{2\sigma_C^2}}
 e^{-\frac{(m_i-m_s)^2}{2\sigma_m^2}}
 ```
 
-where:
+Transfer is strongest when coherence is high, complexity mismatch is small, and mass/ripple mismatch is small.
 
-- `Q_i` is incoming coherence,
-- `Q_s` is surface coherence,
-- `C_i` is incoming complexity,
-- `C_s` is surface complexity,
-- `m_i` is incoming effective mass or ripple-weight,
-- `m_s` is surface effective mass or ripple-weight,
-- `sigma_C` controls complexity tolerance,
-- `sigma_m` controls mass/ripple tolerance.
+The v0.2 exchange extension suggests an additional dependency:
 
-This rule encodes the rain-on-water analogy:
+```math
+T_{i\rightarrow s}\propto X_iX_s
+```
 
-- if a drop hits calm water, it creates a ripple,
-- if it hits a larger ripple, it dissolves into the existing motion,
-- if it matches the surface, it resonates,
-- if it mismatches strongly, transfer is suppressed.
+when internal vibration and phase coherence support transfer.
 
-## 9. Three stable modes and fourth-mode failure
+## 15. Mode structure
 
 Using:
 
@@ -279,7 +433,7 @@ Using:
 C_n=2^n
 ```
 
-and:
+and the original stability rule:
 
 ```math
 S_n=an-2^n
@@ -300,69 +454,49 @@ the first three modes survive and the fourth fails.
 | 3 | 8 | survives | tau-like heavy mode |
 | 4 | 16 | fails | delocalized/background-forming mode |
 
-The fourth mode is not treated as a stable fourth generation. Instead, it fails as a single localized structure and may form a bonded background structure:
+Under exchange-updated stability, the fourth mode still fails if:
 
 ```math
-T_4 \rightarrow T_3 \leftrightarrow T_3
+X_4<1.1428571429
 ```
 
-This bonded failed mode may be interpreted as contributing to a Higgs-like background.
+## 16. Channel confinement
 
-## 10. Black-hole channel confinement
+In this framework, an extreme coherent complexity cluster may create a new internal channel.
 
-In this framework, a black hole is interpreted as an extreme coherent complexity cluster that creates a new internal channel.
-
-Outside the black hole:
+Outside such a confined region:
 
 ```math
 \Psi(x,y,z,t,c_{\text{outside}})
 ```
 
-Inside the black hole:
+Inside:
 
 ```math
-\Psi(x,y,z,t,c_{\text{BH}})
+\Psi(x,y,z,t,c_{\text{inside}})
 ```
 
-The event horizon is interpreted as a channel-transfer boundary:
+The boundary is interpreted as a channel-transfer boundary:
 
 ```math
-T_{BH\rightarrow outside}\approx 0
+T_{inside\rightarrow outside}\approx 0
 ```
 
-Thus, information may exist inside, but it cannot transfer back into the external light channel.
+Thus, information may exist internally but fail to transfer back into the external light channel.
 
-The model interprets black-hole invisibility as channel suppression:
+## 17. Predictions and testable directions
 
-> A black hole is a confined complexity cluster that creates an internal channel disconnected from the external light channel.
+The model currently suggests several testable or semi-testable claims:
 
-This does not replace general relativity, but gives a speculative information-field interpretation of why black-hole interiors are externally inaccessible.
+1. No stable fourth charged-lepton-like generation.
+2. Mass begins at the cluster level.
+3. Heavier generations are closer to instability.
+4. Higgs response is finite.
+5. Exchange rate controls densification.
+6. Charged-lepton mass relations may be amplitude-level relations.
+7. Extreme coherent complexity can suppress external channel transfer.
 
-## 11. Predictions and testable directions
-
-The model currently suggests several testable or semi-testable claims.
-
-### Prediction 1: No stable fourth charged-lepton-like generation
-
-The fourth mode should not appear as a stable localized particle.
-
-### Prediction 2: Mass begins at the cluster level
-
-A single information-cell should have almost no mass. Mass should emerge from coherent clustering.
-
-### Prediction 3: Heavier generations are closer to instability
-
-The electron-like mode should be most stable, the muon-like mode less stable, and the tau-like mode closest to failure.
-
-### Prediction 4: Higgs response is finite
-
-The mass-giving response should behave like a window, not an unlimited growth mechanism.
-
-### Prediction 5: Black holes suppress external channel transfer
-
-Black holes may be interpreted as regions where internal information exists but cannot transfer into the outside light channel.
-
-## 12. Limitations
+## 18. Limitations
 
 This framework is speculative. It does not yet provide:
 
@@ -371,11 +505,24 @@ This framework is speculative. It does not yet provide:
 - Lorentz-invariant formulation,
 - gauge symmetry structure,
 - exact particle mass predictions,
+- derivation of Koide's relation,
 - experimental confirmation.
 
-The current model should therefore be treated as a toy theoretical framework rather than established physics.
+The v0.2 additions improve the mechanism-path, but they also introduce new unknowns:
 
-## 13. Next required step
+```math
+\Gamma_n
+```
+
+and:
+
+```math
+\Delta_n
+```
+
+These must eventually be derived from knot geometry rather than fitted after observing particle masses.
+
+## 19. Next required step
 
 The next step is to define a full action or energy functional:
 
@@ -392,11 +539,14 @@ or:
 This functional should produce:
 
 - cluster formation,
+- internal vibration,
+- information exchange,
 - channel transfer,
 - finite Higgs response,
+- amplitude imbalance,
 - mass emergence,
 - fourth-mode failure,
-- black-hole channel confinement.
+- channel confinement.
 
 A possible schematic energy functional is:
 
@@ -409,6 +559,8 @@ A possible schematic energy functional is:
 -
 \mathcal{E}_{\text{coherence}}
 -
+\mathcal{E}_{\text{exchange}}
+-
 \mathcal{E}_{\text{Higgs}}
 +
 \mathcal{E}_{\text{instability}}
@@ -416,7 +568,7 @@ A possible schematic energy functional is:
 
 Stable particles would correspond to local minima of this energy functional.
 
-## 14. Conclusion
+## 20. Conclusion
 
 This paper proposes a speculative multi-channel information-field model in which reality is described by:
 
@@ -424,10 +576,10 @@ This paper proposes a speculative multi-channel information-field model in which
 \Psi(x,y,z,t,c)
 ```
 
-Particles are coherent clusters of information. Light is a massless activation channel. Mass emerges when activated clusters enter a finite Higgs-response window. Complexity grows fractally, but coherence limits stability. Three stable modes can arise naturally before a fourth mode fails. Black holes are interpreted as coherent complexity clusters that create internal channels inaccessible to outside light.
+Particles are coherent clusters of information. Light is a massless activation channel. Internal vibration opens exchange channels between similar information-points. Resonant exchange creates densification. Mass emerges when activated clusters enter a finite Higgs-response window and when the visible cluster develops a squared amplitude imbalance against its complementary pattern. Complexity grows fractally, but coherence limits stability. Three stable modes can arise naturally before a fourth mode fails.
 
-The model remains speculative, but it provides a unified toy framework linking information, clustering, light activation, Higgs response, particle generations, and black-hole confinement.
+The model remains speculative, but it provides a unified toy framework linking information, clustering, vibration, exchange rate, complementary amplitude, light activation, Higgs response, particle generations, Koide-like amplitude geometry, and channel confinement.
 
-Its central claim is:
+Its updated central claim is:
 
-> Mass is not given to isolated information. Mass emerges when information clusters become coherent, activated, and able to transfer into the Higgs-response channel.
+> Mass is not given to isolated information. Mass emerges when information clusters become coherent, activated, internally resonant, and able to form a finite amplitude-level response through the Higgs channel.
