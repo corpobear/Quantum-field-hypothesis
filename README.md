@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** 0.13 six-side sink dark-manifest geometry test
+**Current version:** 0.14 CERN two-drill event-shape comparison
 
 > This is not established physics and is not a replacement for quantum field theory. It is a speculative framework being developed into a more testable mathematical toy model.
 
@@ -30,6 +30,36 @@ coherent information cluster
 -> bounded fourth-mode reservoir availability
 -> channel-specific activation
 -> visible-manifest / dark-manifest split
+-> collider event-shape comparison
+```
+
+---
+
+## Latest v0.14 CERN-facing test
+
+v0.14 maps the two-drill collision picture to collider observables.
+
+```text
+visible drill activity -> jets and visible transverse energy
+dark side channel -> missing transverse momentum and event imbalance
+```
+
+Main proxy:
+
+```math
+R_{miss}=\frac{E_T^{miss}}{H_T}.
+```
+
+The first published-results comparison uses ATLAS monojet and multijet missing-momentum searches. Existing broad published searches report agreement with Standard Model expectations, so the v0.14 verdict is:
+
+```text
+not confirmed, not ruled out by this reduced comparison, now constrained
+```
+
+A local open-data scaffold is provided at:
+
+```text
+analysis/cern_two_drill_event_shape_test.py
 ```
 
 ---
@@ -48,15 +78,9 @@ Visual diagrams are generated with Matplotlib by running:
 python mechanics/plot_mechanics.py
 ```
 
-The script writes SVG diagrams into:
-
-```text
-mechanics/figures/
-```
-
 ---
 
-## Latest v0.13 finding
+## v0.13 dark-manifest finding
 
 v0.13 tests a six-side sink geometry in the eight-sector knot/shadow model.
 
@@ -76,14 +100,6 @@ The comparison target from Planck 2018 densities is approximately:
 ```math
 \frac{0.120}{0.0224}=5.357.
 ```
-
-The toy result is within about 1.1 percent of that comparison value. A small side-efficiency factor:
-
-```math
-\epsilon_{sink}\approx0.989
-```
-
-matches the central ratio.
 
 This is an internal toy-model consistency result, not an experimental confirmation.
 
@@ -116,6 +132,9 @@ visible-manifest  light-active, mass-active, gravity-active, and knot-coherent
 ## Key files
 
 ```text
+analysis/cern_two_drill_event_shape_test.py
+models/two_drill_collision_cern_v0.14.md
+tests/report_v0.14_cern_two_drill_event_shape.md
 mechanics/README.md
 mechanics/mechanics_v0.13.md
 mechanics/plot_mechanics.py
