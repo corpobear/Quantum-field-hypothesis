@@ -9,7 +9,7 @@ Problems this catches:
 
 Fix behavior:
   - converts fenced ```math blocks into GitHub-friendly $$ display math blocks
-  - does not guess how to repair genuinely unclosed blocks; it reports them
+  - reports genuinely unclosed blocks without trying to guess the repair
 
 Usage:
   python tools/check_markdown_math.py --check
@@ -26,7 +26,7 @@ from typing import Iterable
 
 SKIP_DIRS = {
     ".git",
-    ".github",  # workflow markdown is rare; skip generated internals
+    ".github",
     "node_modules",
     ".venv",
     "venv",
@@ -109,18 +109,15 @@ def check_or_fix_file(path: Path, fix: bool) -> FileReport:
                 code_fence_line = None
             continue
 
-        # Outside normal code fences.
         if is_math_fence_start(stripped):
+            report.converted_math_fences += 1
             if fix:
-                report.converted_math_fences += 1
                 out.append("$$" + newline)
                 in_math_fence_to_convert = True
                 in_code_fence = True
                 code_fence_marker = fence_marker(stripped)
                 code_fence_line = idx
             else:
-                # Treat fenced math as a formatting issue, not a fatal syntax issue.
-                report.converted_math_fences += 1
                 out.append(line)
                 in_code_fence = True
                 code_fence_marker = fence_marker(stripped)
@@ -201,13 +198,14 @@ def main() -> int:
     print_report(reports, root)
 
     has_errors = any(r.has_error for r in reports)
-    # In check mode, fenced math is also considered a problem because it may render as annotation/code.
     has_fenced_math = any(r.converted_math_fences for r in reports)
 
     if args.check and (has_errors or has_fenced_math):
         return 1
-    if args.fix and has_errors:
-        return 1
+
+    # In fix mode, return success after safe conversions are written. Any
+    # remaining unclosed block is still reported and should be caught by a
+    # follow-up --check run.
     return 0
 
 
