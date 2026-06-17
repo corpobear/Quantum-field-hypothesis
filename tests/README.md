@@ -23,11 +23,55 @@ report_v0.11.md   Bounded fourth-mode reservoir field-source test
 report_v0.13.md   Six-side sink dark-manifest ratio test
 report_v0.14_cern_two_drill_event_shape.md   CERN two-drill event-shape published-results comparison
 report_v0.14b_published_limits.md   Quick ATLAS/CMS published missing-momentum limits check
+report_v0.15_matter_antimatter_toy_ratio.md   Matter-antimatter channel-geometry toy ratio
 ```
 
 ---
 
-## Current latest test: v0.14b
+## Current latest test: v0.15
+
+v0.15 tests the antimatter channel-geometry adjustment as a reduced toy calculation.
+
+Antimatter is modeled as:
+
+```text
+positive mass with reversed charge / phase / channel orientation
+```
+
+not as negative mass.
+
+The v0.15 geometry uses:
+
+```text
+matter visible drill      = center-tip collector
+matter dark sink          = side-belt collector
+antimatter dark sink      = Higgs-drop collector
+antimatter light drill    = splash-ring collector with discarded middle
+```
+
+The reduced toy result is:
+
+$$
+\frac{A_M}{A_{\bar M}}=1.28669912372469.
+$$
+
+The corresponding asymmetry parameter is:
+
+$$
+\epsilon_{MCIFT}=0.125376845930524.
+$$
+
+Short verdict:
+
+```text
+matter aperture > antimatter aperture in this toy geometry
+```
+
+This is an internal toy-model consistency result, not physical confirmation of baryon asymmetry.
+
+---
+
+## Previous test: v0.14b
 
 v0.14b performs the quick published-results check against ATLAS/CMS energetic-jet plus missing-transverse-momentum searches.
 
@@ -45,7 +89,7 @@ not confirmed; constrained by existing missing-momentum searches
 
 This is not a full exclusion because MCIFT has not yet specified a production cross section, mass scale, lifetime, topology, coupling strength, or exact event selection.
 
-The next step is still a direct open-data event-shape test using:
+The next collider step is still a direct open-data event-shape test using:
 
 ```text
 analysis/cern_two_drill_event_shape_test.py
