@@ -10,15 +10,15 @@
 
 The MCIFT toy model is now close to Koide-like charged-lepton amplitude geometry through the tau shadow-projection correction. The key structure is the tau-like third mode:
 
-```math
+$$
 C_3 = 2^3 = 8.
-```
+$$
 
 The shadow-anchor interpretation says that the tau shadow remains attached to the original eight-sector knot at one shared vibrating anchor point. That point is not counted as an independent echo sector. The remaining seven sectors form the independent shadow echo:
 
-```math
+$$
 f_0 = \frac{8-1}{8}=\frac{7}{8}.
-```
+$$
 
 This note separates **retrodiction** from **prediction**.
 
@@ -30,31 +30,31 @@ The existing tau/Koide closeness is not yet a fully independent prediction, beca
 
 Let
 
-```math
+$$
 k = |K_8 \cap S_8|
-```
+$$
 
 be the number of shared contact points between the original eight-sector knot `K_8` and its shadow `S_8`.
 
 The independent shadow echo fraction is
 
-```math
+$$
 B_8(k)=\frac{8-k}{8}.
-```
+$$
 
 The model predicts that only
 
-```math
+$$
 k=1
-```
+$$
 
 is stable for a true shadow.
 
 Therefore:
 
-```math
+$$
 B_8(1)=\frac{8-1}{8}=\frac{7}{8}.
-```
+$$
 
 Plainly:
 
@@ -87,9 +87,9 @@ k >= 2 -> shared vibrating bridge -> phase-locking -> origin-shadow merger press
 
 So the preferred stable contact number is:
 
-```math
+$$
 k_* = 1.
-```
+$$
 
 This is the minimal stable shadow anchoring principle.
 
@@ -99,35 +99,35 @@ This is the minimal stable shadow anchoring principle.
 
 The tau correction structure uses
 
-```math
+$$
 \Delta(f)=1+\frac{1}{56}+f\frac{1}{448}
-```
+$$
 
 and
 
-```math
+$$
 m_\tau(f)=m_\tau^{base}\Delta(f)^2.
-```
+$$
 
 If the contact number changes, then the echo fraction changes:
 
-```math
+$$
 f(k)=\frac{8-k}{8}.
-```
+$$
 
 So:
 
-```math
+$$
 f(0)=1,
-```
+$$
 
-```math
+$$
 f(1)=\frac{7}{8},
-```
+$$
 
-```math
+$$
 f(2)=\frac{6}{8}=\frac{3}{4}.
-```
+$$
 
 Using the same base tau value and shadow-projection structure, the toy model gives approximately:
 
@@ -139,9 +139,9 @@ k = 2, f = 3/4     -> 1775.99817698 MeV
 
 The observed Koide high-root benchmark used in the model is
 
-```math
+$$
 m_\tau^{Koide}=1776.96902708\ \mathrm{MeV}.
-```
+$$
 
 Therefore:
 
@@ -155,13 +155,13 @@ This makes the one-point contact geometrically necessary inside the toy model.
 
 In MCIFT, exchange strengthens when information states, vibration frequencies, and phases match:
 
-```math
+$$
 \Gamma_{ij}
 = g
 \exp\!\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
 \exp\!\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
 \cos^2(\phi_i-\phi_j).
-```
+$$
 
 This means two same-frequency origin-shadow contact points should not behave like two independent anchors. They should form a phase-locking bridge.
 
@@ -182,9 +182,9 @@ Prediction:
 
 The same one-anchor rule gives
 
-```math
+$$
 B_n=\frac{C_n-1}{C_n}.
-```
+$$
 
 For the first few complexity modes:
 
@@ -211,15 +211,15 @@ The shadow-anchor rule adds another reason.
 
 For a hypothetical fourth mode:
 
-```math
+$$
 C_4=16
-```
+$$
 
 and
 
-```math
+$$
 B_4=\frac{15}{16}.
-```
+$$
 
 This is a very high shadow-completion fraction. The model should therefore predict either:
 
@@ -245,15 +245,15 @@ The v0.6 objective shared-channel interpretation treats entanglement/shared-chan
 
 For the tau echo-shadow correction:
 
-```math
+$$
 f_{ent}=\frac{7}{8}(1-E_3)
-```
+$$
 
 with
 
-```math
+$$
 E_3=0.0002008838.
-```
+$$
 
 That is only about
 
@@ -273,15 +273,15 @@ The main mass geometry comes from shadow projection. The shared-channel effect o
 
 In the v0.6 shared-channel model, channel distance is
 
-```math
+$$
 d_c = |c_A-c_B|.
-```
+$$
 
 The shared-channel strength contains the factor
 
-```math
+$$
 \exp\!\left[-\frac{d_c^2}{2\sigma_c^2}\right].
-```
+$$
 
 Prediction:
 
@@ -289,21 +289,21 @@ Prediction:
 
 In the saturated shared-channel limit:
 
-```math
+$$
 d_c=0
-```
+$$
 
 and the correction can approach
 
-```math
+$$
 E_3 \approx \lambda_3.
-```
+$$
 
 But when
 
-```math
+$$
 d_c \gg \sigma_c,
-```
+$$
 
 the correction should become negligible.
 

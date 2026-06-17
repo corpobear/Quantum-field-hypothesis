@@ -28,24 +28,24 @@ The goal is to check whether adding a speed window preserves the successful v0.9
 
 The v0.9 reduced tau equation was:
 
-```math
+$$
 m_\tau
 =
 m_\tau^{base}
 \left[
 1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right]^2.
-```
+$$
 
 Inputs:
 
-```math
+$$
 m_\tau^{base}=1708.60405054\ \mathrm{MeV},
-```
+$$
 
-```math
+$$
 \langle O_\varphi\rangle=0.9837806705.
-```
+$$
 
 The `7/8` term is the one-anchor free spin-vortex fraction for the tau-like eight-sector knot.
 
@@ -55,14 +55,14 @@ The `7/8` term is the one-anchor free spin-vortex fraction for the tau-like eigh
 
 The v0.10 capture factor is:
 
-```math
+$$
 W_v(v)
 =
 \frac{
 \left(1-e^{-(v/v_{min})^2}\right)
 e^{-(v/v_{scatter})^2}
 }{W_{max}}.
-```
+$$
 
 Interpretation:
 
@@ -78,7 +78,7 @@ W_max                  -> normalization so optimal speed gives W_v = 1
 
 The reduced tau equation becomes:
 
-```math
+$$
 m_\tau
 =
 m_\tau^{base}
@@ -91,7 +91,7 @@ W_v(v_{tip})
 \frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right)
 \right]^2.
-```
+$$
 
 This means the speed window controls how much of the anchor-tip source is retained by the knot.
 
@@ -101,15 +101,15 @@ This means the speed window controls how much of the anchor-tip source is retain
 
 Using the v0.9 resonance overlap:
 
-```math
+$$
 \langle O_\varphi\rangle=0.9837806705,
-```
+$$
 
 and normalizing the best funnel speed to:
 
-```math
+$$
 W_v=1,
-```
+$$
 
 we get the following reduced test:
 
@@ -148,9 +148,9 @@ too fast:
 
 The successful tau value is preserved at the optimal capture speed:
 
-```math
+$$
 m_\tau=1776.86\ \mathrm{MeV}.
-```
+$$
 
 ---
 
@@ -158,7 +158,7 @@ m_\tau=1776.86\ \mathrm{MeV}.
 
 The v0.10 source term is:
 
-```math
+$$
 \mathcal{S}_{tip,a}
 =
 \lambda_a
@@ -167,11 +167,11 @@ B_{C_a}(1)
 O_{\varphi,a}(t)
 W_v(v_{tip,a})
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 The candidate field equation becomes:
 
-```math
+$$
 \left(
 \partial_t^2
 -
@@ -189,7 +189,7 @@ B_{C_a}(1)
 O_{\varphi,a}(t)
 W_v(v_{tip,a})
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 ---
 
@@ -197,13 +197,13 @@ W_v(v_{tip,a})
 
 If the failed fourth mode is treated as an unmanifest residue/reservoir:
 
-```math
+$$
 \mathcal{R}_4=\Theta(-S_4)|S_4|\rho_4(c),
-```
+$$
 
 then:
 
-```math
+$$
 \mathcal{S}_{tip,a}
 =
 \lambda_a
@@ -213,7 +213,7 @@ O_{\varphi,a}(t)
 W_v(v_{tip,a})
 \mathcal{R}_4
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 This reservoir form is not tested numerically here. It is preserved as a possible next step.
 

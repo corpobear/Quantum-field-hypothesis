@@ -7,15 +7,15 @@
 
 The v0.5 tau echo-entanglement correction used:
 
-```math
+$$
 f_{ent}=\frac{7}{8}(1-E_3)
-```
+$$
 
 with:
 
-```math
+$$
 E_3=0.0002008838
-```
+$$
 
 or:
 
@@ -25,15 +25,15 @@ or:
 
 This gave:
 
-```math
+$$
 \Delta_{ent}=1.0198098755
-```
+$$
 
 and:
 
-```math
+$$
 m_\tau^{ent}=1776.96902708\ \text{MeV}
-```
+$$
 
 matching the Koide high-root tau value by residual fitting.
 
@@ -45,15 +45,15 @@ Instead, each particle/knot has access to an internal channel coordinate.
 
 Two systems can be far apart in spacetime but adjacent in channel-space:
 
-```math
+$$
 |x_A-x_B|\gg0
-```
+$$
 
 while:
 
-```math
+$$
 |c_A-c_B|=0
-```
+$$
 
 This means:
 
@@ -66,26 +66,26 @@ zero distance in channel-space
 
 Define spatial distance:
 
-```math
+$$
 d_x=|x_A-x_B|
-```
+$$
 
 Define channel distance:
 
-```math
+$$
 d_c=|c_A-c_B|
-```
+$$
 
 The v0.6 entanglement strength is:
 
-```math
+$$
 \mathcal{E}_{AB}
 =
 \lambda_{AB}
 O_{AB}
 \exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
 \tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
-```
+$$
 
 where:
 
@@ -100,78 +100,78 @@ where:
 
 For an objective shared channel:
 
-```math
+$$
 d_c=0
-```
+$$
 
 Therefore:
 
-```math
+$$
 \exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]=1
-```
+$$
 
 So:
 
-```math
+$$
 \mathcal{E}_{AB}
 =
 \lambda_{AB}O_{AB}\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
-```
+$$
 
 If overlap is near perfect and exchange is saturated:
 
-```math
+$$
 O_{AB}\approx1
-```
+$$
 
-```math
+$$
 \tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)\approx1
-```
+$$
 
 then:
 
-```math
+$$
 \mathcal{E}_{AB}\approx\lambda_{AB}
-```
+$$
 
 ## 5. Tau echo-shadow application
 
 For the tau echo-shadow correction:
 
-```math
+$$
 E_3
 =
 \lambda_3
 O_3
 \exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
 \tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)
-```
+$$
 
 In the shared-channel saturated limit:
 
-```math
+$$
 d_c=0
-```
+$$
 
-```math
+$$
 O_3\approx1
-```
+$$
 
-```math
+$$
 \tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)\approx1
-```
+$$
 
 so:
 
-```math
+$$
 E_3\approx\lambda_3
-```
+$$
 
 The required value remains:
 
-```math
+$$
 \lambda_3=0.0002008838
-```
+$$
 
 or:
 
@@ -183,21 +183,21 @@ or:
 
 The tau correction remains:
 
-```math
+$$
 f_{ent}=\frac{7}{8}(1-0.0002008838)=0.8748242267
-```
+$$
 
 and:
 
-```math
+$$
 \Delta_{ent}=1+\frac{1}{56}+0.8748242267\frac{1}{448}=1.0198098755
-```
+$$
 
 Then:
 
-```math
+$$
 m_\tau^{ent}=1708.60405054(1.0198098755)^2=1776.96902708\ \text{MeV}
-```
+$$
 
 This equals the Koide high-root tau value used in the report.
 

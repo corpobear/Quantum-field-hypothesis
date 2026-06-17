@@ -8,9 +8,9 @@ This file collects the current toy-model math for the Multi-Channel Information 
 
 The field is written as:
 
-```math
+$$
 \Psi(x,y,z,t,c)
-```
+$$
 
 where:
 
@@ -24,9 +24,9 @@ Possible channels include identity, light, Higgs response, phase, charge, knot s
 
 The simplest complexity growth law is binary:
 
-```math
+$$
 C_{n}=2^{n}
-```
+$$
 
 This gives:
 
@@ -44,33 +44,33 @@ Interpretation: each higher mode doubles the information burden.
 
 A simple coherence law:
 
-```math
+$$
 Q_{n}=a n
-```
+$$
 
 Original stability:
 
-```math
+$$
 S_{n}=Q_{n}-C_{n}=a n-2^{n}
-```
+$$
 
 Survival condition:
 
-```math
+$$
 S_{n}>0
-```
+$$
 
 Failure condition:
 
-```math
+$$
 S_{n}<0
-```
+$$
 
 Exactly three stable modes and fourth failure require:
 
-```math
+$$
 \frac{8}{3}<a<4
-```
+$$
 
 Example with `a=3.5`:
 
@@ -85,35 +85,35 @@ Example with `a=3.5`:
 
 Cluster catching surface:
 
-```math
+$$
 A_{n}=(C_{n}-1)^{D_{f}}
-```
+$$
 
 Proposed fractal dimension:
 
-```math
+$$
 D_{f}=3.5+\epsilon
-```
+$$
 
 where `3.5` is interpreted as a three-thread core plus half-dimensional bond:
 
-```math
+$$
 D_{f}=3+\frac{1}{2}
-```
+$$
 
 ## 5. Finite Higgs response
 
 Linear complexity Gaussian:
 
-```math
+$$
 H(C_{n})=\exp\left[-\frac{(C_{n}-C_{\star})^{2}}{2\sigma_{H}^{2}}\right]
-```
+$$
 
 Log-fractal Gaussian:
 
-```math
+$$
 H(C_{n})=\exp\left[-\frac{(\ln C_{n}-\ln C_{\star})^{2}}{2w^{2}}\right]
-```
+$$
 
 Interpretation: Higgs response is finite and windowed. It does not give infinite mass as complexity grows.
 
@@ -123,14 +123,14 @@ Internal movement creates vibration. Similar information-points vibrating at com
 
 Pairwise exchange rate:
 
-```math
+$$
 \Gamma_{ij}
 =
 g
 \exp\left[-\frac{(I_{i}-I_{j})^{2}}{2\sigma_{I}^{2}}\right]
 \exp\left[-\frac{(\omega_{i}-\omega_{j})^{2}}{2\sigma_{\omega}^{2}}\right]
 \cos^{2}(\phi_{i}-\phi_{j})
-```
+$$
 
 where:
 
@@ -141,35 +141,35 @@ where:
 
 Knot-level exchange rate:
 
-```math
+$$
 \Gamma_{n}=\frac{1}{C_{n}}\sum_{i<j}\Gamma_{ij}
-```
+$$
 
 Exchange/densification factor:
 
-```math
+$$
 X_{n}=\exp(\eta\Gamma_{n})
-```
+$$
 
 Weak-exchange approximation:
 
-```math
+$$
 X_{n}\approx1+\eta\Gamma_{n}
-```
+$$
 
 ## 7. Exchange-updated stability
 
 The exchange-updated stability is:
 
-```math
+$$
 S_{n}=3.5\,nX_{n}-C_{n}
-```
+$$
 
 with:
 
-```math
+$$
 C_{n}=2^{n}
-```
+$$
 
 Interpretation:
 
@@ -179,35 +179,35 @@ resonant exchange strengthens coherence, but complexity still fights back
 
 Mode 4 still fails if:
 
-```math
+$$
 S_{4}=14X_{4}-16<0
-```
+$$
 
 Therefore:
 
-```math
+$$
 X_{4}<1.1428571429
-```
+$$
 
 or:
 
-```math
+$$
 \eta\Gamma_{4}<0.1335313926
-```
+$$
 
 ## 8. Rest-mass formula
 
 The exchange-rate rest-mass formula is:
 
-```math
+$$
 m_{0,n}=m_{\mathrm{scale}}(C_{n}-1)^{D_{f}}X_{n}H(C_{n})\max(S_{n},0)
-```
+$$
 
 with:
 
-```math
+$$
 S_{n}=3.5\,nX_{n}-C_{n}
-```
+$$
 
 This formula describes rest-mass formation from internal vibratory exchange, coherent complexity, and Higgs response.
 
@@ -217,39 +217,39 @@ Each visible information cluster can have a complementary inverted information p
 
 Visible cluster:
 
-```math
+$$
 I_{n}
-```
+$$
 
 Complementary pattern:
 
-```math
+$$
 I_{n}^{s}
-```
+$$
 
 Full knot state:
 
-```math
+$$
 K_{n}=(I_{n},I_{n}^{s})
-```
+$$
 
 Mass amplitude:
 
-```math
+$$
 A_{n}=I_{n}-I_{n}^{s}
-```
+$$
 
 Mass:
 
-```math
+$$
 m_{n}=A_{n}^{2}
-```
+$$
 
 This suggests that the deepest toy model should calculate amplitude first:
 
-```math
+$$
 A_{n}=\sqrt{m_{n}}
-```
+$$
 
 and then square into mass.
 
@@ -257,33 +257,33 @@ and then square into mass.
 
 Let the base MCIFT model produce:
 
-```math
+$$
 m_{n}^{\mathrm{base}}
-```
+$$
 
 Base amplitude:
 
-```math
+$$
 A_{n}^{\mathrm{base}}=\sqrt{m_{n}^{\mathrm{base}}}
-```
+$$
 
 Introduce a visible/complementary amplitude correction:
 
-```math
+$$
 \Delta_{n}
-```
+$$
 
 Then:
 
-```math
+$$
 A_{n}=A_{n}^{\mathrm{base}}\Delta_{n}
-```
+$$
 
 and:
 
-```math
+$$
 m_{n}=m_{n}^{\mathrm{base}}\Delta_{n}^{2}
-```
+$$
 
 Small amplitude corrections become larger mass corrections after squaring.
 
@@ -291,71 +291,71 @@ Small amplitude corrections become larger mass corrections after squaring.
 
 For the tau-like third mode:
 
-```math
+$$
 C_{3}=8
-```
+$$
 
 Primary shadow term:
 
-```math
+$$
 s_{1}=\frac{1}{C_{3}(C_{3}-1)}=\frac{1}{56}
-```
+$$
 
 Echo-shadow term:
 
-```math
+$$
 s_{2}=\frac{s_{1}}{C_{3}}=\frac{1}{448}
-```
+$$
 
 Amplitude correction:
 
-```math
+$$
 \Delta(f)=1+s_{1}+fs_{2}
-```
+$$
 
 Mass prediction:
 
-```math
+$$
 m_{\tau}(f)=m_{\tau}^{\mathrm{base}}\Delta(f)^{2}
-```
+$$
 
 The global Koide projection clue is:
 
-```math
+$$
 \frac{A_{1}^{2}+A_{2}^{2}+A_{3}^{2}}{(A_{1}+A_{2}+A_{3})^{2}}=\frac{2}{3}
-```
+$$
 
 where:
 
-```math
+$$
 A_{i}=\sqrt{m_{i}}
-```
+$$
 
 This is equivalent to a 45-degree charged-lepton amplitude angle.
 
 The local tau echo-shadow completion fraction is modeled as:
 
-```math
+$$
 f_{0}=1-\frac{1}{C_{3}}=\frac{7}{8}
-```
+$$
 
 Then:
 
-```math
+$$
 \Delta_{7/8}=1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}=1.0198102679
-```
+$$
 
 and:
 
-```math
+$$
 m_{\tau}^{(7/8)}=1776.97039439\ \mathrm{MeV}
-```
+$$
 
 This is nearly identical to the Koide high-root value:
 
-```math
+$$
 m_{\tau}^{\mathrm{Koide}}=1776.96902708\ \mathrm{MeV}
-```
+$$
 
 ## 12. Motion from directional exchange
 
@@ -365,39 +365,39 @@ Directional exchange creates velocity.
 
 Define directional exchange:
 
-```math
+$$
 \vec{\Gamma}_{n}=\frac{1}{C_{n}}\sum_{i<j}\Gamma_{ij}\vec{d}_{ij}
-```
+$$
 
 Simple velocity rule:
 
-```math
+$$
 \frac{\vec{v}_{n}}{c_{\ast}}=\frac{\vec{\Gamma}_{n}}{\Gamma_{n}}
-```
+$$
 
 Bounded form:
 
-```math
+$$
 \beta_{n}=\frac{v_{n}}{c_{\ast}}=\tanh(\mu_{n})
-```
+$$
 
 where:
 
-```math
+$$
 \mu_{n}=\eta|\vec{\Gamma}_{n}|
-```
+$$
 
 Motion-energy factor:
 
-```math
+$$
 \gamma_{n}=\frac{1}{\sqrt{1-\beta_{n}^{2}}}=\cosh(\mu_{n})
-```
+$$
 
 Effective total mass-energy:
 
-```math
+$$
 m_{\mathrm{eff},n}=\gamma_{n}m_{0,n}
-```
+$$
 
 This is a total-energy correction, not a change to invariant rest mass.
 
@@ -409,9 +409,9 @@ It is modeled as a shared internal channel state: two knots become correlated st
 
 For two knots `A` and `B`, define inter-knot entanglement strength:
 
-```math
+$$
 \mathcal{E}_{AB}=O_{AB}\tanh\left(\frac{\Gamma_{AB}}{\Gamma_{c}}\right)
-```
+$$
 
 where:
 
@@ -421,9 +421,9 @@ where:
 
 Toy mass-defect rule:
 
-```math
+$$
 m_{AB}=m_{A}+m_{B}-2\epsilon\mathcal{E}_{AB}\sqrt{m_{A}m_{B}}
-```
+$$
 
 This expresses the idea that entangled knots share amplitude and therefore duplicate less mass-structure.
 
@@ -433,51 +433,51 @@ The v0.6 update makes entanglement more explicit: channels are not spatially sme
 
 For two knots `A` and `B`:
 
-```math
+$$
 \Psi_{A}=\Psi(x_{A},t,c_{A})
-```
+$$
 
-```math
+$$
 \Psi_{B}=\Psi(x_{B},t,c_{B})
-```
+$$
 
 Define spatial distance:
 
-```math
+$$
 d_{x}=|x_{A}-x_{B}|
-```
+$$
 
 Define channel distance:
 
-```math
+$$
 d_{c}=|c_{A}-c_{B}|
-```
+$$
 
 Two systems can be far in spacetime but adjacent in channel-space:
 
-```math
+$$
 d_{x}\gg0
-```
+$$
 
-```math
+$$
 d_{c}=0
-```
+$$
 
 A shared channel-state is written as:
 
-```math
+$$
 \Omega_{AB}(c_{s})
-```
+$$
 
 and the joint state is modeled as:
 
-```math
+$$
 \Psi_{AB}
 =
 \Psi_{A}(x_{A},t,c_{s})
 \Psi_{B}(x_{B},t,c_{s})
 \Omega_{AB}(c_{s})
-```
+$$
 
 This means the particles remain separate in ordinary space but are joined by one objective internal channel-state.
 
@@ -485,14 +485,14 @@ This means the particles remain separate in ordinary space but are joined by one
 
 The v0.6 entanglement strength is:
 
-```math
+$$
 \mathcal{E}_{AB}
 =
 \lambda_{AB}
 O_{AB}
 \exp\left[-\frac{d_{c}^{2}}{2\sigma_{c}^{2}}\right]
 \tanh\left(\frac{\Gamma_{AB}}{\Gamma_{c}}\right)
-```
+$$
 
 where:
 
@@ -505,23 +505,23 @@ where:
 
 If the channel is shared:
 
-```math
+$$
 d_{c}=0
-```
+$$
 
 then:
 
-```math
+$$
 \exp\left[-\frac{d_{c}^{2}}{2\sigma_{c}^{2}}\right]=1
-```
+$$
 
 and:
 
-```math
+$$
 \mathcal{E}_{AB}
 =
 \lambda_{AB}O_{AB}\tanh\left(\frac{\Gamma_{AB}}{\Gamma_{c}}\right)
-```
+$$
 
 This gives objective instant correlation through shared channel-state, not automatically controllable faster-than-light messaging.
 
@@ -529,21 +529,21 @@ This gives objective instant correlation through shared channel-state, not autom
 
 The v0.5 tau correction applied entanglement to the local echo-shadow fraction:
 
-```math
+$$
 f_{\mathrm{ent}}=f_{0}(1-E_{3})
-```
+$$
 
 where:
 
-```math
+$$
 f_{0}=\frac{7}{8}
-```
+$$
 
 The Koide residual requires:
 
-```math
+$$
 E_{3}=0.0002008838
-```
+$$
 
 or:
 
@@ -553,52 +553,52 @@ or:
 
 The v0.6 interpretation is:
 
-```math
+$$
 E_{3}
 =
 \lambda_{3}
 O_{3}
 \exp\left[-\frac{d_{c}^{2}}{2\sigma_{c}^{2}}\right]
 \tanh\left(\frac{\Gamma_{3}^{\mathrm{shared}}}{\Gamma_{c}}\right)
-```
+$$
 
 In the shared-channel saturated limit:
 
-```math
+$$
 d_{c}=0
-```
+$$
 
-```math
+$$
 O_{3}\approx1
-```
+$$
 
-```math
+$$
 \tanh\left(\frac{\Gamma_{3}^{\mathrm{shared}}}{\Gamma_{c}}\right)\approx1
-```
+$$
 
 so:
 
-```math
+$$
 E_{3}\approx\lambda_{3}=0.0002008838
-```
+$$
 
 Then:
 
-```math
+$$
 f_{\mathrm{ent}}=\frac{7}{8}(1-0.0002008838)=0.8748242267
-```
+$$
 
 and:
 
-```math
+$$
 \Delta_{\mathrm{ent}}=1+\frac{1}{56}+0.8748242267\frac{1}{448}=1.0198098755
-```
+$$
 
 so:
 
-```math
+$$
 m_{\tau}^{\mathrm{ent}}=1708.60405054(1.0198098755)^{2}=1776.96902708\ \mathrm{MeV}
-```
+$$
 
 This matches the Koide high-root tau value by construction because `E_3` is inferred from the Koide residual.
 
@@ -606,13 +606,13 @@ This matches the Koide high-root tau value by construction because `E_3` is infe
 
 For an incoming cluster `i` and receiving surface `s`:
 
-```math
+$$
 T_{i\rightarrow s}
 =
 Q_{i}Q_{s}
 \exp\left[-\frac{(C_{i}-C_{s})^{2}}{2\sigma_{C}^{2}}\right]
 \exp\left[-\frac{(m_{i}-m_{s})^{2}}{2\sigma_{m}^{2}}\right]
-```
+$$
 
 Transfer is strongest when:
 
@@ -622,21 +622,21 @@ Transfer is strongest when:
 
 The exchange-rate extension suggests an additional dependency:
 
-```math
+$$
 T_{i\rightarrow s}\propto X_{i}X_{s}
-```
+$$
 
 when internal vibration and phase coherence support transfer.
 
 The objective shared-channel extension suggests channel transfer can become shared-state correlation when:
 
-```math
+$$
 \Gamma_{AB}\gg\Gamma_{c}
-```
+$$
 
-```math
+$$
 d_{c}\rightarrow0
-```
+$$
 
 and channel overlap is high.
 

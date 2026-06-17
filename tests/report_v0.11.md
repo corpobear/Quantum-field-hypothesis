@@ -20,9 +20,9 @@ The goal is to keep the fourth-mode supply large while allowing only a tiny capt
 
 Use:
 
-```math
+$$
 R_4^{gate}=\frac{R_4}{R_4+R_*}.
-```
+$$
 
 This term is always between 0 and 1.
 
@@ -36,7 +36,7 @@ If `R_4` is very large, the factor approaches 1. This means the reservoir is ava
 
 The reduced source contribution is:
 
-```math
+$$
 \Sigma_\tau
 =
 W_v
@@ -46,27 +46,27 @@ W_v
 \frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right]
 R_4^{gate}.
-```
+$$
 
 The mass rule is:
 
-```math
+$$
 m_\tau=m_\tau^{base}(1+\Sigma_\tau)^2.
-```
+$$
 
 Inputs:
 
-```math
+$$
 m_\tau^{base}=1708.60405054\ \mathrm{MeV},
-```
+$$
 
-```math
+$$
 \langle O_\varphi\rangle=0.9837806705.
-```
+$$
 
 The aperture term is:
 
-```math
+$$
 A_{tip,8}
 =
 \frac{1}{56}
@@ -74,7 +74,7 @@ A_{tip,8}
 \frac{7}{8}\frac{1}{448}(0.9837806705)
 =
 0.01977858948.
-```
+$$
 
 ---
 
@@ -82,9 +82,9 @@ A_{tip,8}
 
 Set optimal funnel capture:
 
-```math
+$$
 W_v=1.
-```
+$$
 
 | `R_4^gate` | Tau mass | Interpretation |
 |---:|---:|---|
@@ -100,9 +100,9 @@ W_v=1.
 
 Set:
 
-```math
+$$
 R_4^{gate}=1.
-```
+$$
 
 | `W_v` | Tau mass | Interpretation |
 |---:|---:|---|
@@ -123,9 +123,9 @@ R_4^{gate}=1.
 
 If the raw fourth-mode stability magnitude were used directly as a multiplier, for example `R_4 = 2`, then:
 
-```math
+$$
 m_\tau\approx1846.453\ \mathrm{MeV}.
-```
+$$
 
 This overshoots the tau-like target.
 

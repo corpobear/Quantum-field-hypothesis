@@ -12,21 +12,21 @@ The toy model predicts three stable modes and fourth-mode failure.
 
 Using:
 
-```math
+$$
 C_n=2^n
-```
+$$
 
 and:
 
-```math
+$$
 S_n=an-2^n
-```
+$$
 
 three stable modes and fourth failure occur when:
 
-```math
+$$
 \frac{8}{3}<a<4
-```
+$$
 
 If a stable fourth charged-lepton-like generation were confirmed, the model would be under serious pressure.
 
@@ -49,35 +49,35 @@ fourth mode: fails as a localized generation
 
 The Higgs response is modeled as a window, not an infinite growth mechanism:
 
-```math
+$$
 H(C_n)=e^{-\frac{(C_n-C_\star)^2}{2\sigma_H^2}}
-```
+$$
 
 or log-fractal:
 
-```math
+$$
 H(C_n)=e^{-\frac{(\ln C_n-\ln C_\star)^2}{2w^2}}
-```
+$$
 
 ### 5. Channel transfer should depend on compatibility
 
 Transfer between channels should be strongest when coherence is high and complexity/mass mismatch is small:
 
-```math
+$$
 T_{i\rightarrow s}
 =
 Q_iQ_s
 e^{-\frac{(C_i-C_s)^2}{2\sigma_C^2}}
 e^{-\frac{(m_i-m_s)^2}{2\sigma_m^2}}
-```
+$$
 
 ### 6. Black holes suppress external channel transfer
 
 A black hole is modeled as an internal-channel confinement region:
 
-```math
+$$
 T_{BH\rightarrow outside}\approx 0
-```
+$$
 
 ## Near-term test target
 

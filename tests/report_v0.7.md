@@ -12,15 +12,15 @@ Can the one-point shadow-anchor rule be derived rather than assumed?
 
 Earlier notes proposed:
 
-```math
+$$
 f_0 = \frac{7}{8}
-```
+$$
 
 for the tau-like third mode because:
 
-```math
+$$
 C_3=8
-```
+$$
 
 and the shadow shares one point with the origin.
 
@@ -38,42 +38,42 @@ The derivation uses three assumptions already present in the MCIFT toy framework
 
 A shadow with no contact is an unanchored duplicate, not a real shadow.
 
-```math
+$$
 k \ge 1
-```
+$$
 
 where
 
-```math
+$$
 k=|K_8\cap S_8|.
-```
+$$
 
 ### Assumption B — vibration opens exchange
 
 Exchange strengthens when information states, vibration frequencies, and phases align:
 
-```math
+$$
 \Gamma_{ij}
 =
 g
 \exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
 \exp\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
 \cos^2(\phi_i-\phi_j).
-```
+$$
 
 ### Assumption C — directional exchange creates motion
 
 Directional exchange gives a velocity-like motion term:
 
-```math
+$$
 \vec{\Gamma}_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}\vec{d}_{ij}
-```
+$$
 
 and
 
-```math
+$$
 \beta_n=\frac{v_n}{c_*}=\tanh(\eta|\vec{\Gamma}_n|).
-```
+$$
 
 ---
 
@@ -81,9 +81,9 @@ and
 
 If a shadow has `k` contact points with the original knot, the number of pairwise contact bridges is:
 
-```math
+$$
 M(k)=\frac{k(k-1)}{2}.
-```
+$$
 
 Values:
 
@@ -111,31 +111,31 @@ Thus two points are the first geometry that can create a vibrating origin-shadow
 
 Define bridge resonance between two contact points `a` and `b`:
 
-```math
+$$
 R_{ab}=\Gamma_a\Gamma_b\cos^2(\phi_a-\phi_b).
-```
+$$
 
 Define merger-motion as the origin-directed motion created by all contact bridges:
 
-```math
+$$
 v_{\mathrm{merge}}(k)
 \propto
 \sum_{a<b}^{k}R_{ab}.
-```
+$$
 
 Then:
 
-```math
+$$
 v_{\mathrm{merge}}(1)=0
-```
+$$
 
 because there is no pair of contact points.
 
 But:
 
-```math
+$$
 v_{\mathrm{merge}}(2)\propto R_{12}>0
-```
+$$
 
 whenever the two contact points resonate.
 
@@ -147,47 +147,47 @@ So two-point contact creates the first nonzero merger-motion.
 
 A stable shadow must satisfy:
 
-```math
+$$
 k\ge1
-```
+$$
 
 and
 
-```math
+$$
 v_{\mathrm{merge}}(k)=0.
-```
+$$
 
 Since merger-motion appears when pairwise bridges exist, the no-merger condition requires:
 
-```math
+$$
 M(k)=0.
-```
+$$
 
 That means:
 
-```math
+$$
 \frac{k(k-1)}{2}=0.
-```
+$$
 
 Solutions:
 
-```math
+$$
 k=0
-```
+$$
 
 or
 
-```math
+$$
 k=1.
-```
+$$
 
 But `k=0` violates the connection requirement.
 
 Therefore:
 
-```math
+$$
 k_*=1.
-```
+$$
 
 This is the minimal stable shadow-anchor result.
 
@@ -197,21 +197,21 @@ This is the minimal stable shadow-anchor result.
 
 The independent shadow echo fraction is:
 
-```math
+$$
 B_8(k)=\frac{8-k}{8}.
-```
+$$
 
 With the stable value:
 
-```math
+$$
 k=1,
-```
+$$
 
 we get:
 
-```math
+$$
 B_8(1)=\frac{8-1}{8}=\frac{7}{8}.
-```
+$$
 
 Thus the tau echo fraction follows from:
 
@@ -255,9 +255,9 @@ many contacts -> many bridges -> accelerated merger pressure
 
 The model predicts that if the tau shadow geometry were forced into two-contact form, the echo fraction would become:
 
-```math
+$$
 f(2)=\frac{6}{8}=\frac{3}{4}.
-```
+$$
 
 Using the same shadow-projection correction structure, this shifts the tau-like mass away from the Koide high-root by roughly `0.97 MeV` compared with the `7/8` case.
 

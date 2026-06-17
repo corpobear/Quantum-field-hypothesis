@@ -10,15 +10,15 @@
 
 In the current MCIFT toy model, the tau-like third mode has complexity
 
-```math
+$$
 C_3 = 2^3 = 8.
-```
+$$
 
 The shadow projection previously used the local echo fraction
 
-```math
+$$
 f_0 = 1 - \frac{1}{C_3} = \frac{7}{8}.
-```
+$$
 
 This note gives a geometric reason for that fraction.
 
@@ -32,43 +32,43 @@ The proposed interpretation is:
 
 Let the original eight-sector knot be
 
-```math
+$$
 K_8 = \{p_1,p_2,p_3,p_4,p_5,p_6,p_7,p_8\}.
-```
+$$
 
 Let its shadow be
 
-```math
+$$
 S_8 = \{s_1,s_2,s_3,s_4,s_5,s_6,s_7,s_8\}.
-```
+$$
 
 Assume the shadow shares one anchor point with the original:
 
-```math
+$$
 K_8 \cap S_8 = \{p_*\}.
-```
+$$
 
 That shared point is not counted as an independent shadow echo, because it already belongs to the original-shadow bridge.
 
 The independent shadow sector count is therefore
 
-```math
+$$
 N_{\mathrm{echo}} = C_3 - 1 = 7.
-```
+$$
 
 The independent shadow completion is
 
-```math
+$$
 B_3 = \frac{N_{\mathrm{echo}}}{C_3}
     = \frac{C_3 - 1}{C_3}
     = \frac{7}{8}.
-```
+$$
 
 So the old tau echo factor can be reinterpreted as
 
-```math
+$$
 f_0 = B_3.
-```
+$$
 
 Plainly:
 
@@ -85,15 +85,15 @@ The missing `1/8` is not destroyed. It is the common point where origin and shad
 
 If the shadow does not touch the original knot, then
 
-```math
+$$
 K_8 \cap S_8 = \varnothing.
-```
+$$
 
 The formal echo count would be
 
-```math
+$$
 B_3(0) = \frac{8}{8} = 1.
-```
+$$
 
 But this is not a true shadow in the model. It is an unanchored duplicate.
 
@@ -117,13 +117,13 @@ Now add vibration.
 
 In MCIFT, exchange is strongest when information states and vibration frequencies are similar. A simplified exchange term has the form
 
-```math
+$$
 \Gamma_{ij}
 = g
 \exp\!\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
 \exp\!\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
 \cos^2(\phi_i-\phi_j).
-```
+$$
 
 So if two origin-shadow contact points vibrate at similar frequency and phase, they do not merely touch. They begin to phase-lock.
 
@@ -161,17 +161,17 @@ A resonance bridge reduces the independence of the shadow. The shadow begins to 
 
 Let
 
-```math
+$$
 k = |K_8 \cap S_8|
-```
+$$
 
 be the number of shared origin-shadow contact points.
 
 The independent echo fraction is
 
-```math
+$$
 B_8(k)=\frac{8-k}{8}.
-```
+$$
 
 The cases are:
 
@@ -185,9 +185,9 @@ k = 8 -> total merger; no independent shadow echo
 
 For `k = 1`,
 
-```math
+$$
 B_8(1) = \frac{8-1}{8} = \frac{7}{8}.
-```
+$$
 
 This is the desired tau echo fraction.
 
@@ -199,42 +199,42 @@ The reason two points are dangerous is that multiple contact points create pairw
 
 For `k` shared contact points, the number of pairwise bridges is
 
-```math
+$$
 M(k)=\frac{k(k-1)}{2}.
-```
+$$
 
 For one contact point:
 
-```math
+$$
 M(1)=0.
-```
+$$
 
 So there is no bridge along which the origin and shadow can phase-lock.
 
 For two contact points:
 
-```math
+$$
 M(2)=1.
-```
+$$
 
 This is the first possible merger bridge.
 
 For three contact points:
 
-```math
+$$
 M(3)=3.
-```
+$$
 
 The merger pressure grows quickly.
 
 A toy shadow-stability function can therefore be written as
 
-```math
+$$
 \mathcal{S}_{\mathrm{shadow}}(k)
 = \alpha k
 - \beta\frac{k(k-1)}{2}
 - \frac{\gamma}{k+1}.
-```
+$$
 
 Interpretation:
 
@@ -244,9 +244,9 @@ Interpretation:
 
 Under the minimal-anchor condition, the preferred stable contact number is
 
-```math
+$$
 k_* = 1.
-```
+$$
 
 This gives an anchored shadow with no merger bridge.
 
@@ -260,15 +260,15 @@ The proposed principle is:
 
 This forces
 
-```math
+$$
 k=1
-```
+$$
 
 and therefore, for the eight-sector tau knot,
 
-```math
+$$
 f_0 = \frac{8-1}{8}=\frac{7}{8}.
-```
+$$
 
 ---
 

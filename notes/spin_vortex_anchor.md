@@ -33,15 +33,15 @@ Let `K_C` be an original knot with complexity `C`, and let `S_C` be its shadow/c
 
 Define the contact count:
 
-```math
+$$
 k=|K_C\cap S_C|.
-```
+$$
 
 The v0.7 stability result gives:
 
-```math
+$$
 k_*=1.
-```
+$$
 
 The single point is required for connection, while additional points create pairwise vibrating bridges and origin-directed merger-motion.
 
@@ -51,21 +51,21 @@ The single point is required for connection, while additional points create pair
 
 If one sector is pinned by the anchor, the remaining independent circulating fraction is:
 
-```math
+$$
 B_C(1)=\frac{C-1}{C}.
-```
+$$
 
 For the tau-like third mode:
 
-```math
+$$
 C_3=8,
-```
+$$
 
 so:
 
-```math
+$$
 B_8(1)=\frac{8-1}{8}=\frac{7}{8}.
-```
+$$
 
 This is interpreted as the free original-shadow vortex fraction.
 
@@ -75,22 +75,22 @@ This is interpreted as the free original-shadow vortex fraction.
 
 Let:
 
-```math
+$$
 \Omega_K
-```
+$$
 
 be the effective vortex spin of the full original-shadow knot.
 
 A simple spin-transfer ansatz is:
 
-```math
+$$
 \Omega_K
 =
 \Omega_0
 \left(
 1+\lambda_{a}\frac{C-1}{C}
 \right),
-```
+$$
 
 where:
 
@@ -100,14 +100,14 @@ where:
 
 For the tau-like knot:
 
-```math
+$$
 \Omega_3
 =
 \Omega_0
 \left(
 1+\lambda_a\frac{7}{8}
 \right).
-```
+$$
 
 This does not yet derive `lambda_a`; it gives a structural place where the one-point anchor can influence the whole original/shadow spin.
 
@@ -119,15 +119,15 @@ The Higgs response is treated as a finite window. The v0.8 interpretation adds t
 
 A compact compatibility factor can be written:
 
-```math
+$$
 H_\Omega(\Omega_K)
 =
 \exp\left[-\frac{(\Omega_K-\Omega_H)^2}{2\sigma_\Omega^2}\right].
-```
+$$
 
 Then the toy rest-mass rule can be extended as:
 
-```math
+$$
 m_K
 =
 m_0
@@ -137,7 +137,7 @@ H_{\log}(C_K)
 H_\Omega(\Omega_K)
 \max(S_K,0)
 \Delta_K^2.
-```
+$$
 
 However, the immediate charged-lepton test keeps the older amplitude-correction form and reinterprets the `7/8` term as one-anchor spin-vortex circulation.
 
@@ -147,33 +147,33 @@ However, the immediate charged-lepton test keeps the older amplitude-correction 
 
 The existing shadow amplitude correction is:
 
-```math
+$$
 \Delta(f)=1+\frac{1}{56}+f\frac{1}{448}.
-```
+$$
 
 In v0.8, the tau-like completion fraction is:
 
-```math
+$$
 f=B_8(1)=\frac{7}{8}.
-```
+$$
 
 Therefore:
 
-```math
+$$
 \Delta_{anchor}
 =
 1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}
 =
 1.019810267857\ldots
-```
+$$
 
 and:
 
-```math
+$$
 m_\tau^{anchor}
 =
 m_\tau^{base}\Delta_{anchor}^2.
-```
+$$
 
 ---
 

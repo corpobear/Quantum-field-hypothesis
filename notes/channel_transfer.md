@@ -4,9 +4,9 @@
 
 Channel transfer is the process by which information moves between internal channels of the field:
 
-```math
+$$
 \Psi(x,y,z,t,c_1) \rightarrow \Psi(x,y,z,t,c_2)
-```
+$$
 
 Examples:
 
@@ -40,13 +40,13 @@ In MCIFT language:
 
 For incoming cluster `i` and receiving surface `s`:
 
-```math
+$$
 T_{i\rightarrow s}
 =
 Q_iQ_s
 e^{-\frac{(C_i-C_s)^2}{2\sigma_C^2}}
 e^{-\frac{(m_i-m_s)^2}{2\sigma_m^2}}
-```
+$$
 
 where:
 

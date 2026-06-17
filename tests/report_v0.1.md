@@ -56,47 +56,47 @@ References:
 
 The current toy model uses:
 
-```math
+$$
 \Psi(x,y,z,t,c)
-```
+$$
 
 where `c` is an internal channel coordinate.
 
 Cluster complexity:
 
-```math
+$$
 C_n = 2^n
-```
+$$
 
 Coherence:
 
-```math
+$$
 Q_n = an
-```
+$$
 
 Stability:
 
-```math
+$$
 S_n = an - 2^n
-```
+$$
 
 Fractal catching surface:
 
-```math
+$$
 A_n = (C_n-1)^{D_f}
-```
+$$
 
 Finite Higgs response:
 
-```math
+$$
 H(C_n)=e^{-\frac{(C_n-C_\star)^2}{2\sigma_H^2}}
-```
+$$
 
 Mass rule:
 
-```math
+$$
 m_n = m_0 (C_n-1)^{D_f} H(C_n)\max(S_n,0)
-```
+$$
 
 Default locked values tested:
 
@@ -111,9 +111,9 @@ C_n = 2^n
 
 Using:
 
-```math
+$$
 S_n = 3.5n - 2^n
-```
+$$
 
 we get:
 
@@ -131,15 +131,15 @@ This part works internally.
 
 For the general condition:
 
-```math
+$$
 S_n = an - 2^n
-```
+$$
 
 exactly three modes survive and the fourth fails when:
 
-```math
+$$
 \frac{8}{3}<a<4
-```
+$$
 
 ### Strength
 
@@ -153,9 +153,9 @@ The parameter `a` is not yet derived from deeper physics. This is currently an i
 
 This test removes the finite Higgs window and uses only:
 
-```math
+$$
 m_n = m_0(C_n-1)^{3.5}S_n
-```
+$$
 
 `m_0` is calibrated from the electron mass.
 
@@ -192,9 +192,9 @@ C_n = 2^n
 
 and uses a linear Gaussian Higgs response:
 
-```math
+$$
 H(C_n)=e^{-\frac{(C_n-6)^2}{2\sigma_H^2}}
-```
+$$
 
 The electron and muon masses are used for calibration:
 
@@ -214,12 +214,12 @@ m_0       = 0.9810733100
 
 The model ratio between muon and electron is:
 
-```math
+$$
 \frac{m_2}{m_1}
 =
 \frac{(C_2-1)^{3.5}S_2}{(C_1-1)^{3.5}S_1}
 \exp\left(\frac{(C_1-6)^2-(C_2-6)^2}{2\sigma_H^2}\right)
-```
+$$
 
 With:
 
@@ -298,9 +298,9 @@ C_n = 2^n
 
 but uses a log-fractal Higgs response:
 
-```math
+$$
 H(C_n)=e^{-\frac{(\ln C_n-\ln 6)^2}{2w^2}}
-```
+$$
 
 The electron and muon masses are used for calibration:
 
@@ -366,9 +366,9 @@ sigma_H = 2.8426396770
 
 The fitted value of `D_f` is close to the proposed structural value:
 
-```math
+$$
 D_f = 3.5
-```
+$$
 
 ### Strength
 
@@ -382,9 +382,9 @@ This is not a prediction. It is a fit. A model that uses all three masses to fit
 
 The charged leptons are known to approximately satisfy Koide's empirical relation:
 
-```math
+$$
 Q = \frac{m_e+m_\mu+m_\tau}{(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau})^2}\approx \frac{2}{3}
-```
+$$
 
 Using the masses in this report:
 
@@ -440,9 +440,9 @@ MCIFT does not yet derive Koide's formula. Until it does, Koide remains a strong
 
 MCIFT proposes:
 
-```math
+$$
 T_{BH\rightarrow outside}\approx 0
-```
+$$
 
 meaning black holes are internal-channel confinement regions.
 

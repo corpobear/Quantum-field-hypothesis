@@ -16,9 +16,9 @@ coherent knot -> internal exchange -> Higgs response -> mass amplitude -> square
 
 v0.7 derived the stable one-point original/shadow anchor:
 
-```math
+$$
 k_*=1.
-```
+$$
 
 v0.8 reinterpreted this as a spin-vortex rule:
 
@@ -28,9 +28,9 @@ one pinned sector + remaining circulating sectors -> (C-1)/C free spin-vortex fr
 
 For the tau-like eight-sector knot:
 
-```math
+$$
 B_8(1)=\frac{7}{8}.
-```
+$$
 
 v0.9 adds the final source idea:
 
@@ -42,17 +42,17 @@ v0.9 adds the final source idea:
 
 The full MCIFT field is:
 
-```math
+$$
 \Psi(x,y,z,t,c),
-```
+$$
 
 where `c` is an internal channel coordinate.
 
 For a two-dimensional projected toy picture, write:
 
-```math
+$$
 \psi(u,v,t,c).
-```
+$$
 
 This projected form is only a simplification for studying vortex geometry.
 
@@ -62,21 +62,21 @@ This projected form is only a simplification for studying vortex geometry.
 
 Let the visible/original knot field be:
 
-```math
+$$
 \psi_K,
-```
+$$
 
 and the shadow/complementary field be:
 
-```math
+$$
 \psi_S.
-```
+$$
 
 The original/shadow imbalance field is:
 
-```math
+$$
 \psi_{OS}=\psi_K-\psi_S.
-```
+$$
 
 This is the field that carries the mass-amplitude imbalance.
 
@@ -86,15 +86,15 @@ This is the field that carries the mass-amplitude imbalance.
 
 Define the projected original/shadow current:
 
-```math
+$$
 J_{OS}=\operatorname{Im}\left(\psi_{OS}^{*}\nabla\psi_{OS}\right).
-```
+$$
 
 The projected vortex curl is:
 
-```math
+$$
 \Omega_{OS}=\nabla\times J_{OS}.
-```
+$$
 
 Interpretation:
 
@@ -113,21 +113,21 @@ Let `C_a` be the complexity of anchor `a`, and let `k_* = 1` be the stable ancho
 
 The free circulation fraction is:
 
-```math
+$$
 B_{C_a}(1)=\frac{C_a-1}{C_a}.
-```
+$$
 
 For the tau-like third mode:
 
-```math
+$$
 C_3=8,
-```
+$$
 
 therefore:
 
-```math
+$$
 B_8(1)=\frac{7}{8}.
-```
+$$
 
 ---
 
@@ -135,9 +135,9 @@ B_8(1)=\frac{7}{8}.
 
 The anchor tip is not modeled as an infinite singularity. It is a finite source core:
 
-```math
+$$
 \delta_{\epsilon,a}^{(\varphi)}(u-u_a,v-v_a,c-c_H),
-```
+$$
 
 where:
 
@@ -148,15 +148,15 @@ where:
 
 A possible golden spiral profile is:
 
-```math
+$$
 r(\theta)=r_0\varphi^{\theta/2\pi},
-```
+$$
 
 with:
 
-```math
+$$
 \varphi=\frac{1+\sqrt{5}}{2}.
-```
+$$
 
 The spiral profile shapes where the tip overlaps the Higgs channel. It is not a direct mass multiplier.
 
@@ -166,13 +166,13 @@ The spiral profile shapes where the tip overlaps the Higgs channel. It is not a 
 
 The time-dependent Higgs overlap is:
 
-```math
+$$
 O_{\varphi,a}(t)
 =
 \exp\left[-\frac{(\omega_{\varphi,a}(t)-\omega_H)^2}{2\sigma_\omega^2}\right]
 \cos^2\left(\theta_{\varphi,a}(t)-\theta_H\right)
 \exp\left[-\frac{d_{c,H,a}^{2}}{2\sigma_c^2}\right].
-```
+$$
 
 where:
 
@@ -185,9 +185,9 @@ where:
 
 A minimal frequency wobble model is:
 
-```math
+$$
 \omega_{\varphi,a}(t)=\omega_H+\Delta\omega_a\sin(\varphi t+\alpha_a).
-```
+$$
 
 ---
 
@@ -195,7 +195,7 @@ A minimal frequency wobble model is:
 
 The v0.9 candidate field equation is:
 
-```math
+$$
 \left(
 \partial_t^2
 -
@@ -212,17 +212,17 @@ V'(\psi)
 B_{C_a}(1)
 O_{\varphi,a}(t)
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 This can be written compactly as:
 
-```math
+$$
 \mathcal{D}\psi=\sum_a\mathcal{S}_{tip,a},
-```
+$$
 
 with:
 
-```math
+$$
 \mathcal{S}_{tip,a}
 =
 \lambda_a
@@ -230,7 +230,7 @@ with:
 B_{C_a}(1)
 O_{\varphi,a}(t)
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 ---
 
@@ -238,41 +238,41 @@ O_{\varphi,a}(t)
 
 The source contributes to mass amplitude, not directly to final mass:
 
-```math
+$$
 \frac{dA_K}{dt}
 =
 \int
 \mathcal{S}_{tip}
 \,du\,dv\,dc.
-```
+$$
 
 The final rest mass remains:
 
-```math
+$$
 m_K=A_K^2.
-```
+$$
 
 For a reduced charged-lepton toy test, this becomes:
 
-```math
+$$
 A_\tau
 =
 A_\tau^{base}
 \left[
 1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right].
-```
+$$
 
 Therefore:
 
-```math
+$$
 m_\tau
 =
 m_\tau^{base}
 \left[
 1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right]^2.
-```
+$$
 
 ---
 

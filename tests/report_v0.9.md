@@ -32,7 +32,7 @@ This is not a proof of real particle physics. It is a consistency and sensitivit
 
 The proposed field equation is:
 
-```math
+$$
 \left(
 \partial_t^2
 -
@@ -49,27 +49,27 @@ V'(\psi)
 B_{C_a}(1)
 O_{\varphi,a}(t)
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 where:
 
-```math
+$$
 B_{C_a}(1)=\frac{C_a-1}{C_a}
-```
+$$
 
 is the one-anchor free spin-vortex fraction.
 
 For the tau-like third mode:
 
-```math
+$$
 C_3=8,
-```
+$$
 
 so:
 
-```math
+$$
 B_8(1)=\frac{7}{8}.
-```
+$$
 
 ---
 
@@ -77,25 +77,25 @@ B_8(1)=\frac{7}{8}.
 
 The time-dependent resonance overlap is:
 
-```math
+$$
 O_{\varphi,a}(t)
 =
 \exp\left[-\frac{(\omega_{\varphi,a}(t)-\omega_H)^2}{2\sigma_\omega^2}\right]
 \cos^2\left(\theta_{\varphi,a}(t)-\theta_H\right)
 \exp\left[-\frac{d_{c,H,a}^{2}}{2\sigma_c^2}\right].
-```
+$$
 
 Minimal Fibonacci/golden wobble:
 
-```math
+$$
 \omega_\varphi(t)=\omega_H+\Delta\omega\sin(\varphi t),
-```
+$$
 
 with:
 
-```math
+$$
 \varphi=\frac{1+\sqrt{5}}{2}.
-```
+$$
 
 The Fibonacci/golden geometry is interpreted as shaping the resonance path, not multiplying mass directly.
 
@@ -107,35 +107,35 @@ The source contributes to mass amplitude.
 
 Reduced amplitude equation:
 
-```math
+$$
 A_\tau
 =
 A_\tau^{base}
 \left[
 1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right].
-```
+$$
 
 Mass is amplitude squared:
 
-```math
+$$
 m_\tau
 =
 m_\tau^{base}
 \left[
 1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right]^2.
-```
+$$
 
 Inputs:
 
-```math
+$$
 m_\tau^{base}=1708.60405054\ \mathrm{MeV},
-```
+$$
 
-```math
+$$
 m_\tau^{real}=1776.86\ \mathrm{MeV}.
-```
+$$
 
 ---
 
@@ -143,9 +143,9 @@ m_\tau^{real}=1776.86\ \mathrm{MeV}.
 
 Solving for the average overlap needed to hit the real tau value gives:
 
-```math
+$$
 \langle O_\varphi\rangle=0.9837806705.
-```
+$$
 
 Interpretation:
 
@@ -160,15 +160,15 @@ but it does not need perfect overlap.
 
 Using:
 
-```math
+$$
 O_\varphi(t)=\exp\left[-\frac{(\Delta\omega\sin(\varphi t))^2}{2\sigma_\omega^2}\right],
-```
+$$
 
 we test different values of:
 
-```math
+$$
 r=\frac{\Delta\omega}{\sigma_\omega}.
-```
+$$
 
 | `r = Delta omega / sigma omega` | `<O_phi>` | Predicted tau | Error vs real tau |
 |---:|---:|---:|---:|
@@ -182,9 +182,9 @@ r=\frac{\Delta\omega}{\sigma_\omega}.
 
 Best reduced-fit value:
 
-```math
+$$
 \frac{\Delta\omega}{\sigma_\omega}\approx0.2563.
-```
+$$
 
 ---
 
@@ -192,9 +192,9 @@ Best reduced-fit value:
 
 The stricter overlap includes phase:
 
-```math
+$$
 O_\varphi(t)=O_{freq}(t)\cos^2(\theta_\varphi-\theta_H).
-```
+$$
 
 Using the best frequency setting, the phase-lock sensitivity is:
 
@@ -223,9 +223,9 @@ average overlap approx 0.98378
 
 This produces:
 
-```math
+$$
 m_\tau=1776.86\ \mathrm{MeV}
-```
+$$
 
 inside the reduced toy model.
 
@@ -242,9 +242,9 @@ when the Fibonacci-shaped original/shadow drill overlaps the Higgs resonance
 
 The `7/8` factor remains the one-anchor free circulation fraction for the tau-like eight-sector knot:
 
-```math
+$$
 B_8(1)=\frac{7}{8}.
-```
+$$
 
 The Fibonacci/golden shape controls the resonance path:
 

@@ -27,15 +27,15 @@ mass -> squared amplitude
 
 Use:
 
-```math
+$$
 R_4^{gate}=\frac{R_4}{R_4+R_*}.
-```
+$$
 
 This keeps:
 
-```math
+$$
 0\le R_4^{gate}\le1.
-```
+$$
 
 If the fourth-mode supply is weak, `R_4^gate` is near zero.
 
@@ -49,29 +49,29 @@ So a large supply means full availability, not unbounded mass.
 
 The captured fraction is controlled by the finite anchor-tip aperture:
 
-```math
+$$
 A_{tip,C}=P_C+B_C(1)E_C\langle O_\varphi\rangle.
-```
+$$
 
 For the tau-like eight-sector knot:
 
-```math
+$$
 P_8=\frac{1}{56},
-```
+$$
 
-```math
+$$
 E_8=\frac{1}{448},
-```
+$$
 
-```math
+$$
 B_8(1)=\frac{7}{8}.
-```
+$$
 
 Therefore:
 
-```math
+$$
 A_{tip,8}=\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle.
-```
+$$
 
 ---
 
@@ -79,7 +79,7 @@ A_{tip,8}=\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle.
 
 The v0.11 source term is:
 
-```math
+$$
 S_{tip,a}
 =
 \lambda_a
@@ -90,15 +90,15 @@ P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle
 \right]
 R_{4,a}^{gate}
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 The candidate field equation is:
 
-```math
+$$
 \left(\partial_t^2-c_*^2\nabla^2-D_c\partial_c^2+V'(\psi)\right)\psi
 =
 \sum_a S_{tip,a}.
-```
+$$
 
 ---
 
@@ -106,13 +106,13 @@ The candidate field equation is:
 
 Assume the finite Fibonacci-shaped core is normalized:
 
-```math
+$$
 \int \delta_{\epsilon,a}^{(\varphi)}\,du\,dv\,dc=1.
-```
+$$
 
 Then:
 
-```math
+$$
 \Sigma_a
 =
 \lambda_a
@@ -122,17 +122,17 @@ W_v(v_{tip,a})
 P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle
 \right]
 R_{4,a}^{gate}.
-```
+$$
 
 For the reduced tau test:
 
-```math
+$$
 \lambda_a\Omega_{OS,a}=1,
-```
+$$
 
 so:
 
-```math
+$$
 \Sigma_\tau
 =
 W_v
@@ -140,13 +140,13 @@ W_v
 \frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right]
 R_4^{gate}.
-```
+$$
 
 The mass rule remains:
 
-```math
+$$
 m_\tau=m_\tau^{base}(1+\Sigma_\tau)^2.
-```
+$$
 
 ---
 

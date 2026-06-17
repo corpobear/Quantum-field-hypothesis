@@ -20,17 +20,17 @@ This framework is not presented as established physics or as a replacement for q
 
 The proposed field is:
 
-```math
+$$
 \Psi(x,y,z,t,c)
-```
+$$
 
 where `x,y,z` are spatial coordinates, `t` is time, and `c` is an internal channel coordinate.
 
 Possible internal channels include:
 
-```math
+$$
 c\in\{\text{identity},\text{light},\text{Higgs},\text{phase},\text{charge},\text{knot},\text{exchange},\text{amplitude},\text{motion},\text{gravity},\text{entanglement},\text{shared channel},\text{confinement}\}.
-```
+$$
 
 The core claim is that particles are stable coherent clusters of this multi-channel field.
 
@@ -52,35 +52,35 @@ light activation = existence itself
 
 Use separate channel factors:
 
-```math
+$$
 L_i=\text{light / electromagnetic visibility activation}
-```
+$$
 
-```math
+$$
 H_i=\text{Higgs / mass-capture activation}
-```
+$$
 
-```math
+$$
 G_i=\text{gravitational projection}
-```
+$$
 
-```math
+$$
 K_i=\text{knot coherence}
-```
+$$
 
 Then:
 
-```math
+$$
 \mathrm{Visibility}_i=L_iK_i
-```
+$$
 
-```math
+$$
 \mathrm{Mass}_i=H_iK_i
-```
+$$
 
-```math
+$$
 \mathrm{Gravity}_i=G_iH_iK_i.
-```
+$$
 
 Matter-state terminology:
 
@@ -116,39 +116,39 @@ information cell
 
 Let `n` label the cluster mode. Use:
 
-```math
+$$
 C_n=2^n.
-```
+$$
 
 Thus:
 
-```math
+$$
 C_1=2,\quad C_2=4,\quad C_3=8,\quad C_4=16.
-```
+$$
 
 Let coherence grow approximately linearly:
 
-```math
+$$
 Q_n=an.
-```
+$$
 
 The original stability law is:
 
-```math
+$$
 S_n=an-2^n.
-```
+$$
 
 For exactly three modes to survive while the fourth fails:
 
-```math
+$$
 \frac{8}{3}<a<4.
-```
+$$
 
 Using the central toy value:
 
-```math
+$$
 a=3.5,
-```
+$$
 
 the first three modes are stable and the fourth mode fails. The failed fourth-mode sector is later treated as bounded reservoir availability rather than an extra stable particle.
 
@@ -158,52 +158,52 @@ the first three modes are stable and the fourth mode fails. The failed fourth-mo
 
 A pairwise exchange rule is:
 
-```math
+$$
 \Gamma_{ij}
 =
 g
 \exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
 \exp\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
 \cos^2(\phi_i-\phi_j).
-```
+$$
 
 Exchange is strongest when information, frequency, and phase align.
 
 For the whole knot:
 
-```math
+$$
 \Gamma_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}.
-```
+$$
 
 Define:
 
-```math
+$$
 X_n=e^{\eta\Gamma_n}.
-```
+$$
 
 A base rest-mass formula is:
 
-```math
+$$
 m_{0,n}=m_{scale}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0).
-```
+$$
 
 Mass is then treated amplitude-first:
 
-```math
+$$
 m_n=A_n^2.
-```
+$$
 
 If a base model produces:
 
-```math
+$$
 m_n^{base},
-```
+$$
 
 then an amplitude correction gives:
 
-```math
+$$
 m_n=m_n^{base}\Delta_n^2.
-```
+$$
 
 ---
 
@@ -211,45 +211,45 @@ m_n=m_n^{base}\Delta_n^2.
 
 Let the original eight-sector tau-like knot be `K_8` and the shadow be `S_8`. Define contact points:
 
-```math
+$$
 k=|K_8\cap S_8|.
-```
+$$
 
 A true shadow must connect:
 
-```math
+$$
 k\ge1.
-```
+$$
 
 Multiple contact points create bridges:
 
-```math
+$$
 M(k)=\frac{k(k-1)}{2}.
-```
+$$
 
 A stable shadow must avoid merger-motion, so require:
 
-```math
+$$
 M(k)=0.
-```
+$$
 
 Together:
 
-```math
+$$
 k_*=1.
-```
+$$
 
 For a `C`-sector knot, one pinned anchor leaves the free circulation fraction:
 
-```math
+$$
 B_C(1)=\frac{C-1}{C}.
-```
+$$
 
 For the tau-like eight-sector knot:
 
-```math
+$$
 B_8(1)=\frac{7}{8}.
-```
+$$
 
 ---
 
@@ -259,21 +259,21 @@ The Fibonacci/golden geometry shapes the path of the anchor-tip oscillation arou
 
 A minimal golden wobble is:
 
-```math
+$$
 \omega_\varphi(t)=\omega_H+\Delta\omega\sin(\varphi t),
-```
+$$
 
 where:
 
-```math
+$$
 \varphi=\frac{1+\sqrt{5}}{2}.
-```
+$$
 
 The averaged overlap used in the reduced tau-like test is:
 
-```math
+$$
 \langle O_\varphi\rangle\approx0.9837806705.
-```
+$$
 
 ---
 
@@ -281,9 +281,9 @@ The averaged overlap used in the reduced tau-like test is:
 
 The speed-dependent capture factor is:
 
-```math
+$$
 W_v(v)=\frac{\left(1-e^{-(v/v_{min})^2}\right)e^{-(v/v_{scatter})^2}}{W_{max}}.
-```
+$$
 
 This creates three regimes:
 
@@ -295,9 +295,9 @@ too fast  -> source scatters or is not retained
 
 At optimal capture speed:
 
-```math
+$$
 W_v=1.
-```
+$$
 
 ---
 
@@ -307,15 +307,15 @@ The failed fourth-mode sector is treated as a large available supply, not as a r
 
 Define:
 
-```math
+$$
 R_4^{gate}=\frac{R_4}{R_4+R_*}.
-```
+$$
 
 This keeps:
 
-```math
+$$
 0\le R_4^{gate}\le1.
-```
+$$
 
 ---
 
@@ -323,19 +323,19 @@ This keeps:
 
 Let:
 
-```math
+$$
 \mathcal{D}=\partial_t^2-c_*^2\nabla^2-D_c\partial_c^2+V'(\psi).
-```
+$$
 
 The source equation is:
 
-```math
+$$
 \mathcal{D}\psi=\sum_a S_{tip,a}.
-```
+$$
 
 The visible/tip source term is:
 
-```math
+$$
 S_{tip,a}
 =
 \lambda_a
@@ -344,13 +344,13 @@ W_v(v_{tip,a})
 \left[P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle\right]
 R_{4,a}^{gate}
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 For the tau-like eight-sector knot:
 
-```math
+$$
 P_8=\frac{1}{56},\quad E_8=\frac{1}{448},\quad B_8(1)=\frac{7}{8}.
-```
+$$
 
 ---
 
@@ -368,45 +368,45 @@ Eight-sector split:
 
 Visible aperture:
 
-```math
+$$
 A_{tip}=\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle.
-```
+$$
 
 Using:
 
-```math
+$$
 \langle O_\varphi\rangle=0.9837806705,
-```
+$$
 
 gives:
 
-```math
+$$
 A_{tip}=0.01977858948.
-```
+$$
 
 Dark side aperture:
 
-```math
+$$
 A_{side}=6\left(\frac{1}{56}\right)=0.1071428571.
-```
+$$
 
 Therefore:
 
-```math
+$$
 \frac{A_{side}}{A_{tip}}=5.417.
-```
+$$
 
 Planck 2018 gives the approximate comparison target:
 
-```math
+$$
 \frac{\Omega_c}{\Omega_b}\approx\frac{0.120}{0.0224}=5.357.
-```
+$$
 
 The toy ratio is within about 1.1 percent of the comparison value. A small side-efficiency factor:
 
-```math
+$$
 \epsilon_{sink}\approx0.989
-```
+$$
 
 matches the central value.
 
@@ -416,7 +416,7 @@ matches the central value.
 
 Visible source:
 
-```math
+$$
 S_{visible}
 =
 \lambda_+
@@ -425,11 +425,11 @@ W_{tip}
 A_{tip}
 R_4^{gate}
 \delta_{tip}^{(\varphi)}.
-```
+$$
 
 Dark side source:
 
-```math
+$$
 S_{dark}
 =
 -
@@ -439,27 +439,27 @@ W_{side}
 A_{side}
 R_4^{gate}
 \delta_{side}^{(\varphi)}.
-```
+$$
 
 where:
 
-```math
+$$
 \kappa_{sink}=-\nabla_\perp\cdot J_\perp.
-```
+$$
 
 The negative sign means inverse field orientation, not negative mass.
 
 Mass density uses magnitude:
 
-```math
+$$
 \rho_{dark}\propto |S_{dark}|.
-```
+$$
 
 Light/electromagnetic visibility is suppressed:
 
-```math
+$$
 L_{dark}\approx0.
-```
+$$
 
 ---
 

@@ -13,9 +13,9 @@
 
 MCIFT models physical reality as a multi-channel information field:
 
-```math
+$$
 \Psi(x,y,z,t,c)
-```
+$$
 
 The current chain is:
 
@@ -79,9 +79,9 @@ dark side channel -> missing transverse momentum and event imbalance
 
 Main proxy:
 
-```math
+$$
 R_{miss}=\frac{E_T^{miss}}{H_T}.
-```
+$$
 
 The first published-results comparison uses ATLAS monojet and multijet missing-momentum searches. Existing broad published searches report agreement with Standard Model expectations, so the v0.14 verdict is:
 
@@ -124,15 +124,15 @@ dark-manifest sector: six lateral side intakes
 
 The reduced aperture ratio is:
 
-```math
+$$
 \frac{A_{side}}{A_{tip}}=5.417.
-```
+$$
 
 The comparison target from Planck 2018 densities is approximately:
 
-```math
+$$
 \frac{0.120}{0.0224}=5.357.
-```
+$$
 
 This is an internal toy-model consistency result, not an experimental confirmation.
 

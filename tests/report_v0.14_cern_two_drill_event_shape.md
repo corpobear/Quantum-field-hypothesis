@@ -34,21 +34,21 @@ dark side channel -> missing transverse momentum and event imbalance
 
 Visible scale:
 
-```math
+$$
 H_T=\sum_{jets}p_T^{jet}.
-```
+$$
 
 Missing fraction:
 
-```math
+$$
 R_{miss}=\frac{E_T^{miss}}{H_T}.
-```
+$$
 
 Basic MCIFT event proxy:
 
-```math
+$$
 \frac{|S_{dark}|}{|S_{visible}|}\sim \frac{E_T^{miss}}{H_T}.
-```
+$$
 
 A candidate side-channel pattern should appear as a structured excess in high missing-momentum regions, especially when paired with jet or event-shape imbalance.
 
@@ -168,21 +168,21 @@ b-tag counts if available
 
 Derived variables:
 
-```math
+$$
 H_T=\sum p_T^{jet}
-```
+$$
 
-```math
+$$
 R_{miss}=E_T^{miss}/H_T
-```
+$$
 
-```math
+$$
 \Delta\phi_{min}=\min_i\Delta\phi(jet_i,E_T^{miss})
-```
+$$
 
-```math
+$$
 N_{jets}
-```
+$$
 
 Suggested regions:
 

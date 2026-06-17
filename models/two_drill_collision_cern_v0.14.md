@@ -35,27 +35,27 @@ side/tip geometry            -> event-shape anisotropy
 
 Suggested observables:
 
-```math
+$$
 H_T=\sum_{jets} p_T^{jet}
-```
+$$
 
-```math
+$$
 R_{miss}=\frac{E_T^{miss}}{H_T}
-```
+$$
 
-```math
+$$
 \Delta\phi(j_i,E_T^{miss})
-```
+$$
 
-```math
+$$
 N_{jets}
-```
+$$
 
 and, when available:
 
-```math
+$$
 \text{sphericity},\quad \text{thrust},\quad \text{centrality}.
-```
+$$
 
 ---
 
@@ -74,17 +74,17 @@ large missing transverse momentum
 
 The most basic proxy is:
 
-```math
+$$
 R_{dark}^{event}=\frac{E_T^{miss}}{H_T}.
-```
+$$
 
 A stronger geometry proxy is:
 
-```math
+$$
 R_{side/tip}^{event}
 =
 \frac{\text{transverse imbalance or side-flow}}{\text{leading visible jet scale}}.
-```
+$$
 
 ---
 
@@ -92,37 +92,37 @@ R_{side/tip}^{event}
 
 Visible drill source:
 
-```math
+$$
 S_{visible}
 =\lambda_+\Omega_z W_{tip}A_{tip}R_4^{gate}\delta_{tip}^{(\varphi)}.
-```
+$$
 
 Dark side source:
 
-```math
+$$
 S_{dark}
 = -\lambda_-\kappa_{sink}W_{side}A_{side}R_4^{gate}\delta_{side}^{(\varphi)}.
-```
+$$
 
 The sign marks inverse orientation, not negative mass.
 
 Collider proxy:
 
-```math
+$$
 |S_{dark}| \rightarrow E_T^{miss}\ \text{or invisible recoil}
-```
+$$
 
-```math
+$$
 |S_{visible}| \rightarrow H_T\ \text{or visible jet scale}
-```
+$$
 
 Thus:
 
-```math
+$$
 \frac{|S_{dark}|}{|S_{visible}|}
 \sim
 \frac{E_T^{miss}}{H_T}.
-```
+$$
 
 ---
 

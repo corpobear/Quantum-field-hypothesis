@@ -28,9 +28,9 @@ zero channel distance
 
 The MCIFT field is still written as:
 
-```math
+$$
 \Psi(x,y,z,t,c)
-```
+$$
 
 where:
 
@@ -40,45 +40,45 @@ where:
 
 For two knots `A` and `B`:
 
-```math
+$$
 \Psi_A=\Psi(x_A,t,c_A)
-```
+$$
 
-```math
+$$
 \Psi_B=\Psi(x_B,t,c_B)
-```
+$$
 
 They can be spatially separated:
 
-```math
+$$
 |x_A-x_B|\gg0
-```
+$$
 
 but channel-adjacent:
 
-```math
+$$
 |c_A-c_B|=0
-```
+$$
 
 ## Objective shared channel state
 
 A shared channel state is written as:
 
-```math
+$$
 \Omega_{AB}(c_s)
-```
+$$
 
 where `c_s` is the shared channel coordinate.
 
 The entangled pair is then modeled as:
 
-```math
+$$
 \Psi_{AB}
 =
 \Psi_A(x_A,t,c_s)
 \Psi_B(x_B,t,c_s)
 \Omega_{AB}(c_s)
-```
+$$
 
 This means the particles remain separate in ordinary space but are joined by one objective internal channel-state.
 
@@ -86,15 +86,15 @@ This means the particles remain separate in ordinary space but are joined by one
 
 Define spatial distance:
 
-```math
+$$
 d_x=|x_A-x_B|
-```
+$$
 
 Define channel distance:
 
-```math
+$$
 d_c=|c_A-c_B|
-```
+$$
 
 Normal causal signals are controlled by spatial distance `d_x`.
 
@@ -102,28 +102,28 @@ Entangled correlation is controlled by channel distance `d_c`.
 
 Shared channel condition:
 
-```math
+$$
 d_c=0
-```
+$$
 
 ## Updated entanglement strength
 
 The v0.5 entanglement strength was:
 
-```math
+$$
 \mathcal{E}_{AB}=O_{AB}\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
-```
+$$
 
 The v0.6 objective-channel update adds channel distance:
 
-```math
+$$
 \mathcal{E}_{AB}
 =
 \lambda_{AB}
 O_{AB}
 \exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
 \tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
-```
+$$
 
 where:
 
@@ -136,15 +136,15 @@ where:
 
 If the channel is shared:
 
-```math
+$$
 d_c=0
-```
+$$
 
 then:
 
-```math
+$$
 \exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]=1
-```
+$$
 
 so spatial separation does not suppress the correlation.
 
@@ -165,9 +165,9 @@ To turn shared-channel correlation into controllable communication, the model wo
 
 In the v0.5 tau correction, the required entanglement cancellation was:
 
-```math
+$$
 E_3=0.0002008838
-```
+$$
 
 or:
 
@@ -177,46 +177,46 @@ or:
 
 In v0.6, this becomes a shared-channel leakage:
 
-```math
+$$
 E_3
 =
 \lambda_3
 O_3
 \exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
 \tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)
-```
+$$
 
 For perfect channel sharing:
 
-```math
+$$
 d_c=0
-```
+$$
 
 so:
 
-```math
+$$
 E_3
 =
 \lambda_3
 O_3
 \tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)
-```
+$$
 
 If overlap is near perfect and exchange is saturated:
 
-```math
+$$
 O_3\approx1
-```
+$$
 
-```math
+$$
 \tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)\approx1
-```
+$$
 
 then:
 
-```math
+$$
 \lambda_3\approx E_3=0.0002008838
-```
+$$
 
 This means the tau echo-shadow shared-channel leakage is tiny: about `0.0201 percent`.
 

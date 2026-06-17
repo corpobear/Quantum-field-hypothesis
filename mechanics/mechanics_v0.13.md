@@ -46,9 +46,9 @@ MCIFT is a speculative toy framework. The mechanics below are internal model rul
 
 The core field is:
 
-```math
+$$
 \Psi(x,y,z,t,c)
-```
+$$
 
 where `x,y,z` are spatial coordinates, `t` is time, and `c` is an internal channel coordinate.
 
@@ -74,35 +74,35 @@ light activation = existence itself
 
 Channel factors:
 
-```math
+$$
 L_i=\text{light / electromagnetic visibility activation}
-```
+$$
 
-```math
+$$
 H_i=\text{Higgs / mass-capture activation}
-```
+$$
 
-```math
+$$
 G_i=\text{gravitational projection}
-```
+$$
 
-```math
+$$
 K_i=\text{knot coherence}
-```
+$$
 
 Resulting channel projections:
 
-```math
+$$
 \mathrm{Visibility}_i=L_iK_i
-```
+$$
 
-```math
+$$
 \mathrm{Mass}_i=H_iK_i
-```
+$$
 
-```math
+$$
 \mathrm{Gravity}_i=G_iH_iK_i
-```
+$$
 
 Matter-state terminology:
 
@@ -114,9 +114,9 @@ dark-manifest     mass-active and gravity-active, but light-inactive
 
 Dark-manifest condition:
 
-```math
+$$
 L_i\approx0,\quad H_i>0,\quad G_i>0,\quad K_i>0.
-```
+$$
 
 ---
 
@@ -128,15 +128,15 @@ The light channel is a visibility gate. A mismatch suppresses electromagnetic vi
 
 Compact rule:
 
-```math
+$$
 L_i=0\Rightarrow \mathrm{Visibility}_i=0
-```
+$$
 
 not:
 
-```math
+$$
 L_i=0\Rightarrow \mathrm{Mass}_i=0.
-```
+$$
 
 ---
 
@@ -146,21 +146,21 @@ L_i=0\Rightarrow \mathrm{Mass}_i=0.
 
 Mode complexity is modeled by binary growth:
 
-```math
+$$
 C_n=2^n.
-```
+$$
 
 So:
 
-```math
+$$
 C_1=2,\quad C_2=4,\quad C_3=8,\quad C_4=16.
-```
+$$
 
 The eight-sector knot used in the tau-like and dark-manifest tests is:
 
-```math
+$$
 C_3=8.
-```
+$$
 
 ---
 
@@ -170,39 +170,39 @@ C_3=8.
 
 A simple coherence law is:
 
-```math
+$$
 Q_n=an.
-```
+$$
 
 Original stability:
 
-```math
+$$
 S_n=an-2^n.
-```
+$$
 
 A cluster survives if:
 
-```math
+$$
 S_n>0.
-```
+$$
 
 The fourth mode fails if:
 
-```math
+$$
 S_4<0.
-```
+$$
 
 For exactly three stable modes and a failed fourth mode:
 
-```math
+$$
 \frac{8}{3}<a<4.
-```
+$$
 
 The central toy value used repeatedly is:
 
-```math
+$$
 a=3.5.
-```
+$$
 
 Then the fourth mode is treated as a failed sector that can supply bounded reservoir availability rather than as a fourth stable particle.
 
@@ -214,15 +214,15 @@ Then the fourth mode is treated as a failed sector that can supply bounded reser
 
 The mass-catching surface is:
 
-```math
+$$
 A_n=(C_n-1)^{D_f}.
-```
+$$
 
 The default toy exponent is:
 
-```math
+$$
 D_f=3.5+\epsilon.
-```
+$$
 
 Interpretation:
 
@@ -239,9 +239,9 @@ surface structure controls how much response can be caught.
 
 The finite Higgs-response channel can be modeled as:
 
-```math
+$$
 H(C_n)=\exp\left[-\frac{(\ln C_n-\ln C_*)^2}{2w^2}\right].
-```
+$$
 
 The Higgs channel is separated from the light channel:
 
@@ -261,22 +261,22 @@ Internal vibration opens exchange between similar information points.
 
 Pairwise exchange:
 
-```math
+$$
 \Gamma_{ij}
 =
 g
 \exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
 \exp\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
 \cos^2(\phi_i-\phi_j).
-```
+$$
 
 Exchange is strongest when information, frequency, and phase align.
 
 Whole-knot exchange:
 
-```math
+$$
 \Gamma_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}.
-```
+$$
 
 ---
 
@@ -286,21 +286,21 @@ Whole-knot exchange:
 
 Exchange/densification factor:
 
-```math
+$$
 X_n=e^{\eta\Gamma_n}.
-```
+$$
 
 Exchange-updated stability:
 
-```math
+$$
 S_n=3.5nX_n-C_n.
-```
+$$
 
 Exchange-updated rest mass:
 
-```math
+$$
 m_{0,n}=m_{scale}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0).
-```
+$$
 
 ---
 
@@ -310,51 +310,51 @@ m_{0,n}=m_{scale}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0).
 
 The model treats mass as squared amplitude:
 
-```math
+$$
 m_n=A_n^2.
-```
+$$
 
 A visible cluster has information pattern:
 
-```math
+$$
 I_n
-```
+$$
 
 and a complementary/shadow pattern:
 
-```math
+$$
 I_n^s.
-```
+$$
 
 Mass amplitude is:
 
-```math
+$$
 A_n=I_n-I_n^s.
-```
+$$
 
 If a base model gives:
 
-```math
+$$
 m_n^{base},
-```
+$$
 
 then:
 
-```math
+$$
 A_n^{base}=\sqrt{m_n^{base}}.
-```
+$$
 
 An amplitude correction:
 
-```math
+$$
 \Delta_n
-```
+$$
 
 produces:
 
-```math
+$$
 m_n=m_n^{base}\Delta_n^2.
-```
+$$
 
 ---
 
@@ -364,33 +364,33 @@ m_n=m_n^{base}\Delta_n^2.
 
 For the tau-like third mode:
 
-```math
+$$
 C_3=8.
-```
+$$
 
 Primary shadow term:
 
-```math
+$$
 s_1=\frac{1}{C_3(C_3-1)}=\frac{1}{56}.
-```
+$$
 
 Echo-shadow term:
 
-```math
+$$
 s_2=\frac{s_1}{C_3}=\frac{1}{448}.
-```
+$$
 
 Amplitude correction:
 
-```math
+$$
 \Delta(f)=1+s_1+fs_2.
-```
+$$
 
 Mass prediction:
 
-```math
+$$
 m_\tau(f)=m_\tau^{base}\Delta(f)^2.
-```
+$$
 
 The `7/8` projection gave the earlier near-Koide tau-like result.
 
@@ -404,33 +404,33 @@ Let `K_8` be the original eight-sector knot and `S_8` its shadow.
 
 Contact count:
 
-```math
+$$
 k=|K_8\cap S_8|.
-```
+$$
 
 A true shadow must connect:
 
-```math
+$$
 k\ge1.
-```
+$$
 
 Multiple contact points create bridges:
 
-```math
+$$
 M(k)=\frac{k(k-1)}{2}.
-```
+$$
 
 A stable shadow must avoid merger motion, so:
 
-```math
+$$
 M(k)=0.
-```
+$$
 
 Together:
 
-```math
+$$
 k_*=1.
-```
+$$
 
 ---
 
@@ -440,15 +440,15 @@ k_*=1.
 
 For a `C`-sector knot, one pinned anchor leaves:
 
-```math
+$$
 B_C(1)=\frac{C-1}{C}.
-```
+$$
 
 For `C=8`:
 
-```math
+$$
 B_8(1)=\frac{7}{8}.
-```
+$$
 
 Interpretation:
 
@@ -469,31 +469,31 @@ The Fibonacci/golden structure shapes the anchor-tip oscillation around the Higg
 
 Golden ratio:
 
-```math
+$$
 \varphi=\frac{1+\sqrt5}{2}.
-```
+$$
 
 Minimal wobble:
 
-```math
+$$
 \omega_\varphi(t)=\omega_H+\Delta\omega\sin(\varphi t).
-```
+$$
 
 Higgs overlap:
 
-```math
+$$
 O_{\varphi,a}(t)
 =
 \exp\left[-\frac{(\omega_{\varphi,a}(t)-\omega_H)^2}{2\sigma_\omega^2}\right]
 \cos^2(\theta_{\varphi,a}(t)-\theta_H)
 \exp\left[-\frac{d_{c,H,a}^{2}}{2\sigma_c^2}\right].
-```
+$$
 
 Reduced tau-like overlap:
 
-```math
+$$
 \langle O_\varphi\rangle=0.9837806705.
-```
+$$
 
 ---
 
@@ -503,14 +503,14 @@ Reduced tau-like overlap:
 
 The speed window is:
 
-```math
+$$
 W_v(v)
 =
 \frac{
 \left(1-e^{-(v/v_{min})^2}\right)
 e^{-(v/v_{scatter})^2}
 }{W_{max}}.
-```
+$$
 
 Interpretation:
 
@@ -532,19 +532,19 @@ The failed fourth-mode sector can be treated as a large available supply, but no
 
 Bounded gate:
 
-```math
+$$
 R_4^{gate}=\frac{R_4}{R_4+R_*}.
-```
+$$
 
 Limits:
 
-```math
+$$
 R_4\ll R_*\Rightarrow R_4^{gate}\approx0
-```
+$$
 
-```math
+$$
 R_4\gg R_*\Rightarrow R_4^{gate}\approx1
-```
+$$
 
 Interpretation:
 
@@ -562,19 +562,19 @@ funnel aperture = captured fraction
 
 Let:
 
-```math
+$$
 \mathcal{D}=\partial_t^2-c_*^2\nabla^2-D_c\partial_c^2+V'(\psi).
-```
+$$
 
 Then:
 
-```math
+$$
 \mathcal{D}\psi=\sum_a S_{tip,a}.
-```
+$$
 
 Visible/tip source:
 
-```math
+$$
 S_{tip,a}
 =
 \lambda_a
@@ -585,13 +585,13 @@ P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle
 \right]
 R_{4,a}^{gate}
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 For the tau-like eight-sector case:
 
-```math
+$$
 P_8=\frac{1}{56},\quad E_8=\frac{1}{448},\quad B_8(1)=\frac{7}{8}.
-```
+$$
 
 ---
 
@@ -601,7 +601,7 @@ P_8=\frac{1}{56},\quad E_8=\frac{1}{448},\quad B_8(1)=\frac{7}{8}.
 
 Integrated source:
 
-```math
+$$
 \Sigma_\tau
 =
 W_v
@@ -611,19 +611,19 @@ W_v
 \frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right]
 R_4^{gate}.
-```
+$$
 
 Mass rule:
 
-```math
+$$
 m_\tau=m_\tau^{base}(1+\Sigma_\tau)^2.
-```
+$$
 
 At `W_v=1`, `R_4^gate=1`, and `⟨Oφ⟩=0.9837806705`, the reduced tau-like result is:
 
-```math
+$$
 m_\tau=1776.86\ \mathrm{MeV}.
-```
+$$
 
 ---
 
@@ -641,21 +641,21 @@ velocity -> total effective energy increase
 
 A compact motion factor:
 
-```math
+$$
 m_{eff,n}=\gamma_nm_{0,n}.
-```
+$$
 
 with:
 
-```math
+$$
 \beta_n=\tanh(\eta|\vec{\Gamma}_n|)
-```
+$$
 
 and:
 
-```math
+$$
 \gamma_n=\cosh(\eta|\vec{\Gamma}_n|).
-```
+$$
 
 ---
 
@@ -667,20 +667,20 @@ Entanglement is modeled as shared amplitude through channel adjacency, not as co
 
 A compact shared-amplitude mass-defect form:
 
-```math
+$$
 m_{AB}=m_A+m_B-2\epsilon\mathcal{E}_{AB}\sqrt{m_A m_B}.
-```
+$$
 
 Shared-channel strength:
 
-```math
+$$
 \mathcal{E}_{AB}
 =
 \lambda_{AB}
 O_{AB}
 \exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
 \tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right).
-```
+$$
 
 Important caveat:
 
@@ -737,19 +737,19 @@ Eight-sector split:
 
 Visible aperture:
 
-```math
+$$
 A_{tip}
 =
 \frac{1}{56}
 +
 \frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle.
-```
+$$
 
 Dark side aperture:
 
-```math
+$$
 A_{side}=6\left(\frac{1}{56}\right).
-```
+$$
 
 ---
 
@@ -759,43 +759,43 @@ A_{side}=6\left(\frac{1}{56}\right).
 
 Using:
 
-```math
+$$
 \langle O_\varphi\rangle=0.9837806705,
-```
+$$
 
 gives:
 
-```math
+$$
 A_{tip}=0.01977858948
-```
+$$
 
-```math
+$$
 A_{side}=0.1071428571
-```
+$$
 
-```math
+$$
 \frac{A_{side}}{A_{tip}}=5.417.
-```
+$$
 
 Planck 2018 comparison values used in this toy check:
 
-```math
+$$
 \Omega_c h^2\approx0.120,\quad \Omega_b h^2\approx0.0224.
-```
+$$
 
 So:
 
-```math
+$$
 \frac{\Omega_c}{\Omega_b}\approx5.357.
-```
+$$
 
 The reduced v0.13 ratio is within about `1.1%` of the comparison value.
 
 Side-efficiency factor needed to match the central value:
 
-```math
+$$
 \epsilon_{sink}\approx0.989.
-```
+$$
 
 ---
 
@@ -803,7 +803,7 @@ Side-efficiency factor needed to match the central value:
 
 Visible source:
 
-```math
+$$
 S_{visible}
 =
 \lambda_+
@@ -812,11 +812,11 @@ W_{tip}
 A_{tip}
 R_4^{gate}
 \delta_{tip}^{(\varphi)}.
-```
+$$
 
 Dark source:
 
-```math
+$$
 S_{dark}
 =
 -
@@ -826,27 +826,27 @@ W_{side}
 A_{side}
 R_4^{gate}
 \delta_{side}^{(\varphi)}.
-```
+$$
 
 where:
 
-```math
+$$
 \kappa_{sink}=-\nabla_\perp\cdot J_\perp.
-```
+$$
 
 The negative sign means inverse field orientation, not negative mass.
 
 Mass density uses magnitude:
 
-```math
+$$
 \rho_{dark}\propto |S_{dark}|.
-```
+$$
 
 Light visibility is suppressed:
 
-```math
+$$
 L_{dark}\approx0.
-```
+$$
 
 ---
 
@@ -863,9 +863,9 @@ dark side channel -> missing transverse momentum and event imbalance
 
 Main proxy:
 
-```math
+$$
 R_{miss}=\frac{E_T^{miss}}{H_T}.
-```
+$$
 
 Current verdict:
 

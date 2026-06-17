@@ -8,21 +8,21 @@ This note records the shadow-projection update to the MCIFT toy model.
 
 The earlier shadow-amplitude model introduced a complementary pattern:
 
-```math
+$$
 I_n^s
-```
+$$
 
 and modeled mass as amplitude squared:
 
-```math
+$$
 m_n=A_n^2
-```
+$$
 
 with:
 
-```math
+$$
 A_n=I_n-I_n^s
-```
+$$
 
 The v0.4 update asks whether the fractional shadow correction should be treated as a projection geometry rather than a literal count of shadow objects.
 
@@ -30,27 +30,27 @@ The v0.4 update asks whether the fractional shadow correction should be treated 
 
 Koide's charged-lepton relation can be written as:
 
-```math
+$$
 \frac{A_1^2+A_2^2+A_3^2}{(A_1+A_2+A_3)^2}=\frac{2}{3}
-```
+$$
 
 where:
 
-```math
+$$
 A_i=\sqrt{m_i}
-```
+$$
 
 This is equivalent to saying that the charged-lepton amplitude vector:
 
-```math
+$$
 (\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})
-```
+$$
 
 lies at a 45-degree angle from the equal-amplitude direction:
 
-```math
+$$
 (1,1,1)
-```
+$$
 
 Thus the number `2/3` may be a projection ratio produced by angle geometry, not a literal fraction of a shadow object.
 
@@ -58,27 +58,27 @@ Thus the number `2/3` may be a projection ratio produced by angle geometry, not 
 
 For the tau-like third mode:
 
-```math
+$$
 C_3=2^3=8
-```
+$$
 
 The primary shadow term is modeled as:
 
-```math
+$$
 s_1=\frac{1}{C_3(C_3-1)}=\frac{1}{8\cdot7}=\frac{1}{56}
-```
+$$
 
 The first echo-shadow term is:
 
-```math
+$$
 s_2=\frac{s_1}{C_3}=\frac{1}{448}
-```
+$$
 
 Then the amplitude correction is:
 
-```math
+$$
 \Delta(f)=1+s_1+fs_2
-```
+$$
 
 where `f` is the echo-shadow projection fraction.
 
@@ -86,33 +86,33 @@ where `f` is the echo-shadow projection fraction.
 
 A natural Koide-inspired first test is:
 
-```math
+$$
 f=\frac{2}{3}
-```
+$$
 
 Then:
 
-```math
+$$
 \Delta_{2/3}=1+\frac{1}{56}+\frac{2}{3}\frac{1}{448}=1.0193452381
-```
+$$
 
 Using the baseline MCIFT tau value:
 
-```math
+$$
 m_\tau^{base}=1708.60405054\ \text{MeV}
-```
+$$
 
 and mass-as-amplitude-squared:
 
-```math
+$$
 m_\tau(f)=m_\tau^{base}\Delta(f)^2
-```
+$$
 
 we get:
 
-```math
+$$
 m_\tau^{2/3}=1775.35017984\ \text{MeV}
-```
+$$
 
 This is close to the observed tau input but slightly low.
 
@@ -120,59 +120,59 @@ This is close to the observed tau input but slightly low.
 
 The exact echo-shadow projection fraction needed to reach the observed tau input is:
 
-```math
+$$
 f_{obs}=0.8608080867
-```
+$$
 
 The exact echo-shadow projection fraction needed to reach the Koide high-root tau value is:
 
-```math
+$$
 f_{Koide}=0.8748242267
-```
+$$
 
 This is very close to:
 
-```math
+$$
 \frac{7}{8}=0.875
-```
+$$
 
 Since the tau mode has:
 
-```math
+$$
 C_3=8
-```
+$$
 
 this suggests a possible structural rule:
 
-```math
+$$
 f_3=1-\frac{1}{C_3}=\frac{7}{8}
-```
+$$
 
 ## Seven-eighths projection test
 
 Input:
 
-```math
+$$
 f=\frac{7}{8}
-```
+$$
 
 Then:
 
-```math
+$$
 \Delta_{7/8}=1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}=1.0198102679
-```
+$$
 
 and:
 
-```math
+$$
 m_\tau^{7/8}=1776.97039439\ \text{MeV}
-```
+$$
 
 This is nearly identical to the Koide high-root tau value:
 
-```math
+$$
 m_\tau^{Koide}=1776.96902708\ \text{MeV}
-```
+$$
 
 ## Interpretation
 

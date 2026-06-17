@@ -14,21 +14,21 @@ MCIFT translates this into channel language:
 
 Outside channel:
 
-```math
+$$
 \Psi(x,y,z,t,c_{\text{outside}})
-```
+$$
 
 Black-hole internal channel:
 
-```math
+$$
 \Psi(x,y,z,t,c_{\text{BH}})
-```
+$$
 
 The event horizon is modeled as a channel-transfer boundary:
 
-```math
+$$
 T_{BH\rightarrow outside}\approx 0
-```
+$$
 
 ## Interpretation
 

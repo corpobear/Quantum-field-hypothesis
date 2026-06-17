@@ -32,15 +32,15 @@ shared amplitude reduces duplicated mass
 
 For two knots `A` and `B`, define an inter-knot exchange rate:
 
-```math
+$$
 \Gamma_{AB}
-```
+$$
 
 Entanglement strength is modeled as:
 
-```math
+$$
 \mathcal{E}_{AB}=O_{AB}\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
-```
+$$
 
 where:
 
@@ -56,23 +56,23 @@ Fast exchange alone is not enough. The exchange must also be coherent and channe
 
 Because the MCIFT shadow model works in amplitude space:
 
-```math
+$$
 A=\sqrt{m}
-```
+$$
 
 entanglement is modeled as an amplitude-overlap correction.
 
 For two separate knots:
 
-```math
+$$
 m_{sep}=m_A+m_B
-```
+$$
 
 For entangled knots:
 
-```math
+$$
 m_{AB}=m_A+m_B-2\epsilon\mathcal{E}_{AB}\sqrt{m_Am_B}
-```
+$$
 
 where `epsilon` controls how much shared amplitude reduces duplicated mass.
 
@@ -82,43 +82,43 @@ This is a toy-model mass defect, not a claim of a new established law.
 
 In the v0.4 tau shadow-projection model:
 
-```math
+$$
 \Delta(f)=1+\frac{1}{56}+f\frac{1}{448}
-```
+$$
 
 where `f` is the echo-shadow completion fraction.
 
 The natural tau value was:
 
-```math
+$$
 f_0=\frac{7}{8}
-```
+$$
 
 because:
 
-```math
+$$
 C_3=8
-```
+$$
 
 and:
 
-```math
+$$
 f_0=1-\frac{1}{C_3}
-```
+$$
 
 The v0.5 update treats entanglement as a tiny cancellation of that local echo-shadow completion:
 
-```math
+$$
 f_{ent}=f_0(1-E_3)
-```
+$$
 
 where `E_3` is the tau echo-entanglement cancellation factor.
 
 The exact Koide-matching value is:
 
-```math
+$$
 E_3=0.0002008838
-```
+$$
 
 or:
 
@@ -128,9 +128,9 @@ or:
 
 Thus:
 
-```math
+$$
 f_{ent}=\frac{7}{8}(1-0.0002008838)=0.8748242267
-```
+$$
 
 ## Interpretation
 

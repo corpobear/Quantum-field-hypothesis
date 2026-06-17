@@ -36,35 +36,35 @@ In MCIFT language, light should be treated as the visibility/electromagnetic cha
 
 Use separate channel factors:
 
-```math
+$$
 L_i = \text{light / electromagnetic visibility activation}
-```
+$$
 
-```math
+$$
 H_i = \text{Higgs / mass-capture activation}
-```
+$$
 
-```math
+$$
 G_i = \text{gravitational projection}
-```
+$$
 
-```math
+$$
 K_i = \text{knot coherence}
-```
+$$
 
 Then:
 
-```math
+$$
 \mathrm{Visibility}_i=L_iK_i
-```
+$$
 
-```math
+$$
 \mathrm{Mass}_i=H_iK_i
-```
+$$
 
-```math
+$$
 \mathrm{Gravity}_i=G_iH_iK_i
-```
+$$
 
 This prevents the model from confusing invisibility with nonexistence.
 
@@ -74,9 +74,9 @@ This prevents the model from confusing invisibility with nonexistence.
 
 ### Unmanifest reservoir
 
-```math
+$$
 L_i\approx0,\quad H_i\approx0,\quad G_i\approx0,\quad K_i\approx0
-```
+$$
 
 Interpretation:
 
@@ -89,9 +89,9 @@ not a stable manifested knot
 
 ### Visible matter
 
-```math
+$$
 L_i>0,\quad H_i>0,\quad G_i>0,\quad K_i>0
-```
+$$
 
 Interpretation:
 
@@ -104,9 +104,9 @@ stable knot
 
 ### Dark-manifest matter
 
-```math
+$$
 L_i\approx0,\quad H_i>0,\quad G_i>0,\quad K_i>0
-```
+$$
 
 Interpretation:
 
@@ -153,27 +153,27 @@ If light does not activate a point, it does not enter the visible/electromagneti
 
 The old shorthand was:
 
-```math
+$$
 L_i=0\Rightarrow M_i=0.
-```
+$$
 
 The corrected rule is:
 
-```math
+$$
 L_i=0\Rightarrow \mathrm{Visibility}_i=0.
-```
+$$
 
 Mass instead depends on:
 
-```math
+$$
 H_iK_i.
-```
+$$
 
 Gravity depends on:
 
-```math
+$$
 G_iH_iK_i.
-```
+$$
 
 So the broad manifestation state is channel-dependent, not a single yes/no property.
 

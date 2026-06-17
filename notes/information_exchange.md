@@ -20,22 +20,22 @@ similar information + matching vibration -> higher exchange rate -> resonance ->
 
 Let:
 
-```math
+$$
 \Gamma_{ij}
-```
+$$
 
 be the information exchange rate between information-point `i` and information-point `j`.
 
 A simple toy exchange rule is:
 
-```math
+$$
 \Gamma_{ij}
 =
 g
 \exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
 \exp\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
 \cos^2(\phi_i-\phi_j)
-```
+$$
 
 where:
 
@@ -50,15 +50,15 @@ Exchange is strongest when information, frequency, and phase align.
 
 For a whole knot:
 
-```math
+$$
 \Gamma_n = \frac{1}{C_n}\sum_{i<j}\Gamma_{ij}
-```
+$$
 
 where:
 
-```math
+$$
 C_n=2^n
-```
+$$
 
 is the information complexity of the nth mode.
 
@@ -66,31 +66,31 @@ is the information complexity of the nth mode.
 
 The densification factor is modeled as:
 
-```math
+$$
 X_n=e^{\eta\Gamma_n}
-```
+$$
 
 where `eta` converts exchange rate into effective densification.
 
 For weak exchange:
 
-```math
+$$
 X_n \approx 1+\eta\Gamma_n
-```
+$$
 
 ## Updated stability
 
 The earlier stability law was:
 
-```math
+$$
 S_n=3.5n-2^n
-```
+$$
 
 With exchange-rate coherence, the updated stability law becomes:
 
-```math
+$$
 S_n=3.5nX_n-2^n
-```
+$$
 
 Interpretation:
 
@@ -102,21 +102,21 @@ exchange strengthens coherence, but complexity still fights back
 
 The exchange-rate toy mass formula is:
 
-```math
+$$
 m_n = m_0(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0)
-```
+$$
 
 with:
 
-```math
+$$
 S_n=3.5nX_n-C_n
-```
+$$
 
 and:
 
-```math
+$$
 C_n=2^n
-```
+$$
 
 ## Fourth-mode constraint
 
@@ -124,21 +124,21 @@ Mode 4 must still fail.
 
 For mode 4:
 
-```math
+$$
 S_4=14X_4-16
-```
+$$
 
 Failure requires:
 
-```math
+$$
 X_4<\frac{16}{14}=1.1428571429
-```
+$$
 
 Equivalently:
 
-```math
+$$
 \eta\Gamma_4 < \ln(1.1428571429) \approx 0.1335313926
-```
+$$
 
 This means the fourth mode may contain many possible communication paths, but its coherent exchange must remain below the stabilization threshold.
 

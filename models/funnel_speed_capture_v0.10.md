@@ -26,7 +26,7 @@ This introduces a Goldilocks-style capture window for the funnel tip.
 
 The v0.9 source term was:
 
-```math
+$$
 \mathcal{S}_{tip,a}
 =
 \lambda_a
@@ -34,7 +34,7 @@ The v0.9 source term was:
 B_{C_a}(1)
 O_{\varphi,a}(t)
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 where:
 
@@ -50,22 +50,22 @@ where:
 
 Let:
 
-```math
+$$
 v_{tip,a}
-```
+$$
 
 be the effective speed of the anchor-tip funnel.
 
 A simple normalized capture window is:
 
-```math
+$$
 W_v(v)
 =
 \frac{
 \left(1-e^{-(v/v_{min})^2}\right)
 e^{-(v/v_{scatter})^2}
 }{W_{max}}.
-```
+$$
 
 where:
 
@@ -89,15 +89,15 @@ W_max                     = normalization so the best speed has W_v = 1
 
 When:
 
-```math
+$$
 v_{tip}\ll v_{min},
-```
+$$
 
 then:
 
-```math
+$$
 W_v(v_{tip})\approx0.
-```
+$$
 
 The funnel does not reach or open the Higgs-response channel.
 
@@ -105,15 +105,15 @@ The funnel does not reach or open the Higgs-response channel.
 
 At the optimal speed:
 
-```math
+$$
 v_{tip}\approx v_{cap},
-```
+$$
 
 then:
 
-```math
+$$
 W_v(v_{tip})\approx1.
-```
+$$
 
 The tip connects, resonance overlap is retained, and mass amplitude accumulates in the knot.
 
@@ -121,15 +121,15 @@ The tip connects, resonance overlap is retained, and mass amplitude accumulates 
 
 When:
 
-```math
+$$
 v_{tip}\gg v_{scatter},
-```
+$$
 
 then:
 
-```math
+$$
 W_v(v_{tip})\rightarrow0.
-```
+$$
 
 The funnel overshoots or tears through the resonance window, so amplitude scatters into the field rather than accumulating in the knot.
 
@@ -139,7 +139,7 @@ The funnel overshoots or tears through the resonance window, so amplitude scatte
 
 The v0.10 source term is:
 
-```math
+$$
 \mathcal{S}_{tip,a}
 =
 \lambda_a
@@ -148,11 +148,11 @@ B_{C_a}(1)
 O_{\varphi,a}(t)
 W_v(v_{tip,a})
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 The candidate field equation becomes:
 
-```math
+$$
 \left(
 \partial_t^2
 -
@@ -170,7 +170,7 @@ B_{C_a}(1)
 O_{\varphi,a}(t)
 W_v(v_{tip,a})
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 ---
 
@@ -178,13 +178,13 @@ W_v(v_{tip,a})
 
 If the failed fourth mode is treated as an unmanifest residue/reservoir, define:
 
-```math
+$$
 \mathcal{R}_4=\Theta(-S_4)|S_4|\rho_4(c).
-```
+$$
 
 Then the source becomes:
 
-```math
+$$
 \mathcal{S}_{tip,a}
 =
 \lambda_a
@@ -194,7 +194,7 @@ O_{\varphi,a}(t)
 W_v(v_{tip,a})
 \mathcal{R}_4
 \delta_{\epsilon,a}^{(\varphi)}.
-```
+$$
 
 Interpretation:
 
@@ -213,7 +213,7 @@ This reservoir form is more speculative and should be tested separately.
 
 In the reduced tau test, the capture window multiplies the full anchor-tip source correction:
 
-```math
+$$
 m_\tau
 =
 m_\tau^{base}
@@ -226,13 +226,13 @@ W_v(v_{tip})
 \frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right)
 \right]^2.
-```
+$$
 
 This preserves the amplitude-first rule:
 
-```math
+$$
 m=A^2.
-```
+$$
 
 ---
 

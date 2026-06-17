@@ -39,9 +39,9 @@ dark side channel -> missing transverse momentum and event imbalance
 
 Main proxy:
 
-```math
+$$
 R_{miss}=\frac{E_T^{miss}}{H_T}.
-```
+$$
 
 The first comparison uses published ATLAS missing-momentum search results. These searches broadly report agreement with Standard Model expectations in monojet and multijet categories, so the first verdict is:
 
@@ -61,15 +61,15 @@ analysis/cern_two_drill_event_shape_test.py
 
 v0.13 tests whether an eight-sector knot/shadow geometry can produce a dark-manifest side-sink sector close to the observed dark-to-baryonic matter ratio.
 
-```math
+$$
 \frac{A_{side}}{A_{tip}}=5.417
-```
+$$
 
 compared with:
 
-```math
+$$
 \frac{\Omega_c}{\Omega_b}\approx\frac{0.120}{0.0224}=5.357.
-```
+$$
 
 ---
 

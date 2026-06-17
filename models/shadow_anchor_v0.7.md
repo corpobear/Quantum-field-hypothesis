@@ -10,9 +10,9 @@
 
 The tau-like third mode is modeled as an eight-sector knot:
 
-```math
+$$
 C_3=2^3=8.
-```
+$$
 
 ---
 
@@ -22,15 +22,15 @@ Let `K_8` be the original eight-sector knot and `S_8` its shadow.
 
 Define the number of shared origin-shadow contact points:
 
-```math
+$$
 k=|K_8\cap S_8|.
-```
+$$
 
 The independent shadow echo fraction is:
 
-```math
+$$
 B_8(k)=\frac{8-k}{8}.
-```
+$$
 
 ---
 
@@ -40,9 +40,9 @@ A true shadow must be channel-anchored to its origin.
 
 Therefore:
 
-```math
+$$
 k\ge1.
-```
+$$
 
 If `k=0`, the shadow is an unanchored duplicate and cannot provide a stable correction.
 
@@ -54,23 +54,23 @@ Multiple contact points create pairwise origin-shadow bridges.
 
 The number of contact bridges is:
 
-```math
+$$
 M(k)=\frac{k(k-1)}{2}.
-```
+$$
 
 Thus:
 
-```math
+$$
 M(0)=0,
-```
+$$
 
-```math
+$$
 M(1)=0,
-```
+$$
 
-```math
+$$
 M(2)=1.
-```
+$$
 
 So `k=2` is the first contact number that creates a bridge.
 
@@ -80,32 +80,32 @@ So `k=2` is the first contact number that creates a bridge.
 
 The MCIFT exchange-rate term is:
 
-```math
+$$
 \Gamma_{ij}
 =
 g
 \exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
 \exp\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
 \cos^2(\phi_i-\phi_j).
-```
+$$
 
 For bridge contact points `a` and `b`, define bridge resonance:
 
-```math
+$$
 R_{ab}=\Gamma_a\Gamma_b\cos^2(\phi_a-\phi_b).
-```
+$$
 
 If:
 
-```math
+$$
 \phi_a\approx\phi_b,
-```
+$$
 
 then:
 
-```math
+$$
 R_{ab}\ \text{is large}.
-```
+$$
 
 ---
 
@@ -113,35 +113,35 @@ R_{ab}\ \text{is large}.
 
 Directional exchange is written:
 
-```math
+$$
 \vec{\Gamma}_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}\vec{d}_{ij}.
-```
+$$
 
 Velocity is modeled by:
 
-```math
+$$
 \beta_n=\frac{v_n}{c_*}=\tanh(\eta|\vec{\Gamma}_n|).
-```
+$$
 
 For the shadow-anchor problem, define the origin-directed merger-motion:
 
-```math
+$$
 v_{\mathrm{merge}}(k)
 \propto
 \sum_{a<b}^{k}R_{ab}.
-```
+$$
 
 For `k=1`, there is no pair:
 
-```math
+$$
 v_{\mathrm{merge}}(1)=0.
-```
+$$
 
 For `k=2`, there is one pair:
 
-```math
+$$
 v_{\mathrm{merge}}(2)\propto R_{12}>0
-```
+$$
 
 when the bridge resonates.
 
@@ -151,41 +151,41 @@ when the bridge resonates.
 
 A stable shadow requires:
 
-```math
+$$
 k\ge1
-```
+$$
 
 and:
 
-```math
+$$
 v_{\mathrm{merge}}(k)=0.
-```
+$$
 
 The no-merger condition is satisfied when no contact bridges exist:
 
-```math
+$$
 M(k)=0.
-```
+$$
 
 Since:
 
-```math
+$$
 M(k)=\frac{k(k-1)}{2},
-```
+$$
 
 we have:
 
-```math
+$$
 M(k)=0 \quad\Rightarrow\quad k=0\ \text{or}\ k=1.
-```
+$$
 
 But the connection requirement excludes `k=0`.
 
 Therefore:
 
-```math
+$$
 k_*=1.
-```
+$$
 
 ---
 
@@ -193,27 +193,27 @@ k_*=1.
 
 Using:
 
-```math
+$$
 B_8(k)=\frac{8-k}{8}
-```
+$$
 
 and:
 
-```math
+$$
 k_*=1,
-```
+$$
 
 we obtain:
 
-```math
+$$
 B_8(1)=\frac{8-1}{8}=\frac{7}{8}.
-```
+$$
 
 Thus:
 
-```math
+$$
 f_0=B_8(1)=\frac{7}{8}.
-```
+$$
 
 ---
 

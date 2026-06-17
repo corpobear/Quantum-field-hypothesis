@@ -31,43 +31,43 @@ This is not presented as established physics. It is a numerical stress test insi
 
 The current MCIFT charged-lepton toy model uses:
 
-```math
+$$
 C_n=2^n,
-```
+$$
 
-```math
+$$
 S_n=3.5n-C_n,
-```
+$$
 
-```math
+$$
 A_n=(C_n-1)^{D_f},
-```
+$$
 
 with:
 
-```math
+$$
 D_f=3.5.
-```
+$$
 
 The finite Higgs response may be linear Gaussian or log-fractal. The earlier linear-Gaussian baseline gave the out-of-sample tau prediction:
 
-```math
+$$
 m_\tau^{base}=1708.60405054\ \mathrm{MeV}.
-```
+$$
 
 This baseline uses electron and muon as calibration anchors, so only tau is an out-of-sample prediction.
 
 Real tau value used in the earlier report:
 
-```math
+$$
 m_\tau^{real}=1776.86\ \mathrm{MeV}.
-```
+$$
 
 Baseline error:
 
-```math
+$$
 \frac{1708.60405054-1776.86}{1776.86}\times100=-3.840\ldots\%.
-```
+$$
 
 ---
 
@@ -75,33 +75,33 @@ Baseline error:
 
 The v0.7 shadow-anchor model defines the origin-shadow contact count:
 
-```math
+$$
 k=|K_C\cap S_C|.
-```
+$$
 
 A true shadow must be connected:
 
-```math
+$$
 k\ge1.
-```
+$$
 
 But multiple contacts create pairwise bridges:
 
-```math
+$$
 M(k)=\frac{k(k-1)}{2}.
-```
+$$
 
 A stable shadow must avoid merger-motion, requiring:
 
-```math
+$$
 M(k)=0.
-```
+$$
 
 The only connected, no-bridge solution is:
 
-```math
+$$
 k_*=1.
-```
+$$
 
 ---
 
@@ -109,21 +109,21 @@ k_*=1.
 
 For a `C`-sector knot, the one anchor point pins one sector. The remaining free spin-vortex fraction is:
 
-```math
+$$
 B_C(1)=\frac{C-1}{C}.
-```
+$$
 
 For the tau-like third mode:
 
-```math
+$$
 C_3=2^3=8.
-```
+$$
 
 Therefore:
 
-```math
+$$
 B_8(1)=\frac{8-1}{8}=\frac{7}{8}.
-```
+$$
 
 This report interprets the same `7/8` factor as:
 
@@ -139,37 +139,37 @@ rather than only as an echo-shadow projection fraction.
 
 The existing shadow amplitude correction form is:
 
-```math
+$$
 \Delta(f)=1+\frac{1}{56}+f\frac{1}{448}.
-```
+$$
 
 The one-anchor spin-vortex hypothesis sets:
 
-```math
+$$
 f=B_8(1)=\frac{7}{8}.
-```
+$$
 
 Therefore:
 
-```math
+$$
 \Delta_{anchor}
 =
 1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}.
-```
+$$
 
 Numerically:
 
-```math
+$$
 \Delta_{anchor}=1.0198102678571428.
-```
+$$
 
 Because MCIFT treats this as an amplitude correction, mass is corrected by the square:
 
-```math
+$$
 m_\tau^{anchor}
 =
 m_\tau^{base}\Delta_{anchor}^2.
-```
+$$
 
 ---
 
@@ -177,39 +177,39 @@ m_\tau^{base}\Delta_{anchor}^2.
 
 Using:
 
-```math
+$$
 m_\tau^{base}=1708.60405054\ \mathrm{MeV},
-```
+$$
 
 and:
 
-```math
+$$
 \Delta_{anchor}=1.0198102678571428,
-```
+$$
 
 we get:
 
-```math
+$$
 m_\tau^{anchor}=1776.97039439\ \mathrm{MeV}.
-```
+$$
 
 Comparison with real tau value:
 
-```math
+$$
 m_\tau^{real}=1776.86\ \mathrm{MeV}.
-```
+$$
 
 Error:
 
-```math
+$$
 1776.97039439-1776.86=0.11039439\ \mathrm{MeV}.
-```
+$$
 
 Percent error:
 
-```math
+$$
 \frac{0.11039439}{1776.86}\times100=0.00621\%.
-```
+$$
 
 ---
 
@@ -226,21 +226,21 @@ Percent error:
 
 The earlier report gives the Koide high-root tau value:
 
-```math
+$$
 m_\tau^{Koide}=1776.96902708\ \mathrm{MeV}.
-```
+$$
 
 The one-anchor spin-vortex result is:
 
-```math
+$$
 m_\tau^{anchor}=1776.97039439\ \mathrm{MeV}.
-```
+$$
 
 Difference:
 
-```math
+$$
 m_\tau^{anchor}-m_\tau^{Koide}=0.00136731\ \mathrm{MeV}.
-```
+$$
 
 This is extremely close numerically, but the model must still derive why the correction belongs specifically to the tau-like eight-sector mode.
 

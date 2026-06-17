@@ -41,15 +41,15 @@ six lateral side sectors
 
 Use the tau-like eight-sector knot:
 
-```math
+$$
 C=8.
-```
+$$
 
 The one-point original/shadow anchor pins one sector and leaves the familiar free circulation fraction:
 
-```math
+$$
 B_8(1)=\frac{7}{8}.
-```
+$$
 
 For the side-sink test, split the eight sectors as:
 
@@ -61,9 +61,9 @@ For the side-sink test, split the eight sectors as:
 
 Thus:
 
-```math
+$$
 N_{side}=8-2=6.
-```
+$$
 
 ---
 
@@ -71,25 +71,25 @@ N_{side}=8-2=6.
 
 The visible drill/tip aperture is the v0.11 tau-like source aperture:
 
-```math
+$$
 A_{tip}
 =
 \frac{1}{56}
 +
 \frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle.
-```
+$$
 
 Using the v0.9/v0.11 resonance overlap:
 
-```math
+$$
 \langle O_\varphi\rangle=0.9837806705,
-```
+$$
 
 this gives:
 
-```math
+$$
 A_{tip}=0.01977858948.
-```
+$$
 
 ---
 
@@ -99,27 +99,27 @@ The dark-manifest sink is side-fed by the six lateral sectors.
 
 Use the same primary sector unit:
 
-```math
+$$
 \frac{1}{56}.
-```
+$$
 
 Then:
 
-```math
+$$
 A_{side}=6\left(\frac{1}{56}\right)=\frac{6}{56}=0.1071428571.
-```
+$$
 
 The sink source has inverse orientation:
 
-```math
+$$
 S_{dark}<0
-```
+$$
 
 as a field orientation, but mass density uses magnitude:
 
-```math
+$$
 \rho_{dark}\propto |S_{dark}|.
-```
+$$
 
 So the model does not produce negative mass.
 
@@ -129,7 +129,7 @@ So the model does not produce negative mass.
 
 Visible drill source:
 
-```math
+$$
 S_{visible}
 =
 \lambda_+
@@ -138,11 +138,11 @@ W_{tip}
 A_{tip}
 R_4^{gate}
 \delta_{tip}^{(\varphi)}.
-```
+$$
 
 Dark side-sink source:
 
-```math
+$$
 S_{dark}
 =
 -
@@ -152,35 +152,35 @@ W_{side}
 A_{side}
 R_4^{gate}
 \delta_{side}^{(\varphi)}.
-```
+$$
 
 where:
 
-```math
+$$
 \kappa_{sink}=-\nabla_\perp\cdot J_\perp.
-```
+$$
 
 A positive `kappa_sink` means inward radial convergence into the side-fed sink.
 
 Mass densities:
 
-```math
+$$
 \rho_{visible}\propto |S_{visible}|,
-```
+$$
 
-```math
+$$
 \rho_{dark}\propto |S_{dark}|.
-```
+$$
 
 Visibility factors:
 
-```math
+$$
 L_{visible}\approx1,
-```
+$$
 
-```math
+$$
 L_{dark}\approx0.
-```
+$$
 
 ---
 
@@ -188,49 +188,49 @@ L_{dark}\approx0.
 
 Assume the first reduced test uses equal coupling, optimal capture, saturated reservoir availability, and comparable vortex/sink strengths:
 
-```math
+$$
 \lambda_-\approx\lambda_+,
-```
+$$
 
-```math
+$$
 W_{side}\approx W_{tip}\approx1,
-```
+$$
 
-```math
+$$
 R_4^{gate}\approx1,
-```
+$$
 
-```math
+$$
 \kappa_{sink}\approx\Omega_z.
-```
+$$
 
 Then:
 
-```math
+$$
 \frac{\rho_{dark}}{\rho_{visible}}
 \approx
 \frac{A_{side}}{A_{tip}}.
-```
+$$
 
 So:
 
-```math
+$$
 \frac{\rho_{dark}}{\rho_{visible}}
 =
 \frac{6/56}{1/56+(7/8)(1/448)\langle O_\varphi\rangle}.
-```
+$$
 
 Using:
 
-```math
+$$
 \langle O_\varphi\rangle=0.9837806705,
-```
+$$
 
 gives:
 
-```math
+$$
 \frac{\rho_{dark}}{\rho_{visible}}=5.417.
-```
+$$
 
 ---
 
@@ -238,42 +238,42 @@ gives:
 
 The Planck 2018 cosmological parameters give approximately:
 
-```math
+$$
 \Omega_c h^2\approx0.120,
-```
+$$
 
-```math
+$$
 \Omega_b h^2\approx0.0224.
-```
+$$
 
 Thus:
 
-```math
+$$
 \frac{\Omega_c}{\Omega_b}\approx\frac{0.120}{0.0224}\approx5.36.
-```
+$$
 
 The eight-sector side-sink geometry gives:
 
-```math
+$$
 5.417,
-```
+$$
 
 which is within about:
 
-```math
+$$
 1.1\%
-```
+$$
 
 of the target ratio.
 
 A small sink-efficiency factor can match the central value:
 
-```math
+$$
 \epsilon_{sink}
 =
 \frac{5.36}{5.417}
 \approx0.989.
-```
+$$
 
 ---
 
