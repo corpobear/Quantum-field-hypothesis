@@ -1,0 +1,80 @@
+name: Generate mechanics visuals and optional analysis results
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - "mechanics/plot_mechanics.py"
+      - "mechanics/mechanics_v0.13.md"
+      - "analysis/cern_two_drill_event_shape_test.py"
+      - ".github/workflows/generate-mechanics-and-analysis.yml"
+
+permissions:
+  contents: write
+
+env:
+  PYTHON_VERSION: "3.11"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install matplotlib numpy pandas
+
+      - name: Generate mechanics SVG figures
+        run: |
+          python mechanics/plot_mechanics.py
+
+      - name: Run optional CERN event-shape analysis when input CSVs exist
+        run: |
+          if [ -f analysis/input/data.csv ] && [ -f analysis/input/sm_mc.csv ]; then
+            python analysis/cern_two_drill_event_shape_test.py \
+              --data analysis/input/data.csv \
+              --mc analysis/input/sm_mc.csv \
+              --out analysis/results_v0.14
+          else
+            echo "No analysis/input/data.csv and analysis/input/sm_mc.csv found; skipping event-shape analysis."
+          fi
+
+      - name: Upload generated mechanics figures as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mechanics-figures
+          path: mechanics/figures/*.svg
+          if-no-files-found: error
+
+      - name: Upload optional analysis results as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cern-event-shape-results
+          path: analysis/results_v0.14/**
+          if-no-files-found: ignore
+
+      - name: Commit generated outputs back to repo when changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mechanics/figures/*.svg
+          if [ -d analysis/results_v0.14 ]; then
+            git add analysis/results_v0.14
+          fi
+          if git diff --cached --quiet; then
+            echo "No generated output changes to commit."
+          else
+            git commit -m "Generate mechanics visuals and analysis outputs [skip ci]"
+            git push
+          fi
