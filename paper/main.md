@@ -159,7 +159,7 @@ the first three modes are stable and the fourth mode fails. The failed fourth-mo
 A pairwise exchange rule is:
 
 $$
-Gamma_{ij}
+\Gamma_{ij}
 =
 g
 \exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
