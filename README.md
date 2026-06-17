@@ -3,9 +3,9 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Version:** 0.9 Fibonacci-Higgs anchor-tip source candidate
+**Version:** 0.10 funnel-speed Higgs capture window
 
-> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, one-point shadow anchoring, one-anchor spin-vortex correction, Fibonacci-Higgs anchor-tip source dynamics, motion-by-exchange, vibration-driven shadow merger, entanglement/shared-amplitude correction, objective shared-channel geometry, predictions, and black-hole/channel confinement.
+> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, one-point shadow anchoring, one-anchor spin-vortex correction, Fibonacci-Higgs anchor-tip source dynamics, funnel-speed Higgs capture, motion-by-exchange, vibration-driven shadow merger, entanglement/shared-amplitude correction, objective shared-channel geometry, predictions, and black-hole/channel confinement.
 
 ## Core idea
 
@@ -34,6 +34,7 @@ In this framework:
 - the tau-like shadow echo may follow from a one-point attached eight-sector shadow,
 - a one-point original-shadow anchor may pin one sector and leave a `7/8` free spin-vortex fraction,
 - a Fibonacci-shaped anchor-tip vortex may gather mass amplitude when it overlaps the Higgs-response resonance,
+- the anchor-tip funnel may have a speed-dependent capture window: too slow fails, resonant speed captures, too fast scatters,
 - vibration plus directional exchange explains why two-point shadow contact begins merger,
 - entanglement is modeled as shared amplitude that can create a tiny mass defect,
 - objective shared-channel geometry allows systems to be far in spacetime but adjacent in channel-space,
@@ -57,9 +58,10 @@ The immediate goals are:
 9. prove why a stable vibrating shadow has exactly one anchor point,
 10. derive the one-anchor spin-vortex correction from projected knot geometry,
 11. derive the Fibonacci-Higgs anchor-tip source equation from a field action or concrete knot geometry,
-12. derive the entanglement/shared-amplitude mass-defect factor from inter-knot exchange geometry,
-13. derive channel-distance geometry and explain why shared-channel correlation is not automatically usable as controllable nonlocal messaging,
-14. identify falsifiable predictions.
+12. derive the funnel-tip speed/capture/scatter window from knot dynamics,
+13. derive the entanglement/shared-amplitude mass-defect factor from inter-knot exchange geometry,
+14. derive channel-distance geometry and explain why shared-channel correlation is not automatically usable as controllable nonlocal messaging,
+15. identify falsifiable predictions.
 
 ## Repository layout
 
@@ -70,6 +72,7 @@ models/toy_model.md                             Current toy-model equations
 models/shadow_anchor_v0.7.md                    Compact v0.7 model equations for shadow-anchor proof
 models/spin_vortex_anchor_v0.8.md               Compact v0.8 equations for one-anchor spin-vortex correction
 models/fibonacci_higgs_source_v0.9.md           Candidate v0.9 Fibonacci-Higgs anchor-tip source equation
+models/funnel_speed_capture_v0.10.md            v0.10 funnel-speed Higgs capture-window model
 notes/channel_transfer.md                       Channel transfer and rain/ripple analogy
 notes/information_exchange.md                   Law of vibration and exchange-rate densification
 notes/shadow_amplitude.md                       Shadow/complementary amplitude extension
@@ -92,6 +95,7 @@ tests/report_v0.6.md                            Objective shared-channel entangl
 tests/report_v0.7.md                            Vibration-motion shadow-anchor derivation
 tests/report_v0.8.md                            One-anchor spin-vortex correction test
 tests/report_v0.9.md                            Fibonacci-Higgs source equation reduced tau test
+tests/report_v0.10.md                           Funnel-speed Higgs capture-window reduced tau test
 NOTICE.md                                       Authorship and priority notice
 LICENSE_PENDING.md                              Licensing note
 ```
@@ -530,6 +534,105 @@ reaches this overlap at roughly:
 under strong phase-locking.
 
 This is the current best candidate field-source proposal, but it remains incomplete until the frequency ratio, phase-locking condition, and finite Fibonacci-shaped source core are derived from knot geometry or a field action.
+
+## v0.10 update
+
+The v0.10 extension adds a speed-dependent capture window to the v0.9 anchor-tip source.
+
+The core idea is:
+
+```text
+too slow  -> the funnel tip cannot open/reach the Higgs-response channel
+just right -> the tip connects, phase-locks, and mass amplitude accumulates in the knot
+too fast  -> the source overshoots/scatters and is not retained
+```
+
+The capture factor is:
+
+```math
+W_v(v)
+=
+\frac{
+\left(1-e^{-(v/v_{min})^2}\right)
+e^{-(v/v_{scatter})^2}
+}{W_{max}}
+```
+
+The updated source term is:
+
+```math
+\mathcal{S}_{tip,a}
+=
+\lambda_a
+\Omega_{OS,a}
+B_{C_a}(1)
+O_{\varphi,a}(t)
+W_v(v_{tip,a})
+\delta_{\epsilon,a}^{(\varphi)}
+```
+
+and the candidate field equation becomes:
+
+```math
+\left(
+\partial_t^2
+-
+c_*^2\nabla^2
+-
+D_c\partial_c^2
++
+V'(\psi)
+\right)\psi
+=
+\sum_a
+\lambda_a
+\Omega_{OS,a}
+B_{C_a}(1)
+O_{\varphi,a}(t)
+W_v(v_{tip,a})
+\delta_{\epsilon,a}^{(\varphi)}
+```
+
+In the reduced tau test, the speed window multiplies the full anchor-tip source:
+
+```math
+m_\tau
+=
+m_\tau^{base}
+\left[
+1+
+W_v(v_{tip})
+\left(
+\frac{1}{56}
++
+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
+\right)
+\right]^2
+```
+
+At optimal capture speed:
+
+```math
+W_v=1
+```
+
+and the reduced model preserves:
+
+```math
+m_\tau=1776.86\ \text{MeV}
+```
+
+The speed scan gives the desired behavior:
+
+```text
+0.00 x optimal -> no capture, baseline mass
+0.75 x optimal -> near capture
+1.00 x optimal -> mass captured
+2.00 x optimal -> scattering begins
+4.00 x optimal -> almost no capture
+```
+
+This strengthens the candidate source equation by explaining why not every vortex/Higgs contact becomes mass: the funnel must enter the Higgs-response channel at the correct speed as well as the correct resonance and phase.
 
 ## Citation / attribution
 
