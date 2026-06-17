@@ -6,9 +6,15 @@ on:
     branches:
       - master
     paths:
+      - "README.md"
       - "mechanics/plot_mechanics.py"
       - "mechanics/mechanics_v0.13.md"
+      - "models/**.md"
+      - "notes/**.md"
+      - "paper/**.md"
+      - "tests/**.md"
       - "analysis/cern_two_drill_event_shape_test.py"
+      - "tools/check_markdown_math.py"
       - ".github/workflows/generate-mechanics-and-analysis.yml"
 
 permissions:
@@ -40,6 +46,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install matplotlib numpy pandas
+
+      - name: Normalize Markdown math display blocks
+        run: |
+          python tools/check_markdown_math.py --fix
 
       - name: Generate mechanics SVG figures
         run: |
@@ -75,6 +85,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          git add README.md mechanics models notes paper tests predictions analysis tools
           git add mechanics/figures/*.svg
           if [ -d analysis/results_v0.14 ]; then
             git add analysis/results_v0.14
@@ -85,7 +96,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Generate mechanics visuals and analysis outputs [skip ci]"
+          git commit -m "Normalize Markdown math and generated outputs [skip ci]"
 
           # The repository can move while this workflow is running. Rebase the
           # generated-output commit onto the latest master before pushing so the
@@ -93,3 +104,7 @@ jobs:
           git fetch origin master
           git rebase origin/master
           git push origin HEAD:master
+
+      - name: Verify Markdown math formatting
+        run: |
+          python tools/check_markdown_math.py --check
