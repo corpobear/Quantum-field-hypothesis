@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** 0.11 normalized fourth-mode reservoir field-source test
+**Current version:** 0.12 activation terminology clarification
 
 > This is not established physics and is not a replacement for quantum field theory. It is a speculative framework being developed into a more testable mathematical toy model.
 
@@ -32,6 +32,77 @@ coherent information cluster
 -> bounded fourth-mode reservoir availability
 -> accumulated mass amplitude
 -> squared rest mass
+```
+
+---
+
+## v0.12 terminology correction
+
+Earlier shorthand sometimes used `light activation` as if it meant manifestation itself. v0.12 corrects that terminology.
+
+Use:
+
+```text
+light activation = electromagnetic / visibility-channel activation
+```
+
+Do not use:
+
+```text
+light activation = existence itself
+```
+
+The model should separate channel activation into:
+
+```math
+L_i = \text{light / electromagnetic visibility activation}
+```
+
+```math
+H_i = \text{Higgs / mass-capture activation}
+```
+
+```math
+G_i = \text{gravitational projection}
+```
+
+```math
+K_i = \text{knot coherence}
+```
+
+Then:
+
+```math
+\mathrm{Visibility}_i=L_iK_i
+```
+
+```math
+\mathrm{Mass}_i=H_iK_i
+```
+
+```math
+\mathrm{Gravity}_i=G_iH_iK_i
+```
+
+This allows a dark-matter-like category:
+
+```math
+L_i\approx0,\quad H_i>0,\quad G_i>0,\quad K_i>0
+```
+
+Meaning:
+
+```text
+not electromagnetically visible,
+but still mass-bearing, gravity-projecting, and knot-coherent.
+```
+
+Terminology going forward:
+
+```text
+unmanifest        no stable visible, mass, or gravitational projection
+dark-manifest     mass-active and gravity-active, but light-inactive
+visible-manifest  light-active, mass-active, gravity-active, and knot-coherent
 ```
 
 ---
@@ -150,6 +221,7 @@ notes/shadow_anchor_vibration.md               One-point attached shadow and vib
 notes/vibration_motion_shadow_merger.md        Vibration creates motion and multi-contact merger
 notes/spin_vortex_anchor.md                    One-anchor spin-vortex interpretation
 notes/fourth_mode_reservoir_normalization.md   Bounded fourth-mode reservoir normalization
+notes/activation_terminology_v0.12.md          Activation terminology and dark-manifest category
 notes/v0.11_update_index.md                    v0.11 quick update index
 notes/entanglement_shared_amplitude.md         Entanglement as shared amplitude and mass defect
 notes/objective_shared_channels.md             Objective shared-channel geometry
@@ -188,7 +260,8 @@ Immediate derivation targets:
 4. derive the funnel-speed capture window from knot dynamics,
 5. derive `R_*` and `R_4` from the failed fourth-mode sector,
 6. test the field-source equation beyond the tau-like reduced model,
-7. check compatibility with Lorentz and gauge structure.
+7. check compatibility with Lorentz and gauge structure,
+8. clarify whether dark-manifest knots can model dark-matter-like behavior.
 
 ---
 
