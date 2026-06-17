@@ -3,9 +3,9 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Version:** 0.5 entanglement shared-amplitude correction update  
+**Version:** 0.6 objective shared-channel entanglement update  
 
-> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, motion-by-exchange, entanglement/shared-amplitude correction, and black-hole/channel confinement.
+> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, motion-by-exchange, entanglement/shared-amplitude correction, objective shared-channel geometry, and black-hole/channel confinement.
 
 ## Core idea
 
@@ -32,6 +32,7 @@ In this framework:
 - mass may be modeled as a squared visible/complementary amplitude imbalance,
 - shadow projection may connect local knot geometry to Koide-like amplitude geometry,
 - entanglement is modeled as shared amplitude that can create a tiny mass defect,
+- objective shared-channel geometry allows systems to be far in spacetime but adjacent in channel-space,
 - channel transfer depends on coherence, complexity match, and mass/ripple-weight match,
 - black holes or confined regions are modeled as complexity clusters that create internally separated channels.
 
@@ -50,7 +51,8 @@ The immediate goals are:
 7. separate rest-mass formation from motion-energy effects,
 8. derive the shadow echo-projection fraction from knot geometry,
 9. derive the entanglement/shared-amplitude mass-defect factor from inter-knot exchange geometry,
-10. identify falsifiable predictions.
+10. derive channel-distance geometry and explain why shared-channel correlation is not automatically usable as controllable nonlocal messaging,
+11. identify falsifiable predictions.
 
 ## Repository layout
 
@@ -62,6 +64,7 @@ notes/information_exchange.md              Law of vibration and exchange-rate de
 notes/shadow_amplitude.md                  Shadow/complementary amplitude extension
 notes/shadow_projection.md                 Shadow projection geometry and Koide comparison
 notes/entanglement_shared_amplitude.md     Entanglement as shared amplitude and mass defect
+notes/objective_shared_channels.md         Objective shared-channel geometry
 notes/motion_exchange.md                   Motion from directional exchange
 notes/black_holes.md                       Black-hole internal-channel interpretation
 notes/predictions.md                       Predictions and falsifiability notes
@@ -70,6 +73,7 @@ tests/report_v0.2.md                       Exchange-rate and shadow-amplitude ca
 tests/report_v0.3.md                       Motion-by-exchange calculation
 tests/report_v0.4.md                       Shadow projection and Koide comparison
 tests/report_v0.5.md                       Entanglement shared-amplitude correction
+tests/report_v0.6.md                       Objective shared-channel entanglement
 NOTICE.md                                  Authorship and priority notice
 LICENSE_PENDING.md                         Licensing note
 ```
@@ -216,12 +220,79 @@ m_\tau^{ent}=1776.96902708\ \text{MeV}
 
 This matches the Koide high-root tau value by construction, because `E_3` is inferred from the remaining Koide residual.
 
-Interpretation:
+## v0.6 update
+
+The v0.6 extension adds objective shared-channel geometry.
+
+Define spatial distance:
+
+```math
+d_x=|x_A-x_B|
+```
+
+Define channel distance:
+
+```math
+d_c=|c_A-c_B|
+```
+
+Two systems can be far in ordinary space but adjacent in channel-space:
+
+```math
+d_x\gg0
+```
+
+```math
+d_c=0
+```
+
+The updated entanglement strength is:
+
+```math
+\mathcal{E}_{AB}
+=
+\lambda_{AB}
+O_{AB}
+\exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
+\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
+```
+
+For the tau echo-shadow correction, the shared-channel interpretation is:
+
+```math
+E_3
+=
+\lambda_3
+O_3
+\exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
+\tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)
+```
+
+In the shared-channel saturated limit:
+
+```math
+d_c=0,\quad O_3\approx1,\quad \tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)\approx1
+```
+
+so:
+
+```math
+E_3\approx\lambda_3=0.0002008838
+```
+
+This gives the same Koide-matching tau value as v0.5, but with a clearer mechanism:
 
 ```text
-2/3 = global Koide amplitude-angle projection
-7/8 = local tau echo-shadow completion fraction
-E_3 = tiny entanglement cancellation of duplicated echo amplitude
+spatial distance controls ordinary signals
+channel distance controls entangled correlation
+zero channel-distance -> objective shared state
+```
+
+Important caveat:
+
+```text
+shared channel -> instant correlation
+shared channel != controllable nonlocal messaging
 ```
 
 ## Citation / attribution
