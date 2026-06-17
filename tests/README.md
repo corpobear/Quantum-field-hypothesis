@@ -20,41 +20,52 @@ report_v0.8.md    One-anchor spin-vortex correction test
 report_v0.9.md    Fibonacci-Higgs source equation reduced tau test
 report_v0.10.md   Funnel-speed Higgs capture-window reduced tau test
 report_v0.11.md   Bounded fourth-mode reservoir field-source test
+report_v0.13.md   Six-side sink dark-manifest ratio test
 ```
 
 ---
 
-## Current latest test: v0.11
+## Current latest test: v0.13
 
-v0.11 tests the integrated field-source equation with bounded fourth-mode reservoir availability:
+v0.13 tests whether an eight-sector knot/shadow geometry can produce a dark-manifest side-sink sector close to the observed dark-to-baryonic matter ratio.
 
-```math
-R_4^{gate}=\frac{R_4}{R_4+R_*}.
-```
-
-Reduced source:
+Visible aperture:
 
 ```math
-\Sigma_\tau
-=
-W_v
-\left[
-\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
-\right]
-R_4^{gate}.
+A_{tip}=\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle.
 ```
 
-Mass rule:
+Dark side aperture:
 
 ```math
-m_\tau=m_\tau^{base}(1+\Sigma_\tau)^2.
+A_{side}=6\left(\frac{1}{56}\right).
 ```
 
-At saturated reservoir availability, optimal funnel capture, and the v0.9 resonance overlap, the reduced test gives:
+Using:
 
 ```math
-m_\tau=1776.86\ \mathrm{MeV}.
+\langle O_\varphi\rangle=0.9837806705,
 ```
+
+the reduced ratio is:
+
+```math
+\frac{A_{side}}{A_{tip}}=5.417.
+```
+
+The Planck 2018 comparison target is approximately:
+
+```math
+\frac{\Omega_c}{\Omega_b}\approx\frac{0.120}{0.0224}=5.357.
+```
+
+The toy result is within about 1.1 percent of that target. A small sink-efficiency factor:
+
+```math
+\epsilon_{sink}\approx0.989
+```
+
+matches the central value.
 
 ---
 
