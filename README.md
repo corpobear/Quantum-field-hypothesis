@@ -35,6 +35,39 @@ coherent information cluster
 
 ---
 
+## GitHub Actions automation
+
+This repo includes a workflow:
+
+```text
+.github/workflows/generate-mechanics-and-analysis.yml
+```
+
+It runs the Matplotlib mechanics generator and commits changed SVG figures back into:
+
+```text
+mechanics/figures/
+```
+
+It also uploads the generated figures as workflow artifacts.
+
+The CERN event-shape analysis runs only when both repo-local input files exist:
+
+```text
+analysis/input/data.csv
+analysis/input/sm_mc.csv
+```
+
+If those files exist, the workflow writes results to:
+
+```text
+analysis/results_v0.14/
+```
+
+and commits changed results back into the repo. Without those input CSVs, it skips the analysis step and does not invent collider results.
+
+---
+
 ## Latest v0.14 CERN-facing test
 
 v0.14 maps the two-drill collision picture to collider observables.
@@ -132,6 +165,8 @@ visible-manifest  light-active, mass-active, gravity-active, and knot-coherent
 ## Key files
 
 ```text
+.github/workflows/generate-mechanics-and-analysis.yml
+analysis/README.md
 analysis/cern_two_drill_event_shape_test.py
 models/two_drill_collision_cern_v0.14.md
 tests/report_v0.14_cern_two_drill_event_shape.md
@@ -147,7 +182,7 @@ tests/README.md
 paper/README.md
 ```
 
-Older model files remain in `models/`, `notes/`, `paper/`, and `tests/`.
+Older model files remain in `models/`, `notes`, `paper/`, and `tests/`.
 
 ---
 
