@@ -14,6 +14,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: generated-output-${{ github.ref }}
+  cancel-in-progress: false
+
 env:
   PYTHON_VERSION: "3.11"
 
@@ -24,6 +28,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -68,13 +74,22 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add mechanics/figures/*.svg
           if [ -d analysis/results_v0.14 ]; then
             git add analysis/results_v0.14
           fi
+
           if git diff --cached --quiet; then
             echo "No generated output changes to commit."
-          else
-            git commit -m "Generate mechanics visuals and analysis outputs [skip ci]"
-            git push
+            exit 0
           fi
+
+          git commit -m "Generate mechanics visuals and analysis outputs [skip ci]"
+
+          # The repository can move while this workflow is running. Rebase the
+          # generated-output commit onto the latest master before pushing so the
+          # push is fast-forward instead of rejected with 'fetch first'.
+          git fetch origin master
+          git rebase origin/master
+          git push origin HEAD:master
