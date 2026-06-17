@@ -22,11 +22,38 @@ report_v0.10.md   Funnel-speed Higgs capture-window reduced tau test
 report_v0.11.md   Bounded fourth-mode reservoir field-source test
 report_v0.13.md   Six-side sink dark-manifest ratio test
 report_v0.14_cern_two_drill_event_shape.md   CERN two-drill event-shape published-results comparison
+report_v0.14b_published_limits.md   Quick ATLAS/CMS published missing-momentum limits check
 ```
 
 ---
 
-## Current latest test: v0.14
+## Current latest test: v0.14b
+
+v0.14b performs the quick published-results check against ATLAS/CMS energetic-jet plus missing-transverse-momentum searches.
+
+The collider proxy remains:
+
+$$
+R_{miss}=\frac{E_T^{miss}}{H_T}.
+$$
+
+The quick published-results verdict is:
+
+```text
+not confirmed; constrained by existing missing-momentum searches
+```
+
+This is not a full exclusion because MCIFT has not yet specified a production cross section, mass scale, lifetime, topology, coupling strength, or exact event selection.
+
+The next step is still a direct open-data event-shape test using:
+
+```text
+analysis/cern_two_drill_event_shape_test.py
+```
+
+---
+
+## Previous test: v0.14
 
 v0.14 starts the CERN comparison.
 
@@ -47,12 +74,6 @@ The first comparison uses published ATLAS missing-momentum search results. These
 
 ```text
 not confirmed, not ruled out by this reduced comparison, now constrained
-```
-
-The next step is a direct open-data event-shape test using:
-
-```text
-analysis/cern_two_drill_event_shape_test.py
 ```
 
 ---
