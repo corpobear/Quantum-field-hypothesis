@@ -1,0 +1,16 @@
+quantity,value
+C,8
+O_phi,0.9837806705
+P8_primary_tip,0.0178571428571429
+E8_echo_unit,0.00223214285714286
+B8_free_spin_fraction,0.875
+matter_effective_aperture,0.0197785894792132
+antimatter_higgs_drop_aperture,0.00219593899665179
+antimatter_splash_total_before_middle_discard,0.0153715729765625
+antimatter_discarded_middle,0.00219593899665179
+antimatter_splash_captured,0.0131756339799107
+antimatter_effective_aperture,0.0153715729765625
+matter_to_antimatter_ratio,1.28669912372469
+antimatter_to_matter_ratio,0.777184757669959
+epsilon_MCIFT,0.125376845930524
+matter_excess_aperture,0.00440701650265067
