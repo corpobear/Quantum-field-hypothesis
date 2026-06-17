@@ -63,6 +63,7 @@ The immediate goals are:
 paper/main.md                                  Full theory draft
 paper/v0.7_shadow_anchor_derivation.md         Paper addendum for one-point shadow-anchor derivation
 models/toy_model.md                             Current toy-model equations
+models/shadow_anchor_v0.7.md                    Compact v0.7 model equations for shadow-anchor proof
 notes/channel_transfer.md                       Channel transfer and rain/ripple analogy
 notes/information_exchange.md                   Law of vibration and exchange-rate densification
 notes/shadow_amplitude.md                       Shadow/complementary amplitude extension
