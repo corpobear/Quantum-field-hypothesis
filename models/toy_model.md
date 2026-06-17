@@ -1,8 +1,8 @@
 # Toy Model Equations
 
 **Status:** speculative toy-model equations; not established physics  
-**Version:** v0.14 consolidated toy model  
-**Scope:** current compact math for MCIFT through activation terminology, one-anchor spin-vortex correction, Fibonacci-Higgs source, funnel-speed capture, bounded reservoir gate, six-side dark-manifest sink geometry, and first CERN-facing event-shape proxy.
+**Version:** v0.14 consolidated toy model, GitHub math-display fix  
+**Scope:** compact math for MCIFT through activation terminology, one-anchor spin-vortex correction, Fibonacci-Higgs source, funnel-speed capture, bounded reservoir gate, six-side dark-manifest sink geometry, and the first CERN-facing event-shape proxy.
 
 ---
 
@@ -10,9 +10,9 @@
 
 The field is written as:
 
-$$
+```math
 \Psi(x,y,z,t,c)
-$$
+```
 
 where:
 
@@ -42,35 +42,35 @@ light activation = existence itself
 
 Separate channel factors:
 
-$$
+```math
 L_i=\text{light / electromagnetic visibility activation}
-$$
+```
 
-$$
+```math
 H_i=\text{Higgs / mass-capture activation}
-$$
+```
 
-$$
+```math
 G_i=\text{gravitational projection}
-$$
+```
 
-$$
+```math
 K_i=\text{knot coherence}
-$$
+```
 
 Then:
 
-$$
+```math
 \mathrm{Visibility}_i=L_iK_i
-$$
+```
 
-$$
+```math
 \mathrm{Mass}_i=H_iK_i
-$$
+```
 
-$$
+```math
 \mathrm{Gravity}_i=G_iH_iK_i
-$$
+```
 
 Matter-state classes:
 
@@ -82,9 +82,9 @@ dark-manifest     mass-active and gravity-active, but light-inactive
 
 Dark-manifest condition:
 
-$$
+```math
 L_i\approx0,\quad H_i>0,\quad G_i>0,\quad K_i>0
-$$
+```
 
 ---
 
@@ -92,11 +92,9 @@ $$
 
 Binary complexity growth:
 
-$$
+```math
 C_n=2^n
-$$
-
-Mode table:
+```
 
 | Mode | Complexity |
 |---:|---:|
@@ -108,9 +106,9 @@ Mode table:
 
 The eight-sector knot used in the tau-like and dark-manifest tests is:
 
-$$
+```math
 C_3=8
-$$
+```
 
 ---
 
@@ -118,39 +116,39 @@ $$
 
 Simple coherence law:
 
-$$
+```math
 Q_n=an
-$$
+```
 
 Original stability:
 
-$$
+```math
 S_n=Q_n-C_n=an-2^n
-$$
+```
 
 Survival condition:
 
-$$
+```math
 S_n>0
-$$
+```
 
 Failure condition:
 
-$$
+```math
 S_n<0
-$$
+```
 
 Exactly three stable modes and fourth failure require:
 
-$$
+```math
 \frac{8}{3}<a<4
-$$
+```
 
 Central toy value:
 
-$$
+```math
 a=3.5
-$$
+```
 
 | Mode | Complexity | Coherence | Stability | Outcome |
 |---:|---:|---:|---:|---|
@@ -167,15 +165,15 @@ The failed fourth mode later becomes a bounded reservoir availability term, not 
 
 Cluster catching surface:
 
-$$
+```math
 A_n=(C_n-1)^{D_f}
-$$
+```
 
 Default toy exponent:
 
-$$
+```math
 D_f=3.5+\epsilon
-$$
+```
 
 Interpretation:
 
@@ -190,15 +188,15 @@ surface structure controls how much response can be caught.
 
 Linear complexity window:
 
-$$
+```math
 H(C_n)=\exp\left[-\frac{(C_n-C_\star)^2}{2\sigma_H^2}\right]
-$$
+```
 
 Log-fractal window:
 
-$$
+```math
 H(C_n)=\exp\left[-\frac{(\ln C_n-\ln C_\star)^2}{2w^2}\right]
-$$
+```
 
 The Higgs channel is separated from the light channel. A knot can be mass-active while light-inactive.
 
@@ -208,39 +206,32 @@ The Higgs channel is separated from the light channel. A knot can be mass-active
 
 Pairwise exchange rate:
 
-$$
+```math
 \Gamma_{ij}
 =
 g
 \exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
 \exp\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
 \cos^2(\phi_i-\phi_j)
-$$
-
-where:
-
-- `I_i-I_j` measures information mismatch,
-- `omega_i-omega_j` measures vibration-frequency mismatch,
-- `phi_i-phi_j` measures phase mismatch,
-- `g` is base exchange strength.
+```
 
 Knot-level exchange rate:
 
-$$
+```math
 \Gamma_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}
-$$
+```
 
 Exchange/densification factor:
 
-$$
+```math
 X_n=\exp(\eta\Gamma_n)
-$$
+```
 
 Weak-exchange approximation:
 
-$$
+```math
 X_n\approx1+\eta\Gamma_n
-$$
+```
 
 ---
 
@@ -248,109 +239,103 @@ $$
 
 Exchange-updated stability:
 
-$$
+```math
 S_n=3.5\,nX_n-C_n
-$$
+```
 
 with:
 
-$$
+```math
 C_n=2^n
-$$
+```
 
 Mode 4 still fails if:
 
-$$
+```math
 S_4=14X_4-16<0
-$$
+```
 
 Therefore:
 
-$$
+```math
 X_4<1.1428571429
-$$
+```
 
 or:
 
-$$
+```math
 \eta\Gamma_4<0.1335313926
-$$
+```
 
 Exchange-rate rest-mass formula:
 
-$$
+```math
 m_{0,n}=m_{\mathrm{scale}}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0)
-$$
-
-This describes rest-mass formation from internal vibratory exchange, coherent complexity, and Higgs response.
+```
 
 ---
 
 ## 8. Amplitude-first mass
 
-Each visible cluster can have a complementary inverted information pattern.
-
 Visible cluster:
 
-$$
+```math
 I_n
-$$
+```
 
 Complementary/shadow pattern:
 
-$$
+```math
 I_n^s
-$$
+```
 
 Full knot state:
 
-$$
+```math
 K_n=(I_n,I_n^s)
-$$
+```
 
 Mass amplitude:
 
-$$
+```math
 A_n=I_n-I_n^s
-$$
+```
 
 Mass:
 
-$$
+```math
 m_n=A_n^2
-$$
+```
 
 If a base model gives:
 
-$$
+```math
 m_n^{\mathrm{base}}
-$$
+```
 
 then:
 
-$$
+```math
 A_n^{\mathrm{base}}=\sqrt{m_n^{\mathrm{base}}}
-$$
+```
 
 Introduce an amplitude correction:
 
-$$
+```math
 \Delta_n
-$$
+```
 
 Then:
 
-$$
+```math
 A_n=A_n^{\mathrm{base}}\Delta_n
-$$
+```
 
 and:
 
-$$
+```math
 m_n=m_n^{\mathrm{base}}\Delta_n^2
-$$
-
-Small amplitude corrections become larger mass corrections after squaring.
+```
 
 ---
 
@@ -358,69 +343,69 @@ Small amplitude corrections become larger mass corrections after squaring.
 
 For the tau-like third mode:
 
-$$
+```math
 C_3=8
-$$
+```
 
 Primary shadow term:
 
-$$
+```math
 s_1=\frac{1}{C_3(C_3-1)}=\frac{1}{56}
-$$
+```
 
 Echo-shadow term:
 
-$$
+```math
 s_2=\frac{s_1}{C_3}=\frac{1}{448}
-$$
+```
 
 Amplitude correction:
 
-$$
+```math
 \Delta(f)=1+s_1+fs_2
-$$
+```
 
 Mass prediction:
 
-$$
+```math
 m_\tau(f)=m_\tau^{\mathrm{base}}\Delta(f)^2
-$$
+```
 
 Koide amplitude clue:
 
-$$
+```math
 \frac{A_1^2+A_2^2+A_3^2}{(A_1+A_2+A_3)^2}=\frac{2}{3}
-$$
+```
 
 with:
 
-$$
+```math
 A_i=\sqrt{m_i}
-$$
+```
 
 Local tau echo-shadow completion fraction:
 
-$$
+```math
 f_0=1-\frac{1}{C_3}=\frac{7}{8}
-$$
+```
 
 Then:
 
-$$
+```math
 \Delta_{7/8}=1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}=1.0198102679
-$$
+```
 
 and:
 
-$$
+```math
 m_\tau^{(7/8)}=1776.97039439\ \mathrm{MeV}
-$$
+```
 
 Koide high-root comparison:
 
-$$
+```math
 m_\tau^{\mathrm{Koide}}=1776.96902708\ \mathrm{MeV}
-$$
+```
 
 This is an internal toy-model clue, not confirmation.
 
@@ -428,49 +413,47 @@ This is an internal toy-model clue, not confirmation.
 
 ## 10. One-point shadow anchor
 
-Let the original eight-sector knot be `K_8` and its shadow be `S_8`.
-
 Contact count:
 
-$$
+```math
 k=|K_8\cap S_8|
-$$
+```
 
 A true shadow must connect:
 
-$$
+```math
 k\ge1
-$$
+```
 
 Multiple contact points create bridges:
 
-$$
+```math
 M(k)=\frac{k(k-1)}{2}
-$$
+```
 
 Stable non-merger condition:
 
-$$
+```math
 M(k)=0
-$$
+```
 
 Together:
 
-$$
+```math
 k_*=1
-$$
+```
 
 For a `C`-sector knot, one pinned anchor leaves the free circulation fraction:
 
-$$
+```math
 B_C(1)=\frac{C-1}{C}
-$$
+```
 
 For `C=8`:
 
-$$
+```math
 B_8(1)=\frac{7}{8}
-$$
+```
 
 ---
 
@@ -487,21 +470,21 @@ one pinned sector
 
 For the tau-like knot:
 
-$$
+```math
 B_8(1)=\frac{7}{8}
-$$
+```
 
-Anchor spin transfer can be represented schematically as:
+Anchor spin transfer:
 
-$$
+```math
 \Omega_K=\Omega_0\left(1+\lambda_{anchor}\frac{C-1}{C}\right)
-$$
+```
 
 For the tau-like case:
 
-$$
+```math
 \Omega_K=\Omega_0\left(1+\lambda_{anchor}\frac{7}{8}\right)
-$$
+```
 
 ---
 
@@ -509,47 +492,47 @@ $$
 
 Golden ratio:
 
-$$
+```math
 \varphi=\frac{1+\sqrt5}{2}
-$$
+```
 
 Minimal golden wobble around the Higgs-response resonance:
 
-$$
+```math
 \omega_\varphi(t)=\omega_H+\Delta\omega\sin(\varphi t)
-$$
+```
 
 Higgs overlap:
 
-$$
+```math
 O_{\varphi,a}(t)
 =
 \exp\left[-\frac{(\omega_{\varphi,a}(t)-\omega_H)^2}{2\sigma_\omega^2}\right]
 \cos^2(\theta_{\varphi,a}(t)-\theta_H)
 \exp\left[-\frac{d_{c,H,a}^2}{2\sigma_c^2}\right]
-$$
+```
 
-Reduced tau-like average used in the source tests:
+Reduced tau-like average:
 
-$$
+```math
 \langle O_\varphi\rangle=0.9837806705
-$$
+```
 
 The resonance-overlap tau aperture becomes:
 
-$$
+```math
 A_{tip,8}
 =
 \frac{1}{56}
 +
 \frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
-$$
+```
 
 Using the reduced average:
 
-$$
+```math
 A_{tip,8}=0.01977858948
-$$
+```
 
 ---
 
@@ -557,14 +540,14 @@ $$
 
 Speed-dependent capture factor:
 
-$$
+```math
 W_v(v)
 =
 \frac{
 \left(1-e^{-(v/v_{min})^2}\right)
 e^{-(v/v_{scatter})^2}
 }{W_{max}}
-$$
+```
 
 Interpretation:
 
@@ -574,37 +557,24 @@ just right -> source captured in knot
 too fast   -> source scatters or is not retained
 ```
 
-The source is multiplied by `W_v`.
-
 ---
 
 ## 14. Bounded fourth-mode reservoir
 
-The failed fourth-mode sector is treated as a large available supply, not an unlimited mass multiplier.
-
 Bounded reservoir gate:
 
-$$
+```math
 R_4^{gate}=\frac{R_4}{R_4+R_*}
-$$
+```
 
 Limits:
 
-$$
+```math
 R_4\ll R_*\Rightarrow R_4^{gate}\approx0
-$$
+```
 
-$$
+```math
 R_4\gg R_*\Rightarrow R_4^{gate}\approx1
-$$
-
-Interpretation:
-
-```text
-reservoir size -> availability only
-funnel aperture -> captured fraction
-speed window -> capture/scatter condition
-Higgs overlap -> conversion condition
 ```
 
 ---
@@ -613,19 +583,19 @@ Higgs overlap -> conversion condition
 
 Let:
 
-$$
+```math
 \mathcal{D}=\partial_t^2-c_*^2\nabla^2-D_c\partial_c^2+V'(\psi)
-$$
+```
 
 Then:
 
-$$
+```math
 \mathcal{D}\psi=\sum_a S_{tip,a}
-$$
+```
 
 Visible/tip source:
 
-$$
+```math
 S_{tip,a}
 =
 \lambda_a
@@ -636,17 +606,17 @@ P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle
 \right]
 R_{4,a}^{gate}
 \delta_{\epsilon,a}^{(\varphi)}
-$$
+```
 
 For the tau-like eight-sector case:
 
-$$
+```math
 P_8=\frac{1}{56},\quad E_8=\frac{1}{448},\quad B_8(1)=\frac{7}{8}
-$$
+```
 
 Integrated source:
 
-$$
+```math
 \Sigma_\tau
 =
 W_v
@@ -656,31 +626,29 @@ W_v
 \frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
 \right]
 R_4^{gate}
-$$
+```
 
 Mass rule:
 
-$$
+```math
 m_\tau=m_\tau^{base}(1+\Sigma_\tau)^2
-$$
+```
 
 At:
 
-$$
+```math
 W_v=1,\quad R_4^{gate}=1,\quad \langle O_\varphi\rangle=0.9837806705
-$$
+```
 
 the reduced tau-like result is:
 
-$$
+```math
 m_\tau=1776.86\ \mathrm{MeV}
-$$
+```
 
 ---
 
 ## 16. Dark-manifest six-side sink geometry
-
-v0.13 adds an inverse geometry for dark-manifest matter.
 
 Visible-manifest matter:
 
@@ -704,53 +672,51 @@ Eight-sector split:
 
 Visible aperture:
 
-$$
+```math
 A_{tip}=\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
-$$
+```
 
 Dark side aperture:
 
-$$
+```math
 A_{side}=6\left(\frac{1}{56}\right)=0.1071428571
-$$
+```
 
 Using:
 
-$$
+```math
 \langle O_\varphi\rangle=0.9837806705
-$$
+```
 
 gives:
 
-$$
+```math
 A_{tip}=0.01977858948
-$$
+```
 
 and:
 
-$$
+```math
 \frac{A_{side}}{A_{tip}}=5.417
-$$
+```
 
 Planck 2018 comparison values used in this toy check:
 
-$$
+```math
 \Omega_c h^2\approx0.120,\quad \Omega_b h^2\approx0.0224
-$$
+```
 
 so:
 
-$$
+```math
 \frac{\Omega_c}{\Omega_b}\approx5.357
-$$
-
-The toy ratio is within about `1.1%` of that comparison value.
+```
 
 Side-efficiency factor needed to match the central value:
 
-$$
+```math
 \epsilon_{sink}=\frac{5.357}{5.417}\approx0.989
-$$
+```
 
 ---
 
@@ -758,7 +724,7 @@ $$
 
 Visible source:
 
-$$
+```math
 S_{visible}
 =
 \lambda_+
@@ -767,11 +733,11 @@ W_{tip}
 A_{tip}
 R_4^{gate}
 \delta_{tip}^{(\varphi)}
-$$
+```
 
 Dark side source:
 
-$$
+```math
 S_{dark}
 =
 -
@@ -781,31 +747,31 @@ W_{side}
 A_{side}
 R_4^{gate}
 \delta_{side}^{(\varphi)}
-$$
+```
 
 where:
 
-$$
+```math
 \kappa_{sink}=-\nabla_\perp\cdot J_\perp
-$$
+```
 
 The negative sign means inverse field orientation, not negative mass.
 
 Mass density uses magnitude:
 
-$$
+```math
 \rho_{dark}\propto |S_{dark}|
-$$
+```
 
 Light visibility is suppressed:
 
-$$
+```math
 L_{dark}\approx0
-$$
+```
 
 Reduced dark-to-visible ratio:
 
-$$
+```math
 \frac{\rho_{dark}}{\rho_{visible}}
 \approx
 \frac{
@@ -813,118 +779,100 @@ $$
 }{
 1/56+(7/8)(1/448)\langle O_\varphi\rangle
 }
-$$
+```
 
 ---
 
 ## 18. Motion from directional exchange
 
-Balanced internal exchange contributes to rest mass. Directional exchange creates velocity.
-
 Directional exchange:
 
-$$
+```math
 \vec{\Gamma}_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}\vec{d}_{ij}
-$$
+```
 
 Simple velocity rule:
 
-$$
+```math
 \frac{\vec{v}_n}{c_*}=\frac{\vec{\Gamma}_n}{\Gamma_n}
-$$
+```
 
 Bounded form:
 
-$$
+```math
 \beta_n=\frac{v_n}{c_*}=\tanh(\mu_n)
-$$
+```
 
 where:
 
-$$
+```math
 \mu_n=\eta|\vec{\Gamma}_n|
-$$
+```
 
 Motion-energy factor:
 
-$$
+```math
 \gamma_n=\frac{1}{\sqrt{1-\beta_n^2}}=\cosh(\mu_n)
-$$
+```
 
 Effective total mass-energy:
 
-$$
+```math
 m_{eff,n}=\gamma_nm_{0,n}
-$$
-
-This is a total-energy correction, not a change to invariant rest mass.
+```
 
 ---
 
 ## 19. Entanglement and shared-channel geometry
 
-Entanglement is modeled as shared internal channel state, not controllable faster-than-light communication.
-
 For two knots `A` and `B`:
 
-$$
+```math
 \Psi_A=\Psi(x_A,t,c_A)
-$$
+```
 
-$$
+```math
 \Psi_B=\Psi(x_B,t,c_B)
-$$
+```
 
-Spatial distance:
+Spatial and channel distances:
 
-$$
-d_x=|x_A-x_B|
-$$
+```math
+d_x=|x_A-x_B|,\quad d_c=|c_A-c_B|
+```
 
-Channel distance:
+A shared channel-state:
 
-$$
-d_c=|c_A-c_B|
-$$
-
-Two systems can be far in spacetime but adjacent in channel-space:
-
-$$
-d_x\gg0,\quad d_c=0
-$$
-
-Shared channel-state:
-
-$$
+```math
 \Omega_{AB}(c_s)
-$$
+```
 
 Joint state:
 
-$$
+```math
 \Psi_{AB}
 =
 \Psi_A(x_A,t,c_s)
 \Psi_B(x_B,t,c_s)
 \Omega_{AB}(c_s)
-$$
+```
 
 Shared-channel strength:
 
-$$
+```math
 \mathcal{E}_{AB}
 =
 \lambda_{AB}
 O_{AB}
 \exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
 \tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
-$$
+```
 
 Mass-defect rule:
 
-$$
+```math
 m_{AB}=m_A+m_B-2\epsilon\mathcal{E}_{AB}\sqrt{m_A m_B}
-$$
+```
 
 Caveat:
 
@@ -937,13 +885,11 @@ shared channel != controllable nonlocal messaging
 
 ## 20. High-complexity confinement / black-hole interpretation
 
-Extreme coherent complexity may create internally separated channels.
-
 Schematic confinement proxy:
 
-$$
+```math
 \mathcal{C}_{conf}(C)=\frac{1}{1+e^{-(C-C_{conf})/w_{conf}}}
-$$
+```
 
 Interpretation:
 
@@ -953,19 +899,9 @@ large coherent complexity
 -> trapped or confined information pathways
 ```
 
-This remains underdeveloped and is not yet part of the reduced source tests.
-
 ---
 
 ## 21. CERN two-drill event-shape proxy
-
-v0.14 maps two colliding proton beams into a two-drill collision picture.
-
-```text
-beam A: boosted composite knot moving +z
-beam B: boosted composite knot moving -z
-collision: tip/tip overlap plus possible side-channel leakage
-```
 
 Collider translation:
 
@@ -976,32 +912,26 @@ dark side channel -> missing transverse momentum and event imbalance
 
 Visible scale:
 
-$$
+```math
 H_T=\sum_{jets}p_T^{jet}
-$$
+```
 
 Missing fraction:
 
-$$
+```math
 R_{miss}=\frac{E_T^{miss}}{H_T}
-$$
+```
 
 Collider proxy:
 
-$$
+```math
 \frac{|S_{dark}|}{|S_{visible}|}\sim\frac{E_T^{miss}}{H_T}
-$$
+```
 
-Current v0.14 published-results verdict:
+Current v0.14 verdict:
 
 ```text
 not confirmed, not ruled out by the reduced comparison, now constrained
-```
-
-The open-data scaffold lives at:
-
-```text
-analysis/cern_two_drill_event_shape_test.py
 ```
 
 ---
