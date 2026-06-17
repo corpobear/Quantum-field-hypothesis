@@ -3,9 +3,9 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Version:** 0.8 one-anchor spin-vortex correction
+**Version:** 0.9 Fibonacci-Higgs anchor-tip source candidate
 
-> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, one-point shadow anchoring, one-anchor spin-vortex correction, motion-by-exchange, vibration-driven shadow merger, entanglement/shared-amplitude correction, objective shared-channel geometry, predictions, and black-hole/channel confinement.
+> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, one-point shadow anchoring, one-anchor spin-vortex correction, Fibonacci-Higgs anchor-tip source dynamics, motion-by-exchange, vibration-driven shadow merger, entanglement/shared-amplitude correction, objective shared-channel geometry, predictions, and black-hole/channel confinement.
 
 ## Core idea
 
@@ -33,6 +33,7 @@ In this framework:
 - shadow projection may connect local knot geometry to Koide-like amplitude geometry,
 - the tau-like shadow echo may follow from a one-point attached eight-sector shadow,
 - a one-point original-shadow anchor may pin one sector and leave a `7/8` free spin-vortex fraction,
+- a Fibonacci-shaped anchor-tip vortex may gather mass amplitude when it overlaps the Higgs-response resonance,
 - vibration plus directional exchange explains why two-point shadow contact begins merger,
 - entanglement is modeled as shared amplitude that can create a tiny mass defect,
 - objective shared-channel geometry allows systems to be far in spacetime but adjacent in channel-space,
@@ -55,9 +56,10 @@ The immediate goals are:
 8. derive the shadow echo-projection fraction from knot geometry,
 9. prove why a stable vibrating shadow has exactly one anchor point,
 10. derive the one-anchor spin-vortex correction from projected knot geometry,
-11. derive the entanglement/shared-amplitude mass-defect factor from inter-knot exchange geometry,
-12. derive channel-distance geometry and explain why shared-channel correlation is not automatically usable as controllable nonlocal messaging,
-13. identify falsifiable predictions.
+11. derive the Fibonacci-Higgs anchor-tip source equation from a field action or concrete knot geometry,
+12. derive the entanglement/shared-amplitude mass-defect factor from inter-knot exchange geometry,
+13. derive channel-distance geometry and explain why shared-channel correlation is not automatically usable as controllable nonlocal messaging,
+14. identify falsifiable predictions.
 
 ## Repository layout
 
@@ -67,6 +69,7 @@ paper/v0.7_shadow_anchor_derivation.md         Paper addendum for one-point shad
 models/toy_model.md                             Current toy-model equations
 models/shadow_anchor_v0.7.md                    Compact v0.7 model equations for shadow-anchor proof
 models/spin_vortex_anchor_v0.8.md               Compact v0.8 equations for one-anchor spin-vortex correction
+models/fibonacci_higgs_source_v0.9.md           Candidate v0.9 Fibonacci-Higgs anchor-tip source equation
 notes/channel_transfer.md                       Channel transfer and rain/ripple analogy
 notes/information_exchange.md                   Law of vibration and exchange-rate densification
 notes/shadow_amplitude.md                       Shadow/complementary amplitude extension
@@ -88,6 +91,7 @@ tests/report_v0.5.md                            Entanglement shared-amplitude co
 tests/report_v0.6.md                            Objective shared-channel entanglement
 tests/report_v0.7.md                            Vibration-motion shadow-anchor derivation
 tests/report_v0.8.md                            One-anchor spin-vortex correction test
+tests/report_v0.9.md                            Fibonacci-Higgs source equation reduced tau test
 NOTICE.md                                       Authorship and priority notice
 LICENSE_PENDING.md                              Licensing note
 ```
@@ -450,6 +454,82 @@ m_\tau^{anchor}=1776.97039439\ \text{MeV}
 ```
 
 This is close to the Koide high-root value, but the mechanism remains a toy-model extension until the spin-transfer and vortex-compatibility terms are derived from a concrete field geometry.
+
+## v0.9 update
+
+The v0.9 extension turns the v0.8 correction into a candidate source equation.
+
+The key change is:
+
+```text
+Fibonacci/golden geometry does not directly multiply mass.
+It shapes the anchor-tip oscillation around the Higgs resonance.
+Mass amplitude is gathered only during resonance overlap.
+```
+
+Candidate field-source equation:
+
+```math
+\left(
+\partial_t^2
+-
+c_*^2\nabla^2
+-
+D_c\partial_c^2
++
+V'(\psi)
+\right)\psi
+=
+\sum_a
+\lambda_a
+\Omega_{OS,a}
+B_{C_a}(1)
+O_{\varphi,a}(t)
+\delta_{\epsilon,a}^{(\varphi)}
+```
+
+with the Higgs resonance overlap:
+
+```math
+O_{\varphi,a}(t)
+=
+\exp\left[-\frac{(\omega_{\varphi,a}(t)-\omega_H)^2}{2\sigma_\omega^2}\right]
+\cos^2\left(\theta_{\varphi,a}(t)-\theta_H\right)
+\exp\left[-\frac{d_{c,H,a}^{2}}{2\sigma_c^2}\right]
+```
+
+For the reduced tau toy test:
+
+```math
+m_\tau
+=
+m_\tau^{base}
+\left[
+1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
+\right]^2
+```
+
+Solving against the real tau value gives:
+
+```math
+\langle O_\varphi\rangle\approx0.9837806705
+```
+
+A minimal Fibonacci/golden wobble around the Higgs resonance:
+
+```math
+\omega_\varphi(t)=\omega_H+\Delta\omega\sin(\varphi t)
+```
+
+reaches this overlap at roughly:
+
+```math
+\frac{\Delta\omega}{\sigma_\omega}\approx0.2563
+```
+
+under strong phase-locking.
+
+This is the current best candidate field-source proposal, but it remains incomplete until the frequency ratio, phase-locking condition, and finite Fibonacci-shaped source core are derived from knot geometry or a field action.
 
 ## Citation / attribution
 
