@@ -1,20 +1,24 @@
-# Multi-Channel Information Field Theory: A Speculative Framework for Vibration, Shadow-Amplitude Geometry, Motion, Entanglement, Objective Shared Channels, Mass Emergence, and Channel Confinement
+# Multi-Channel Information Field Theory: A Speculative Framework for Mass Emergence, Shadow-Amplitude Geometry, Anchor-Tip Sources, and Bounded Reservoir Capture
 
 **Author:** Adrian Newton / corpobear  
-**Version:** 0.6 objective shared-channel entanglement draft  
-**Status:** speculative theoretical framework / toy field model
+**Version:** 0.11 normalized fourth-mode reservoir field-source draft  
+**Status:** speculative theoretical framework / toy field model; not established physics
+
+---
 
 ## Abstract
 
-This paper proposes a speculative toy field framework in which physical reality is modeled as a multi-channel information field. Each fundamental information-cell exists across space, time, and internal channel. Particles are interpreted as stable coherent clusters of information-cells. Light acts as a massless activation channel. Internal vibration opens information-exchange channels between similar information-points. Resonant exchange creates densification. Mass emerges when activated, internally resonant clusters enter a finite Higgs-response window.
+This paper develops Multi-Channel Information Field Theory (MCIFT), a speculative toy framework in which physical structure is modeled as a multi-channel information field. Particles are interpreted as coherent knot-like clusters of information-cells. Light acts as a massless activation channel, internal vibration opens exchange channels, resonant exchange produces densification, and mass emerges when coherent clusters enter a finite Higgs-response window.
 
-The framework introduces a complementary or shadow-amplitude structure: mass may be modeled as the square of an amplitude imbalance between a visible information cluster and a complementary inverted information pattern. This moves the toy model toward square-root mass geometry and a possible mechanism-path toward Koide-like charged-lepton relations. Later extensions add motion as directional exchange, entanglement as shared-amplitude mass defect, and objective shared-channel geometry, in which entangled systems can be far apart in spacetime but adjacent in internal channel-space.
+Earlier versions introduced amplitude-first mass, shadow/complementary structure, motion as directional exchange, shared-channel entanglement, and one-point shadow anchoring. The current v0.11 draft consolidates later extensions: a one-anchor `7/8` spin-vortex fraction, a Fibonacci-shaped anchor-tip source, a Higgs-resonance overlap term, a funnel-speed capture window, and a bounded fourth-mode reservoir availability term. The latest field-source equation is tested in reduced integrated form against the tau-like toy model.
 
-The framework is not presented as established physics or a replacement for quantum field theory. It is a speculative mathematical structure with toy-model consequences. In particular, objective shared-channel correlation is not claimed to be controllable faster-than-light messaging. A future version must derive no-signaling behavior, the Koide-like angle, and the shared-channel leakage parameter from deeper channel geometry.
+This framework is not presented as established physics or as a replacement for quantum field theory. It is a speculative mathematical structure with toy-model consequences. The current goal is internal consistency and development toward falsifiable equations.
+
+---
 
 ## 1. Field variable
 
-The proposed field is written as:
+The proposed field is:
 
 ```math
 \Psi(x,y,z,t,c)
@@ -29,10 +33,12 @@ where:
 Possible internal channels include:
 
 ```math
-c \in \{\text{identity},\text{light},\text{Higgs},\text{phase},\text{charge},\text{knot},\text{exchange},\text{amplitude},\text{motion},\text{entanglement},\text{shared channel},\text{confinement}\}
+c\in\{\text{identity},\text{light},\text{Higgs},\text{phase},\text{charge},\text{knot},\text{exchange},\text{amplitude},\text{motion},\text{entanglement},\text{shared channel},\text{confinement}\}.
 ```
 
 The core claim is that particles are stable coherent clusters of this multi-channel field.
+
+---
 
 ## 2. Core assumptions
 
@@ -45,137 +51,113 @@ The core claim is that particles are stable coherent clusters of this multi-chan
 7. Resonant exchange creates densification.
 8. Mass should be calculated from amplitude first, then squared.
 9. Directional exchange creates motion and affects total energy, not invariant rest mass.
-10. Entanglement is modeled as shared amplitude and can create a tiny mass defect.
-11. Entangled systems may be far in spacetime but adjacent in channel-space.
-12. Extreme coherent complexity may form internally confined channels.
+10. A visible knot may have a complementary or shadow amplitude.
+11. A stable original/shadow pair may have exactly one anchor point.
+12. A one-point anchor can leave a `7/8` free spin-vortex fraction in an eight-sector tau-like knot.
+13. A Fibonacci-shaped anchor tip may overlap the Higgs-response channel and source mass amplitude.
+14. Funnel speed controls whether the source is captured or scattered.
+15. The failed fourth mode may act as a bounded reservoir availability term, not a raw mass multiplier.
 
-The current v0.6 chain is:
+The current v0.11 chain is:
 
 ```text
 information cell
 -> coherent knot cluster
 -> internal vibration
--> information exchange rate
--> resonant densification
--> visible/complementary amplitude imbalance
--> shadow projection
--> shared-channel entanglement correction
--> Higgs response
+-> resonant exchange
+-> visible/shadow amplitude imbalance
+-> one-point original/shadow anchor
+-> 7/8 free spin-vortex fraction
+-> Fibonacci-shaped anchor-tip source
+-> Higgs-response resonance overlap
+-> funnel-speed capture window
+-> bounded fourth-mode reservoir availability
+-> accumulated mass amplitude
 -> squared rest mass
 ```
 
-Motion is added as a separate energy layer:
+---
 
-```text
-balanced internal exchange -> rest mass / densification
-directional exchange -> velocity
-velocity -> total effective energy increase
-```
+## 3. Cluster complexity and stability
 
-Entanglement is added as:
-
-```text
-shared exchange -> shared channel-state -> shared amplitude -> tiny mass defect
-```
-
-## 3. Cluster complexity
-
-Let `n` label the cluster mode. The simplest information-growth law considered here is binary growth:
+Let `n` label the cluster mode. The simplest information-growth law is binary growth:
 
 ```math
-C_n=2^n
+C_n=2^n.
 ```
 
 Thus:
 
 ```math
-C_1=2,\quad C_2=4,\quad C_3=8,\quad C_4=16
+C_1=2,\quad C_2=4,\quad C_3=8,\quad C_4=16.
 ```
 
-The interpretation is that each higher mode doubles the information burden of the cluster.
-
-## 4. Coherence and stability
-
-Let `Q_n` represent coherence strength and `S_n` represent stability:
+Let coherence grow approximately linearly:
 
 ```math
-S_n=Q_n-C_n
+Q_n=an.
 ```
 
-A simple toy coherence law is:
+The original stability law is:
 
 ```math
-Q_n=an
-```
-
-so the original stability law is:
-
-```math
-S_n=an-2^n
+S_n=an-2^n.
 ```
 
 A cluster survives if:
 
 ```math
-S_n>0
+S_n>0,
 ```
 
 and fails if:
 
 ```math
-S_n<0
+S_n<0.
 ```
 
 For exactly three modes to survive while the fourth fails:
 
 ```math
-S_1>0,\quad S_2>0,\quad S_3>0,\quad S_4<0
+S_1>0,\quad S_2>0,\quad S_3>0,\quad S_4<0,
 ```
 
 which gives:
 
 ```math
-\frac{8}{3}<a<4
+\frac{8}{3}<a<4.
 ```
 
-Thus, if coherence grows roughly linearly while complexity doubles, three stable modes can arise before a fourth mode fails.
-
-## 5. Fractal catching surface
-
-The mass-catching surface of a cluster is modeled as a fractal information surface:
+Using the central toy value:
 
 ```math
-A_n=(C_n-1)^{D_f}
+a=3.5,
 ```
 
-A proposed structural origin of the effective fractal dimension is:
+the first three modes are stable and the fourth mode fails. In v0.11, the failed fourth-mode sector is later interpreted as a reservoir availability term rather than an extra stable particle.
+
+---
+
+## 4. Fractal catching surface and finite Higgs response
+
+The mass-catching surface of a cluster is modeled as:
 
 ```math
-D_f=3+\frac{1}{2}=3.5
+A_n=(C_n-1)^{D_f}.
 ```
 
-where the three-thread core contributes `3` and a shared bond contributes approximately `1/2`.
-
-A small correction may be added:
+A proposed effective dimension is:
 
 ```math
-D_f=3.5+\epsilon
+D_f=3.5+\epsilon,
 ```
 
 where `epsilon` represents phase, bond, or resonance correction.
 
-## 6. Finite Higgs response
-
-The Higgs response is modeled as a finite window. A linear Gaussian response may be used:
+The Higgs response is modeled as a finite window. A log-fractal version is:
 
 ```math
-H(C_n)=e^{-\frac{(C_n-C_\star)^2}{2\sigma_H^2}}
-```
-
-A log-fractal version may also be used:
-
-```math
-H(C_n)=e^{-\frac{(\ln C_n-\ln C_\star)^2}{2w^2}}
+H(C_n)=\exp\left[-\frac{(\ln C_n-\ln C_*)^2}{2w^2}\right].
 ```
 
 Interpretation:
@@ -184,41 +166,13 @@ Interpretation:
 - clusters in the correct range receive strong response,
 - clusters that are too complex fall outside the response window or fail coherence.
 
-## 7. Original mass rule
+---
 
-The original toy mass rule is:
+## 5. Vibration and information exchange
 
-```math
-m_n=m_0A_nH(C_n)\max(S_n,0)
-```
+Internal movement creates vibration. Similar information-points vibrating at compatible frequencies open stronger internal exchange channels.
 
-Expanded:
-
-```math
-m_n=m_0(C_n-1)^{D_f}H(C_n)\max(an-2^n,0)
-```
-
-with:
-
-```math
-C_n=2^n
-```
-
-This says that mass equals base scale times fractal catching surface times finite Higgs response times survival.
-
-## 8. Vibration and information exchange
-
-The v0.2 extension treats knots as internally moving structures. Internal movement creates vibration. Similar information-points vibrating at compatible frequencies open stronger internal communication channels.
-
-Let:
-
-```math
-\Gamma_{ij}
-```
-
-be the information exchange rate between information-point `i` and information-point `j`.
-
-A simple pairwise exchange rule is:
+A pairwise exchange rule is:
 
 ```math
 \Gamma_{ij}
@@ -226,688 +180,510 @@ A simple pairwise exchange rule is:
 g
 \exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
 \exp\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
-\cos^2(\phi_i-\phi_j)
+\cos^2(\phi_i-\phi_j).
 ```
-
-where:
-
-- `I_i-I_j` measures information mismatch,
-- `omega_i-omega_j` measures vibration-frequency mismatch,
-- `phi_i-phi_j` measures phase mismatch,
-- `g` is base exchange strength.
 
 Exchange is strongest when information, frequency, and phase align.
 
 For the whole knot:
 
 ```math
-\Gamma_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}
+\Gamma_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}.
 ```
 
 Define the exchange/densification factor:
 
 ```math
-X_n=e^{\eta\Gamma_n}
+X_n=e^{\eta\Gamma_n}.
 ```
-
-For weak exchange:
-
-```math
-X_n\approx1+\eta\Gamma_n
-```
-
-## 9. Exchange-updated stability and rest mass
 
 The exchange-updated stability law is:
 
 ```math
-S_n=3.5nX_n-C_n
-```
-
-with:
-
-```math
-C_n=2^n
-```
-
-Interpretation:
-
-```text
-resonant exchange strengthens coherence, but complexity still fights back
+S_n=3.5nX_n-C_n.
 ```
 
 The exchange-updated rest-mass formula is:
 
 ```math
-m_{0,n}=m_{scale}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0)
+m_{0,n}=m_{scale}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0).
 ```
 
-This formula describes invariant rest-mass formation from internal vibratory exchange, coherent complexity, and Higgs response.
+---
 
-## 10. Fourth-mode constraint
+## 6. Amplitude-first mass and shadow structure
 
-Mode 4 must still fail if the model is to avoid predicting a stable fourth charged-lepton-like generation.
-
-For mode 4:
+The model introduces a complementary amplitude structure. For a visible information cluster:
 
 ```math
-S_4=3.5(4)X_4-16=14X_4-16
+I_n,
 ```
 
-Failure requires:
+introduce a complementary/shadow pattern:
 
 ```math
-14X_4-16<0
+I_n^s.
 ```
 
-so:
+The mass amplitude is modeled as an imbalance:
 
 ```math
-X_4<1.1428571429
-```
-
-or:
-
-```math
-\eta\Gamma_4<\ln(1.1428571429)=0.1335313926
-```
-
-This gives a useful constraint: the fourth mode may have exchange, but coherent exchange must remain below the stabilization threshold.
-
-## 11. Complementary or shadow amplitude
-
-The model introduces a complementary amplitude structure.
-
-For every visible information cluster:
-
-```math
-I_n
-```
-
-introduce a complementary information pattern:
-
-```math
-I_n^s
-```
-
-The full knot state is:
-
-```math
-K_n=(I_n,I_n^s)
-```
-
-The mass amplitude is modeled as the imbalance between visible and complementary information:
-
-```math
-A_n=I_n-I_n^s
+A_n=I_n-I_n^s.
 ```
 
 Mass is then:
 
 ```math
-m_n=A_n^2
+m_n=A_n^2.
 ```
 
-This means the deeper model should attempt to calculate amplitude first:
+If a base model produces:
 
 ```math
-A_n=\sqrt{m_n}
-```
-
-and only then square into mass.
-
-Let the base MCIFT model produce:
-
-```math
-m_n^{base}
-```
-
-The base amplitude is:
-
-```math
-A_n^{base}=\sqrt{m_n^{base}}
-```
-
-Introduce an amplitude correction:
-
-```math
-\Delta_n
-```
-
-Then:
-
-```math
-A_n=A_n^{base}\Delta_n
-```
-
-and:
-
-```math
-m_n=m_n^{base}\Delta_n^2
-```
-
-A small amplitude correction therefore becomes a larger mass correction after squaring.
-
-## 12. Connection to Koide-style amplitude geometry
-
-Koide's charged-lepton relation can be written as:
-
-```math
-\frac{A_1^2+A_2^2+A_3^2}{(A_1+A_2+A_3)^2}=\frac{2}{3}
-```
-
-where:
-
-```math
-A_i=\sqrt{m_i}
-```
-
-This suggests that if MCIFT is to connect to Koide, the model must explain the geometry of the amplitude vector:
-
-```math
-(\sqrt{m_e},\sqrt{m_\mu},\sqrt{m_\tau})
-```
-
-rather than only fitting the final masses directly.
-
-The Koide relation is equivalent to the charged-lepton amplitude vector sitting at a 45-degree angle from the equal-amplitude direction:
-
-```math
-(1,1,1)
-```
-
-This does not prove MCIFT, but it identifies a possible bridge:
-
-```text
-knot geometry -> complementary amplitude -> square-root mass geometry -> Koide-like relation
-```
-
-## 13. Shadow projection model
-
-For the tau-like third mode:
-
-```math
-C_3=8
-```
-
-Primary shadow term:
-
-```math
-s_1=\frac{1}{C_3(C_3-1)}=\frac{1}{56}
-```
-
-Echo-shadow term:
-
-```math
-s_2=\frac{s_1}{C_3}=\frac{1}{448}
-```
-
-Amplitude correction:
-
-```math
-\Delta(f)=1+s_1+fs_2
-```
-
-Mass prediction:
-
-```math
-m_\tau(f)=m_\tau^{base}\Delta(f)^2
-```
-
-The global Koide clue is:
-
-```math
-\frac{2}{3}
-```
-
-which corresponds to the global 45-degree amplitude-angle geometry.
-
-The local tau echo-shadow completion fraction is modeled as:
-
-```math
-f_0=1-\frac{1}{C_3}=\frac{7}{8}
-```
-
-Then:
-
-```math
-\Delta_{7/8}=1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}=1.0198102679
-```
-
-and:
-
-```math
-m_\tau^{7/8}=1776.97039439\ \text{MeV}
-```
-
-This is nearly identical to the Koide high-root value used in the toy reports:
-
-```math
-m_\tau^{Koide}=1776.96902708\ \text{MeV}
-```
-
-Interpretation:
-
-```text
-2/3 = global Koide amplitude-angle projection
-7/8 = local tau echo-shadow completion fraction
-```
-
-## 14. Motion from directional exchange
-
-Balanced internal exchange contributes to rest mass.
-
-Directional exchange creates velocity.
-
-Define directional exchange:
-
-```math
-\vec{\Gamma}_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}\vec d_{ij}
-```
-
-Simple velocity rule:
-
-```math
-\frac{\vec v_n}{c_*}=\frac{\vec{\Gamma}_n}{\Gamma_n}
-```
-
-Bounded form:
-
-```math
-\beta_n=\frac{v_n}{c_*}=\tanh(\mu_n)
-```
-
-where:
-
-```math
-\mu_n=\eta|\vec{\Gamma}_n|
-```
-
-Motion-energy factor:
-
-```math
-\gamma_n=\frac{1}{\sqrt{1-\beta_n^2}}=\cosh(\mu_n)
-```
-
-Effective total mass-energy:
-
-```math
-m_{eff,n}=\gamma_nm_{0,n}
-```
-
-This is a total-energy correction, not a change to invariant rest mass.
-
-## 15. Entanglement as shared amplitude
-
-In this toy model, entanglement does not mean controllable faster-than-light communication. It is modeled as a shared internal channel state: two knots become correlated strongly enough that part of their internal amplitude is shared rather than duplicated.
-
-For two knots `A` and `B`, define inter-knot entanglement strength:
-
-```math
-\mathcal{E}_{AB}=O_{AB}\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
-```
-
-where:
-
-- `O_AB` is overlap compatibility,
-- `Gamma_AB` is inter-knot exchange rate,
-- `Gamma_c` is a characteristic exchange scale.
-
-A toy mass-defect rule is:
-
-```math
-m_{AB}=m_A+m_B-2\epsilon\mathcal{E}_{AB}\sqrt{m_Am_B}
-```
-
-This expresses the idea that entangled knots share amplitude and therefore duplicate less mass-structure.
-
-For the tau echo-shadow correction:
-
-```math
-f_{ent}=f_0(1-E_3)
-```
-
-where:
-
-```math
-f_0=\frac{7}{8}
-```
-
-The Koide residual requires:
-
-```math
-E_3=0.0002008838
-```
-
-or:
-
-```text
-0.02008838 percent
-```
-
-Then:
-
-```math
-f_{ent}=\frac{7}{8}(1-0.0002008838)=0.8748242267
-```
-
-and:
-
-```math
-\Delta_{ent}=1+\frac{1}{56}+0.8748242267\frac{1}{448}=1.0198098755
-```
-
-so:
-
-```math
-m_\tau^{ent}=1708.60405054(1.0198098755)^2=1776.96902708\ \text{MeV}
-```
-
-This matches the Koide high-root tau value by construction because `E_3` is inferred from the Koide residual.
-
-## 16. Objective shared-channel geometry
-
-The v0.6 update makes entanglement more explicit: channels are not spatially smeared clouds. Particles carry access-points into an internal channel-space.
-
-For two knots `A` and `B`:
-
-```math
-\Psi_A=\Psi(x_A,t,c_A)
-```
-
-```math
-\Psi_B=\Psi(x_B,t,c_B)
-```
-
-Define spatial distance:
-
-```math
-d_x=|x_A-x_B|
-```
-
-Define channel distance:
-
-```math
-d_c=|c_A-c_B|
-```
-
-Two systems can be far in spacetime but adjacent in channel-space:
-
-```math
-d_x\gg0
-```
-
-```math
-d_c=0
-```
-
-A shared channel-state is written as:
-
-```math
-\Omega_{AB}(c_s)
-```
-
-and the joint state is modeled as:
-
-```math
-\Psi_{AB}
-=
-\Psi_A(x_A,t,c_s)
-\Psi_B(x_B,t,c_s)
-\Omega_{AB}(c_s)
-```
-
-This means the particles remain separate in ordinary space but are joined by one objective internal channel-state.
-
-The v0.6 entanglement strength is:
-
-```math
-\mathcal{E}_{AB}
-=
-\lambda_{AB}
-O_{AB}
-\exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
-\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
-```
-
-where:
-
-- `lambda_AB` is the maximum shared-channel leakage/coupling strength,
-- `O_AB` is overlap compatibility,
-- `d_c` is channel distance,
-- `sigma_c` is channel-width tolerance,
-- `Gamma_AB` is inter-knot exchange rate,
-- `Gamma_c` is a characteristic exchange scale.
-
-If the channel is shared:
-
-```math
-d_c=0
+m_n^{base},
 ```
 
 then:
 
 ```math
-\exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]=1
+A_n^{base}=\sqrt{m_n^{base}}.
+```
+
+With amplitude correction:
+
+```math
+\Delta_n,
+```
+
+write:
+
+```math
+A_n=A_n^{base}\Delta_n,
 ```
 
 and:
 
 ```math
-\mathcal{E}_{AB}
-=
-\lambda_{AB}O_{AB}\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
+m_n=m_n^{base}\Delta_n^2.
 ```
 
-This gives objective instant correlation through shared channel-state, not automatically controllable faster-than-light messaging.
+This amplitude-first structure is central to all later source tests.
 
-For the tau echo-shadow correction, the v0.6 interpretation is:
+---
+
+## 7. Koide-style amplitude clue and shadow projection
+
+Koide's charged-lepton relation can be written as:
 
 ```math
-E_3
-=
-\lambda_3
-O_3
-\exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
-\tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)
+\frac{A_1^2+A_2^2+A_3^2}{(A_1+A_2+A_3)^2}=\frac{2}{3},
 ```
 
-In the shared-channel saturated limit:
+where:
 
 ```math
-d_c=0
+A_i=\sqrt{m_i}.
 ```
 
+This suggests that any connection to Koide-like structure should be made at the amplitude level.
+
+For the tau-like third mode:
+
 ```math
-O_3\approx1
+C_3=8.
 ```
 
+Primary shadow term:
+
 ```math
-\tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)\approx1
+s_1=\frac{1}{C_3(C_3-1)}=\frac{1}{56}.
 ```
 
-so:
+Echo-shadow term:
 
 ```math
-E_3\approx\lambda_3=0.0002008838
+s_2=\frac{s_1}{C_3}=\frac{1}{448}.
 ```
 
-This explains the same tiny correction as shared-channel leakage.
-
-## 17. Channel transfer and shared-state correlation
-
-Light is treated as a massless channel impulse. When it hits a resting information surface, it may create a ripple. When it hits an already-active coherent cluster, it may dissolve into the existing resonance.
-
-Let an incoming cluster `i` interact with a receiving surface `s`. Then:
+Amplitude correction:
 
 ```math
-T_{i\rightarrow s}
-=
-Q_iQ_s
-e^{-\frac{(C_i-C_s)^2}{2\sigma_C^2}}
-e^{-\frac{(m_i-m_s)^2}{2\sigma_m^2}}
+\Delta(f)=1+s_1+fs_2.
 ```
 
-Transfer is strongest when coherence is high, complexity mismatch is small, and mass/ripple mismatch is small.
-
-The exchange extension suggests an additional dependency:
+Mass prediction:
 
 ```math
-T_{i\rightarrow s}\propto X_iX_s
+m_\tau(f)=m_\tau^{base}\Delta(f)^2.
 ```
 
-when internal vibration and phase coherence support transfer.
-
-The objective shared-channel extension suggests channel transfer can become shared-state correlation when:
+The `7/8` projection gives:
 
 ```math
-\Gamma_{AB}\gg\Gamma_c
+m_\tau^{7/8}=1776.97039439\ \mathrm{MeV}
 ```
 
+in the earlier reduced toy model.
+
+---
+
+## 8. One-point shadow anchor and spin-vortex fraction
+
+Let the original eight-sector tau-like knot be `K_8` and the shadow be `S_8`. Define the number of shared contact points:
+
 ```math
-d_c\rightarrow0
+k=|K_8\cap S_8|.
 ```
 
-and channel overlap is high.
-
-## 18. Mode structure
-
-Using:
+A true shadow must connect:
 
 ```math
-C_n=2^n
+k\ge1.
 ```
 
-and the original stability rule:
+But multiple contact points create vibrating bridges:
 
 ```math
-S_n=an-2^n
+M(k)=\frac{k(k-1)}{2}.
 ```
 
-with:
+A single contact point gives:
 
 ```math
-\frac{8}{3}<a<4
+M(1)=0.
 ```
 
-the first three modes survive and the fourth fails.
-
-| Mode | Complexity | Stability outcome | Interpretation |
-|---:|---:|---|---|
-| 1 | 2 | survives | electron-like light mode |
-| 2 | 4 | survives | muon-like heavier mode |
-| 3 | 8 | survives | tau-like heavy mode |
-| 4 | 16 | fails | delocalized/background-forming mode |
-
-This supports the idea that the first three charged-lepton-like modes can be stable while a fourth becomes unstable.
-
-## 19. Black-hole/channel confinement interpretation
-
-Extreme coherent complexity may create internally confined channels. A black hole is modeled as a complexity cluster whose internal channel becomes separated from ordinary external light channels.
-
-Exterior observers access:
+Two contact points give:
 
 ```math
-\Psi(x,y,z,t,c_{outside})
+M(2)=1.
 ```
 
-while the internal region may occupy:
+The v0.7/v0.8 argument is that multi-contact bridges create merger-motion, so a stable shadow must satisfy both:
 
 ```math
-\Psi(x,y,z,t,c_{BH})
+k\ge1
 ```
 
-At the horizon, channel transfer is suppressed:
+and:
 
 ```math
-T_{BH\rightarrow outside}\approx0
+M(k)=0.
+```
+
+The only solution is:
+
+```math
+k_*=1.
+```
+
+For a `C`-sector knot, one pinned anchor leaves the free circulation fraction:
+
+```math
+B_C(1)=\frac{C-1}{C}.
+```
+
+For the tau-like eight-sector knot:
+
+```math
+B_8(1)=\frac{7}{8}.
 ```
 
 Interpretation:
 
 ```text
-black hole = coherent complexity cluster with suppressed external channel transfer
+one original/shadow anchor point
+-> one pinned sector
+-> seven free circulating sectors
+-> 7/8 spin-vortex fraction
 ```
 
-This is not intended to replace general relativity, but to express the black-hole horizon as a channel-transfer boundary in the toy model.
+---
 
-## 20. Predictions and falsifiability directions
+## 9. Fibonacci-Higgs anchor-tip source
 
-The model is speculative but suggests possible constraints:
+The v0.9 extension interprets the one-point anchor as a localized spin-vortex source. The Fibonacci/golden geometry does not directly multiply mass. Instead, it shapes the path of the anchor-tip oscillation around the Higgs-response resonance.
 
-1. No stable fourth charged-lepton-like knot mode if the fourth mode exceeds the stability threshold.
-2. Mass should appear only when information clusters become coherent and enter the Higgs-response window.
-3. Internal exchange should affect rest-mass structure through amplitude and stability, not only through final mass fitting.
-4. Directional exchange should affect motion/total energy rather than invariant rest mass.
-5. Shadow/amplitude geometry should be able to derive, not merely fit, Koide-like square-root mass relations.
-6. Entanglement should appear as shared amplitude and tiny mass defect when channel-distance approaches zero.
-7. Objective shared-channel correlation must not become controllable faster-than-light messaging without an additional rule.
-
-## 21. Current numerical status
-
-The current toy benchmark uses the old MCIFT baseline tau mass:
+Let the Fibonacci/golden wobble be:
 
 ```math
-m_\tau^{base}=1708.60405054\ \text{MeV}
+\omega_\varphi(t)=\omega_H+\Delta\omega\sin(\varphi t),
 ```
 
-The `2/3` echo-shadow test gives:
+where:
 
 ```math
-m_\tau^{2/3}=1775.35017984\ \text{MeV}
+\varphi=\frac{1+\sqrt{5}}{2}.
 ```
 
-The `7/8` echo-shadow test gives:
+The resonance overlap is:
 
 ```math
-m_\tau^{7/8}=1776.97039439\ \text{MeV}
+O_{\varphi,a}(t)
+=
+\exp\left[-\frac{(\omega_{\varphi,a}(t)-\omega_H)^2}{2\sigma_\omega^2}\right]
+\cos^2(\theta_{\varphi,a}(t)-\theta_H)
+\exp\left[-\frac{d_{c,H,a}^{2}}{2\sigma_c^2}\right].
 ```
 
-The v0.5/v0.6 entangled shared-channel correction gives:
+In the reduced tau-like test:
 
 ```math
-m_\tau^{ent}=1776.96902708\ \text{MeV}
+\langle O_\varphi\rangle\approx0.9837806705.
 ```
 
-matching the Koide high-root tau value used in these reports:
+This corresponds to a near-resonant, strongly phase-locked source.
+
+---
+
+## 10. Funnel-speed capture window
+
+The v0.10 extension adds a speed-dependent capture factor:
 
 ```math
-m_\tau^{Koide}=1776.96902708\ \text{MeV}
+W_v(v)
+=
+\frac{\left(1-e^{-(v/v_{min})^2}\right)e^{-(v/v_{scatter})^2}}{W_{max}}.
 ```
 
-This is currently a residual fit, not an independent prediction. The key challenge is to derive the `7/8` shadow completion and the tiny shared-channel leakage:
-
-```math
-\lambda_3=0.0002008838
-```
-
-from channel-space geometry.
-
-## 22. Status and next work
-
-The toy model currently explains structural patterns but does not yet provide a full quantum field Lagrangian, a no-signaling theorem, or an independent precision mass prediction.
-
-The current mechanism stack is:
+This creates three regimes:
 
 ```text
-vibration-driven information exchange
--> exchange-driven densification
--> exchange-updated stability
--> shadow/complementary amplitude correction
--> Koide-like shadow projection
--> motion as directional exchange
--> entanglement as shared-amplitude mass defect
--> objective shared-channel geometry
+too slow  -> no channel connection
+just right -> source captured in knot
+too fast  -> source scatters or is not retained
 ```
 
-The next key derivations are:
+At optimal capture speed:
 
-1. derive the `7/8` tau echo-shadow completion rule from knot geometry,
-2. derive the tiny shared-channel leakage `lambda_3 = 0.0002008838` from channel-space geometry,
-3. explain why objective shared-channel correlation does not become controllable faster-than-light messaging,
-4. derive Koide's 45-degree amplitude relation rather than matching it after the fact,
-5. express the entire model as a field action or Lagrangian.
+```math
+W_v=1.
+```
 
-## 23. Closing statement
+---
 
-MCIFT, in its current v0.6 toy form, proposes that mass is coherent information made heavy by resonance, amplitude imbalance, Higgs response, and channel structure. The charged-lepton mass pattern may reflect a deeper amplitude geometry: global `2/3` Koide projection, local `7/8` tau shadow completion, and a tiny shared-channel entanglement correction. This remains speculative, but the structure now gives a clear research path: derive the amplitude geometry from the internal channel-space rather than fitting it to known lepton masses.
+## 11. Bounded fourth-mode reservoir availability
+
+The v0.11 extension treats the failed fourth-mode sector as a large available supply, not as a raw mass multiplier.
+
+Define:
+
+```math
+R_4^{gate}=\frac{R_4}{R_4+R_*}.
+```
+
+This keeps:
+
+```math
+0\le R_4^{gate}\le1.
+```
+
+If the reservoir is weak, then:
+
+```math
+R_4^{gate}\approx0.
+```
+
+If the reservoir is very large, then:
+
+```math
+R_4^{gate}\approx1.
+```
+
+Interpretation:
+
+```text
+reservoir -> bounded availability
+funnel aperture -> tiny captured fraction
+Higgs overlap -> conversion condition
+speed window -> capture/scatter condition
+knot -> amplitude accumulator
+mass -> squared amplitude
+```
+
+---
+
+## 12. Current v0.11 field-source equation
+
+Let:
+
+```math
+\mathcal{D}=\partial_t^2-c_*^2\nabla^2-D_c\partial_c^2+V'(\psi).
+```
+
+The current source equation is:
+
+```math
+\mathcal{D}\psi=\sum_a S_{tip,a}.
+```
+
+The source term is:
+
+```math
+S_{tip,a}
+=
+\lambda_a
+\Omega_{OS,a}
+W_v(v_{tip,a})
+\left[P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle\right]
+R_{4,a}^{gate}
+\delta_{\epsilon,a}^{(\varphi)}.
+```
+
+where:
+
+```text
+lambda_a                 anchor coupling
+Omega_OS,a               original/shadow vortex curl
+W_v                      funnel-speed capture window
+P_C                      primary aperture term
+B_C(1)                   one-anchor free spin-vortex fraction
+E_C                      echo aperture term
+<O_phi>                  averaged Fibonacci-Higgs overlap
+R4_gate                  bounded fourth-mode reservoir availability
+delta_epsilon^(phi)      finite Fibonacci-shaped source core
+```
+
+Assume the source core is normalized:
+
+```math
+\int \delta_{\epsilon,a}^{(\varphi)}\,du\,dv\,dc=1.
+```
+
+Then the integrated source is:
+
+```math
+\Sigma_a
+=
+\lambda_a
+\Omega_{OS,a}
+W_v(v_{tip,a})
+\left[P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle\right]
+R_{4,a}^{gate}.
+```
+
+---
+
+## 13. Reduced tau-like field-source test
+
+For the tau-like eight-sector knot:
+
+```math
+P_8=\frac{1}{56},\quad E_8=\frac{1}{448},\quad B_8(1)=\frac{7}{8}.
+```
+
+Set:
+
+```math
+\lambda_a\Omega_{OS,a}=1.
+```
+
+Then:
+
+```math
+\Sigma_\tau
+=
+W_v
+\left[\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle\right]
+R_4^{gate}.
+```
+
+Mass remains amplitude-first:
+
+```math
+m_\tau=m_\tau^{base}(1+\Sigma_\tau)^2.
+```
+
+Using:
+
+```math
+m_\tau^{base}=1708.60405054\ \mathrm{MeV},
+```
+
+```math
+\langle O_\varphi\rangle=0.9837806705,
+```
+
+```math
+W_v=1,
+```
+
+and:
+
+```math
+R_4^{gate}=1,
+```
+
+the integrated field-source gives:
+
+```math
+\Sigma_\tau=0.01977858948.
+```
+
+Therefore:
+
+```math
+m_\tau=1776.86\ \mathrm{MeV}.
+```
+
+This is a reduced internal consistency test of the toy model, not experimental confirmation.
+
+---
+
+## 14. Motion and entanglement extensions
+
+Motion is modeled separately from rest-mass formation:
+
+```text
+balanced internal exchange -> rest mass / densification
+directional exchange -> velocity
+velocity -> total effective energy increase
+```
+
+A compact motion factor may be written as:
+
+```math
+m_{eff,n}=\gamma_nm_{0,n},
+```
+
+where:
+
+```math
+\beta_n=\tanh(\eta|\vec{\Gamma}_n|),\quad \gamma_n=\cosh(\eta|\vec{\Gamma}_n|).
+```
+
+Entanglement is modeled as shared amplitude and channel adjacency. This is not claimed to allow controllable faster-than-light messaging. The shared-channel idea remains speculative and must be constrained by a no-signaling derivation.
+
+---
+
+## 15. Predictions and falsifiability direction
+
+The model remains speculative. A future version must derive or test:
+
+1. the field operator from an action principle,
+2. the finite Fibonacci-shaped source core,
+3. the `lambda_a Omega_OS,a` coupling from knot geometry,
+4. the speed-window parameters `v_min`, `v_scatter`, and `W_max`,
+5. the reservoir scale `R_*`,
+6. the resonance overlap value `0.9837806705`,
+7. whether the same source equation works beyond the tau-like mode,
+8. whether the model can be made Lorentz-compatible and gauge-compatible,
+9. whether any falsifiable deviation from standard particle physics follows.
+
+---
+
+## 16. Current status
+
+MCIFT v0.11 should be treated as:
+
+```text
+speculative toy-model field-source proposal
+```
+
+not as:
+
+```text
+established particle physics
+```
+
+The value of the current version is that the mass correction is no longer only a post-hoc amplitude factor. It is now expressed as an integrated field-source term with bounded reservoir availability and a capture-window mechanism.
