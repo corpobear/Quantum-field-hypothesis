@@ -6,6 +6,47 @@ This folder contains analysis scaffolds for testing MCIFT toy-model predictions 
 
 ---
 
+## v0.15 matter-antimatter toy ratio
+
+Script:
+
+```text
+analysis/matter_antimatter_toy_v0.15.py
+```
+
+Output:
+
+```text
+analysis/results_v0.15/matter_antimatter_toy_ratio.csv
+```
+
+This reduced calculation treats antimatter as positive-mass channel-reversed geometry, not negative mass.
+
+The toy geometry uses:
+
+```text
+matter visible drill      = center-tip collector
+matter dark sink          = side-belt collector
+antimatter dark sink      = Higgs-drop collector
+antimatter light drill    = splash-ring collector with discarded middle
+```
+
+The reduced toy result is:
+
+$$
+\frac{A_M}{A_{\bar M}}=1.28669912372469.
+$$
+
+This is an internal toy-model consistency result, not physical confirmation of baryon asymmetry.
+
+Run locally:
+
+```bash
+python analysis/matter_antimatter_toy_v0.15.py
+```
+
+---
+
 ## v0.14 CERN two-drill event-shape test
 
 Script:
@@ -54,7 +95,7 @@ Jet lists should be semicolon-separated, for example:
 
 ---
 
-## Run locally
+## Run v0.14 CERN test locally
 
 ```bash
 python analysis/cern_two_drill_event_shape_test.py \
