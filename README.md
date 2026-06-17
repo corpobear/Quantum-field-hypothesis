@@ -3,9 +3,9 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Version:** 0.3 motion-by-exchange calculation update  
+**Version:** 0.4 shadow-projection and Koide-comparison update  
 
-> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, motion-by-exchange, and black-hole/channel confinement.
+> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, motion-by-exchange, and black-hole/channel confinement.
 
 ## Core idea
 
@@ -30,6 +30,7 @@ In this framework:
 - mass emerges when activated clusters enter a finite Higgs-response window,
 - each visible information cluster may have a complementary inverted amplitude pattern,
 - mass may be modeled as a squared visible/complementary amplitude imbalance,
+- shadow projection may connect local knot geometry to Koide-like amplitude geometry,
 - channel transfer depends on coherence, complexity match, and mass/ripple-weight match,
 - black holes or confined regions are modeled as complexity clusters that create internally separated channels.
 
@@ -46,7 +47,8 @@ The immediate goals are:
 5. derive information exchange rate from knot geometry,
 6. test whether shadow-amplitude geometry can connect MCIFT to Koide's square-root mass structure,
 7. separate rest-mass formation from motion-energy effects,
-8. identify falsifiable predictions.
+8. derive the shadow echo-projection fraction from knot geometry,
+9. identify falsifiable predictions.
 
 ## Repository layout
 
@@ -56,12 +58,14 @@ models/toy_model.md               Current toy-model equations
 notes/channel_transfer.md         Channel transfer and rain/ripple analogy
 notes/information_exchange.md     Law of vibration and exchange-rate densification
 notes/shadow_amplitude.md         Shadow/complementary amplitude extension
+notes/shadow_projection.md        Shadow projection geometry and Koide comparison
 notes/motion_exchange.md          Motion from directional exchange
 notes/black_holes.md              Black-hole internal-channel interpretation
 notes/predictions.md              Predictions and falsifiability notes
 tests/report_v0.1.md              Initial toy-model test report
 tests/report_v0.2.md              Exchange-rate and shadow-amplitude calculations
 tests/report_v0.3.md              Motion-by-exchange calculation
+tests/report_v0.4.md              Shadow projection and Koide comparison
 NOTICE.md                         Authorship and priority notice
 LICENSE_PENDING.md                Licensing note
 ```
@@ -111,6 +115,53 @@ and:
 
 ```math
 \gamma_n=\cosh(\eta|\vec{\Gamma}_n|)
+```
+
+## v0.4 update
+
+The v0.4 extension tests shadow projection against Koide.
+
+For the tau-like third mode:
+
+```math
+C_3=8
+```
+
+The shadow-projection toy model uses:
+
+```math
+\Delta(f)=1+\frac{1}{56}+f\frac{1}{448}
+```
+
+and:
+
+```math
+m_\tau(f)=m_\tau^{base}\Delta(f)^2
+```
+
+The `2/3` echo-shadow projection gives:
+
+```math
+m_\tau^{2/3}=1775.35017984\ \text{MeV}
+```
+
+The `7/8` echo-shadow projection gives:
+
+```math
+m_\tau^{7/8}=1776.97039439\ \text{MeV}
+```
+
+This is almost identical to the Koide high-root value:
+
+```math
+m_\tau^{Koide}=1776.96902708\ \text{MeV}
+```
+
+Interpretation:
+
+```text
+2/3 = global Koide amplitude-angle projection
+7/8 = local tau echo-shadow completion fraction
 ```
 
 ## Citation / attribution
