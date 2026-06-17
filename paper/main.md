@@ -1,18 +1,20 @@
-# Multi-Channel Information Field Theory: A Speculative Framework for Mass Emergence, Shadow-Amplitude Geometry, Anchor-Tip Sources, and Bounded Reservoir Capture
+# Multi-Channel Information Field Theory: A Speculative Framework for Mass Emergence, Shadow-Amplitude Geometry, Anchor-Tip Sources, Bounded Reservoir Capture, and Channel Activation
 
 **Author:** Adrian Newton / corpobear  
-**Version:** 0.11 normalized fourth-mode reservoir field-source draft  
+**Version:** 0.12 activation terminology clarification draft  
 **Status:** speculative theoretical framework / toy field model; not established physics
 
 ---
 
 ## Abstract
 
-This paper develops Multi-Channel Information Field Theory (MCIFT), a speculative toy framework in which physical structure is modeled as a multi-channel information field. Particles are interpreted as coherent knot-like clusters of information-cells. Light acts as a massless activation channel, internal vibration opens exchange channels, resonant exchange produces densification, and mass emerges when coherent clusters enter a finite Higgs-response window.
+This paper develops Multi-Channel Information Field Theory (MCIFT), a speculative toy framework in which physical structure is modeled as a multi-channel information field. Particles are interpreted as coherent knot-like clusters of information-cells. Internal vibration opens exchange channels, resonant exchange produces densification, and mass emerges when coherent clusters enter a finite Higgs-response window.
 
-Earlier versions introduced amplitude-first mass, shadow/complementary structure, motion as directional exchange, shared-channel entanglement, and one-point shadow anchoring. The current v0.11 draft consolidates later extensions: a one-anchor `7/8` spin-vortex fraction, a Fibonacci-shaped anchor-tip source, a Higgs-resonance overlap term, a funnel-speed capture window, and a bounded fourth-mode reservoir availability term. The latest field-source equation is tested in reduced integrated form against the tau-like toy model.
+Earlier versions described light as an activation channel. v0.12 clarifies that this means electromagnetic or visibility-channel activation, not existence itself. Mass capture, gravitational projection, and knot coherence are separate channel conditions. This correction allows MCIFT to distinguish unmanifest information from dark-manifest, mass-bearing but light-inactive knots.
 
-This framework is not presented as established physics or as a replacement for quantum field theory. It is a speculative mathematical structure with toy-model consequences. The current goal is internal consistency and development toward falsifiable equations.
+The current draft consolidates one-point shadow anchoring, the `7/8` spin-vortex fraction, Fibonacci-shaped anchor-tip sourcing, Higgs-resonance overlap, funnel-speed capture, bounded fourth-mode reservoir availability, and the corrected activation terminology.
+
+This framework is not presented as established physics or as a replacement for quantum field theory. It is a speculative mathematical structure with toy-model consequences.
 
 ---
 
@@ -33,35 +35,112 @@ where:
 Possible internal channels include:
 
 ```math
-c\in\{\text{identity},\text{light},\text{Higgs},\text{phase},\text{charge},\text{knot},\text{exchange},\text{amplitude},\text{motion},\text{entanglement},\text{shared channel},\text{confinement}\}.
+c\in\{\text{identity},\text{light},\text{Higgs},\text{phase},\text{charge},\text{knot},\text{exchange},\text{amplitude},\text{motion},\text{gravity},\text{entanglement},\text{shared channel},\text{confinement}\}.
 ```
 
 The core claim is that particles are stable coherent clusters of this multi-channel field.
 
 ---
 
-## 2. Core assumptions
+## 2. Corrected activation terminology
 
-1. Reality is modeled as a multi-channel information field.
-2. A particle is a coherent information cluster, not a single isolated information-cell.
-3. Light acts as a massless activation channel.
-4. Mass begins at the cluster level.
-5. The Higgs response is finite and windowed, not unlimited.
-6. Internal vibration creates information exchange between similar information-points.
-7. Resonant exchange creates densification.
-8. Mass should be calculated from amplitude first, then squared.
-9. Directional exchange creates motion and affects total energy, not invariant rest mass.
-10. A visible knot may have a complementary or shadow amplitude.
-11. A stable original/shadow pair may have exactly one anchor point.
-12. A one-point anchor can leave a `7/8` free spin-vortex fraction in an eight-sector tau-like knot.
-13. A Fibonacci-shaped anchor tip may overlap the Higgs-response channel and source mass amplitude.
-14. Funnel speed controls whether the source is captured or scattered.
-15. The failed fourth mode may act as a bounded reservoir availability term, not a raw mass multiplier.
+Do not use:
 
-The current v0.11 chain is:
+```text
+light activation = existence itself
+```
+
+Use:
+
+```text
+light activation = electromagnetic / visibility-channel activation
+```
+
+The absence of light activation means lack of visible or electromagnetic manifestation. It does not automatically mean lack of mass, gravity, or knot coherence.
+
+Use separate channel factors:
+
+```math
+L_i=\text{light / electromagnetic visibility activation}
+```
+
+```math
+H_i=\text{Higgs / mass-capture activation}
+```
+
+```math
+G_i=\text{gravitational projection}
+```
+
+```math
+K_i=\text{knot coherence}
+```
+
+Then:
+
+```math
+\mathrm{Visibility}_i=L_iK_i
+```
+
+```math
+\mathrm{Mass}_i=H_iK_i
+```
+
+```math
+\mathrm{Gravity}_i=G_iH_iK_i.
+```
+
+This makes manifestation channel-dependent instead of a single yes/no property.
+
+---
+
+## 3. Matter-state terminology
+
+### Unmanifest
+
+```math
+L_i\approx0,\quad H_i\approx0,\quad G_i\approx0,\quad K_i\approx0
+```
+
+No stable visible, mass, or gravitational projection.
+
+### Visible-manifest
+
+```math
+L_i>0,\quad H_i>0,\quad G_i>0,\quad K_i>0
+```
+
+Visible/electromagnetic, mass-bearing, gravity-projecting, and knot-coherent.
+
+### Dark-manifest
+
+```math
+L_i\approx0,\quad H_i>0,\quad G_i>0,\quad K_i>0
+```
+
+Mass-bearing and gravity-projecting, but light-inactive or electromagnetically suppressed.
+
+This is the MCIFT terminology for dark-matter-like behavior.
+
+The corrected rule is:
+
+```math
+L_i=0\Rightarrow \mathrm{Visibility}_i=0,
+```
+
+not:
+
+```math
+L_i=0\Rightarrow \mathrm{Mass}_i=0.
+```
+
+---
+
+## 4. Current v0.12 research chain
 
 ```text
 information cell
+-> channel-specific activation
 -> coherent knot cluster
 -> internal vibration
 -> resonant exchange
@@ -78,9 +157,9 @@ information cell
 
 ---
 
-## 3. Cluster complexity and stability
+## 5. Cluster complexity and stability
 
-Let `n` label the cluster mode. The simplest information-growth law is binary growth:
+Let `n` label the cluster mode. The simplest information-growth law is:
 
 ```math
 C_n=2^n.
@@ -119,12 +198,6 @@ S_n<0.
 For exactly three modes to survive while the fourth fails:
 
 ```math
-S_1>0,\quad S_2>0,\quad S_3>0,\quad S_4<0,
-```
-
-which gives:
-
-```math
 \frac{8}{3}<a<4.
 ```
 
@@ -134,11 +207,11 @@ Using the central toy value:
 a=3.5,
 ```
 
-the first three modes are stable and the fourth mode fails. In v0.11, the failed fourth-mode sector is later interpreted as a reservoir availability term rather than an extra stable particle.
+the first three modes are stable and the fourth mode fails. In later sections, the failed fourth-mode sector is treated as a bounded reservoir availability term rather than an extra stable particle.
 
 ---
 
-## 4. Fractal catching surface and finite Higgs response
+## 6. Fractal catching surface and Higgs response
 
 The mass-catching surface of a cluster is modeled as:
 
@@ -149,28 +222,20 @@ A_n=(C_n-1)^{D_f}.
 A proposed effective dimension is:
 
 ```math
-D_f=3.5+\epsilon,
+D_f=3.5+\epsilon.
 ```
 
-where `epsilon` represents phase, bond, or resonance correction.
-
-The Higgs response is modeled as a finite window. A log-fractal version is:
+The Higgs response is modeled as a finite window:
 
 ```math
 H(C_n)=\exp\left[-\frac{(\ln C_n-\ln C_*)^2}{2w^2}\right].
 ```
 
-Interpretation:
-
-- clusters that are too simple catch little Higgs response,
-- clusters in the correct range receive strong response,
-- clusters that are too complex fall outside the response window or fail coherence.
+The Higgs-response channel is not the same as the light/visibility channel. A knot can be mass-active through the Higgs-response channel while remaining light-inactive.
 
 ---
 
-## 5. Vibration and information exchange
-
-Internal movement creates vibration. Similar information-points vibrating at compatible frequencies open stronger internal exchange channels.
+## 7. Vibration and information exchange
 
 A pairwise exchange rule is:
 
@@ -191,7 +256,7 @@ For the whole knot:
 \Gamma_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}.
 ```
 
-Define the exchange/densification factor:
+Define:
 
 ```math
 X_n=e^{\eta\Gamma_n}.
@@ -211,9 +276,9 @@ m_{0,n}=m_{scale}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0).
 
 ---
 
-## 6. Amplitude-first mass and shadow structure
+## 8. Amplitude-first mass and shadow structure
 
-The model introduces a complementary amplitude structure. For a visible information cluster:
+For a visible information cluster:
 
 ```math
 I_n,
@@ -258,76 +323,12 @@ With amplitude correction:
 write:
 
 ```math
-A_n=A_n^{base}\Delta_n,
-```
-
-and:
-
-```math
 m_n=m_n^{base}\Delta_n^2.
 ```
 
-This amplitude-first structure is central to all later source tests.
-
 ---
 
-## 7. Koide-style amplitude clue and shadow projection
-
-Koide's charged-lepton relation can be written as:
-
-```math
-\frac{A_1^2+A_2^2+A_3^2}{(A_1+A_2+A_3)^2}=\frac{2}{3},
-```
-
-where:
-
-```math
-A_i=\sqrt{m_i}.
-```
-
-This suggests that any connection to Koide-like structure should be made at the amplitude level.
-
-For the tau-like third mode:
-
-```math
-C_3=8.
-```
-
-Primary shadow term:
-
-```math
-s_1=\frac{1}{C_3(C_3-1)}=\frac{1}{56}.
-```
-
-Echo-shadow term:
-
-```math
-s_2=\frac{s_1}{C_3}=\frac{1}{448}.
-```
-
-Amplitude correction:
-
-```math
-\Delta(f)=1+s_1+fs_2.
-```
-
-Mass prediction:
-
-```math
-m_\tau(f)=m_\tau^{base}\Delta(f)^2.
-```
-
-The `7/8` projection gives:
-
-```math
-m_\tau^{7/8}=1776.97039439\ \mathrm{MeV}
-```
-
-in the earlier reduced toy model.
-
----
-
-## 8. One-point shadow anchor and spin-vortex fraction
+## 9. One-point shadow anchor and spin-vortex fraction
 
 Let the original eight-sector tau-like knot be `K_8` and the shadow be `S_8`. Define the number of shared contact points:
 
@@ -341,37 +342,19 @@ A true shadow must connect:
 k\ge1.
 ```
 
-But multiple contact points create vibrating bridges:
+Multiple contact points create vibrating bridges:
 
 ```math
 M(k)=\frac{k(k-1)}{2}.
 ```
 
-A single contact point gives:
-
-```math
-M(1)=0.
-```
-
-Two contact points give:
-
-```math
-M(2)=1.
-```
-
-The v0.7/v0.8 argument is that multi-contact bridges create merger-motion, so a stable shadow must satisfy both:
-
-```math
-k\ge1
-```
-
-and:
+A stable shadow must avoid merger-motion, so require:
 
 ```math
 M(k)=0.
 ```
 
-The only solution is:
+Together:
 
 ```math
 k_*=1.
@@ -389,22 +372,13 @@ For the tau-like eight-sector knot:
 B_8(1)=\frac{7}{8}.
 ```
 
-Interpretation:
-
-```text
-one original/shadow anchor point
--> one pinned sector
--> seven free circulating sectors
--> 7/8 spin-vortex fraction
-```
-
 ---
 
-## 9. Fibonacci-Higgs anchor-tip source
+## 10. Fibonacci-Higgs anchor-tip source
 
-The v0.9 extension interprets the one-point anchor as a localized spin-vortex source. The Fibonacci/golden geometry does not directly multiply mass. Instead, it shapes the path of the anchor-tip oscillation around the Higgs-response resonance.
+The Fibonacci/golden geometry shapes the path of the anchor-tip oscillation around the Higgs-response resonance. It does not directly multiply mass.
 
-Let the Fibonacci/golden wobble be:
+A minimal golden wobble is:
 
 ```math
 \omega_\varphi(t)=\omega_H+\Delta\omega\sin(\varphi t),
@@ -432,18 +406,14 @@ In the reduced tau-like test:
 \langle O_\varphi\rangle\approx0.9837806705.
 ```
 
-This corresponds to a near-resonant, strongly phase-locked source.
-
 ---
 
-## 10. Funnel-speed capture window
+## 11. Funnel-speed capture window
 
-The v0.10 extension adds a speed-dependent capture factor:
+The speed-dependent capture factor is:
 
 ```math
-W_v(v)
-=
-\frac{\left(1-e^{-(v/v_{min})^2}\right)e^{-(v/v_{scatter})^2}}{W_{max}}.
+W_v(v)=\frac{\left(1-e^{-(v/v_{min})^2}\right)e^{-(v/v_{scatter})^2}}{W_{max}}.
 ```
 
 This creates three regimes:
@@ -462,9 +432,9 @@ W_v=1.
 
 ---
 
-## 11. Bounded fourth-mode reservoir availability
+## 12. Bounded fourth-mode reservoir availability
 
-The v0.11 extension treats the failed fourth-mode sector as a large available supply, not as a raw mass multiplier.
+The failed fourth-mode sector is treated as a large available supply, not as a raw mass multiplier.
 
 Define:
 
@@ -478,32 +448,21 @@ This keeps:
 0\le R_4^{gate}\le1.
 ```
 
-If the reservoir is weak, then:
+If the reservoir is weak:
 
 ```math
 R_4^{gate}\approx0.
 ```
 
-If the reservoir is very large, then:
+If the reservoir is very large:
 
 ```math
 R_4^{gate}\approx1.
 ```
 
-Interpretation:
-
-```text
-reservoir -> bounded availability
-funnel aperture -> tiny captured fraction
-Higgs overlap -> conversion condition
-speed window -> capture/scatter condition
-knot -> amplitude accumulator
-mass -> squared amplitude
-```
-
 ---
 
-## 12. Current v0.11 field-source equation
+## 13. Current field-source equation
 
 Let:
 
@@ -530,41 +489,21 @@ R_{4,a}^{gate}
 \delta_{\epsilon,a}^{(\varphi)}.
 ```
 
-where:
-
-```text
-lambda_a                 anchor coupling
-Omega_OS,a               original/shadow vortex curl
-W_v                      funnel-speed capture window
-P_C                      primary aperture term
-B_C(1)                   one-anchor free spin-vortex fraction
-E_C                      echo aperture term
-<O_phi>                  averaged Fibonacci-Higgs overlap
-R4_gate                  bounded fourth-mode reservoir availability
-delta_epsilon^(phi)      finite Fibonacci-shaped source core
-```
-
 Assume the source core is normalized:
 
 ```math
 \int \delta_{\epsilon,a}^{(\varphi)}\,du\,dv\,dc=1.
 ```
 
-Then the integrated source is:
+Then:
 
 ```math
-\Sigma_a
-=
-\lambda_a
-\Omega_{OS,a}
-W_v(v_{tip,a})
-\left[P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle\right]
-R_{4,a}^{gate}.
+\Sigma_a=\lambda_a\Omega_{OS,a}W_v(v_{tip,a})\left[P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle\right]R_{4,a}^{gate}.
 ```
 
 ---
 
-## 13. Reduced tau-like field-source test
+## 14. Reduced tau-like field-source test
 
 For the tau-like eight-sector knot:
 
@@ -581,11 +520,7 @@ Set:
 Then:
 
 ```math
-\Sigma_\tau
-=
-W_v
-\left[\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle\right]
-R_4^{gate}.
+\Sigma_\tau=W_v\left[\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle\right]R_4^{gate}.
 ```
 
 Mass remains amplitude-first:
@@ -614,23 +549,42 @@ and:
 R_4^{gate}=1,
 ```
 
-the integrated field-source gives:
-
-```math
-\Sigma_\tau=0.01977858948.
-```
-
-Therefore:
+the reduced test gives:
 
 ```math
 m_\tau=1776.86\ \mathrm{MeV}.
 ```
 
-This is a reduced internal consistency test of the toy model, not experimental confirmation.
+This is an internal toy-model consistency test, not experimental confirmation.
 
 ---
 
-## 14. Motion and entanglement extensions
+## 15. Dark-manifest sector as future test case
+
+The corrected terminology gives a possible category for dark-matter-like behavior:
+
+```text
+dark-manifest matter = mass-active and gravity-active knots with suppressed light/electromagnetic activation
+```
+
+In symbols:
+
+```math
+L_i\approx0,\quad H_i>0,\quad G_i>0,\quad K_i>0.
+```
+
+This does not claim that MCIFT explains dark matter. It defines a language and model category that can be tested later.
+
+Future tests should ask:
+
+1. what suppresses `L_i` while preserving `H_i`, `G_i`, and `K_i`,
+2. whether dark-manifest knots can reproduce dark-matter-like gravitational behavior,
+3. whether the bounded reservoir source differs between visible-manifest and dark-manifest knots,
+4. whether any observational deviation could follow.
+
+---
+
+## 16. Motion and entanglement extensions
 
 Motion is modeled separately from rest-mass formation:
 
@@ -652,32 +606,16 @@ where:
 \beta_n=\tanh(\eta|\vec{\Gamma}_n|),\quad \gamma_n=\cosh(\eta|\vec{\Gamma}_n|).
 ```
 
-Entanglement is modeled as shared amplitude and channel adjacency. This is not claimed to allow controllable faster-than-light messaging. The shared-channel idea remains speculative and must be constrained by a no-signaling derivation.
+Entanglement is modeled as shared amplitude and channel adjacency. This is not claimed to allow controllable faster-than-light messaging.
 
 ---
 
-## 15. Predictions and falsifiability direction
+## 17. Current status
 
-The model remains speculative. A future version must derive or test:
-
-1. the field operator from an action principle,
-2. the finite Fibonacci-shaped source core,
-3. the `lambda_a Omega_OS,a` coupling from knot geometry,
-4. the speed-window parameters `v_min`, `v_scatter`, and `W_max`,
-5. the reservoir scale `R_*`,
-6. the resonance overlap value `0.9837806705`,
-7. whether the same source equation works beyond the tau-like mode,
-8. whether the model can be made Lorentz-compatible and gauge-compatible,
-9. whether any falsifiable deviation from standard particle physics follows.
-
----
-
-## 16. Current status
-
-MCIFT v0.11 should be treated as:
+MCIFT v0.12 should be treated as:
 
 ```text
-speculative toy-model field-source proposal
+speculative toy-model field-source proposal with clarified activation terminology
 ```
 
 not as:
@@ -686,4 +624,4 @@ not as:
 established particle physics
 ```
 
-The value of the current version is that the mass correction is no longer only a post-hoc amplitude factor. It is now expressed as an integrated field-source term with bounded reservoir availability and a capture-window mechanism.
+The value of v0.12 is that it separates light/visibility activation from mass capture and gravitational projection, allowing the model to discuss visible-manifest, dark-manifest, and unmanifest sectors without confusing invisibility with nonexistence.
