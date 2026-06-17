@@ -2,7 +2,7 @@
 
 This file collects the current toy-model math for the Multi-Channel Information Field Theory framework.
 
-**Version:** v0.5 vibration, exchange, shadow projection, motion, and entanglement update.
+**Version:** v0.6 objective shared-channel entanglement update.
 
 ## 1. Field variable
 
@@ -18,7 +18,7 @@ where:
 - `t` is time,
 - `c` is an internal channel coordinate.
 
-Possible channels include identity, light, Higgs response, phase, charge, knot structure, exchange-rate structure, shadow/complementary amplitude, motion direction, entanglement/shared amplitude, and black-hole confinement.
+Possible channels include identity, light, Higgs response, phase, charge, knot structure, exchange-rate structure, shadow/complementary amplitude, motion direction, entanglement/shared amplitude, objective shared-channel state, and black-hole confinement.
 
 ## 2. Cluster complexity
 
@@ -427,9 +427,107 @@ m_{AB}=m_A+m_B-2\epsilon\mathcal{E}_{AB}\sqrt{m_Am_B}
 
 This expresses the idea that entangled knots share amplitude and therefore duplicate less mass-structure.
 
-## 14. Tau echo-entanglement correction
+## 14. Objective shared-channel geometry
 
-The v0.5 tau correction applies entanglement to the local echo-shadow fraction:
+The v0.6 update makes entanglement more explicit: channels are not spatially smeared clouds. Particles carry access-points into an internal channel-space.
+
+For two knots `A` and `B`:
+
+```math
+\Psi_A=\Psi(x_A,t,c_A)
+```
+
+```math
+\Psi_B=\Psi(x_B,t,c_B)
+```
+
+Define spatial distance:
+
+```math
+d_x=|x_A-x_B|
+```
+
+Define channel distance:
+
+```math
+d_c=|c_A-c_B|
+```
+
+Two systems can be far in spacetime but adjacent in channel-space:
+
+```math
+d_x\gg0
+```
+
+```math
+d_c=0
+```
+
+A shared channel-state is written as:
+
+```math
+\Omega_{AB}(c_s)
+```
+
+and the joint state is modeled as:
+
+```math
+\Psi_{AB}
+=
+\Psi_A(x_A,t,c_s)
+\Psi_B(x_B,t,c_s)
+\Omega_{AB}(c_s)
+```
+
+This means the particles remain separate in ordinary space but are joined by one objective internal channel-state.
+
+## 15. Channel-distance entanglement law
+
+The v0.6 entanglement strength is:
+
+```math
+\mathcal{E}_{AB}
+=
+\lambda_{AB}
+O_{AB}
+\exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
+\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
+```
+
+where:
+
+- `lambda_AB` is the maximum shared-channel leakage/coupling strength,
+- `O_AB` is overlap compatibility,
+- `d_c` is channel distance,
+- `sigma_c` is channel-width tolerance,
+- `Gamma_AB` is inter-knot exchange rate,
+- `Gamma_c` is a characteristic exchange scale.
+
+If the channel is shared:
+
+```math
+d_c=0
+```
+
+then:
+
+```math
+\exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]=1
+```
+
+and:
+
+```math
+\mathcal{E}_{AB}
+=
+\lambda_{AB}O_{AB}\tanh\left(\frac{\Gamma_{AB}}{\Gamma_c}\right)
+```
+
+This gives objective instant correlation through shared channel-state, not automatically controllable faster-than-light messaging.
+
+## 16. Tau echo-entanglement correction
+
+The v0.5 tau correction applied entanglement to the local echo-shadow fraction:
 
 ```math
 f_{ent}=f_0(1-E_3)
@@ -453,6 +551,37 @@ or:
 0.02008838 percent
 ```
 
+The v0.6 interpretation is:
+
+```math
+E_3
+=
+\lambda_3
+O_3
+\exp\left[-\frac{d_c^2}{2\sigma_c^2}\right]
+\tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)
+```
+
+In the shared-channel saturated limit:
+
+```math
+d_c=0
+```
+
+```math
+O_3\approx1
+```
+
+```math
+\tanh\left(\frac{\Gamma_3^{shared}}{\Gamma_c}\right)\approx1
+```
+
+so:
+
+```math
+E_3\approx\lambda_3=0.0002008838
+```
+
 Then:
 
 ```math
@@ -473,7 +602,7 @@ m_\tau^{ent}=1708.60405054(1.0198098755)^2=1776.96902708\ \text{MeV}
 
 This matches the Koide high-root tau value by construction because `E_3` is inferred from the Koide residual.
 
-## 15. Channel transfer law
+## 17. Channel transfer law
 
 For an incoming cluster `i` and receiving surface `s`:
 
@@ -499,15 +628,19 @@ T_{i\rightarrow s}\propto X_iX_s
 
 when internal vibration and phase coherence support transfer.
 
-The entanglement extension suggests channel transfer can become shared-state correlation when:
+The objective shared-channel extension suggests channel transfer can become shared-state correlation when:
 
 ```math
 \Gamma_{AB}\gg\Gamma_c
 ```
 
+```math
+d_c\rightarrow0
+```
+
 and channel overlap is high.
 
-## 16. Core model chain
+## 18. Core model chain
 
 v0.1 chain:
 
@@ -554,6 +687,14 @@ shared exchange -> entanglement
 entanglement -> shared amplitude -> tiny mass defect
 ```
 
+v0.6 objective shared-channel addition:
+
+```text
+spatial distance controls ordinary signals
+channel distance controls entangled correlation
+zero channel-distance -> objective shared state
+```
+
 Failure path:
 
 ```text
@@ -570,11 +711,11 @@ extreme coherent complexity
 -> external channel transfer suppressed
 ```
 
-## 17. Status
+## 19. Status
 
-The toy model currently explains structural patterns but does not yet provide a full quantum field Lagrangian or independent precision mass prediction.
+The toy model currently explains structural patterns but does not yet provide a full quantum field Lagrangian, no-signaling theorem, or independent precision mass prediction.
 
-The v0.5 additions improve the mechanism by introducing:
+The v0.6 additions improve the mechanism by introducing:
 
 - vibration-driven information exchange,
 - exchange-driven densification,
@@ -582,10 +723,12 @@ The v0.5 additions improve the mechanism by introducing:
 - shadow/complementary amplitude correction,
 - Koide-like shadow projection,
 - motion as directional exchange,
-- entanglement as shared-amplitude mass defect.
+- entanglement as shared-amplitude mass defect,
+- channel-distance as the hidden geometry behind objective entangled correlation.
 
 The next key derivations are:
 
 1. derive the `7/8` tau echo-shadow completion rule from knot geometry,
-2. derive the tiny entanglement factor `E_3 = 0.0002008838` from inter-knot exchange geometry,
-3. derive Koide's 45-degree amplitude relation rather than matching it after the fact.
+2. derive the tiny shared-channel leakage `lambda_3 = 0.0002008838` from channel-space geometry,
+3. explain why objective shared-channel correlation does not become controllable faster-than-light messaging,
+4. derive Koide's 45-degree amplitude relation rather than matching it after the fact.
