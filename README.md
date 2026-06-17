@@ -3,9 +3,9 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Version:** 0.6 objective shared-channel entanglement update  
+**Version:** 0.7 vibration-motion shadow-anchor derivation
 
-> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, motion-by-exchange, entanglement/shared-amplitude correction, objective shared-channel geometry, and black-hole/channel confinement.
+> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, one-point shadow anchoring, motion-by-exchange, vibration-driven shadow merger, entanglement/shared-amplitude correction, objective shared-channel geometry, predictions, and black-hole/channel confinement.
 
 ## Core idea
 
@@ -31,6 +31,8 @@ In this framework:
 - each visible information cluster may have a complementary inverted amplitude pattern,
 - mass may be modeled as a squared visible/complementary amplitude imbalance,
 - shadow projection may connect local knot geometry to Koide-like amplitude geometry,
+- the tau-like shadow echo may follow from a one-point attached eight-sector shadow,
+- vibration plus directional exchange explains why two-point shadow contact begins merger,
 - entanglement is modeled as shared amplitude that can create a tiny mass defect,
 - objective shared-channel geometry allows systems to be far in spacetime but adjacent in channel-space,
 - channel transfer depends on coherence, complexity match, and mass/ripple-weight match,
@@ -50,32 +52,37 @@ The immediate goals are:
 6. test whether shadow-amplitude geometry can connect MCIFT to Koide's square-root mass structure,
 7. separate rest-mass formation from motion-energy effects,
 8. derive the shadow echo-projection fraction from knot geometry,
-9. derive the entanglement/shared-amplitude mass-defect factor from inter-knot exchange geometry,
-10. derive channel-distance geometry and explain why shared-channel correlation is not automatically usable as controllable nonlocal messaging,
-11. identify falsifiable predictions.
+9. prove why a stable vibrating shadow has exactly one anchor point,
+10. derive the entanglement/shared-amplitude mass-defect factor from inter-knot exchange geometry,
+11. derive channel-distance geometry and explain why shared-channel correlation is not automatically usable as controllable nonlocal messaging,
+12. identify falsifiable predictions.
 
 ## Repository layout
 
 ```text
-paper/main.md                             Full theory draft
-models/toy_model.md                        Current toy-model equations
-notes/channel_transfer.md                  Channel transfer and rain/ripple analogy
-notes/information_exchange.md              Law of vibration and exchange-rate densification
-notes/shadow_amplitude.md                  Shadow/complementary amplitude extension
-notes/shadow_projection.md                 Shadow projection geometry and Koide comparison
-notes/entanglement_shared_amplitude.md     Entanglement as shared amplitude and mass defect
-notes/objective_shared_channels.md         Objective shared-channel geometry
-notes/motion_exchange.md                   Motion from directional exchange
-notes/black_holes.md                       Black-hole internal-channel interpretation
-notes/predictions.md                       Predictions and falsifiability notes
-tests/report_v0.1.md                       Initial toy-model test report
-tests/report_v0.2.md                       Exchange-rate and shadow-amplitude calculations
-tests/report_v0.3.md                       Motion-by-exchange calculation
-tests/report_v0.4.md                       Shadow projection and Koide comparison
-tests/report_v0.5.md                       Entanglement shared-amplitude correction
-tests/report_v0.6.md                       Objective shared-channel entanglement
-NOTICE.md                                  Authorship and priority notice
-LICENSE_PENDING.md                         Licensing note
+paper/main.md                                  Full theory draft
+models/toy_model.md                             Current toy-model equations
+notes/channel_transfer.md                       Channel transfer and rain/ripple analogy
+notes/information_exchange.md                   Law of vibration and exchange-rate densification
+notes/shadow_amplitude.md                       Shadow/complementary amplitude extension
+notes/shadow_projection.md                      Shadow projection geometry and Koide comparison
+notes/shadow_anchor_vibration.md                One-point attached shadow and vibration bridge note
+notes/vibration_motion_shadow_merger.md         v0.7 derivation: vibration creates motion, motion merges multi-contact shadows
+notes/entanglement_shared_amplitude.md          Entanglement as shared amplitude and mass defect
+notes/objective_shared_channels.md              Objective shared-channel geometry
+notes/motion_exchange.md                        Motion from directional exchange
+notes/black_holes.md                            Black-hole internal-channel interpretation
+notes/predictions.md                            Predictions and falsifiability notes
+predictions/shadow_anchor_predictions.md        Shadow-anchor prediction set
+tests/report_v0.1.md                            Initial toy-model test report
+tests/report_v0.2.md                            Exchange-rate and shadow-amplitude calculations
+tests/report_v0.3.md                            Motion-by-exchange calculation
+tests/report_v0.4.md                            Shadow projection and Koide comparison
+tests/report_v0.5.md                            Entanglement shared-amplitude correction
+tests/report_v0.6.md                            Objective shared-channel entanglement
+tests/report_v0.7.md                            Vibration-motion shadow-anchor derivation
+NOTICE.md                                       Authorship and priority notice
+LICENSE_PENDING.md                              Licensing note
 ```
 
 ## Central claim
@@ -185,7 +192,7 @@ The general toy entanglement strength is:
 and the shared-amplitude mass-defect rule is:
 
 ```math
-m_{AB}=m_A+m_B-2\epsilon\mathcal{E}_{AB}\sqrt{m_Am_B}
+m_{AB}=m_A+m_B-2\epsilon\mathcal{E}_{AB}\sqrt{m_A m_B}
 ```
 
 For the tau echo-shadow correction:
@@ -294,6 +301,89 @@ Important caveat:
 shared channel -> instant correlation
 shared channel != controllable nonlocal messaging
 ```
+
+## v0.7 update
+
+The v0.7 extension derives the one-point shadow anchor from vibration-created motion.
+
+Let `K_8` be the original eight-sector tau knot and `S_8` its shadow. Define the number of shared contact points:
+
+```math
+k=|K_8\cap S_8|
+```
+
+A true shadow must be connected:
+
+```math
+k\ge1
+```
+
+but a stable shadow must not create merger-motion back into the origin.
+
+Multiple contact points create pairwise vibrating bridges:
+
+```math
+M(k)=\frac{k(k-1)}{2}
+```
+
+A single contact point gives no bridge:
+
+```math
+M(1)=0
+```
+
+Two contact points create the first bridge:
+
+```math
+M(2)=1
+```
+
+In the motion sector, directional exchange creates velocity. Therefore a vibrating bridge can create origin-directed merger-motion:
+
+```math
+v_{\mathrm{merge}}(k)\propto\sum_{a<b}^{k}R_{ab}
+```
+
+So a stable shadow must satisfy:
+
+```math
+k\ge1
+```
+
+and:
+
+```math
+M(k)=0
+```
+
+The only solution is:
+
+```math
+k=1
+```
+
+For the tau-like third mode:
+
+```math
+C_3=8
+```
+
+and the independent shadow echo becomes:
+
+```math
+B_8(1)=\frac{8-1}{8}=\frac{7}{8}
+```
+
+Compact interpretation:
+
+```text
+connection requirement -> k >= 1
+no-merger-motion requirement -> k <= 1
+therefore k = 1
+therefore 7/8 for C_3 = 8
+```
+
+This does not prove real particle physics, but it turns the `7/8` echo into an internal consequence of MCIFT's own assumptions: vibration creates directional exchange, directional exchange creates motion, and motion merges a multi-contact shadow into its origin.
 
 ## Citation / attribution
 
