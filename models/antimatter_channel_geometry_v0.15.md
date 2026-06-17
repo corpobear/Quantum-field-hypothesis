@@ -154,7 +154,7 @@ $$
 \rho_{rem}
 =
 \left|
-\rho_M-ho_{\bar M}^{matched}
+\rho_M-\rho_{\bar M}^{matched}
 \right|
 +
 \rho_{\bar M}^{unmatched},
