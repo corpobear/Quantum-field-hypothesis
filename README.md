@@ -3,9 +3,9 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Version:** 0.7 vibration-motion shadow-anchor derivation
+**Version:** 0.8 one-anchor spin-vortex correction
 
-> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, one-point shadow anchoring, motion-by-exchange, vibration-driven shadow merger, entanglement/shared-amplitude correction, objective shared-channel geometry, predictions, and black-hole/channel confinement.
+> This repository documents the original development of a speculative multi-channel information-field framework for cluster coherence, channel transfer, mass emergence, vibration/exchange densification, shadow-amplitude structure, shadow-projection geometry, one-point shadow anchoring, one-anchor spin-vortex correction, motion-by-exchange, vibration-driven shadow merger, entanglement/shared-amplitude correction, objective shared-channel geometry, predictions, and black-hole/channel confinement.
 
 ## Core idea
 
@@ -32,6 +32,7 @@ In this framework:
 - mass may be modeled as a squared visible/complementary amplitude imbalance,
 - shadow projection may connect local knot geometry to Koide-like amplitude geometry,
 - the tau-like shadow echo may follow from a one-point attached eight-sector shadow,
+- a one-point original-shadow anchor may pin one sector and leave a `7/8` free spin-vortex fraction,
 - vibration plus directional exchange explains why two-point shadow contact begins merger,
 - entanglement is modeled as shared amplitude that can create a tiny mass defect,
 - objective shared-channel geometry allows systems to be far in spacetime but adjacent in channel-space,
@@ -53,9 +54,10 @@ The immediate goals are:
 7. separate rest-mass formation from motion-energy effects,
 8. derive the shadow echo-projection fraction from knot geometry,
 9. prove why a stable vibrating shadow has exactly one anchor point,
-10. derive the entanglement/shared-amplitude mass-defect factor from inter-knot exchange geometry,
-11. derive channel-distance geometry and explain why shared-channel correlation is not automatically usable as controllable nonlocal messaging,
-12. identify falsifiable predictions.
+10. derive the one-anchor spin-vortex correction from projected knot geometry,
+11. derive the entanglement/shared-amplitude mass-defect factor from inter-knot exchange geometry,
+12. derive channel-distance geometry and explain why shared-channel correlation is not automatically usable as controllable nonlocal messaging,
+13. identify falsifiable predictions.
 
 ## Repository layout
 
@@ -64,12 +66,14 @@ paper/main.md                                  Full theory draft
 paper/v0.7_shadow_anchor_derivation.md         Paper addendum for one-point shadow-anchor derivation
 models/toy_model.md                             Current toy-model equations
 models/shadow_anchor_v0.7.md                    Compact v0.7 model equations for shadow-anchor proof
+models/spin_vortex_anchor_v0.8.md               Compact v0.8 equations for one-anchor spin-vortex correction
 notes/channel_transfer.md                       Channel transfer and rain/ripple analogy
 notes/information_exchange.md                   Law of vibration and exchange-rate densification
 notes/shadow_amplitude.md                       Shadow/complementary amplitude extension
 notes/shadow_projection.md                      Shadow projection geometry and Koide comparison
 notes/shadow_anchor_vibration.md                One-point attached shadow and vibration bridge note
 notes/vibration_motion_shadow_merger.md         v0.7 derivation: vibration creates motion, motion merges multi-contact shadows
+notes/spin_vortex_anchor.md                     One-anchor spin-vortex interpretation of the 7/8 rule
 notes/entanglement_shared_amplitude.md          Entanglement as shared amplitude and mass defect
 notes/objective_shared_channels.md              Objective shared-channel geometry
 notes/motion_exchange.md                        Motion from directional exchange
@@ -83,6 +87,7 @@ tests/report_v0.4.md                            Shadow projection and Koide comp
 tests/report_v0.5.md                            Entanglement shared-amplitude correction
 tests/report_v0.6.md                            Objective shared-channel entanglement
 tests/report_v0.7.md                            Vibration-motion shadow-anchor derivation
+tests/report_v0.8.md                            One-anchor spin-vortex correction test
 NOTICE.md                                       Authorship and priority notice
 LICENSE_PENDING.md                              Licensing note
 ```
@@ -386,6 +391,65 @@ therefore 7/8 for C_3 = 8
 ```
 
 This does not prove real particle physics, but it turns the `7/8` echo into an internal consequence of MCIFT's own assumptions: vibration creates directional exchange, directional exchange creates motion, and motion merges a multi-contact shadow into its origin.
+
+## v0.8 update
+
+The v0.8 extension reinterprets the one-point shadow anchor as a possible spin-vortex mechanism.
+
+The stable anchor result remains:
+
+```math
+k_*=1
+```
+
+For a `C`-sector knot, one pinned anchor leaves the free circulation fraction:
+
+```math
+B_C(1)=\frac{C-1}{C}
+```
+
+For the tau-like eight-sector knot:
+
+```math
+B_8(1)=\frac{7}{8}
+```
+
+The new interpretation is:
+
+```text
+one original-shadow anchor point
+-> one pinned sector
+-> seven free circulating sectors
+-> 7/8 spin-vortex fraction
+-> amplitude correction
+-> tau-like mass correction
+```
+
+The v0.8 test applies this to the existing amplitude correction:
+
+```math
+\Delta_{anchor}=1+\frac{1}{56}+\frac{7}{8}\frac{1}{448}=1.019810267857\ldots
+```
+
+and:
+
+```math
+m_\tau^{anchor}=m_\tau^{base}\Delta_{anchor}^2
+```
+
+Using the earlier linear MCIFT tau baseline:
+
+```math
+m_\tau^{base}=1708.60405054\ \text{MeV}
+```
+
+this gives:
+
+```math
+m_\tau^{anchor}=1776.97039439\ \text{MeV}
+```
+
+This is close to the Koide high-root value, but the mechanism remains a toy-model extension until the spin-transfer and vortex-compatibility terms are derived from a concrete field geometry.
 
 ## Citation / attribution
 
