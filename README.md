@@ -3,13 +3,13 @@
 **Status:** speculative theoretical framework / toy field model  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** 0.12 activation terminology clarification
+**Current version:** 0.13 six-side sink dark-manifest geometry test
 
 > This is not established physics and is not a replacement for quantum field theory. It is a speculative framework being developed into a more testable mathematical toy model.
 
 ---
 
-## Core idea
+## Current focus
 
 MCIFT models physical reality as a multi-channel information field:
 
@@ -17,9 +17,7 @@ MCIFT models physical reality as a multi-channel information field:
 \Psi(x,y,z,t,c)
 ```
 
-where `x,y,z` are spatial coordinates, `t` is time, and `c` is an internal channel coordinate.
-
-The current research chain is:
+The current chain is:
 
 ```text
 coherent information cluster
@@ -30,15 +28,46 @@ coherent information cluster
 -> Higgs-response resonance overlap
 -> funnel-speed capture window
 -> bounded fourth-mode reservoir availability
--> accumulated mass amplitude
--> squared rest mass
+-> channel-specific activation
+-> visible-manifest / dark-manifest split
 ```
 
 ---
 
-## v0.12 terminology correction
+## Latest v0.13 finding
 
-Earlier shorthand sometimes used `light activation` as if it meant manifestation itself. v0.12 corrects that terminology.
+v0.13 tests a six-side sink geometry in the eight-sector knot/shadow model.
+
+```text
+visible-manifest sector: one axial tip intake
+dark-manifest sector: six lateral side intakes
+```
+
+The reduced aperture ratio is:
+
+```math
+\frac{A_{side}}{A_{tip}}=5.417.
+```
+
+The comparison target from Planck 2018 densities is approximately:
+
+```math
+\frac{0.120}{0.0224}=5.357.
+```
+
+The toy result is within about 1.1 percent of that comparison value. A small side-efficiency factor:
+
+```math
+\epsilon_{sink}\approx0.989
+```
+
+matches the central ratio.
+
+This is an internal toy-model consistency result, not an experimental confirmation.
+
+---
+
+## Activation terminology
 
 Use:
 
@@ -52,52 +81,7 @@ Do not use:
 light activation = existence itself
 ```
 
-The model should separate channel activation into:
-
-```math
-L_i = \text{light / electromagnetic visibility activation}
-```
-
-```math
-H_i = \text{Higgs / mass-capture activation}
-```
-
-```math
-G_i = \text{gravitational projection}
-```
-
-```math
-K_i = \text{knot coherence}
-```
-
-Then:
-
-```math
-\mathrm{Visibility}_i=L_iK_i
-```
-
-```math
-\mathrm{Mass}_i=H_iK_i
-```
-
-```math
-\mathrm{Gravity}_i=G_iH_iK_i
-```
-
-This allows a dark-matter-like category:
-
-```math
-L_i\approx0,\quad H_i>0,\quad G_i>0,\quad K_i>0
-```
-
-Meaning:
-
-```text
-not electromagnetically visible,
-but still mass-bearing, gravity-projecting, and knot-coherent.
-```
-
-Terminology going forward:
+Current terms:
 
 ```text
 unmanifest        no stable visible, mass, or gravitational projection
@@ -107,161 +91,19 @@ visible-manifest  light-active, mass-active, gravity-active, and knot-coherent
 
 ---
 
-## Current v0.11 field-source equation
-
-The latest source equation is:
-
-```math
-\left(\partial_t^2-c_*^2\nabla^2-D_c\partial_c^2+V'(\psi)\right)\psi
-=
-\sum_a S_{tip,a}
-```
-
-with:
-
-```math
-S_{tip,a}
-=
-\lambda_a
-\Omega_{OS,a}
-W_v(v_{tip,a})
-\left[
-P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle\right]
-R_{4,a}^{gate}
-\delta_{\epsilon,a}^{(\varphi)}.
-```
-
-The fourth-mode reservoir is bounded by:
-
-```math
-R_4^{gate}=\frac{R_4}{R_4+R_*}.
-```
-
-This keeps the reservoir contribution finite:
-
-```math
-0\le R_4^{gate}\le1.
-```
-
-Interpretation:
+## Key files
 
 ```text
-reservoir -> bounded availability
-funnel aperture -> tiny captured fraction
-Higgs overlap -> conversion condition
-speed window -> capture/scatter condition
-knot -> amplitude accumulator
-mass -> squared amplitude
+paper/main.md
+paper/v0.13_six_side_sink_dark_manifest_addendum.md
+models/six_side_sink_dark_manifest_v0.13.md
+notes/six_side_sink_dark_manifest.md
+tests/report_v0.13.md
+tests/README.md
+paper/README.md
 ```
 
----
-
-## Latest reduced test
-
-The v0.11 integrated field-source test uses:
-
-```math
-\Sigma_\tau
-=
-W_v
-\left[
-\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
-\right]
-R_4^{gate}
-```
-
-and:
-
-```math
-m_\tau=m_\tau^{base}(1+\Sigma_\tau)^2.
-```
-
-At:
-
-```math
-W_v=1,
-```
-
-```math
-R_4^{gate}=1,
-```
-
-```math
-\langle O_\varphi\rangle=0.9837806705,
-```
-
-the reduced tau-like result is:
-
-```math
-m_\tau=1776.86\ \mathrm{MeV}.
-```
-
----
-
-## Repository layout
-
-```text
-paper/main.md                                  Full theory draft
-paper/README.md                                Paper folder index
-paper/v0.7_shadow_anchor_derivation.md         One-point shadow-anchor paper addendum
-paper/v0.11_field_source_reservoir_addendum.md Bounded reservoir field-source paper addendum
-
-models/toy_model.md                            Current toy-model equations
-models/shadow_anchor_v0.7.md                   Compact v0.7 shadow-anchor equations
-models/spin_vortex_anchor_v0.8.md              One-anchor spin-vortex correction
-models/fibonacci_higgs_source_v0.9.md          Fibonacci-Higgs anchor-tip source equation
-models/funnel_speed_capture_v0.10.md           Funnel-speed capture-window model
-models/field_source_reservoir_v0.11.md         Bounded reservoir source normalization
-
-notes/channel_transfer.md                      Channel transfer and rain/ripple analogy
-notes/information_exchange.md                  Vibration and exchange-rate densification
-notes/shadow_amplitude.md                      Shadow/complementary amplitude extension
-notes/shadow_projection.md                     Shadow projection and Koide comparison
-notes/shadow_anchor_vibration.md               One-point attached shadow and vibration bridge note
-notes/vibration_motion_shadow_merger.md        Vibration creates motion and multi-contact merger
-notes/spin_vortex_anchor.md                    One-anchor spin-vortex interpretation
-notes/fourth_mode_reservoir_normalization.md   Bounded fourth-mode reservoir normalization
-notes/activation_terminology_v0.12.md          Activation terminology and dark-manifest category
-notes/v0.11_update_index.md                    v0.11 quick update index
-notes/entanglement_shared_amplitude.md         Entanglement as shared amplitude and mass defect
-notes/objective_shared_channels.md             Objective shared-channel geometry
-notes/motion_exchange.md                       Motion from directional exchange
-notes/black_holes.md                           Black-hole internal-channel interpretation
-notes/predictions.md                           Predictions and falsifiability notes
-
-predictions/shadow_anchor_predictions.md       Shadow-anchor prediction set
-
-tests/README.md                                Test report index
-tests/report_v0.1.md                           Initial toy-model test report
-tests/report_v0.2.md                           Exchange-rate and shadow-amplitude calculations
-tests/report_v0.3.md                           Motion-by-exchange calculation
-tests/report_v0.4.md                           Shadow projection and Koide comparison
-tests/report_v0.5.md                           Entanglement shared-amplitude correction
-tests/report_v0.6.md                           Objective shared-channel entanglement
-tests/report_v0.7.md                           Vibration-motion shadow-anchor derivation
-tests/report_v0.8.md                           One-anchor spin-vortex correction test
-tests/report_v0.9.md                           Fibonacci-Higgs source equation reduced tau test
-tests/report_v0.10.md                          Funnel-speed Higgs capture-window test
-tests/report_v0.11.md                          Bounded reservoir field-source test
-
-NOTICE.md                                      Authorship and priority notice
-LICENSE_PENDING.md                             Licensing note
-```
-
----
-
-## Research status
-
-Immediate derivation targets:
-
-1. derive the field operator from an action,
-2. derive the finite Fibonacci-shaped source core,
-3. derive `lambda_a Omega_OS,a` from original/shadow vortex geometry,
-4. derive the funnel-speed capture window from knot dynamics,
-5. derive `R_*` and `R_4` from the failed fourth-mode sector,
-6. test the field-source equation beyond the tau-like reduced model,
-7. check compatibility with Lorentz and gauge structure,
-8. clarify whether dark-manifest knots can model dark-matter-like behavior.
+Older model files remain in `models/`, `notes/`, `paper/`, and `tests/`.
 
 ---
 
