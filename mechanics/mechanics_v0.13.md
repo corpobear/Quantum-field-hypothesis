@@ -1,26 +1,42 @@
-# MCIFT Mechanics Reference v0.13
+# MCIFT Mechanics Reference v0.13/v0.14
 
 **Status:** speculative toy-model mechanics reference; not established physics  
-**Scope:** summarizes the mechanics used so far in this repository through v0.13  
+**Scope:** summarizes the mechanics used so far in this repository through v0.14  
 **Visuals:** generated with `mechanics/plot_mechanics.py` using Matplotlib
 
 ---
 
 ## Visual index
 
+Each mechanic now has a direct graph or diagram in this file.
+
 ![Mechanics overview](figures/mechanics_overview.svg)
 
-![Activation channels](figures/activation_channels.svg)
-
-![Field-source pipeline](figures/field_source_pipeline.svg)
-
-![Capture window](figures/capture_window.svg)
-
-![Reservoir gate](figures/reservoir_gate.svg)
-
-![Eight-sector sink geometry](figures/eight_sector_sink_geometry.svg)
-
-![Dark-visible ratio](figures/dark_visible_ratio.svg)
+| Mechanic | Figure |
+|---|---|
+| Channel-specific activation | `figures/activation_channels.svg` |
+| Light-channel gate | `figures/light_activation_gate.svg` |
+| Complexity growth | `figures/complexity_growth.svg` |
+| Stability modes | `figures/stability_modes.svg` |
+| Fractal catching surface | `figures/fractal_surface.svg` |
+| Finite Higgs-response window | `figures/higgs_response_window.svg` |
+| Exchange alignment | `figures/exchange_alignment.svg` |
+| Exchange densification | `figures/exchange_densification.svg` |
+| Amplitude-first mass | `figures/amplitude_mass.svg` |
+| Shadow amplitude correction | `figures/shadow_correction.svg` |
+| One-point anchor contacts | `figures/anchor_contacts.svg` |
+| Spin-vortex free fraction | `figures/spin_vortex_fraction.svg` |
+| Fibonacci-Higgs resonance | `figures/fibonacci_resonance.svg` |
+| Funnel-speed capture window | `figures/capture_window.svg` |
+| Bounded reservoir gate | `figures/reservoir_gate.svg` |
+| Field-source pipeline | `figures/field_source_pipeline.svg` |
+| Source-term comparison | `figures/source_terms_bar.svg` |
+| Motion by directional exchange | `figures/motion_exchange.svg` |
+| Shared-channel geometry | `figures/entanglement_shared_channel.svg` |
+| High-complexity confinement proxy | `figures/confinement_complexity.svg` |
+| Eight-sector side-sink geometry | `figures/eight_sector_sink_geometry.svg` |
+| Dark-visible ratio comparison | `figures/dark_visible_ratio.svg` |
+| CERN two-drill event proxy | `figures/cern_event_proxy.svg` |
 
 ---
 
@@ -39,6 +55,8 @@ where `x,y,z` are spatial coordinates, `t` is time, and `c` is an internal chann
 ---
 
 ## 1. Channel-specific activation
+
+![Channel-specific activation](figures/activation_channels.svg)
 
 v0.12 corrected the old shorthand around light activation.
 
@@ -102,7 +120,29 @@ L_i\approx0,\quad H_i>0,\quad G_i>0,\quad K_i>0.
 
 ---
 
+## 1.1 Light-channel gate
+
+![Light-channel gate](figures/light_activation_gate.svg)
+
+The light channel is a visibility gate. A mismatch suppresses electromagnetic visibility without automatically removing mass or gravitational projection.
+
+Compact rule:
+
+```math
+L_i=0\Rightarrow \mathrm{Visibility}_i=0
+```
+
+not:
+
+```math
+L_i=0\Rightarrow \mathrm{Mass}_i=0.
+```
+
+---
+
 ## 2. Cluster complexity
+
+![Complexity growth](figures/complexity_growth.svg)
 
 Mode complexity is modeled by binary growth:
 
@@ -125,6 +165,8 @@ C_3=8.
 ---
 
 ## 3. Stability and the failed fourth mode
+
+![Stability modes](figures/stability_modes.svg)
 
 A simple coherence law is:
 
@@ -168,6 +210,8 @@ Then the fourth mode is treated as a failed sector that can supply bounded reser
 
 ## 4. Fractal catching surface
 
+![Fractal catching surface](figures/fractal_surface.svg)
+
 The mass-catching surface is:
 
 ```math
@@ -191,6 +235,8 @@ surface structure controls how much response can be caught.
 
 ## 5. Finite Higgs-response window
 
+![Finite Higgs-response window](figures/higgs_response_window.svg)
+
 The finite Higgs-response channel can be modeled as:
 
 ```math
@@ -203,11 +249,13 @@ The Higgs channel is separated from the light channel:
 Higgs/mass capture can be active even when light/visibility is suppressed.
 ```
 
-This distinction is what permits the dark-manifest category.
+This distinction permits the dark-manifest category.
 
 ---
 
 ## 6. Vibration and exchange
+
+![Exchange alignment](figures/exchange_alignment.svg)
 
 Internal vibration opens exchange between similar information points.
 
@@ -230,6 +278,12 @@ Whole-knot exchange:
 \Gamma_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}.
 ```
 
+---
+
+## 6.1 Exchange densification
+
+![Exchange densification](figures/exchange_densification.svg)
+
 Exchange/densification factor:
 
 ```math
@@ -251,6 +305,8 @@ m_{0,n}=m_{scale}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0).
 ---
 
 ## 7. Amplitude-first mass
+
+![Amplitude-first mass](figures/amplitude_mass.svg)
 
 The model treats mass as squared amplitude:
 
@@ -300,11 +356,11 @@ produces:
 m_n=m_n^{base}\Delta_n^2.
 ```
 
-This amplitude-first rule is used in every tau-like and source-equation test.
-
 ---
 
 ## 8. Shadow projection and Koide-style clue
+
+![Shadow amplitude correction](figures/shadow_correction.svg)
 
 For the tau-like third mode:
 
@@ -342,6 +398,8 @@ The `7/8` projection gave the earlier near-Koide tau-like result.
 
 ## 9. One-point shadow anchor
 
+![One-point anchor contacts](figures/anchor_contacts.svg)
+
 Let `K_8` be the original eight-sector knot and `S_8` its shadow.
 
 Contact count:
@@ -374,6 +432,12 @@ Together:
 k_*=1.
 ```
 
+---
+
+## 10. Spin-vortex interpretation
+
+![Spin-vortex free fraction](figures/spin_vortex_fraction.svg)
+
 For a `C`-sector knot, one pinned anchor leaves:
 
 ```math
@@ -386,11 +450,7 @@ For `C=8`:
 B_8(1)=\frac{7}{8}.
 ```
 
----
-
-## 10. Spin-vortex interpretation
-
-The one-point anchor can be interpreted as:
+Interpretation:
 
 ```text
 one pinned sector
@@ -399,15 +459,11 @@ one pinned sector
 -> spin-vortex correction
 ```
 
-For the tau-like knot:
-
-```text
-one pinned sector + seven free sectors = 7/8 free spin-vortex fraction.
-```
-
 ---
 
 ## 11. Fibonacci-Higgs anchor-tip source
+
+![Fibonacci-Higgs resonance](figures/fibonacci_resonance.svg)
 
 The Fibonacci/golden structure shapes the anchor-tip oscillation around the Higgs-response resonance.
 
@@ -443,6 +499,8 @@ Reduced tau-like overlap:
 
 ## 12. Funnel-speed capture window
 
+![Funnel-speed capture window](figures/capture_window.svg)
+
 The speed window is:
 
 ```math
@@ -467,6 +525,8 @@ This speed condition multiplies the source term.
 ---
 
 ## 13. Bounded fourth-mode reservoir
+
+![Bounded reservoir gate](figures/reservoir_gate.svg)
 
 The failed fourth-mode sector can be treated as a large available supply, but not as an unlimited mass multiplier.
 
@@ -497,6 +557,8 @@ funnel aperture = captured fraction
 ---
 
 ## 14. Current visible field-source equation
+
+![Field-source pipeline](figures/field_source_pipeline.svg)
 
 Let:
 
@@ -531,6 +593,12 @@ For the tau-like eight-sector case:
 P_8=\frac{1}{56},\quad E_8=\frac{1}{448},\quad B_8(1)=\frac{7}{8}.
 ```
 
+---
+
+## 14.1 Source-term comparison
+
+![Source-term comparison](figures/source_terms_bar.svg)
+
 Integrated source:
 
 ```math
@@ -560,6 +628,8 @@ m_\tau=1776.86\ \mathrm{MeV}.
 ---
 
 ## 15. Motion by directional exchange
+
+![Motion by directional exchange](figures/motion_exchange.svg)
 
 Rest-mass formation and motion are separated:
 
@@ -591,6 +661,8 @@ and:
 
 ## 16. Entanglement and shared-channel geometry
 
+![Shared-channel geometry](figures/entanglement_shared_channel.svg)
+
 Entanglement is modeled as shared amplitude through channel adjacency, not as controllable messaging.
 
 A compact shared-amplitude mass-defect form:
@@ -621,6 +693,8 @@ shared channel != controllable nonlocal messaging
 
 ## 17. Black-hole / confinement interpretation
 
+![High-complexity confinement proxy](figures/confinement_complexity.svg)
+
 Extreme coherent complexity may create internally separated channels.
 
 The repository has used this as a speculative confinement mechanic:
@@ -636,6 +710,8 @@ This remains underdeveloped and is not yet part of the v0.13 source tests.
 ---
 
 ## 18. v0.13 dark-manifest six-side sink
+
+![Eight-sector side-sink geometry](figures/eight_sector_sink_geometry.svg)
 
 The dark-manifest idea in v0.13 is not simply an opposite sign. It is an inverse geometry.
 
@@ -674,6 +750,12 @@ Dark side aperture:
 ```math
 A_{side}=6\left(\frac{1}{56}\right).
 ```
+
+---
+
+## 18.1 Dark-visible ratio
+
+![Dark-visible ratio comparison](figures/dark_visible_ratio.svg)
 
 Using:
 
@@ -768,6 +850,31 @@ L_{dark}\approx0.
 
 ---
 
+## 19.1 CERN two-drill event proxy
+
+![CERN two-drill event proxy](figures/cern_event_proxy.svg)
+
+v0.14 maps the two-drill collision picture to collider observables.
+
+```text
+visible drill activity -> jets and visible transverse energy
+dark side channel -> missing transverse momentum and event imbalance
+```
+
+Main proxy:
+
+```math
+R_{miss}=\frac{E_T^{miss}}{H_T}.
+```
+
+Current verdict:
+
+```text
+not confirmed, not ruled out by the reduced comparison, now constrained
+```
+
+---
+
 ## 20. Open derivation targets
 
 1. Derive the field operator from an action.
@@ -796,3 +903,5 @@ The script writes SVG diagrams to:
 ```text
 mechanics/figures/
 ```
+
+The GitHub Actions workflow also runs the script and commits changed SVG outputs back into the repository.
