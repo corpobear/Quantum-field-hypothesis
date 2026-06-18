@@ -6,7 +6,7 @@ This folder contains analysis scaffolds for testing MCIFT toy-model predictions 
 
 ---
 
-## Current cosmology scaffold: v0.16-v0.22
+## Current cosmology scaffold: v0.16-v0.28
 
 The current analysis focus is the MCIFT Big Bang / BAO / matter-power-spectrum scaffold.
 
@@ -14,8 +14,7 @@ Important caveat:
 
 ```text
 These scripts produce toy/scaffold metrics, not observational confirmation.
-The v0.22 full-shape pass imports a standard Lambda-CDM-like growth-transfer layer;
-it does not yet prove MCIFT independently derives T_growth(k).
+v0.28 improves native no-fit shape scoring, but the global 617.87 Mpc long mode still fails.
 ```
 
 | Version | Script | Result folder | Purpose | Status |
@@ -27,54 +26,63 @@ it does not yet prove MCIFT independently derives T_growth(k).
 | v0.20 | `mcift_big_bang_derived_scalelock_v0.20.py` | `results_v0.20/` | derives scale-lock amplitude and envelope | strongest raw geometric proxy |
 | v0.21 | `mcift_big_bang_pk_shape_v0.21.py` | `results_v0.21/` | full P(k) shape test | raw shape FAIL |
 | v0.22 | `mcift_big_bang_growth_transfer_v0.22.py` | `results_v0.22/` | growth-transfer compatibility scaffold | PASS-LIKE with imported transfer |
+| v0.23 | `mcift_big_bang_native_growth_v0.23.py` | `results_v0.23/` | first no-import scalar native growth | FAIL |
+| v0.24 | `mcift_big_bang_channel_exchange_v0.24.py` | `results_v0.24/` | coupled A/V/D/R channel exchange | WEAK |
+| v0.25 | `mcift_big_bang_first_principle_sinks_v0.25.py` | `results_v0.25/` | first-principle six-sink count | WEAK |
+| v0.26 | `mcift_big_bang_spin_blur_v0.26.py` | `results_v0.26/` | six-sector spin blur to four effective sinks | WEAK |
+| v0.27 | `mcift_big_bang_mass_gravity_time_spin_v0.27.py` | `results_v0.27/` | mass/gravity time-response spin blur | WEAK |
+| v0.28 | `mcift_big_bang_thermo_spin_growth_v0.28.py` | `results_v0.28/` | no-fit thermodynamic spin-growth layer | PASS-LIKE shape; global mode FAIL |
 
 ---
 
-## Latest run: v0.22 growth-transfer scaffold
+## Latest run: v0.28 no-fit thermodynamic spin-growth
 
 Run:
 
 ```bash
-python analysis/mcift_big_bang_growth_transfer_v0.22.py
+python analysis/mcift_big_bang_thermo_spin_growth_v0.28.py
 ```
 
-Main equation:
+No-fit closure:
 
 ```text
-P(k,a) = A_s (k/k_pivot)^n_s T_growth^2(k) T_MCIFT^2(k,a)
-```
-
-with:
-
-```text
-T_MCIFT(k,a) = 1 + epsilon_lock sin(k r_s) exp[-(k/0.18)^1.4]
-epsilon_lock = 0.12 * A_lock(a)
+rho_G      ~ A + 0.6 V + 0.45 D + exchange
+rho_T      = R
+theta_T    = rho_R / (rho_R + rho_G)
+T_rel      = theta_T^(1/4)
+beta_T     = sqrt(T_rel)
+W_capture  = 4(1-exp[-beta_T^2]) exp[-beta_T^2]
+c_s^2      = beta_T^2 / 3
+chi_thermo = chi_MGT * (1 + beta_T)
+N_eff      = 4 + 2 exp[-chi_thermo^2]
 ```
 
 Key result:
 
 ```text
-shape RMS log residual = 0.004
+shape RMS log residual = 0.302859
 shape verdict = PASS-LIKE
-raw MCIFT geometric global peak = 152.29 Mpc
-raw MCIFT BAO-window peak = 152.29 Mpc
+native thermodynamic BAO-window peak = 152.29 Mpc
+nearest BAO bin = 152.29 Mpc
+native thermodynamic global peak = 617.87 Mpc
 ```
 
 Interpretation:
 
 ```text
-MCIFT is compatible with a standard growth-transfer layer,
-but MCIFT has not yet independently derived that transfer layer.
+v0.28 adds a useful no-fit thermodynamic layer and improves native shape scoring.
+It does not yet solve the global long-mode failure.
 ```
 
 Outputs:
 
 ```text
-analysis/results_v0.22/mcift_v0.22_growth_transfer_report.md
-analysis/results_v0.22/mcift_v0.22_growth_transfer_metrics.csv
-analysis/results_v0.22/mcift_v0.22_growth_transfer_residuals.csv
-analysis/results_v0.22/mcift_v0.22_growth_transfer_comparison.png
-analysis/results_v0.22/mcift_v0.22_growth_transfer_residuals.png
+analysis/results_v0.28/mcift_v0.28_thermo_spin_growth_report.md
+analysis/results_v0.28/mcift_v0.28_thermo_spin_growth_metrics.csv
+analysis/results_v0.28/mcift_v0.28_thermo_spin_growth_tracks.csv
+analysis/results_v0.28/mcift_v0.28_thermo_spin_growth_residuals.csv
+analysis/results_v0.28/mcift_v0.28_thermo_spin_growth_comparison.png
+analysis/results_v0.28/mcift_v0.28_thermo_spin_growth_comparison.svg
 ```
 
 ---
@@ -84,17 +92,38 @@ analysis/results_v0.22/mcift_v0.22_growth_transfer_residuals.png
 ### Strengths
 
 ```text
-- Internal anchor radius, cutoff, scale-lock amplitude, and envelope are now derived in the toy scaffold.
-- MCIFT repeatedly produces a BAO-like geometric scale near the sound-horizon comparison scale.
-- The v0.22 scaffold shows MCIFT-derived modulation can sit on top of standard growth-transfer physics cleanly.
+- Internal anchor radius, cutoff, scale-lock amplitude, and envelope are derived in the toy scaffold.
+- Six internal dark sectors can project toward four effective 3D transverse sinks through spin blur.
+- Mass/gravity time response and temperature now affect the spin-growth closure.
+- MCIFT repeatedly produces a BAO-window scale near the sound-horizon comparison scale.
+- v0.28 no-fit thermodynamics improves native shape RMS to 0.303.
 ```
 
 ### Weaknesses
 
 ```text
-- Raw MCIFT field power failed full P(k) shape scoring in v0.21.
-- v0.22 fixes broadband shape by importing an existing transfer layer.
+- v0.28 is still a toy/scaffold calculation.
+- The 617.87 Mpc global long mode remains a failure.
+- The thermodynamic layer is layered onto milestone tracks instead of fully conserved A/V/D/R background dynamics.
 - CMB, BBN, lensing, halos, and dark energy behavior are not yet calculated.
+```
+
+---
+
+## Next analysis target
+
+```text
+v0.29 target:
+Self-consistent conserved A/V/D/R background evolution plus no-fit thermodynamic perturbation growth.
+```
+
+Required background equations:
+
+```text
+d rho_A / d ln a = -Q_A_to_V - Q_A_to_D
+d rho_V / d ln a =  Q_A_to_V - Q_V_to_D - Q_V_to_R
+d rho_D / d ln a =  Q_A_to_D + Q_V_to_D
+d rho_R / d ln a =  Q_V_to_R
 ```
 
 ---
@@ -179,54 +208,3 @@ n_lep
 n_photon
 sample
 ```
-
-Jet lists should be semicolon-separated, for example:
-
-```text
-320;91;45
-```
-
----
-
-## Run v0.14 CERN test locally
-
-```bash
-python analysis/cern_two_drill_event_shape_test.py \
-  --data analysis/input/data.csv \
-  --mc analysis/input/sm_mc.csv \
-  --out analysis/results_v0.14
-```
-
-Outputs:
-
-```text
-analysis/results_v0.14/data_vs_mc_summary.csv
-analysis/results_v0.14/hist_met_over_ht.png
-analysis/results_v0.14/hist_delta_phi_min.png
-analysis/results_v0.14/hist_njets.png
-```
-
----
-
-## GitHub Actions behavior
-
-The workflow:
-
-```text
-.github/workflows/generate-mechanics-and-analysis.yml
-```
-
-always runs the mechanics visual generator.
-
-It runs the CERN event-shape analysis only if both files exist:
-
-```text
-analysis/input/data.csv
-analysis/input/sm_mc.csv
-```
-
-Generated mechanics SVGs are committed back to the repository when they change.
-
-Generated analysis results are also committed back only when input CSVs are present and results change.
-
-Artifacts are uploaded for every workflow run.
