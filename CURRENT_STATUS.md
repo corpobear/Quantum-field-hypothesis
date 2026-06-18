@@ -1,7 +1,8 @@
-# Current MCIFT Status: v0.32 Mass Mechanism Layer + v0.30 Numeric Retest
+# Current MCIFT Status: v0.33 First-Principle Cubic Field Formula
 
 **Status:** speculative theoretical framework / toy cosmology scaffold; not established physics.  
-**Current conceptual layer:** v0.32 cube-face Higgs vortex mass mechanism.  
+**Current first-principle layer:** v0.33 cubic cell-complex field formula.  
+**Current mechanism layer:** v0.32 cube-face Higgs vortex mass mechanism.  
 **Current geometry layer:** v0.31 cube-center six-connector knot geometry.  
 **Current numeric retest:** v0.30 dynamic ordered collapse-containment.
 
@@ -10,7 +11,7 @@
 ## One-sentence status
 
 ```text
-MCIFT now combines a cube-centered six-connector knot geometry with a cube-face Higgs vortex mass mechanism: knots sit at cube-cell centers, connectors link neighboring centers through face planes, and mass is gathered from a Higgs-plane vortex when center-to-center information compatibility is sufficiently correct. The v0.30 numeric scaffold remains the latest retest: chronological collapse-containment suppresses the previous 617.87 Mpc super-anchor mode and returns the global peak to 152.29 Mpc while keeping the scored shape RMS PASS-LIKE.
+MCIFT v0.33 defines the field as a cubic cell-complex object: node variables live at cube-center knots, connector variables live on six center-to-center links, Higgs/vortex/mass variables live on cube faces, and cell variables carry complexity, coherence, stability, and collapsed-reservoir state. This turns the v0.31 geometry and v0.32 mass mechanism into one first-principle field formula.
 ```
 
 ---
@@ -27,71 +28,82 @@ The retests did not scan parameters against the target, but the closure choices 
 
 ---
 
-## Current geometry: cube-center six-connector knot
+## v0.33 field object
+
+For cube-cell `i` and connector directions:
 
 ```text
-knot position = center of cube-cell
-connectors = +x, -x, +y, -y, +z, -z
-0 <= a_mu <= 1
+D = {+x, -x, +y, -y, +z, -z}
 ```
 
-Directional imbalance and local coherence:
+The local MCIFT field is:
 
 ```text
-Delta_i = sqrt[(a_+x-a_-x)^2 + (a_+y-a_-y)^2 + (a_+z-a_-z)^2]
-Coh_i = 6 a_i,mean - lambda_Delta Delta_i
+Psi_MCIFT(i,t) = (
+  K_i,
+  phi_i,
+  T_i,
+  {a_i,mu},
+  {chi_i,mu},
+  {H_i,mu},
+  {Omega_i,mu},
+  {m_i,mu},
+  m_i,
+  q_i,
+  Coh_i,
+  S_i,
+  B_i
+)
 ```
 
----
-
-## Current mass mechanism: cube-face Higgs vortex
-
-Each connector crosses a Higgs-coupled cube face:
+where:
 
 ```text
-H_i,mu >= 0
-```
-
-Information compatibility between neighboring cube centers:
-
-```text
-chi_ij,mu = sqrt(a_i,mu a_j,-mu)
-           * P_phase(i,j)
-           * P_timing(i,j)
-           * P_match(i,j)
-```
-
-Vortex formation:
-
-```text
-Omega_i,mu = H_i,mu * sigma(chi_ij,mu - chi_c)
-```
-
-Mass gathered by the knot:
-
-```text
-m_i = m_scale * sum_mu Omega_i,mu * a_i,mu
-```
-
-Interpretation:
-
-```text
-connector state        = information/anchor coupling
-Higgs face plane       = mass-coupling availability
-vortex                 = conversion/capture mechanism
-mass                   = retained Higgs response
-contained complexity   = load that coherence must hold
-collapse               = containment failure
+K_i           knot information state
+phi_i         local information phase
+T_i           local response coordinate
+a_i,mu        connector activation
+chi_i,mu      information compatibility
+H_i,mu        Higgs face-plane response
+Omega_i,mu    face-plane vortex strength
+m_i,mu        mass gathered from face vortex
+m_i           total gathered vortex mass
+q_i           contained complexity
+Coh_i         connector-supported coherence capacity
+S_i           containment score
+B_i           collapsed-knot reservoir
 ```
 
 ---
 
-## What changed through v0.32
+## Defining equations
 
 ```text
-v0.30  dynamic ordered collapse; response-epoch B reservoir suppresses 617.87 Mpc before final scoring
-v0.31  cube-center six-connector geometry; connector-level coherence and imbalance formalized
-v0.32  cube-face Higgs vortex mass mechanism; mass gathered from compatible face-plane vortices
+A_ij,mu      = sqrt(a_i,mu a_j,-mu)
+chi_i,mu     = A_ij,mu P_phase P_timing P_match
+Omega_i,mu   = H_i,mu sigma(chi_i,mu - chi_c)
+m_i,mu       = m_scale Omega_i,mu a_i,mu
+m_i          = sum_mu m_i,mu
+Coh_i        = 6 a_i,mean - lambda_Delta Delta_i
+q_i          = q_i,base + alpha_m m_i + alpha_Omega sum_mu |grad_mu Omega_i,mu|
+S_i          = Coh_i - q_i
+dB_i/dt      = gamma_B max(0,-S_i) - decay_B B_i
+```
+
+---
+
+## Current conceptual chain
+
+```text
+cube-center knot
+-> six axial connector states
+-> connector information compatibility
+-> Higgs face-plane vortex formation
+-> vortex mass gathering
+-> contained complexity loading
+-> connector coherence capacity
+-> containment score
+-> collapsed-knot reservoir B
 ```
 
 ---
@@ -110,20 +122,49 @@ v0.30 BAO-window peak = 152.29 Mpc
 
 ---
 
+## What changed through v0.33
+
+```text
+v0.30  dynamic ordered collapse; response-epoch B reservoir suppresses 617.87 Mpc before final scoring
+v0.31  cube-center six-connector geometry; connector-level coherence and imbalance formalized
+v0.32  cube-face Higgs vortex mass mechanism; mass gathered from compatible face-plane vortices
+v0.33  first-principle cubic field formula; node-link-face-cell variables unified as Psi_MCIFT
+```
+
+---
+
 ## Next proof target
 
 ```text
-Use the v0.31 connector variables and v0.32 face-plane vortex variables directly in a mode-coupled B(k,a) perturbation solver.
+v0.34 target:
+Implement a minimal numerical solver using the v0.33 field variables.
 ```
 
 Required direction:
 
 ```text
 - evolve a_i,mu connector activations
-- compute Delta_i and Coh_i dynamically
-- compute chi_ij,mu information compatibility
+- compute chi_i,mu information compatibility
 - generate Omega_i,mu face-plane vortex response
-- compute m_i vortex mass loading
-- couple collapse-containment into B(k,a)
-- rerun thermodynamic growth with B and mass loading coupled directly to each mode
+- compute m_i and q_i
+- update B_i
+- test whether the v0.30 collapse result survives with connector/vortex variables active
+```
+
+---
+
+## Safe wording
+
+Safe:
+
+```text
+v0.33 defines MCIFT as a cubic cell-complex information field with node, connector, face-vortex, mass-loading, complexity, and collapse-reservoir variables.
+```
+
+Not safe:
+
+```text
+This proves spacetime is literally cubic.
+This proves the Higgs mechanism is literally a face vortex.
+This replaces standard quantum field theory or Lambda-CDM.
 ```
