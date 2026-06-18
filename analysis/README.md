@@ -6,7 +6,12 @@ This folder contains analysis scaffolds for testing MCIFT toy-model predictions 
 
 ---
 
-## Current cosmology scaffold: v0.16-v0.30
+## Current level
+
+```text
+Current conceptual geometry: v0.31 cube-center six-connector knot model
+Current numeric cosmology retest: v0.30 dynamic ordered collapse-containment
+```
 
 Important caveat:
 
@@ -14,6 +19,45 @@ Important caveat:
 These scripts produce toy/scaffold metrics, not observational confirmation.
 The correct wording is "no parameter sweep / internally constrained heuristic closure", not strict no-fit proof.
 ```
+
+---
+
+## Current geometry dependency: v0.31
+
+The v0.31 geometry note defines a knot at the center of a spacetime cube-cell with six axial connector states:
+
+```text
++x, -x, +y, -y, +z, -z
+```
+
+Each connector activation satisfies:
+
+```text
+0 <= a_mu <= 1
+```
+
+The six connectors supply local coherence capacity and directional imbalance penalizes containment:
+
+```text
+Delta_i = sqrt[(a_+x-a_-x)^2 + (a_+y-a_-y)^2 + (a_+z-a_-z)^2]
+Coh_i = 6 a_i,mean - lambda_Delta Delta_i
+```
+
+This provides the next target for analysis:
+
+```text
+connector-level coherence -> mode-coupled B(k,a) collapse-containment solver
+```
+
+Read:
+
+```text
+models/cube_center_six_connector_knot_v0.31.md
+```
+
+---
+
+## Cosmology scaffold: v0.16-v0.30
 
 | Version | Script | Result folder | Purpose | Status |
 |---|---|---|---|---|
@@ -35,7 +79,7 @@ The correct wording is "no parameter sweep / internally constrained heuristic cl
 
 ---
 
-## Latest run: v0.30 dynamic ordered collapse-containment
+## Latest numeric run: v0.30 dynamic ordered collapse-containment
 
 Run after generating full v0.28 residuals/tracks:
 
@@ -65,17 +109,6 @@ v0.30 global peak after dynamic order = 152.29 Mpc
 v0.30 BAO-window peak = 152.29 Mpc
 ```
 
-Outputs:
-
-```text
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_report.md
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_metrics.csv
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_background.csv
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_residuals.csv
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_comparison.png
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_comparison.svg
-```
-
 ---
 
 ## Current strengths and weaknesses from analysis
@@ -84,15 +117,17 @@ analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_comparison.svg
 
 ```text
 - BAO-window scale repeatedly survives near 152 Mpc.
-- Six internal dark sectors can project toward four effective 3D transverse sinks through spin blur.
+- Six internal connector sectors can project toward four effective 3D transverse channels through spin blur.
 - Temperature, mass/gravity time response, and collapse-containment are represented as internal closures.
 - v0.30 applies collapse-containment in chronological response-epoch order rather than only after the run.
+- v0.31 supplies a connector-level geometry for the next solver.
 ```
 
 ### Weaknesses
 
 ```text
 - v0.30 is still a toy/scaffold calculation.
+- v0.31 is a geometry note, not a solved connector-dynamics simulation.
 - B is aggregate background/response-epoch feedback, not full B(k,a) mode-coupled dynamics.
 - The collapse rule is not established GR/black-hole physics.
 - CMB, BBN, lensing, halos, and dark energy behavior are not yet calculated.
@@ -103,6 +138,6 @@ analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_comparison.svg
 ## Next analysis target
 
 ```text
-v0.31 target:
-Couple B(k,a) directly into the perturbation equations instead of using response-epoch transfer history.
+v0.32 target:
+Use the v0.31 connector variables a_i,mu, Delta_i, and Coh_i directly in a mode-coupled B(k,a) perturbation solver.
 ```
