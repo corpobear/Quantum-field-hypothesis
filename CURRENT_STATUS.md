@@ -1,47 +1,48 @@
-# Current MCIFT Status: v0.38 Mass-Energy Vibration Retest
+# Current MCIFT Status: v0.39 Spherical Leakage Geometry Retest
 
 **Status:** speculative theoretical framework / toy collider and cosmology scaffold; not established physics.  
-**Current collider-style retest:** v0.38 mass-energy vibration channel retest.  
+**Current geometric leakage retest:** v0.39 spherical leakage geometry retest.  
+**Previous collider-style retest:** v0.38 mass-energy vibration channel retest.  
 **Previous collider-style toy test:** v0.37 line-chain spin-drill Higgs test.  
 **Current collider comparison layer:** v0.36 CERN/LHC Higgs-sector comparison.  
-**Current spatial tested layer:** v0.35 minimal spatial cubic lattice solver.  
-**Current field formula:** v0.33 cubic cell-complex field formula.  
-**Current mechanism layer:** v0.32 cube-face Higgs vortex mass mechanism.
+**Current spatial tested layer:** v0.35 minimal spatial cubic lattice solver.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.38 adds Einstein mass-energy conversion to the v0.37 line-chain sink: gathered mass is converted into vibration energy, and that vibration leaks into channel proxies. The strict toy verdict is PASS-LIKE: 9/9 criteria passed, with a finite vibration lifetime and a Higgs-like channel hierarchy led by bb-like mass retention, WZ-like coherent symmetry, visible gg-like turbulence, visible tau-like retention, and suppressed gamma-like and mumu-like channels.
+MCIFT v0.39 tracks the sink center in time, reconstructs a spherical shell from the mass-energy vibration field, measures shell shape, and evaluates leakage from geometry rather than direct proxy labels. The strict toy verdict is PASS-LIKE: 10/10 criteria passed, with stable center tracking, dominant near-center shell formation, high sphericity, subdominant anisotropy, and shape-derived leakage led by compact mass retention, coherent spherical-shell leakage, and visible turbulent leakage.
 ```
 
 ---
 
-## v0.38 result
+## v0.39 result
 
 ```text
 verdict = PASS-LIKE
-criteria_pass_count = 9/9
-peak_E_vib_GeV_proxy = 0.023315
-peak_E_vib_step = 319
-peak_E_vib_time = 6.380000
-final_E_vib_over_peak = 0.187542
-integrated_E_in_GeV_proxy = 0.000691
-integrated_E_leak_GeV_proxy = 0.000351
-channel_l1_distance_to_rough_higgs_targets = 0.153878
-channel_log10_rms_to_rough_higgs_targets = 0.358711
+criteria_pass_count = 10/10
+max_center_drift_abs_cells = 0.434496
+weighted_shell_peak_radius_cells = 3.655708
+weighted_shell_halfmax_width_bins = 8.465637
+weighted_sphericity = 0.959336
+weighted_shape_anisotropy = 0.040664
+weighted_core_fraction = 0.106027
+weighted_inner_shell_fraction = 0.282291
+weighted_outer_shell_fraction = 0.611682
+channel_l1_distance_to_rough_higgs_targets = 0.256823
+channel_log10_rms_to_rough_higgs_targets = 0.601039
 ```
 
-Channel fractions:
+Shape-derived channel fractions:
 
 ```text
-bb_like     = 0.559140  target ~ 0.582000
-WZ_like     = 0.316161  target ~ 0.240000
-gg_like     = 0.100017  target ~ 0.086000
-tau_like    = 0.024090  target ~ 0.063000
-gamma_like  = 0.000402  target ~ 0.002300
-mumu_like   = 0.000189  target ~ 0.000220
+bb_like     = 0.505134  target ~ 0.582000
+WZ_like     = 0.381469  target ~ 0.240000
+gg_like     = 0.085943  target ~ 0.086000
+tau_like    = 0.026958  target ~ 0.063000
+gamma_like  = 0.000095  target ~ 0.002300
+mumu_like   = 0.000402  target ~ 0.000220
 ```
 
 ---
@@ -49,46 +50,46 @@ mumu_like   = 0.000189  target ~ 0.000220
 ## Math under test
 
 ```text
-E_m,i(t) = eta_m m_i(t) c^2
-E_vib,i(t+dt) = E_vib,i(t) + E_m,i(t) - E_leak,i(t) - damping
-omega_vib,i = E_vib,i / hbar
+x_c(t) = sum_x x B(x,t)^2 / sum_x B(x,t)^2
+r = |x - x_c(t)|
+R_shell(t) = argmax radial E_vib(r,t), for r greater than core radius
+sphericity(t) = 1 - anisotropy(t)
+anisotropy(t) = dipole_asymmetry + spin/twist distortion proxy
 ```
 
-Channel source families:
+Shape-derived leakage families:
 
 ```text
-mass-retention source      -> bb-like, tau-like, mumu-like
-coherent symmetric source  -> WZ-like
-transverse turbulence      -> gg-like, gamma-like loop channels
+core and compact inner-shell retention -> bb-like, tau-like, mumu-like
+coherent spherical shell               -> WZ-like
+anisotropic/turbulent shell             -> gg-like, gamma-like
 ```
 
 ---
 
-## v0.36 CERN/LHC verdict remains
+## Limitation
 
 ```text
-STRUCTURAL_ONLY_NOT_A_CERN_PASS
+v0.39 is a rotational spherical reconstruction from the 1D line-chain toy model. It is stricter than v0.38 because leakage is evaluated from shape, but it is still not a full 3D event simulation or a Standard Model branching-fraction calculation.
 ```
-
-v0.38 is still a toy decay-channel retest, not a detector-level CERN simulation.
 
 ---
 
 ## Next proof target
 
 ```text
-v0.39 target:
-replace proxy channel families with coupling modifiers kappa_W, kappa_Z, kappa_b, kappa_tau, kappa_mu, kappa_g, and kappa_gamma, then compute partial widths and signal strengths.
+v0.40 target:
+run the same center/shell/leakage test in an explicit 2D or 3D lattice so that shell anisotropy and leakage are measured directly rather than reconstructed from the line-chain.
 ```
 
 Required direction:
 
 ```text
-- derive channel coupling modifiers from the same mass-energy vibration variables
-- compute partial widths from those coupling modifiers
-- sum total width
-- compute branching fractions and signal strengths
-- compare to collider Higgs targets without per-channel tuning
+- initialize an explicit 2D/3D cubic field around the collision center
+- evolve mass-energy vibration outward from the sink
+- measure center drift, shell radius, shell thickness, sphericity, and anisotropy directly
+- derive leakage fractions from measured shell geometry
+- compare hierarchy without per-channel tuning
 ```
 
 ---
@@ -96,5 +97,5 @@ Required direction:
 ## Safe wording
 
 ```text
-v0.38 shows that adding mass-energy conversion into vibration gives a PASS-LIKE toy channel hierarchy, but it is not yet a Standard Model or detector-level CERN calculation.
+v0.39 shows that a rotational spherical reconstruction of the line-chain vibration gives a PASS-LIKE shape-derived leakage hierarchy, but it is not yet a full 3D collider event model.
 ```
