@@ -9,16 +9,81 @@ This folder contains the main MCIFT draft and paper-style addenda.
 ## Files
 
 ```text
-main.md                                      Full theory draft
-v0.7_shadow_anchor_derivation.md             One-point shadow-anchor paper addendum
-v0.11_field_source_reservoir_addendum.md     Bounded fourth-mode reservoir and integrated field-source addendum
-v0.12_activation_terminology_addendum.md     Activation terminology and dark-manifest matter addendum
+main.md                                      Full theory draft with v0.22 status note
+v0.22_cosmology_comparison_addendum.md       MCIFT vs Lambda-CDM / standard-model comparison and current strengths/weaknesses
 v0.13_six_side_sink_dark_manifest_addendum.md Six-side sink dark-manifest geometry addendum
+v0.12_activation_terminology_addendum.md     Activation terminology and dark-manifest matter addendum
+v0.11_field_source_reservoir_addendum.md     Bounded fourth-mode reservoir and integrated field-source addendum
+v0.7_shadow_anchor_derivation.md             One-point shadow-anchor paper addendum
 ```
 
 ---
 
-## Latest addendum: v0.13
+## Latest addendum: v0.22 cosmology comparison
+
+The v0.22 addendum summarizes the current cosmology scaffold and compares MCIFT with both:
+
+```text
+1. Standard Model of particle physics
+2. Lambda-CDM standard cosmology
+```
+
+The addendum distinguishes what MCIFT can safely claim from what remains unproved.
+
+Safe current statement:
+
+```text
+MCIFT v0.22 is compatible with a standard growth-transfer layer while supplying
+a derived anchor/acoustic modulation that preserves a BAO-like scale.
+```
+
+Critical caveat:
+
+```text
+v0.22 imports the broadband growth-transfer layer from existing cosmology.
+MCIFT has not yet independently derived T_growth(k).
+```
+
+Key v0.22 result summary:
+
+```text
+raw MCIFT geometric global peak = 152.29 Mpc
+raw MCIFT BAO-window peak = 152.29 Mpc
+shape RMS log residual after growth-transfer scaffold = 0.004
+shape verdict = PASS-LIKE
+```
+
+Read:
+
+```text
+paper/v0.22_cosmology_comparison_addendum.md
+```
+
+---
+
+## Current strengths and weaknesses
+
+### Strengths
+
+```text
+- MCIFT has explicit visible-manifest and dark-manifest channel mechanics.
+- The anchor radius, cutoff, lock amplitude, and envelope are now derived in the toy scaffold.
+- The model repeatedly produces a BAO-like scale in proxy tests.
+- v0.22 shows compatibility with standard broadband growth-transfer physics.
+```
+
+### Weaknesses
+
+```text
+- MCIFT remains speculative and unvalidated.
+- T_growth(k) is imported in v0.22, not derived from MCIFT.
+- CMB spectra, BBN, lensing, halos, and dark-energy behavior are not yet solved.
+- No fair likelihood or parameter-count comparison against Lambda-CDM has been completed.
+```
+
+---
+
+## Previous addendum: v0.13
 
 The v0.13 addendum tests a six-side sink geometry for dark-manifest matter.
 
