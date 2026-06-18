@@ -1,0 +1,17 @@
+metric,value,unit,verdict
+shape_rms_log_residual,3.7471600008184818,ln_power,FAIL
+shape_mean_abs_log_residual,2.9967114235539536,ln_power,diagnostic
+shape_max_abs_log_residual,8.111383847869226,ln_power,diagnostic
+score_k_min,0.015,1/Mpc,setting
+score_k_max,0.22,1/Mpc,setting
+mcift_global_peak,152.29376055593826,Mpc,PASS-LIKE
+mcift_BAO_window_peak,152.29376055593826,Mpc,PASS-LIKE
+lcdm_like_reference_peak_in_score_window,350.2112922852604,Mpc,diagnostic
+sound_horizon_rs,147.1106663020041,Mpc,reference
+anchor_radius_R_A_5B,505.82952980582434,Mpc,derived
+derived_k_cut_5B,0.01242154705675556,1/Mpc,derived_not_fit
+derived_A_lock_5B,0.9187523246776519,fraction,derived_not_fit
+large_scale_slope_mcift_0.015_0.05,3.3913791450939272,dlnP_dlnk,diagnostic
+large_scale_slope_reference_0.015_0.05,-0.7291023652489459,dlnP_dlnk,diagnostic
+small_scale_slope_mcift_0.08_0.22,-7.244122056424902,dlnP_dlnk,diagnostic
+small_scale_slope_reference_0.08_0.22,-1.8136157176169443,dlnP_dlnk,diagnostic
