@@ -9,7 +9,9 @@ This folder contains analysis scaffolds for testing MCIFT toy-model predictions 
 ## Current level
 
 ```text
-Current conceptual geometry: v0.31 cube-center six-connector knot model
+Current first-principle formulation: v0.33 cubic cell-complex field formula
+Current mechanism layer: v0.32 cube-face Higgs vortex mass mechanism
+Current geometry layer: v0.31 cube-center six-connector knot model
 Current numeric cosmology retest: v0.30 dynamic ordered collapse-containment
 ```
 
@@ -22,37 +24,52 @@ The correct wording is "no parameter sweep / internally constrained heuristic cl
 
 ---
 
-## Current geometry dependency: v0.31
+## v0.33 solver target
 
-The v0.31 geometry note defines a knot at the center of a spacetime cube-cell with six axial connector states:
+The v0.33 field formula defines the local field as:
 
 ```text
-+x, -x, +y, -y, +z, -z
+Psi_MCIFT(i,t) = (
+  K_i,
+  phi_i,
+  T_i,
+  {a_i,mu},
+  {chi_i,mu},
+  {H_i,mu},
+  {Omega_i,mu},
+  {m_i,mu},
+  m_i,
+  q_i,
+  Coh_i,
+  S_i,
+  B_i
+)
 ```
 
-Each connector activation satisfies:
+with:
 
 ```text
-0 <= a_mu <= 1
+A_ij,mu      = sqrt(a_i,mu a_j,-mu)
+chi_i,mu     = A_ij,mu P_phase P_timing P_match
+Omega_i,mu   = H_i,mu sigma(chi_i,mu - chi_c)
+m_i,mu       = m_scale Omega_i,mu a_i,mu
+m_i          = sum_mu m_i,mu
+Coh_i        = 6 a_i,mean - lambda_Delta Delta_i
+q_i          = q_i,base + alpha_m m_i + alpha_Omega sum_mu |grad_mu Omega_i,mu|
+S_i          = Coh_i - q_i
+dB_i/dt      = gamma_B max(0,-S_i) - decay_B B_i
 ```
 
-The six connectors supply local coherence capacity and directional imbalance penalizes containment:
+This provides the next analysis target:
 
 ```text
-Delta_i = sqrt[(a_+x-a_-x)^2 + (a_+y-a_-y)^2 + (a_+z-a_-z)^2]
-Coh_i = 6 a_i,mean - lambda_Delta Delta_i
-```
-
-This provides the next target for analysis:
-
-```text
-connector-level coherence -> mode-coupled B(k,a) collapse-containment solver
+first-principle cubic field variables -> minimal solver -> retest v0.30 collapse behavior
 ```
 
 Read:
 
 ```text
-models/cube_center_six_connector_knot_v0.31.md
+models/first_principle_cubic_field_formula_v0.33.md
 ```
 
 ---
@@ -81,24 +98,6 @@ models/cube_center_six_connector_knot_v0.31.md
 
 ## Latest numeric run: v0.30 dynamic ordered collapse-containment
 
-Run after generating full v0.28 residuals/tracks:
-
-```bash
-python analysis/mcift_big_bang_dynamic_ordered_collapse_v0.30.py
-```
-
-Correct-order dynamic rule:
-
-```text
-coherence_capacity = 3.5 n X_containment A_lock W_capture
-contained_complexity_load = C_n (1 + theta_G + c_s^2)
-collapse_pressure = max(0, contained_complexity_load / coherence_capacity - 1)
-collapse_factor(lambda) = exp[-collapse_pressure * max(0,lambda/R_A - 1) * lambda/R_A]
-B_next = B + leaked V/D contained-complexity excess
-```
-
-Key result:
-
 ```text
 v0.28 RMS = 0.302859
 v0.29 overlay RMS = 0.302859
@@ -111,33 +110,9 @@ v0.30 BAO-window peak = 152.29 Mpc
 
 ---
 
-## Current strengths and weaknesses from analysis
-
-### Strengths
-
-```text
-- BAO-window scale repeatedly survives near 152 Mpc.
-- Six internal connector sectors can project toward four effective 3D transverse channels through spin blur.
-- Temperature, mass/gravity time response, and collapse-containment are represented as internal closures.
-- v0.30 applies collapse-containment in chronological response-epoch order rather than only after the run.
-- v0.31 supplies a connector-level geometry for the next solver.
-```
-
-### Weaknesses
-
-```text
-- v0.30 is still a toy/scaffold calculation.
-- v0.31 is a geometry note, not a solved connector-dynamics simulation.
-- B is aggregate background/response-epoch feedback, not full B(k,a) mode-coupled dynamics.
-- The collapse rule is not established GR/black-hole physics.
-- CMB, BBN, lensing, halos, and dark energy behavior are not yet calculated.
-```
-
----
-
 ## Next analysis target
 
 ```text
-v0.32 target:
-Use the v0.31 connector variables a_i,mu, Delta_i, and Coh_i directly in a mode-coupled B(k,a) perturbation solver.
+v0.34 target:
+Implement a minimal numerical solver using the v0.33 field variables, then retest whether the v0.30 collapse behavior survives with connector/vortex variables active.
 ```
