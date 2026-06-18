@@ -1,0 +1,41 @@
+metric,value,unit,notes
+verdict,PASS-LIKE,category,v0.40 explicit 3D metric
+criteria_pass_count,11,,v0.40 explicit 3D metric
+criteria_total,11,,v0.40 explicit 3D metric
+max_center_drift_abs_cells,1.3434481833953102e-07,,v0.40 explicit 3D metric
+weighted_shell_peak_radius_cells,3.5000000000000004,,v0.40 explicit 3D metric
+weighted_shell_halfmax_width_bins,2.029846967164405,,v0.40 explicit 3D metric
+weighted_shell_energy_radius_cells,15.664554761293932,,v0.40 explicit 3D metric
+weighted_sphericity,0.7824039111843331,,v0.40 explicit 3D metric
+weighted_shape_anisotropy,0.2175960888156669,,v0.40 explicit 3D metric
+weighted_core_fraction,0.2388974579729419,,v0.40 explicit 3D metric
+weighted_inner_shell_fraction,0.545300592277996,,v0.40 explicit 3D metric
+weighted_outer_shell_fraction,0.21580194959194457,,v0.40 explicit 3D metric
+weighted_shell_coherence,0.006255478984598591,,v0.40 explicit 3D metric
+weighted_turbulent_shell,0.0023644273467931264,,v0.40 explicit 3D metric
+integrated_shape_leakage_proxy,0.0028100382984841605,,v0.40 explicit 3D metric
+channel_l1_distance_to_rough_higgs_targets,0.3773896094614284,,v0.40 explicit 3D metric
+channel_log10_rms_to_rough_higgs_targets,0.4798953241604153,,v0.40 explicit 3D metric
+BR_bb_like,0.7834740730278179,fraction,explicit 3D shape-derived proxy
+target_bb_like,0.582,fraction,rough Higgs hierarchy target
+BR_WZ_like,0.12017363034638004,fraction,explicit 3D shape-derived proxy
+target_WZ_like,0.24,fraction,rough Higgs hierarchy target
+BR_gg_like,0.05698412744468452,fraction,explicit 3D shape-derived proxy
+target_gg_like,0.086,fraction,rough Higgs hierarchy target
+BR_tau_like,0.038445431653158064,fraction,explicit 3D shape-derived proxy
+target_tau_like,0.063,fraction,rough Higgs hierarchy target
+BR_gamma_like,0.00024200582506315758,fraction,explicit 3D shape-derived proxy
+target_gamma_like,0.0023,fraction,rough Higgs hierarchy target
+BR_mumu_like,0.0006807317028962946,fraction,explicit 3D shape-derived proxy
+target_mumu_like,0.00022,fraction,rough Higgs hierarchy target
+center_track_stable_drift_lt_1p5_cells,1,bool,criterion
+dominant_shell_forms_radius_gt_3,1,bool,criterion
+dominant_shell_not_far_radius_lt_12,1,bool,criterion
+spherical_component_dominant,1,bool,criterion
+anisotropy_present_but_subdominant,1,bool,criterion
+shape_derived_leakage_positive,1,bool,criterion
+bb_like_largest_from_shape,1,bool,criterion
+WZ_like_second_or_third_from_shape,1,bool,criterion
+gg_like_visible_from_turbulence,1,bool,criterion
+gamma_and_mumu_suppressed,1,bool,criterion
+energy_finite_no_blowup,1,bool,criterion
