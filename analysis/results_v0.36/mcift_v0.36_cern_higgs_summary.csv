@@ -1,0 +1,2 @@
+version,name,overall_verdict,structural_passes,weak_qualitative,calibration_required,not_implemented,constrained,ideal_mass_proxy,m_scale_calibrated_GeV
+v0.36,CERN LHC Higgs-sector comparison,STRUCTURAL_ONLY_NOT_A_CERN_PASS,2,1,1,4,1,5.826622019054439,21.460118674437688
