@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.32 cube-face Higgs vortex mass mechanism + v0.30 numeric retest
+**Current version:** v0.33 first-principle cubic field formula
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model (Lambda-CDM). This repository contains exploratory mechanics, toy calculations, and increasingly testable cosmology-style scaffolds.
 
@@ -11,94 +11,66 @@
 
 ## Current focus
 
-MCIFT models physical reality as a multi-channel information field:
+MCIFT now defines the field as a cubic cell-complex object:
 
-$$
-\Psi(x,y,z,t,c)
-$$
+```text
+node variables      at cube-center knots
+link variables      on six center-to-center connectors
+face variables      on Higgs-coupled vortex planes
+cell variables      for mass, complexity, coherence, stability, and collapse reservoir
+```
 
-where `c` labels internal activation channels such as visibility/light activation, mass/Higgs activation, gravitational projection, knot coherence, exchange, amplitude, radiation-like response, collapsed-knot containment, and dark/visible manifestation.
+The v0.33 local field is:
 
-The current conceptual chain is:
+```text
+Psi_MCIFT(i,t) = (
+  K_i,
+  phi_i,
+  T_i,
+  {a_i,mu},
+  {chi_i,mu},
+  {H_i,mu},
+  {Omega_i,mu},
+  {m_i,mu},
+  m_i,
+  q_i,
+  Coh_i,
+  S_i,
+  B_i
+)
+```
+
+---
+
+## Current conceptual chain
 
 ```text
 multi-channel information field
 -> cube-centered knot with six axial connector states
--> Higgs-coupled planes on cube faces
--> information compatibility between neighboring cube centers
--> face-plane vortex formation
+-> connector information compatibility
+-> Higgs-coupled face-plane vortex formation
 -> vortex mass gathering / retained Higgs response
 -> contained complexity loading
--> chronological collapse-containment when coherence cannot hold complexity
--> dynamic response-epoch B reservoir
--> BAO/sound-horizon and full P(k)-shape scoring
+-> connector-supported coherence capacity
+-> collapse-containment when coherence cannot hold complexity
+-> collapsed-knot reservoir B
+-> cosmology-scale growth and BAO/P(k) scoring scaffold
 ```
 
 ---
 
-## Cube-center six-connector knot geometry
-
-A knot is modeled as the center of a spacetime cube-cell with six axial connector states:
+## Defining v0.33 equations
 
 ```text
-+x, -x, +y, -y, +z, -z
-```
-
-Each connector links one cube-center knot to a neighboring cube-center knot and may be inactive, partially active, or fully active:
-
-```text
-0 <= a_mu <= 1
-```
-
-The six connector states supply local coherence capacity. Collapse-containment occurs when connector-supported coherence cannot contain the knot's internal complexity.
-
-See:
-
-```text
-models/cube_center_six_connector_knot_v0.31.md
-```
-
----
-
-## Cube-face Higgs vortex mass mechanism
-
-Each connector crosses a Higgs-coupled face plane:
-
-```text
-H_i,mu >= 0
-```
-
-A connector becomes mass-active only when the information exchanged between neighboring cube centers is compatible enough:
-
-```text
-chi_ij,mu = sqrt(a_i,mu a_j,-mu)
-           * P_phase(i,j)
-           * P_timing(i,j)
-           * P_match(i,j)
-```
-
-A face-plane vortex forms when:
-
-```text
-chi_ij,mu >= chi_c
-```
-
-Vortex strength:
-
-```text
-Omega_i,mu = H_i,mu * sigma(chi_ij,mu - chi_c)
-```
-
-Mass gathered by the knot:
-
-```text
-m_i = m_scale * sum_mu Omega_i,mu * a_i,mu
-```
-
-See:
-
-```text
-models/cube_face_higgs_vortex_mass_v0.32.md
+A_ij,mu      = sqrt(a_i,mu a_j,-mu)
+chi_i,mu     = A_ij,mu P_phase P_timing P_match
+Omega_i,mu   = H_i,mu sigma(chi_i,mu - chi_c)
+m_i,mu       = m_scale Omega_i,mu a_i,mu
+m_i          = sum_mu m_i,mu
+Coh_i        = 6 a_i,mean - lambda_Delta Delta_i
+q_i          = q_i,base + alpha_m m_i + alpha_Omega sum_mu |grad_mu Omega_i,mu|
+S_i          = Coh_i - q_i
+dB_i/dt      = gamma_B max(0,-S_i) - decay_B B_i
 ```
 
 ---
@@ -132,16 +104,17 @@ v0.30 BAO-window peak = 152.29 Mpc
 ## Key files
 
 ```text
+models/first_principle_cubic_field_formula_v0.33.md
 models/cube_face_higgs_vortex_mass_v0.32.md
 models/cube_center_six_connector_knot_v0.31.md
 analysis/mcift_big_bang_dynamic_ordered_collapse_v0.30.py
 analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_report.md
 analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_metrics.csv
+paper/v0.33_first_principle_cubic_field_formula_addendum.md
 paper/v0.32_cube_face_higgs_vortex_mass_addendum.md
 paper/v0.31_cube_center_six_connector_addendum.md
 paper/v0.30_dynamic_ordered_collapse_addendum.md
 mechanics/mechanics_v0.13.md
-models/six_side_sink_dark_manifest_v0.13.md
 ```
 
 ---
@@ -151,14 +124,14 @@ models/six_side_sink_dark_manifest_v0.13.md
 Next required tests:
 
 ```text
-1. Use the cube-center six-connector geometry to define connector-level coherence and imbalance.
-2. Use the cube-face Higgs vortex mechanism to define mass loading from compatible face-plane vortices.
-3. Replace response-epoch B transfer with mode-coupled B(k,a) inside the perturbation equations.
-4. Re-run thermodynamic growth with B and vortex mass loading coupled directly to each mode.
-5. Test dark-manifest behavior against lensing / halo / rotation-curve proxies.
-6. Add CMB temperature and polarization spectra.
-7. Add BBN light-element predictions.
-8. Compare MCIFT and Lambda-CDM with fair parameter-count penalties.
+1. Implement a minimal numerical solver using v0.33 field variables.
+2. Evolve a_i,mu connector activations.
+3. Compute chi_i,mu information compatibility.
+4. Generate Omega_i,mu Higgs face-plane vortex response.
+5. Compute m_i mass loading and q_i contained complexity.
+6. Update B_i collapse reservoir.
+7. Test whether the v0.30 collapse result survives with connector/vortex variables active.
+8. Then test lensing, halos, CMB, BBN, and fair comparison against Lambda-CDM.
 ```
 
 ---
