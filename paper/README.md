@@ -10,6 +10,7 @@ This folder contains the main MCIFT draft and paper-style addenda.
 
 ```text
 main.md                                           Main theory draft / historical framework
+v0.39_spherical_leakage_geometry_addendum.md      Spherical leakage geometry retest
 v0.38_mass_energy_vibration_addendum.md           Mass-energy vibration channel retest
 v0.37_line_chain_spin_drill_addendum.md           Line-chain spin-drill Higgs test
 v0.36_cern_higgs_comparison_addendum.md           CERN/LHC Higgs-sector comparison
@@ -18,51 +19,39 @@ v0.34_first_principle_cubic_field_toy_solver_addendum.md  First-principle cubic 
 v0.33_first_principle_cubic_field_formula_addendum.md  First-principle cubic MCIFT field formula
 v0.32_cube_face_higgs_vortex_mass_addendum.md     Cube-face Higgs vortex mass mechanism
 v0.31_cube_center_six_connector_addendum.md       Cube-center six-connector knot geometry
-v0.30_dynamic_ordered_collapse_addendum.md        Dynamic ordered collapse-containment retest
 ```
 
 ---
 
-## Current collider-style retest: v0.38 mass-energy vibration
+## Current geometric leakage retest: v0.39 spherical leakage
 
 Verdict:
 
 ```text
-PASS-LIKE, 9/9 strict toy criteria
+PASS-LIKE, 10/10 strict toy criteria
 ```
 
 Summary:
 
 ```text
-Mass gathered by the line-chain spin-drill sink is converted into vibration energy using E = m c^2. The vibration then leaks into proxy channels, producing a toy Higgs-like hierarchy led by bb-like mass retention, WZ-like coherent symmetry, visible gg-like turbulence, visible tau-like retention, and suppressed gamma-like and mumu-like channels.
+The v0.39 retest tracks the sink center in time, reconstructs a spherical vibration shell, measures shell shape, and evaluates leakage from geometry. The center remains stable, the shell is mostly spherical, anisotropy is present but subdominant, and shape-derived leakage remains led by compact mass retention and coherent spherical-shell emission.
 ```
 
 Read:
 
 ```text
-paper/v0.38_mass_energy_vibration_addendum.md
-analysis/results_v0.38/mcift_v0.38_mass_energy_vibration_report.md
+paper/v0.39_spherical_leakage_geometry_addendum.md
+analysis/results_v0.39/mcift_v0.39_spherical_leakage_report.md
 ```
 
 ---
 
-## Previous collider-style toy test: v0.37 line-chain spin-drill
+## Previous collider-style retests
 
 ```text
-PASS-LIKE, 7/7 strict toy criteria
+v0.38_mass_energy_vibration_addendum.md           PASS-LIKE, 9/9 criteria
+v0.37_line_chain_spin_drill_addendum.md           PASS-LIKE, 7/7 criteria
+v0.36_cern_higgs_comparison_addendum.md           STRUCTURAL_ONLY_NOT_A_CERN_PASS
 ```
 
----
-
-## Previous conceptual layers
-
-```text
-paper/v0.36_cern_higgs_comparison_addendum.md
-paper/v0.35_spatial_cubic_lattice_solver_addendum.md
-paper/v0.34_first_principle_cubic_field_toy_solver_addendum.md
-paper/v0.33_first_principle_cubic_field_formula_addendum.md
-paper/v0.32_cube_face_higgs_vortex_mass_addendum.md
-paper/v0.31_cube_center_six_connector_addendum.md
-```
-
-The older addenda remain useful historical context, but v0.38 is the current mass-energy vibration retest layer.
+The older addenda remain useful historical context, but v0.39 is the current spherical leakage geometry retest layer.
