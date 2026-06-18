@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.30 dynamic ordered collapse-containment cosmology scaffold + v0.31 cube-center connector geometry note
+**Current version:** v0.32 cube-face Higgs vortex mass mechanism + v0.30 numeric retest
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model (Lambda-CDM). This repository contains exploratory mechanics, toy calculations, and increasingly testable cosmology-style scaffolds.
 
@@ -19,21 +19,16 @@ $$
 
 where `c` labels internal activation channels such as visibility/light activation, mass/Higgs activation, gravitational projection, knot coherence, exchange, amplitude, radiation-like response, collapsed-knot containment, and dark/visible manifestation.
 
-The current cosmology chain is:
+The current conceptual chain is:
 
 ```text
 multi-channel information field
 -> cube-centered knot with six axial connector states
--> coherent knot/anchor structure
--> visible-manifest and dark-manifest channel split
--> anchor/coherence radius R_A
--> anchor-derived cutoff k_cut = 2 pi / R_A
--> anchor-derived scale-lock amplitude A_lock
--> native channel-exchange perturbation growth
--> six internal dark sectors
--> spin-blur projection toward four effective 3D transverse sinks
--> mass/gravity time-response correction
--> thermodynamic spin-growth layer
+-> Higgs-coupled planes on cube faces
+-> information compatibility between neighboring cube centers
+-> face-plane vortex formation
+-> vortex mass gathering / retained Higgs response
+-> contained complexity loading
 -> chronological collapse-containment when coherence cannot hold complexity
 -> dynamic response-epoch B reservoir
 -> BAO/sound-horizon and full P(k)-shape scoring
@@ -43,7 +38,7 @@ multi-channel information field
 
 ## Cube-center six-connector knot geometry
 
-The current geometry note defines a knot as the center of a spacetime cube-cell with six axial connector states:
+A knot is modeled as the center of a spacetime cube-cell with six axial connector states:
 
 ```text
 +x, -x, +y, -y, +z, -z
@@ -55,12 +50,55 @@ Each connector links one cube-center knot to a neighboring cube-center knot and 
 0 <= a_mu <= 1
 ```
 
-The six connector states supply local coherence capacity. Collapse-containment occurs when the coherence supplied by the connector structure cannot contain the knot's internal complexity.
+The six connector states supply local coherence capacity. Collapse-containment occurs when connector-supported coherence cannot contain the knot's internal complexity.
 
 See:
 
 ```text
 models/cube_center_six_connector_knot_v0.31.md
+```
+
+---
+
+## Cube-face Higgs vortex mass mechanism
+
+Each connector crosses a Higgs-coupled face plane:
+
+```text
+H_i,mu >= 0
+```
+
+A connector becomes mass-active only when the information exchanged between neighboring cube centers is compatible enough:
+
+```text
+chi_ij,mu = sqrt(a_i,mu a_j,-mu)
+           * P_phase(i,j)
+           * P_timing(i,j)
+           * P_match(i,j)
+```
+
+A face-plane vortex forms when:
+
+```text
+chi_ij,mu >= chi_c
+```
+
+Vortex strength:
+
+```text
+Omega_i,mu = H_i,mu * sigma(chi_ij,mu - chi_c)
+```
+
+Mass gathered by the knot:
+
+```text
+m_i = m_scale * sum_mu Omega_i,mu * a_i,mu
+```
+
+See:
+
+```text
+models/cube_face_higgs_vortex_mass_v0.32.md
 ```
 
 ---
@@ -73,28 +111,11 @@ Earlier docs used **"no-fit"** too strongly. The current wording is:
 no parameter sweep / internally constrained heuristic closure
 ```
 
-This means parameters were not swept to match the target, but the closure choices remain model assumptions. They are not observationally fitted constants and not first-principle proof.
+This means parameters were not swept to match the target, but the closure choices remain model assumptions.
 
 ---
 
-## MCIFT vs standard models, in plain terms
-
-There are two standard models that matter here:
-
-1. **Standard Model of particle physics**: describes known particles and non-gravitational interactions, but does not explain gravity, dark matter, or dark energy.
-2. **Lambda-CDM standard cosmology**: describes the observed universe using general relativity, expansion, ordinary matter, radiation, cold dark matter, and dark energy / cosmological constant.
-
-MCIFT is different in goal. It tries to provide a possible internal mechanism for dark/visible structure, anchor-driven coherence, scale selection, thermodynamic capture, and collapse-containment of uncontained complexity.
-
-Safe current statement:
-
-```text
-MCIFT v0.30 applies collapse-containment in chronological response-epoch order. The prior 617.87 Mpc global peak is suppressed before final scoring and the global peak returns to 152.29 Mpc, while the scored shape RMS remains PASS-LIKE. This is still a speculative scaffold and not a Lambda-CDM replacement.
-```
-
----
-
-## Latest v0.30 result
+## Latest numeric result: v0.30
 
 ```text
 v0.28 RMS = 0.302859
@@ -106,75 +127,21 @@ v0.30 global peak after dynamic order = 152.29 Mpc
 v0.30 BAO-window peak = 152.29 Mpc
 ```
 
-Dynamic background at 5B:
-
-```text
-A_bg = 0.891174
-V_bg = 0.048089
-D_bg = 0.047217
-R_bg = 0.010379
-B_bg = 0.003141
-```
-
----
-
-## Cosmology scaffold status: v0.16 through v0.30
-
-| Version | Purpose | Main outcome | Status |
-|---|---|---|---|
-| v0.16 | First Big Bang comparison proxies | Visible/dark ratio weak overall; BAO scale failed globally | exploratory |
-| v0.17 | Expansion-coupled scale-lock | BAO-window peak near sound horizon; global long mode still failed | partial |
-| v0.18 | Long-mode damping / primordial gate | Suppressed the 617 Mpc mode and moved global peak near 152 Mpc | pass-like proxy |
-| v0.19 | Anchor-derived cutoff | Derived `k_cut` from anchor radius instead of fitting it | stronger proxy |
-| v0.20 | Derived scale-lock amplitude/envelope | Derived remaining scale-lock knobs from channel geometry | raw geometric proxy |
-| v0.21 | Full P(k) shape test | Peak stayed pass-like but full shape failed | important failure |
-| v0.22 | Growth-transfer compatibility scaffold | Full shape passed after importing standard transfer physics | compatibility pass, not independent derivation |
-| v0.23 | Native scalar growth attempt | Removed imported transfer; full shape failed | useful failure |
-| v0.24 | Coupled channel-exchange growth | Shape RMS improved to 0.469; BAO-window survived; global long mode failed | weak native pass |
-| v0.25 | First-principle six-sink count | Six sectors more fundamental but weaker than four-sink projection | weak |
-| v0.26 | Spin-blur projection | Six internal sectors blurred to about four effective sinks | weak |
-| v0.27 | Mass-gravity-time spin blur | Conservative time-response model; RMS 0.482 | weak |
-| v0.28 | Thermodynamic spin-growth | RMS 0.303; BAO-window peak preserved; global mode remained 617.87 Mpc | PASS-LIKE shape, global failure |
-| v0.29 | Collapse-containment overlay | Post-run overlay moved global peak from 617.87 Mpc to 152.29 Mpc | PASS-LIKE overlay |
-| v0.30 | Dynamic ordered collapse | Response-epoch B reservoir suppresses 617.87 Mpc before final scoring | PASS-LIKE scaffold |
-
 ---
 
 ## Key files
 
 ```text
+models/cube_face_higgs_vortex_mass_v0.32.md
 models/cube_center_six_connector_knot_v0.31.md
 analysis/mcift_big_bang_dynamic_ordered_collapse_v0.30.py
 analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_report.md
 analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_metrics.csv
-analysis/mcift_big_bang_collapse_containment_v0.29.py
-analysis/mcift_big_bang_thermo_spin_growth_v0.28.py
+paper/v0.32_cube_face_higgs_vortex_mass_addendum.md
+paper/v0.31_cube_center_six_connector_addendum.md
 paper/v0.30_dynamic_ordered_collapse_addendum.md
-paper/v0.29_collapse_containment_addendum.md
-paper/v0.28_thermodynamic_spin_growth_addendum.md
 mechanics/mechanics_v0.13.md
 models/six_side_sink_dark_manifest_v0.13.md
-```
-
----
-
-## How to run the latest cosmology scaffold
-
-After generating the full v0.28 residuals/tracks:
-
-```bash
-python analysis/mcift_big_bang_dynamic_ordered_collapse_v0.30.py
-```
-
-Expected outputs:
-
-```text
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_report.md
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_metrics.csv
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_background.csv
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_residuals.csv
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_comparison.png
-analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_comparison.svg
 ```
 
 ---
@@ -184,13 +151,13 @@ analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_comparison.svg
 Next required tests:
 
 ```text
-1. Replace response-epoch B transfer with mode-coupled B(k,a) inside the perturbation equations.
-2. Re-run thermodynamic growth with B coupled directly to each mode.
-3. Use the cube-center six-connector knot geometry to define connector-level coherence and imbalance.
-4. Test dark-manifest behavior against lensing / halo / rotation-curve proxies.
-5. Add CMB temperature and polarization spectra.
-6. Add BBN light-element predictions.
-7. Derive or falsify a dark-energy / late-time acceleration sector.
+1. Use the cube-center six-connector geometry to define connector-level coherence and imbalance.
+2. Use the cube-face Higgs vortex mechanism to define mass loading from compatible face-plane vortices.
+3. Replace response-epoch B transfer with mode-coupled B(k,a) inside the perturbation equations.
+4. Re-run thermodynamic growth with B and vortex mass loading coupled directly to each mode.
+5. Test dark-manifest behavior against lensing / halo / rotation-curve proxies.
+6. Add CMB temperature and polarization spectra.
+7. Add BBN light-element predictions.
 8. Compare MCIFT and Lambda-CDM with fair parameter-count penalties.
 ```
 
