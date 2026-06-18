@@ -1,0 +1,11 @@
+metric,value,unit,verdict
+reference_global_peak,617.866338867254,Mpc,FAIL
+reference_BAO_window_peak,152.29376055593826,Mpc,PASS-LIKE
+v0.19_global_peak,152.29376055593826,Mpc,PASS-LIKE
+v0.19_BAO_window_peak,152.29376055593826,Mpc,PASS-LIKE
+sound_horizon_rs,147.1106663020041,Mpc,reference
+anchor_radius_R_A_5B,505.82952980582434,Mpc,derived
+derived_k_cut_5B,0.01242154705675556,1/Mpc,derived_not_fit
+damping_power,4.0,dimensionless,derived_from_4_dark_sinks
+global_fractional_error,0.035232620341028004,ratio,PASS-LIKE
+BAO_window_fractional_error,0.035232620341028004,ratio,PASS-LIKE
