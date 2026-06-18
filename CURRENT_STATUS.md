@@ -1,21 +1,37 @@
-# Current MCIFT Status: v0.28
+# Current MCIFT Status: v0.29
 
 **Status:** speculative theoretical framework / toy cosmology scaffold; not established physics.  
-**Current milestone:** v0.28 no-fit thermodynamic spin-growth scaffold.
+**Current milestone:** v0.29 collapse-containment overlay on the thermodynamic spin-growth scaffold.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT now has a no-fit thermodynamic spin-growth scaffold that improves native P(k)-shape scoring to PASS-LIKE while preserving a BAO-window scale, but it still fails the global long-mode test and has not replaced Lambda-CDM.
+MCIFT now has an internally constrained thermodynamic spin-growth scaffold plus a collapse-containment rule: when coherence capacity cannot contain complexity, uncontained modes are drained into a collapsed-knot reservoir. In the first v0.29 overlay, the previous 617.87 Mpc global peak is reduced and the global peak returns to 152.29 Mpc, but this is still a toy/scaffold result and not a Lambda-CDM replacement.
 ```
 
 ---
 
-## What changed through v0.28
+## Wording correction
 
-The latest chain of cosmology tests moved from visual/toy field outputs to increasingly stricter numerical scaffolds:
+Earlier project files used **"no-fit"** too strongly.
+
+Correct wording:
+
+```text
+no parameter sweep / internally constrained heuristic closure
+```
+
+Meaning:
+
+```text
+The run did not scan parameters to match the target, but the closure choices are still model assumptions. They are not observationally fitted constants and not first-principle proof.
+```
+
+---
+
+## What changed through v0.29
 
 ```text
 v0.16  first Big Bang proxy comparison
@@ -30,7 +46,8 @@ v0.24  coupled channel-exchange solver; shape improved to WEAK
 v0.25  first-principle six-sink retest; weaker than four effective sinks
 v0.26  spin-blur projection; six internal sectors blurred toward four effective sinks
 v0.27  mass-gravity-time spin blur; conservative time-response version
-v0.28  no-fit thermodynamic spin-growth; native shape score improved to PASS-LIKE
+v0.28  thermodynamic spin-growth; shape score improved to PASS-LIKE but global peak remained 617.87 Mpc
+v0.29  collapse-containment overlay; uncontained 617.87 Mpc mode drains into collapsed-knot reservoir and global peak returns to 152.29 Mpc
 ```
 
 ---
@@ -43,45 +60,52 @@ k_cut(a)     2 pi / R_A(a)
 A_lock(a)    anchor fraction of total positive channel density
 N_internal   six dark sectors from eight-sector / one-point-anchor source math
 N_eff(a)     effective sink count after spin blur
-rho_G        A + 0.6 V + 0.45 D + exchange
 theta_G      mass/gravity time-response load
 theta_T      rho_R / (rho_R + rho_G)
 T_rel        theta_T^(1/4)
 beta_T       sqrt(T_rel)
 W_capture    4(1-exp[-beta_T^2]) exp[-beta_T^2]
 c_s^2        beta_T^2 / 3
-chi_thermo   chi_MGT * (1 + beta_T)
+S_contain    coherence capacity minus contained complexity
+B            collapsed-knot reservoir, not yet dynamically evolved
 ```
 
-v0.28 uses a no-fit thermodynamic closure:
+v0.29 containment rule:
 
 ```text
-rho_T      = R
-theta_T    = rho_R / (rho_R + rho_G)
-T_rel      = theta_T^(1/4)
-beta_T     = sqrt(T_rel)
-W_capture  = 4(1-exp[-beta_T^2]) exp[-beta_T^2]
-c_s^2      = beta_T^2 / 3
-chi_thermo = chi_MGT * (1 + beta_T)
-N_eff      = 4 + 2 exp[-chi_thermo^2]
+coherence_capacity = 3.5 n X_containment A_lock W_capture
+contained_complexity_load = C_n (1 + theta_G + c_s^2)
+collapse_excess = max(0, contained_complexity_load - coherence_capacity)
+collapse_pressure = max(0, contained_complexity_load / coherence_capacity - 1)
+```
+
+First retest choices:
+
+```text
+n = 4
+C_n = 16
+X_containment = 1 + beta_spin
+collapse activates only for modes with wavelength lambda > R_A
+collapse_factor(lambda) = exp[-collapse_pressure * lambda / R_A]
 ```
 
 ---
 
-## Latest v0.28 result
+## Latest v0.29 result
 
 ```text
-thermo_spin_growth_shape_rms_log_residual = 0.302859
+v0.28 RMS before collapse = 0.302859
+v0.29 RMS after collapse = 0.302859
 shape verdict = PASS-LIKE
-native thermodynamic BAO-window peak = 152.29 Mpc
-nearest BAO bin = 152.29 Mpc
-native thermodynamic global peak = 617.87 Mpc
+v0.28 global peak before collapse = 617.87 Mpc
+v0.29 global peak after collapse = 152.29 Mpc
+v0.29 BAO-window peak = 152.29 Mpc
 ```
 
-Interpretation:
+Important interpretation:
 
 ```text
-Thermodynamics is a useful missing layer: it improves the native shape score and keeps the six-to-four spin-blur behavior. It does not solve the global long-mode failure.
+The scored RMS is unchanged because the collapsed 617.87 Mpc mode lies outside the v0.28 P(k) scoring window. The meaningful change is that the uncontained super-anchor mode no longer dominates the global peak.
 ```
 
 ---
@@ -90,10 +114,10 @@ Thermodynamics is a useful missing layer: it improves the native shape score and
 
 ```text
 1. MCIFT gives explicit channel language for visible-manifest and dark-manifest behavior.
-2. Several control quantities are now derived internally or replaced by no-fit internal closures.
+2. Several control quantities are now derived internally or replaced by internally constrained closures.
 3. Raw geometric MCIFT tests repeatedly produce a BAO-like scale near the sound-horizon comparison scale.
-4. v0.28 improves native no-import shape scoring to PASS-LIKE without a thermodynamic parameter sweep.
-5. The scaffold provides clear next failure/proof points instead of vague claims.
+4. v0.28 improves native no-import shape scoring to PASS-LIKE without a parameter sweep.
+5. v0.29 gives an MCIFT-native explanation for the previous 617.87 Mpc long-mode dominance: coherence capacity was not enough to contain the mode's complexity.
 ```
 
 ---
@@ -102,14 +126,13 @@ Thermodynamics is a useful missing layer: it improves the native shape score and
 
 ```text
 1. MCIFT remains speculative and unvalidated.
-2. v0.28 is a toy/scaffold calculation, not a precision Boltzmann solver.
-3. The global 617.87 Mpc long mode still fails.
-4. The thermodynamic layer is still applied to milestone channel snapshots rather than a fully conserved background evolution.
-5. CMB temperature/polarization spectra are not implemented.
-6. BBN light-element predictions are not implemented.
-7. Lensing, halo, galaxy-rotation, and cluster tests are not implemented.
-8. Dark energy / late-time acceleration is not derived.
-9. A fair likelihood / parameter-count comparison against Lambda-CDM is not complete.
+2. v0.29 is an overlay, not a dynamic A/V/D/R/B conserved-background solver.
+3. The collapse rule is heuristic and internally constrained, not established black-hole/GR physics.
+4. CMB temperature/polarization spectra are not implemented.
+5. BBN light-element predictions are not implemented.
+6. Lensing, halo, galaxy-rotation, and cluster tests are not implemented.
+7. Dark energy / late-time acceleration is not derived.
+8. A fair likelihood / parameter-count comparison against Lambda-CDM is not complete.
 ```
 
 ---
@@ -119,30 +142,21 @@ Thermodynamics is a useful missing layer: it improves the native shape score and
 Safe:
 
 ```text
-MCIFT provides a possible mechanism for dark/visible channel splitting, spin-blurred dark-sector projection, thermodynamic capture effects, and BAO-window scale behavior.
+MCIFT provides a possible mechanism for dark/visible channel splitting, spin-blurred dark-sector projection, thermodynamic capture effects, and collapse-containment of uncontained coherent complexity.
 ```
 
 Safe:
 
 ```text
-MCIFT v0.28 reaches PASS-LIKE native P(k)-shape scoring in a no-fit thermodynamic scaffold, while still failing the global long-mode test.
+MCIFT v0.29 moves the previous global peak failure from 617.87 Mpc to 152.29 Mpc in a collapse-containment overlay, while preserving the v0.28 PASS-LIKE scored shape window.
 ```
 
 Not safe:
 
 ```text
+MCIFT proves black holes.
 MCIFT proves dark matter.
-```
-
-Not safe:
-
-```text
 MCIFT proves dark energy.
-```
-
-Not safe:
-
-```text
 MCIFT replaces Lambda-CDM.
 ```
 
@@ -150,25 +164,26 @@ MCIFT replaces Lambda-CDM.
 
 ## Next proof target
 
-The next hard test is:
+The next hard test is dynamic:
 
 ```text
-Evolve the A/V/D/R background channels self-consistently under conservation and exchange equations, then rerun the no-fit thermodynamic growth test without relying on milestone channel snapshots.
+Add B = collapsed-knot reservoir and evolve conserved A/V/D/R/B backgrounds, then rerun the thermodynamic perturbation solver without post-processing.
 ```
 
-Required equations:
+Required background form:
 
 ```text
 d rho_A / d ln a = -Q_A_to_V - Q_A_to_D
-d rho_V / d ln a =  Q_A_to_V - Q_V_to_D - Q_V_to_R
-d rho_D / d ln a =  Q_A_to_D + Q_V_to_D
-d rho_R / d ln a =  Q_V_to_R
+d rho_V / d ln a =  Q_A_to_V - Q_V_to_D - Q_V_to_R - Q_V_to_B
+d rho_D / d ln a =  Q_A_to_D + Q_V_to_D - Q_D_to_B
+d rho_R / d ln a =  Q_V_to_R + collapse thermal feedback
+d rho_B / d ln a =  Q_V_to_B + Q_D_to_B
 ```
 
 Secondary targets:
 
 ```text
-- determine whether the 617.87 Mpc global mode is a toy-box artifact or true failure
+- determine whether dynamic B evolution preserves the 152.29 Mpc global peak
 - dark-channel equation of state w_D approximately 0
 - dark-channel dilution rho_D(a) approximately a^-3
 - lensing and halo behavior
