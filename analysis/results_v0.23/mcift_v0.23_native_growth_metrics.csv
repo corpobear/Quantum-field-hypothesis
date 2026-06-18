@@ -1,0 +1,16 @@
+metric,value,unit,verdict
+native_shape_rms_log_residual,4.147615292094368,ln_power,FAIL
+native_shape_mean_abs_log_residual,3.1770415080830476,ln_power,diagnostic
+native_shape_max_abs_log_residual,11.390354100587064,ln_power,diagnostic
+raw_geometric_global_peak,152.29376055593826,Mpc,PASS-LIKE
+native_growth_global_peak,152.29376055593826,Mpc,PASS-LIKE
+native_growth_BAO_window_peak,152.29376055593826,Mpc,PASS-LIKE
+reference_scoring_peak,350.2112922852604,Mpc,reference
+sound_horizon_rs,147.1106663020041,Mpc,reference
+anchor_radius_R_A_5B,505.82952980582434,Mpc,derived
+derived_k_cut_5B,0.01242154705675556,1/Mpc,derived_not_fit
+derived_A_lock_5B,0.9187523246776519,fraction,derived_not_fit
+large_scale_slope_native_0.015_0.05,9.70383516834096,dlnP_dlnk,diagnostic
+large_scale_slope_reference_0.015_0.05,-0.7291023652489467,dlnP_dlnk,diagnostic
+small_scale_slope_native_0.08_0.22,-3.7913738765666483,dlnP_dlnk,diagnostic
+small_scale_slope_reference_0.08_0.22,-1.8136157176169396,dlnP_dlnk,diagnostic
