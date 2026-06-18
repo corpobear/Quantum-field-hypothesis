@@ -1,48 +1,48 @@
-# Current MCIFT Status: v0.39 Spherical Leakage Geometry Retest
+# Current MCIFT Status: v0.40 Explicit 3D Spherical Leakage Collision Test
 
 **Status:** speculative theoretical framework / toy collider and cosmology scaffold; not established physics.  
-**Current geometric leakage retest:** v0.39 spherical leakage geometry retest.  
+**Current explicit 3D retest:** v0.40 explicit 3D spherical leakage collision test.  
+**Previous geometric leakage retest:** v0.39 spherical leakage geometry retest.  
 **Previous collider-style retest:** v0.38 mass-energy vibration channel retest.  
 **Previous collider-style toy test:** v0.37 line-chain spin-drill Higgs test.  
-**Current collider comparison layer:** v0.36 CERN/LHC Higgs-sector comparison.  
-**Current spatial tested layer:** v0.35 minimal spatial cubic lattice solver.
+**Current collider comparison layer:** v0.36 CERN/LHC Higgs-sector comparison.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.39 tracks the sink center in time, reconstructs a spherical shell from the mass-energy vibration field, measures shell shape, and evaluates leakage from geometry rather than direct proxy labels. The strict toy verdict is PASS-LIKE: 10/10 criteria passed, with stable center tracking, dominant near-center shell formation, high sphericity, subdominant anisotropy, and shape-derived leakage led by compact mass retention, coherent spherical-shell leakage, and visible turbulent leakage.
+MCIFT v0.40 runs the spherical leakage test in an explicit 48^3 cubic lattice with a six-direction packet collision. The strict 3D toy verdict is PASS-LIKE: 11/11 geometry criteria passed. A central sink and real 3D vibration shell form directly, with stable center tracking, finite energy, mostly spherical shell geometry, subdominant anisotropy, and shape-derived leakage. However, the explicit 3D hierarchy shifts toward excessive compact mass retention: bb-like is high and WZ-like is low against rough Higgs hierarchy targets.
 ```
 
 ---
 
-## v0.39 result
+## v0.40 result
 
 ```text
 verdict = PASS-LIKE
-criteria_pass_count = 10/10
-max_center_drift_abs_cells = 0.434496
-weighted_shell_peak_radius_cells = 3.655708
-weighted_shell_halfmax_width_bins = 8.465637
-weighted_sphericity = 0.959336
-weighted_shape_anisotropy = 0.040664
-weighted_core_fraction = 0.106027
-weighted_inner_shell_fraction = 0.282291
-weighted_outer_shell_fraction = 0.611682
-channel_l1_distance_to_rough_higgs_targets = 0.256823
-channel_log10_rms_to_rough_higgs_targets = 0.601039
+criteria_pass_count = 11/11
+max_center_drift_abs_cells = 0.000000
+weighted_shell_peak_radius_cells = 3.500000
+weighted_shell_halfmax_width_bins = 2.029847
+weighted_sphericity = 0.782404
+weighted_shape_anisotropy = 0.217596
+weighted_core_fraction = 0.238897
+weighted_inner_shell_fraction = 0.545301
+weighted_outer_shell_fraction = 0.215802
+channel_l1_distance_to_rough_higgs_targets = 0.377390
+channel_log10_rms_to_rough_higgs_targets = 0.479895
 ```
 
 Shape-derived channel fractions:
 
 ```text
-bb_like     = 0.505134  target ~ 0.582000
-WZ_like     = 0.381469  target ~ 0.240000
-gg_like     = 0.085943  target ~ 0.086000
-tau_like    = 0.026958  target ~ 0.063000
-gamma_like  = 0.000095  target ~ 0.002300
-mumu_like   = 0.000402  target ~ 0.000220
+bb_like     = 0.783474  target ~ 0.582000
+WZ_like     = 0.120174  target ~ 0.240000
+gg_like     = 0.056984  target ~ 0.086000
+tau_like    = 0.038445  target ~ 0.063000
+gamma_like  = 0.000242  target ~ 0.002300
+mumu_like   = 0.000681  target ~ 0.000220
 ```
 
 ---
@@ -50,19 +50,25 @@ mumu_like   = 0.000402  target ~ 0.000220
 ## Math under test
 
 ```text
+phi_mu(x,t) = A exp[-|x - x_mu(t)|^2 / 2 sigma^2] cos(k dot x - omega t)
+chi_axis = sqrt(packet_plus packet_minus) P_phase P_timing
+Omega = sigmoid(chi - chi_c) chi
+m(x,t) = m_scale Omega
+E_m(x,t) = eta_m m(x,t) c^2
+E_vib evolves by damped 3D wave propagation
 x_c(t) = sum_x x B(x,t)^2 / sum_x B(x,t)^2
-r = |x - x_c(t)|
-R_shell(t) = argmax radial E_vib(r,t), for r greater than core radius
-sphericity(t) = 1 - anisotropy(t)
-anisotropy(t) = dipole_asymmetry + spin/twist distortion proxy
+R_shell(t) = argmax radial E_vib(r,t)
+sphericity = 1 - anisotropy
 ```
 
-Shape-derived leakage families:
+---
+
+## Analysis result files
 
 ```text
-core and compact inner-shell retention -> bb-like, tau-like, mumu-like
-coherent spherical shell               -> WZ-like
-anisotropic/turbulent shell             -> gg-like, gamma-like
+analysis/results_v0.40/mcift_v0.40_explicit_3d_spherical_leakage_report.md
+analysis/results_v0.40/mcift_v0.40_explicit_3d_spherical_leakage_metrics.csv
+analysis/results_v0.40/mcift_v0.40_explicit_3d_spherical_leakage_channels.csv
 ```
 
 ---
@@ -70,7 +76,7 @@ anisotropic/turbulent shell             -> gg-like, gamma-like
 ## Limitation
 
 ```text
-v0.39 is a rotational spherical reconstruction from the 1D line-chain toy model. It is stricter than v0.38 because leakage is evaluated from shape, but it is still not a full 3D event simulation or a Standard Model branching-fraction calculation.
+v0.40 is a toy 3D field calculation, not a detector-level CERN simulation. The rough Higgs target fractions are hierarchy targets, not measured detector likelihoods.
 ```
 
 ---
@@ -78,18 +84,14 @@ v0.39 is a rotational spherical reconstruction from the 1D line-chain toy model.
 ## Next proof target
 
 ```text
-v0.40 target:
-run the same center/shell/leakage test in an explicit 2D or 3D lattice so that shell anisotropy and leakage are measured directly rather than reconstructed from the line-chain.
+v0.41 target:
+derive kappa coupling modifiers from the explicit 3D shell geometry and compute partial widths, branching fractions, and signal strengths.
 ```
 
-Required direction:
+Before v0.41, inspect the geometric issue:
 
 ```text
-- initialize an explicit 2D/3D cubic field around the collision center
-- evolve mass-energy vibration outward from the sink
-- measure center drift, shell radius, shell thickness, sphericity, and anisotropy directly
-- derive leakage fractions from measured shell geometry
-- compare hierarchy without per-channel tuning
+Does the explicit 3D shell hold too much energy in the core/inner shell, suppressing coherent WZ-like leakage?
 ```
 
 ---
@@ -97,5 +99,5 @@ Required direction:
 ## Safe wording
 
 ```text
-v0.39 shows that a rotational spherical reconstruction of the line-chain vibration gives a PASS-LIKE shape-derived leakage hierarchy, but it is not yet a full 3D collider event model.
+v0.40 shows that an explicit 3D cubic collision can form a stable central sink and real shell with PASS-LIKE geometry criteria, but the channel hierarchy is not yet a collider match and the model remains a toy scaffold.
 ```
