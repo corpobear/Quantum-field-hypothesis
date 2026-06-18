@@ -10,7 +10,8 @@ This folder contains the main MCIFT draft and paper-style addenda.
 
 ```text
 main.md                                           Main theory draft / historical framework
-v0.28_thermodynamic_spin_growth_addendum.md       No-fit thermodynamic spin-growth cosmology scaffold
+v0.29_collapse_containment_addendum.md            Collapse-containment and coherence-failure cosmology scaffold
+v0.28_thermodynamic_spin_growth_addendum.md       Thermodynamic spin-growth cosmology scaffold
 v0.22_cosmology_comparison_addendum.md            MCIFT vs Lambda-CDM / standard-model comparison and v0.22 strengths/weaknesses
 v0.13_six_side_sink_dark_manifest_addendum.md     Six-side sink dark-manifest geometry addendum
 v0.12_activation_terminology_addendum.md          Activation terminology and dark-manifest matter addendum
@@ -20,43 +21,51 @@ v0.7_shadow_anchor_derivation.md                  One-point shadow-anchor paper 
 
 ---
 
-## Latest addendum: v0.28 no-fit thermodynamic spin-growth
+## Latest addendum: v0.29 collapse-containment
 
-The v0.28 addendum summarizes the latest cosmology scaffold:
+The v0.29 addendum summarizes the latest cosmology scaffold:
 
 ```text
-six internal dark sectors
--> spin-blur projection toward four effective transverse sinks
--> mass/gravity time response
--> no-fit thermodynamic layer
--> native P(k)-shape scoring
+thermodynamic spin-growth scaffold
+-> coherence capacity versus contained complexity
+-> collapse-containment for uncontained modes
+-> collapsed-knot reservoir B, not yet dynamically evolved
+```
+
+Wording correction:
+
+```text
+Use: no parameter sweep / internally constrained heuristic closure
+Do not overstate as: strict no-fit first-principle proof
 ```
 
 Safe current statement:
 
 ```text
-MCIFT v0.28 shows that a no-fit thermodynamic layer can improve native P(k)-shape scoring to PASS-LIKE while preserving a BAO-window scale.
+MCIFT v0.29 treats the previous 617.87 Mpc global mode as an uncontained coherence mode and drains it into a collapsed-knot reservoir, moving the global peak back to 152.29 Mpc in the overlay retest.
 ```
 
 Critical caveat:
 
 ```text
-v0.28 does not solve the global 617.87 Mpc long-mode failure and is not a replacement for Lambda-CDM.
+v0.29 is an overlay, not a dynamic black-hole/GR solver and not a replacement for Lambda-CDM.
 ```
 
-Key v0.28 result summary:
+Key v0.29 result summary:
 
 ```text
-thermo_spin_growth_shape_rms_log_residual = 0.302859
+v0.28 RMS before collapse = 0.302859
+v0.29 RMS after collapse = 0.302859
 shape verdict = PASS-LIKE
-native thermodynamic BAO-window peak = 152.29 Mpc
-native thermodynamic global peak = 617.87 Mpc
+v0.28 global peak before collapse = 617.87 Mpc
+v0.29 global peak after collapse = 152.29 Mpc
+v0.29 BAO-window peak = 152.29 Mpc
 ```
 
 Read:
 
 ```text
-paper/v0.28_thermodynamic_spin_growth_addendum.md
+paper/v0.29_collapse_containment_addendum.md
 ```
 
 ---
@@ -70,18 +79,30 @@ paper/v0.28_thermodynamic_spin_growth_addendum.md
 - The anchor radius, cutoff, lock amplitude, and envelope are derived in the toy scaffold.
 - The model repeatedly produces a BAO-window scale in proxy tests.
 - Six internal dark sectors can be reconciled with four effective 3D transverse growth channels through spin blur.
-- v0.28 adds a no-fit thermodynamic layer that improves native shape scoring.
+- Thermodynamics improves the native shape score.
+- Collapse-containment gives a model-native explanation for the previous 617.87 Mpc long-mode dominance.
 ```
 
 ### Weaknesses
 
 ```text
 - MCIFT remains speculative and unvalidated.
-- v0.28 is still a toy/scaffold calculation, not a precision Boltzmann solver.
-- The global 617.87 Mpc long mode remains unresolved.
-- The thermodynamic layer is not yet coupled to self-consistent conserved A/V/D/R background evolution.
+- v0.29 is still a toy/scaffold overlay, not a precision Boltzmann solver or GR black-hole solver.
+- The B collapsed-knot reservoir is not yet dynamically evolved in conserved A/V/D/R/B backgrounds.
 - CMB spectra, BBN, lensing, halos, and dark-energy behavior are not yet solved.
 - No fair likelihood or parameter-count comparison against Lambda-CDM has been completed.
+```
+
+---
+
+## Previous addendum: v0.28 thermodynamic spin-growth
+
+The v0.28 addendum remains useful for the thermodynamic closure, but its original "no-fit" wording has been corrected in later docs.
+
+Read:
+
+```text
+paper/v0.28_thermodynamic_spin_growth_addendum.md
 ```
 
 ---
@@ -138,29 +159,3 @@ The Planck 2018 comparison target is approximately:
 $$
 \frac{\Omega_c}{\Omega_b}\approx\frac{0.120}{0.0224}=5.357.
 $$
-
-A small efficiency factor:
-
-$$
-\epsilon_{sink}\approx0.989
-$$
-
-matches the central target.
-
----
-
-## Previous addendum: v0.12
-
-The v0.12 addendum clarifies activation terminology.
-
-Use:
-
-```text
-light activation = electromagnetic / visibility-channel activation
-```
-
-Do not use:
-
-```text
-light activation = existence itself
-```
