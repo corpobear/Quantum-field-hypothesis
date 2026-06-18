@@ -9,10 +9,10 @@ This folder contains analysis scaffolds for testing MCIFT toy-model predictions 
 ## Current level
 
 ```text
-Current first-principle formulation: v0.33 cubic cell-complex field formula
+Current tested solver: v0.34 first-principle cubic field toy solver
+Current field formula: v0.33 cubic cell-complex field formula
 Current mechanism layer: v0.32 cube-face Higgs vortex mass mechanism
 Current geometry layer: v0.31 cube-center six-connector knot model
-Current numeric cosmology retest: v0.30 dynamic ordered collapse-containment
 ```
 
 Important caveat:
@@ -24,57 +24,58 @@ The correct wording is "no parameter sweep / internally constrained heuristic cl
 
 ---
 
-## v0.33 solver target
+## v0.34 solver
 
-The v0.33 field formula defines the local field as:
+Run after generating full v0.28 residuals/tracks:
 
-```text
-Psi_MCIFT(i,t) = (
-  K_i,
-  phi_i,
-  T_i,
-  {a_i,mu},
-  {chi_i,mu},
-  {H_i,mu},
-  {Omega_i,mu},
-  {m_i,mu},
-  m_i,
-  q_i,
-  Coh_i,
-  S_i,
-  B_i
-)
+```bash
+python analysis/mcift_big_bang_first_principle_cubic_field_v0.34.py
 ```
 
-with:
+The solver activates:
 
 ```text
-A_ij,mu      = sqrt(a_i,mu a_j,-mu)
-chi_i,mu     = A_ij,mu P_phase P_timing P_match
-Omega_i,mu   = H_i,mu sigma(chi_i,mu - chi_c)
-m_i,mu       = m_scale Omega_i,mu a_i,mu
-m_i          = sum_mu m_i,mu
-Coh_i        = 6 a_i,mean - lambda_Delta Delta_i
-q_i          = q_i,base + alpha_m m_i + alpha_Omega sum_mu |grad_mu Omega_i,mu|
-S_i          = Coh_i - q_i
-dB_i/dt      = gamma_B max(0,-S_i) - decay_B B_i
+connector activation a_i,mu
+information compatibility chi_i,mu
+Higgs face-plane vortex Omega_i,mu
+vortex mass loading m_i
+contained complexity q_i
+connector coherence capacity Coh_i
+containment score S_i
+mode-coupled reservoir transfer
 ```
 
-This provides the next analysis target:
+Key result:
 
 ```text
-first-principle cubic field variables -> minimal solver -> retest v0.30 collapse behavior
+v0.30 dynamic-ordered RMS = 0.302859
+v0.34 cubic-field RMS = 0.302859
+shape verdict = PASS-LIKE
+v0.28 global peak before cubic field = 617.87 Mpc
+v0.34 global peak after cubic field = 152.29 Mpc
+v0.34 BAO-window peak = 152.29 Mpc
 ```
 
-Read:
+Transfer diagnostics:
 
 ```text
-models/first_principle_cubic_field_formula_v0.33.md
+v0.34 transfer at 617.87 Mpc = 0.449576
+v0.30 transfer at 617.87 Mpc = 0.558702
+v0.34 transfer at nearest BAO bin = 1.000000
+```
+
+Outputs:
+
+```text
+analysis/results_v0.34/mcift_v0.34_first_principle_cubic_field_report.md
+analysis/results_v0.34/mcift_v0.34_first_principle_cubic_field_metrics.csv
+analysis/results_v0.34/mcift_v0.34_first_principle_cubic_field_history.csv
+analysis/results_v0.34/mcift_v0.34_first_principle_cubic_field_residuals.csv
 ```
 
 ---
 
-## Cosmology scaffold: v0.16-v0.30
+## Cosmology scaffold: v0.16-v0.34
 
 | Version | Script | Result folder | Purpose | Status |
 |---|---|---|---|---|
@@ -92,27 +93,14 @@ models/first_principle_cubic_field_formula_v0.33.md
 | v0.27 | `mcift_big_bang_mass_gravity_time_spin_v0.27.py` | `results_v0.27/` | mass/gravity time-response spin blur | WEAK |
 | v0.28 | `mcift_big_bang_thermo_spin_growth_v0.28.py` | `results_v0.28/` | thermodynamic spin-growth | PASS-LIKE shape; global 617.87 Mpc |
 | v0.29 | `mcift_big_bang_collapse_containment_v0.29.py` | `results_v0.29/` | post-run collapse-containment overlay | global peak 152.29 Mpc |
-| v0.30 | `mcift_big_bang_dynamic_ordered_collapse_v0.30.py` | `results_v0.30/` | response-epoch B reservoir before final scoring | PASS-LIKE; global peak 152.29 Mpc |
-
----
-
-## Latest numeric run: v0.30 dynamic ordered collapse-containment
-
-```text
-v0.28 RMS = 0.302859
-v0.29 overlay RMS = 0.302859
-v0.30 dynamic-ordered RMS = 0.302859
-shape verdict = PASS-LIKE
-v0.28 global peak before dynamic order = 617.87 Mpc
-v0.30 global peak after dynamic order = 152.29 Mpc
-v0.30 BAO-window peak = 152.29 Mpc
-```
+| v0.30 | `mcift_big_bang_dynamic_ordered_collapse_v0.30.py` | `results_v0.30/` | response-epoch reservoir before final scoring | PASS-LIKE; global peak 152.29 Mpc |
+| v0.34 | `mcift_big_bang_first_principle_cubic_field_v0.34.py` | `results_v0.34/` | first-principle cubic field toy solver | PASS-LIKE; global peak 152.29 Mpc |
 
 ---
 
 ## Next analysis target
 
 ```text
-v0.34 target:
-Implement a minimal numerical solver using the v0.33 field variables, then retest whether the v0.30 collapse behavior survives with connector/vortex variables active.
+v0.35 target:
+Move from mode-level toy solver to a minimal spatial cubic lattice solver with explicit neighboring cube cells.
 ```
