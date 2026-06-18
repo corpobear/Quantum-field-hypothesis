@@ -9,12 +9,12 @@ This folder contains analysis scaffolds for testing MCIFT toy-model predictions 
 ## Current level
 
 ```text
-Current geometric leakage retest: v0.39 spherical leakage geometry retest
+Current explicit 3D retest: v0.40 explicit 3D spherical leakage collision test
+Previous geometric leakage retest: v0.39 spherical leakage geometry retest
 Previous collider-style retest: v0.38 mass-energy vibration channel retest
 Previous collider-style toy test: v0.37 line-chain spin-drill Higgs test
 Current collider comparison: v0.36 CERN/LHC Higgs-sector comparison
 Current spatial solver: v0.35 minimal spatial cubic lattice solver
-Current field formula: v0.33 cubic cell-complex field formula
 ```
 
 Important caveat:
@@ -26,43 +26,44 @@ The correct wording is "no parameter sweep / internally constrained heuristic cl
 
 ---
 
-## v0.39 spherical leakage geometry retest
+## v0.40 explicit 3D spherical leakage collision test
 
-The test reconstructs a spherical shell from the line-chain vibration profile and evaluates leakage from shape:
+The test runs a six-direction cubic packet collision in a real 3D lattice:
 
 ```text
-x_c(t) = sum_x x B(x,t)^2 / sum_x B(x,t)^2
-r = |x - x_c(t)|
-R_shell(t) = argmax radial E_vib(r,t), for r greater than core radius
-sphericity(t) = 1 - anisotropy(t)
+grid = 48 x 48 x 48
+steps = 260
+collision = six-direction cubic packet collision
+directions = +x, -x, +y, -y, +z, -z
+tracked fields = B, E_vib, phase, vortex Omega, mass proxy
 ```
 
 Key result:
 
 ```text
 verdict = PASS-LIKE
-criteria_pass_count = 10/10
-weighted_sphericity = 0.959336
-weighted_shape_anisotropy = 0.040664
+criteria_pass_count = 11/11
+weighted_sphericity = 0.782404
+weighted_shape_anisotropy = 0.217596
 ```
 
 Shape-derived channel fractions:
 
 ```text
-bb_like     = 0.505134
-WZ_like     = 0.381469
-gg_like     = 0.085943
-tau_like    = 0.026958
-gamma_like  = 0.000095
-mumu_like   = 0.000402
+bb_like     = 0.783474
+WZ_like     = 0.120174
+gg_like     = 0.056984
+tau_like    = 0.038445
+gamma_like  = 0.000242
+mumu_like   = 0.000681
 ```
 
-Outputs:
+Analysis result files:
 
 ```text
-analysis/results_v0.39/mcift_v0.39_spherical_leakage_report.md
-analysis/results_v0.39/mcift_v0.39_spherical_leakage_metrics.csv
-analysis/results_v0.39/mcift_v0.39_spherical_leakage_channels.csv
+analysis/results_v0.40/mcift_v0.40_explicit_3d_spherical_leakage_report.md
+analysis/results_v0.40/mcift_v0.40_explicit_3d_spherical_leakage_metrics.csv
+analysis/results_v0.40/mcift_v0.40_explicit_3d_spherical_leakage_channels.csv
 ```
 
 ---
@@ -70,6 +71,12 @@ analysis/results_v0.39/mcift_v0.39_spherical_leakage_channels.csv
 ## Next analysis target
 
 ```text
-v0.40 target:
-run the same center/shell/leakage test in an explicit 2D or 3D lattice so that shell anisotropy and leakage are measured directly rather than reconstructed from the line-chain.
+v0.41 target:
+derive kappa coupling modifiers from the explicit 3D shell geometry and compute partial widths, branching fractions, and signal strengths.
+```
+
+Before v0.41, inspect:
+
+```text
+Does the explicit 3D shell hold too much energy in the core/inner shell, suppressing coherent WZ-like leakage?
 ```
