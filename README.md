@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.41 spinning-sphere collision retest
+**Current version:** v0.42 entangled merge-sphere strict test
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,62 +11,60 @@
 
 ## Current focus
 
-MCIFT now calculates collision geometry like a pool-ball collision:
+MCIFT now tests a strict entanglement-first collision:
 
 ```text
-finite sphere A + finite sphere B
-center, radius, velocity, spin, contact normal
-normal impulse + tangential impulse
-spin transfer at contact
-E_dissipated + E_spin -> vibration seed
-3D shell leakage from the collision
+two particles attempt to entangle
+if entanglement score passes threshold, they become one temporary sphere
+masses add into the merged object
+vibration is intensified first
+merged sphere either stabilizes or explodes
 ```
 
 Verdict:
 
 ```text
-v0.41 spinning-sphere collision retest = GEOMETRY_PASS_CHANNEL_WEAK, 11/13 criteria
+v0.42 entangled merge-sphere strict test = FLOP_EXPLODES, 8/12 criteria
 ```
+
+This is a useful failure, not a cosmetic pass. The merge forms, but the mass-energy vibration seed exceeds the merged coherence capacity.
 
 ---
 
-## v0.41 result
+## v0.42 result
 
 ```text
-normal_impulse = 1.693458
-tangent_impulse_mag = 0.156047
-slip_ratio = 0.356799
-spin_transfer = 0.130039
-E_before = 2.319040
-E_after = 1.766962
-E_dissipated = 0.552078
-E_vib_seed = 0.572343
-momentum_error = 0.000000e+00
-angular_momentum_error = 2.696865e-15
+entanglement_score = 0.292811
+entanglement_threshold = 0.280000
+merged_mass = 2.000000
+merged_radius = 7.559526
+coherence_capacity = 0.526780
+E_mass_added = 0.500000
+E_vib_seed = 1.139518
+explosion_pressure_0 = 2.163178
+max_explode_index = 3.544722
 ```
 
-Shell result:
+Shape result:
 
 ```text
-max_center_drift_abs_cells = 0.000000
-weighted_shell_peak_radius_cells = 8.922861
-weighted_shell_halfmax_width_bins = 4.361015
-weighted_sphericity = 0.845727
-weighted_shape_anisotropy = 0.154273
-weighted_core_fraction = 0.066127
-weighted_inner_shell_fraction = 0.425236
-weighted_outer_shell_fraction = 0.508637
+weighted_shell_radius = 7.985898
+weighted_sphericity = 0.828023
+weighted_anisotropy = 0.171977
+weighted_core_fraction = 0.475223
+weighted_inner_fraction = 0.412373
+weighted_outer_fraction = 0.112404
 ```
 
-Shape-derived channel fractions:
+Channel fractions:
 
 ```text
-bb_like     = 0.188928  target ~ 0.582000
-WZ_like     = 0.518154  target ~ 0.240000
-gg_like     = 0.249245  target ~ 0.086000
-tau_like    = 0.019942  target ~ 0.063000
-gamma_like  = 0.022681  target ~ 0.002300
-mumu_like   = 0.001050  target ~ 0.000220
+bb_like     = 0.205855  target ~ 0.582000
+WZ_like     = 0.519062  target ~ 0.240000
+gg_like     = 0.206559  target ~ 0.086000
+tau_like    = 0.053204  target ~ 0.063000
+gamma_like  = 0.014296  target ~ 0.002300
+mumu_like   = 0.001023  target ~ 0.000220
 ```
 
 ---
@@ -74,19 +72,13 @@ mumu_like   = 0.001050  target ~ 0.000220
 ## Key math
 
 ```text
-|x_A - x_B| <= R_A + R_B
-n = (x_B - x_A) / |x_B - x_A|
-u_A = v_A + omega_A x r_A
-u_B = v_B + omega_B x r_B
-u_rel = u_B - u_A
-J_n = -(1+e)(u_rel . n) / D_n
-J_t = clipped friction impulse from tangential contact velocity
-J = J_n n + J_t
-v_A' = v_A - J/m_A
-v_B' = v_B + J/m_B
-omega_A' = omega_A - I_A^-1 (r_A x J)
-omega_B' = omega_B + I_B^-1 (r_B x J)
-E_vib_seed = eta_c E_dissipated + eta_s E_spin
+entanglement_score = overlap_gate * phase_lock * spin_lock * mass_match * timing_match
+merge allowed only if entanglement_score >= threshold
+M_merge = m_A + m_B
+R_merge = (R_A^3 + R_B^3)^(1/3)
+I_merge = (2/5) M_merge R_merge^2
+E_vib_seed = eta_m M_merge c^2 + eta_c E_dissipated + eta_s E_spin
+explosion_pressure = E_vib_seed / coherence_capacity
 ```
 
 ---
@@ -94,9 +86,9 @@ E_vib_seed = eta_c E_dissipated + eta_s E_spin
 ## Analysis result files
 
 ```text
-analysis/results_v0.41/mcift_v0.41_spinning_sphere_collision_report.md
-analysis/results_v0.41/mcift_v0.41_spinning_sphere_collision_metrics.csv
-analysis/results_v0.41/mcift_v0.41_spinning_sphere_collision_channels_summary.csv
+analysis/results_v0.42/mcift_v0.42_entangled_merge_sphere_report.md
+analysis/results_v0.42/mcift_v0.42_entangled_merge_sphere_metrics_summary.csv
+analysis/results_v0.42/mcift_v0.42_entangled_merge_sphere_channels.csv
 ```
 
 ---
@@ -104,7 +96,7 @@ analysis/results_v0.41/mcift_v0.41_spinning_sphere_collision_channels_summary.cs
 ## Important limitation
 
 ```text
-v0.41 is a toy rigid-sphere plus 3D shell calculation, not a detector-level CERN simulation. The rough Higgs fractions are hierarchy targets, not measured likelihoods.
+v0.42 is a strict toy merge-sphere calculation, not a detector-level CERN simulation. A flop means this specific entanglement/merge rule is unstable, not that the full MCIFT program is falsified.
 ```
 
 ---
@@ -114,10 +106,10 @@ v0.41 is a toy rigid-sphere plus 3D shell calculation, not a detector-level CERN
 Next required tests:
 
 ```text
-1. Scan only physical collision geometry variables: impact parameter, spin orientation, restitution, friction.
-2. Check whether a stable no-per-channel-tuning region balances compact mass retention and coherent shell leakage.
-3. Then derive kappa coupling modifiers from the physical collision geometry.
-4. Compute partial widths, total width, branching fractions, and signal strengths.
+1. Search for a first-principle stabilizer term: merged-shell coherence, phase-lock damping, or outward vibration bleed.
+2. Do not tune decay channels directly.
+3. Retest stability before comparing channels.
+4. Only after stability should the model derive coupling modifiers and collider observables.
 ```
 
 ---
