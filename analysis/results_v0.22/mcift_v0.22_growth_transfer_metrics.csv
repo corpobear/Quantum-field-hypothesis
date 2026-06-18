@@ -1,0 +1,17 @@
+metric,value,unit,verdict
+shape_rms_log_residual,0.0043467896502094846,ln_power,PASS-LIKE
+shape_mean_abs_log_residual,0.0036426927680214636,ln_power,diagnostic
+shape_max_abs_log_residual,0.0091858644970412,ln_power,diagnostic
+raw_mcift_global_peak,152.29376055593826,Mpc,PASS-LIKE
+raw_mcift_BAO_window_peak,152.29376055593826,Mpc,PASS-LIKE
+growth_transfer_broadband_peak,350.2112922852604,Mpc,matches_reference_turnover
+reference_broadband_peak,350.2112922852604,Mpc,reference
+sound_horizon_rs,147.1106663020041,Mpc,reference
+nearest_BAO_bin_wavelength,152.29376055593826,Mpc,PASS-LIKE
+BAO_bin_relative_power_error,0.0018637757737810432,fraction,diagnostic
+anchor_radius_R_A_5B,505.82952980582434,Mpc,derived
+derived_k_cut_5B,0.01242154705675556,1/Mpc,derived_not_fit
+derived_A_lock_5B,0.9187523246776519,fraction,derived_not_fit
+derived_BAO_wiggle_amplitude,0.11025027896131823,fraction,derived_from_A_lock_times_reference_ceiling
+score_k_min,0.015,1/Mpc,setting
+score_k_max,0.22,1/Mpc,setting
