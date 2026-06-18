@@ -10,6 +10,7 @@ This folder contains the main MCIFT draft and paper-style addenda.
 
 ```text
 main.md                                           Main theory draft / historical framework
+v0.36_cern_higgs_comparison_addendum.md           CERN/LHC Higgs-sector comparison
 v0.35_spatial_cubic_lattice_solver_addendum.md    Minimal spatial cubic lattice solver
 v0.34_first_principle_cubic_field_toy_solver_addendum.md  First-principle cubic field toy solver
 v0.33_first_principle_cubic_field_formula_addendum.md  First-principle cubic MCIFT field formula
@@ -24,11 +25,30 @@ v0.13_six_side_sink_dark_manifest_addendum.md     Six-side sink dark-manifest ge
 
 ---
 
-## Current tested layer: v0.35 spatial cubic lattice solver
+## Current collider-facing layer: v0.36 CERN/LHC Higgs comparison
 
-The v0.35 addendum moves beyond the v0.34 mode-level solver and instantiates an explicit periodic 3D cubic lattice.
+Verdict:
 
-Key result:
+```text
+STRUCTURAL_ONLY_NOT_A_CERN_PASS
+```
+
+Summary:
+
+```text
+MCIFT v0.36 is structurally compatible with a scalar Higgs-like mass-coupling excitation, but it is not yet a quantitative CERN/LHC Higgs model.
+```
+
+Read:
+
+```text
+paper/v0.36_cern_higgs_comparison_addendum.md
+analysis/results_v0.36/mcift_v0.36_cern_higgs_comparison_report.md
+```
+
+---
+
+## Previous tested layer: v0.35 spatial cubic lattice solver
 
 ```text
 v0.34 mode-level RMS = 0.302859
@@ -40,60 +60,16 @@ mapped v0.35 global peak = 152.29 Mpc
 mapped v0.35 BAO-window peak = 152.29 Mpc
 ```
 
-Read:
-
-```text
-paper/v0.35_spatial_cubic_lattice_solver_addendum.md
-analysis/results_v0.35/mcift_v0.35_spatial_lattice_report.md
-```
-
----
-
-## Previous tested layer: v0.34 cubic field toy solver
-
-The v0.34 addendum tests whether the v0.30 collapse-containment behavior survives when v0.33 variables are active.
-
-```text
-connector activation a_i,mu
-information compatibility chi_i,mu
-Higgs face-plane vortex Omega_i,mu
-vortex mass loading m_i
-contained complexity q_i
-connector coherence capacity Coh_i
-containment score S_i
-mode-coupled reservoir transfer
-```
-
----
-
-## Current first-principle formula: v0.33
-
-```text
-Psi_MCIFT(i,t) = (
-  K_i,
-  phi_i,
-  T_i,
-  {a_i,mu},
-  {chi_i,mu},
-  {H_i,mu},
-  {Omega_i,mu},
-  {m_i,mu},
-  m_i,
-  q_i,
-  Coh_i,
-  S_i,
-  B_i
-)
-```
-
 ---
 
 ## Previous conceptual layers
 
 ```text
+paper/v0.34_first_principle_cubic_field_toy_solver_addendum.md
+paper/v0.33_first_principle_cubic_field_formula_addendum.md
 paper/v0.32_cube_face_higgs_vortex_mass_addendum.md
 paper/v0.31_cube_center_six_connector_addendum.md
 paper/v0.30_dynamic_ordered_collapse_addendum.md
 ```
 
-The older addenda remain useful historical context, but v0.35 is the current tested spatial-lattice layer.
+The older addenda remain useful historical context, but v0.36 is the current collider-facing comparison layer.
