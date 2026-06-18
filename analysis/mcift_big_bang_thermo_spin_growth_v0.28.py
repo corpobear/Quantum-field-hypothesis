@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
-"""MCIFT v0.28 no-fit thermodynamic spin-growth retest.
+"""MCIFT v0.28 thermodynamic spin-growth retest.
 
-This compact repository entry records the no-fit thermodynamic closure used for
-v0.28 and recomputes the milestone thermodynamic tracks from the existing MCIFT
-channel fields. Full generated outputs, including the residual tables and plots,
-are stored under `analysis/results_v0.28/` and in the v0.28 output ZIP.
+This compact repository entry records the internally constrained thermodynamic
+closure used for v0.28 and recomputes the milestone thermodynamic tracks from
+the existing MCIFT channel fields. Full generated outputs, including residual
+tables and plots, are stored under `analysis/results_v0.28/` and in the v0.28
+output ZIP.
 
-No fitted constants are introduced:
+Wording correction: this should not be described as strict "no-fit" proof. The
+more accurate wording is "no parameter sweep / internally constrained heuristic
+closure". The closure was not obtained by scanning parameters against the target,
+but it remains a model assumption.
+
+Thermodynamic closure:
 
     rho_G      ~ A + 0.6 V + 0.45 D + exchange
     rho_T      = R
@@ -18,7 +24,8 @@ No fitted constants are introduced:
     chi_thermo = chi_MGT * (1 + beta_T)
     N_eff      = 4 + 2 exp[-chi_thermo^2]
 
-The factor 4 normalizes the analytic speed-window maximum; it is not fitted.
+The factor 4 normalizes the analytic speed-window maximum; it is not a swept or
+fitted coefficient.
 """
 from __future__ import annotations
 
@@ -115,7 +122,7 @@ def main() -> None:
     tracks = build_tracks()
     write_csv(OUT / "mcift_v0.28_thermo_spin_growth_tracks.csv", tracks)
     final = tracks[-1]
-    print("MCIFT v0.28 no-fit thermodynamic closure")
+    print("MCIFT v0.28 thermodynamic heuristic closure")
     print(f"theta_T(5B)={final['theta_thermal_radiation']:.6f}")
     print(f"T_rel(5B)={final['T_rel']:.6f}")
     print(f"beta_T(5B)={final['beta_thermal']:.6f}")
