@@ -1,0 +1,33 @@
+metric,value,unit,notes
+verdict,PASS-LIKE,category,9/9 criteria
+criteria_pass_count,9,count,strict toy criteria
+criteria_total,9,count,strict toy criteria
+peak_E_vib_GeV_proxy,0.023315208866542526,GeV_proxy,mass-energy vibration peak
+peak_E_vib_step,319,step,when vibration peaked
+peak_E_vib_time,6.38,sim_time,when vibration peaked
+final_E_vib_over_peak,0.18754207539358084,ratio,finite lifetime check
+integrated_E_in_GeV_proxy,0.0006910186818199737,GeV_proxy_time,mass converted to vibration
+integrated_E_leak_GeV_proxy,0.0003510183782085228,GeV_proxy_time,vibration leaked into channels
+channel_l1_distance_to_rough_higgs_targets,0.1538775640614416,fraction,diagnostic not fitted
+channel_log10_rms_to_rough_higgs_targets,0.3587113819752905,dex,diagnostic not fitted
+BR_bb_like,0.5591404699440298,fraction,MCIFT channel proxy
+target_bb_like,0.582,fraction,rough Higgs target
+BR_WZ_like,0.316161439805291,fraction,MCIFT channel proxy
+target_WZ_like,0.24,fraction,rough Higgs target
+BR_gg_like,0.10001734222542981,fraction,MCIFT channel proxy
+target_gg_like,0.086,fraction,rough Higgs target
+BR_tau_like,0.024090091400321527,fraction,MCIFT channel proxy
+target_tau_like,0.063,fraction,rough Higgs target
+BR_gamma_like,0.00040159400989316183,fraction,MCIFT channel proxy
+target_gamma_like,0.0023,fraction,rough Higgs target
+BR_mumu_like,0.00018906261503473805,fraction,MCIFT channel proxy
+target_mumu_like,0.00022,fraction,rough Higgs target
+mass_energy_vibration_positive,1,bool,criterion
+finite_vibration_lifetime,1,bool,criterion
+bb_like_largest,1,bool,criterion
+WZ_like_second_or_third,1,bool,criterion
+gluon_like_visible_loop_channel,1,bool,criterion
+tau_like_visible_not_dominant,1,bool,criterion
+gamma_like_suppressed,1,bool,criterion
+mumu_like_tiny,1,bool,criterion
+no_single_channel_above_85pct,1,bool,criterion
