@@ -9,54 +9,54 @@ This folder contains the main MCIFT draft and paper-style addenda.
 ## Files
 
 ```text
-main.md                                      Full theory draft with v0.22 status note
-v0.22_cosmology_comparison_addendum.md       MCIFT vs Lambda-CDM / standard-model comparison and current strengths/weaknesses
-v0.13_six_side_sink_dark_manifest_addendum.md Six-side sink dark-manifest geometry addendum
-v0.12_activation_terminology_addendum.md     Activation terminology and dark-manifest matter addendum
-v0.11_field_source_reservoir_addendum.md     Bounded fourth-mode reservoir and integrated field-source addendum
-v0.7_shadow_anchor_derivation.md             One-point shadow-anchor paper addendum
+main.md                                           Main theory draft / historical framework
+v0.28_thermodynamic_spin_growth_addendum.md       No-fit thermodynamic spin-growth cosmology scaffold
+v0.22_cosmology_comparison_addendum.md            MCIFT vs Lambda-CDM / standard-model comparison and v0.22 strengths/weaknesses
+v0.13_six_side_sink_dark_manifest_addendum.md     Six-side sink dark-manifest geometry addendum
+v0.12_activation_terminology_addendum.md          Activation terminology and dark-manifest matter addendum
+v0.11_field_source_reservoir_addendum.md          Bounded fourth-mode reservoir and integrated field-source addendum
+v0.7_shadow_anchor_derivation.md                  One-point shadow-anchor paper addendum
 ```
 
 ---
 
-## Latest addendum: v0.22 cosmology comparison
+## Latest addendum: v0.28 no-fit thermodynamic spin-growth
 
-The v0.22 addendum summarizes the current cosmology scaffold and compares MCIFT with both:
+The v0.28 addendum summarizes the latest cosmology scaffold:
 
 ```text
-1. Standard Model of particle physics
-2. Lambda-CDM standard cosmology
+six internal dark sectors
+-> spin-blur projection toward four effective transverse sinks
+-> mass/gravity time response
+-> no-fit thermodynamic layer
+-> native P(k)-shape scoring
 ```
-
-The addendum distinguishes what MCIFT can safely claim from what remains unproved.
 
 Safe current statement:
 
 ```text
-MCIFT v0.22 is compatible with a standard growth-transfer layer while supplying
-a derived anchor/acoustic modulation that preserves a BAO-like scale.
+MCIFT v0.28 shows that a no-fit thermodynamic layer can improve native P(k)-shape scoring to PASS-LIKE while preserving a BAO-window scale.
 ```
 
 Critical caveat:
 
 ```text
-v0.22 imports the broadband growth-transfer layer from existing cosmology.
-MCIFT has not yet independently derived T_growth(k).
+v0.28 does not solve the global 617.87 Mpc long-mode failure and is not a replacement for Lambda-CDM.
 ```
 
-Key v0.22 result summary:
+Key v0.28 result summary:
 
 ```text
-raw MCIFT geometric global peak = 152.29 Mpc
-raw MCIFT BAO-window peak = 152.29 Mpc
-shape RMS log residual after growth-transfer scaffold = 0.004
+thermo_spin_growth_shape_rms_log_residual = 0.302859
 shape verdict = PASS-LIKE
+native thermodynamic BAO-window peak = 152.29 Mpc
+native thermodynamic global peak = 617.87 Mpc
 ```
 
 Read:
 
 ```text
-paper/v0.22_cosmology_comparison_addendum.md
+paper/v0.28_thermodynamic_spin_growth_addendum.md
 ```
 
 ---
@@ -67,18 +67,40 @@ paper/v0.22_cosmology_comparison_addendum.md
 
 ```text
 - MCIFT has explicit visible-manifest and dark-manifest channel mechanics.
-- The anchor radius, cutoff, lock amplitude, and envelope are now derived in the toy scaffold.
-- The model repeatedly produces a BAO-like scale in proxy tests.
-- v0.22 shows compatibility with standard broadband growth-transfer physics.
+- The anchor radius, cutoff, lock amplitude, and envelope are derived in the toy scaffold.
+- The model repeatedly produces a BAO-window scale in proxy tests.
+- Six internal dark sectors can be reconciled with four effective 3D transverse growth channels through spin blur.
+- v0.28 adds a no-fit thermodynamic layer that improves native shape scoring.
 ```
 
 ### Weaknesses
 
 ```text
 - MCIFT remains speculative and unvalidated.
-- T_growth(k) is imported in v0.22, not derived from MCIFT.
+- v0.28 is still a toy/scaffold calculation, not a precision Boltzmann solver.
+- The global 617.87 Mpc long mode remains unresolved.
+- The thermodynamic layer is not yet coupled to self-consistent conserved A/V/D/R background evolution.
 - CMB spectra, BBN, lensing, halos, and dark-energy behavior are not yet solved.
 - No fair likelihood or parameter-count comparison against Lambda-CDM has been completed.
+```
+
+---
+
+## Previous addendum: v0.22 cosmology comparison
+
+The v0.22 addendum compared MCIFT with both:
+
+```text
+1. Standard Model of particle physics
+2. Lambda-CDM standard cosmology
+```
+
+It remains useful for framing MCIFT versus standard models, but it is no longer the latest project status.
+
+Read:
+
+```text
+paper/v0.22_cosmology_comparison_addendum.md
 ```
 
 ---
@@ -142,77 +164,3 @@ Do not use:
 ```text
 light activation = existence itself
 ```
-
-The addendum separates channel factors:
-
-$$
-L_i=\text{light / electromagnetic visibility activation}
-$$
-
-$$
-H_i=\text{Higgs / mass-capture activation}
-$$
-
-$$
-G_i=\text{gravitational projection}
-$$
-
-$$
-K_i=\text{knot coherence}
-$$
-
-with:
-
-$$
-\mathrm{Visibility}_i=L_iK_i
-$$
-
-$$
-\mathrm{Mass}_i=H_iK_i
-$$
-
-$$
-\mathrm{Gravity}_i=G_iH_iK_i.
-$$
-
-This introduces the term `dark-manifest` for mass-bearing, gravity-projecting, knot-coherent structures with suppressed light/electromagnetic activation:
-
-$$
-L_i\approx0,\quad H_i>0,\quad G_i>0,\quad K_i>0.
-$$
-
----
-
-## Previous addendum: v0.11
-
-The v0.11 addendum introduces a bounded fourth-mode reservoir availability factor:
-
-$$
-R_4^{gate}=\frac{R_4}{R_4+R_*}.
-$$
-
-The purpose is to let the fourth-mode sector act as a large available supply without letting raw reservoir size directly multiply the mass result.
-
-The reduced integrated field-source test uses:
-
-$$
-\Sigma_\tau
-=
-W_v
-\left[
-\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle
-\right]
-R_4^{gate}
-$$
-
-and:
-
-$$
-m_\tau=m_\tau^{base}(1+\Sigma_\tau)^2.
-$$
-
-At saturated availability and optimal funnel capture, the reduced tau-like test gives:
-
-$$
-m_\tau=1776.86\ \mathrm{MeV}.
-$$
