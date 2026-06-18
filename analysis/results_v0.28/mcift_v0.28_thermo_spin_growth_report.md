@@ -1,10 +1,10 @@
-# MCIFT v0.28 No-Fit Thermodynamic Spin-Growth Retest Report
+# MCIFT v0.28 No-Parameter-Sweep Thermodynamic Spin-Growth Retest Report
 
-**Status:** no-fit thermodynamic spin-growth perturbation scaffold; not established physics and not a CLASS/CAMB replacement.  
+**Status:** internally constrained heuristic thermodynamic spin-growth perturbation scaffold; not established physics and not a CLASS/CAMB replacement.  
 **Script:** `analysis/mcift_big_bang_thermo_spin_growth_v0.28.py`  
-**Main change from v0.27:** adds a temperature / thermal-speed / capture-window / sound-speed layer using only existing channel loads and analytic normalizations. No parameter sweep or fitting was used.
+**Main change from v0.27:** adds a temperature / thermal-speed / capture-window / sound-speed layer using existing channel loads and analytic normalizations. No parameter sweep was used, but the closure is still a model assumption and should not be called strict first-principle proof.
 
-## No-fit thermodynamic closure
+## Internally constrained thermodynamic closure
 
 ```text
 rho_G      ~ A + 0.6 V + 0.45 D + exchange
@@ -18,7 +18,7 @@ chi_thermo = chi_MGT * (1 + beta_T)
 N_eff      = 4 + 2 exp[-chi_thermo^2]
 ```
 
-The factor `4` in the capture window is the analytic normalization of `(1-e^-x)e^-x`, whose maximum is `1/4`; it is not fitted.
+The factor `4` in the capture window is the analytic normalization of `(1-e^-x)e^-x`, whose maximum is `1/4`; it is not a swept/fitted coefficient. The closure itself is still heuristic.
 
 ## Derived final values
 
@@ -42,7 +42,7 @@ v0.24 four-sink channel-exchange RMS = 0.469
 v0.25 first-principle six-sink RMS = 0.807
 v0.26 aperture spin-blur RMS = 0.469
 v0.27 mass-gravity-time spin-blur RMS = 0.482
-v0.28 no-fit thermodynamic spin-growth RMS = 0.303
+v0.28 thermodynamic spin-growth RMS = 0.303
 shape verdict = PASS-LIKE
 ```
 
@@ -60,7 +60,7 @@ sound horizon r_s = 147.11 Mpc
 ## Interpretation
 
 ```text
-The no-fit thermodynamic layer improves the full-shape score versus v0.27 while preserving the six-to-four spin-blur behavior and the BAO-window peak.
+The thermodynamic layer improves the full-shape score versus v0.27 while preserving the six-to-four spin-blur behavior and the BAO-window peak.
 However, it does not solve the global 617.87 Mpc long-mode failure.
 This suggests thermodynamics is a useful missing layer, but it still needs to be coupled to a self-consistent background conservation/growth law rather than only layered onto milestone channel snapshots.
 ```
