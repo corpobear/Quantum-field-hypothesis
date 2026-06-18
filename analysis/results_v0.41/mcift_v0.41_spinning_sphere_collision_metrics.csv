@@ -1,0 +1,56 @@
+metric,value,unit,notes
+verdict,GEOMETRY_PASS_CHANNEL_WEAK,,v0.41 spinning sphere collision
+criteria_pass_count,11,count,strict toy criteria
+criteria_total,13,count,strict toy criteria
+impact_parameter_cells,2.1,cells,collision geometry
+contact_normal_x,0.9845684333757608,,collision normal
+contact_normal_y,0.17500000000000002,,collision normal
+contact_normal_z,0.0,,collision normal
+normal_impulse,1.6934577054063087,proxy,collision impulse
+tangent_impulse_mag,0.1560467616989686,proxy,friction impulse
+slip_ratio,0.35679898919598435,ratio,contact slip
+spin_transfer,0.13003896808247384,proxy,spin transfer
+E_before,2.31904,proxy,pre-collision energy
+E_after,1.7669619285714284,proxy,post-collision energy
+E_dissipated,0.5520780714285718,proxy,seedable energy
+E_contact,1.26766975,proxy,contact kinetic energy
+E_spin_initial,1.31904,proxy,initial spin energy
+E_seed_vibration,0.5723433535714288,proxy,vibration seed
+momentum_error,0.0,proxy,conservation check
+angular_momentum_error,2.696865187951366e-15,proxy,conservation check
+max_center_drift_abs_cells,1.7404671430534633e-14,cells,center stability
+weighted_shell_peak_radius_cells,8.92286115461461,cells,shell radius
+weighted_shell_halfmax_width_bins,4.3610147152327965,bins,shell thickness
+weighted_sphericity,0.8457272716347878,fraction,shape score
+weighted_shape_anisotropy,0.15427272836521214,fraction,shape score
+weighted_core_fraction,0.06612686179463151,fraction,core energy
+weighted_inner_shell_fraction,0.42523641906641346,fraction,inner shell energy
+weighted_outer_shell_fraction,0.5086367191389548,fraction,outer shell energy
+integrated_shape_leakage_proxy,1168.2176439907887,proxy,shape-derived leakage
+channel_l1_distance_to_rough_higgs_targets,0.8987390237838069,fraction,diagnostic not fitted
+channel_log10_rms_to_rough_higgs_targets,0.6140057049162336,dex,diagnostic not fitted
+BR_bb_like,0.18892807969576578,fraction,shape-derived pool-collision proxy
+target_bb_like,0.582,fraction,rough hierarchy target
+BR_WZ_like,0.5181539724066875,fraction,shape-derived pool-collision proxy
+target_WZ_like,0.24,fraction,rough hierarchy target
+BR_gg_like,0.2492445927447747,fraction,shape-derived pool-collision proxy
+target_gg_like,0.086,fraction,rough hierarchy target
+BR_tau_like,0.019942408412330838,fraction,shape-derived pool-collision proxy
+target_tau_like,0.063,fraction,rough hierarchy target
+BR_gamma_like,0.022681346297687068,fraction,shape-derived pool-collision proxy
+target_gamma_like,0.0023,fraction,rough hierarchy target
+BR_mumu_like,0.001049600442754255,fraction,shape-derived pool-collision proxy
+target_mumu_like,0.00022,fraction,rough hierarchy target
+collision_detected_overlap,1,bool,criterion
+momentum_conserved,1,bool,criterion
+angular_momentum_conserved,1,bool,criterion
+spin_transfer_nonzero,1,bool,criterion
+vibration_seed_positive,1,bool,criterion
+center_track_stable_drift_lt_1p5_cells,1,bool,criterion
+dominant_shell_forms_radius_gt_3,1,bool,criterion
+spherical_component_dominant,1,bool,criterion
+anisotropy_present_but_subdominant,1,bool,criterion
+shape_derived_leakage_positive,1,bool,criterion
+bb_like_largest_from_shape,0,bool,criterion
+WZ_like_visible,1,bool,criterion
+energy_finite_no_blowup,0,bool,criterion
