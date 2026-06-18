@@ -1,7 +1,8 @@
-# Current MCIFT Status: v0.45 Dense Entangled Merge Strict Test
+# Current MCIFT Status: v0.46 Discarded-Vibration Rotation Strict Test
 
 **Status:** speculative theoretical framework / toy collider and cosmology scaffold; not established physics.  
-**Current strict density test:** v0.45 dense entangled merge strict test.  
+**Current strict rotation test:** v0.46 discarded-vibration rotation test.  
+**Previous strict density test:** v0.45 dense entangled merge strict test.  
 **Previous strict 3D test:** v0.44 explicit 3D rhythm-lock merge test.  
 **Previous compact-input stabilizer:** v0.43 rhythm-locked entangled merge test.
 
@@ -10,44 +11,42 @@
 ## One-sentence status
 
 ```text
-MCIFT v0.45 tests the correction that entanglement compresses two objects into one denser object rather than simply adding their masses. The merged radius is reduced, density amplifies effective mass-energy, and rhythm-lock is applied after density amplification. The strict verdict is FLOP_DENSITY_OVERLOAD: 12/16 criteria passed. The density-amplified core seed exceeds coherence capacity, so the current containment rule fails.
+MCIFT v0.46 tests the user's correction that discarded vibration should influence the final rotation of the merged dense sphere. The discarded beat is converted into angular impulse and final rotation, which redistributes part of the over-locked core and reduces density pressure. The strict verdict is PARTIAL_ROTATION_RELIEF: 16/17 criteria passed. It nearly stabilizes the dense merge and restores a near-target hierarchy, but core pressure remains slightly above capacity, so it is not a hard pass.
 ```
 
 ---
 
-## v0.45 strict result
+## v0.46 strict result
 
 ```text
-verdict = FLOP_DENSITY_OVERLOAD
-criteria_pass_count = 12/16
-lambda_R = 0.820000
-R_volume = 7.559526
+verdict = PARTIAL_ROTATION_RELIEF
+criteria_pass_count = 16/17
 R_dense = 6.198812
 rho_ratio = 1.813671
-density_gain_D_rho = 1.546828
-M_sum = 2.000000
 M_dense = 3.093656
 coherence_capacity = 0.770210
-E_raw_v44 = 1.140500
-E_raw_dense = 1.764157
-rhythm_lock = 0.892989
-E_core_seed_after_density_lock = 1.496605
-E_beat_seed = 0.188784
-density_pressure = 0.300755
-explosion_pressure_0 = 2.333597
-max_explode_index = 2.753645
-final_energy_over_peak = 0.231836
+E_core_seed_before_rotation = 1.496605
+E_beat_seed_discarded_vibration = 0.188784
+torque_fraction_from_discarded_vibration = 0.698456
+L_discarded_vibration = 3.423467
+E_rotation_from_discarded_vibration = 0.131844
+omega_final = 0.072027
+rotational_bleed_fraction = 0.572734
+E_core_after_rotation = 0.639429
+density_pressure_after_rotation = 0.183042
+core_pressure_after_rotation = 1.066881
+final_energy_over_peak = 0.318000
 ```
 
 Channel fractions:
 
 ```text
-bb_like     = 0.348297  target ~ 0.582000
-WZ_like     = 0.168978  target ~ 0.240000
-gg_like     = 0.353948  target ~ 0.086000
-tau_like    = 0.070954  target ~ 0.063000
-gamma_like  = 0.050173  target ~ 0.002300
-mumu_like   = 0.007651  target ~ 0.000220
+bb_like     = 0.564218  target ~ 0.582000
+WZ_like     = 0.244806  target ~ 0.240000
+gg_like     = 0.126940  target ~ 0.086000
+tau_like    = 0.061724  target ~ 0.063000
+gamma_like  = 0.001107  target ~ 0.002300
+mumu_like   = 0.001205  target ~ 0.000220
 ```
 
 ---
@@ -55,9 +54,9 @@ mumu_like   = 0.007651  target ~ 0.000220
 ## Analysis result files
 
 ```text
-analysis/results_v0.45/mcift_v0.45_dense_entangled_merge_report.md
-analysis/results_v0.45/mcift_v0.45_dense_entangled_merge_metrics.csv
-analysis/results_v0.45/mcift_v0.45_dense_entangled_merge_channels.csv
+analysis/results_v0.46/mcift_v0.46_discarded_vibration_rotation_report.md
+analysis/results_v0.46/mcift_v0.46_discarded_vibration_rotation_metrics.csv
+analysis/results_v0.46/mcift_v0.46_discarded_vibration_rotation_channels.csv
 ```
 
 ---
@@ -65,8 +64,8 @@ analysis/results_v0.45/mcift_v0.45_dense_entangled_merge_channels.csv
 ## Next proof target
 
 ```text
-v0.46 target:
-derive a density-responsive coherence capacity or adaptive outward beat-bleed from geometry so compression can stabilize without directly tuning channels.
+v0.47 target:
+derive the discarded-vibration angular impulse directly from the 3D vector phase field and let rotation feed back into coherence capacity, without tuning decay channels.
 ```
 
 ---
@@ -74,5 +73,5 @@ derive a density-responsive coherence capacity or adaptive outward beat-bleed fr
 ## Safe wording
 
 ```text
-v0.45 confirms that dense entanglement is more demanding than simple mass addition in this scaffold. It overloads the current containment rule, so the next step is a first-principle density-stabilization rule, not channel tuning.
+v0.46 shows that discarded vibration is a real stabilizing contribution through final rotation, but it does not fully pass containment yet. The next missing rule is rotation-fed coherence capacity or a first-principle angular shell bleed.
 ```
