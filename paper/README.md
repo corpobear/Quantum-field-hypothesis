@@ -10,6 +10,7 @@ This folder contains the main MCIFT draft and paper-style addenda.
 
 ```text
 main.md                                           Main theory draft / historical framework
+v0.33_first_principle_cubic_field_formula_addendum.md  First-principle cubic MCIFT field formula
 v0.32_cube_face_higgs_vortex_mass_addendum.md     Cube-face Higgs vortex mass mechanism
 v0.31_cube_center_six_connector_addendum.md       Cube-center six-connector knot geometry
 v0.30_dynamic_ordered_collapse_addendum.md        Dynamic ordered collapse-containment retest
@@ -24,9 +25,47 @@ v0.7_shadow_anchor_derivation.md                  One-point shadow-anchor paper 
 
 ---
 
-## Current conceptual layer: v0.32 cube-face Higgs vortex mass mechanism
+## Current first-principle layer: v0.33 cubic field formula
 
-The v0.32 addendum formalizes the current mass mechanism:
+The v0.33 addendum combines the current geometry and mechanism into one MCIFT field object:
+
+```text
+node variables      at cube-center knots
+link variables      on six center-to-center connectors
+face variables      on Higgs-coupled vortex planes
+cell variables      for mass, complexity, coherence, stability, and collapse reservoir
+```
+
+Local field:
+
+```text
+Psi_MCIFT(i,t) = (
+  K_i,
+  phi_i,
+  T_i,
+  {a_i,mu},
+  {chi_i,mu},
+  {H_i,mu},
+  {Omega_i,mu},
+  {m_i,mu},
+  m_i,
+  q_i,
+  Coh_i,
+  S_i,
+  B_i
+)
+```
+
+Read:
+
+```text
+paper/v0.33_first_principle_cubic_field_formula_addendum.md
+models/first_principle_cubic_field_formula_v0.33.md
+```
+
+---
+
+## Current mechanism layer: v0.32 cube-face Higgs vortex mass mechanism
 
 ```text
 cube-center knot
@@ -35,12 +74,6 @@ cube-center knot
 -> information compatibility between neighboring cube centers
 -> face-plane vortex formation
 -> retained Higgs response / mass gathering
-```
-
-Safe current statement:
-
-```text
-In MCIFT v0.32, mass is modeled as retained Higgs-plane response gathered from a face-plane vortex that forms when information compatibility between neighboring cube-center knots crosses a threshold.
 ```
 
 Read:
@@ -53,8 +86,6 @@ models/cube_face_higgs_vortex_mass_v0.32.md
 ---
 
 ## Current geometry layer: v0.31 cube-center six-connector geometry
-
-The v0.31 addendum formalizes the current knot geometry:
 
 ```text
 knot = center of a spacetime cube-cell
@@ -73,17 +104,6 @@ models/cube_center_six_connector_knot_v0.31.md
 
 ## Latest numeric addendum: v0.30 dynamic ordered collapse-containment
 
-The v0.30 addendum summarizes the corrected-order collapse test:
-
-```text
-thermodynamic spin-growth scaffold
--> coherence capacity versus contained complexity
--> collapse tested at each MCIFT response epoch
--> aggregate B collapsed-knot reservoir updated before final scoring
-```
-
-Key result:
-
 ```text
 v0.28 RMS = 0.302859
 v0.29 overlay RMS = 0.302859
@@ -93,14 +113,4 @@ v0.30 global peak after dynamic order = 152.29 Mpc
 v0.30 BAO-window peak = 152.29 Mpc
 ```
 
----
-
-## Previous addenda
-
-```text
-paper/v0.29_collapse_containment_addendum.md
-paper/v0.28_thermodynamic_spin_growth_addendum.md
-paper/v0.22_cosmology_comparison_addendum.md
-```
-
-The older addenda remain useful historical context, but v0.32 is the current mass-mechanism layer, v0.31 is the current geometry layer, and v0.30 is the current numeric retest.
+The older addenda remain useful historical context, but v0.33 is the current first-principle formulation.
