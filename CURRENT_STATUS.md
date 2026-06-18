@@ -1,10 +1,10 @@
-# Current MCIFT Status: v0.42 Entangled Merge-Sphere Strict Test
+# Current MCIFT Status: v0.43 Rhythm-Locked Entangled Merge Test
 
 **Status:** speculative theoretical framework / toy collider and cosmology scaffold; not established physics.  
-**Current strict PASS/FLOP test:** v0.42 entangled merge-sphere strict test.  
+**Current strict PASS/FLOP test:** v0.43 rhythm-locked entangled merge test.  
+**Previous strict failure:** v0.42 entangled merge-sphere strict test.  
 **Previous collision retest:** v0.41 spinning-sphere collision retest.  
 **Previous explicit 3D retest:** v0.40 explicit 3D spherical leakage collision test.  
-**Previous geometric leakage retest:** v0.39 spherical leakage geometry retest.  
 **Current collider comparison layer:** v0.36 CERN/LHC Higgs-sector comparison.
 
 ---
@@ -12,48 +12,54 @@
 ## One-sentence status
 
 ```text
-MCIFT v0.42 tests a strict entanglement-first collision: two particles attempt to become one temporary merged sphere, their masses add, vibration is intensified first, and the merged sphere must either stabilize or explode. The strict verdict is FLOP_EXPLODES: the merge forms, but the mass-energy vibration seed exceeds the merged coherence capacity and the object fails stabilization.
+MCIFT v0.43 adds rhythm-lock stabilization to the v0.42 entangled merge. Two internal heartbeats are compared first; only the synchronized part becomes the merged core heartbeat, while the mismatch becomes outward beat leakage. The strict verdict is PASS_STABILIZED: 15/15 criteria passed, core pressure stays below coherence capacity, total vibration decays instead of running away, and the rough channel hierarchy improves without direct per-channel tuning.
 ```
 
 ---
 
-## v0.42 strict result
+## v0.43 strict result
 
 ```text
-verdict = FLOP_EXPLODES
-criteria_pass_count = 8/12
+verdict = PASS_STABILIZED
+criteria_pass_count = 15/15
 entanglement_score = 0.292811
 entanglement_threshold = 0.280000
+phase_lock = 0.533301
+frequency_lock = 0.778801
+amplitude_match = 0.921610
+rhythm_lock = 0.382777
 merged_mass = 2.000000
 merged_radius = 7.559526
-binding_capacity = 0.464809
 coherence_capacity = 0.526780
-E_mass_added = 0.500000
-E_vib_seed = 1.139518
-explosion_pressure_0 = 2.163178
-max_explode_index = 3.544722
+E_raw_vib_seed_v42 = 1.139518
+E_core_seed_after_lock = 0.414315
+E_beat_seed = 0.703281
+core_pressure_0 = 0.786615
+max_explosion_pressure = 0.786615
+final_energy_over_peak = 0.428634
 ```
 
 Shape result:
 
 ```text
-weighted_shell_radius = 7.985898
-weighted_sphericity = 0.828023
-weighted_anisotropy = 0.171977
-weighted_core_fraction = 0.475223
-weighted_inner_fraction = 0.412373
-weighted_outer_fraction = 0.112404
+weighted_shell_radius = 9.832114
+weighted_shell_width = 1.894045
+weighted_sphericity = 0.840701
+weighted_anisotropy = 0.159299
+core_fraction = 0.388466
+inner_fraction = 0.502743
+outer_fraction = 0.108791
 ```
 
 Channel fractions:
 
 ```text
-bb_like     = 0.205855  target ~ 0.582000
-WZ_like     = 0.519062  target ~ 0.240000
-gg_like     = 0.206559  target ~ 0.086000
-tau_like    = 0.053204  target ~ 0.063000
-gamma_like  = 0.014296  target ~ 0.002300
-mumu_like   = 0.001023  target ~ 0.000220
+bb_like     = 0.572638  target ~ 0.582000
+WZ_like     = 0.248455  target ~ 0.240000
+gg_like     = 0.113869  target ~ 0.086000
+tau_like    = 0.063330  target ~ 0.063000
+gamma_like  = 0.000678  target ~ 0.002300
+mumu_like   = 0.001031  target ~ 0.000220
 ```
 
 ---
@@ -61,13 +67,15 @@ mumu_like   = 0.001023  target ~ 0.000220
 ## Math under test
 
 ```text
-entanglement_score = overlap_gate * phase_lock * spin_lock * mass_match * timing_match
-merge allowed only if entanglement_score >= threshold
-M_merge = m_A + m_B
-R_merge = (R_A^3 + R_B^3)^(1/3)
-I_merge = (2/5) M_merge R_merge^2
-E_vib_seed = eta_m M_merge c^2 + eta_c E_dissipated + eta_s E_spin
-explosion_pressure = E_vib_seed / coherence_capacity
+h_A(t) = A_A cos(omega_A t + phi_A)
+h_B(t) = A_B cos(omega_B t + phi_B)
+Z = A_A exp(i phi_A) + A_B exp(i phi_B)
+A_merge = |Z|
+phi_merge = arg(Z)
+omega_merge = (E_A omega_A + E_B omega_B) / (E_A + E_B)
+R_lock = phase_lock * frequency_lock * amplitude_match
+E_core_seed = eta_core * R_lock * E_raw
+E_beat_seed = (1 - R_lock) * E_raw
 ```
 
 ---
@@ -75,17 +83,18 @@ explosion_pressure = E_vib_seed / coherence_capacity
 ## Analysis result files
 
 ```text
-analysis/results_v0.42/mcift_v0.42_entangled_merge_sphere_report.md
-analysis/results_v0.42/mcift_v0.42_entangled_merge_sphere_metrics_summary.csv
-analysis/results_v0.42/mcift_v0.42_entangled_merge_sphere_channels.csv
+analysis/results_v0.43/mcift_v0.43_rhythm_locked_merge_report.md
+analysis/results_v0.43/mcift_v0.43_rhythm_locked_merge_metrics_summary.csv
 ```
+
+The full channel table and time history are in the local output bundle.
 
 ---
 
 ## Limitation
 
 ```text
-v0.42 is a strict toy merge-sphere calculation, not a detector-level CERN simulation. A flop means this specific entanglement/merge rule is unstable, not that the full MCIFT program is falsified.
+v0.43 is a toy rhythm-locked merge calculation, not a detector-level CERN simulation. PASS_STABILIZED means the stabilizer works inside this scaffold; it is not empirical confirmation.
 ```
 
 ---
@@ -93,8 +102,8 @@ v0.42 is a strict toy merge-sphere calculation, not a detector-level CERN simula
 ## Next proof target
 
 ```text
-v0.43 target:
-find the missing stabilizer term, if one exists, using only first-principle geometry: merged-shell coherence, phase-lock damping, or outward vibration bleed. Do not tune decay channels directly.
+v0.44 target:
+carry the rhythm-lock rule into explicit 3D collision geometry and verify that heartbeat phase, frequency, and amplitude are derived from the 3D field rather than assigned as compact inputs.
 ```
 
 ---
@@ -102,5 +111,5 @@ find the missing stabilizer term, if one exists, using only first-principle geom
 ## Safe wording
 
 ```text
-v0.42 is a useful failure: the entanglement merge forms, but the merged sphere explodes because vibration energy exceeds containment. The next step is to search for a first-principle stabilizer, not to tune the output channels.
+v0.43 is a useful stabilization result: the merged sphere no longer explodes once raw vibration is split into locked core heartbeat and outward beat leakage. The next step is to derive those heartbeat quantities from the full 3D field.
 ```
