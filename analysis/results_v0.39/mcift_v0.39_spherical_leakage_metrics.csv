@@ -1,0 +1,40 @@
+metric,value,unit,notes
+verdict,PASS-LIKE,category,10/10 criteria
+criteria_pass_count,10,count,strict toy criteria
+criteria_total,10,count,strict toy criteria
+max_center_drift_abs_cells,0.43449617479028274,cells,center trajectory stability
+weighted_shell_peak_radius_cells,3.6557078806595746,cells,dominant shell radius
+weighted_shell_halfmax_width_bins,8.465637386058924,bins,dominant shell thickness
+weighted_shell_energy_radius_cells,15.664554761293932,cells,energy weighted radial spread
+weighted_sphericity,0.9593360532346507,fraction,shape l0-like dominance proxy
+weighted_shape_anisotropy,0.040663943916495734,fraction,non-spherical leakage proxy
+weighted_core_fraction,0.10602689154298527,fraction,core retained energy
+weighted_inner_shell_fraction,0.2822911457143749,fraction,near shell energy
+weighted_outer_shell_fraction,0.6116819598937863,fraction,diffuse outer shell energy
+weighted_shell_coherence,0.22685239312586475,fraction,coherent spherical source
+weighted_turbulent_shell,0.12777104287347013,fraction,turbulent shell source
+integrated_shape_leakage_proxy,0.0004174877319210763,proxy,shape-derived leakage integral
+channel_l1_distance_to_rough_higgs_targets,0.2568229013088337,fraction,diagnostic not fitted
+channel_log10_rms_to_rough_higgs_targets,0.6010385403252377,dex,diagnostic not fitted
+BR_bb_like,0.5051335905227441,fraction,shape-derived MCIFT channel proxy
+target_bb_like,0.582,fraction,rough Higgs hierarchy target
+BR_WZ_like,0.38146921821247276,fraction,shape-derived MCIFT channel proxy
+target_WZ_like,0.24,fraction,rough Higgs hierarchy target
+BR_gg_like,0.08594261521956638,fraction,shape-derived MCIFT channel proxy
+target_gg_like,0.086,fraction,rough Higgs hierarchy target
+BR_tau_like,0.026957593002304304,fraction,shape-derived MCIFT channel proxy
+target_tau_like,0.063,fraction,rough Higgs hierarchy target
+BR_gamma_like,9.475060096831787e-05,fraction,shape-derived MCIFT channel proxy
+target_gamma_like,0.0023,fraction,rough Higgs hierarchy target
+BR_mumu_like,0.0004022324419440458,fraction,shape-derived MCIFT channel proxy
+target_mumu_like,0.00022,fraction,rough Higgs hierarchy target
+center_track_stable_drift_lt_1_cell,1,bool,criterion
+dominant_shell_forms_radius_gt_3,1,bool,criterion
+dominant_shell_not_far_radius_lt_8,1,bool,criterion
+spherical_component_dominant,1,bool,criterion
+anisotropy_present_but_subdominant,1,bool,criterion
+shape_derived_leakage_positive,1,bool,criterion
+bb_like_largest_from_shape,1,bool,criterion
+WZ_like_second_from_shape,1,bool,criterion
+gg_like_visible_from_turbulence,1,bool,criterion
+gamma_and_mumu_suppressed,1,bool,criterion
