@@ -1,0 +1,161 @@
+# MCIFT v0.41 Spinning-Sphere Collision Retest Report
+
+**Status:** pool-game style collision retest after v0.40; speculative scaffold, not established physics.
+
+## Purpose
+
+v0.41 replaces abstract packet overlap with two finite rotating spheres. Each object has a center, size, velocity, spin, and orientation proxy. Collision is calculated at the contact point, like pool balls, then the contact impulse seeds a 3D vibration shell.
+
+## Collision object
+
+```text
+x_i(t)        center position
+R_i           sphere radius / effective size
+v_i(t)        linear velocity
+omega_i(t)    spin / angular velocity
+m_i           mass proxy
+I_i           moment of inertia
+```
+
+For each sphere:
+
+```text
+I_i = (2/5) m_i R_i^2
+```
+
+## Collision formulas
+
+Collision detection:
+
+```text
+|x_A - x_B| <= R_A + R_B
+```
+
+Contact normal:
+
+```text
+n = (x_B - x_A) / |x_B - x_A|
+```
+
+Surface contact velocities:
+
+```text
+u_A = v_A + omega_A x r_A
+u_B = v_B + omega_B x r_B
+u_rel = u_B - u_A
+```
+
+Normal and tangential impulses:
+
+```text
+J_n = -(1+e)(u_rel . n) / D_n
+J_t = clipped friction impulse from tangential contact velocity
+J = J_n n + J_t
+```
+
+Updates:
+
+```text
+v_A' = v_A - J/m_A
+v_B' = v_B + J/m_B
+omega_A' = omega_A - I_A^-1 (r_A x J)
+omega_B' = omega_B + I_B^-1 (r_B x J)
+```
+
+Vibration seed:
+
+```text
+E_contact = 1/2 m_eff |u_rel|^2
+E_spin = 1/2 I_A |omega_A|^2 + 1/2 I_B |omega_B|^2
+E_vib_seed = eta_c E_dissipated + eta_s E_spin
+```
+
+## Setup
+
+```text
+grid = 64 x 64 x 64
+sphere radius = 6.000 cells
+impact parameter = 2.100 cells
+contact normal = (0.984568, 0.175000, 0.000000)
+restitution = 0.720
+friction coefficient = 0.380
+steps = 220
+```
+
+## Collision result
+
+```text
+normal_impulse = 1.693458
+tangent_impulse_mag = 0.156047
+slip_ratio = 0.356799
+spin_transfer = 0.130039
+E_before = 2.319040
+E_after = 1.766962
+E_dissipated = 0.552078
+E_vib_seed = 0.572343
+momentum_error = 0.000000e+00
+angular_momentum_error = 2.696865e-15
+```
+
+## Shell result
+
+```text
+verdict = GEOMETRY_PASS_CHANNEL_WEAK
+criteria_pass_count = 11/13
+max_center_drift_abs_cells = 0.000000
+weighted_shell_peak_radius_cells = 8.922861
+weighted_shell_halfmax_width_bins = 4.361015
+weighted_sphericity = 0.845727
+weighted_shape_anisotropy = 0.154273
+weighted_core_fraction = 0.066127
+weighted_inner_shell_fraction = 0.425236
+weighted_outer_shell_fraction = 0.508637
+```
+
+## Shape-derived channel fractions
+
+```text
+bb_like     = 0.188928  target ~ 0.582000
+WZ_like     = 0.518154  target ~ 0.240000
+gg_like     = 0.249245  target ~ 0.086000
+tau_like    = 0.019942  target ~ 0.063000
+gamma_like  = 0.022681  target ~ 0.002300
+mumu_like   = 0.001050  target ~ 0.000220
+```
+
+## Criteria
+
+```text
+collision_detected_overlap = True
+momentum_conserved = True
+angular_momentum_conserved = True
+spin_transfer_nonzero = True
+vibration_seed_positive = True
+center_track_stable_drift_lt_1p5_cells = True
+dominant_shell_forms_radius_gt_3 = True
+spherical_component_dominant = True
+anisotropy_present_but_subdominant = True
+shape_derived_leakage_positive = True
+bb_like_largest_from_shape = False
+WZ_like_visible = True
+energy_finite_no_blowup = False
+```
+
+## Interpretation
+
+```text
+The pool-style collision formulas conserve momentum and angular momentum to numerical precision and transfer spin through the contact impulse. The off-center spinning collision forms a stable 3D shell with subdominant anisotropy. Compared with v0.40, compact mass retention is no longer excessive, but the collision now over-drives coherent/turbulent shell leakage: WZ-like and gg/gamma-like branches become too strong while bb-like becomes too low against rough Higgs hierarchy targets.
+```
+
+## Limitation
+
+```text
+This is a toy rigid-sphere plus 3D shell calculation. It is not a detector-level CERN simulation, and the rough Higgs fractions are hierarchy targets, not measured likelihoods.
+```
+
+## Next target
+
+```text
+v0.42 target:
+scan only physical collision geometry variables -- impact parameter, spin orientation, restitution, and friction -- to find whether a stable no-per-channel-tuning region naturally balances compact mass retention and coherent shell leakage.
+```
