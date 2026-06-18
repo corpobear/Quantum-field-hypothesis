@@ -1,0 +1,10 @@
+metric,value,unit,verdict
+v0.17_global_peak,617.87,Mpc,FAIL
+v0.17_BAO_window_peak,152.29,Mpc,PASS-LIKE
+v0.18_global_peak,152.29,Mpc,PASS-LIKE
+v0.18_BAO_window_peak,152.29,Mpc,PASS-LIKE
+sound_horizon_rs,147.11,Mpc,reference
+global_fractional_error,0.035,ratio,PASS-LIKE
+BAO_window_fractional_error,0.035,ratio,PASS-LIKE
+k_cut,0.030,1/Mpc,chosen_toy_parameter
+n_s,0.965,dimensionless,Planck-like_tilt
