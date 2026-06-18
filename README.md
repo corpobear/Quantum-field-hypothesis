@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.30 dynamic ordered collapse-containment cosmology scaffold
+**Current version:** v0.30 dynamic ordered collapse-containment cosmology scaffold + v0.31 cube-center connector geometry note
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model (Lambda-CDM). This repository contains exploratory mechanics, toy calculations, and increasingly testable cosmology-style scaffolds.
 
@@ -23,6 +23,7 @@ The current cosmology chain is:
 
 ```text
 multi-channel information field
+-> cube-centered knot with six axial connector states
 -> coherent knot/anchor structure
 -> visible-manifest and dark-manifest channel split
 -> anchor/coherence radius R_A
@@ -36,6 +37,30 @@ multi-channel information field
 -> chronological collapse-containment when coherence cannot hold complexity
 -> dynamic response-epoch B reservoir
 -> BAO/sound-horizon and full P(k)-shape scoring
+```
+
+---
+
+## Cube-center six-connector knot geometry
+
+The current geometry note defines a knot as the center of a spacetime cube-cell with six axial connector states:
+
+```text
++x, -x, +y, -y, +z, -z
+```
+
+Each connector links one cube-center knot to a neighboring cube-center knot and may be inactive, partially active, or fully active:
+
+```text
+0 <= a_mu <= 1
+```
+
+The six connector states supply local coherence capacity. Collapse-containment occurs when the coherence supplied by the connector structure cannot contain the knot's internal complexity.
+
+See:
+
+```text
+models/cube_center_six_connector_knot_v0.31.md
 ```
 
 ---
@@ -118,6 +143,7 @@ B_bg = 0.003141
 ## Key files
 
 ```text
+models/cube_center_six_connector_knot_v0.31.md
 analysis/mcift_big_bang_dynamic_ordered_collapse_v0.30.py
 analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_report.md
 analysis/results_v0.30/mcift_v0.30_dynamic_ordered_collapse_metrics.csv
@@ -160,11 +186,12 @@ Next required tests:
 ```text
 1. Replace response-epoch B transfer with mode-coupled B(k,a) inside the perturbation equations.
 2. Re-run thermodynamic growth with B coupled directly to each mode.
-3. Test dark-manifest behavior against lensing / halo / rotation-curve proxies.
-4. Add CMB temperature and polarization spectra.
-5. Add BBN light-element predictions.
-6. Derive or falsify a dark-energy / late-time acceleration sector.
-7. Compare MCIFT and Lambda-CDM with fair parameter-count penalties.
+3. Use the cube-center six-connector knot geometry to define connector-level coherence and imbalance.
+4. Test dark-manifest behavior against lensing / halo / rotation-curve proxies.
+5. Add CMB temperature and polarization spectra.
+6. Add BBN light-element predictions.
+7. Derive or falsify a dark-energy / late-time acceleration sector.
+8. Compare MCIFT and Lambda-CDM with fair parameter-count penalties.
 ```
 
 ---
