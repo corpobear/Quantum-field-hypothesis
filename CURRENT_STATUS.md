@@ -1,14 +1,15 @@
-# Current MCIFT Status: v0.30
+# Current MCIFT Status: v0.31 Geometry Layer + v0.30 Numeric Retest
 
 **Status:** speculative theoretical framework / toy cosmology scaffold; not established physics.  
-**Current milestone:** v0.30 dynamic ordered collapse-containment retest.
+**Current conceptual layer:** v0.31 cube-center six-connector knot geometry.  
+**Current numeric retest:** v0.30 dynamic ordered collapse-containment.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT now tests collapse-containment in the correct chronological order: each response epoch checks whether coherence capacity can contain complexity, updates a collapsed-knot reservoir B, and only then scores the final spectrum. In this first v0.30 dynamic-ordered retest, the previous 617.87 Mpc global peak is suppressed before final scoring and the global peak returns to 152.29 Mpc, while the scored shape RMS remains PASS-LIKE.
+MCIFT now combines a cube-centered six-connector knot geometry with the v0.30 dynamic ordered collapse-containment retest: each knot sits at a cube-cell center with six axial connector states, and collapse-containment occurs when connector-supported coherence capacity cannot hold contained complexity. Numerically, the v0.30 scaffold suppresses the previous 617.87 Mpc super-anchor mode before final scoring and returns the global peak to 152.29 Mpc while keeping the scored shape RMS PASS-LIKE.
 ```
 
 ---
@@ -21,11 +22,48 @@ Use:
 no parameter sweep / internally constrained heuristic closure
 ```
 
-Do not overstate the current result as strict no-fit proof. The retest did not scan parameters against the target, but the closure choices remain model assumptions.
+Do not overstate the current result as strict no-fit proof. The retests did not scan parameters against the target, but the closure choices remain model assumptions.
 
 ---
 
-## What changed through v0.30
+## Current geometry: cube-center six-connector knot
+
+A knot is represented as the center of a spacetime cube-cell:
+
+```text
+knot position = center of cube-cell
+```
+
+It has six axial connector states through the cube faces:
+
+```text
++x, -x, +y, -y, +z, -z
+```
+
+Each connector can be inactive, partially active, or fully active:
+
+```text
+0 <= a_mu <= 1
+```
+
+The six connector states supply local coherence capacity. Directional imbalance penalizes coherence:
+
+```text
+Delta_i = sqrt[(a_+x-a_-x)^2 + (a_+y-a_-y)^2 + (a_+z-a_-z)^2]
+Coh_i = 6 a_i,mean - lambda_Delta Delta_i
+```
+
+Containment condition:
+
+```text
+S_i = Coh_i - Q_i
+S_i >= 0   stable/open knot
+S_i < 0    containment failure / collapsed-knot condition
+```
+
+---
+
+## What changed through v0.31
 
 ```text
 v0.16  first Big Bang proxy comparison
@@ -43,6 +81,7 @@ v0.27  mass-gravity-time spin blur; conservative time-response version
 v0.28  thermodynamic spin-growth; shape score improved to PASS-LIKE but global peak remained 617.87 Mpc
 v0.29  collapse-containment overlay; post-run correction moved global peak to 152.29 Mpc
 v0.30  dynamic ordered collapse; response-epoch B reservoir suppresses 617.87 Mpc before final scoring
+v0.31  cube-center six-connector geometry; connector-level coherence and imbalance formalized
 ```
 
 ---
@@ -56,11 +95,14 @@ theta_G      mass/gravity time-response load
 theta_T      rho_R / (rho_R + rho_G)
 W_capture    thermodynamic capture window
 c_s^2        thermal sound-speed proxy
+a_mu         six cube-face connector activations
+Delta_i      directional imbalance of opposite connectors
+Coh_i        local connector coherence capacity
 S_contain    coherence capacity minus contained complexity
 B            collapsed-knot reservoir
 ```
 
-Correct-order dynamic rule:
+Correct-order dynamic collapse rule from v0.30:
 
 ```text
 coherence_capacity = 3.5 n X_containment A_lock W_capture
@@ -72,7 +114,7 @@ B_next = B + leaked V/D contained-complexity excess
 
 ---
 
-## Latest v0.30 result
+## Latest numeric result: v0.30
 
 ```text
 v0.28 RMS = 0.302859
@@ -94,22 +136,16 @@ R_bg = 0.010379
 B_bg = 0.003141
 ```
 
-Interpretation:
-
-```text
-Applying collapse-containment in chronological response-epoch order suppresses the uncontained 617.87 Mpc mode before final scoring and returns the global peak to the BAO-window scale. The scored RMS is unchanged because the affected super-anchor mode is outside the P(k) scoring window.
-```
-
 ---
 
 ## Current strengths
 
 ```text
 1. MCIFT has a reproducible chain of toy/scaffold tests through v0.30.
-2. The BAO-window scale repeatedly survives near 152 Mpc.
-3. Six internal dark sectors can project toward four effective transverse sinks through spin blur.
-4. Temperature, mass/gravity time response, and collapse containment are now represented as internal closures.
-5. v0.30 tests collapse in the correct chronological order rather than only as a final overlay.
+2. v0.31 supplies a local six-connector geometry for knots and containment.
+3. The BAO-window scale repeatedly survives near 152 Mpc.
+4. Six internal connector sectors can project toward four effective transverse channels through spin blur.
+5. Temperature, mass/gravity time response, connector coherence, and collapse containment are now represented as internal closures.
 ```
 
 ---
@@ -118,15 +154,22 @@ Applying collapse-containment in chronological response-epoch order suppresses t
 
 ```text
 1. MCIFT remains speculative and unvalidated.
-2. v0.30 is an aggregate response-epoch scaffold, not a spatial B(k,a) mode solver.
-3. The collapse rule is heuristic and internally constrained, not established black-hole/GR physics.
-4. CMB, BBN, lensing, halo, galaxy-rotation, cluster, and dark-energy tests are not implemented.
-5. No fair likelihood / parameter-count comparison against Lambda-CDM is complete.
+2. v0.31 is a geometry note, not a tested connector-level solver yet.
+3. v0.30 is an aggregate response-epoch scaffold, not a spatial B(k,a) mode solver.
+4. The collapse rule is heuristic and internally constrained, not established black-hole/GR physics.
+5. CMB, BBN, lensing, halo, galaxy-rotation, cluster, and dark-energy tests are not implemented.
+6. No fair likelihood / parameter-count comparison against Lambda-CDM is complete.
 ```
 
 ---
 
 ## Safe wording
+
+Safe:
+
+```text
+MCIFT can be visualized as a cube-centered six-connector information geometry, where each knot sits at a cube-cell center and coherence is supplied by six axial connector states to neighboring cube centers.
+```
 
 Safe:
 
@@ -137,6 +180,7 @@ MCIFT v0.30 shows that chronological collapse-containment can suppress the previ
 Not safe:
 
 ```text
+MCIFT proves spacetime is literally a cubic lattice.
 MCIFT proves black holes.
 MCIFT proves dark matter.
 MCIFT proves dark energy.
@@ -148,15 +192,14 @@ MCIFT replaces Lambda-CDM.
 ## Next proof target
 
 ```text
-Replace aggregate response-epoch B with a mode-coupled B(k,a) reservoir inside the perturbation equations, then rerun the thermodynamic growth solver.
+Use the v0.31 six connector variables directly in a mode-coupled B(k,a) perturbation solver, replacing aggregate response-epoch B transfer.
 ```
 
-Required dynamic form:
+Required direction:
 
 ```text
-d rho_A / d ln a = -Q_A_to_V - Q_A_to_D
-d rho_V / d ln a =  Q_A_to_V - Q_V_to_D - Q_V_to_R - Q_V_to_B
-d rho_D / d ln a =  Q_A_to_D + Q_V_to_D - Q_D_to_B
-d rho_R / d ln a =  Q_V_to_R + collapse thermal feedback
-d rho_B / d ln a =  Q_V_to_B + Q_D_to_B
+- evolve a_i,mu connector activations
+- compute Delta_i and Coh_i dynamically
+- couple collapse-containment into B(k,a)
+- rerun thermodynamic growth with B coupled directly to each mode
 ```
