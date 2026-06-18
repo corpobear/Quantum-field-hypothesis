@@ -1,0 +1,7 @@
+channel,shape_fraction,rough_higgs_target_fraction,ratio_to_target,absolute_delta,geometric_source
+bb_like,0.5051335905227441,0.582,0.8679271314823782,-0.07686640947725587,compact retained inner shell/core mass energy
+WZ_like,0.38146921821247276,0.24,1.5894550758853032,0.14146921821247277,coherent spherical/breathing shell
+gg_like,0.08594261521956638,0.086,0.999332735111237,-5.738478043361417e-05,anisotropic/turbulent shell leakage
+tau_like,0.026957593002304304,0.063,0.4278983016238778,-0.036042406997695696,lighter retained-mass shell branch
+gamma_like,9.475060096831787e-05,0.0023,0.041195913464486034,-0.002205249399031682,clean transverse shell ripple
+mumu_like,0.0004022324419440458,0.00022,1.8283292815638446,0.00018223244194404578,tiny residual retained-mass branch
