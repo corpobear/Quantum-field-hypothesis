@@ -9,7 +9,8 @@ This folder contains analysis scaffolds for testing MCIFT toy-model predictions 
 ## Current level
 
 ```text
-Current tested solver: v0.34 first-principle cubic field toy solver
+Current tested solver: v0.35 minimal spatial cubic lattice solver
+Current previous solver: v0.34 first-principle cubic field toy solver
 Current field formula: v0.33 cubic cell-complex field formula
 Current mechanism layer: v0.32 cube-face Higgs vortex mass mechanism
 Current geometry layer: v0.31 cube-center six-connector knot model
@@ -24,58 +25,50 @@ The correct wording is "no parameter sweep / internally constrained heuristic cl
 
 ---
 
-## v0.34 solver
+## v0.35 spatial lattice solver
 
 Run after generating full v0.28 residuals/tracks:
 
 ```bash
-python analysis/mcift_big_bang_first_principle_cubic_field_v0.34.py
+python analysis/mcift_spatial_cubic_lattice_v0.35.py
 ```
 
-The solver activates:
+The solver instantiates:
 
 ```text
-connector activation a_i,mu
-information compatibility chi_i,mu
-Higgs face-plane vortex Omega_i,mu
-vortex mass loading m_i
-contained complexity q_i
-connector coherence capacity Coh_i
-containment score S_i
-mode-coupled reservoir transfer
+64^3 periodic cube-center nodes
+six nearest-neighbor connector activations
+Higgs face-plane vortex response
+mass / complexity loading
+local coherence capacity
+local stability score
+spatial reservoir field
+shell-spectrum measurement
 ```
 
 Key result:
 
 ```text
-v0.30 dynamic-ordered RMS = 0.302859
-v0.34 cubic-field RMS = 0.302859
+v0.34 mode-level RMS = 0.302859
+v0.35 spatial-lattice mapped RMS = 0.303948
 shape verdict = PASS-LIKE
-v0.28 global peak before cubic field = 617.87 Mpc
-v0.34 global peak after cubic field = 152.29 Mpc
-v0.34 BAO-window peak = 152.29 Mpc
-```
-
-Transfer diagnostics:
-
-```text
-v0.34 transfer at 617.87 Mpc = 0.449576
-v0.30 transfer at 617.87 Mpc = 0.558702
-v0.34 transfer at nearest BAO bin = 1.000000
+spatial pre-collapse peak = 617.87 Mpc, harmonic n=1
+spatial post-collapse peak = 154.47 Mpc, harmonic n=4
+mapped v0.35 global peak = 152.29 Mpc
+mapped v0.35 BAO-window peak = 152.29 Mpc
 ```
 
 Outputs:
 
 ```text
-analysis/results_v0.34/mcift_v0.34_first_principle_cubic_field_report.md
-analysis/results_v0.34/mcift_v0.34_first_principle_cubic_field_metrics.csv
-analysis/results_v0.34/mcift_v0.34_first_principle_cubic_field_history.csv
-analysis/results_v0.34/mcift_v0.34_first_principle_cubic_field_residuals.csv
+analysis/results_v0.35/mcift_v0.35_spatial_lattice_report.md
+analysis/results_v0.35/mcift_v0.35_spatial_lattice_metrics.csv
+analysis/results_v0.35/mcift_v0.35_spatial_lattice_shell_power.csv
 ```
 
 ---
 
-## Cosmology scaffold: v0.16-v0.34
+## Cosmology scaffold: v0.16-v0.35
 
 | Version | Script | Result folder | Purpose | Status |
 |---|---|---|---|---|
@@ -94,13 +87,14 @@ analysis/results_v0.34/mcift_v0.34_first_principle_cubic_field_residuals.csv
 | v0.28 | `mcift_big_bang_thermo_spin_growth_v0.28.py` | `results_v0.28/` | thermodynamic spin-growth | PASS-LIKE shape; global 617.87 Mpc |
 | v0.29 | `mcift_big_bang_collapse_containment_v0.29.py` | `results_v0.29/` | post-run collapse-containment overlay | global peak 152.29 Mpc |
 | v0.30 | `mcift_big_bang_dynamic_ordered_collapse_v0.30.py` | `results_v0.30/` | response-epoch reservoir before final scoring | PASS-LIKE; global peak 152.29 Mpc |
-| v0.34 | `mcift_big_bang_first_principle_cubic_field_v0.34.py` | `results_v0.34/` | first-principle cubic field toy solver | PASS-LIKE; global peak 152.29 Mpc |
+| v0.34 | `mcift_big_bang_first_principle_cubic_field_v0.34.py` | `results_v0.34/` | first-principle cubic field mode-level solver | PASS-LIKE; global peak 152.29 Mpc |
+| v0.35 | `mcift_spatial_cubic_lattice_v0.35.py` | `results_v0.35/` | explicit spatial cubic lattice solver | PASS-LIKE; spatial peak shifts n=1 to n=4 |
 
 ---
 
 ## Next analysis target
 
 ```text
-v0.35 target:
-Move from mode-level toy solver to a minimal spatial cubic lattice solver with explicit neighboring cube cells.
+v0.36 target:
+Generate initial fields from internal connector/vortex noise and boundary conditions rather than explicitly seeding the super-anchor and n=4 stress-test modes.
 ```
