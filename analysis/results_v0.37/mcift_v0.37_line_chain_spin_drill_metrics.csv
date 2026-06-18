@@ -1,0 +1,25 @@
+metric,value,unit,notes
+verdict,PASS-LIKE,category,7/7 criteria
+criteria_pass_count,7,count,strict toy criteria
+peak_B,10.403388653818036,sink_proxy,max reservoir dent
+peak_B_step,426,step,when sink peaked
+peak_B_distance_from_center,4,cells,localization
+B_localization_ratio_at_peak,0.3660800438563154,fraction,center +/- 12 cells
+peak_Dent,2.9953421871069716,drill_proxy,max dent/drill strength
+peak_Dent_step,864,step,when dent peaked
+peak_window_mass_GeV_proxy,0.6034436539838637,GeV_proxy,mass gathered in center drill region
+peak_window_mass_step,385,step,when center-window mass peaked
+peak_window_mass_distance_from_center,7,cells,mass localization
+sink_halfmax_lifetime_steps,140,steps,finite lifetime
+sink_halfmax_lifetime_time,2.8000000000000003,sim_time,finite lifetime
+center_B_final_over_peak,0.33823450549915485,ratio,decay check
+max_negative_S_fraction,0.655860349127182,fraction,collapse spread
+initial_negative_S_fraction,0.43640897755610975,fraction,collapse spread
+final_negative_S_fraction,0.5586034912718204,fraction,collapse spread
+localized_sink_center_distance_le_5,1,bool,criterion
+sink_localization_ratio_peak_window_gt_0p35,1,bool,criterion
+central_spin_drill_forms,1,bool,criterion
+central_region_mass_gathers,1,bool,criterion
+finite_lifetime_halfmax,1,bool,criterion
+post_peak_decay_present,1,bool,criterion
+not_global_everywhere_first_half,1,bool,criterion
