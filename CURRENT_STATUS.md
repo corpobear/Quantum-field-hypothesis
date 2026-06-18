@@ -1,50 +1,47 @@
-# Current MCIFT Status: v0.37 Line-Chain Spin-Drill Higgs Test
+# Current MCIFT Status: v0.38 Mass-Energy Vibration Retest
 
 **Status:** speculative theoretical framework / toy collider and cosmology scaffold; not established physics.  
-**Current collider-style toy test:** v0.37 line-chain spin-drill Higgs test.  
+**Current collider-style retest:** v0.38 mass-energy vibration channel retest.  
+**Previous collider-style toy test:** v0.37 line-chain spin-drill Higgs test.  
 **Current collider comparison layer:** v0.36 CERN/LHC Higgs-sector comparison.  
 **Current spatial tested layer:** v0.35 minimal spatial cubic lattice solver.  
 **Current field formula:** v0.33 cubic cell-complex field formula.  
-**Current mechanism layer:** v0.32 cube-face Higgs vortex mass mechanism.  
-**Current geometry layer:** v0.31 cube-center six-connector knot geometry.
+**Current mechanism layer:** v0.32 cube-face Higgs vortex mass mechanism.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.37 connects cube centers in a straight line, drives opposite phase/information flows toward the center, measures spin/twist over time, and tests whether the line drills a localized dent/sink. The strict toy verdict is PASS-LIKE: 7/7 criteria passed, with a localized sink near the collision center, finite mass proxy gathered in the central region, and post-peak decay/leakage instead of unbounded growth.
+MCIFT v0.38 adds Einstein mass-energy conversion to the v0.37 line-chain sink: gathered mass is converted into vibration energy, and that vibration leaks into channel proxies. The strict toy verdict is PASS-LIKE: 9/9 criteria passed, with a finite vibration lifetime and a Higgs-like channel hierarchy led by bb-like mass retention, WZ-like coherent symmetry, visible gg-like turbulence, visible tau-like retention, and suppressed gamma-like and mumu-like channels.
 ```
 
 ---
 
-## v0.37 result
+## v0.38 result
 
 ```text
 verdict = PASS-LIKE
-criteria_pass_count = 7/7
-peak_B = 10.403389
-peak_B_step = 426
-peak_B_distance_from_center = 4 cells
-B_localization_ratio_at_peak = 0.366080
-peak_Dent = 2.995342
-peak_window_mass_GeV_proxy = 0.603444
-peak_window_mass_distance_from_center = 7 cells
-sink_halfmax_lifetime_steps = 140
-sink_halfmax_lifetime_time = 2.800000
-center_B_final_over_peak = 0.338235
+criteria_pass_count = 9/9
+peak_E_vib_GeV_proxy = 0.023315
+peak_E_vib_step = 319
+peak_E_vib_time = 6.380000
+final_E_vib_over_peak = 0.187542
+integrated_E_in_GeV_proxy = 0.000691
+integrated_E_leak_GeV_proxy = 0.000351
+channel_l1_distance_to_rough_higgs_targets = 0.153878
+channel_log10_rms_to_rough_higgs_targets = 0.358711
 ```
 
-Criteria:
+Channel fractions:
 
 ```text
-localized_sink_center_distance_le_5 = True
-sink_localization_ratio_peak_window_gt_0p35 = True
-central_spin_drill_forms = True
-central_region_mass_gathers = True
-finite_lifetime_halfmax = True
-post_peak_decay_present = True
-not_global_everywhere_first_half = True
+bb_like     = 0.559140  target ~ 0.582000
+WZ_like     = 0.316161  target ~ 0.240000
+gg_like     = 0.100017  target ~ 0.086000
+tau_like    = 0.024090  target ~ 0.063000
+gamma_like  = 0.000402  target ~ 0.002300
+mumu_like   = 0.000189  target ~ 0.000220
 ```
 
 ---
@@ -52,16 +49,17 @@ not_global_everywhere_first_half = True
 ## Math under test
 
 ```text
-delta_phi_i = phi_(i+1) - phi_i
-omega_i = d(delta_phi_i)/dt
-Theta_i = phi_(i+1) - 2 phi_i + phi_(i-1)
-A_i = sqrt(a_i a_(i+1))
-chi_i = A_i P_phase P_timing P_match
-Omega_i = H_i sigma(chi_i - chi_c)
-m_i = m_scale Omega_i A_i
-D_i = alpha_spin |omega_i| + alpha_twist |Theta_i| + alpha_Omega Omega_i
-S_i = Coh_i - q_i - D_i
-dB_i/dt = gamma_B max(0,-S_i) - decay_B B_i
+E_m,i(t) = eta_m m_i(t) c^2
+E_vib,i(t+dt) = E_vib,i(t) + E_m,i(t) - E_leak,i(t) - damping
+omega_vib,i = E_vib,i / hbar
+```
+
+Channel source families:
+
+```text
+mass-retention source      -> bb-like, tau-like, mumu-like
+coherent symmetric source  -> WZ-like
+transverse turbulence      -> gg-like, gamma-like loop channels
 ```
 
 ---
@@ -72,24 +70,25 @@ dB_i/dt = gamma_B max(0,-S_i) - decay_B B_i
 STRUCTURAL_ONLY_NOT_A_CERN_PASS
 ```
 
-v0.37 is a collider-style line-chain toy test, not a detector-level CERN simulation.
+v0.38 is still a toy decay-channel retest, not a detector-level CERN simulation.
 
 ---
 
 ## Next proof target
 
 ```text
-v0.38 target:
-convert sink decay/leakage into channel fractions, then compare the line-chain excitation to Higgs width and branching-ratio patterns.
+v0.39 target:
+replace proxy channel families with coupling modifiers kappa_W, kappa_Z, kappa_b, kappa_tau, kappa_mu, kappa_g, and kappa_gamma, then compute partial widths and signal strengths.
 ```
 
 Required direction:
 
 ```text
-- define decay/leakage channels from B, Omega, twist, and mass proxy
-- measure channel fractions over sink lifetime
-- map those fractions to Higgs-like channels
-- compare to width and branching-ratio patterns without per-channel tuning
+- derive channel coupling modifiers from the same mass-energy vibration variables
+- compute partial widths from those coupling modifiers
+- sum total width
+- compute branching fractions and signal strengths
+- compare to collider Higgs targets without per-channel tuning
 ```
 
 ---
@@ -97,5 +96,5 @@ Required direction:
 ## Safe wording
 
 ```text
-v0.37 shows that a line-chain of cube centers can form a localized spin-drill sink in a strict 1D collider-style toy test, but it is not yet a detector-level CERN simulation.
+v0.38 shows that adding mass-energy conversion into vibration gives a PASS-LIKE toy channel hierarchy, but it is not yet a Standard Model or detector-level CERN calculation.
 ```
