@@ -1,0 +1,6 @@
+component,energy,fraction
+visible_face_vortex,0.599689,0.642328
+hidden_sink_gravity,0.109077,0.116817
+rotation_bound,0.131334,0.140673
+radiation_thermal,0.050318,0.053892
+shell_bleed,0.043199,0.046289
