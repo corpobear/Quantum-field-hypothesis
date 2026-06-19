@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.54 cosmology coarse-graining layer
+**Current version:** v0.55 Q_i transfer-network background comparison
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,61 +11,57 @@
 
 ## Current focus
 
-MCIFT now lifts the local collision mechanics into a first cosmology-scale scaffold:
+MCIFT now has a calibrated background-comparison layer:
 
 ```text
-v0.49 internal scaffold:
-  dense entanglement, visible/hidden split, rotating-core load feedback
-
-v0.50 kappa bridge:
-  explicit kappa modifiers, partial widths, branching ratios, and rate modifiers
-
-v0.51 common time bridge:
-  core-clock to lab-clock conversion for total width/rate comparison
-
-v0.52 channel-clock bridge:
-  time-dilated rotation modifies channel formation clocks and branching ratios
-
-v0.53 sound/acoustic bridge:
-  internal pressure waves alter shell spread and channel partial widths
-
 v0.54 cosmology layer:
   visible, hidden, rotation, radiation, and acoustic branches become coarse-grained density sectors
+
+v0.55 transfer layer:
+  conservative Q_i transfer map moves excess local branch energy into a smooth/lapse reservoir
+  then compares raw and transfer-corrected H(z) against real-world reference checkpoints
 ```
 
 Current verdict:
 
 ```text
-v0.54 cosmology coarse-grain = PASS_COSMOLOGY_COARSE_GRAIN_SCAFFOLD
+v0.55 Q_i transfer network = PASS_Q_TRANSFER_BACKGROUND_BRIDGE
 ```
 
-This is a mathematical coarse-graining scaffold, not an observational cosmology fit.
+This is a calibrated transfer-network bridge, not a successful observational cosmology fit.
 
 ---
 
-## v0.54 result
+## v0.55 result
 
 ```text
-visible_gravity_fraction_normalized = 0.616356
-hidden_gravity_fraction_normalized = 0.178592
-rotation_gravity_fraction_normalized = 0.095371
-radiation_fraction_normalized = 0.051573
-acoustic_shell_fraction_normalized = 0.058107
-c_sound_proxy = 0.582034
-w_sound_proxy = 0.338764
-lapse_N_at_a1 = 0.869985
-H_lab_over_H_core_at_a1 = 1.149445
-sound_horizon_proxy_at_a1 = 0.394142
-inverse_sound_scale_proxy = 2.537156
+Omega_visible_today = 0.244232
+Omega_hidden_today = 0.070768
+Omega_m_like_today = 0.315000
+Omega_rotation_today = 0.001500
+Omega_acoustic_today = 0.003500
+Omega_radiation_today = 0.000090
+Omega_smooth_lapse_reservoir_today = 0.679910
 ```
 
-Growth-kernel proxy:
+Real-world comparison checkpoint:
 
 ```text
-mu_eff(k=0.01) = 1.147401
-mu_eff(k=0.1)  = 1.147026
-mu_eff(k=1)    = 1.118137
-mu_eff(k=10)   = 0.983284
+H0_reference = 67.4
+Omega_m_reference = 0.315
+H075_observed = 105.0 ± 10.756
+H075_model = 104.766
+H075_residual_sigma = -0.022
+```
+
+Raw vs transfer at z=0.75:
+
+```text
+Planck_LCDM_reference_H075 = 103.831
+v0.54_raw_no_transfer_H075 = 167.670
+v0.55_transfer_H075 = 104.766
+raw_H075_delta_pct = 61.483
+transfer_H075_delta_pct = 0.901
 ```
 
 ---
@@ -73,19 +69,14 @@ mu_eff(k=10)   = 0.983284
 ## Key math
 
 ```text
-rho_grav = rho_v + C_h rho_h + C_rot rho_rot + C_s rho_s + rho_r
-
-H_core(a)^2 = sum_i Omega_i a^(-n_i)
-N(a) = tau_rot / sqrt(1 + chi0 H_core(a)^2)
-H_lab(a) = H_core(a) / N(a)
-
-r_s(a) = integral_0^a c_s(a') / (a'^2 H_lab(a')) da'
-
 dot(rho_i) + 3H(rho_i + p_i) = Q_i
 sum_i Q_i = 0
+
+rho_i(today) = R_i rho_i(v0.54)
+rho_smooth(today) = sum_i (1 - R_i) rho_i(v0.54)
 ```
 
-The learned collision geometry becomes a cosmology language: hidden load becomes gravitational density, sound spread becomes acoustic pressure, time dilation becomes a lapse field, and rotation becomes vorticity/support.
+The raw coarse-grained branch fractions cannot be compared directly to H(z). A transfer/smoothing network is required before real-world background comparison.
 
 ---
 
@@ -93,13 +84,15 @@ The learned collision geometry becomes a cosmology language: hidden load becomes
 
 ```text
 CURRENT_STATUS.md
-models/cosmology_coarse_grain_v0.54.md
-analysis/results_v0.54/mcift_v0.54_cosmology_coarse_grain_report.md
-analysis/results_v0.54/mcift_v0.54_cosmology_coarse_grain_metrics.csv
-analysis/results_v0.54/mcift_v0.54_components.csv
-analysis/results_v0.54/mcift_v0.54_growth_kernel.csv
-analysis/results_v0.54/mcift_v0.54_expansion_lapse_samples.csv
-analysis/results_v0.54/mcift_v0.54_criteria.csv
+models/q_transfer_network_v0.55.md
+analysis/results_v0.55/mcift_v0.55_q_transfer_report.md
+analysis/results_v0.55/mcift_v0.55_q_transfer_metrics.csv
+analysis/results_v0.55/mcift_v0.55_components_after_transfer.csv
+analysis/results_v0.55/mcift_v0.55_transfer_network.csv
+analysis/results_v0.55/mcift_v0.55_Hz_comparison.csv
+analysis/results_v0.55/mcift_v0.55_real_world_comparison.csv
+analysis/results_v0.55/mcift_v0.55_growth_kernel.csv
+analysis/results_v0.55/mcift_v0.55_criteria.csv
 ```
 
 ---
@@ -107,7 +100,7 @@ analysis/results_v0.54/mcift_v0.54_criteria.csv
 ## Important limitation
 
 ```text
-v0.54 is a coarse-graining scaffold. It is not an observational cosmology fit and not a replacement for standard cosmology.
+v0.55 is calibrated to Planck-like H0/Omega_m and is not a predictive cosmology fit. DESI-style evolving-dark-energy behavior is not fitted yet.
 ```
 
 ---
@@ -117,10 +110,10 @@ v0.54 is a coarse-graining scaffold. It is not an observational cosmology fit an
 Next required tests:
 
 ```text
-1. Implement the Q_i transfer network.
-2. Test whether hidden/sound/rotation sectors evolve without hand-normalization.
-3. Derive coarse-grained coefficients from the full 3D phase field.
-4. Compare only later against H(z), growth, sound horizon, and lensing observables.
+1. Replace present-day retention factors with dynamic Q_i rates.
+2. Fit or derive evolving dark-energy behavior instead of a static smooth reservoir.
+3. Compare against DESI BAO, supernova, H(z), growth, sound horizon, and lensing data.
+4. Derive Q_i rates from the full 3D phase field.
 ```
 
 ---
