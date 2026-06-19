@@ -1,0 +1,14 @@
+metric,value
+version,v0.94
+layer,central_failed_mode4_seed
+mode,4
+complexity_C4,16
+coherence_Q4,14
+stability_S4,-2
+reservoir_R4,2
+mu4_toy,1
+central_load_M0,2
+r_core_required,True
+literal_singularity_claimed,False
+big_bang_claimed,False
+next,central_seed_reducer
