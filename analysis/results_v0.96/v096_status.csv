@@ -1,0 +1,16 @@
+metric,value
+version,v0.96
+layer,threefold_bubble_knot_formula
+source,2D_shape_extrapolation
+central_seed,mode4_failed_reservoir
+stable_surface_loops,3
+primitive,B3_center_surface_radius_loops
+radius_rule,cDt_rho_A3
+field_density,A3_rho2_C
+central_density,A3_rho0sq_R4
+load_rule,mean_A3_one_minus_rho
+shear_proxy,std_D3
+closure_rule,R3
+cosmology_scored,False
+gr_derived,False
+next,threefold_reducer_then_cosmology
