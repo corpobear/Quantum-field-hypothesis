@@ -1,55 +1,45 @@
-# Current MCIFT Status: v0.53 Sound / Acoustic Spread Bridge
+# Current MCIFT Status: v0.54 Cosmology Coarse-Graining Layer
 
-**Status:** speculative theoretical framework / toy collider scaffold; not established physics.  
-**Current bridge test:** v0.53 sound / acoustic spread bridge.  
-**Previous bridge test:** v0.52 channel-specific clock / rotation bridge.
+**Status:** speculative theoretical framework / toy cosmology scaffold; not established physics.  
+**Current layer:** v0.54 cosmology coarse-graining test.  
+**Previous bridge test:** v0.53 sound / acoustic spread bridge.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.53 adds an internal sound/pressure-wave bridge. In this scaffold, sound means a pressure or phonon-like wave inside the dense field medium, not ordinary air sound. The acoustic mode changes shell spread and gives channels additional sound-specific width factors, so branching ratios shift beyond v0.52.
+MCIFT v0.54 promotes the improved collision mechanics into coarse-grained cosmology variables. Visible, hidden/sink, rotation, radiation, and acoustic-shell branches become effective density sectors; time dilation becomes a lapse field; sound spread becomes an acoustic-horizon proxy; and hidden load plus sound spread enter a first growth-kernel proxy.
 ```
 
 ---
 
-## v0.53 result
+## v0.54 result
 
 ```text
-verdict = PASS_SOUND_SPREAD_BRIDGE
-criteria_pass_count = 11/11
+verdict = PASS_COSMOLOGY_COARSE_GRAIN_SCAFFOLD
+criteria_pass_count = 12/12
+raw_gravity_total = 1.052074597483
+visible_gravity_fraction_normalized = 0.616356
+hidden_gravity_fraction_normalized = 0.178592
+rotation_gravity_fraction_normalized = 0.095371
+radiation_fraction_normalized = 0.051573
+acoustic_shell_fraction_normalized = 0.058107
 c_sound_proxy = 0.582034
-omega_sound_proxy = 0.058545
-omega_lab = 0.062558
-acoustic_resonance = 0.962377
-acoustic_mach = 0.666259
-pressure_wave_amplitude = 0.207941
-surface_ripple_index = 0.333447
-radial_spread_factor = 1.094666
-shell_radius_before_sound = 9.941601
-shell_radius_after_sound = 10.882735
-shell_width_before_sound = 2.640000
-shell_width_after_sound = 3.088810
-Gamma_lab_sound_raw_MeV = 3.964892
-proper_width_scale_needed = 1.026510
-universal_kappa_time_needed = 1.013168
-max_abs_BR_delta_pct_after_sound = 4.913465
-max_abs_signal_strength_delta_pct_after_sound = 7.790001
+w_sound_proxy = 0.338764
+lapse_N_at_a1 = 0.869985
+H_lab_over_H_core_at_a1 = 1.149445
+sound_horizon_proxy_at_a1 = 0.394142
+inverse_sound_scale_proxy = 2.537156
 ```
 
-Branching-ratio changes after sound spread:
+Growth-kernel proxy:
 
 ```text
-bb      -1.316439 %
-WW      +2.741818 %
-gg      +1.860716 %
-tau     -0.523144 %
-cc      -0.978220 %
-ZZ      +2.741818 %
-gamma   +4.913465 %
-Zgamma  +4.238068 %
-mumu    -1.538511 %
+mu_eff(k=0.01) = 1.147401
+mu_eff(k=0.1)  = 1.147026
+mu_eff(k=1)    = 1.118137
+mu_eff(k=10)   = 0.983284
 ```
 
 ---
@@ -57,20 +47,21 @@ mumu    -1.538511 %
 ## Analysis result files
 
 ```text
-models/sound_spread_bridge_v0.53.md
-analysis/results_v0.53/mcift_v0.53_sound_spread_report.md
-analysis/results_v0.53/mcift_v0.53_sound_spread_metrics.csv
-analysis/results_v0.53/mcift_v0.53_sound_channel_widths.csv
-analysis/results_v0.53/mcift_v0.53_sound_signal_summary.md
-analysis/results_v0.53/mcift_v0.53_sound_spread_criteria.csv
+models/cosmology_coarse_grain_v0.54.md
+analysis/results_v0.54/mcift_v0.54_cosmology_coarse_grain_report.md
+analysis/results_v0.54/mcift_v0.54_cosmology_coarse_grain_metrics.csv
+analysis/results_v0.54/mcift_v0.54_components.csv
+analysis/results_v0.54/mcift_v0.54_growth_kernel.csv
+analysis/results_v0.54/mcift_v0.54_expansion_lapse_samples.csv
+analysis/results_v0.54/mcift_v0.54_criteria.csv
 ```
 
-The plots and full signal-strength matrix are in the local output bundle.
+The full expansion history and plots are in the local output bundle.
 
 ---
 
 ## Safe wording
 
 ```text
-v0.53 is an internal acoustic-spread bridge. It is not ordinary sound in air, not a full quantum field calculation, and not collider evidence. It shows that a pressure-wave scaffold can influence shell spread and branching ratios inside MCIFT.
+v0.54 is a coarse-graining scaffold. It is not an observational cosmology fit and not a replacement for standard cosmology. It defines how the local collision mechanics can be lifted into large-scale density, lapse, sound, rotation, and growth equations.
 ```
