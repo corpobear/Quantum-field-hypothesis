@@ -1,0 +1,6 @@
+observable,mu_pred,mu_target_SM,delta_pct
+global,1,1,0
+ggF_to_bosons,1,1,0
+VBF_to_bosons,1,1,0
+VH_to_bottom,1,1,0
+ttH_to_visible,1,1,0
