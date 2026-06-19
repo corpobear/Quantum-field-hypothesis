@@ -1,0 +1,9 @@
+test,prediction,target,residual,status
+visible_only_conservation,fails,closed_source,0.030000000000,fail_expected
+hidden_information_exchange,balanced,balanced,0.000000000000,pass_toy
+combined_source_conservation,closed,zero_residual,0.000000000000,pass_toy
+linearized_consistency,conditional,consistent_source,0.000000000000,pass_conditionally
+v081_tensor_bridge,preserved,preserved,0,pass
+full_nonlinear_gr,not_derived,required,not_available,fail_not_full_gr
+covariant_conservation,not_derived,required,not_available,fail_not_full_gr
+observational_test,not_performed,required,not_available,not_tested
