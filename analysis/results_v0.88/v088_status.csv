@@ -1,0 +1,10 @@
+metric,value
+version,v0.88
+result,FULL_TABLE_ATTEMPT_DATA_TABLES_MISSING
+pp_units,72
+pPb_units_per_direction,26
+pPb_units_total,78
+full_numeric_table_loaded,False
+full_residuals_built,False
+v087_preserved,True
+next,load_HEPData_or_transcribe_tables
