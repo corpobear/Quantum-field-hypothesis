@@ -1,0 +1,10 @@
+input,value,label
+H_proxy_relative,0.977215138494,derived_v097
+mean_shear_proxy,0.063915576742,derived_v097
+H0_planck,67.360000000000,anchor
+sigma_H0_planck,0.540000000000,anchor
+H0_shoes,73.040000000000,anchor
+sigma_H0_shoes,1.040000000000,anchor
+S8_planck,0.832000000000,anchor
+S8_des_y3,0.776000000000,anchor
+sigma_S8_des_y3,0.017000000000,anchor
