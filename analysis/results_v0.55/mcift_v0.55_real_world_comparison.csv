@@ -1,0 +1,3 @@
+dataset,z,observed_H,sigma_H,model_H,residual_sigma
+Planck2018_base_LCDM_H0,0.0,67.4,0.5,67.4,0.0
+Photometric_cosmic_chronometer_2023_H075,0.75,105.0,10.756393447619885,104.76640883418504,-0.02171649512008551
