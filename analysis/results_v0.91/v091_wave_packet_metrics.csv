@@ -1,0 +1,13 @@
+metric,flat_wave,single_defect_wave
+weights,[1_1_1_1],[0p5_1_1_1]
+lattice_N,31,31
+sigma,2.000000000000,2.000000000000
+dt,0.200000000000,0.200000000000
+steps,30,30
+cov_eig_min,12.550493910591,7.388589383544
+cov_eig_mid,12.550493910591,13.559273482453
+cov_eig_max,12.550493910591,13.559273482453
+anisotropy,0.000000000000,0.835164031805
+wave_anisotropy_detected,False,True
+cfl_guard_dt_le_1,True,True
+physical_lightcone_claimed,False,False
