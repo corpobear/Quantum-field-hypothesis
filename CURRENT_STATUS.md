@@ -22,6 +22,17 @@ WEAK_FIELD_GR_BRIDGE_PASSES_CLASSIC_LIMITS_FULL_GR_NOT_DERIVED
 
 ---
 
+## Documentation history
+
+```text
+docs/mcift_findings_v0.1_to_v0.80.md
+docs/documentation_gap_audit.md
+```
+
+The findings history documents the project from v0.1 upward. v0.1-v0.15 are marked as missing/pre-archive because no authoritative committed result files were found for those layers.
+
+---
+
 ## Metric bridge
 
 ```text
@@ -64,6 +75,8 @@ missing: full field equations, anisotropic metric tensor, frame dragging, gravit
 ## Main files on master
 
 ```text
+docs/mcift_findings_v0.1_to_v0.80.md
+docs/documentation_gap_audit.md
 models/mcift_v0.80_weak_field_bridge_note.md
 analysis/results_v0.80/v080_weak_field_gr_bridge_metrics.csv
 analysis/results_v0.80/v080_weak_field_gr_bridge_tests.csv
