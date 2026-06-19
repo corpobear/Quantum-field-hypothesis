@@ -1,0 +1,8 @@
+check,result
+seed_M0_2,pass
+r_core_positive,pass
+rho_bounded,pass
+mean_deformation_positive,pass
+rho_increases_outward,pass
+isotropic_curvature_zero,pass
+cosmo_scored,no
