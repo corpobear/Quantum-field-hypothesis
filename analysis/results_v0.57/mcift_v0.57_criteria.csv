@@ -1,0 +1,13 @@
+criterion,passed
+single_executable_unified_field_path,True
+node_link_face_cell_preserved,True
+entanglement_from_chi_and_omega,True
+rotation_from_discarded_vibration,True
+visible_hidden_from_projection,True
+lapse_from_load_and_rotation,True
+sound_from_coherence_density_load,True
+channels_from_Wc_projection,True
+Q_transfer_from_field_means,True
+cosmology_from_coarse_grain,True
+outputs_written_from_one_run,True
+not_claimed_as_completed_physics,True
