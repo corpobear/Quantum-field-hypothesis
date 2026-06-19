@@ -9,6 +9,19 @@
 
 ---
 
+## Start here
+
+```text
+docs/mcift_findings_v0.1_to_v0.80.md    consolidated project findings history
+docs/documentation_gap_audit.md          missing/stale documentation audit
+CURRENT_STATUS.md                        current repo status
+models/mcift_v0.80_weak_field_bridge_note.md
+analysis/results_v0.80/v080_weak_field_gr_bridge_metrics.csv
+analysis/results_v0.80/v080_weak_field_gr_bridge_tests.csv
+```
+
+---
+
 ## Current focus
 
 The main branch now tests whether MCIFT time-lapse and spatial-lapse can form a weak-field metric bridge:
@@ -65,15 +78,9 @@ missing: full field equations, anisotropic metric tensor, frame dragging, gravit
 
 ---
 
-## Main documents
+## Documentation status
 
-```text
-models/mcift_v0.80_weak_field_bridge_note.md
-analysis/results_v0.80/v080_weak_field_gr_bridge_metrics.csv
-analysis/results_v0.80/v080_weak_field_gr_bridge_tests.csv
-CURRENT_STATUS.md
-README.md
-```
+A consolidated history now exists for v0.1 through v0.80. The audit still marks v0.1-v0.15, v0.31-v0.35, and v0.41-v0.48 as needing deeper archival reconstruction.
 
 ---
 
