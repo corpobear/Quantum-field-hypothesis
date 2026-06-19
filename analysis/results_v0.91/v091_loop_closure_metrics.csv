@@ -1,0 +1,9 @@
+metric,flat_loop,phase_defect_loop
+phase_1_rad,0.000000000000,0.120000000000
+phase_2_rad,0.000000000000,0.000000000000
+phase_3_rad,0.000000000000,0.000000000000
+phase_4_rad,0.000000000000,0.000000000000
+closure_R_gamma_rad,0.000000000000,0.120000000000
+abs_closure_rad,0.000000000000,0.120000000000
+closure_clean,True,False
+defect_detected,False,True
