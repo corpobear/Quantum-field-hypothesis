@@ -1,68 +1,53 @@
-# Current MCIFT Status: v0.73 Cell-Action Spatial Lapse Cosmology Retest
+# Current MCIFT Status: v0.80 Weak-Field GR Bridge
 
-**Status:** speculative first-principle scaffold; not established physics.  
-**Current layer:** v0.73 cell-action spatial lapse cosmology retest.  
-**Previous layer:** v0.72 spatial scale-lapse retest.
+**Status:** speculative weak-field bridge; not full GR.  
+**Current layer:** v0.80 weak-field metric bridge.  
+**Previous layer:** v0.73 cell-action spatial lapse cosmology retest.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.73 derives the spatial ruler correction from a minimal one-zone strain-energy action instead of only asserting sigma_X = E_DV^(1/3). The resulting cosmology retest remains close on Planck-like H0, H(z), DESI LyA BAO, BBN, DES Y3-style S8, and Pantheon+ OmegaM, but still fails local distance-ladder H0 and Planck S8 if the growth proxy is literal.
+MCIFT v0.80 combines time-lapse and spatial-lapse into an isotropic weak-field metric. It reproduces the classic weak-field checks by construction, but it does not derive the full field equations, tensor modes, frame dragging, or gravitational waves.
 ```
 
 ---
 
-## v0.73 verdict
+## v0.80 verdict
 
 ```text
-CELL_ACTION_SPATIAL_LAPSE_REPRODUCES_DISTANCE_CLOSES_BUT_FULL_COSMOLOGY_STILL_MIXED
+WEAK_FIELD_GR_BRIDGE_PASSES_CLASSIC_LIMITS_FULL_GR_NOT_DERIVED
 ```
 
 ---
 
-## Minimal action derivation
+## Metric bridge
 
 ```text
-sigma_X = exp(phi_X)
-J_X = C_ITF * O_DV
-F_X(phi_X) = 1/2 K_X phi_X^2 - J_X phi_X
-partial F_X / partial phi_X = 0
-phi_X = J_X / K_X
-K_X = 3 (N_V + N_A) = 6
+psi = GM / (c^2 r)
+ds^2 = -exp(-2 psi) c^2 dt^2 + exp(2 psi) (dx^2 + dy^2 + dz^2)
 ```
 
-Numerical result:
+Weak field:
 
 ```text
-C_ITF = 0.689064
-O_DV = 0.612372436
-K_X = 6
-phi_X = 0.070040089
-sigma_X = 1.072549870
+g_00 ~= -(1 - 2 psi)
+g_ij ~= (1 + 2 psi) delta_ij
+PPN gamma = 1
 ```
 
 ---
 
-## Cosmology retest
+## Test result
 
 ```text
-H0_prediction = 67.163010
-Planck_H0 residual = -0.364797 sigma
-SH0ES_H0 residual = -5.650952 sigma
-PantheonPlus_H0 residual = -5.760900 sigma
-PantheonPlus_OmegaM residual = -1.038889 sigma
-
-H075_prediction = 103.465987
-H075_delta_vs_compact_LCDM = -0.351618 percent
-
-DESI_LyA_DH/rd residual = +0.146909 sigma
-DESI_LyA_DM/rd residual = +0.602802 sigma
-
-BBN omega_b h2 residual = +0.345455 sigma
-DESY3_S8 residual = +0.206750 sigma
-Planck_S8 residual = -4.329115 sigma
+PPN gamma = 1.000000
+Newtonian inverse-square limit = recovered
+gravitational redshift coefficient = 1.000000
+solar-limb light bending = 1.751243 arcsec
+Mercury perihelion precession = 42.981975 arcsec / century
+Shapiro delay coefficient = 2.000000
 ```
 
 ---
@@ -70,9 +55,8 @@ Planck_S8 residual = -4.329115 sigma
 ## Strict status
 
 ```text
-close/pass-like: Planck-like H0, H(z=0.75), DESI LyA BAO, BBN baryon density, DES Y3-style S8, Pantheon+ OmegaM
-fail/tension: SH0ES H0, Pantheon+ local-distance-ladder H0, Planck S8 if the growth proxy is literal
-not implemented: full CMB Cl, full SN distance-modulus residuals, full BAO covariance, BBN reaction network
+passes: Newtonian limit, redshift coefficient, PPN gamma, light bending, Mercury precession, Shapiro delay coefficient
+missing: full field equations, anisotropic metric tensor, frame dragging, gravitational waves, cosmological field equation from action
 ```
 
 ---
@@ -80,11 +64,9 @@ not implemented: full CMB Cl, full SN distance-modulus residuals, full BAO covar
 ## Main files on master
 
 ```text
-models/mcift_v0.73_cell_action_spatial_lapse_note.md
-analysis/results_v0.73/v073_cell_derived_spatial_lapse_metrics.csv
-analysis/results_v0.73/v073_cell_derived_cosmology_tests.csv
-main.md
-README.md
+models/mcift_v0.80_weak_field_bridge_note.md
+analysis/results_v0.80/v080_weak_field_gr_bridge_metrics.csv
+analysis/results_v0.80/v080_weak_field_gr_bridge_tests.csv
 CURRENT_STATUS.md
 ```
 
@@ -93,8 +75,7 @@ CURRENT_STATUS.md
 ## Next target
 
 ```text
-v0.74 should move from one-zone action to cell-resolved action:
-F_X = sum_i [1/2 K_i phi_i^2 + 1/2 |grad phi_i|^2 - J_i phi_i]
-(-nabla^2 + K_i) phi_i = J_i
-sigma_X(a) = exp[weighted average of phi_i over the observed redshift shell]
+v0.81 should move from one scalar bridge field to tensor strain:
+g_mu_nu = eta_mu_nu + h_mu_nu
+Then test frame dragging, gravitational waves, and conservation constraints.
 ```
