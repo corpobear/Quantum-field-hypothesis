@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.57 executable unified field
+**Current version:** v0.58 3D real-data retest
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,64 +11,45 @@
 
 ## Current focus
 
-MCIFT now has an executable unified-field scaffold:
+MCIFT now has a strict 3D retest layer:
 
 ```text
-v0.56 formula:
-  one extended field object defines collision, visible/hidden, rotation, clock, sound, channels, cosmology, and Q_i transfer readouts
-
 v0.57 execution:
-  a deterministic Python run instantiates node/link/face/cell fields and computes those readouts from one code path
+  one deterministic 3D unified-field run produces channels, branches, transfer, and background readouts
+
+v0.58 retest:
+  the same 3D output is compared in raw, transfer, and calibrated modes
 ```
 
 Current verdict:
 
 ```text
-v0.57 executable unified field = PASS_EXECUTABLE_UNIFIED_FIELD_SCAFFOLD
+v0.58 3D retest = PARTICLE_RAW_FAIL_COSMOLOGY_TRANSFER_PASS_SCAFFOLD
 ```
 
-This is an executable closure test, not a completed physics model or observational fit.
+This is a retest scaffold, not a completed particle or cosmology fit.
 
 ---
 
-## v0.57 result
+## v0.58 particle-channel result
 
 ```text
-grid_n = 34
-cells = 39304
-mean_chi = 0.262683
-mean_Omega = 0.381430
-mean_E = 1.111738
-mean_R_lock = 0.964146
-mean_rho_ratio = 1.418517
-mean_lapse_N = 0.830136
-mean_omega_lab = 0.068444
-mean_c_sound = 0.719971
-collapse_fraction = 0.103908
+BR_L1_raw_vs_ref = 0.092428
+max_abs_BR_delta_pct_raw_vs_ref = 100.000000
+failed_channels_10pct = gg,tau,cc,gamma,Zgamma,mumu
+raw_gamma_delta_pct = -99.924245
+raw_Zgamma_delta_pct = -99.960445
+raw_cc_delta_pct = -100.000000
 ```
 
-Branch fractions from the field:
+## v0.58 background result
 
 ```text
-visible_raw = 0.542599
-hidden_raw = 0.446601
-rotation_raw = 0.001410
-sound_raw = 0.009269
-radiation_raw = 0.000121
-```
-
-After-transfer readouts:
-
-```text
-Omega_visible_today = 0.172785
-Omega_hidden_today = 0.142215
-Omega_m_like_today = 0.315000
-Omega_rotation_today = 0.000027
-Omega_acoustic_today = 0.000336
-Omega_radiation_today = 0.000000
-Omega_smooth_lapse_reservoir_today = 0.684636
-H075_model = 103.897709
-H075_delta_pct_vs_reference = 0.064175
+H075_raw_3d = 156.663819
+H075_raw_delta_pct_vs_reference = 50.883364
+H075_transfer_3d = 103.897709
+H075_transfer_delta_pct_vs_reference = 0.064175
+H075_transfer_residual_sigma_vs_CC_obs = -0.102478
 ```
 
 ---
@@ -77,14 +58,14 @@ H075_delta_pct_vs_reference = 0.064175
 
 ```text
 CURRENT_STATUS.md
-simulations/mcift_v0_57_unified_field.py
-analysis/results_v0.57/mcift_v0.57_unified_field_report.md
-analysis/results_v0.57/mcift_v0.57_unified_field_metrics.csv
-analysis/results_v0.57/mcift_v0.57_unified_field_branches.csv
-analysis/results_v0.57/mcift_v0.57_unified_field_channels.csv
-analysis/results_v0.57/mcift_v0.57_unified_field_growth_kernel.csv
-analysis/results_v0.57/mcift_v0.57_transfer_retention.csv
-analysis/results_v0.57/mcift_v0.57_criteria.csv
+simulations/mcift_v0_58_3d_realdata_retest.py
+analysis/results_v0.58/mcift_v0.58_3d_realdata_retest_report.md
+analysis/results_v0.58/mcift_v0.58_3d_realdata_metrics.csv
+analysis/results_v0.58/mcift_v0.58_cern_channels.csv
+analysis/results_v0.58/mcift_v0.58_cern_calibration_needed.csv
+analysis/results_v0.58/mcift_v0.58_cosmology_Hz.csv
+analysis/results_v0.58/mcift_v0.58_reference_comparison.csv
+analysis/results_v0.58/mcift_v0.58_criteria.csv
 ```
 
 ---
@@ -92,7 +73,7 @@ analysis/results_v0.57/mcift_v0.57_criteria.csv
 ## Important limitation
 
 ```text
-v0.57 executes the unified scaffold, but it still contains assigned channel/retention coefficients. The next step is to replace those with measurements from the evolved 3D field geometry itself.
+v0.58 does not pass raw particle-channel comparison and does not pass raw cosmology. It shows exactly where the 3D model still needs work: loop/surface particle channels, cc projection, and transfer/smoothing dynamics.
 ```
 
 ---
@@ -102,10 +83,10 @@ v0.57 executes the unified scaffold, but it still contains assigned channel/rete
 Next required tests:
 
 ```text
-1. Remove assigned channel/category coefficients.
-2. Measure channel weights W_c directly from field geometry.
-3. Derive Q_i transfer rates dynamically from Psi_i evolution.
-4. Rerun particle and cosmology outputs with no bridge calibration.
+1. Add explicit 3D loop/surface readouts for gamma and Zgamma.
+2. Add explicit cc channel projection.
+3. Derive Q_i smoothing dynamically instead of using retained factors.
+4. Rerun raw 3D particle and cosmology tests before any calibrated comparison.
 ```
 
 ---
