@@ -1,0 +1,10 @@
+metric,value
+version,v0.88
+status,honesty_first_data_blocker
+full_numeric_tables_loaded,False
+full_prediction_possible,False
+full_validation_possible,False
+v086_trend_check,preserved
+v087_representative_scaffold,preserved
+v088_all_bin_attempt,blocked_by_missing_tables
+next_step,load_official_tables_or_transcribe_with_provenance
