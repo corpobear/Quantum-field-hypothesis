@@ -1,14 +1,14 @@
 # MCIFT Main Paper: Inverse Timeflow and Dark-Visible Width Envelope
 
 **Status:** speculative research scaffold; not established physics.  
-**Current version:** v0.70 dual first-principle prediction test.  
+**Current version:** v0.71 expanded cosmology benchmark.  
 **Author:** Adrian Newton / corpobear.
 
 ---
 
 ## Abstract
 
-This paper records the current MCIFT development path from raw 3D field readouts to inverse-timeflow and dark-visible gravitational envelope tests. The current result is not a proof of new physics. It is an internal consistency scaffold showing that a single first-principle-style structure can make compact predictions for both cosmology and CERN/Higgs-width behavior without using backpropagation for the final blind prediction tests.
+This paper records the current MCIFT development path from raw 3D field readouts to inverse-timeflow and dark-visible gravitational envelope tests. The current result is not a proof of new physics. It is an internal consistency scaffold showing that a single first-principle-style structure can make compact predictions for CERN/Higgs-width behavior and partially close several cosmology benchmarks, while failing others.
 
 ---
 
@@ -43,43 +43,18 @@ v0.61: first-principle inverse-timeflow improved raw cosmology H(z=0.75).
 v0.62: blind CERN inverse-timeflow predicted pass-like branching ratios without backpropagation.
 v0.63: dark-visible gravitational envelope fixed the total-width deficit while preserving branching ratios.
 v0.64: consolidated the formula and defined the next cell-resolved first-principle version.
-v0.70: runs two compact first-principle prediction tests: CERN/Higgs and cosmology.
+v0.70: ran two compact first-principle prediction tests: CERN/Higgs and cosmology.
+v0.71: expands cosmology to Planck-like H0, SH0ES H0, DESI LyA BAO, BBN baryon density, and S8-style checks.
 ```
 
 ---
 
 ## First-principle sector formula
 
-Let:
-
-```text
-N_D = dark-sector sink count
-N_V = visible-sector count
-N_A = anchor count
-A_lock = retained scale-lock amplitude
-```
-
-The inverse-timeflow load is:
-
 ```text
 C_ITF = A_lock * N_D / (N_D + N_V + N_A)
-```
-
-The lab-time factor is:
-
-```text
 tau_ITF = exp[-C_ITF / (N_V + N_A)]
-```
-
-The dark-visible gravitational overlap is:
-
-```text
 O_DV = 2 sqrt(N_D N_V) / (N_D + N_V + N_A)
-```
-
-The universal width envelope is:
-
-```text
 E_DV = exp[C_ITF * O_DV / (N_V + N_A)]
 ```
 
@@ -99,68 +74,49 @@ E_DV^(1/3) = 1.072549870
 
 ---
 
-## v0.70 Test 1: CERN/Higgs prediction
-
-The collider map is:
-
-```text
-tau_i = exp[-C_ITF * s_i / (N_V + N_A)]
-Gamma_i_blind = tau_i * Gamma_i_core
-Gamma_i_final = E_DV * Gamma_i_blind
-```
-
-The v0.70 compact prediction is:
+## v0.70 CERN/Higgs prediction
 
 ```text
 width_prediction = 4.107221 MeV
 width_delta_vs_4.07 = +0.914526 percent
 max_channel_delta = 8.247649 percent
 BR_L1 = 0.052372
-```
-
-Status:
-
-```text
-CERN/Higgs compact prediction: pass-like
-backpropagation used: False
-target-loss fit used: False
+backpropagation used = False
+target-loss fit used = False
 ```
 
 ---
 
-## v0.70 Test 2: Cosmology prediction
-
-The cosmology map applies the dark-visible envelope as a 3D expansion projection:
+## v0.71 expanded cosmology benchmark
 
 ```text
-H075_v070 = H075_v061 / E_DV^(1/3)
-```
+H0_prediction = 67.163010
+Planck_H0 residual = -0.364797 sigma
+SH0ES_H0 residual = -5.650952 sigma
 
-The compact prediction is:
-
-```text
 H075_prediction = 103.465987
-H075_compact_LCDM_anchor = 103.831075
-H075_delta = -0.351618 percent
+H075_delta_vs_compact_LCDM = -0.351618 percent
 H075_residual_vs_CC = -0.142614 sigma
-raw_to_v0.70_improvement = 144.712194x
+
+DESI_LyA_DH/rd prediction = 8.646895
+DESI_LyA_DH/rd residual = +0.146909 sigma
+DESI_LyA_DM/rd prediction = 39.311695
+DESI_LyA_DM/rd residual = +0.602802 sigma
+
+omega_b h2 prediction = 0.02237
+BBN2024 residual = +0.345455 sigma
+
+S8_prediction = 0.775722
+DESY3_S8 residual = +0.206750 sigma
+Planck_S8 residual = -4.329115 sigma
 ```
 
-BAO sanity check:
+Strict interpretation:
 
 ```text
-BAO_peak = 152.29 Mpc
-BAO_reference_rd = 147.09 Mpc
-fractional_error = 0.035353
-```
-
-Status:
-
-```text
-cosmology H(z) compact prediction: close
-full BAO ladder: not implemented
-CMB spectra: not implemented
-BBN network: not implemented
+close/pass-like: Planck-like H0, H(z=0.75), DESI LyA BAO, BBN baryon density, DES Y3-style S8
+fail/tension: SH0ES local H0, Planck S8 if the growth proxy is taken literally
+not implemented: full CMB Cl, full SN distance moduli, full BAO covariance, BBN reaction network
 ```
 
 ---
@@ -181,12 +137,6 @@ O_DV(a) = 2 sqrt(Rho_D(a) Rho_V(a))
           / [Rho_D(a) + Rho_V(a) + Rho_A(a) + epsilon]
 ```
 
-Then:
-
-```text
-E_DV(a) = exp[C_ITF(a) * O_DV(a) / (N_V + N_A)]
-```
-
 Observable maps:
 
 ```text
@@ -201,7 +151,7 @@ Gamma_i_lab = E_DV * tau_i * Gamma_i_core
 Safe:
 
 ```text
-MCIFT v0.70 is a speculative compact prediction scaffold. It tests whether one first-principle-style formula can produce close CERN/Higgs and cosmology readouts without backpropagation or target-loss fitting.
+MCIFT v0.71 is a speculative expanded benchmark. It tests whether one first-principle-style formula can remain close to several real cosmology anchors while exposing where the formula fails or remains unimplemented.
 ```
 
 Unsafe:
@@ -209,5 +159,5 @@ Unsafe:
 ```text
 MCIFT proves a new interaction.
 MCIFT replaces the Standard Model or Lambda-CDM.
-The v0.70 formula is experimentally confirmed.
+The v0.71 formula is experimentally confirmed.
 ```
