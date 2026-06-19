@@ -1,64 +1,51 @@
-# Current MCIFT Status: v0.49 Core Load Feedback Test
+# Current MCIFT Status: v0.50 Kappa Bridge
 
-**Status:** speculative theoretical framework / toy collider and cosmology scaffold; not established physics.  
-**Current strict feedback test:** v0.49 core load feedback test.  
-**Previous split test:** v0.48 visible/hidden branch split.  
-**Previous shape-flow test:** v0.47 aero drill-sink stabilization test.
+**Status:** speculative theoretical framework / toy collider scaffold; not established physics.  
+**Current bridge test:** v0.50 kappa / width bridge.  
+**Previous feedback test:** v0.49 core load feedback test.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.49 feeds the separately computed hidden branch back into the rotating core as a local load. The visible branch remains separate. The strict verdict is PASS_CORE_LOAD_FEEDBACK: 18/18 criteria passed. The effective core load is 1.444487 times the visible-only load, but the feedback also raises coherence support, keeping core pressure below capacity.
+MCIFT v0.50 adds an explicit kappa-framework bridge. It computes partial widths, branching ratios, and representative rate modifiers from kappa values. The current benchmark is calibrated to the SM-like reference point, so it is a compatibility bridge rather than a first-principle derivation.
 ```
 
 ---
 
-## v0.49 strict result
+## v0.50 result
 
 ```text
-verdict = PASS_CORE_LOAD_FEEDBACK
-criteria_pass_count = 18/18
-E_visible_pool = 0.605407
-E_hidden_sink = 0.102906
-E_rotation_bound = 0.131844
-C_sink = 1.704656
-xi_rot = 0.710507
-G_visible = 0.605407
-G_hidden = 0.175419
-G_rot = 0.093676
-G_load = 0.874502
-load_strength_vs_visible = 1.444487
-hidden_fraction_of_load = 0.200593
-rotation_fraction_of_load = 0.107119
-capacity_before_feedback = 0.854501
-capacity_after_feedback = 0.910654
-core_pressure_before_feedback = 0.727761
-core_pressure_after_feedback = 0.717440
-shell_radius_after_feedback = 9.941601
-outer_hidden_radius = 10.582795
+verdict = PASS_KAPPA_BRIDGE_CALIBRATED
+Gamma_SM_total_MeV = 4.070000
+Gamma_fit_total_MeV = 4.070000
+kappa_H_squared = 1.000000
+BR_BSM_fit = 0.000000
+max_abs_BR_delta_pct = 0.000000
+max_abs_signal_strength_delta_pct = 0.000000
 ```
 
-Budget fractions:
+Kappa benchmark:
 
 ```text
-visible = 0.648453
-hidden = 0.110223
-rotation = 0.141219
-radiation = 0.054259
-shell = 0.045846
+kappa_b = 1
+kappa_W = 1
+kappa_Z = 1
+kappa_g = 1
+kappa_tau = 1
+kappa_c = 1
+kappa_gamma = 1
+kappa_mu = 1
+kappa_top = 1
 ```
 
-Visible branch:
+Geometry-prior warning:
 
 ```text
-bb_like = 0.581674
-WZ_like = 0.244245
-gg_like = 0.104854
-tau_like = 0.064263
-gamma_like = 0.001234
-mumu_like = 0.001920
+geometry_prior_kappa_g = 1.1321962508
+geometry_prior_kappa_gamma = 0.7373106620
+geometry_prior_kappa_mu = 2.9745865530
 ```
 
 ---
@@ -66,17 +53,20 @@ mumu_like = 0.001920
 ## Analysis result files
 
 ```text
-analysis/results_v0.49/mcift_v0.49_core_load_feedback_metrics.csv
-analysis/results_v0.49/mcift_v0.49_budget.csv
-analysis/results_v0.49/mcift_v0.49_criteria.csv
+models/kappa_width_bridge_v0.50.md
+paper/v0.50_kappa_width_bridge_addendum.md
+analysis/results_v0.50/mcift_v0.50_kappa_bridge_report.md
+analysis/results_v0.50/mcift_v0.50_kappa_bridge_metrics.csv
+analysis/results_v0.50/mcift_v0.50_kappa_fit_values.csv
+analysis/results_v0.50/mcift_v0.50_partial_widths_branching_ratios.csv
+analysis/results_v0.50/mcift_v0.50_signal_strength_summary.csv
+analysis/results_v0.50/mcift_v0.50_geometry_prior_vs_kappa_fit.csv
 ```
-
-The full report, model note, plots, channels, and history are in the local output bundle because some text-heavy repo uploads were blocked by the connector filter.
 
 ---
 
 ## Safe wording
 
 ```text
-v0.49 is a toy core-load feedback result. It treats the hidden branch as a separate local load on the rotating core and keeps it out of the visible channel split. It is not a measured dark-matter model, general-relativistic simulation, or collider evidence.
+v0.50 is a calibrated bridge layer. It reproduces the SM-like reference table, but it does not yet derive kappa values from MCIFT first principles.
 ```
