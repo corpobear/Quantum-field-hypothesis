@@ -1,0 +1,13 @@
+criterion,passed
+components_normalized,True
+hidden_gravity_active,True
+sound_speed_finite,True
+sound_horizon_positive,True
+lapse_finite_positive,True
+H_positive,True
+rotation_term_present,True
+acoustic_shell_present,True
+large_scale_hidden_enhancement,True
+small_scale_sound_suppression,True
+transfer_terms_conservative_form_documented,True
+not_observational_fit,True
