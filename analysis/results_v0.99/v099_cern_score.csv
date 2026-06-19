@@ -1,0 +1,7 @@
+observable,target,sigma,model,residual_sigma,label,status
+Higgs_width_SM_reference_MeV,4.070000000000,NA,4.109958967868,NA,derived_from_load,reference_close_not_experimental_score
+CMS_HZZ_signal_strength,0.940000000000,0.114017542510,1.000000000000,0.526234811584,derived_mean_A3,pass_like
+ATLAS_top_entanglement_D,-0.537000000000,0.019104973175,-0.504201958707,1.716727942721,derived_loop_balance,close_not_pass_claim
+CMS_top_entanglement_D,-0.480000000000,0.027500000000,-0.504201958707,-0.880071225685,derived_loop_balance,pass_like
+Higgs_branching_ratios,not_numeric_scored,NA,not_computed,NA,not_tested,pending_channel_specific_rule
+Higgs_channel_signal_strengths,not_numeric_scored,NA,not_computed,NA,not_tested,pending_channel_specific_rule
