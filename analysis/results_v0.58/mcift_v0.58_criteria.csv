@@ -1,0 +1,11 @@
+criterion,passed
+one_3d_field_source_used,True
+cern_raw_channels_compared,True
+cosmology_raw_compared,True
+transfer_mode_compared,True
+calibrated_mode_labeled,True
+raw_3d_cern_passes_10pct_all_channels,False
+raw_3d_gamma_loop_channels_fail,True
+raw_3d_cosmology_overexpands,True
+transfer_3d_cosmology_near_reference_H075,True
+not_claimed_as_cern_or_cosmology_proof,True
