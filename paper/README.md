@@ -10,6 +10,7 @@ This folder contains the main MCIFT draft and paper-style addenda.
 
 ```text
 main.md                                           Main theory draft, updated through v0.49 mechanics
+v0.54_cosmology_coarse_grain_addendum.md          Cosmology coarse-graining layer
 v0.50_kappa_width_bridge_addendum.md              Kappa / partial-width bridge addendum
 v0.49_core_load_feedback_addendum.md              Hidden-branch core-load feedback addendum
 v0.40_explicit_3d_spherical_leakage_addendum.md   Explicit 3D spherical leakage collision test
@@ -26,27 +27,37 @@ v0.31_cube_center_six_connector_addendum.md       Cube-center six-connector knot
 
 ---
 
-## Current bridge layer: v0.50 kappa / width bridge
+## Current big-picture layer: v0.54 cosmology coarse-graining
 
 Verdict:
 
 ```text
-PASS_KAPPA_BRIDGE_CALIBRATED
+PASS_COSMOLOGY_COARSE_GRAIN_SCAFFOLD, 12/12 criteria
 ```
 
 Summary:
 
 ```text
-The v0.50 addendum introduces an explicit kappa-framework bridge. It computes partial widths, branching ratios, and representative rate modifiers from kappa values. The current benchmark is calibrated to the SM-like reference point, so it is a compatibility bridge and not a first-principle derivation from MCIFT geometry.
+The v0.54 addendum promotes local collision mechanics into coarse-grained cosmology variables. Visible, hidden/sink, rotation, radiation, and acoustic-shell branches become effective density sectors; time dilation becomes a lapse field; sound spread becomes an acoustic-horizon proxy; and hidden load plus sound spread enter a first growth-kernel proxy.
 ```
 
 Read:
 
 ```text
+paper/v0.54_cosmology_coarse_grain_addendum.md
+models/cosmology_coarse_grain_v0.54.md
+analysis/results_v0.54/mcift_v0.54_cosmology_coarse_grain_metrics.csv
+analysis/results_v0.54/mcift_v0.54_components.csv
+```
+
+---
+
+## Previous bridge layer: v0.50 kappa / width bridge
+
+```text
 paper/v0.50_kappa_width_bridge_addendum.md
 models/kappa_width_bridge_v0.50.md
 analysis/results_v0.50/mcift_v0.50_kappa_bridge_metrics.csv
-analysis/results_v0.50/mcift_v0.50_partial_widths_branching_ratios.csv
 ```
 
 ---
