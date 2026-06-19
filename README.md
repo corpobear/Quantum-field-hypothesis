@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.71 expanded cosmology benchmark
+**Current version:** v0.72 spatial scale-lapse retest
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,73 +11,73 @@
 
 ## Current focus
 
-The main branch now expands the cosmology comparison beyond the v0.70 compact H(z=0.75) check:
+The main branch now tests the missing spatial ruler correction:
 
 ```text
-Planck-like H0
-local SH0ES H0
-H(z=0.75)
-DESI LyA BAO D_H/r_d and D_M/r_d
-BBN baryon density
-S8 weak-lensing / growth-style proxy
-BAO peak sanity check
+previous idea: inverse-timeflow changes the clock
+v0.72 idea: gravity/dark-visible overlap also changes the effective ruler
 ```
 
 Current verdict:
 
 ```text
-v0.71 = EXPANDED_COSMOLOGY_MIXED_CLOSE_ON_EARLY_AND_LENSING_FAILS_LOCAL_H0
+v0.72 = SPATIAL_SCALE_LAPSE_IMPROVES_HZ_AND_DISTANCE_ANCHORS_BUT_NOT_LOCAL_H0_OR_RAW_BAO_PEAK
 ```
 
 ---
 
-## Reworked formula
+## Spatial scale-lapse formula
 
 ```text
-C_ITF = A_lock * N_D / (N_D + N_V + N_A)
-tau_ITF = exp[-C_ITF / (N_V + N_A)]
-O_DV = 2 sqrt(N_D N_V) / (N_D + N_V + N_A)
 E_DV = exp[C_ITF * O_DV / (N_V + N_A)]
+sigma_X = E_DV^(1/3)
+        = exp[C_ITF * O_DV / (3 (N_V + N_A))]
 ```
 
 Current numerical values:
 
 ```text
-N_D = 6
-N_V = 1
-N_A = 1
-A_lock = 0.918752
 C_ITF = 0.689064
-tau_ITF = 0.708551878
 O_DV = 0.612372436
 E_DV = 1.234890003
-E_DV^(1/3) = 1.072549870
+sigma_X = 1.072549870
+spatial_lapse = +7.254987 percent
+```
+
+Observable maps:
+
+```text
+H_lab = H_core / sigma_X
+D_lab = sigma_X * D_core
+k_lab = k_core / sigma_X
+Gamma_lab = sigma_X^3 * tau_i * Gamma_core
 ```
 
 ---
 
-## v0.71 expanded cosmology results
+## v0.72 retest results
 
 ```text
-H0_prediction = 67.163010
-Planck_H0 residual = -0.364797 sigma
-SH0ES_H0 residual = -5.650952 sigma
+H075 before spatial lapse = 111.004443
+H075 after spatial lapse = 103.465987
+H075 delta vs compact LCDM = -0.351618 percent
 
-H075_prediction = 103.465987
-H075_delta_vs_compact_LCDM = -0.351618 percent
-H075_residual_vs_CC = -0.142614 sigma
+Planck-like H0 residual = -0.364797 sigma
+SH0ES H0 residual = -5.650952 sigma
 
-DESI_LyA_DH/rd prediction = 8.646895
-DESI_LyA_DH/rd residual = +0.146909 sigma
-DESI_LyA_DM/rd prediction = 39.311695
-DESI_LyA_DM/rd residual = +0.602802 sigma
+DESI LyA D_H/r_d residual = +0.146909 sigma
+DESI LyA D_M/r_d residual = +0.602802 sigma
+```
 
-omega_b h2 prediction = 0.02237
-BBN2024 residual = +0.345455 sigma
+Raw BAO peak check:
 
-S8_prediction = 0.775722
-DESY3_S8 residual = +0.206750 sigma
-Planck_S8 residual = -4.329115 sigma
+```text
+raw BAO peak = 152.29 Mpc
+reference r_d = 147.09 Mpc
+raw fractional error = +0.035353
+
+if divided by sigma_X: 141.987812 Mpc, fractional error = -0.034690
+if multiplied by sigma_X: 163.340999 Mpc, fractional error = +0.110481
 ```
 
 ---
@@ -85,9 +85,10 @@ Planck_S8 residual = -4.329115 sigma
 ## Strict status
 
 ```text
-close/pass-like: Planck-like H0, H(z=0.75), DESI LyA BAO, BBN baryon density, DES Y3-style S8
-fail/tension: SH0ES local H0, Planck S8 if the growth proxy is taken literally
-not implemented: full CMB Cl, full SN distance moduli, full BAO covariance, BBN reaction network
+works well: H(z=0.75), Planck-like H0, DESI LyA distance ratios
+still fails: local SH0ES H0
+not solved: raw BAO peak scale
+not implemented: full BAO ladder covariance, SN distance moduli, full CMB Cl
 ```
 
 ---
@@ -95,9 +96,9 @@ not implemented: full CMB Cl, full SN distance moduli, full BAO covariance, BBN 
 ## Main documents
 
 ```text
-models/mcift_v0.71_expanded_cosmology_note.md
-analysis/results_v0.71/v071_expanded_cosmology_metrics.csv
-analysis/results_v0.71/v071_expanded_cosmology_tests.csv
+models/mcift_v0.72_spatial_scale_lapse_note.md
+analysis/results_v0.72/v072_spatial_lapse_metrics.csv
+analysis/results_v0.72/v072_spatial_lapse_tests.csv
 main.md
 CURRENT_STATUS.md
 README.md
@@ -108,11 +109,11 @@ README.md
 ## Next version target
 
 ```text
-v0.72 should implement a proper cosmology data table and residual engine:
-full BAO distance ladder
+v0.73 should implement a proper distance-ladder engine:
+full BAO D_M, D_H, D_V table across redshifts
 supernova distance-modulus residuals
-compressed CMB likelihood
-growth solver for f_sigma8 or S8 instead of one envelope proxy
+compressed CMB distance priors
+no per-dataset fitting of sigma_X
 ```
 
 ---
