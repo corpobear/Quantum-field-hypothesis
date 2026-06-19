@@ -1,0 +1,13 @@
+metric,value
+version,v0.93
+layer,bubble_formula_reset
+primitive,center_surface_radius
+net_role,diagonal_sampling
+cone_rule,E_LC_zero_flat
+field_density,A_rho2_C
+mass_rule,int_1_minus_rho
+loop_rule,R_gamma
+cosmo_done,False
+cosmo_next,True
+gr_done,False
+next,retest_cosmo_from_reduced_formula
