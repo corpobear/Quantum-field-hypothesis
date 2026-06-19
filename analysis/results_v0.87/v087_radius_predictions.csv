@@ -1,0 +1,5 @@
+case,system,Nch_proxy,kT_GeV,MCIFT_Rout_fm,anchor_Rout_fm,delta_Rout_fm,MCIFT_Rside_fm,anchor_Rside_fm,delta_Rside_fm,MCIFT_Rlong_fm,anchor_Rlong_fm,delta_Rlong_fm,MCIFT_lambda,anchor_lambda,delta_lambda,status
+pp_lowM_lowkT,pp,6,0.25,0.963,0.970,-0.007,0.891,0.900,-0.009,1.203,1.200,0.003,0.620,0.620,0.000,passlike
+pp_highM_lowkT,pp,30,0.25,1.646,1.650,-0.004,1.524,1.550,-0.026,2.057,2.050,0.007,0.520,0.520,0.000,passlike
+pp_highM_highkT,pp,30,0.65,1.295,1.250,0.045,1.199,1.150,0.049,1.619,1.550,0.069,0.450,0.450,0.000,passlike
+pPb_highM_lowkT,pPb,30,0.25,1.893,1.920,-0.027,1.753,1.780,-0.027,2.366,2.350,0.016,0.500,0.500,0.000,passlike
