@@ -1,63 +1,56 @@
-# Current MCIFT Status: v0.59 Cosmology + CERN Real-World Retest
+# Current MCIFT Status: v0.60 Inverse-Timeflow Backpropagation Retest
 
-**Status:** speculative real-data retest scaffold; not established physics.  
-**Current layer:** v0.59 cosmology + CERN/LHC public-data retest/audit.  
-**Previous layer:** v0.58 3D unified real-data retest.
+**Status:** speculative implementation and retest scaffold; not established physics.  
+**Current layer:** v0.60 inverse-timeflow backpropagation and channel-readout implementation.  
+**Previous layer:** v0.59 cosmology + CERN/LHC public-data retest.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.59 retests the current v0.58 3D output against cosmology and CERN/LHC anchors. Raw 3D particle channels still fail the all-channel criterion, especially gamma, Zgamma, and cc. Raw 3D cosmology still over-expands. Transfer/smoothing and kappa/clock bridges remain useful scaffolds, but they are not independent physical predictions.
+MCIFT v0.60 implements the missing gamma/Zgamma loop-surface readouts, explicit cc projection, and inverse-timeflow backpropagation loss. It then retests against the v0.59 baseline. The particle-channel bridge improves strongly. Cosmology remains at transfer/smoothing scaffold level.
 ```
 
 ---
 
-## v0.59 verdict
+## v0.60 verdict
 
 ```text
-REALDATA_RETEST_FAILS_RAW_BUT_IDENTIFIES_NEXT_IMPLEMENTATION_TARGETS
+IMPLEMENTED_BACKPROP_IMPROVES_CERN_BRIDGE_RAW_STILL_SCAFFOLD
 ```
 
-Detailed verdict:
+Detailed status:
 
 ```text
-COSMOLOGY_RAW_FAIL_TRANSFER_PASS_SCAFFOLD
-CERN_RAW_FAIL_BRIDGE_COMPATIBLE_NOT_PREDICTIVE
-INVERSE_TIMEFLOW_BACKPROP_LOSS_NOT_IMPLEMENTED
+gamma_Zgamma_loop_surface_readout: IMPLEMENTED
+cc_projection: IMPLEMENTED
+inverse_timeflow_backprop_loss: IMPLEMENTED
+CERN implemented-readout before backprop: NEAR_PASS_WITH_GG_REMAINING
+CERN after inverse-timeflow backprop: TRAINED_BRIDGE_PASS_LIKE
+cosmology raw: STILL_FAIL
+cosmology timeflow/transfer: PASS_LIKE_SCAFFOLD
 ```
 
 ---
 
-## Cosmology result
+## Comparison with v0.59
 
 ```text
-Planck-style baryon/CDM ratio = 0.186417
+v0.59 inverse_timeflow_backprop_loss = NOT_IMPLEMENTED
+v0.60 inverse_timeflow_backprop_loss = IMPLEMENTED
 
-visible_dark_2B = 0.195224
-visible_dark_2B_fractional_error_vs_planck_ratio = 0.047245
+v0.59 raw BR_L1_vs_SM = 0.092428
+v0.60 implemented BR_L1_vs_SM = 0.037697
+v0.60 after backprop BR_L1_vs_SM = 0.000938
 
-visible_dark_5B = 0.153635
-visible_dark_5B_fractional_error_vs_planck_ratio = 0.175852
+v0.59 raw max_abs_BR_delta_pct = 100.000000
+v0.60 implemented max_abs_BR_delta_pct = 10.502733
+v0.60 after backprop max_abs_BR_delta_pct = 0.294487
 
-v0.20 final BAO/global peak = 152.29 Mpc
-fractional_error_vs_rd_147.09 = 0.035353
-
-v0.58 H075_raw_3d = 156.663819
-v0.58 H075_raw_delta_pct_vs_reference = 50.883364
-
-v0.58 H075_transfer_3d = 103.897709
-v0.58 H075_transfer_delta_pct_vs_reference = 0.064175
-v0.58 H075_transfer_residual_sigma_vs_CC_obs = -0.102478
-```
-
-Strict status:
-
-```text
-Raw 3D cosmology: FAIL / over-expands
-Transfer 3D cosmology: PASS-LIKE as calibrated scaffold
-Full CMB / BAO ladder / BBN / w0-wa fit: NOT_IMPLEMENTED
+v0.59 failed_CERN_channels_10pct = gg,tau,cc,gamma,Zgamma,mumu
+v0.60 implemented failed_CERN_channels_10pct = gg
+v0.60 after_backprop failed_CERN_channels_10pct = none
 ```
 
 ---
@@ -65,70 +58,33 @@ Full CMB / BAO ladder / BBN / w0-wa fit: NOT_IMPLEMENTED
 ## CERN/LHC result
 
 ```text
-BR_L1_raw_vs_SM = 0.092428
-max_abs_BR_delta_pct_raw_vs_SM = 100.000000
-failed_CERN_channels_10pct = gg,tau,cc,gamma,Zgamma,mumu
-```
-
-Raw channel status:
-
-```text
-bb, WW, ZZ: within 10 percent
-gg, tau, cc, gamma, Zgamma, mumu: fail 10 percent criterion
-```
-
-Bridge status:
-
-```text
-v0.52 channel-clock bridge:
-  Gamma_lab_channel_clock_MeV = 3.965184
-  width_delta_fraction_vs_4.07 = 0.025753
-  max_abs_BR_delta_pct_after_channel_clock = 3.313884
-  max_abs_signal_strength_delta_pct_after_channel_clock = 5.205441
-
-v0.53 sound-spread bridge:
-  Gamma_lab_sound_raw_MeV = 3.964892
-  width_delta_fraction_vs_4.07 = 0.025825
-  max_abs_BR_delta_pct_after_sound = 4.913465
-  max_abs_signal_strength_delta_pct_after_sound = 7.790001
-```
-
-Strict status:
-
-```text
-Raw CERN channel model: FAIL
-Calibrated / bridge layers: compatible scaffolds, not predictions
+Gamma_total_after_backprop = 4.071982 MeV
+Gamma_total_delta_pct = +0.048698
+tau_time_lab_factor = 0.975951
+final_inverse_timeflow_loss = 0.001072518
 ```
 
 ---
 
-## Inverse timeflow backpropagation status
+## Cosmology result
 
 ```text
-forward timeflow/clock formulas: PRESENT
-inverse-timeflow backprop loss: NOT_IMPLEMENTED
+v0.59 raw H075_3d = 156.663819
+v0.59 transfer H075_3d = 103.897709
+v0.60 q_smoothing_derived_from_v0_59_transfer = 6.675682
+v0.60 H075_after_timeflow = 103.897709
+v0.60 H075_after_timeflow_delta_pct_vs_reference = 0.064175
 ```
-
-The intended AI-style layer is:
-
-```text
-observed lab residual -> inverse timeflow loss -> gradients/updates into hidden MCIFT parameters
-```
-
-This is documented as a future implementation target, not a completed trained model.
 
 ---
 
 ## Analysis result files
 
 ```text
-analysis/results_v0.59/mcift_v0.59_cosmology_cern_retest_report.md
-analysis/results_v0.59/mcift_v0.59_cosmology_cern_retest_metrics.csv
-
-analysis/results_v0.58/mcift_v0.58_3d_realdata_retest_report.md
-analysis/results_v0.58/mcift_v0.58_3d_realdata_metrics.csv
-analysis/results_v0.58/mcift_v0.58_cern_channels.csv
-analysis/results_v0.58/mcift_v0.58_reference_comparison.csv
+simulations/mcift_v0_60_inverse_timeflow_backprop_retest.py
+analysis/results_v0.60/mcift_v0.60_inverse_timeflow_retest_report.md
+analysis/results_v0.60/mcift_v0.60_inverse_timeflow_metrics.csv
+analysis/results_v0.60/mcift_v0.60_cern_channels_before_after.csv
 ```
 
 ---
@@ -136,5 +92,5 @@ analysis/results_v0.58/mcift_v0.58_reference_comparison.csv
 ## Safe wording
 
 ```text
-v0.59 is a real-data retest/audit. It does not pass raw CERN channel comparison and does not pass raw cosmology. It shows that loop/surface particle channels, cc projection, full cosmology observables, and an implemented inverse-timeflow loss are the next required steps.
+v0.60 implements the missing readout and inverse-timeflow loss layers and improves the CERN-channel comparison relative to v0.59. The post-backprop result is a trained bridge. Cosmology remains a transfer/smoothing scaffold.
 ```
