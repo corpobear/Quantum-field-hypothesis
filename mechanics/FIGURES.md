@@ -1,19 +1,18 @@
 # Mechanics Figure Index
 
 **Status:** generated-figure index for MCIFT mechanics  
-**Generator:** `mechanics/plot_mechanics.py`
+**Generators:** `mechanics/plot_mechanics.py`, `mechanics/plot_v0.49_mechanics.py`
 
 Run:
 
 ```bash
 python mechanics/plot_mechanics.py
+python mechanics/plot_v0.49_mechanics.py
 ```
-
-The GitHub Actions workflow also runs this generator and commits changed SVGs to `mechanics/figures/`.
 
 ---
 
-## One graph per mechanic
+## Original figure set
 
 | Mechanic | Generated SVG |
 |---|---|
@@ -44,8 +43,18 @@ The GitHub Actions workflow also runs this generator and commits changed SVGs to
 
 ---
 
+## v0.49 figure set
+
+| Mechanic | Generated SVG |
+|---|---|
+| Dense entanglement compression | `figures/dense_entanglement_compression.svg` |
+| Discarded vibration becomes rotation | `figures/discarded_vibration_rotation.svg` |
+| Drill/sink shape-flow stabilization | `figures/aero_drill_sink_shape_flow.svg` |
+| Visible / hidden branch split | `figures/visible_hidden_split_geometry.svg` |
+| Hidden branch core-load feedback | `figures/hidden_core_load_feedback.svg` |
+
+---
+
 ## Notes
 
 The figures are schematic toy-model visualizations. They are meant to make the current mechanics easier to inspect and debug. They are not experimental evidence and should not be read as established physical results.
-
-The workflow can commit the generated SVGs back into the repository. If a generated output push races with another update, the workflow now fetches and rebases before pushing.
