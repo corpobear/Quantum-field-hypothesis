@@ -1,18 +1,18 @@
-# Multi-Channel Information Field Theory: A Speculative Framework for Mass Emergence, Anchor-Tip Sources, Channel Activation, and Six-Side Sink Dark-Manifest Geometry
+# Multi-Channel Information Field Theory: v0.49 Core-Load Feedback Draft
 
 **Author:** Adrian Newton / corpobear  
-**Version:** 0.13 six-side sink dark-manifest geometry draft  
+**Version:** v0.49 core-load feedback draft  
 **Status:** speculative theoretical framework / toy field model; not established physics
 
 ---
 
 ## Abstract
 
-This paper develops Multi-Channel Information Field Theory (MCIFT), a speculative toy framework in which physical structure is modeled as a multi-channel information field. Particles are interpreted as coherent knot-like clusters of information-cells. Internal vibration opens exchange channels, resonant exchange produces densification, and mass emerges when coherent clusters enter a finite Higgs-response window.
+Multi-Channel Information Field Theory (MCIFT) is a speculative toy framework in which physical structure is modeled as a multi-channel information field. Particles are represented as coherent knot-like clusters of information-cells. Internal vibration opens exchange channels, resonant exchange produces densification, and mass-like response appears when coherent clusters enter a finite Higgs/face-vortex capture window.
 
-The current draft consolidates one-point shadow anchoring, the `7/8` spin-vortex fraction, Fibonacci-shaped anchor-tip sourcing, Higgs-resonance overlap, funnel-speed capture, bounded fourth-mode reservoir availability, channel-specific activation terminology, and the v0.13 six-side sink geometry for dark-manifest matter.
+The current draft updates the older six-side sink geometry with the later entanglement-collision mechanics through v0.49. The main additions are dense entanglement compression, rhythm-locked merge, discarded-vibration rotation, drill/sink shape-flow stabilization, visible/hidden branch separation, and hidden-branch core-load feedback. The hidden branch is not treated as a visible decay channel; it remains separate while contributing local rotating-core load in the toy calculation.
 
-This framework is not presented as established physics or as a replacement for quantum field theory. It is a speculative mathematical structure with toy-model consequences.
+This framework is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model, or standard cosmology.
 
 ---
 
@@ -20,79 +20,53 @@ This framework is not presented as established physics or as a replacement for q
 
 The proposed field is:
 
-$$
-\Psi(x,y,z,t,c)
-$$
+```text
+Psi(x,y,z,t,c)
+```
 
 where `x,y,z` are spatial coordinates, `t` is time, and `c` is an internal channel coordinate.
 
 Possible internal channels include:
 
-$$
-c\in\{\text{identity},\text{light},\text{Higgs},\text{phase},\text{charge},\text{knot},\text{exchange},\text{amplitude},\text{motion},\text{gravity},\text{entanglement},\text{shared channel},\text{confinement}\}.
-$$
+```text
+identity, light, Higgs, phase, charge, knot, exchange, amplitude,
+motion, gravity, entanglement, shared channel, confinement, hidden/sink
+```
 
-The core claim is that particles are stable coherent clusters of this multi-channel field.
+The core toy claim is that stable structures are coherent clusters of this multi-channel field.
 
 ---
 
-## 2. Activation terminology
+## 2. Channel-specific activation
 
-Use:
-
-```text
-light activation = electromagnetic / visibility-channel activation
-```
-
-Do not use:
+Use separate activation factors:
 
 ```text
-light activation = existence itself
+L_i = light / electromagnetic visibility activation
+H_i = Higgs / mass-capture activation
+G_i = gravitational projection
+K_i = knot coherence
 ```
-
-Use separate channel factors:
-
-$$
-L_i=\text{light / electromagnetic visibility activation}
-$$
-
-$$
-H_i=\text{Higgs / mass-capture activation}
-$$
-
-$$
-G_i=\text{gravitational projection}
-$$
-
-$$
-K_i=\text{knot coherence}
-$$
 
 Then:
 
-$$
-\mathrm{Visibility}_i=L_iK_i
-$$
-
-$$
-\mathrm{Mass}_i=H_iK_i
-$$
-
-$$
-\mathrm{Gravity}_i=G_iH_iK_i.
-$$
+```text
+Visibility_i = L_i K_i
+Mass_i       = H_i K_i
+Gravity_i    = G_i H_i K_i
+```
 
 Matter-state terminology:
 
 ```text
 unmanifest        no stable visible, mass, or gravitational projection
-dark-manifest     mass-active and gravity-active, but light-inactive
+hidden/dark       mass-active and gravity-active, but light-inactive
 visible-manifest  light-active, mass-active, gravity-active, and knot-coherent
 ```
 
 ---
 
-## 3. Current research chain
+## 3. Research chain through v0.49
 
 ```text
 information cell
@@ -100,55 +74,37 @@ information cell
 -> coherent knot cluster
 -> internal vibration
 -> resonant exchange
--> visible/shadow amplitude imbalance
--> one-point original/shadow anchor
--> 7/8 free spin-vortex fraction
--> Fibonacci-shaped anchor-tip source
--> Higgs-response resonance overlap
--> funnel-speed capture window
--> bounded fourth-mode reservoir availability
--> visible-manifest or dark-manifest geometry
+-> dense entanglement compression
+-> rhythm-locked merge
+-> discarded-vibration rotation
+-> drill/sink shape-flow stabilization
+-> visible branch from face/vortex capture
+-> hidden branch from density shadow, sink intake, hidden retention, and rotation capture
+-> hidden branch feeds back as rotating-core load
+-> stable or unstable core pressure
 ```
 
 ---
 
-## 4. Cluster complexity and stability
+## 4. Complexity and stability
 
-Let `n` label the cluster mode. Use:
+Let `n` label the cluster mode:
 
-$$
-C_n=2^n.
-$$
+```text
+C_n = 2^n
+```
 
-Thus:
+The original stability toy law is:
 
-$$
-C_1=2,\quad C_2=4,\quad C_3=8,\quad C_4=16.
-$$
-
-Let coherence grow approximately linearly:
-
-$$
-Q_n=an.
-$$
-
-The original stability law is:
-
-$$
-S_n=an-2^n.
-$$
-
-For exactly three modes to survive while the fourth fails:
-
-$$
-\frac{8}{3}<a<4.
-$$
+```text
+S_n = a n - 2^n
+```
 
 Using the central toy value:
 
-$$
-a=3.5,
-$$
+```text
+a = 3.5
+```
 
 the first three modes are stable and the fourth mode fails. The failed fourth-mode sector is later treated as bounded reservoir availability rather than an extra stable particle.
 
@@ -158,205 +114,101 @@ the first three modes are stable and the fourth mode fails. The failed fourth-mo
 
 A pairwise exchange rule is:
 
-$$
-\Gamma_{ij}
-=
-g
-\exp\left[-\frac{(I_i-I_j)^2}{2\sigma_I^2}\right]
-\exp\left[-\frac{(\omega_i-\omega_j)^2}{2\sigma_\omega^2}\right]
-\cos^2(\phi_i-\phi_j).
-$$
-
-Exchange is strongest when information, frequency, and phase align.
+```text
+Gamma_ij = g
+  * exp[-(I_i - I_j)^2 / (2 sigma_I^2)]
+  * exp[-(omega_i - omega_j)^2 / (2 sigma_omega^2)]
+  * cos^2(phi_i - phi_j)
+```
 
 For the whole knot:
 
-$$
-\Gamma_n=\frac{1}{C_n}\sum_{i<j}\Gamma_{ij}.
-$$
+```text
+Gamma_n = (1 / C_n) sum_{i<j} Gamma_ij
+X_n = exp(eta Gamma_n)
+```
 
-Define:
+A base rest-mass toy formula is:
 
-$$
-X_n=e^{\eta\Gamma_n}.
-$$
-
-A base rest-mass formula is:
-
-$$
-m_{0,n}=m_{scale}(C_n-1)^{D_f}X_nH(C_n)\max(S_n,0).
-$$
+```text
+m_0,n = m_scale (C_n - 1)^D_f X_n H(C_n) max(S_n, 0)
+```
 
 Mass is then treated amplitude-first:
 
-$$
-m_n=A_n^2.
-$$
-
-If a base model produces:
-
-$$
-m_n^{base},
-$$
-
-then an amplitude correction gives:
-
-$$
-m_n=m_n^{base}\Delta_n^2.
-$$
+```text
+m_n = A_n^2
+```
 
 ---
 
-## 6. One-point shadow anchor
+## 6. One-point shadow anchor and free spin fraction
 
-Let the original eight-sector tau-like knot be `K_8` and the shadow be `S_8`. Define contact points:
+For an eight-sector knot and its shadow, a stable shadow must have exactly one contact point:
 
-$$
-k=|K_8\cap S_8|.
-$$
-
-A true shadow must connect:
-
-$$
-k\ge1.
-$$
-
-Multiple contact points create bridges:
-
-$$
-M(k)=\frac{k(k-1)}{2}.
-$$
-
-A stable shadow must avoid merger-motion, so require:
-
-$$
-M(k)=0.
-$$
-
-Together:
-
-$$
-k_*=1.
-$$
+```text
+k_* = 1
+```
 
 For a `C`-sector knot, one pinned anchor leaves the free circulation fraction:
 
-$$
-B_C(1)=\frac{C-1}{C}.
-$$
+```text
+B_C(1) = (C - 1) / C
+```
 
-For the tau-like eight-sector knot:
+For an eight-sector knot:
 
-$$
-B_8(1)=\frac{7}{8}.
-$$
+```text
+B_8(1) = 7/8
+```
 
 ---
 
 ## 7. Fibonacci-Higgs anchor-tip source
 
-The Fibonacci/golden geometry shapes the path of the anchor-tip oscillation around the Higgs-response resonance. It does not directly multiply mass.
+The Fibonacci/golden geometry shapes the path of the anchor-tip oscillation around the Higgs-response resonance:
 
-A minimal golden wobble is:
+```text
+omega_phi(t) = omega_H + Delta_omega sin(phi t)
+phi = (1 + sqrt(5)) / 2
+```
 
-$$
-\omega_\varphi(t)=\omega_H+\Delta\omega\sin(\varphi t),
-$$
+The averaged overlap used in the reduced toy test is:
 
-where:
-
-$$
-\varphi=\frac{1+\sqrt{5}}{2}.
-$$
-
-The averaged overlap used in the reduced tau-like test is:
-
-$$
-\langle O_\varphi\rangle\approx0.9837806705.
-$$
+```text
+<O_phi> approx 0.9837806705
+```
 
 ---
 
-## 8. Funnel-speed capture window
+## 8. Capture window and reservoir gate
 
 The speed-dependent capture factor is:
 
-$$
-W_v(v)=\frac{\left(1-e^{-(v/v_{min})^2}\right)e^{-(v/v_{scatter})^2}}{W_{max}}.
-$$
+```text
+W_v(v) = [(1 - exp[-(v/v_min)^2]) exp[-(v/v_scatter)^2]] / W_max
+```
 
 This creates three regimes:
 
 ```text
-too slow  -> no channel connection
-just right -> source captured in knot
-too fast  -> source scatters or is not retained
+too slow   -> no channel connection
+matched    -> source captured in knot
+too fast   -> source scatters or is not retained
 ```
 
-At optimal capture speed:
+The failed fourth-mode sector is treated as a bounded supply:
 
-$$
-W_v=1.
-$$
-
----
-
-## 9. Bounded fourth-mode reservoir
-
-The failed fourth-mode sector is treated as a large available supply, not as a raw mass multiplier.
-
-Define:
-
-$$
-R_4^{gate}=\frac{R_4}{R_4+R_*}.
-$$
-
-This keeps:
-
-$$
-0\le R_4^{gate}\le1.
-$$
+```text
+R_4^gate = R_4 / (R_4 + R_*)
+0 <= R_4^gate <= 1
+```
 
 ---
 
-## 10. Field-source equation
+## 9. Six-side sink geometry
 
-Let:
-
-$$
-\mathcal{D}=\partial_t^2-c_*^2\nabla^2-D_c\partial_c^2+V'(\psi).
-$$
-
-The source equation is:
-
-$$
-\mathcal{D}\psi=\sum_a S_{tip,a}.
-$$
-
-The visible/tip source term is:
-
-$$
-S_{tip,a}
-=
-\lambda_a
-\Omega_{OS,a}
-W_v(v_{tip,a})
-\left[P_{C_a}+B_{C_a}(1)E_{C_a}\langle O_{\varphi,a}\rangle\right]
-R_{4,a}^{gate}
-\delta_{\epsilon,a}^{(\varphi)}.
-$$
-
-For the tau-like eight-sector knot:
-
-$$
-P_8=\frac{1}{56},\quad E_8=\frac{1}{448},\quad B_8(1)=\frac{7}{8}.
-$$
-
----
-
-## 11. v0.13 six-side sink dark-manifest geometry
-
-v0.13 proposes that visible-manifest matter uses a one-sector axial tip intake, while dark-manifest matter uses a six-sector side intake.
+The older six-side geometry proposes that visible-manifest matter uses a one-sector axial tip intake, while hidden/dark-manifest matter uses a six-sector side-intake belt.
 
 Eight-sector split:
 
@@ -368,124 +220,197 @@ Eight-sector split:
 
 Visible aperture:
 
-$$
-A_{tip}=\frac{1}{56}+\frac{7}{8}\frac{1}{448}\langle O_\varphi\rangle.
-$$
+```text
+A_tip = 1/56 + (7/8)(1/448)<O_phi>
+A_tip = 0.01977858948
+```
 
-Using:
+Side aperture:
 
-$$
-\langle O_\varphi\rangle=0.9837806705,
-$$
+```text
+A_side = 6(1/56) = 0.1071428571
+A_side / A_tip = 5.417
+```
 
-gives:
-
-$$
-A_{tip}=0.01977858948.
-$$
-
-Dark side aperture:
-
-$$
-A_{side}=6\left(\frac{1}{56}\right)=0.1071428571.
-$$
-
-Therefore:
-
-$$
-\frac{A_{side}}{A_{tip}}=5.417.
-$$
-
-Planck 2018 gives the approximate comparison target:
-
-$$
-\frac{\Omega_c}{\Omega_b}\approx\frac{0.120}{0.0224}=5.357.
-$$
-
-The toy ratio is within about 1.1 percent of the comparison value. A small side-efficiency factor:
-
-$$
-\epsilon_{sink}\approx0.989
-$$
-
-matches the central value.
+This remains a toy ratio, not empirical proof.
 
 ---
 
-## 12. Dark-manifest source form
+## 10. Visible and hidden source forms
 
 Visible source:
 
-$$
-S_{visible}
-=
-\lambda_+
-\Omega_z
-W_{tip}
-A_{tip}
-R_4^{gate}
-\delta_{tip}^{(\varphi)}.
-$$
+```text
+S_visible = lambda_+ Omega_z W_tip A_tip R_4^gate delta_tip
+```
 
-Dark side source:
+Hidden side/sink source:
 
-$$
-S_{dark}
-=
--
-\lambda_-
-\kappa_{sink}
-W_{side}
-A_{side}
-R_4^{gate}
-\delta_{side}^{(\varphi)}.
-$$
+```text
+S_hidden = - lambda_- kappa_sink W_side A_side R_4^gate delta_side
+kappa_sink = - div_perp(J_perp)
+```
 
-where:
+The negative sign means inverse field orientation in the toy model, not negative mass. Hidden/sink density uses magnitude:
 
-$$
-\kappa_{sink}=-\nabla_\perp\cdot J_\perp.
-$$
-
-The negative sign means inverse field orientation, not negative mass.
-
-Mass density uses magnitude:
-
-$$
-\rho_{dark}\propto |S_{dark}|.
-$$
-
-Light/electromagnetic visibility is suppressed:
-
-$$
-L_{dark}\approx0.
-$$
+```text
+rho_hidden proportional to |S_hidden|
+L_hidden approx 0
+```
 
 ---
 
-## 13. Current status
+## 11. Dense entanglement compression
 
-MCIFT v0.13 should be treated as:
+In the later collision tests, two objects that entangle are not simply added. They are compressed into a denser merged object:
 
 ```text
-speculative toy-model field-source proposal with a dark-manifest side-sink geometry test
+R_volume = (R_A^3 + R_B^3)^(1/3)
+R_dense = lambda_R R_volume, with 0 < lambda_R < 1
+rho_ratio = (R_volume / R_dense)^3 = lambda_R^-3
+M_dense = (m_A + m_B) D_rho
+```
+
+---
+
+## 12. Rhythm lock and discarded-vibration rotation
+
+The merged heartbeat is computed from the two pre-merge rhythms:
+
+```text
+Z = A_A exp(i phi_A) + A_B exp(i phi_B)
+A_merge = |Z|
+phi_merge = arg(Z)
+```
+
+A rhythm-lock factor separates core-retained vibration from discarded beat vibration:
+
+```text
+E_core = eta_core R_lock E_raw
+E_discarded = (1 - R_lock) E_raw
+```
+
+v0.46 adds the correction that discarded vibration becomes angular impulse:
+
+```text
+I_dense = (2/5) M_dense R_dense^2
+L_discarded = sqrt(2 I_dense E_rotation)
+omega_final = L_discarded / I_dense
+```
+
+---
+
+## 13. Drill/sink shape-flow stabilization
+
+v0.47 adds a shape-flow rule. The rotating dense object has a drill/sink geometry that redirects part of the core load into shell flow and increases effective coherence support.
+
+Schematic indices:
+
+```text
+D_drill = omega_final R_shell
+I_sink = f_core rho_ratio
+S_stream = sphericity / (1 + anisotropy)
+```
+
+Capacity and pressure update:
+
+```text
+Coh_aero = Coh_base + Delta_Coh_shape
+P_core,aero = (E_core,aero + P_density,aero) / Coh_aero
+```
+
+---
+
+## 14. Visible / hidden entanglement split
+
+v0.48 separates visible matter and hidden/sink matter before visible channel projection.
+
+Visible capture gate:
+
+```text
+V_gate = V_face V_vortex
+```
+
+Hidden/sink capture gate:
+
+```text
+D_gate = S_sink(0.45 D_shadow + 0.35 D_retention + 0.20 D_rotation)
+```
+
+The hidden branch is not added to the visible channel split. A schematic event budget is:
+
+```text
+E_event = E_visible + E_hidden + E_rotation + E_radiation + E_shell
+```
+
+---
+
+## 15. Hidden-branch core-load feedback
+
+v0.49 adds gravitational/load feedback from the hidden branch onto the rotating core. The hidden branch remains separate from visible channels but contributes local compact load.
+
+Core-load rule:
+
+```text
+G_visible = E_visible
+G_hidden = C_sink E_hidden
+G_rot = xi_rot E_rotation
+G_load = G_visible + G_hidden + G_rot
+```
+
+Feedback update:
+
+```text
+C_after = C_before + Delta_C_feedback
+P_after = (L_core_before + Delta_L_feedback) / C_after
+```
+
+In the v0.49 toy run:
+
+```text
+verdict = PASS_CORE_LOAD_FEEDBACK
+criteria_pass_count = 18/18
+G_load = 0.874502
+load_strength_vs_visible = 1.444487
+core_pressure_after_feedback = 0.717440
+```
+
+The visible/hidden budget remains separate:
+
+```text
+visible = 0.648453
+hidden = 0.110223
+rotation = 0.141219
+radiation = 0.054259
+shell = 0.045846
+```
+
+---
+
+## 16. Current status
+
+MCIFT v0.49 should be treated as:
+
+```text
+speculative toy-model core-load feedback test with separate visible and hidden branches
 ```
 
 not as:
 
 ```text
-established particle physics or a confirmed dark matter model
+established particle physics, a measured dark-matter model, a general-relativistic simulation, or collider evidence
 ```
 
-The value of v0.13 is that the eight-sector knot/shadow geometry produces a simple six-side/tip aperture ratio close to the observed dark-to-baryonic matter density ratio.
+The value of v0.49 is that the hidden branch is no longer only a passive budget line: it remains separate from visible channels while also feeding back into the rotating-core load.
 
 ---
 
-## 14. Open tasks
+## 17. Open tasks
 
-1. Derive the six-side split from explicit knot/shadow geometry.
-2. Derive the side-flow convergence term `kappa_sink`.
-3. Determine whether `epsilon_sink` has a geometric origin.
-4. Test whether this mechanism can reproduce galaxy-scale gravitational behavior.
-5. Check whether the model predicts any observable deviation from standard cold dark matter.
-6. Check compatibility with Lorentz and gauge structure.
+1. Derive the feedback coefficients from the full 3D vector phase field.
+2. Derive `C_sink`, `xi_rot`, and `Delta_C_feedback` geometrically rather than parametrically.
+3. Keep visible and hidden branches separate before channel projection.
+4. Retest without direct channel tuning.
+5. Derive coupling modifiers and partial widths only after stability is established.
+6. Test whether the hidden-branch load produces larger-scale gravitational behavior.
+7. Check compatibility with Lorentz/gauge structure and general relativity.
