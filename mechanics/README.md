@@ -9,9 +9,11 @@ This folder collects the current MCIFT toy-model mechanics.
 ## Files
 
 ```text
-mechanics_v0.13.md   Full mechanics reference
-plot_mechanics.py    Matplotlib script that generates SVG diagrams
-figures/             Generated SVG output folder
+mechanics_v0.13.md        Original mechanics reference through early dark/sink geometry
+mechanics_v0.49.md        Current dense-entanglement / hidden-core-load mechanics reference
+plot_mechanics.py         Original mechanics SVG generator
+plot_v0.49_mechanics.py   v0.49 geometry plot generator
+figures/                  Generated SVG output folder
 ```
 
 ---
@@ -22,71 +24,39 @@ Run from the repository root:
 
 ```bash
 python mechanics/plot_mechanics.py
+python mechanics/plot_v0.49_mechanics.py
 ```
 
-The GitHub Actions workflow also runs this script and commits changed SVGs back into:
+The original workflow generates the v0.13 figure set. The v0.49 generator adds the newer collision/entanglement mechanics diagrams.
+
+---
+
+## v0.49 generated figure set
 
 ```text
-mechanics/figures/
+dense_entanglement_compression.svg
+discarded_vibration_rotation.svg
+aero_drill_sink_shape_flow.svg
+visible_hidden_split_geometry.svg
+hidden_core_load_feedback.svg
 ```
 
 ---
 
-## Generated figure set
+## Covered current mechanics
 
 ```text
-mechanics_overview.svg
-activation_channels.svg
-light_activation_gate.svg
-complexity_growth.svg
-stability_modes.svg
-fractal_surface.svg
-higgs_response_window.svg
-exchange_alignment.svg
-exchange_densification.svg
-amplitude_mass.svg
-shadow_correction.svg
-anchor_contacts.svg
-spin_vortex_fraction.svg
-fibonacci_resonance.svg
-capture_window.svg
-reservoir_gate.svg
-field_source_pipeline.svg
-source_terms_bar.svg
-motion_exchange.svg
-entanglement_shared_channel.svg
-confinement_complexity.svg
-eight_sector_sink_geometry.svg
-dark_visible_ratio.svg
-cern_event_proxy.svg
+dense entanglement compression
+rhythm lock
+discarded vibration -> final rotation
+drill/sink shape-flow stabilization
+visible branch from face/vortex capture
+hidden branch from density shadow, sink intake, hidden retention, and rotation capture
+hidden branch as rotating-core load feedback
 ```
 
 ---
 
-## Covered mechanics
+## Important limitation
 
-```text
-activation channels
-light gate
-complexity growth
-stability modes
-fractal surface
-Higgs response window
-exchange alignment
-exchange densification
-amplitude mass
-shadow correction
-anchor contacts
-spin-vortex fraction
-Fibonacci resonance
-capture window
-reservoir gate
-field-source pipeline
-source terms
-motion exchange
-shared-channel geometry
-confinement proxy
-eight-sector sink geometry
-ratio comparison
-collider event proxy
-```
+These mechanics are schematic toy-model rules for internal consistency testing. They are not established physics, collider evidence, or a measured dark-matter model.
