@@ -1,47 +1,55 @@
-# Current MCIFT Status: v0.52 Channel-Clock Rotation Bridge
+# Current MCIFT Status: v0.53 Sound / Acoustic Spread Bridge
 
 **Status:** speculative theoretical framework / toy collider scaffold; not established physics.  
-**Current bridge test:** v0.52 channel-specific clock / rotation bridge.  
-**Previous bridge test:** v0.51 time-dilation / kappa-width bridge.
+**Current bridge test:** v0.53 sound / acoustic spread bridge.  
+**Previous bridge test:** v0.52 channel-specific clock / rotation bridge.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.52 adds the correction that time dilation changes the observed rotation speed, and the changed rotation speed gives each channel a different formation-time factor. Unlike v0.51's common clock factor, this channel-specific clock changes partial widths and branching ratios.
+MCIFT v0.53 adds an internal sound/pressure-wave bridge. In this scaffold, sound means a pressure or phonon-like wave inside the dense field medium, not ordinary air sound. The acoustic mode changes shell spread and gives channels additional sound-specific width factors, so branching ratios shift beyond v0.52.
 ```
 
 ---
 
-## v0.52 result
+## v0.53 result
 
 ```text
-verdict = PASS_CHANNEL_CLOCK_ROTATION_BRIDGE
-tau_core_to_lab = 0.868528
-omega_proper = 0.072027
-omega_lab = 0.062559
-rotation_speed_shift_pct = 13.147198
-Gamma_lab_channel_clock_MeV = 3.965184
-Gamma_lab_channel_clock_delta_pct = -2.575329
-proper_width_scale_needed = 1.026434
-universal_kappa_time_needed = 1.013131
-max_abs_BR_delta_pct_after_channel_clock = 3.313884
-max_abs_signal_strength_delta_pct_after_channel_clock = 5.205441
+verdict = PASS_SOUND_SPREAD_BRIDGE
+criteria_pass_count = 11/11
+c_sound_proxy = 0.582034
+omega_sound_proxy = 0.058545
+omega_lab = 0.062558
+acoustic_resonance = 0.962377
+acoustic_mach = 0.666259
+pressure_wave_amplitude = 0.207941
+surface_ripple_index = 0.333447
+radial_spread_factor = 1.094666
+shell_radius_before_sound = 9.941601
+shell_radius_after_sound = 10.882735
+shell_width_before_sound = 2.640000
+shell_width_after_sound = 3.088810
+Gamma_lab_sound_raw_MeV = 3.964892
+proper_width_scale_needed = 1.026510
+universal_kappa_time_needed = 1.013168
+max_abs_BR_delta_pct_after_sound = 4.913465
+max_abs_signal_strength_delta_pct_after_sound = 7.790001
 ```
 
-Branching-ratio changes after channel clock:
+Branching-ratio changes after sound spread:
 
 ```text
-bb    -0.860789 %
-WW    +1.830883 %
-gg    +1.144792 %
-tau   -0.390957 %
-cc    -0.660675 %
-ZZ    +1.830883 %
-gamma +3.313884 %
-Zgamma +2.909042 %
-mumu  -1.130329 %
+bb      -1.316439 %
+WW      +2.741818 %
+gg      +1.860716 %
+tau     -0.523144 %
+cc      -0.978220 %
+ZZ      +2.741818 %
+gamma   +4.913465 %
+Zgamma  +4.238068 %
+mumu    -1.538511 %
 ```
 
 ---
@@ -49,11 +57,12 @@ mumu  -1.130329 %
 ## Analysis result files
 
 ```text
-models/channel_clock_rotation_bridge_v0.52.md
-analysis/results_v0.52/mcift_v0.52_channel_clock_rotation_report.md
-analysis/results_v0.52/mcift_v0.52_channel_clock_rotation_metrics.csv
-analysis/results_v0.52/mcift_v0.52_channel_clock_widths.csv
-analysis/results_v0.52/mcift_v0.52_signal_summary.csv
+models/sound_spread_bridge_v0.53.md
+analysis/results_v0.53/mcift_v0.53_sound_spread_report.md
+analysis/results_v0.53/mcift_v0.53_sound_spread_metrics.csv
+analysis/results_v0.53/mcift_v0.53_sound_channel_widths.csv
+analysis/results_v0.53/mcift_v0.53_sound_signal_summary.md
+analysis/results_v0.53/mcift_v0.53_sound_spread_criteria.csv
 ```
 
 The plots and full signal-strength matrix are in the local output bundle.
@@ -63,5 +72,5 @@ The plots and full signal-strength matrix are in the local output bundle.
 ## Safe wording
 
 ```text
-v0.52 is an internal channel-clock bridge. It shows that rotation-modified time dilation can influence branching ratios inside the scaffold. It is not a full general-relativistic calculation or collider evidence.
+v0.53 is an internal acoustic-spread bridge. It is not ordinary sound in air, not a full quantum field calculation, and not collider evidence. It shows that a pressure-wave scaffold can influence shell spread and branching ratios inside MCIFT.
 ```
