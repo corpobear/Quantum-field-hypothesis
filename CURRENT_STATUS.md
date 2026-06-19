@@ -1,45 +1,47 @@
-# Current MCIFT Status: v0.51 Time-Dilation Bridge
+# Current MCIFT Status: v0.52 Channel-Clock Rotation Bridge
 
 **Status:** speculative theoretical framework / toy collider scaffold; not established physics.  
-**Current bridge test:** v0.51 time-dilation / kappa-width bridge.  
-**Previous bridge test:** v0.50 kappa / width bridge.
+**Current bridge test:** v0.52 channel-specific clock / rotation bridge.  
+**Previous bridge test:** v0.51 time-dilation / kappa-width bridge.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.51 adds a core-clock-to-lab-clock conversion. Compact rotating-core load and rotation slow the internal clock by a common factor. This can create a total-width/rate-scale mismatch if the internal run is compared directly to lab-frame reference values. Because the factor is common to all visible partial widths, branching ratios remain unchanged.
+MCIFT v0.52 adds the correction that time dilation changes the observed rotation speed, and the changed rotation speed gives each channel a different formation-time factor. Unlike v0.51's common clock factor, this channel-specific clock changes partial widths and branching ratios.
 ```
 
 ---
 
-## v0.51 result
+## v0.52 result
 
 ```text
-verdict = PASS_TIME_DILATION_BRIDGE_WITH_COMPENSATION
-G_load = 0.874502
-R_hidden = 10.582795
-R_dense = 6.198812
-omega_final = 0.072027
-v_core = 0.446482
-chi_time = 0.057844
-tau_G = 0.970647
-tau_rot = 0.894793
+verdict = PASS_CHANNEL_CLOCK_ROTATION_BRIDGE
 tau_core_to_lab = 0.868528
-time_slowdown_pct = 13.147198
+omega_proper = 0.072027
+omega_lab = 0.062559
+rotation_speed_shift_pct = 13.147198
+Gamma_lab_channel_clock_MeV = 3.965184
+Gamma_lab_channel_clock_delta_pct = -2.575329
+proper_width_scale_needed = 1.026434
+universal_kappa_time_needed = 1.013131
+max_abs_BR_delta_pct_after_channel_clock = 3.313884
+max_abs_signal_strength_delta_pct_after_channel_clock = 5.205441
 ```
 
-Width bridge:
+Branching-ratio changes after channel clock:
 
 ```text
-Gamma_SM_total_MeV = 4.070000
-Gamma_lab_uncompensated_MeV = 3.534909
-Gamma_lab_uncompensated_delta_pct = -13.147198
-universal_kappa_proper_needed = 1.073021
-proper_width_scale_needed = 1.151373
-Gamma_lab_compensated_MeV = 4.070000
-max_abs_BR_delta_pct_compensated = 0.000000
+bb    -0.860789 %
+WW    +1.830883 %
+gg    +1.144792 %
+tau   -0.390957 %
+cc    -0.660675 %
+ZZ    +1.830883 %
+gamma +3.313884 %
+Zgamma +2.909042 %
+mumu  -1.130329 %
 ```
 
 ---
@@ -47,19 +49,19 @@ max_abs_BR_delta_pct_compensated = 0.000000
 ## Analysis result files
 
 ```text
-models/time_dilation_kappa_bridge_v0.51.md
-analysis/results_v0.51/mcift_v0.51_time_dilation_report.md
-analysis/results_v0.51/mcift_v0.51_time_dilation_metrics.csv
-analysis/results_v0.51/mcift_v0.51_time_dilation_widths.csv
-analysis/results_v0.51/mcift_v0.51_time_dilation_signal_summary.csv
+models/channel_clock_rotation_bridge_v0.52.md
+analysis/results_v0.52/mcift_v0.52_channel_clock_rotation_report.md
+analysis/results_v0.52/mcift_v0.52_channel_clock_rotation_metrics.csv
+analysis/results_v0.52/mcift_v0.52_channel_clock_widths.csv
+analysis/results_v0.52/mcift_v0.52_signal_summary.csv
 ```
 
-The plots are in the local output bundle.
+The plots and full signal-strength matrix are in the local output bundle.
 
 ---
 
 ## Safe wording
 
 ```text
-v0.51 is an internal-clock bridge. It is not a full general-relativistic calculation. A common time factor changes total width/rate scale, not branching ratios. Channel-specific time factors would be a separate v0.52 test.
+v0.52 is an internal channel-clock bridge. It shows that rotation-modified time dilation can influence branching ratios inside the scaffold. It is not a full general-relativistic calculation or collider evidence.
 ```
