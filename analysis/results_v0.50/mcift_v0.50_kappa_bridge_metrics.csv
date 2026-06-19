@@ -1,0 +1,13 @@
+metric,value
+verdict,PASS_KAPPA_BRIDGE_CALIBRATED
+fit_type,SM_kappa_reference_bridge_not_first_principle_derivation
+Gamma_SM_total_MeV,4.07
+Gamma_fit_total_MeV,4.07
+kappa_H_squared,1.0
+BR_BSM_fit,0.0
+max_abs_BR_delta_pct,0.0
+max_abs_signal_strength_delta_pct,0.0
+v049_proxy_l1_vs_sm_for_mapped_channels,0.03222160411468891
+geometry_prior_kappa_g,1.1321962508073846
+geometry_prior_kappa_gamma,0.7373106620243612
+geometry_prior_kappa_mu,2.9745865530003197
