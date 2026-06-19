@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.70 dual first-principle prediction test
+**Current version:** v0.71 expanded cosmology benchmark
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,17 +11,22 @@
 
 ## Current focus
 
-The main branch now runs two compact v0.70 prediction tests from the same v0.64/v0.70 first-principle formula:
+The main branch now expands the cosmology comparison beyond the v0.70 compact H(z=0.75) check:
 
 ```text
-Test 1: CERN/Higgs width and branching-ratio prediction
-Test 2: cosmology H(z=0.75) prediction
+Planck-like H0
+local SH0ES H0
+H(z=0.75)
+DESI LyA BAO D_H/r_d and D_M/r_d
+BBN baryon density
+S8 weak-lensing / growth-style proxy
+BAO peak sanity check
 ```
 
 Current verdict:
 
 ```text
-v0.70 = DUAL_PREDICTION_CERN_PASSLIKE_COSMOLOGY_CLOSE
+v0.71 = EXPANDED_COSMOLOGY_MIXED_CLOSE_ON_EARLY_AND_LENSING_FAILS_LOCAL_H0
 ```
 
 ---
@@ -51,50 +56,38 @@ E_DV^(1/3) = 1.072549870
 
 ---
 
-## v0.70 CERN/Higgs prediction
+## v0.71 expanded cosmology results
 
 ```text
-width_prediction = 4.107221 MeV
-width_delta_vs_4.07 = +0.914526 percent
-max_channel_delta = 8.247649 percent
-BR_L1 = 0.052372
-```
+H0_prediction = 67.163010
+Planck_H0 residual = -0.364797 sigma
+SH0ES_H0 residual = -5.650952 sigma
 
-Status:
+H075_prediction = 103.465987
+H075_delta_vs_compact_LCDM = -0.351618 percent
+H075_residual_vs_CC = -0.142614 sigma
 
-```text
-compact CERN/Higgs prediction: pass-like
-backpropagation used: False
-target-loss fit used: False
+DESI_LyA_DH/rd prediction = 8.646895
+DESI_LyA_DH/rd residual = +0.146909 sigma
+DESI_LyA_DM/rd prediction = 39.311695
+DESI_LyA_DM/rd residual = +0.602802 sigma
+
+omega_b h2 prediction = 0.02237
+BBN2024 residual = +0.345455 sigma
+
+S8_prediction = 0.775722
+DESY3_S8 residual = +0.206750 sigma
+Planck_S8 residual = -4.329115 sigma
 ```
 
 ---
 
-## v0.70 cosmology prediction
+## Strict status
 
 ```text
-H075_prediction = 103.465987
-H075_compact_LCDM_anchor = 103.831075
-H075_delta = -0.351618 percent
-H075_residual_vs_CC = -0.142614 sigma
-raw_to_v0.70_improvement = 144.712194x
-```
-
-BAO sanity check:
-
-```text
-BAO_peak = 152.29 Mpc
-BAO_reference_rd = 147.09 Mpc
-fractional_error = 0.035353
-```
-
-Status:
-
-```text
-compact H(z) prediction: close
-full BAO ladder: not implemented
-CMB spectra: not implemented
-BBN network: not implemented
+close/pass-like: Planck-like H0, H(z=0.75), DESI LyA BAO, BBN baryon density, DES Y3-style S8
+fail/tension: SH0ES local H0, Planck S8 if the growth proxy is taken literally
+not implemented: full CMB Cl, full SN distance moduli, full BAO covariance, BBN reaction network
 ```
 
 ---
@@ -102,13 +95,12 @@ BBN network: not implemented
 ## Main documents
 
 ```text
+models/mcift_v0.71_expanded_cosmology_note.md
+analysis/results_v0.71/v071_expanded_cosmology_metrics.csv
+analysis/results_v0.71/v071_expanded_cosmology_tests.csv
 main.md
-models/mcift_v0.70_dual_prediction_note.md
-models/mcift_first_principle_formula_v0.64.md
 CURRENT_STATUS.md
-analysis/results_v0.70/v070_metrics.csv
-analysis/results_v0.70/v070_collider_result.csv
-analysis/results_v0.70/v070_cosmology_result.csv
+README.md
 ```
 
 ---
@@ -116,11 +108,11 @@ analysis/results_v0.70/v070_cosmology_result.csv
 ## Next version target
 
 ```text
-v0.71 should move from compact sector-count predictions to cell-resolved predictions:
-S_i = Coh_i - q_i
-C_ITF(a) from weighted negative-stability stress
-O_DV(a) from dark-visible density overlap
-Then retest H(z), BAO, CERN total width, branching ratios, and signal-strength style observables separately.
+v0.72 should implement a proper cosmology data table and residual engine:
+full BAO distance ladder
+supernova distance-modulus residuals
+compressed CMB likelihood
+growth solver for f_sigma8 or S8 instead of one envelope proxy
 ```
 
 ---
