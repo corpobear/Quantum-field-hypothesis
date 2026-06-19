@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.61 first-principle inverse-timeflow cosmology retest
+**Current version:** v0.64 unified first-principle formula consolidation
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,83 +11,94 @@
 
 ## Current focus
 
-MCIFT now has a cosmology-specific inverse-timeflow retest layer:
+The main branch now consolidates the v0.61-v0.63 work into a v0.64 first-principle formula:
 
 ```text
-v0.60:
-  inverse-timeflow backpropagation improved the particle/channel bridge
-  cosmology still used transfer/smoothing scaffold
-
-v0.61:
-  inverse-timeflow acts inside the expansion rule
-  tau_ITF is derived from six-sink / visible / anchor sector stress
-  H_lab = tau_ITF * H_core
+v0.61: first-principle inverse timeflow improved raw cosmology H(z=0.75)
+v0.62: blind CERN ITF prediction improved branching ratios without backpropagation
+v0.63: dark-visible gravitational envelope fixed the total-width deficit while retaining branching ratios
+v0.64: paper/formula consolidation on master, including main.md
 ```
 
 Current verdict:
 
 ```text
-v0.61 = FIRST_PRINCIPLE_ITF_IMPROVES_RAW_HZ_NOT_FULL_COSMOLOGY_PASS
+v0.64 = REWORKED_FIRST_PRINCIPLE_FORMULA_DOCUMENTED_ON_MASTER
 ```
 
 ---
 
-## v0.61 cosmology result
+## Reworked formula
 
 ```text
+C_ITF = A_lock * N_D / (N_D + N_V + N_A)
+tau_ITF = exp[-C_ITF / (N_V + N_A)]
+O_DV = 2 sqrt(N_D N_V) / (N_D + N_V + N_A)
+E_DV = exp[C_ITF * O_DV / (N_V + N_A)]
+```
+
+Current numerical values:
+
+```text
+N_D = 6
+N_V = 1
+N_A = 1
+A_lock = 0.918752
 C_ITF = 0.689064
-tau_ITF = 0.708552
+O_DV = 0.612372
+E_DV = 1.234890
+```
 
-v0.59 raw H075_3d = 156.663819
-v0.59 raw delta vs LCDM = +50.883364 percent
+---
 
-v0.60 transfer H075_3d = 103.897709
-v0.60 transfer delta vs LCDM = +0.064175 percent
+## CERN/Higgs result
 
+```text
+v0.62 blind max channel delta = 8.247649 percent
+v0.62 blind width = 3.325981 MeV
+v0.62 width delta = -18.280555 percent
+
+v0.63 width after dark-visible envelope = 4.107221 MeV
+v0.63 width delta vs 4.07 MeV = +0.914526 percent
+```
+
+The envelope is universal, so the branching-ratio pattern is retained while the total width is lifted.
+
+---
+
+## Cosmology result
+
+```text
+v0.59 raw H075 = 156.663819
 v0.61 first-principle ITF H075 = 111.004443
-v0.61 first-principle ITF delta vs LCDM = +6.908691 percent
-v0.61 residual vs compact CC point = +0.558221 sigma
+LCDM compact reference H075 = 103.831075
+raw-to-v0.61 error improvement = 7.364392x
 ```
 
-Interpretation:
+This improves raw over-expansion without reference-derived smoothing, but it is not yet a full cosmology pass.
+
+---
+
+## Main documents
 
 ```text
-v0.61 improves raw over-expansion by about 7.36x without using reference-derived smoothing.
-It is not yet a full cosmology pass.
+main.md
+models/mcift_first_principle_formula_v0.64.md
+CURRENT_STATUS.md
+analysis/results_v0.64/mcift_v0.64_master_formula_summary.csv
+analysis/results_v0.62/mcift_v0.62_blind_itf_metrics.csv
+analysis/results_v0.63/mcift_v0.63_width_metrics.csv
 ```
 
 ---
 
-## Analysis result files
+## Next version target
 
 ```text
-simulations/mcift_v0_61_first_principle_cosmology_itf.py
-analysis/results_v0.61/mcift_v0.61_first_principle_cosmology_metrics.csv
-analysis/results_v0.61/mcift_v0.61_Hz_comparison.csv
-
-simulations/mcift_v0_60_inverse_timeflow_backprop_retest.py
-analysis/results_v0.60/mcift_v0.60_inverse_timeflow_metrics.csv
-```
-
----
-
-## Important limitation
-
-```text
-v0.61 improves the raw H(z=0.75) over-expansion, but does not implement the full BAO ladder, CMB spectra, growth data, or BBN.
-```
-
----
-
-## Research roadmap
-
-Next required tests:
-
-```text
-1. Make C_ITF redshift-dependent from actual 3D field cells.
-2. Use C_ITF(a) from cell containment stress S_i = Coh_i - q_i.
-3. Add distance observables D_M(z), D_H(z), and BAO ladder scoring.
-4. Add growth and CMB-spectrum comparisons.
+v0.65 should replace sector-count C_ITF and O_DV with cell-resolved field quantities:
+S_i = Coh_i - q_i
+C_ITF(a) from weighted negative-stability stress
+O_DV(a) from dark-visible density overlap
 ```
 
 ---
