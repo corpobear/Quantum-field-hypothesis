@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.53 sound / acoustic spread bridge
+**Current version:** v0.54 cosmology coarse-graining layer
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,66 +11,61 @@
 
 ## Current focus
 
-MCIFT now has five bridge layers:
+MCIFT now lifts the local collision mechanics into a first cosmology-scale scaffold:
 
 ```text
-1. v0.49 internal scaffold:
-   dense entanglement, visible/hidden split, rotating-core load feedback
+v0.49 internal scaffold:
+  dense entanglement, visible/hidden split, rotating-core load feedback
 
-2. v0.50 kappa bridge:
-   explicit kappa modifiers, partial widths, branching ratios, and rate modifiers
+v0.50 kappa bridge:
+  explicit kappa modifiers, partial widths, branching ratios, and rate modifiers
 
-3. v0.51 common time bridge:
-   core-clock to lab-clock conversion for total width/rate comparison
+v0.51 common time bridge:
+  core-clock to lab-clock conversion for total width/rate comparison
 
-4. v0.52 channel-clock bridge:
-   time-dilated rotation modifies channel formation clocks and branching ratios
+v0.52 channel-clock bridge:
+  time-dilated rotation modifies channel formation clocks and branching ratios
 
-5. v0.53 sound/acoustic bridge:
-   internal pressure waves alter shell spread and channel partial widths
+v0.53 sound/acoustic bridge:
+  internal pressure waves alter shell spread and channel partial widths
+
+v0.54 cosmology layer:
+  visible, hidden, rotation, radiation, and acoustic branches become coarse-grained density sectors
 ```
 
-Current bridge verdict:
+Current verdict:
 
 ```text
-v0.53 sound spread bridge = PASS_SOUND_SPREAD_BRIDGE
+v0.54 cosmology coarse-grain = PASS_COSMOLOGY_COARSE_GRAIN_SCAFFOLD
 ```
 
-This is an internal acoustic-spread bridge, not ordinary sound in air.
+This is a mathematical coarse-graining scaffold, not an observational cosmology fit.
 
 ---
 
-## v0.53 result
+## v0.54 result
 
 ```text
+visible_gravity_fraction_normalized = 0.616356
+hidden_gravity_fraction_normalized = 0.178592
+rotation_gravity_fraction_normalized = 0.095371
+radiation_fraction_normalized = 0.051573
+acoustic_shell_fraction_normalized = 0.058107
 c_sound_proxy = 0.582034
-omega_sound_proxy = 0.058545
-omega_lab = 0.062558
-acoustic_resonance = 0.962377
-acoustic_mach = 0.666259
-pressure_wave_amplitude = 0.207941
-surface_ripple_index = 0.333447
-radial_spread_factor = 1.094666
-shell_radius_before_sound = 9.941601
-shell_radius_after_sound = 10.882735
-shell_width_before_sound = 2.640000
-shell_width_after_sound = 3.088810
-max_abs_BR_delta_pct_after_sound = 4.913465
-max_abs_signal_strength_delta_pct_after_sound = 7.790001
+w_sound_proxy = 0.338764
+lapse_N_at_a1 = 0.869985
+H_lab_over_H_core_at_a1 = 1.149445
+sound_horizon_proxy_at_a1 = 0.394142
+inverse_sound_scale_proxy = 2.537156
 ```
 
-Branching-ratio shifts after sound spread:
+Growth-kernel proxy:
 
 ```text
-bb      -1.316439 %
-WW      +2.741818 %
-gg      +1.860716 %
-tau     -0.523144 %
-cc      -0.978220 %
-ZZ      +2.741818 %
-gamma   +4.913465 %
-Zgamma  +4.238068 %
-mumu    -1.538511 %
+mu_eff(k=0.01) = 1.147401
+mu_eff(k=0.1)  = 1.147026
+mu_eff(k=1)    = 1.118137
+mu_eff(k=10)   = 0.983284
 ```
 
 ---
@@ -78,16 +73,19 @@ mumu    -1.538511 %
 ## Key math
 
 ```text
-c_sound = sqrt(Coh_feedback / (rho_ratio + G_load))
-omega_sound = c_sound / R_shell
-acoustic_resonance = exp[-((omega_lab - omega_sound)/(0.35 omega_sound))^2]
-M_acoustic = v_core_lab / c_sound
+rho_grav = rho_v + C_h rho_h + C_rot rho_rot + C_s rho_s + rho_r
 
-tau_sound,i = 1 + s_sound,i A_sound resonance (1 + 0.25 M_acoustic)
-Gamma_i,lab = tau_channel,i tau_sound,i Gamma_i,proper
+H_core(a)^2 = sum_i Omega_i a^(-n_i)
+N(a) = tau_rot / sqrt(1 + chi0 H_core(a)^2)
+H_lab(a) = H_core(a) / N(a)
+
+r_s(a) = integral_0^a c_s(a') / (a'^2 H_lab(a')) da'
+
+dot(rho_i) + 3H(rho_i + p_i) = Q_i
+sum_i Q_i = 0
 ```
 
-Sound changes the spatial spread and channel partial widths in the scaffold.
+The learned collision geometry becomes a cosmology language: hidden load becomes gravitational density, sound spread becomes acoustic pressure, time dilation becomes a lapse field, and rotation becomes vorticity/support.
 
 ---
 
@@ -95,12 +93,13 @@ Sound changes the spatial spread and channel partial widths in the scaffold.
 
 ```text
 CURRENT_STATUS.md
-models/sound_spread_bridge_v0.53.md
-analysis/results_v0.53/mcift_v0.53_sound_spread_report.md
-analysis/results_v0.53/mcift_v0.53_sound_spread_metrics.csv
-analysis/results_v0.53/mcift_v0.53_sound_channel_widths.csv
-analysis/results_v0.53/mcift_v0.53_sound_signal_summary.md
-analysis/results_v0.53/mcift_v0.53_sound_spread_criteria.csv
+models/cosmology_coarse_grain_v0.54.md
+analysis/results_v0.54/mcift_v0.54_cosmology_coarse_grain_report.md
+analysis/results_v0.54/mcift_v0.54_cosmology_coarse_grain_metrics.csv
+analysis/results_v0.54/mcift_v0.54_components.csv
+analysis/results_v0.54/mcift_v0.54_growth_kernel.csv
+analysis/results_v0.54/mcift_v0.54_expansion_lapse_samples.csv
+analysis/results_v0.54/mcift_v0.54_criteria.csv
 ```
 
 ---
@@ -108,7 +107,7 @@ analysis/results_v0.53/mcift_v0.53_sound_spread_criteria.csv
 ## Important limitation
 
 ```text
-v0.53 is an internal pressure-wave bridge. It is not real acoustic propagation in air, not a full quantum field calculation, and not collider evidence. The acoustic sensitivity map is still a scaffold rule.
+v0.54 is a coarse-graining scaffold. It is not an observational cosmology fit and not a replacement for standard cosmology.
 ```
 
 ---
@@ -118,10 +117,10 @@ v0.53 is an internal pressure-wave bridge. It is not real acoustic propagation i
 Next required tests:
 
 ```text
-1. Derive the acoustic sensitivity map from the 3D field.
-2. Replace assigned channel sound sensitivities with field-measured couplings.
-3. Keep visible and hidden branches separate before channel projection.
-4. Derive kappa values from geometry rather than fitting to reference widths.
+1. Implement the Q_i transfer network.
+2. Test whether hidden/sound/rotation sectors evolve without hand-normalization.
+3. Derive coarse-grained coefficients from the full 3D phase field.
+4. Compare only later against H(z), growth, sound horizon, and lensing observables.
 ```
 
 ---
