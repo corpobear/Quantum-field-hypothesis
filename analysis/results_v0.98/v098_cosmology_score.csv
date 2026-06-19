@@ -1,0 +1,7 @@
+observable,target,sigma,model,residual_sigma,label,status
+H0_early_planck_anchor,67.360000000000,0.540000000000,67.360000000000,0.000000000000,fitted_anchor,anchored_not_independent
+H0_local_shoes,73.040000000000,1.040000000000,71.665353249341,-1.321775721787,derived_from_shear,close_not_pass_claim
+S8_late_des_y3,0.776000000000,0.017000000000,0.778822240151,0.166014126510,derived_from_shear,pass_like
+BAO_DESI_DR2,not_numeric_scored,NA,not_computed,NA,not_tested,pending_direct_mapping
+CMB_acoustic_scale,not_numeric_scored,NA,not_computed,NA,not_tested,pending_direct_mapping
+BBN_consistency,not_numeric_scored,NA,not_computed,NA,not_tested,pending_direct_mapping
