@@ -1,0 +1,8 @@
+test,expected,observed,status
+flat_loop_closure,R_gamma_0,0,pass
+phase_defect_loop,nonzero_R_gamma,0p12_rad,pass
+flat_wave_covariance,isotropic,equal_cov_eigenvalues,pass
+single_defect_wave_covariance,anisotropic,anisotropy_0p835164031805,pass
+cfl_guard,dt_le_1,true,pass
+physical_lightcone,not_claimed,not_claimed,not_claimed
+full_GR,not_derived,not_derived,not_claimed
