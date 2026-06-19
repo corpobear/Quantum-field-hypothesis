@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.60 inverse-timeflow backpropagation retest
+**Current version:** v0.61 first-principle inverse-timeflow cosmology retest
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,83 +11,49 @@
 
 ## Current focus
 
-MCIFT now has an implemented inverse-timeflow retest layer:
+MCIFT now has a cosmology-specific inverse-timeflow retest layer:
 
 ```text
-v0.59 audit:
-  before-implementation benchmark against cosmology and CERN/LHC anchors
+v0.60:
+  inverse-timeflow backpropagation improved the particle/channel bridge
+  cosmology still used transfer/smoothing scaffold
 
-v0.60 implementation:
-  explicit gamma/Zgamma loop-surface readouts
-  explicit cc projection
-  inverse-timeflow backpropagation loss
-  before/after retest against v0.59
+v0.61:
+  inverse-timeflow acts inside the expansion rule
+  tau_ITF is derived from six-sink / visible / anchor sector stress
+  H_lab = tau_ITF * H_core
 ```
 
 Current verdict:
 
 ```text
-v0.60 = IMPLEMENTED_BACKPROP_IMPROVES_CERN_BRIDGE_RAW_STILL_SCAFFOLD
-```
-
-This is an implementation and retest scaffold, not a completed particle or cosmology fit.
-
----
-
-## v0.60 CERN/LHC result
-
-```text
-v0.59 raw BR_L1_vs_SM = 0.092428
-v0.60 implemented BR_L1_vs_SM = 0.037697
-v0.60 after backprop BR_L1_vs_SM = 0.000938
-
-v0.59 raw max_abs_BR_delta_pct = 100.000000
-v0.60 implemented max_abs_BR_delta_pct = 10.502733
-v0.60 after backprop max_abs_BR_delta_pct = 0.294487
-
-v0.59 failed_channels_10pct = gg,tau,cc,gamma,Zgamma,mumu
-v0.60 implemented failed_channels_10pct = gg
-v0.60 after backprop failed_channels_10pct = none
-```
-
-Interpretation:
-
-```text
-The implementation greatly improves the particle-channel comparison.
-The post-backprop result is a trained bridge, not an independent raw prediction.
+v0.61 = FIRST_PRINCIPLE_ITF_IMPROVES_RAW_HZ_NOT_FULL_COSMOLOGY_PASS
 ```
 
 ---
 
-## v0.60 cosmology result
+## v0.61 cosmology result
 
 ```text
+C_ITF = 0.689064
+tau_ITF = 0.708552
+
 v0.59 raw H075_3d = 156.663819
-v0.59 transfer H075_3d = 103.897709
-v0.60 after timeflow smoothing H075 = 103.897709
-v0.60 H075 delta vs reference = 0.064175 percent
+v0.59 raw delta vs LCDM = +50.883364 percent
+
+v0.60 transfer H075_3d = 103.897709
+v0.60 transfer delta vs LCDM = +0.064175 percent
+
+v0.61 first-principle ITF H075 = 111.004443
+v0.61 first-principle ITF delta vs LCDM = +6.908691 percent
+v0.61 residual vs compact CC point = +0.558221 sigma
 ```
 
 Interpretation:
 
 ```text
-The cosmology side remains at transfer/smoothing scaffold level.
-Raw 3D cosmology is still not a full pass.
-```
-
----
-
-## Inverse timeflow backpropagation status
-
-```text
-forward timeflow/clock formulas: PRESENT
-inverse-timeflow backprop loss: IMPLEMENTED
-```
-
-The implemented loss is:
-
-```text
-observed lab residual -> inverse timeflow loss -> hidden/core correction parameters
+v0.61 improves raw over-expansion by about 7.36x without using reference-derived smoothing.
+It is not yet a full cosmology pass.
 ```
 
 ---
@@ -95,14 +61,12 @@ observed lab residual -> inverse timeflow loss -> hidden/core correction paramet
 ## Analysis result files
 
 ```text
-CURRENT_STATUS.md
-simulations/mcift_v0_60_inverse_timeflow_backprop_retest.py
-analysis/results_v0.60/mcift_v0.60_inverse_timeflow_retest_report.md
-analysis/results_v0.60/mcift_v0.60_inverse_timeflow_metrics.csv
-analysis/results_v0.60/mcift_v0.60_cern_channels_before_after.csv
+simulations/mcift_v0_61_first_principle_cosmology_itf.py
+analysis/results_v0.61/mcift_v0.61_first_principle_cosmology_metrics.csv
+analysis/results_v0.61/mcift_v0.61_Hz_comparison.csv
 
-analysis/results_v0.59/mcift_v0.59_cosmology_cern_retest_report.md
-analysis/results_v0.59/mcift_v0.59_cosmology_cern_retest_metrics.csv
+simulations/mcift_v0_60_inverse_timeflow_backprop_retest.py
+analysis/results_v0.60/mcift_v0.60_inverse_timeflow_metrics.csv
 ```
 
 ---
@@ -110,9 +74,7 @@ analysis/results_v0.59/mcift_v0.59_cosmology_cern_retest_metrics.csv
 ## Important limitation
 
 ```text
-v0.60 implements and retests the missing inverse-timeflow/channel-readout layer.
-The trained bridge result should not be described as a raw first-principle prediction.
-Cosmology remains a transfer/smoothing scaffold, not a full raw cosmology pass.
+v0.61 improves the raw H(z=0.75) over-expansion, but does not implement the full BAO ladder, CMB spectra, growth data, or BBN.
 ```
 
 ---
@@ -122,10 +84,10 @@ Cosmology remains a transfer/smoothing scaffold, not a full raw cosmology pass.
 Next required tests:
 
 ```text
-1. Replace bridge-trained channel corrections with derived 3D dynamics.
-2. Derive Q_i smoothing dynamically instead of retaining the v0.59 transfer scaffold.
-3. Implement full cosmology observables: H(z), D_M(z), D_H(z), BAO ladder, C_l, and growth.
-4. Rerun raw, implemented-readout, and trained-bridge modes separately.
+1. Make C_ITF redshift-dependent from actual 3D field cells.
+2. Use C_ITF(a) from cell containment stress S_i = Coh_i - q_i.
+3. Add distance observables D_M(z), D_H(z), and BAO ladder scoring.
+4. Add growth and CMB-spectrum comparisons.
 ```
 
 ---
