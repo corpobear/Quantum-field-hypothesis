@@ -1,0 +1,11 @@
+input,value,label
+load_proxy,0.009817928223,derived_v097
+mean_shear_proxy,0.063915576742,derived_v097
+beta4_needed_for_balance,0.170868625373,derived_v097
+Gamma_H_SM_MeV,4.070000000000,reference_SM
+CMS_HZZ_mu,0.940000000000,anchor
+CMS_HZZ_mu_sigma_combined,0.114017542510,anchor_combined
+ATLAS_top_D,-0.537000000000,anchor
+ATLAS_top_D_sigma_combined,0.019104973175,anchor_combined
+CMS_top_D,-0.480000000000,anchor
+CMS_top_D_sigma_sym,0.027500000000,anchor_approx_sym
