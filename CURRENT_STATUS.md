@@ -1,23 +1,23 @@
-# Current MCIFT Status: v0.64 Unified First-Principle Formula Consolidation
+# Current MCIFT Status: v0.70 Dual First-Principle Prediction Test
 
-**Status:** speculative research scaffold; not established physics.  
-**Current layer:** v0.64 formula/paper consolidation on master.  
-**Previous layers:** v0.61 cosmology ITF, v0.62 blind CERN ITF, v0.63 dark-visible width envelope.
+**Status:** speculative compact prediction scaffold; not established physics.  
+**Current layer:** v0.70 dual compact prediction test.  
+**Previous layer:** v0.64 unified first-principle formula consolidation.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.64 consolidates the inverse-timeflow and dark-visible gravitational-envelope work directly on the main branch. It updates the paper entry point, formula documentation, README, status file, and key result metrics.
+MCIFT v0.70 runs two compact first-principle prediction tests from the same formula: one against CERN/Higgs width and branching-ratio anchors, and one against compact cosmology H(z=0.75) anchors. No backpropagation or target-loss fitting is used.
 ```
 
 ---
 
-## v0.64 verdict
+## v0.70 verdict
 
 ```text
-REWORKED_FIRST_PRINCIPLE_FORMULA_DOCUMENTED_ON_MASTER
+DUAL_PREDICTION_CERN_PASSLIKE_COSMOLOGY_CLOSE
 ```
 
 ---
@@ -39,46 +39,55 @@ N_V = 1
 N_A = 1
 A_lock = 0.918752
 C_ITF = 0.689064
-O_DV = 0.612372
-E_DV = 1.234890
+tau_ITF = 0.708551878
+O_DV = 0.612372436
+E_DV = 1.234890003
+E_DV^(1/3) = 1.072549870
 ```
 
 ---
 
-## CERN/Higgs result
+## Test 1: CERN/Higgs compact prediction
 
 ```text
-v0.62 blind max channel delta = 8.247649 percent
-v0.62 blind total width = 3.325981 MeV
-v0.62 width delta = -18.280555 percent
-
-v0.63 width after dark-visible envelope = 4.107221 MeV
-v0.63 width delta vs 4.07 MeV = +0.914526 percent
+width_prediction = 4.107221 MeV
+width_delta_vs_4.07 = +0.914526 percent
+max_channel_delta = 8.247649 percent
+BR_L1 = 0.052372
 ```
 
 Status:
 
 ```text
-branching-ratio pattern: PASS-LIKE / retained
-absolute width: IMPROVED / pass-like scaffold
-backpropagation used for v0.62 or v0.63 blind result: False
+compact CERN/Higgs prediction: PASS-LIKE
+backpropagation used: False
+target-loss fit used: False
 ```
 
 ---
 
-## Cosmology result
+## Test 2: Cosmology compact prediction
 
 ```text
-v0.59 raw H075 = 156.663819
-v0.61 first-principle ITF H075 = 111.004443
-LCDM compact reference H075 = 103.831075
-raw-to-v0.61 error improvement = 7.364392x
+H075_prediction = 103.465987
+H075_compact_LCDM_anchor = 103.831075
+H075_delta = -0.351618 percent
+H075_residual_vs_CC = -0.142614 sigma
+raw_to_v0.70_improvement = 144.712194x
+```
+
+BAO sanity check:
+
+```text
+BAO_peak = 152.29 Mpc
+BAO_reference_rd = 147.09 Mpc
+fractional_error = 0.035353
 ```
 
 Status:
 
 ```text
-raw H(z) over-expansion: improved
+compact H(z) prediction: CLOSE
 full BAO ladder: not implemented
 CMB spectra: not implemented
 BBN network: not implemented
@@ -92,11 +101,11 @@ BBN network: not implemented
 main.md
 README.md
 CURRENT_STATUS.md
+models/mcift_v0.70_dual_prediction_note.md
 models/mcift_first_principle_formula_v0.64.md
-analysis/results_v0.64/mcift_v0.64_master_formula_summary.csv
-analysis/results_v0.62/mcift_v0.62_blind_itf_metrics.csv
-analysis/results_v0.62/mcift_v0.62_blind_itf_channels.csv
-analysis/results_v0.63/mcift_v0.63_width_metrics.csv
+analysis/results_v0.70/v070_metrics.csv
+analysis/results_v0.70/v070_collider_result.csv
+analysis/results_v0.70/v070_cosmology_result.csv
 ```
 
 ---
@@ -104,9 +113,9 @@ analysis/results_v0.63/mcift_v0.63_width_metrics.csv
 ## Next target
 
 ```text
-v0.65 should move from sector-count rules to cell-resolved rules:
+v0.71 should move from compact sector-count rules to cell-resolved rules:
 S_i = Coh_i - q_i
-C_ITF(a) from weighted negative stability stress
+C_ITF(a) from weighted negative-stability stress
 O_DV(a) from dark-visible density overlap
 Then retest H(z), BAO, CERN total width, branching ratios, and signal-strength style observables separately.
 ```
