@@ -1,0 +1,9 @@
+metric,value
+verdict,BR_PASS_LIKE_WIDTH_LOW
+c_itf,0.689064
+branch_l1_before,0.0376967410764003
+branch_l1_after,0.0523719944935826
+max_delta_before_pct,10.5027329302548
+max_delta_after_pct,8.24764893442693
+width_mev,3.32598142936141
+width_delta_pct,-18.2805545611448
