@@ -1,0 +1,10 @@
+check,result,value
+entangle_flag,pass,E_seed_gt_threshold
+D_threshold,pass,-0.578976399000
+ATLAS_delta,passlike,0.041976399000
+CMS_delta,weak_passlike,0.098976399000
+lifetime,passlike,3.60e-25
+postfit,pass,False
+stable_hadron,not_tested,na
+HBT,not_tested,na
+validation,not_claimed,na
