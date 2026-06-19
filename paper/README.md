@@ -29,27 +29,36 @@ v0.31_cube_center_six_connector_addendum.md
 
 ---
 
-## Current foundation layer: v0.56 unified formula
+## Current executable layer: v0.57 unified field run
 
 Verdict:
 
 ```text
-PASS_FIRST_PRINCIPLE_CLOSURE_SCAFFOLD, 14/14 criteria
+PASS_EXECUTABLE_UNIFIED_FIELD_SCAFFOLD
 ```
 
 Summary:
 
 ```text
-v0.56 consolidates the older cubic field formula with the learned mechanics from v0.49-v0.55. The project now has one extended field object from which branch densities, rotation, clock/lapse, sound, channel readouts, cosmology sectors, and Q_i transfer are defined as projections.
+v0.57 implements the v0.56 unified field object as executable Python. One deterministic code path creates node/link/face/cell fields and computes entanglement, compression, rotation, visible/hidden branches, lapse, sound, channel readouts, Q-transfer retention, and cosmology readouts.
 ```
 
 Read:
 
 ```text
+simulations/mcift_v0_57_unified_field.py
+analysis/results_v0.57/mcift_v0.57_unified_field_report.md
+analysis/results_v0.57/mcift_v0.57_unified_field_metrics.csv
+```
+
+---
+
+## Current foundation layer: v0.56 unified formula
+
+```text
 paper/v0.56_unified_first_principle_formula_addendum.md
 models/first_principle_unified_field_formula_v0.56.md
 analysis/results_v0.56/mcift_v0.56_first_principle_closure_metrics.csv
-analysis/results_v0.56/mcift_v0.56_direct_readouts.csv
 ```
 
 ---
