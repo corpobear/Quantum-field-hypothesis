@@ -1,0 +1,12 @@
+criterion,passed
+sound_defined_as_internal_pressure_wave,True
+acoustic_speed_computed_from_coherence_density,True
+rotation_sound_resonance_computed,True
+sound_changes_spatial_spread,True
+sound_changes_shell_width,True
+channel_specific_sound_factors,True
+branching_ratios_changed,True
+max_BR_shift_bounded_under_5pct,True
+max_signal_shift_bounded_under_10pct,True
+total_width_recompensated,True
+not_claimed_as_air_sound_or_empirical_evidence,True
