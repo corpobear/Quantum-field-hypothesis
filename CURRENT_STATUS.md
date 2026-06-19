@@ -1,52 +1,49 @@
-# Current MCIFT Status: v0.46 Discarded-Vibration Rotation Strict Test
+# Current MCIFT Status: v0.47 Aero Drill-Sink Stabilization Test
 
 **Status:** speculative theoretical framework / toy collider and cosmology scaffold; not established physics.  
-**Current strict rotation test:** v0.46 discarded-vibration rotation test.  
-**Previous strict density test:** v0.45 dense entangled merge strict test.  
-**Previous strict 3D test:** v0.44 explicit 3D rhythm-lock merge test.  
-**Previous compact-input stabilizer:** v0.43 rhythm-locked entangled merge test.
+**Current strict shape-flow test:** v0.47 aero drill-sink stabilization test.  
+**Previous rotation test:** v0.46 discarded-vibration rotation test.  
+**Previous density test:** v0.45 dense entangled merge strict test.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.46 tests the user's correction that discarded vibration should influence the final rotation of the merged dense sphere. The discarded beat is converted into angular impulse and final rotation, which redistributes part of the over-locked core and reduces density pressure. The strict verdict is PARTIAL_ROTATION_RELIEF: 16/17 criteria passed. It nearly stabilizes the dense merge and restores a near-target hierarchy, but core pressure remains slightly above capacity, so it is not a hard pass.
+MCIFT v0.47 adds a shape-flow rule based on the rotating drill/sink geometry of the merged dense sphere. The rule converts part of the post-rotation core load into shell flow and adds a shape-supported coherence gain. The strict verdict is PASS_AERO_STABILIZED: 19/19 criteria passed. Core pressure drops below capacity and the channel hierarchy remains close to the rough reference.
 ```
 
 ---
 
-## v0.46 strict result
+## v0.47 strict result
 
 ```text
-verdict = PARTIAL_ROTATION_RELIEF
-criteria_pass_count = 16/17
-R_dense = 6.198812
-rho_ratio = 1.813671
-M_dense = 3.093656
-coherence_capacity = 0.770210
-E_core_seed_before_rotation = 1.496605
-E_beat_seed_discarded_vibration = 0.188784
-torque_fraction_from_discarded_vibration = 0.698456
-L_discarded_vibration = 3.423467
-E_rotation_from_discarded_vibration = 0.131844
-omega_final = 0.072027
-rotational_bleed_fraction = 0.572734
+verdict = PASS_AERO_STABILIZED
+criteria_pass_count = 19/19
+drill_index = 0.676114
+sink_intake_index = 0.928600
+streamline_index = 0.655629
+wake_index = 0.348632
+total_aero_bleed = 0.093460
+coherence_capacity_before_aero = 0.770210
+coherence_capacity_aero = 0.854501
 E_core_after_rotation = 0.639429
+E_core_after_aero = 0.545969
 density_pressure_after_rotation = 0.183042
-core_pressure_after_rotation = 1.066881
-final_energy_over_peak = 0.318000
+density_pressure_after_aero = 0.162344
+core_pressure_after_aero = 0.828920
+final_energy_over_peak = 0.246000
 ```
 
 Channel fractions:
 
 ```text
-bb_like     = 0.564218  target ~ 0.582000
-WZ_like     = 0.244806  target ~ 0.240000
-gg_like     = 0.126940  target ~ 0.086000
-tau_like    = 0.061724  target ~ 0.063000
-gamma_like  = 0.001107  target ~ 0.002300
-mumu_like   = 0.001205  target ~ 0.000220
+bb_like     = 0.580984
+WZ_like     = 0.244118
+gg_like     = 0.107516
+tau_like    = 0.064210
+gamma_like  = 0.001302
+mumu_like   = 0.001870
 ```
 
 ---
@@ -54,18 +51,19 @@ mumu_like   = 0.001205  target ~ 0.000220
 ## Analysis result files
 
 ```text
-analysis/results_v0.46/mcift_v0.46_discarded_vibration_rotation_report.md
-analysis/results_v0.46/mcift_v0.46_discarded_vibration_rotation_metrics.csv
-analysis/results_v0.46/mcift_v0.46_discarded_vibration_rotation_channels.csv
+analysis/results_v0.47/mcift_v0.47_aerodynamic_drill_sink_stabilization_metrics.csv
+analysis/results_v0.47/mcift_v0.47_channels_summary.csv
 ```
+
+The full report, plots, history, and radial profile are in the local output bundle.
 
 ---
 
 ## Next proof target
 
 ```text
-v0.47 target:
-derive the discarded-vibration angular impulse directly from the 3D vector phase field and let rotation feed back into coherence capacity, without tuning decay channels.
+v0.48 target:
+derive the shape-flow coefficients directly from the full 3D vector phase field and then compute kappa coupling modifiers / partial widths without channel tuning.
 ```
 
 ---
@@ -73,5 +71,5 @@ derive the discarded-vibration angular impulse directly from the 3D vector phase
 ## Safe wording
 
 ```text
-v0.46 shows that discarded vibration is a real stabilizing contribution through final rotation, but it does not fully pass containment yet. The next missing rule is rotation-fed coherence capacity or a first-principle angular shell bleed.
+v0.47 is a scaffold pass: drill/sink shape-flow stabilizes the dense merge in this toy field calculation. It is not detector-level collider evidence.
 ```
