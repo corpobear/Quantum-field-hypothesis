@@ -1,0 +1,11 @@
+check,result,residual
+visible_local,fail_expected,0.024000000000
+visible_global,pass,0.000000000000
+hidden_exchange,pass,0.000000000000
+combined_local,pass,0.000000000000
+combined_global,pass,0.000000000000
+periodic_flux,pass,0.000000000000
+v083_regression,pass,0
+v082_regression,pass,0
+v081_regression,pass,0
+observational,not_tested,na
