@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.72 spatial scale-lapse retest
+**Current version:** v0.73 cell-action spatial lapse cosmology retest
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,73 +11,69 @@
 
 ## Current focus
 
-The main branch now tests the missing spatial ruler correction:
+The main branch now retests cosmology after deriving the spatial scale-lapse from a minimal strain-energy action:
 
 ```text
-previous idea: inverse-timeflow changes the clock
-v0.72 idea: gravity/dark-visible overlap also changes the effective ruler
+v0.72: sigma_X was written as E_DV^(1/3)
+v0.73: sigma_X is derived from a one-zone cell-action stationary point
 ```
 
 Current verdict:
 
 ```text
-v0.72 = SPATIAL_SCALE_LAPSE_IMPROVES_HZ_AND_DISTANCE_ANCHORS_BUT_NOT_LOCAL_H0_OR_RAW_BAO_PEAK
+v0.73 = CELL_ACTION_SPATIAL_LAPSE_REPRODUCES_DISTANCE_CLOSES_BUT_FULL_COSMOLOGY_STILL_MIXED
 ```
 
 ---
 
-## Spatial scale-lapse formula
+## Minimal cell-action derivation
 
 ```text
-E_DV = exp[C_ITF * O_DV / (N_V + N_A)]
-sigma_X = E_DV^(1/3)
-        = exp[C_ITF * O_DV / (3 (N_V + N_A))]
+sigma_X = exp(phi_X)
+J_X = C_ITF * O_DV
+F_X(phi_X) = 1/2 K_X phi_X^2 - J_X phi_X
+partial F_X / partial phi_X = 0
+phi_X = J_X / K_X
+K_X = 3 (N_V + N_A) = 6
 ```
 
-Current numerical values:
+Therefore:
+
+```text
+phi_X = C_ITF * O_DV / [3 (N_V + N_A)]
+sigma_X = exp(phi_X)
+```
+
+Current values:
 
 ```text
 C_ITF = 0.689064
 O_DV = 0.612372436
-E_DV = 1.234890003
+K_X = 6
+phi_X = 0.070040089
 sigma_X = 1.072549870
-spatial_lapse = +7.254987 percent
-```
-
-Observable maps:
-
-```text
-H_lab = H_core / sigma_X
-D_lab = sigma_X * D_core
-k_lab = k_core / sigma_X
-Gamma_lab = sigma_X^3 * tau_i * Gamma_core
 ```
 
 ---
 
-## v0.72 retest results
+## v0.73 cosmology retest
 
 ```text
-H075 before spatial lapse = 111.004443
-H075 after spatial lapse = 103.465987
-H075 delta vs compact LCDM = -0.351618 percent
+H0_prediction = 67.163010
+Planck_H0 residual = -0.364797 sigma
+SH0ES_H0 residual = -5.650952 sigma
+PantheonPlus_H0 residual = -5.760900 sigma
+PantheonPlus_OmegaM residual = -1.038889 sigma
 
-Planck-like H0 residual = -0.364797 sigma
-SH0ES H0 residual = -5.650952 sigma
+H075_prediction = 103.465987
+H075_delta_vs_compact_LCDM = -0.351618 percent
 
-DESI LyA D_H/r_d residual = +0.146909 sigma
-DESI LyA D_M/r_d residual = +0.602802 sigma
-```
+DESI_LyA_DH/rd residual = +0.146909 sigma
+DESI_LyA_DM/rd residual = +0.602802 sigma
 
-Raw BAO peak check:
-
-```text
-raw BAO peak = 152.29 Mpc
-reference r_d = 147.09 Mpc
-raw fractional error = +0.035353
-
-if divided by sigma_X: 141.987812 Mpc, fractional error = -0.034690
-if multiplied by sigma_X: 163.340999 Mpc, fractional error = +0.110481
+BBN omega_b h2 residual = +0.345455 sigma
+DESY3_S8 residual = +0.206750 sigma
+Planck_S8 residual = -4.329115 sigma
 ```
 
 ---
@@ -85,10 +81,9 @@ if multiplied by sigma_X: 163.340999 Mpc, fractional error = +0.110481
 ## Strict status
 
 ```text
-works well: H(z=0.75), Planck-like H0, DESI LyA distance ratios
-still fails: local SH0ES H0
-not solved: raw BAO peak scale
-not implemented: full BAO ladder covariance, SN distance moduli, full CMB Cl
+close/pass-like: Planck-like H0, H(z=0.75), DESI LyA BAO, BBN baryon density, DES Y3-style S8, Pantheon+ OmegaM
+fail/tension: SH0ES H0, Pantheon+ local-distance-ladder H0, Planck S8 if the growth proxy is literal
+not implemented: full CMB Cl, full SN distance-modulus residuals, full BAO covariance, BBN reaction network
 ```
 
 ---
@@ -96,9 +91,9 @@ not implemented: full BAO ladder covariance, SN distance moduli, full CMB Cl
 ## Main documents
 
 ```text
-models/mcift_v0.72_spatial_scale_lapse_note.md
-analysis/results_v0.72/v072_spatial_lapse_metrics.csv
-analysis/results_v0.72/v072_spatial_lapse_tests.csv
+models/mcift_v0.73_cell_action_spatial_lapse_note.md
+analysis/results_v0.73/v073_cell_derived_spatial_lapse_metrics.csv
+analysis/results_v0.73/v073_cell_derived_cosmology_tests.csv
 main.md
 CURRENT_STATUS.md
 README.md
@@ -109,11 +104,10 @@ README.md
 ## Next version target
 
 ```text
-v0.73 should implement a proper distance-ladder engine:
-full BAO D_M, D_H, D_V table across redshifts
-supernova distance-modulus residuals
-compressed CMB distance priors
-no per-dataset fitting of sigma_X
+v0.74 should move from one-zone action to cell-resolved action:
+F_X = sum_i [1/2 K_i phi_i^2 + 1/2 |grad phi_i|^2 - J_i phi_i]
+(-nabla^2 + K_i) phi_i = J_i
+sigma_X(a) = exp[weighted average of phi_i over the observed redshift shell]
 ```
 
 ---
