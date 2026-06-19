@@ -1,53 +1,58 @@
-# Current MCIFT Status: v0.56 Unified First-Principle Formula
+# Current MCIFT Status: v0.57 Executable Unified Field
 
-**Status:** speculative theoretical framework / unified scaffold; not established physics.  
-**Current layer:** v0.56 unified first-principle field formula and closure test.  
-**Previous layer:** v0.55 Q_i transfer-network background comparison.
+**Status:** speculative executable scaffold; not established physics.  
+**Current layer:** v0.57 executable unified-field run.  
+**Previous layer:** v0.56 unified first-principle field formula.
 
 ---
 
 ## One-sentence status
 
 ```text
-MCIFT v0.56 consolidates the old v0.33 cubic field formula with the learned mechanics from v0.49-v0.55. Collision stability, visible/hidden branches, rotation, clock/lapse, sound spread, channel kappa/readouts, cosmology densities, and Q_i transfer are now defined as downstream projections of one extended field object.
+MCIFT v0.57 implements the v0.56 unified field object as executable Python. One deterministic code path instantiates node, link, face, and cell variables, then computes entanglement, compression, rotation, visible/hidden branches, lapse, sound, channel readouts, Q-transfer retention, and coarse-grained cosmology readouts.
 ```
 
 ---
 
-## v0.56 result
+## v0.57 result
 
 ```text
-verdict = PASS_FIRST_PRINCIPLE_CLOSURE_SCAFFOLD
-criteria_pass_count = 14/14
-Omega_m_like_from_visible_plus_hidden = 0.315000
-component_sum_after_transfer = 1.000000
-omega_lab_direct_from_tau = 0.062557986756
-omega_lab_reference = 0.062557986756
-omega_lab_abs_delta = 0.000000
-c_sound_proxy = 0.582034
-c_sound_squared = 0.338764
-sound_horizon_proxy_at_a1 = 0.394142
-mu_eff_k_0p1 = 1.214007
+verdict = PASS_EXECUTABLE_UNIFIED_FIELD_SCAFFOLD
+grid_n = 34
+cells = 39304
+mean_chi = 0.262683
+mean_Omega = 0.381430
+mean_E = 1.111738
+mean_R_lock = 0.964146
+mean_rho_ratio = 1.418517
+mean_lapse_N = 0.830136
+mean_omega_lab = 0.068444
+mean_c_sound = 0.719971
+collapse_fraction = 0.103908
 ```
 
----
-
-## Unified field object
+Branch fractions from the field:
 
 ```text
-Psi_i^0.56 = (
-  K_i, phi_i, T_i,
-  {a_i,mu}, {chi_i,mu},
-  {H_i,mu}, {Omega_i,mu}, {m_i,mu},
-  E_i, R_lock_i, lambda_R_i, rho_ratio_i,
-  L_i, omega_i, I_i,
-  P_v,i, P_h,i,
-  rho_v,i, rho_h,i, rho_rot,i, rho_s,i, rho_r,i,
-  G_i, N_i,
-  c_s,i, A_sound_i, Sigma_i,
-  q_i, Coh_i, S_i, B_i,
-  {Q_i->j}
-)
+visible_raw = 0.542599
+hidden_raw = 0.446601
+rotation_raw = 0.001410
+sound_raw = 0.009269
+radiation_raw = 0.000121
+```
+
+After-transfer readouts:
+
+```text
+Omega_visible_today = 0.172785
+Omega_hidden_today = 0.142215
+Omega_m_like_today = 0.315000
+Omega_rotation_today = 0.000027
+Omega_acoustic_today = 0.000336
+Omega_radiation_today = 0.000000
+Omega_smooth_lapse_reservoir_today = 0.684636
+H075_model = 103.897709
+H075_delta_pct_vs_reference = 0.064175
 ```
 
 ---
@@ -55,19 +60,20 @@ Psi_i^0.56 = (
 ## Analysis result files
 
 ```text
-models/first_principle_unified_field_formula_v0.56.md
-analysis/results_v0.56/mcift_v0.56_first_principle_closure_report.md
-analysis/results_v0.56/mcift_v0.56_first_principle_closure_metrics.csv
-analysis/results_v0.56/mcift_v0.56_direct_readouts.csv
-analysis/results_v0.56/mcift_v0.56_criteria.csv
+simulations/mcift_v0_57_unified_field.py
+analysis/results_v0.57/mcift_v0.57_unified_field_report.md
+analysis/results_v0.57/mcift_v0.57_unified_field_metrics.csv
+analysis/results_v0.57/mcift_v0.57_unified_field_branches.csv
+analysis/results_v0.57/mcift_v0.57_unified_field_channels.csv
+analysis/results_v0.57/mcift_v0.57_unified_field_growth_kernel.csv
+analysis/results_v0.57/mcift_v0.57_transfer_retention.csv
+analysis/results_v0.57/mcift_v0.57_criteria.csv
 ```
-
-The diagram and local bundle are in the output artifact.
 
 ---
 
 ## Safe wording
 
 ```text
-v0.56 is a formula-consolidation scaffold. It does not yet derive every coefficient from first principles. It defines the single field object and projection chain from which the coefficients must be derived next.
+v0.57 is an executable closure test for the unified MCIFT scaffold. It is not a completed physics model or observational fit. The next step is to remove category coefficients by measuring them directly from the evolved 3D field geometry.
 ```
