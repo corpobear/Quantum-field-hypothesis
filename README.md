@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.55 Q_i transfer-network background comparison
+**Current version:** v0.56 unified first-principle field formula
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,72 +11,75 @@
 
 ## Current focus
 
-MCIFT now has a calibrated background-comparison layer:
+MCIFT now has a consolidated formula layer:
 
 ```text
-v0.54 cosmology layer:
-  visible, hidden, rotation, radiation, and acoustic branches become coarse-grained density sectors
+v0.33 base:
+  cubic node/link/face/cell field formula
 
-v0.55 transfer layer:
-  conservative Q_i transfer map moves excess local branch energy into a smooth/lapse reservoir
-  then compares raw and transfer-corrected H(z) against real-world reference checkpoints
+v0.49-v0.55 learned mechanics:
+  visible/hidden split, rotation, clock/lapse, sound, kappa/readout, cosmology, Q_i transfer
+
+v0.56 consolidation:
+  all downstream calculations become projections/readouts of one extended field object
 ```
 
 Current verdict:
 
 ```text
-v0.55 Q_i transfer network = PASS_Q_TRANSFER_BACKGROUND_BRIDGE
+v0.56 unified first-principle formula = PASS_FIRST_PRINCIPLE_CLOSURE_SCAFFOLD
 ```
 
-This is a calibrated transfer-network bridge, not a successful observational cosmology fit.
+This is a formula-consolidation scaffold, not a complete predictive physics theory.
 
 ---
 
-## v0.55 result
+## v0.56 result
 
 ```text
-Omega_visible_today = 0.244232
-Omega_hidden_today = 0.070768
-Omega_m_like_today = 0.315000
-Omega_rotation_today = 0.001500
-Omega_acoustic_today = 0.003500
-Omega_radiation_today = 0.000090
-Omega_smooth_lapse_reservoir_today = 0.679910
-```
-
-Real-world comparison checkpoint:
-
-```text
-H0_reference = 67.4
-Omega_m_reference = 0.315
-H075_observed = 105.0 ± 10.756
-H075_model = 104.766
-H075_residual_sigma = -0.022
-```
-
-Raw vs transfer at z=0.75:
-
-```text
-Planck_LCDM_reference_H075 = 103.831
-v0.54_raw_no_transfer_H075 = 167.670
-v0.55_transfer_H075 = 104.766
-raw_H075_delta_pct = 61.483
-transfer_H075_delta_pct = 0.901
+criteria_pass_count = 14/14
+Omega_m_like_from_visible_plus_hidden = 0.315000
+component_sum_after_transfer = 1.000000
+omega_lab_direct_from_tau = 0.062557986756
+omega_lab_reference = 0.062557986756
+c_sound_proxy = 0.582034
+sound_horizon_proxy_at_a1 = 0.394142
+mu_eff_k_0p1 = 1.214007
 ```
 
 ---
 
-## Key math
+## Unified field object
 
 ```text
-dot(rho_i) + 3H(rho_i + p_i) = Q_i
-sum_i Q_i = 0
-
-rho_i(today) = R_i rho_i(v0.54)
-rho_smooth(today) = sum_i (1 - R_i) rho_i(v0.54)
+Psi_i^0.56 = (
+  K_i, phi_i, T_i,
+  {a_i,mu}, {chi_i,mu},
+  {H_i,mu}, {Omega_i,mu}, {m_i,mu},
+  E_i, R_lock_i, lambda_R_i, rho_ratio_i,
+  L_i, omega_i, I_i,
+  P_v,i, P_h,i,
+  rho_v,i, rho_h,i, rho_rot,i, rho_s,i, rho_r,i,
+  G_i, N_i,
+  c_s,i, A_sound_i, Sigma_i,
+  q_i, Coh_i, S_i, B_i,
+  {Q_i->j}
+)
 ```
 
-The raw coarse-grained branch fractions cannot be compared directly to H(z). A transfer/smoothing network is required before real-world background comparison.
+---
+
+## Direct readout map
+
+```text
+collision stability -> S_i = Coh_i - q_i
+visible channels -> W_c(Psi)
+hidden matter -> P_h(Psi)
+rotation -> L_i from discarded vibration
+time dilation -> N_i from load and rotation
+sound spread -> c_s and A_sound from coherence/load
+cosmology -> coarse-grained rho_alpha and Q_i
+```
 
 ---
 
@@ -84,15 +87,11 @@ The raw coarse-grained branch fractions cannot be compared directly to H(z). A t
 
 ```text
 CURRENT_STATUS.md
-models/q_transfer_network_v0.55.md
-analysis/results_v0.55/mcift_v0.55_q_transfer_report.md
-analysis/results_v0.55/mcift_v0.55_q_transfer_metrics.csv
-analysis/results_v0.55/mcift_v0.55_components_after_transfer.csv
-analysis/results_v0.55/mcift_v0.55_transfer_network.csv
-analysis/results_v0.55/mcift_v0.55_Hz_comparison.csv
-analysis/results_v0.55/mcift_v0.55_real_world_comparison.csv
-analysis/results_v0.55/mcift_v0.55_growth_kernel.csv
-analysis/results_v0.55/mcift_v0.55_criteria.csv
+models/first_principle_unified_field_formula_v0.56.md
+analysis/results_v0.56/mcift_v0.56_first_principle_closure_report.md
+analysis/results_v0.56/mcift_v0.56_first_principle_closure_metrics.csv
+analysis/results_v0.56/mcift_v0.56_direct_readouts.csv
+analysis/results_v0.56/mcift_v0.56_criteria.csv
 ```
 
 ---
@@ -100,7 +99,7 @@ analysis/results_v0.55/mcift_v0.55_criteria.csv
 ## Important limitation
 
 ```text
-v0.55 is calibrated to Planck-like H0/Omega_m and is not a predictive cosmology fit. DESI-style evolving-dark-energy behavior is not fitted yet.
+v0.56 defines one field object and projection chain. It does not yet derive all numerical coefficients from first principles.
 ```
 
 ---
@@ -110,10 +109,10 @@ v0.55 is calibrated to Planck-like H0/Omega_m and is not a predictive cosmology 
 Next required tests:
 
 ```text
-1. Replace present-day retention factors with dynamic Q_i rates.
-2. Fit or derive evolving dark-energy behavior instead of a static smooth reservoir.
-3. Compare against DESI BAO, supernova, H(z), growth, sound horizon, and lensing data.
-4. Derive Q_i rates from the full 3D phase field.
+1. Implement v0.56 as executable code.
+2. Replace assigned channel/category coefficients with field-measured projections.
+3. Derive Q_i transfer rates dynamically from Psi_i.
+4. Recompute particle and cosmology outputs from the unified field only.
 ```
 
 ---
