@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+
+<style>
+  .title { font: bold 24px sans-serif; }
+  .label { font: 16px sans-serif; }
+  .small { font: 13px sans-serif; }
+  .box { fill: white; stroke: black; stroke-width: 2; rx: 12; }
+  .node { fill: #f8f8f8; stroke: black; stroke-width: 2; }
+  .arrow { stroke: black; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+  .dash { stroke: black; stroke-width: 2; stroke-dasharray: 7 6; fill: none; }
+  .soft { fill: #eeeeee; stroke: black; stroke-width: 1.8; }
+</style>
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M2,2 L10,6 L2,10 Z" fill="black" />
+  </marker>
+</defs>
+
+
+<text x="550" y="45" text-anchor="middle" class="title">Visible / hidden branch split</text>
+<circle cx="550" cy="250" r="115" class="node"/>
+<text x="550" y="242" text-anchor="middle" class="label">entangled merge</text>
+<text x="550" y="270" text-anchor="middle" class="small">shared dense event</text>
+<rect x="130" y="470" width="330" height="120" class="box"/>
+<text x="295" y="510" text-anchor="middle" class="label">visible branch</text>
+<text x="295" y="540" text-anchor="middle" class="small">face / vortex capture</text>
+<text x="295" y="565" text-anchor="middle" class="small">then visible channel split</text>
+<rect x="640" y="470" width="340" height="120" class="box"/>
+<text x="810" y="510" text-anchor="middle" class="label">hidden branch</text>
+<text x="810" y="540" text-anchor="middle" class="small">density shadow + sink intake</text>
+<text x="810" y="565" text-anchor="middle" class="small">not added to visible channels</text>
+<path d="M 500 350 C 430 415, 355 440, 300 470" class="arrow"/>
+<path d="M 605 350 C 680 415, 760 440, 810 470" class="arrow"/>
+
+</svg>
