@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+
+<style>
+  .title { font: bold 24px sans-serif; }
+  .label { font: 16px sans-serif; }
+  .small { font: 13px sans-serif; }
+  .box { fill: white; stroke: black; stroke-width: 2; rx: 12; }
+  .node { fill: #f8f8f8; stroke: black; stroke-width: 2; }
+  .arrow { stroke: black; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+  .dash { stroke: black; stroke-width: 2; stroke-dasharray: 7 6; fill: none; }
+  .soft { fill: #eeeeee; stroke: black; stroke-width: 1.8; }
+</style>
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M2,2 L10,6 L2,10 Z" fill="black" />
+  </marker>
+</defs>
+
+
+<text x="550" y="45" text-anchor="middle" class="title">Drill / sink shape-flow stabilization</text>
+<ellipse cx="550" cy="330" rx="150" ry="105" class="node"/>
+<path d="M 405 330 C 460 245, 640 245, 695 330 C 640 415, 460 415, 405 330 Z" class="dash"/>
+<path d="M 385 330 C 300 325, 245 300, 190 255" class="arrow"/>
+<path d="M 710 330 C 800 340, 850 370, 910 420" class="arrow"/>
+<path d="M 550 225 C 610 240, 635 285, 610 330" class="arrow"/>
+<text x="550" y="320" text-anchor="middle" class="label">rotating core</text>
+<text x="550" y="348" text-anchor="middle" class="small">drill index + sink intake</text>
+<rect x="120" y="450" width="320" height="95" class="box"/>
+<text x="280" y="485" text-anchor="middle" class="label">drag bleed</text>
+<text x="280" y="515" text-anchor="middle" class="small">core load → shell flow</text>
+<rect x="670" y="450" width="320" height="95" class="box"/>
+<text x="830" y="485" text-anchor="middle" class="label">coherence lift</text>
+<text x="830" y="515" text-anchor="middle" class="small">shape flow raises support</text>
+
+</svg>
