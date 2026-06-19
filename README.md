@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.42 entangled merge-sphere strict test
+**Current version:** v0.49 core load feedback test
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,60 +11,63 @@
 
 ## Current focus
 
-MCIFT now tests a strict entanglement-first collision:
+MCIFT now tests a dense entanglement collision with separate visible and hidden branches:
 
 ```text
 two particles attempt to entangle
-if entanglement score passes threshold, they become one temporary sphere
-masses add into the merged object
-vibration is intensified first
-merged sphere either stabilizes or explodes
+merged object becomes denser than simple mass addition
+visible branch comes from face/vortex capture
+hidden branch is computed separately
+hidden branch feeds back as local rotating-core load
+rotation and shape-flow support coherence
 ```
 
-Verdict:
+Current verdict:
 
 ```text
-v0.42 entangled merge-sphere strict test = FLOP_EXPLODES, 8/12 criteria
+v0.49 core load feedback test = PASS_CORE_LOAD_FEEDBACK, 18/18 criteria
 ```
 
-This is a useful failure, not a cosmetic pass. The merge forms, but the mass-energy vibration seed exceeds the merged coherence capacity.
+This is a scaffold pass, not empirical confirmation. The useful point is that hidden branch feedback now changes the rotating-core load while remaining outside the visible channel split.
 
 ---
 
-## v0.42 result
+## v0.49 result
 
 ```text
-entanglement_score = 0.292811
-entanglement_threshold = 0.280000
-merged_mass = 2.000000
-merged_radius = 7.559526
-coherence_capacity = 0.526780
-E_mass_added = 0.500000
-E_vib_seed = 1.139518
-explosion_pressure_0 = 2.163178
-max_explode_index = 3.544722
+E_visible_pool = 0.605407
+E_hidden_sink = 0.102906
+E_rotation_bound = 0.131844
+G_visible = 0.605407
+G_hidden = 0.175419
+G_rot = 0.093676
+G_load = 0.874502
+load_strength_vs_visible = 1.444487
+capacity_before_feedback = 0.854501
+capacity_after_feedback = 0.910654
+core_pressure_before_feedback = 0.727761
+core_pressure_after_feedback = 0.717440
 ```
 
-Shape result:
+Budget fractions:
 
 ```text
-weighted_shell_radius = 7.985898
-weighted_sphericity = 0.828023
-weighted_anisotropy = 0.171977
-weighted_core_fraction = 0.475223
-weighted_inner_fraction = 0.412373
-weighted_outer_fraction = 0.112404
+visible = 0.648453
+hidden = 0.110223
+rotation = 0.141219
+radiation = 0.054259
+shell = 0.045846
 ```
 
-Channel fractions:
+Visible branch:
 
 ```text
-bb_like     = 0.205855  target ~ 0.582000
-WZ_like     = 0.519062  target ~ 0.240000
-gg_like     = 0.206559  target ~ 0.086000
-tau_like    = 0.053204  target ~ 0.063000
-gamma_like  = 0.014296  target ~ 0.002300
-mumu_like   = 0.001023  target ~ 0.000220
+bb_like = 0.581674
+WZ_like = 0.244245
+gg_like = 0.104854
+tau_like = 0.064263
+gamma_like = 0.001234
+mumu_like = 0.001920
 ```
 
 ---
@@ -72,31 +75,38 @@ mumu_like   = 0.001023  target ~ 0.000220
 ## Key math
 
 ```text
-entanglement_score = overlap_gate * phase_lock * spin_lock * mass_match * timing_match
-merge allowed only if entanglement_score >= threshold
-M_merge = m_A + m_B
-R_merge = (R_A^3 + R_B^3)^(1/3)
-I_merge = (2/5) M_merge R_merge^2
-E_vib_seed = eta_m M_merge c^2 + eta_c E_dissipated + eta_s E_spin
-explosion_pressure = E_vib_seed / coherence_capacity
+G_visible = E_visible_pool
+G_hidden = C_sink * E_hidden_sink
+G_rot = xi_rot * E_rotation_bound
+G_load = G_visible + G_hidden + G_rot
+core_pressure_after_feedback = core_load_after_feedback / capacity_after_feedback
 ```
+
+The visible branch is still computed separately from the hidden branch. The hidden branch contributes load/support feedback, not visible decay-like fractions.
 
 ---
 
 ## Analysis result files
 
 ```text
-analysis/results_v0.42/mcift_v0.42_entangled_merge_sphere_report.md
-analysis/results_v0.42/mcift_v0.42_entangled_merge_sphere_metrics_summary.csv
-analysis/results_v0.42/mcift_v0.42_entangled_merge_sphere_channels.csv
+CURRENT_STATUS.md
+models/dark_gravity_entanglement_feedback_v0.49.md
+analysis/results_v0.49/mcift_v0.49_core_load_feedback_short_report.md
+analysis/results_v0.49/mcift_v0.49_core_load_feedback_metrics.csv
+analysis/results_v0.49/mcift_v0.49_budget.csv
+analysis/results_v0.49/mcift_v0.49_source_loads.csv
+analysis/results_v0.49/mcift_v0.49_visible_branch_channels.md
+analysis/results_v0.49/mcift_v0.49_criteria.csv
 ```
+
+Some longer report and plot artifacts are kept in local output bundles because the connector may block text-heavy uploads.
 
 ---
 
 ## Important limitation
 
 ```text
-v0.42 is a strict toy merge-sphere calculation, not a detector-level CERN simulation. A flop means this specific entanglement/merge rule is unstable, not that the full MCIFT program is falsified.
+v0.49 is a toy core-load feedback result. It is not a measured dark-matter model, general-relativistic simulation, detector-level collider simulation, or empirical confirmation.
 ```
 
 ---
@@ -106,10 +116,10 @@ v0.42 is a strict toy merge-sphere calculation, not a detector-level CERN simula
 Next required tests:
 
 ```text
-1. Search for a first-principle stabilizer term: merged-shell coherence, phase-lock damping, or outward vibration bleed.
-2. Do not tune decay channels directly.
-3. Retest stability before comparing channels.
-4. Only after stability should the model derive coupling modifiers and collider observables.
+1. Derive the feedback coefficients from the full 3D vector phase field.
+2. Keep visible and hidden branches separate before channel projection.
+3. Retest without tuning visible channels directly.
+4. Only after stability should the model derive coupling modifiers and partial widths.
 ```
 
 ---
