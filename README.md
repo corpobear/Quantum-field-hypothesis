@@ -1,9 +1,9 @@
 # Multi-Channel Information Field Theory (MCIFT)
 
-**Status:** speculative theoretical framework / toy-field, collider, cosmology, weak-field gravity, and entanglement scaffold  
+**Status:** speculative theoretical framework / toy-field, collider, cosmology, weak-field gravity, entanglement, and femtoscopy scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.85 pre-collision entanglement predictor
+**Current version:** v0.86 stable final-state femtoscopy cross-check
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -15,42 +15,38 @@
 docs/mcift_findings_v0.1_to_v0.80.md    consolidated project findings history
 docs/documentation_gap_audit.md          missing/stale documentation audit
 CURRENT_STATUS.md                        current repo status
-models/mcift_v0.85_precollision_entanglement_note.md
-analysis/results_v0.85/v085_predictor_metrics.csv
-analysis/results_v0.85/v085_checks.csv
+models/mcift_v0.86_femtoscopy_note.md
+analysis/results_v0.86/v086_femtoscopy_metrics.csv
+analysis/results_v0.86/v086_checks.csv
 ```
 
 ---
 
 ## Current focus
 
-The main branch now tests a pre-collision prediction:
+The main branch now connects the pre-collision sphere predictor to stable final-state correlation trends:
 
 ```text
-given two incoming coherent sphere packets,
-predict entanglement before collision,
-predict a semi-stable lifetime scale,
-then compare against CERN-style top-pair entanglement anchors.
+predict stable final-state source-memory / coherence trends,
+then compare against ALICE femtoscopy / HBT-style anchors.
 ```
 
 Current verdict:
 
 ```text
-v0.85 = PRECOLLISION_ENTANGLEMENT_LIFETIME_PREDICTOR_BUILT_CERN_TOP_PAIR_CROSSCHECK_PASSLIKE_NOT_VALIDATED
+v0.86 = STABLE_FINAL_STATE_FEMTOSCOPY_TREND_CROSSCHECK_PASSLIKE_NOT_EVENT_VALIDATED
 ```
 
 ---
 
-## v0.85 result
+## v0.86 result
 
 ```text
-E_seed = 0.578976399
-entangle_threshold = 1/3
-entangle_prediction = true
-D_proxy_predicted = -0.578976399
-ATLAS D reference = -0.537
-CMS D reference = -0.480
-tau_entangle_predicted = 3.60e-25 s
+multiplicity radius trend: predicted positive, ALICE positive
+pair-kT radius trend: predicted negative, ALICE negative
+same-multiplicity energy similarity: predicted true, ALICE true
+pPb_over_pp_factor: predicted 1.15, ALICE range 1.10 to 1.20
+trend_score = 4_of_4
 ```
 
 ---
@@ -58,9 +54,10 @@ tau_entangle_predicted = 3.60e-25 s
 ## Strict status
 
 ```text
-passes: predicts top-pair-style entanglement sign/threshold before collision and gives a lifetime in the top-quark scale
-pass-like: D proxy is near ATLAS/CMS top-pair entanglement measurements
-missing: stable hadron entanglement, HBT/femtoscopy stable-output coherence, full event-level validation
+passes: predicts the correct direction of stable final-state femtoscopy trends
+pass-like: pPb/pp factor is inside the trend-level ALICE range
+not claimed: literal stable-particle entanglement
+missing: numeric R_out/R_side/R_long/lambda event-level validation
 ```
 
 ---
@@ -68,7 +65,7 @@ missing: stable hadron entanglement, HBT/femtoscopy stable-output coherence, ful
 ## Next version target
 
 ```text
-v0.86 should connect this predictor to stable final-state correlation data, especially pion/kaon/proton femtoscopy and HBT-style source radii.
+v0.87 should move from trend signs to numeric radius predictions: R_out, R_side, R_long, and lambda as functions of multiplicity and kT.
 ```
 
 ---
