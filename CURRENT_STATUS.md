@@ -1,71 +1,48 @@
-# Current MCIFT Status: v0.82 Combined Source Test
+# Current MCIFT Status: v0.84 Dynamic Lattice Test
 
-**Status:** speculative source-bookkeeping scaffold; not full GR.  
-**Current layer:** v0.82 combined source test.  
-**Previous layer:** v0.81 tensor-strain bridge.
+**Status:** speculative source-bookkeeping scaffold.  
+**Current layer:** v0.84 dynamic lattice test.  
+**Previous layer:** v0.83 static lattice test.
 
----
-
-## One-sentence status
+## Verdict
 
 ```text
-MCIFT v0.82 implements Option C: the gravitational source is visible projection plus hidden/information projection. In the compact toy exchange test, visible-only conservation fails while the combined source closes the residual. This is source bookkeeping progress, not full covariant conservation or full GR.
+DYNAMIC_LATTICE_CONSERVATION_MIXED
 ```
 
----
-
-## v0.82 verdict
+## Result
 
 ```text
-COMBINED_SOURCE_TOY_CONSERVATION_MIXED
+cell_count = 8
+time_steps = 16
+boundary = periodic
+visible local max = 0.024000
+visible global max = 0.000000
+combined local max = 0.000000
+combined global max = 0.000000
+combined L1 all steps = 0.000000
 ```
 
----
-
-## Source choice
+## Status
 
 ```text
-source = visible projection + hidden/information projection
+passes: combined source closes local and global residuals across all tested steps
+fails as expected: visible-only source does not close locally through time
+missing: observational test and non-toy exchange rule
 ```
 
----
-
-## Test result
+## Files
 
 ```text
-visible-only residual = 0.030000
-hidden projection residual = 0.030000
-combined residual Linf = 0.000000
-combined residual L1 = 0.000000
-exchange balance residual = 0.000000
-```
-
----
-
-## Strict status
-
-```text
-passes: combined source closes the toy conservation residual and preserves v0.81 tensor bridge
-fails as expected: visible-only source does not close
-missing: full nonlinear GR, covariant conservation, observational test
-```
-
----
-
-## Main files on master
-
-```text
-models/mcift_v0.82_source_note.md
-analysis/results_v0.82/v082_metrics.csv
-analysis/results_v0.82/v082_tests.csv
+models/mcift_v0.84_dynamic_lattice_note.md
+analysis/results_v0.84/v084_metrics.csv
+analysis/results_v0.84/v084_checks.csv
 README.md
 CURRENT_STATUS.md
 ```
 
----
-
-## Next target
+## Next
 
 ```text
-v0.83 should run the same combined-source conservation test on a cell lattice instead of a compact toy exchange.
+v0.85: derive the exchange rule from evolving cell variables
 ```
