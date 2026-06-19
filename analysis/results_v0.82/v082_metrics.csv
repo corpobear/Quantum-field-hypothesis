@@ -1,0 +1,17 @@
+metric,value
+version,v0.82
+result,COMBINED_SOURCE_TOY_CONSERVATION_MIXED
+backprop_used,False
+target_loss_used,False
+source_model,visible_plus_hidden_information
+visible_only_residual,0.030000000000
+hidden_projection_residual,0.030000000000
+combined_residual_Linf,0.000000000000
+combined_residual_L1,0.000000000000
+exchange_balance_residual,0.000000000000
+visible_only_conserved,False
+combined_source_conserved_toy,True
+v081_tensor_bridge_preserved,True
+full_nonlinear_gr_derived,False
+covariant_conservation_derived,False
+observational_test_performed,False
