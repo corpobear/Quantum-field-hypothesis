@@ -1,0 +1,16 @@
+metric,value,label
+version,v0.95,derived
+M0,2.000000000000,derived_from_mode4_seed
+alpha_M,0.050000000000,assumed_toy_setting
+r_core,1.000000000000,assumed_regulator
+rho_floor,0.100000000000,assumed_safety_bound
+shell_count,10,assumed_toy_grid
+mean_rho,0.990182071777,derived
+mean_deformation,0.009817928223,derived
+max_deformation,0.050000000000,derived
+load_proxy,0.009817928223,derived
+anisotropy_proxy,0.051589369463,derived_shell_range
+mean_null_residual,0.019329303052,derived
+H_proxy_relative,0.977215138494,derived_shell_weighted
+curvature_proxy_isotropic,0.000000000000,derived_symmetry
+cosmology_scored,False,not_tested
