@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.61 first-principle inverse-timeflow cosmology retest
+**Current version:** v0.62 blind inverse-timeflow CERN channel test
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,49 +11,54 @@
 
 ## Current focus
 
-MCIFT now has a cosmology-specific inverse-timeflow retest layer:
+MCIFT now has a blind CERN-channel inverse-timeflow test:
 
 ```text
 v0.60:
-  inverse-timeflow backpropagation improved the particle/channel bridge
-  cosmology still used transfer/smoothing scaffold
+  inverse-timeflow backpropagation produced a trained particle/channel bridge
 
 v0.61:
-  inverse-timeflow acts inside the expansion rule
-  tau_ITF is derived from six-sink / visible / anchor sector stress
-  H_lab = tau_ITF * H_core
+  first-principle inverse-timeflow improved raw cosmology H(z)
+
+v0.62:
+  applies the v0.61-style first-principle ITF rule to CERN channels
+  no backpropagation
+  no target loss
+  no learned hidden channel correction
 ```
 
 Current verdict:
 
 ```text
-v0.61 = FIRST_PRINCIPLE_ITF_IMPROVES_RAW_HZ_NOT_FULL_COSMOLOGY_PASS
+v0.62 = BLIND_ITF_BR_PASS_LIKE_TOTAL_WIDTH_LOW
 ```
 
 ---
 
-## v0.61 cosmology result
+## v0.62 CERN channel result
 
 ```text
 C_ITF = 0.689064
-tau_ITF = 0.708552
 
-v0.59 raw H075_3d = 156.663819
-v0.59 raw delta vs LCDM = +50.883364 percent
+v0.60 implemented-before-backprop max_abs_BR_delta_pct = 10.502733
+v0.62 blind ITF max_abs_BR_delta_pct = 8.247649
 
-v0.60 transfer H075_3d = 103.897709
-v0.60 transfer delta vs LCDM = +0.064175 percent
+v0.60 implemented-before-backprop failed channel = gg
+v0.62 blind ITF failed channels = none
+```
 
-v0.61 first-principle ITF H075 = 111.004443
-v0.61 first-principle ITF delta vs LCDM = +6.908691 percent
-v0.61 residual vs compact CC point = +0.558221 sigma
+Width result:
+
+```text
+v0.62 blind total width = 3.325981 MeV
+v0.62 blind total width delta vs 4.07 MeV = -18.280555 percent
 ```
 
 Interpretation:
 
 ```text
-v0.61 improves raw over-expansion by about 7.36x without using reference-derived smoothing.
-It is not yet a full cosmology pass.
+Branching ratios improve without backpropagation.
+Absolute total width is low without an additional first-principle envelope rule.
 ```
 
 ---
@@ -61,12 +66,9 @@ It is not yet a full cosmology pass.
 ## Analysis result files
 
 ```text
-simulations/mcift_v0_61_first_principle_cosmology_itf.py
-analysis/results_v0.61/mcift_v0.61_first_principle_cosmology_metrics.csv
-analysis/results_v0.61/mcift_v0.61_Hz_comparison.csv
-
-simulations/mcift_v0_60_inverse_timeflow_backprop_retest.py
-analysis/results_v0.60/mcift_v0.60_inverse_timeflow_metrics.csv
+simulations/mcift_v0_62_blind_cern_itf_prediction.py
+analysis/results_v0.62/mcift_v0.62_blind_itf_metrics.csv
+analysis/results_v0.62/mcift_v0.62_blind_itf_channels.csv
 ```
 
 ---
@@ -74,7 +76,8 @@ analysis/results_v0.60/mcift_v0.60_inverse_timeflow_metrics.csv
 ## Important limitation
 
 ```text
-v0.61 improves the raw H(z=0.75) over-expansion, but does not implement the full BAO ladder, CMB spectra, growth data, or BBN.
+v0.62 is a blind branching-ratio prediction attempt, not a trained fit.
+It passes the compact 10 percent branching-ratio criterion, but the absolute width envelope is still underdeveloped.
 ```
 
 ---
@@ -84,10 +87,10 @@ v0.61 improves the raw H(z=0.75) over-expansion, but does not implement the full
 Next required tests:
 
 ```text
-1. Make C_ITF redshift-dependent from actual 3D field cells.
-2. Use C_ITF(a) from cell containment stress S_i = Coh_i - q_i.
-3. Add distance observables D_M(z), D_H(z), and BAO ladder scoring.
-4. Add growth and CMB-spectrum comparisons.
+1. Add a first-principle width-envelope rule.
+2. Test whether the same envelope also improves cosmology without target-derived smoothing.
+3. Retest CERN branching ratios and total width separately.
+4. Keep blind prediction, trained bridge, and calibrated scaffold labels separate.
 ```
 
 ---
