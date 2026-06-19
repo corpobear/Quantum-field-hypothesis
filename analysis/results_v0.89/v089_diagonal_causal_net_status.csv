@@ -1,0 +1,15 @@
+metric,value
+version,v0.89
+layer,MCIFT_Diagonal_Causal_Net_Geometry
+documented,True
+diagonal_axes,4
+frame_identity,(3/4)_sum_dadT_equals_I
+metric_scaffold,True
+causal_transfer_rule,True
+wave_operator,True
+closure_defect_rule,True
+minimal_action_scaffold,True
+flat_limit_test_defined,True
+full_GR_derived,False
+established_physics_claimed,False
+next,implement_flat_limit_and_single_defect_tests
