@@ -1,0 +1,8 @@
+check,prediction,target,status
+multiplicity_radius,positive,positive,pass
+kT_radius,negative,negative,pass
+same_mult_energy,similar,similar,pass
+pPb_over_pp,1.15,1.10_to_1.20,passlike
+partial_coherence,0.58,partial,passlike
+stable_entanglement,not_claimed,not_claimed,pass
+full_event_validation,not_done,needed,not_tested
