@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework / toy-field, collider, and cosmology scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.62 blind inverse-timeflow CERN channel test
+**Current version:** v0.63 dark-visible gravitational width envelope
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -11,54 +11,62 @@
 
 ## Current focus
 
-MCIFT now has a blind CERN-channel inverse-timeflow test:
+MCIFT now has a dark-visible gravitational width-envelope test:
 
 ```text
-v0.60:
-  inverse-timeflow backpropagation produced a trained particle/channel bridge
-
-v0.61:
-  first-principle inverse-timeflow improved raw cosmology H(z)
-
 v0.62:
-  applies the v0.61-style first-principle ITF rule to CERN channels
-  no backpropagation
-  no target loss
-  no learned hidden channel correction
+  blind ITF CERN channel prediction gave pass-like branching ratios
+  absolute total width remained low
+
+v0.63:
+  adds a universal dark-visible gravitational envelope
+  overlap is derived from dark / visible / anchor sector geometry
+  branching ratios are preserved
+  total width is lifted
 ```
 
 Current verdict:
 
 ```text
-v0.62 = BLIND_ITF_BR_PASS_LIKE_TOTAL_WIDTH_LOW
+v0.63 = DV_ENVELOPE_FIXES_WIDTH_BR_RETAINED
 ```
 
 ---
 
-## v0.62 CERN channel result
+## v0.63 CERN result
+
+Dark-visible overlap rule:
+
+```text
+O_DV = 2 sqrt(N_dark N_visible) / (N_dark + N_visible + N_anchor)
+E_DV = exp(C_ITF O_DV / (N_visible + N_anchor))
+```
+
+Numerical result:
 
 ```text
 C_ITF = 0.689064
+O_DV = 0.612372
+E_DV = 1.234890
 
-v0.60 implemented-before-backprop max_abs_BR_delta_pct = 10.502733
-v0.62 blind ITF max_abs_BR_delta_pct = 8.247649
+v0.62 width = 3.325981 MeV
+v0.62 width delta = -18.280555 percent
 
-v0.60 implemented-before-backprop failed channel = gg
-v0.62 blind ITF failed channels = none
+v0.63 width = 4.107221 MeV
+v0.63 width delta = +0.914526 percent
 ```
 
-Width result:
+Branching-ratio result:
 
 ```text
-v0.62 blind total width = 3.325981 MeV
-v0.62 blind total width delta vs 4.07 MeV = -18.280555 percent
+v0.62 max channel delta = 8.247649 percent
+v0.63 max channel delta = 8.247649 percent
 ```
 
 Interpretation:
 
 ```text
-Branching ratios improve without backpropagation.
-Absolute total width is low without an additional first-principle envelope rule.
+The dark-visible envelope solves the total-width deficit while preserving the blind branching-ratio prediction.
 ```
 
 ---
@@ -66,9 +74,9 @@ Absolute total width is low without an additional first-principle envelope rule.
 ## Analysis result files
 
 ```text
-simulations/mcift_v0_62_blind_cern_itf_prediction.py
-analysis/results_v0.62/mcift_v0.62_blind_itf_metrics.csv
-analysis/results_v0.62/mcift_v0.62_blind_itf_channels.csv
+simulations/mcift_v0_63_dark_visible_width_envelope.py
+analysis/results_v0.63/mcift_v0.63_width_metrics.csv
+analysis/results_v0.63/mcift_v0.63_width_channels.csv
 ```
 
 ---
@@ -76,8 +84,7 @@ analysis/results_v0.62/mcift_v0.62_blind_itf_channels.csv
 ## Important limitation
 
 ```text
-v0.62 is a blind branching-ratio prediction attempt, not a trained fit.
-It passes the compact 10 percent branching-ratio criterion, but the absolute width envelope is still underdeveloped.
+v0.63 is still a speculative scaffold. The dark-visible envelope is a first-principle geometry rule, not a proof of new physics.
 ```
 
 ---
@@ -87,9 +94,9 @@ It passes the compact 10 percent branching-ratio criterion, but the absolute wid
 Next required tests:
 
 ```text
-1. Add a first-principle width-envelope rule.
-2. Test whether the same envelope also improves cosmology without target-derived smoothing.
-3. Retest CERN branching ratios and total width separately.
+1. Apply the same dark-visible envelope to cosmology and check whether it changes H(z) consistently.
+2. Test whether the width envelope can be derived from cell-level S_i = Coh_i - q_i instead of sector counts.
+3. Retest CERN total width, branching ratios, and signal strengths separately.
 4. Keep blind prediction, trained bridge, and calibrated scaffold labels separate.
 ```
 
