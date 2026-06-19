@@ -1,9 +1,9 @@
 # Multi-Channel Information Field Theory (MCIFT)
 
-**Status:** speculative theoretical framework / toy-field, collider, cosmology, and weak-field gravity scaffold  
+**Status:** speculative theoretical framework / toy-field, collider, cosmology, weak-field gravity, and entanglement scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v0.84 dynamic lattice conservation test
+**Current version:** v0.85 pre-collision entanglement predictor
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, and increasingly testable scaffolds.
 
@@ -15,40 +15,42 @@
 docs/mcift_findings_v0.1_to_v0.80.md    consolidated project findings history
 docs/documentation_gap_audit.md          missing/stale documentation audit
 CURRENT_STATUS.md                        current repo status
-models/mcift_v0.84_dynamic_lattice_note.md
-analysis/results_v0.84/v084_metrics.csv
-analysis/results_v0.84/v084_checks.csv
+models/mcift_v0.85_precollision_entanglement_note.md
+analysis/results_v0.85/v085_predictor_metrics.csv
+analysis/results_v0.85/v085_checks.csv
 ```
 
 ---
 
 ## Current focus
 
-The main branch now tests Option C source bookkeeping across time on a periodic cell lattice:
+The main branch now tests a pre-collision prediction:
 
 ```text
-source = visible projection + hidden/information projection
+given two incoming coherent sphere packets,
+predict entanglement before collision,
+predict a semi-stable lifetime scale,
+then compare against CERN-style top-pair entanglement anchors.
 ```
 
 Current verdict:
 
 ```text
-v0.84 = DYNAMIC_LATTICE_CONSERVATION_MIXED
+v0.85 = PRECOLLISION_ENTANGLEMENT_LIFETIME_PREDICTOR_BUILT_CERN_TOP_PAIR_CROSSCHECK_PASSLIKE_NOT_VALIDATED
 ```
 
 ---
 
-## v0.84 result
+## v0.85 result
 
 ```text
-cell_count = 8
-time_steps = 16
-boundary = periodic
-visible local max = 0.024000
-visible global max = 0.000000
-combined local max = 0.000000
-combined global max = 0.000000
-combined L1 all steps = 0.000000
+E_seed = 0.578976399
+entangle_threshold = 1/3
+entangle_prediction = true
+D_proxy_predicted = -0.578976399
+ATLAS D reference = -0.537
+CMS D reference = -0.480
+tau_entangle_predicted = 3.60e-25 s
 ```
 
 ---
@@ -56,9 +58,9 @@ combined L1 all steps = 0.000000
 ## Strict status
 
 ```text
-passes: combined source closes local and global residuals across all tested steps
-fails as expected: visible-only source does not close locally through time
-missing: observational test and non-toy exchange rule
+passes: predicts top-pair-style entanglement sign/threshold before collision and gives a lifetime in the top-quark scale
+pass-like: D proxy is near ATLAS/CMS top-pair entanglement measurements
+missing: stable hadron entanglement, HBT/femtoscopy stable-output coherence, full event-level validation
 ```
 
 ---
@@ -66,7 +68,7 @@ missing: observational test and non-toy exchange rule
 ## Next version target
 
 ```text
-v0.85 should make the exchange rule depend on evolving cell variables instead of a prescribed balanced exchange.
+v0.86 should connect this predictor to stable final-state correlation data, especially pion/kaon/proton femtoscopy and HBT-style source radii.
 ```
 
 ---
