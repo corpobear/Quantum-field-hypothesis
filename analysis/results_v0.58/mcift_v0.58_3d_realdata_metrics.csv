@@ -1,0 +1,16 @@
+metric,value
+verdict,CERN_RAW_FAIL_COSMOLOGY_TRANSFER_PASS_SCAFFOLD
+BR_L1_raw_vs_SM,0.09242825675082147
+max_abs_BR_delta_pct_raw_vs_SM,100.0
+failed_CERN_channels_10pct,"gg,tau,cc,gamma,Zgamma,mumu"
+raw_gamma_delta_pct,-99.92424478689625
+raw_Zgamma_delta_pct,-99.96044472373478
+raw_cc_delta_pct,-100.0
+H075_raw_3d,156.66381928473376
+H075_raw_delta_pct_vs_Planck_ref,50.88336378378908
+H075_transfer_3d,103.8977087338893
+H075_transfer_delta_pct_vs_Planck_ref,0.06417470715386465
+H075_transfer_residual_sigma_vs_CC_obs,-0.10247777486743069
+Omega_m_raw_3d,0.9892004147127555
+Omega_m_transfer_3d,0.31499999999999995
+Omega_smooth_transfer_3d,0.6846363523354145
