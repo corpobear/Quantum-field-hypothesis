@@ -1,0 +1,12 @@
+test,prediction,anchor,residual,status
+Planck_H0,67.163009693987,67.36 +/- 0.54,-0.364797 sigma,pass
+SH0ES_H0,67.163009693987,73.04 +/- 1.04,-5.650952 sigma,fail
+PantheonPlus_H0,67.163009693987,73.5 +/- 1.1,-5.760900 sigma,fail
+PantheonPlus_OmegaM,0.3153,0.334 +/- 0.018,-1.038889 sigma,pass
+H075_compact,103.465987042567,103.831075445288,-0.351618 percent,close
+DESI_LyA_DH_rd,8.646895186319,8.632 +/- 0.101390,0.146909 sigma,pass
+DESI_LyA_DM_rd,39.311695268734,38.99 +/- 0.533667,0.602802 sigma,pass
+BBN_omega_b_h2,0.022370000000,0.02218 +/- 0.00055,0.345455 sigma,pass_inherited
+DESY3_S8,0.775721505643,0.772 +/- 0.018,0.206750 sigma,pass
+Planck_S8,0.775721505643,0.832 +/- 0.013,-4.329115 sigma,fail_if_growth_proxy
+BAO_peak,152.290000000000,147.090000000000,0.035353 fractional,sanity_only
