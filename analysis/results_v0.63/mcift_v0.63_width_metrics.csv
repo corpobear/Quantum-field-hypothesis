@@ -1,0 +1,11 @@
+metric,value
+result,width_fixed_branching_kept
+c_itf,0.689064
+overlap,0.612372435695795
+envelope,1.23489000336875
+width_before,3.32598142936141
+width_before_delta_pct,-18.2805545611448
+width_after,4.10722121850852
+width_after_delta_pct,0.914526253280523
+max_channel_delta_pct,8.24764893442693
+br_l1,0.0523719944935826
