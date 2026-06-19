@@ -1,0 +1,12 @@
+item,value
+version,v0.98
+layer,cosmo_map
+v097,yes
+H0_fit,yes
+H0_local,yes
+S8,yes
+BAO,no
+CMB,no
+BBN,no
+full,no
+next,bao_cmb_bbn_maps
