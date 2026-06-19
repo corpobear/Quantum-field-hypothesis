@@ -1,0 +1,8 @@
+test,expected,observed,status
+flat_identity,q_inv_equals_I,frob_delta_I_0,pass
+flat_eigenvalues,all_eigenvalues_1,eig_min_1_eig_max_1,pass
+flat_anisotropy,zero,0,pass
+single_defect_metric,anisotropic_metric,anisotropy_0p6,pass
+single_defect_eigenvalue,one_axis_reduced,eig_min_0p625_eig_max_1,pass
+single_defect_tick,defect_tick_slower,max_tick_ratio_1p414213562373,pass
+full_GR,not_derived,not_derived,not_claimed
