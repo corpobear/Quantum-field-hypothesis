@@ -1,0 +1,9 @@
+test,expected,observed,status
+flat_bubble_cone,lc_resid_0,0,pass
+flat_null_interval,null_resid_0,0,pass
+flat_loop,loop_R_0,0,pass
+defect_bubble_deformation,lc_resid_nonzero,0p209430584958,pass
+defect_null_interval,null_resid_nonzero,0p375,pass
+defect_loop,loop_R_nonzero,0p209430584958,pass
+model_cone_constructed,true,true,pass
+empirical_GR_proof,not_claimed,not_claimed,not_claimed
