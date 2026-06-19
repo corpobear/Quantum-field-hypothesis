@@ -1,170 +1,188 @@
-# MCIFT Main Paper: Inverse Timeflow and Dark-Visible Width Envelope
+# MCIFT Main Synopsis: v0.99 Shared Threefold Reducer Mapping
 
 **Status:** speculative research scaffold; not established physics.  
-**Current version:** v0.72 spatial scale-lapse retest.  
+**Current version:** v0.99 CERN mapping from the v0.97 shared threefold reducer.
 **Author:** Adrian Newton / corpobear.
 
 ---
 
 ## Abstract
 
-This paper records the current MCIFT development path from raw 3D field readouts to inverse-timeflow, dark-visible gravitational envelope tests, and spatial scale-lapse retests. The current result is not a proof of new physics. It is an internal consistency scaffold showing that a single first-principle-style structure can make compact predictions for CERN/Higgs-width behavior and partially close several cosmology benchmarks, while failing others.
+This synopsis records the current MCIFT development path through v0.99. The active late-version structure is a bubble light-cone and threefold reducer scaffold. It exports a small set of shared reduced quantities that are mapped first to cosmology proxies in v0.98 and then to selected CERN/collider proxies in v0.99.
+
+The result is not a proof of new physics. It is an internal consistency and mapping milestone: selected proxy checks land close to chosen anchors, while full cosmology and collider validation remain unimplemented.
 
 ---
 
-## Core idea
-
-MCIFT treats observed quantities as lab-frame readouts of a deeper field state. The field state contains:
+## Late-version chain
 
 ```text
-visible-sector formation
-hidden/dark-sector loading
-anchor or boundary structure
-connector-supported coherence
-contained complexity
-```
-
-The key internal stress variable is:
-
-```text
-S_i = Coh_i - q_i
-```
-
-When contained complexity exceeds coherence, inverse-timeflow load rises. When dark-sector loading overlaps visible-sector formation, the available visible decay-width envelope changes. v0.72 adds that the effective ruler can change too: gravity may alter the spatial measurement scale, not only the clock.
-
----
-
-## Version history
-
-```text
-v0.59: real-data audit; raw CERN and raw cosmology failed.
-v0.60: inverse-timeflow backpropagation improved the trained CERN bridge.
-v0.61: first-principle inverse-timeflow improved raw cosmology H(z=0.75).
-v0.62: blind CERN inverse-timeflow predicted pass-like branching ratios without backpropagation.
-v0.63: dark-visible gravitational envelope fixed the total-width deficit while preserving branching ratios.
-v0.64: consolidated the formula and defined the next cell-resolved first-principle version.
-v0.70: ran two compact first-principle prediction tests: CERN/Higgs and cosmology.
-v0.71: expanded cosmology to Planck-like H0, SH0ES H0, DESI LyA BAO, BBN baryon density, and S8-style checks.
-v0.72: makes the spatial scale-lapse explicit and retests H(z), distance-style anchors, and raw BAO peak behavior.
+v0.92  bubble light-cone projection
+v0.93  simplified first-principle bubble formula
+v0.94  central failed-mode-4 seed
+v0.95  central-seed reducer
+v0.96  threefold bubble-knot first-principle update
+v0.97  shared threefold reducer
+v0.98  cosmology mapping from shared reducer
+v0.99  CERN/collider mapping from shared reducer
 ```
 
 ---
 
-## First-principle sector formula
+## Core object
+
+The late scaffold begins from an event-bubble primitive:
 
 ```text
-C_ITF = A_lock * N_D / (N_D + N_V + N_A)
-tau_ITF = exp[-C_ITF / (N_V + N_A)]
-O_DV = 2 sqrt(N_D N_V) / (N_D + N_V + N_A)
-E_DV = exp[C_ITF * O_DV / (N_V + N_A)]
+B_i = {C_i, S_i, r_i, W_i, Phi_i}
 ```
 
-Spatial scale-lapse:
+with:
 
 ```text
-sigma_X = E_DV^(1/3)
-        = exp[C_ITF * O_DV / (3 (N_V + N_A))]
+C_i       center event
+S_i       2D causal bubble surface
+r_i       center-to-surface radial distance
+W_i       diagonal causal weights
+Phi_i     phase/timing/knot state
 ```
 
-For the current sector values:
+The threefold update extends the primitive to:
 
 ```text
-N_D = 6
-N_V = 1
-N_A = 1
-A_lock = 0.918752
-C_ITF = 0.689064
-tau_ITF = 0.708551878
-O_DV = 0.612372436
-E_DV = 1.234890003
-sigma_X = 1.072549870
-spatial_lapse = +7.254987 percent
+B_i^3 = {C_i, S_i, r_i, W_i, Phi_i, M_0, R_4, L_3}
 ```
 
----
-
-## Observable maps
+where:
 
 ```text
-H_lab = H_core / sigma_X
-D_lab = sigma_X * D_core
-k_lab = k_core / sigma_X
-Gamma_lab = sigma_X^3 * tau_i * Gamma_core
+M_0       central seed load from failed mode 4
+R_4       failed mode-4 reservoir
+L_3       three stable surface loops
 ```
 
 ---
 
-## v0.70 CERN/Higgs prediction
+## Threefold reducer
+
+The compact surface activation used by v0.97 is:
 
 ```text
-width_prediction = 4.107221 MeV
-width_delta_vs_4.07 = +0.914526 percent
-max_channel_delta = 8.247649 percent
-BR_L1 = 0.052372
-backpropagation used = False
-target-loss fit used = False
+A_3(theta, phi) = 1 + epsilon_3 sin(theta)^2 cos(3 phi + psi_3)
+```
+
+with surface mean:
+
+```text
+<A_3>_S2 = 1
+```
+
+The central regulated radial compression is:
+
+```text
+rho_0(r) = 1 - alpha_M M_0 / (r^2 + r_core^2)
+```
+
+The threefold radius scale is:
+
+```text
+r_0(n,t) = c Delta t rho_0(r) A_3(n)
+```
+
+The deformation proxy is:
+
+```text
+D_3(n,r) = 1 - rho_0(r) A_3(n)
 ```
 
 ---
 
-## v0.72 spatial scale-lapse cosmology retest
+## Shared v0.97 outputs
+
+For:
 
 ```text
-H075 before spatial lapse = 111.004443
-H075 after spatial lapse = 103.465987
-H075 delta vs compact LCDM = -0.351618 percent
-
-Planck-like H0 residual = -0.364797 sigma
-SH0ES H0 residual = -5.650952 sigma
-
-DESI LyA D_H/r_d residual = +0.146909 sigma
-DESI LyA D_M/r_d residual = +0.602802 sigma
+M0 = 2
+alpha_M = 0.05
+r_core = 1
+epsilon_3 = 0.125
+psi_3 = 0
+shells = 1..10
 ```
 
-Raw BAO peak check:
+the reducer exports:
 
 ```text
-raw BAO peak = 152.29 Mpc
-reference r_d = 147.09 Mpc
-raw fractional error = +0.035353
+mean_A3 = 1.000000000000
+load_proxy / mean_D3 = 0.009817928223
+mean_shear_proxy = 0.063915576742
+mean_threefold_amp = 0.247460690278
+mean_abs_lc_resid = 0.054439708131
+mean_null_resid = 0.015243226439
+H_proxy_relative = 0.977215138494
+beta4_needed_for_balance = 0.170868625373
+```
 
-if divided by sigma_X: 141.987812 Mpc, fractional error = -0.034690
-if multiplied by sigma_X: 163.340999 Mpc, fractional error = +0.110481
+---
+
+## v0.98 cosmology mapping
+
+v0.98 uses the shared reducer to map:
+
+```text
+H0_early_model = fitted Planck-like anchor
+H0_local_model = H0_early_model * (1 + mean_shear_proxy)
+S8_late_model = S8_planck * (1 - mean_shear_proxy)
+```
+
+Current values:
+
+```text
+H0_local_model = 71.665353249341
+H0_local_residual_sigma = -1.321775721787
+S8_late_model = 0.778822240151
+S8_late_residual_sigma = 0.166014126510
 ```
 
 Strict interpretation:
 
 ```text
-works well: H(z=0.75), Planck-like H0, DESI LyA distance ratios
-still fails: local SH0ES H0
-not solved: raw BAO peak scale
-not implemented: full BAO ladder covariance, SN distance moduli, full CMB Cl
+H0 early value is fitted, not an independent prediction.
+S8 late value is pass-like against the selected DES Y3 anchor.
+BAO, CMB acoustic scale, and BBN are not numerically scored in v0.98.
 ```
 
 ---
 
-## Cell-resolved next formula
+## v0.99 CERN mapping
 
-The sector formula should be replaced by a cell-resolved rule:
+v0.99 uses:
 
 ```text
-C_ITF(a) = sum_i W_i(a) max(0, -S_i(a))^2
-           / sum_i W_i(a) [Coh_i(a)^2 + q_i(a)^2 + epsilon]
+Gamma_model = Gamma_SM * (1 + load_proxy)
+mu_inclusive_model = mean_A3
+D_proxy = -(1/3 + beta4_needed_for_balance)
 ```
 
-and:
+Current values:
 
 ```text
-O_DV(a) = 2 sqrt(Rho_D(a) Rho_V(a))
-          / [Rho_D(a) + Rho_V(a) + Rho_A(a) + epsilon]
+Gamma_model = 4.109958967868 MeV
+mu_inclusive_model = 1.000000000000
+CMS HZZ residual = 0.526 sigma
+D_proxy = -0.504201958707
+ATLAS D residual = 1.717 sigma
+CMS D residual = -0.880 sigma
 ```
 
-Observable maps:
+Strict interpretation:
 
 ```text
-H_lab(a) = H_core(a) / sigma_X(a)
-D_lab(a) = sigma_X(a) * D_core(a)
-Gamma_i_lab = sigma_X(a)^3 * tau_i * Gamma_i_core
+CMS HZZ signal-strength proxy is pass-like at this coarse level.
+CMS top-entanglement D proxy is pass-like.
+ATLAS top-entanglement D proxy is close but not pass-claimed.
+Higgs width is reference-close against the SM value, not a direct experimental-width score.
+Higgs branching ratios, channel signal strengths, and detector event shapes are not scored.
 ```
 
 ---
@@ -174,13 +192,22 @@ Gamma_i_lab = sigma_X(a)^3 * tau_i * Gamma_i_core
 Safe:
 
 ```text
-MCIFT v0.72 is a speculative spatial-lapse benchmark. It tests whether one first-principle-style formula can improve distance and expansion readouts while exposing where the formula fails or remains unimplemented.
+MCIFT v0.99 is a speculative mapping milestone. It shows that the shared v0.97 threefold reducer can feed both a cosmology proxy layer and selected collider proxy checks while preserving explicit labels for fitted, derived, assumed, and untested quantities.
 ```
 
 Unsafe:
 
 ```text
 MCIFT proves a new interaction.
-MCIFT replaces the Standard Model or Lambda-CDM.
-The v0.72 formula is experimentally confirmed.
+MCIFT replaces the Standard Model, QFT, GR, or Lambda-CDM.
+The v0.99 mapping is a full CERN validation.
+The v0.98 mapping is a full cosmology validation.
+```
+
+---
+
+## Next target
+
+```text
+v1.00 should build a joint v0.98/v0.99 scorecard with every value labeled as derived, fitted anchor, assumed, placeholder, not tested, pass-like, close-not-pass, or fail.
 ```
