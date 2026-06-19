@@ -1,3 +1,2 @@
 name,value
-unused_temporary_marker,true
-see_metrics_file,mcift_v0.62_blind_itf_metrics.csv
+unused_marker,true
