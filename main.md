@@ -1,14 +1,14 @@
 # MCIFT Main Paper: Inverse Timeflow and Dark-Visible Width Envelope
 
 **Status:** speculative research scaffold; not established physics.  
-**Current version:** v0.64 unified first-principle formula note.  
+**Current version:** v0.70 dual first-principle prediction test.  
 **Author:** Adrian Newton / corpobear.
 
 ---
 
 ## Abstract
 
-This paper records the current MCIFT development path from raw 3D field readouts to inverse-timeflow and dark-visible gravitational envelope tests. The current result is not a proof of new physics. It is an internal consistency scaffold showing that a single first-principle-style structure can improve both cosmology and CERN/Higgs-width behavior without using backpropagation for the final blind predictions.
+This paper records the current MCIFT development path from raw 3D field readouts to inverse-timeflow and dark-visible gravitational envelope tests. The current result is not a proof of new physics. It is an internal consistency scaffold showing that a single first-principle-style structure can make compact predictions for both cosmology and CERN/Higgs-width behavior without using backpropagation for the final blind prediction tests.
 
 ---
 
@@ -42,7 +42,8 @@ v0.60: inverse-timeflow backpropagation improved the trained CERN bridge.
 v0.61: first-principle inverse-timeflow improved raw cosmology H(z=0.75).
 v0.62: blind CERN inverse-timeflow predicted pass-like branching ratios without backpropagation.
 v0.63: dark-visible gravitational envelope fixed the total-width deficit while preserving branching ratios.
-v0.64: consolidates the formula and defines the next cell-resolved first-principle version.
+v0.64: consolidated the formula and defined the next cell-resolved first-principle version.
+v0.70: runs two compact first-principle prediction tests: CERN/Higgs and cosmology.
 ```
 
 ---
@@ -90,62 +91,76 @@ N_V = 1
 N_A = 1
 A_lock = 0.918752
 C_ITF = 0.689064
-O_DV = 0.612372
-E_DV = 1.234890
+tau_ITF = 0.708551878
+O_DV = 0.612372436
+E_DV = 1.234890003
+E_DV^(1/3) = 1.072549870
 ```
 
 ---
 
-## Cosmology result
+## v0.70 Test 1: CERN/Higgs prediction
 
-The v0.61 cosmology map is:
-
-```text
-H_lab(a) = tau_ITF(a) * H_core(a)
-```
-
-At z = 0.75:
-
-```text
-v0.59 raw H075 = 156.663819
-v0.61 first-principle ITF H075 = 111.004443
-LCDM compact reference H075 = 103.831075
-raw-to-v0.61 error improvement = 7.364392x
-```
-
-This is an improvement over raw over-expansion, but not a full cosmology pass. BAO ladder, growth, CMB spectra, and BBN remain future work.
-
----
-
-## CERN/Higgs result
-
-The v0.62 blind channel map is:
+The collider map is:
 
 ```text
 tau_i = exp[-C_ITF * s_i / (N_V + N_A)]
 Gamma_i_blind = tau_i * Gamma_i_core
-```
-
-The v0.63 dark-visible envelope is:
-
-```text
 Gamma_i_final = E_DV * Gamma_i_blind
 ```
 
-Because E_DV is universal, branching ratios are preserved:
+The v0.70 compact prediction is:
 
 ```text
-v0.62 max channel delta = 8.247649 percent
-v0.63 max channel delta = 8.247649 percent
+width_prediction = 4.107221 MeV
+width_delta_vs_4.07 = +0.914526 percent
+max_channel_delta = 8.247649 percent
+BR_L1 = 0.052372
 ```
 
-The total width improves:
+Status:
 
 ```text
-v0.62 total width = 3.325981 MeV
-v0.62 width delta = -18.280555 percent
-v0.63 total width = 4.107221 MeV
-v0.63 width delta = +0.914526 percent
+CERN/Higgs compact prediction: pass-like
+backpropagation used: False
+target-loss fit used: False
+```
+
+---
+
+## v0.70 Test 2: Cosmology prediction
+
+The cosmology map applies the dark-visible envelope as a 3D expansion projection:
+
+```text
+H075_v070 = H075_v061 / E_DV^(1/3)
+```
+
+The compact prediction is:
+
+```text
+H075_prediction = 103.465987
+H075_compact_LCDM_anchor = 103.831075
+H075_delta = -0.351618 percent
+H075_residual_vs_CC = -0.142614 sigma
+raw_to_v0.70_improvement = 144.712194x
+```
+
+BAO sanity check:
+
+```text
+BAO_peak = 152.29 Mpc
+BAO_reference_rd = 147.09 Mpc
+fractional_error = 0.035353
+```
+
+Status:
+
+```text
+cosmology H(z) compact prediction: close
+full BAO ladder: not implemented
+CMB spectra: not implemented
+BBN network: not implemented
 ```
 
 ---
@@ -175,7 +190,7 @@ E_DV(a) = exp[C_ITF(a) * O_DV(a) / (N_V + N_A)]
 Observable maps:
 
 ```text
-H_lab(a) = tau_ITF(a) * H_core(a)
+H_lab(a) = tau_ITF(a) * H_core(a) / E_DV(a)^(1/3)
 Gamma_i_lab = E_DV * tau_i * Gamma_i_core
 ```
 
@@ -186,7 +201,7 @@ Gamma_i_lab = E_DV * tau_i * Gamma_i_core
 Safe:
 
 ```text
-MCIFT v0.64 is a speculative unified scaffold linking inverse timeflow and dark-visible gravitational overlap. It documents an internally consistent way to improve the current cosmology and CERN-width tests.
+MCIFT v0.70 is a speculative compact prediction scaffold. It tests whether one first-principle-style formula can produce close CERN/Higgs and cosmology readouts without backpropagation or target-loss fitting.
 ```
 
 Unsafe:
@@ -194,5 +209,5 @@ Unsafe:
 ```text
 MCIFT proves a new interaction.
 MCIFT replaces the Standard Model or Lambda-CDM.
-The v0.64 formula is experimentally confirmed.
+The v0.70 formula is experimentally confirmed.
 ```
