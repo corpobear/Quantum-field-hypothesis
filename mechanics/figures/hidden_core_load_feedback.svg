@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+
+<style>
+  .title { font: bold 24px sans-serif; }
+  .label { font: 16px sans-serif; }
+  .small { font: 13px sans-serif; }
+  .box { fill: white; stroke: black; stroke-width: 2; rx: 12; }
+  .node { fill: #f8f8f8; stroke: black; stroke-width: 2; }
+  .arrow { stroke: black; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+  .dash { stroke: black; stroke-width: 2; stroke-dasharray: 7 6; fill: none; }
+  .soft { fill: #eeeeee; stroke: black; stroke-width: 1.8; }
+</style>
+<defs>
+  <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+    <path d="M2,2 L10,6 L2,10 Z" fill="black" />
+  </marker>
+</defs>
+
+
+<text x="550" y="45" text-anchor="middle" class="title">Hidden branch feeds rotating-core load</text>
+<circle cx="550" cy="330" r="115" class="node"/>
+<circle cx="550" cy="330" r="165" class="dash"/>
+<text x="550" y="322" text-anchor="middle" class="label">rotating core</text>
+<text x="550" y="350" text-anchor="middle" class="small">core pressure after feedback</text>
+<rect x="90" y="150" width="260" height="110" class="box"/>
+<text x="220" y="190" text-anchor="middle" class="label">visible load</text>
+<text x="220" y="220" text-anchor="middle" class="small">G_visible = E_visible</text>
+<rect x="760" y="150" width="270" height="110" class="box"/>
+<text x="895" y="190" text-anchor="middle" class="label">hidden load</text>
+<text x="895" y="220" text-anchor="middle" class="small">G_hidden = C_sink E_hidden</text>
+<rect x="390" y="555" width="320" height="95" class="box"/>
+<text x="550" y="592" text-anchor="middle" class="label">rotation load</text>
+<text x="550" y="622" text-anchor="middle" class="small">G_rot = ξ_rot E_rotation</text>
+<path d="M 350 220 C 430 240, 475 270, 505 300" class="arrow"/>
+<path d="M 760 220 C 680 240, 630 270, 595 300" class="arrow"/>
+<path d="M 550 555 C 550 500, 550 470, 550 445" class="arrow"/>
+<text x="550" y="120" text-anchor="middle" class="small">G_load = G_visible + G_hidden + G_rot</text>
+
+</svg>
