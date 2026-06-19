@@ -1,0 +1,4 @@
+dataset,system,source,available_from_text,total_units,unit_kind,numeric_values_available,status
+ALICE_pp_0p9_7TeV,pp,arXiv_1101_3665,yes,72,correlation_functions,no,needs_HEPData_numeric_tables
+ALICE_pPb_5p02TeV,pPb,arXiv_1502_00559,yes,26,radii_per_direction,no,needs_HEPData_numeric_tables
+ALICE_pPb_5p02TeV_all_directions,pPb,arXiv_1502_00559,yes,78,total_radius_values,no,needs_HEPData_numeric_tables
