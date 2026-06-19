@@ -1,0 +1,13 @@
+readout,formula,value,source
+visible density,rho_v = P_v(Psi) E_i,0.24423249035790123,from visible projection
+hidden density,rho_h = P_h(Psi) E_i,0.07076750964209877,from sink/hidden projection
+matter-like total,Omega_m = rho_v + rho_h,0.315,derived matches reference input
+rotation density,rho_rot = L_i^2/(2I_i),0.0015,from discarded vibration
+sound/acoustic density,rho_s = A_sound^2 rho_shell,0.0035,from pressure-wave mode
+radiation density,rho_r = loss_rad(Psi),9e-05,residual/radiative branch
+smooth/lapse reservoir,rho_L = sum transferred branch energy,0.67991,from Q transfer
+clock/lapse,N = sqrt(1-chi_G)sqrt(1-v_rot^2),0.8685280247158542,from load plus rotation
+lab rotation,omega_lab = N omega_proper,0.06255798675580184,derived
+sound speed,c_s^2 = Coh/(rho_ratio + G_load),0.582034,from coherence/load
+sound horizon,r_s = int c_s/(a^2 H_lab) da,0.3941421142829588,coarse-grained
+growth kernel,mu_eff(k)=1+hidden+rotation-sound,1.2140067620790667,at k=0.1
