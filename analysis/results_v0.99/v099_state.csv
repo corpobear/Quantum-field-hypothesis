@@ -1,0 +1,11 @@
+item,value
+version,v0.99
+layer,cern_map
+v097,yes
+higgs_width,yes
+hzz_mu,yes
+top_D_atlas,yes
+top_D_cms,yes
+branching,no
+full,no
+next,channel_rules_or_joint_score
