@@ -1,0 +1,12 @@
+test,prediction,target,residual,status
+visible_only_local_conservation,fails,zero_local_residual,0.022500000000,fail_expected
+visible_only_global_sum,closed,zero_global_sum,0.000000000000,pass_global_only
+hidden_information_local_exchange,balanced,balanced,0.000000000000,pass_toy
+combined_local_conservation,closed,zero_local_residual,0.000000000000,pass_toy
+combined_global_conservation,closed,zero_global_sum,0.000000000000,pass_toy
+periodic_boundary_flux,closed,closed_boundary,0.000000000000,pass_toy
+v082_compact_regression,preserved,preserved,0,pass
+v081_tensor_bridge,preserved,preserved,0,pass
+full_nonlinear_gr,not_derived,required,not_available,fail_not_full_gr
+covariant_conservation,not_derived,required,not_available,fail_not_full_gr
+observational_test,not_performed,required,not_available,not_tested
