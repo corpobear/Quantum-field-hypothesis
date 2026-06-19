@@ -1,0 +1,8 @@
+name,value
+H075,103.465987042567
+H075_delta_pct,-0.351617664707
+H075_residual_sigma_CC,-0.142613903362
+raw_to_prediction_improvement,144.712194212917
+BAO_peak_Mpc,152.290000000000
+BAO_fractional_error,0.035352505269
+status,close_not_full_pipeline
