@@ -9,87 +9,68 @@ This folder contains the main MCIFT draft and paper-style addenda.
 ## Files
 
 ```text
-main.md                                           Main theory draft, updated through v0.49 mechanics
-v0.55_q_transfer_network_addendum.md              Q_i transfer network and background comparison
-v0.54_cosmology_coarse_grain_addendum.md          Cosmology coarse-graining layer
-v0.50_kappa_width_bridge_addendum.md              Kappa / partial-width bridge addendum
-v0.49_core_load_feedback_addendum.md              Hidden-branch core-load feedback addendum
-v0.40_explicit_3d_spherical_leakage_addendum.md   Explicit 3D spherical leakage collision test
-v0.39_spherical_leakage_geometry_addendum.md      Spherical leakage geometry retest
-v0.38_mass_energy_vibration_addendum.md           Mass-energy vibration channel retest
-v0.37_line_chain_spin_drill_addendum.md           Line-chain spin-drill Higgs test
-v0.36_cern_higgs_comparison_addendum.md           CERN/LHC Higgs-sector comparison
-v0.35_spatial_cubic_lattice_solver_addendum.md    Minimal spatial cubic lattice solver
-v0.34_first_principle_cubic_field_toy_solver_addendum.md  First-principle cubic field toy solver
-v0.33_first_principle_cubic_field_formula_addendum.md  First-principle cubic MCIFT field formula
-v0.32_cube_face_higgs_vortex_mass_addendum.md     Cube-face Higgs vortex mass mechanism
-v0.31_cube_center_six_connector_addendum.md       Cube-center six-connector knot geometry
+main.md
+v0.56_unified_first_principle_formula_addendum.md
+v0.55_q_transfer_network_addendum.md
+v0.54_cosmology_coarse_grain_addendum.md
+v0.50_kappa_width_bridge_addendum.md
+v0.49_core_load_feedback_addendum.md
+v0.40_explicit_3d_spherical_leakage_addendum.md
+v0.39_spherical_leakage_geometry_addendum.md
+v0.38_mass_energy_vibration_addendum.md
+v0.37_line_chain_spin_drill_addendum.md
+v0.36_cern_higgs_comparison_addendum.md
+v0.35_spatial_cubic_lattice_solver_addendum.md
+v0.34_first_principle_cubic_field_toy_solver_addendum.md
+v0.33_first_principle_cubic_field_formula_addendum.md
+v0.32_cube_face_higgs_vortex_mass_addendum.md
+v0.31_cube_center_six_connector_addendum.md
 ```
 
 ---
 
-## Current big-picture layer: v0.55 Q_i transfer network
+## Current foundation layer: v0.56 unified formula
 
 Verdict:
 
 ```text
-PASS_Q_TRANSFER_BACKGROUND_BRIDGE, 12/12 criteria
+PASS_FIRST_PRINCIPLE_CLOSURE_SCAFFOLD, 14/14 criteria
 ```
 
 Summary:
 
 ```text
-The v0.55 addendum adds a conservative transfer-network bridge. Raw v0.54 branch fractions over-expand if treated directly as present-day cosmic densities. v0.55 uses retention factors and a smooth/lapse reservoir before comparing H(z) to Planck-like and cosmic-chronometer checkpoints.
+v0.56 consolidates the older cubic field formula with the learned mechanics from v0.49-v0.55. The project now has one extended field object from which branch densities, rotation, clock/lapse, sound, channel readouts, cosmology sectors, and Q_i transfer are defined as projections.
 ```
 
 Read:
 
 ```text
-paper/v0.55_q_transfer_network_addendum.md
-models/q_transfer_network_v0.55.md
-analysis/results_v0.55/mcift_v0.55_q_transfer_metrics.csv
-analysis/results_v0.55/mcift_v0.55_Hz_comparison.csv
+paper/v0.56_unified_first_principle_formula_addendum.md
+models/first_principle_unified_field_formula_v0.56.md
+analysis/results_v0.56/mcift_v0.56_first_principle_closure_metrics.csv
+analysis/results_v0.56/mcift_v0.56_direct_readouts.csv
 ```
 
 ---
 
-## Previous cosmology layer: v0.54 coarse-graining
+## Previous big-picture layers
 
 ```text
-paper/v0.54_cosmology_coarse_grain_addendum.md
-models/cosmology_coarse_grain_v0.54.md
-analysis/results_v0.54/mcift_v0.54_cosmology_coarse_grain_metrics.csv
+v0.55_q_transfer_network_addendum.md
+v0.54_cosmology_coarse_grain_addendum.md
+v0.50_kappa_width_bridge_addendum.md
+v0.49_core_load_feedback_addendum.md
 ```
 
 ---
 
-## Previous bridge layer: v0.50 kappa / width bridge
+## Historical retests
 
 ```text
-paper/v0.50_kappa_width_bridge_addendum.md
-models/kappa_width_bridge_v0.50.md
-analysis/results_v0.50/mcift_v0.50_kappa_bridge_metrics.csv
-```
-
----
-
-## Current mechanics layer: v0.49 core-load feedback
-
-```text
-paper/main.md
-paper/v0.49_core_load_feedback_addendum.md
-models/dark_gravity_entanglement_feedback_v0.49.md
-analysis/results_v0.49/mcift_v0.49_core_load_feedback_metrics.csv
-```
-
----
-
-## Historical collider-style retests
-
-```text
-v0.40_explicit_3d_spherical_leakage_addendum.md   PASS-LIKE, 11/11 criteria
-v0.39_spherical_leakage_geometry_addendum.md      PASS-LIKE, 10/10 criteria
-v0.38_mass_energy_vibration_addendum.md           PASS-LIKE, 9/9 criteria
-v0.37_line_chain_spin_drill_addendum.md           PASS-LIKE, 7/7 criteria
-v0.36_cern_higgs_comparison_addendum.md           STRUCTURAL_ONLY_NOT_A_CERN_PASS
+v0.40_explicit_3d_spherical_leakage_addendum.md
+v0.39_spherical_leakage_geometry_addendum.md
+v0.38_mass_energy_vibration_addendum.md
+v0.37_line_chain_spin_drill_addendum.md
+v0.36_cern_higgs_comparison_addendum.md
 ```
