@@ -1,0 +1,8 @@
+test,before,after,anchor,residual,status
+H075,111.004443394536,103.465987042567,103.831075445288,-0.351618 percent,improved_close
+Planck_H0,67.4,67.163009693987,67.36 +/- 0.54,-0.364797 sigma,pass
+SH0ES_H0,67.4,67.163009693987,73.04 +/- 1.04,-5.650952 sigma,fail
+DESI_LyA_DH_rd,8.632,8.646895186319,8.632 +/- 0.101390,0.146909 sigma,pass
+DESI_LyA_DM_rd,38.99,39.311695268734,38.99 +/- 0.533667,0.602802 sigma,pass
+raw_BAO_peak_divide_sigma,152.29,141.987812002064,147.09,-0.034690 fractional,not_solved
+raw_BAO_peak_multiply_sigma,152.29,163.340998699622,147.09,0.110481 fractional,worse
