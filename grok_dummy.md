@@ -2,7 +2,7 @@
 
 ## 0. Purpose
 
-This document records the methodology used to calculate the Earth-to-Mars baseline orbital travel time, then apply the MCIFT v0.97 reduction factors for two MCIFT approaches:
+This document records the methodology used to calculate the Earth-to-Mars baseline orbital travel time, then apply MCIFT v0.97 reduction factors for two MCIFT approaches:
 
 1. Traditional orbital transfer baseline
 2. MCIFT wave dive
@@ -323,7 +323,19 @@ MCIFT wave dive:              170 days
 
 ---
 
-## 7. Minimal Reproducible Python
+## 7. Pathway Plot
+
+The pathway plot is stored in the repository here:
+
+```text
+assets/mcift_earth_mars_pathways_baseline.svg
+```
+
+![MCIFT Earth–Mars pathway comparison](assets/mcift_earth_mars_pathways_baseline.svg)
+
+---
+
+## 8. Minimal Reproducible Python
 
 ```python
 from datetime import datetime, timezone, timedelta
@@ -383,7 +395,7 @@ rounded wave ride: 215 days → 2027-09-04 00:00:00+00:00
 
 ---
 
-## 8. One-Line Methodology
+## 9. One-Line Methodology
 
 ```text
 Calculate the traditional Earth-to-Mars orbital transfer time first, then apply MCIFT v0.97 loop_sum as the wave-dive reduction and beta4_needed_for_balance as the wave-ride reduction to produce the final MCIFT travel-time comparison.
