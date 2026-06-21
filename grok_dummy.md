@@ -1,119 +1,132 @@
-# MCIFT Earth–Mars Feb/Mar/Apr 2027 Mission Comparison Methodology
+# MCIFT Earth–Mars Travel-Time Methodology and Results
 
 ## 0. Purpose
 
-This document describes the step-by-step proxy process used to calculate and draw the Earth-to-Mars comparison graph with three routes:
+This document records the methodology used to calculate the Earth-to-Mars baseline orbital travel time, then apply the MCIFT v0.97 reduction factors for two MCIFT approaches:
 
-1. Traditional orbital route
-2. MCIFT dive below gravitational-wave path
-3. MCIFT wave-rider path
+1. Traditional orbital transfer baseline
+2. MCIFT wave dive
+3. MCIFT wave ride
 
-Graph window:
+The launch date is fixed:
 
 ```text
-2027-02-01 00:00 UTC → 2027-04-30 00:00 UTC
+launch = 2027-02-01 00:00 UTC
 ```
 
-Launch time for all three paths:
+The arrival dates are **not** preset. They are calculated from the travel-time equations.
+
+---
+
+## 1. Traditional Orbital Transfer Baseline
+
+The traditional orbital path is calculated first. This becomes the baseline timeframe for the MCIFT comparison.
+
+Use a Hohmann-style Earth-to-Mars transfer approximation.
+
+Formula:
 
 ```text
-launch_time = 2027-02-01 00:00 UTC
+T_orbital = π × sqrt(a_transfer³ / μ_sun)
+```
+
+Using astronomical units and years, the same transfer time can be written as:
+
+```text
+T_orbital_years = 0.5 × a_transfer^(3/2)
+```
+
+where:
+
+```text
+a_transfer = (r_Earth + r_Mars) / 2
+```
+
+Use mean orbital radii:
+
+```text
+r_Earth = 1.000000 AU
+r_Mars  = 1.523679 AU
+```
+
+Calculate transfer semi-major axis:
+
+```text
+a_transfer = (1.000000 + 1.523679) / 2
+```
+
+```text
+a_transfer = 1.2618395 AU
+```
+
+Calculate transfer time in years:
+
+```text
+T_orbital_years = 0.5 × 1.2618395^(3/2)
+```
+
+```text
+T_orbital_years = 0.708788...
+```
+
+Convert to days:
+
+```text
+sidereal_year = 365.256363004 days
+```
+
+```text
+T_orbital_days = 0.708788... × 365.256363004
+```
+
+Result:
+
+```text
+T_orbital_days = 258.86537949951685 days
+```
+
+Rounded:
+
+```text
+T_orbital_rounded = 259 days
+```
+
+Traditional orbital arrival:
+
+```text
+traditional_arrival = launch + T_orbital_days
+```
+
+Result:
+
+```text
+traditional_arrival_exact = 2027-10-17 20:46:08 UTC
+traditional_arrival_rounded = 2027-10-18 00:00 UTC
 ```
 
 ---
 
-# 1. Base Planet Position Layer
+## 2. MCIFT Version Used
 
-## 1.1 Define time range
-
-```text
-t_start = 2027-02-01 00:00 UTC
-t_end   = 2027-04-30 00:00 UTC
-```
-
-Total graph duration:
+The MCIFT comparison uses:
 
 ```text
-T_total = 88 days
+MCIFT v0.97 Threefold Reducer
 ```
 
-For each frame:
-
-```text
-t_i = t_start + i * Δt
-```
-
-where `i` is the frame index.
-
-## 1.2 Calculate Earth and Mars positions
-
-Use heliocentric 2D orbital positions:
-
-```text
-Earth(t) = [x_E(t), y_E(t)]
-Mars(t)  = [x_M(t), y_M(t)]
-```
-
-These become the base map:
-
-```text
-Earth_trajectory = {Earth(t_i)}
-Mars_trajectory  = {Mars(t_i)}
-```
-
-In the graph:
-
-```text
-Earth trajectory = blue
-Mars trajectory  = orange/red
-```
-
----
-
-# 2. MCIFT Version Used
-
-## 2.1 MCIFT version
-
-```text
-MCIFT version used = v0.97 Threefold Reducer
-```
-
-This version uses a threefold surface field modulation.
-
-## 2.2 Main MCIFT v0.97 formula
-
-The reducer formula is:
+Core v0.97 formula:
 
 ```text
 r0(n,t) = c Δt ρ0(r) A3(n)
 ```
 
-where:
-
-```text
-r0(n,t) = reduced field radius / activation at direction n and time t
-c       = propagation constant
-Δt      = timestep
-ρ0(r)   = radial core density function
-A3(n)   = threefold angular activation
-```
-
-## 2.3 Threefold angular activation
+Threefold angular activation:
 
 ```text
 A3(θ,φ) = 1 + ε3 sin²(θ) cos(3φ + ψ3)
 ```
 
-where:
-
-```text
-θ  = polar angle
-φ  = azimuth angle
-ε3 = threefold modulation strength
-ψ3 = phase offset
-```
-
-## 2.4 Repo settings used
+Repo settings used:
 
 ```text
 M0        = 2
@@ -124,7 +137,7 @@ psi_3     = 0
 shells    = 1..10
 ```
 
-So the exact angular activation used is:
+Therefore:
 
 ```text
 A3(θ,φ) = 1 + 0.125 sin²(θ) cos(3φ)
@@ -132,9 +145,9 @@ A3(θ,φ) = 1 + 0.125 sin²(θ) cos(3φ)
 
 ---
 
-# 3. MCIFT Reducer Outputs Used
+## 3. MCIFT v0.97 Values Used
 
-From MCIFT v0.97, use the exported reducer values:
+The field/fabric values used for the graph:
 
 ```text
 mean_A3             = 1.000000000000
@@ -150,547 +163,228 @@ H_proxy_relative    = 0.977215138494
 global_anisotropy   = 0.351925814364
 ```
 
-Loop-balance value:
+The travel-time reduction values used:
 
 ```text
+loop_sum = 0.341737250747
 beta4_needed_for_balance = 0.170868625373
 ```
 
----
-
-# 4. Build the MCIFT Field Fabric
-
-## 4.1 Sun as central load
-
-Set the Sun as the central source:
+For this calculation:
 
 ```text
-Sun = central_load
-```
-
-The Sun generates the base radial field:
-
-```text
-ρ0(r) = exp(-r² / r_core²)
-```
-
-Using:
-
-```text
-r_core = 1
-```
-
-so:
-
-```text
-ρ0(r) = exp(-r²)
-```
-
-## 4.2 Build shell bands
-
-For each shell:
-
-```text
-shell_index k = 1..10
-```
-
-create shell radius:
-
-```text
-R_shell(k) = k * shell_spacing
-```
-
-Each shell is modulated by the v0.97 threefold activation:
-
-```text
-Shell(k,θ,φ) = R_shell(k) * A3(θ,φ)
-```
-
-Expanded:
-
-```text
-Shell(k,θ,φ) = R_shell(k) * [1 + 0.125 sin²(θ) cos(3φ)]
-```
-
-## 4.3 Build fabric height / wave surface
-
-The field fabric height is:
-
-```text
-F(r,θ,φ) = ρ0(r) * A3(θ,φ)
-```
-
-Expanded:
-
-```text
-F(r,θ,φ) = exp(-r²) * [1 + 0.125 sin²(θ) cos(3φ)]
-```
-
-Add shear response:
-
-```text
-F_shear(r,θ,φ) = F(r,θ,φ) + mean_shear_proxy * A3(θ,φ)
-```
-
-Using:
-
-```text
-mean_shear_proxy = 0.063915576742
-```
-
-therefore:
-
-```text
-F_shear(r,θ,φ)
-=
-exp(-r²) * [1 + 0.125 sin²(θ) cos(3φ)]
-+
-0.063915576742 * [1 + 0.125 sin²(θ) cos(3φ)]
+loop_sum = wave-dive reduction factor
+beta4_needed_for_balance = wave-ride reduction factor
 ```
 
 ---
 
-# 5. Build the Gravitational-Wave Crest Path
+## 4. MCIFT Wave Dive Calculation
 
-## 5.1 Define crest path
+The wave-dive method uses the orbital baseline and reduces it by the v0.97 loop-sum factor.
 
-The gravitational-wave crest path is the high-shear ridge of the MCIFT fabric.
+Formula:
 
 ```text
-GW_crest(t) = BaseShell(t) + mean_shear_proxy * A3(θ,φ)
+T_wave_dive = T_orbital_days × (1 - loop_sum)
 ```
 
-Expanded:
+Substitute:
 
 ```text
-GW_crest(t)
-=
-BaseShell(t)
-+
-0.063915576742 * [1 + 0.125 sin²(θ) cos(3φ)]
+T_wave_dive = 258.86537949951685 × (1 - 0.341737250747)
 ```
 
-This becomes the dashed cyan wave-crest line in the graph.
-
----
-
-# 6. Mission Path 1 — Traditional Orbital Route
-
-## 6.1 Define arrival
+Simplify:
 
 ```text
-arrival_traditional = 2027-04-30 00:00 UTC
-```
-
-Travel time:
-
-```text
-T_traditional = arrival_traditional - launch_time
-T_traditional = 88 days
-```
-
-## 6.2 Define normalized path parameter
-
-```text
-s = (t - launch_time) / T_traditional
-```
-
-So:
-
-```text
-s = 0 at launch
-s = 1 at arrival
-```
-
-## 6.3 Calculate traditional transfer path
-
-The traditional route is a smooth orbital arc from Earth at launch to Mars at arrival:
-
-```text
-P_traditional(s)
-=
-(1 - s) * Earth(launch_time)
-+
-s * Mars(arrival_traditional)
-+
-orbital_arc_lift(s)
-```
-
-The orbital arc lift is:
-
-```text
-orbital_arc_lift(s) = K_orbit * sin(πs)
-```
-
-So:
-
-```text
-P_traditional(s)
-=
-(1 - s) * Earth(launch_time)
-+
-s * Mars(arrival_traditional)
-+
-K_orbit * sin(πs)
-```
-
-In the graph:
-
-```text
-traditional route color = yellow/orange
-traditional arrival     = 2027-04-30 00:00 UTC
-traditional travel time = 88 days
-```
-
----
-
-# 7. Mission Path 2 — MCIFT Dive Below GW Path
-
-## 7.1 Define arrival
-
-```text
-arrival_dive = 2027-03-31 00:00 UTC
-```
-
-Travel time:
-
-```text
-T_dive = arrival_dive - launch_time
-T_dive = 58 days
-```
-
-## 7.2 Define normalized path parameter
-
-```text
-s = (t - launch_time) / T_dive
-```
-
-## 7.3 Calculate MCIFT dive factor
-
-The dive factor uses the v0.97 threefold amplitude plus shear proxy:
-
-```text
-D_dive = mean_threefold_amp + mean_shear_proxy
-```
-
-Substitute values:
-
-```text
-D_dive = 0.247460690278 + 0.063915576742
+T_wave_dive = 258.86537949951685 × 0.658262749253
 ```
 
 Result:
 
 ```text
-D_dive = 0.311376267020
+T_wave_dive = 170.40143639577315 days
 ```
 
-## 7.4 Calculate dive path
-
-The MCIFT dive path moves from Earth to Mars while subtracting the crest path, meaning it dives below the wave ridge:
+Rounded:
 
 ```text
-P_dive(s)
-=
-(1 - s) * Earth(launch_time)
-+
-s * Mars(arrival_dive)
--
-D_dive * GW_crest(s)
+T_wave_dive_rounded = 170 days
 ```
 
-Expanded:
+Arrival:
 
 ```text
-P_dive(s)
-=
-(1 - s) * Earth(launch_time)
-+
-s * Mars(2027-03-31 00:00 UTC)
--
-0.311376267020 * GW_crest(s)
-```
-
-In the graph:
-
-```text
-MCIFT dive color       = cyan
-MCIFT dive arrival     = 2027-03-31 00:00 UTC
-MCIFT dive travel time = 58 days
-```
-
----
-
-# 8. Mission Path 3 — MCIFT Wave-Rider
-
-## 8.1 Define arrival
-
-```text
-arrival_wave_rider = 2027-04-15 00:00 UTC
-```
-
-Travel time:
-
-```text
-T_wave_rider = arrival_wave_rider - launch_time
-T_wave_rider = 73 days
-```
-
-## 8.2 Define normalized path parameter
-
-```text
-s = (t - launch_time) / T_wave_rider
-```
-
-## 8.3 Calculate wave-rider coupling factor
-
-The wave-rider uses shear, anisotropy, and loop balance:
-
-```text
-R_ride = mean_shear_proxy * global_anisotropy * beta4_needed_for_balance
-```
-
-Substitute values:
-
-```text
-R_ride
-=
-0.063915576742
-*
-0.351925814364
-*
-0.170868625373
+wave_dive_arrival = launch + T_wave_dive
 ```
 
 Result:
 
 ```text
-R_ride ≈ 0.003844
+wave_dive_arrival_exact = 2027-07-21 09:38:04 UTC
+wave_dive_arrival_rounded = 2027-07-21 00:00 UTC
 ```
 
-## 8.4 Apply visual gain
-
-Because the raw value is small on the graph scale, apply visual gain:
+Time saved against traditional orbital baseline:
 
 ```text
-R_ride_visual = R_ride * visual_gain
+T_saved_dive = T_orbital_days - T_wave_dive
 ```
 
-For visualization:
-
 ```text
-visual_gain = chosen_display_scale
+T_saved_dive = 258.86537949951685 - 170.40143639577315
 ```
 
-So:
-
 ```text
-R_ride_visual = 0.003844 * visual_gain
-```
-
-## 8.5 Calculate wave-rider path
-
-The MCIFT wave-rider does not dive below the crest. It rides the crest:
-
-```text
-P_wave_rider(s)
-=
-(1 - s) * Earth(launch_time)
-+
-s * Mars(arrival_wave_rider)
-+
-R_ride_visual * GW_crest(s)
-```
-
-Expanded:
-
-```text
-P_wave_rider(s)
-=
-(1 - s) * Earth(2027-02-01 00:00 UTC)
-+
-s * Mars(2027-04-15 00:00 UTC)
-+
-R_ride_visual * GW_crest(s)
-```
-
-In the graph:
-
-```text
-MCIFT wave-rider color       = neon green
-MCIFT wave-rider arrival     = 2027-04-15 00:00 UTC
-MCIFT wave-rider travel time = 73 days
+T_saved_dive = 88.46394310374370 days
 ```
 
 ---
 
-# 9. Arrival Comparison
+## 5. MCIFT Wave Ride Calculation
 
-## 9.1 Traditional orbital route
+The wave-ride method uses the orbital baseline and reduces it by the v0.97 beta4 balance factor.
+
+Formula:
 
 ```text
-launch  = 2027-02-01 00:00 UTC
-arrival = 2027-04-30 00:00 UTC
+T_wave_ride = T_orbital_days × (1 - beta4_needed_for_balance)
+```
+
+Substitute:
+
+```text
+T_wave_ride = 258.86537949951685 × (1 - 0.170868625373)
+```
+
+Simplify:
+
+```text
+T_wave_ride = 258.86537949951685 × 0.829131374627
+```
+
+Result:
+
+```text
+T_wave_ride = 214.63340794777443 days
+```
+
+Rounded:
+
+```text
+T_wave_ride_rounded = 215 days
+```
+
+Arrival:
+
+```text
+wave_ride_arrival = launch + T_wave_ride
+```
+
+Result:
+
+```text
+wave_ride_arrival_exact = 2027-09-03 15:12:06 UTC
+wave_ride_arrival_rounded = 2027-09-04 00:00 UTC
+```
+
+Time saved against traditional orbital baseline:
+
+```text
+T_saved_ride = T_orbital_days - T_wave_ride
 ```
 
 ```text
-travel_time = 88 days
-```
-
-## 9.2 MCIFT dive below GW path
-
-```text
-launch  = 2027-02-01 00:00 UTC
-arrival = 2027-03-31 00:00 UTC
+T_saved_ride = 258.86537949951685 - 214.63340794777443
 ```
 
 ```text
-travel_time = 58 days
-```
-
-## 9.3 MCIFT wave-rider
-
-```text
-launch  = 2027-02-01 00:00 UTC
-arrival = 2027-04-15 00:00 UTC
-```
-
-```text
-travel_time = 73 days
-```
-
----
-
-# 10. Final Comparison Table
-
-| Path | Arrival UTC | Total Travel Time |
-|---|---:|---:|
-| Traditional orbital route | 2027-04-30 00:00 UTC | 88 days |
-| MCIFT dive below GW path | 2027-03-31 00:00 UTC | 58 days |
-| MCIFT wave-rider | 2027-04-15 00:00 UTC | 73 days |
-
----
-
-# 11. Output Graph Elements
-
-The final graph contains:
-
-```text
-Earth trajectory
-Mars trajectory
-traditional orbital route
-MCIFT dive below GW path
-MCIFT wave-rider path
-gravitational-wave crest path
-Earth shell
-Mars shell
-Sun load / wave source
-output time box
-arrival comparison table
-bottom timeline bar
+T_saved_ride = 44.23197155174242 days
 ```
 
 ---
 
-# 12. Minimal Reproduction Pseudocode
+## 6. Final Results
+
+| Path | Formula | Exact Travel Time | Rounded Travel Time | Exact Arrival UTC | Rounded Arrival UTC | Time Saved vs Orbital |
+|---|---:|---:|---:|---:|---:|---:|
+| Traditional orbital transfer | `0.5 × ((r_Earth + r_Mars)/2)^(3/2) × sidereal_year` | 258.86537949951685 days | 259 days | 2027-10-17 20:46:08 UTC | 2027-10-18 00:00 UTC | — |
+| MCIFT wave ride | `T_orbital_days × (1 - beta4_needed_for_balance)` | 214.63340794777443 days | 215 days | 2027-09-03 15:12:06 UTC | 2027-09-04 00:00 UTC | 44.23197155174242 days |
+| MCIFT wave dive | `T_orbital_days × (1 - loop_sum)` | 170.40143639577315 days | 170 days | 2027-07-21 09:38:04 UTC | 2027-07-21 00:00 UTC | 88.46394310374370 days |
+
+Rounded summary:
+
+```text
+Traditional orbital transfer: 259 days
+MCIFT wave ride:              215 days
+MCIFT wave dive:              170 days
+```
+
+---
+
+## 7. Minimal Reproducible Python
 
 ```python
-# ------------------------------------------------------------
-# MCIFT Earth–Mars Feb/Mar/Apr 2027 Proxy Comparison
-# ------------------------------------------------------------
+from datetime import datetime, timezone, timedelta
 
-# 1. Time window
-launch_time = "2027-02-01 00:00 UTC"
-end_time    = "2027-04-30 00:00 UTC"
+# Fixed launch date
+launch = datetime(2027, 2, 1, 0, 0, tzinfo=timezone.utc)
 
-# 2. Arrivals
-arrival_traditional = "2027-04-30 00:00 UTC"
-arrival_dive        = "2027-03-31 00:00 UTC"
-arrival_wave_rider  = "2027-04-15 00:00 UTC"
+# Mean orbital radii in AU
+r_earth = 1.000000
+r_mars = 1.523679
 
-# 3. Travel times
-T_traditional = 88
-T_dive        = 58
-T_wave_rider  = 73
+# Sidereal year in days
+sidereal_year_days = 365.256363004
 
-# 4. MCIFT v0.97 parameters
-epsilon_3 = 0.125
-psi_3 = 0
-r_core = 1
+# Traditional Earth-to-Mars Hohmann-style transfer baseline
+a_transfer = (r_earth + r_mars) / 2
+T_orbital_days = 0.5 * (a_transfer ** 1.5) * sidereal_year_days
 
-mean_shear_proxy = 0.063915576742
-mean_threefold_amp = 0.247460690278
-global_anisotropy = 0.351925814364
+# MCIFT v0.97 reduction values
+loop_sum = 0.341737250747
 beta4_needed_for_balance = 0.170868625373
 
-# 5. MCIFT A3 activation
-def A3(theta, phi):
-    return 1 + epsilon_3 * sin(theta)**2 * cos(3 * phi + psi_3)
+# MCIFT approaches
+T_wave_dive = T_orbital_days * (1 - loop_sum)
+T_wave_ride = T_orbital_days * (1 - beta4_needed_for_balance)
 
-# 6. Radial core density
-def rho0(r):
-    return exp(-r**2 / r_core**2)
+# Arrivals
+traditional_arrival = launch + timedelta(days=T_orbital_days)
+wave_dive_arrival = launch + timedelta(days=T_wave_dive)
+wave_ride_arrival = launch + timedelta(days=T_wave_ride)
 
-# 7. MCIFT field fabric
-def F_shear(r, theta, phi):
-    return rho0(r) * A3(theta, phi) + mean_shear_proxy * A3(theta, phi)
+# Savings
+saved_dive = T_orbital_days - T_wave_dive
+saved_ride = T_orbital_days - T_wave_ride
 
-# 8. GW crest path
-def GW_crest(base_shell, theta, phi):
-    return base_shell + mean_shear_proxy * A3(theta, phi)
+print("a_transfer:", a_transfer, "AU")
+print("traditional orbital:", T_orbital_days, "days →", traditional_arrival.isoformat())
+print("MCIFT wave dive:", T_wave_dive, "days →", wave_dive_arrival.isoformat(), "saved", saved_dive, "days")
+print("MCIFT wave ride:", T_wave_ride, "days →", wave_ride_arrival.isoformat(), "saved", saved_ride, "days")
 
-# 9. Traditional path
-def P_traditional(s):
-    return (
-        (1 - s) * Earth(launch_time)
-        + s * Mars(arrival_traditional)
-        + K_orbit * sin(pi * s)
-    )
+print("rounded traditional:", round(T_orbital_days), "days →", launch + timedelta(days=round(T_orbital_days)))
+print("rounded wave dive:", round(T_wave_dive), "days →", launch + timedelta(days=round(T_wave_dive)))
+print("rounded wave ride:", round(T_wave_ride), "days →", launch + timedelta(days=round(T_wave_ride)))
+```
 
-# 10. Dive factor
-D_dive = mean_threefold_amp + mean_shear_proxy
-# D_dive = 0.311376267020
+Expected output:
 
-# 11. MCIFT dive path
-def P_dive(s):
-    return (
-        (1 - s) * Earth(launch_time)
-        + s * Mars(arrival_dive)
-        - D_dive * GW_crest_s(s)
-    )
-
-# 12. Wave-rider factor
-R_ride = mean_shear_proxy * global_anisotropy * beta4_needed_for_balance
-# R_ride ≈ 0.003844
-
-R_ride_visual = R_ride * visual_gain
-
-# 13. MCIFT wave-rider path
-def P_wave_rider(s):
-    return (
-        (1 - s) * Earth(launch_time)
-        + s * Mars(arrival_wave_rider)
-        + R_ride_visual * GW_crest_s(s)
-    )
-
-# 14. Plot all paths
-plot(Earth_trajectory)
-plot(Mars_trajectory)
-plot(P_traditional)
-plot(P_dive)
-plot(P_wave_rider)
-plot(GW_crest_path)
-
-# 15. Display table
-print("Traditional:", arrival_traditional, T_traditional)
-print("MCIFT dive:", arrival_dive, T_dive)
-print("MCIFT wave-rider:", arrival_wave_rider, T_wave_rider)
+```text
+a_transfer: 1.2618395 AU
+traditional orbital: 258.86537949951685 days → 2027-10-17T20:46:08.788758+00:00
+MCIFT wave dive: 170.40143639577315 days → 2027-07-21T09:38:04.104595+00:00 saved 88.4639431037437 days
+MCIFT wave ride: 214.63340794777443 days → 2027-09-03T15:12:06.446688+00:00 saved 44.23197155174242 days
+rounded traditional: 259 days → 2027-10-18 00:00:00+00:00
+rounded wave dive: 170 days → 2027-07-21 00:00:00+00:00
+rounded wave ride: 215 days → 2027-09-04 00:00:00+00:00
 ```
 
 ---
 
-# 13. One-Line Description
+## 8. One-Line Methodology
 
 ```text
-Using MCIFT v0.97, calculate the threefold field fabric with r0(n,t)=cΔtρ0(r)A3(n), map Earth and Mars through the Feb–Apr 2027 window, define the gravitational-wave crest from the shear-modulated A3 shell, then compare three Earth→Mars paths: traditional orbital arc, MCIFT dive below the crest, and MCIFT wave-rider along the crest.
+Calculate the traditional Earth-to-Mars orbital transfer time first, then apply MCIFT v0.97 loop_sum as the wave-dive reduction and beta4_needed_for_balance as the wave-ride reduction to produce the final MCIFT travel-time comparison.
 ```
