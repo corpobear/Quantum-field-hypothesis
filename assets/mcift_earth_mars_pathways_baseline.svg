@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#0b1020"/>
+  <text x="40" y="48" fill="#f2f7ff" font-family="Arial" font-size="28">Earth–Mars Pathway Comparison: Orbital Baseline + MCIFT v0.97</text>
+  <text x="40" y="78" fill="#b8c7d9" font-family="Arial" font-size="15">Launch: 2027-02-01 00:00 UTC · Baseline orbital transfer calculated first, then MCIFT reductions applied.</text>
+  <g transform="translate(500 530) scale(230 -230)">
+    <circle cx="0" cy="0" r="1.0" fill="none" stroke="#4aa3ff" stroke-width="0.009" opacity="0.75"/>
+    <circle cx="0" cy="0" r="1.523679" fill="none" stroke="#ff8a3d" stroke-width="0.009" opacity="0.75"/>
+    <path d="M 1 0 Q -0.24 1.90 -1.523679 0" fill="none" stroke="#50d050" stroke-width="0.018"/>
+    <path d="M 1 0 Q -0.18 0.92 -1.400687 0.599728" fill="none" stroke="#ff4d4d" stroke-width="0.018"/>
+    <path d="M 1 0 Q 0.01 1.62 -1.051567 1.102635" fill="none" stroke="#a57aff" stroke-width="0.018"/>
+    <path d="M 1 0 C 0.45 -0.12 0.15 -0.26 -0.25 -0.18 S -1.0 -0.05 -1.523679 0" fill="none" stroke="#8b5e4f" stroke-width="0.012" stroke-dasharray="0.04 0.025" opacity="0.85"/>
+    <circle cx="0" cy="0" r="0.045" fill="#ffd34a"/>
+    <circle cx="1" cy="0" r="0.035" fill="#36a3ff"/>
+    <circle cx="-1.523679" cy="0" r="0.035" fill="#50d050"/>
+    <circle cx="-1.400687" cy="0.599728" r="0.035" fill="#ff4d4d"/>
+    <circle cx="-1.051567" cy="1.102635" r="0.035" fill="#a57aff"/>
+  </g>
+  <g font-family="Arial" font-size="15" fill="#e7eefc">
+    <text x="730" y="530">Earth launch</text>
+    <text x="132" y="536">Orbital arrival</text>
+    <text x="158" y="390">Wave ride arrival</text>
+    <text x="232" y="260">Wave dive arrival</text>
+    <text x="512" y="515">Sun</text>
+  </g>
+  <g font-family="Arial" font-size="15">
+    <rect x="42" y="790" width="916" height="130" rx="14" fill="#11192e" stroke="#2e4669"/>
+    <text x="65" y="824" fill="#f2f7ff" font-size="19">Results</text>
+    <text x="65" y="855" fill="#50d050">Traditional orbital transfer: 258.86537949951685 days → 2027-10-17 20:46:08 UTC</text>
+    <text x="65" y="884" fill="#ff4d4d">MCIFT wave ride: 214.63340794777443 days → 2027-09-03 15:12:06 UTC · saves 44.23197155174242 days</text>
+    <text x="65" y="913" fill="#a57aff">MCIFT wave dive: 170.40143639577315 days → 2027-07-21 09:38:04 UTC · saves 88.46394310374370 days</text>
+  </g>
+  <g font-family="Arial" font-size="14" fill="#d5e1f0">
+    <rect x="700" y="105" width="260" height="145" rx="12" fill="#11192e" stroke="#2e4669"/>
+    <line x1="720" y1="135" x2="770" y2="135" stroke="#4aa3ff" stroke-width="4"/><text x="785" y="140">Earth orbit</text>
+    <line x1="720" y1="164" x2="770" y2="164" stroke="#ff8a3d" stroke-width="4"/><text x="785" y="169">Mars orbit</text>
+    <line x1="720" y1="193" x2="770" y2="193" stroke="#50d050" stroke-width="4"/><text x="785" y="198">Orbital transfer</text>
+    <line x1="720" y1="222" x2="770" y2="222" stroke="#ff4d4d" stroke-width="4"/><text x="785" y="227">MCIFT wave ride</text>
+    <line x1="720" y1="245" x2="770" y2="245" stroke="#a57aff" stroke-width="4"/><text x="785" y="250">MCIFT wave dive</text>
+  </g>
+  <text x="40" y="965" fill="#95a8c2" font-family="Arial" font-size="13">Plot is a proxy visualization. Orbital baseline uses a Hohmann-style transfer; MCIFT paths use v0.97 reduction factors.</text>
+</svg>
