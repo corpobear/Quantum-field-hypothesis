@@ -21,7 +21,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
 from dataclasses import dataclass, asdict, fields
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
@@ -71,16 +70,32 @@ RESAMPLE_MODES = {
 def clamp_config(cfg: UpscaleConfig) -> UpscaleConfig:
     """Clamp numerically sensitive options to safe ranges."""
     cfg.scale = max(1.0, float(cfg.scale))
+    cfg.resample = str(cfg.resample).lower()
+
+    cfg.bubble_strength = float(cfg.bubble_strength)
     cfg.bubble_radius = max(0.05, float(cfg.bubble_radius))
     cfg.bubble_falloff = max(0.05, float(cfg.bubble_falloff))
-    cfg.center_x = float(np.clip(cfg.center_x, 0.0, 1.0))
-    cfg.center_y = float(np.clip(cfg.center_y, 0.0, 1.0))
-    cfg.epsilon3 = float(np.clip(cfg.epsilon3, -0.95, 0.95))
+    cfg.center_x = float(np.clip(float(cfg.center_x), 0.0, 1.0))
+    cfg.center_y = float(np.clip(float(cfg.center_y), 0.0, 1.0))
+
+    cfg.threefold = bool(cfg.threefold)
+    cfg.epsilon3 = float(np.clip(float(cfg.epsilon3), -0.95, 0.95))
+    cfg.psi3 = float(cfg.psi3)
+
     cfg.denoise_radius = max(0.0, float(cfg.denoise_radius))
+    cfg.detail_strength = float(cfg.detail_strength)
     cfg.detail_radius = max(0.0, float(cfg.detail_radius))
+    cfg.edge_boost = float(cfg.edge_boost)
+    cfg.edge_threshold = float(np.clip(float(cfg.edge_threshold), 0.0, 1.0))
+
+    cfg.sharpen_amount = float(cfg.sharpen_amount)
     cfg.sharpen_radius = max(0.0, float(cfg.sharpen_radius))
-    cfg.edge_threshold = float(np.clip(cfg.edge_threshold, 0.0, 1.0))
-    cfg.quality = int(np.clip(cfg.quality, 1, 100))
+
+    cfg.grain = max(0.0, float(cfg.grain))
+    if cfg.seed is not None:
+        cfg.seed = int(cfg.seed)
+    cfg.quality = int(np.clip(int(cfg.quality), 1, 100))
+
     if cfg.resample not in RESAMPLE_MODES:
         raise ValueError(f"Unknown resample mode: {cfg.resample}")
     return cfg
@@ -342,16 +357,8 @@ def parse_args() -> argparse.Namespace:
         name = field.name
         if name in {"threefold", "seed"}:
             continue
-        default = None
         arg = "--" + name.replace("_", "-")
-        if field.type is int:
-            parser.add_argument(arg, dest=name, type=int, default=default)
-        elif field.type is float:
-            parser.add_argument(arg, dest=name, type=float, default=default)
-        elif field.type is str:
-            parser.add_argument(arg, dest=name, type=str, default=default)
-        else:
-            parser.add_argument(arg, dest=name, default=default)
+        parser.add_argument(arg, dest=name, default=None)
 
     parser.add_argument("--seed", type=int, default=None, help="Random seed for grain")
     group = parser.add_mutually_exclusive_group()
