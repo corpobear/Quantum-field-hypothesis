@@ -7,7 +7,14 @@ The applications are not physics validations and do not claim that MCIFT replace
 ## Current applications
 
 ```text
-image_upscaling/    Bubble Inflation Upscaler
+image_upscaling/    Bubble Inflation Upscaler and Bubble Reconstruction Upscaler
+```
+
+## Current workflow split
+
+```text
+Bubble Inflation Upscaler        use for decent inputs that mainly need enlargement
+Bubble Reconstruction Upscaler   use for low-quality/blocky/compressed inputs needing cleanup first
 ```
 
 ## Design rules
