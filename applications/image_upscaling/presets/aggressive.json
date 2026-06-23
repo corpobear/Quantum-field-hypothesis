@@ -1,0 +1,22 @@
+{
+  "scale": 4.0,
+  "resample": "lanczos",
+  "bubble_strength": 0.24,
+  "bubble_radius": 1.05,
+  "bubble_falloff": 2.4,
+  "center_x": 0.5,
+  "center_y": 0.5,
+  "threefold": true,
+  "epsilon3": 0.18,
+  "psi3": 0.0,
+  "denoise_radius": 0.0,
+  "detail_strength": 0.36,
+  "detail_radius": 1.35,
+  "edge_boost": 0.45,
+  "edge_threshold": 0.03,
+  "sharpen_amount": 0.55,
+  "sharpen_radius": 0.75,
+  "grain": 0.003,
+  "seed": 0,
+  "quality": 95
+}
