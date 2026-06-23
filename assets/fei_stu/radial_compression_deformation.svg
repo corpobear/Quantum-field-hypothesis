@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-label="Radiálna kompresia a deformačná veličina">
+  <defs>
+    <marker id="arrow-in" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#dd6b20"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="560" fill="#ffffff"/>
+  <rect x="20" y="20" width="960" height="520" rx="18" fill="#f8fafc" stroke="#d8dee9"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#17324d">Radiálna kompresia a deformačná veličina D₃</text>
+  <text x="60" y="108" font-family="Arial, sans-serif" font-size="18" fill="#4a5568">Centrálny rezervoár vtiahne ideálnu kauzálnu plochu; rozdiel tvorí redukovanú veličinu.</text>
+
+  <g transform="translate(500 310)">
+    <circle cx="0" cy="0" r="185" fill="none" stroke="#a0aec0" stroke-width="5"/>
+    <circle cx="0" cy="0" r="135" fill="#f7fafc" stroke="#2b6cb0" stroke-width="6"/>
+    <circle cx="0" cy="0" r="22" fill="#c53030"/>
+    <line x1="0" y1="-185" x2="0" y2="-140" stroke="#dd6b20" stroke-width="7" marker-end="url(#arrow-in)"/>
+    <line x1="131" y1="-131" x2="99" y2="-99" stroke="#dd6b20" stroke-width="7" marker-end="url(#arrow-in)"/>
+    <line x1="185" y1="0" x2="140" y2="0" stroke="#dd6b20" stroke-width="7" marker-end="url(#arrow-in)"/>
+    <line x1="131" y1="131" x2="99" y2="99" stroke="#dd6b20" stroke-width="7" marker-end="url(#arrow-in)"/>
+    <line x1="0" y1="185" x2="0" y2="140" stroke="#dd6b20" stroke-width="7" marker-end="url(#arrow-in)"/>
+    <line x1="-131" y1="131" x2="-99" y2="99" stroke="#dd6b20" stroke-width="7" marker-end="url(#arrow-in)"/>
+    <line x1="-185" y1="0" x2="-140" y2="0" stroke="#dd6b20" stroke-width="7" marker-end="url(#arrow-in)"/>
+    <line x1="-131" y1="-131" x2="-99" y2="-99" stroke="#dd6b20" stroke-width="7" marker-end="url(#arrow-in)"/>
+  </g>
+
+  <text x="105" y="190" font-family="Arial, sans-serif" font-size="20" fill="#4a5568">Ideálna plocha: r = cΔt</text>
+  <text x="610" y="190" font-family="Arial, sans-serif" font-size="20" fill="#4a5568">Deformovaná plocha: r = cΔt ρ₀(r)A₃(n)</text>
+  <text x="150" y="500" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#2b6cb0">D₃(n,r) = 1 - ρ₀(r)A₃(n)</text>
+  <text x="485" y="500" font-family="Arial, sans-serif" font-size="18" fill="#4a5568">- prvý geometrický most k redukovaným proxy veličinám</text>
+</svg>
