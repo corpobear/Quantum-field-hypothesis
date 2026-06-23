@@ -1,0 +1,239 @@
+%PDF-1.4
+% ASCII placeholder PDF
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R ] /Count 6 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 647 >>
+stream
+BT
+/F1 22 Tf
+60 780 Td (Prehlad teorie pre FEI/STU) Tj
+0 -42 Td
+/F1 14 Tf
+0 0 Td (Pracovny placeholder dokument) Tj
+0 -34 Td
+/F1 11 Tf
+0 0 Td (Nazov ramca: MCIFT - Multi-Channel Information Field Theory) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Autor / spravca repozitara: Adrian Newton / corpobear) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Ucel: pripravit neutralny akademicky prehlad pred doplnenim obsahu.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Status: spekulativny vyskumne-teoreticky ramec; nie etablovana fyzika.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Poznamka: tento subor je placeholder pre FEI/STU a bude dalej doplneny.) Tj
+0 -17 Td
+0 -8 Td
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 574 >>
+stream
+BT
+/F1 22 Tf
+60 780 Td (1. Ucel dokumentu) Tj
+0 -42 Td
+/F1 11 Tf
+0 0 Td (Tento dokument ma sluzit ako uvodny prehlad teoretickeho ramca pre akademicku diskusiu) Tj
+0 -17 Td
+0 0 Td (na FEI/STU.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Cielom nie je tvrdit experimentanu validaciu, ale jasne oddelit hypotezy, odvodenia,) Tj
+0 -17 Td
+0 0 Td (predpoklady, testy a otvorene otazky.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Finalna verzia doplni presny nazov, abstrakt, definicie, rovnice, zdroje, validacnu) Tj
+0 -17 Td
+0 0 Td (maticu a navrh dalsich krokov.) Tj
+0 -17 Td
+0 -8 Td
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 453 >>
+stream
+BT
+/F1 22 Tf
+60 780 Td (2. Miesto pre nazov a abstrakt) Tj
+0 -42 Td
+/F1 11 Tf
+0 0 Td (Nazov ramca: [DOPLNIT / POTVRDIT]) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Kratky nazov: [DOPLNIT]) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Abstrakt: [DOPLNIT]) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Klucove pojmy: [DOPLNIT]) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Rozsah: [DOPLNIT - teoreticky ramec, numericky scaffold, toy model, validacny plan].) Tj
+0 -17 Td
+0 -8 Td
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 693 >>
+stream
+BT
+/F1 22 Tf
+60 780 Td (3. Navrhovana struktura prehladu) Tj
+0 -42 Td
+/F1 11 Tf
+0 0 Td (1. Motivacia a problemova oblast) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (2. Zakladne postulaty a definicie) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (3. Matematicky objekt / stavovy priestor) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (4. Redukovane veliciny a mapovanie na meratelne proxy) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (5. Doterajsie vysledky a ich oznacenie: odvodene, fitovane, predpokladane, netestovane) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (6. Porovnanie s etablovanymi teoriami a jasne limity) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (7. Plan testovania, falsifikacie a spoluprace) Tj
+0 -17 Td
+0 -8 Td
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 608 >>
+stream
+BT
+/F1 22 Tf
+60 780 Td (4. Validacia a limity) Tj
+0 -42 Td
+/F1 11 Tf
+0 0 Td (Kazde tvrdenie bude oznacene jednou z kategorii: odvodene, predpokladane, fitovany) Tj
+0 -17 Td
+0 0 Td (kotviaci bod, placeholder, netestovane, pass-like, close-not-pass alebo fail.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Dokument nesmie tvrdit, ze ramec nahradza Standardny model, kvantovu teoriu pola,) Tj
+0 -17 Td
+0 0 Td (vseobecnu relativitu alebo standardny kozmologicky model.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Cielom je pripravit transparentny material pre odbornu spatnu vazbu a dalsiu kontrolu.) Tj
+0 -17 Td
+0 -8 Td
+ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 591 >>
+stream
+BT
+/F1 22 Tf
+60 780 Td (5. Dalsie doplnenia) Tj
+0 -42 Td
+/F1 11 Tf
+0 0 Td (Doplnit: finalny nazov ramca.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Doplnit: abstrakt v slovencine a pripadne v anglictine.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Doplnit: hlavne rovnice, diagram architektury a validacnu tabulku.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Doplnit: zoznam suborov z repozitara, na ktore sa dokument odkazuje.) Tj
+0 -17 Td
+0 -8 Td
+/F1 11 Tf
+0 0 Td (Doplnit: navrh komunikacie pre FEI/STU - co ziadame, co ponukame, aku formu recenzie) Tj
+0 -17 Td
+0 0 Td (hladame.) Tj
+0 -17 Td
+0 -8 Td
+ET
+endstream
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000033 00000 n 
+0000000082 00000 n 
+0000000174 00000 n 
+0000000244 00000 n 
+0000000370 00000 n 
+0000001068 00000 n 
+0000001194 00000 n 
+0000001819 00000 n 
+0000001945 00000 n 
+0000002449 00000 n 
+0000002577 00000 n 
+0000003322 00000 n 
+0000003450 00000 n 
+0000004110 00000 n 
+0000004238 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+4881
+%%EOF
