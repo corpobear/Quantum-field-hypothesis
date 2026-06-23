@@ -208,6 +208,70 @@ R_3 -> 0
 
 A nonzero `R_3` becomes a curvature-like or instability-like residual.
 
+## 8.1 Minimal triadic activation principle
+
+The threefold loop structure can also be read as a minimal manifestation condition inside the MCIFT scaffold.
+
+A one-point information state is treated as undifferentiated potential:
+
+```text
+n = 1 -> source potential, no internal relation
+```
+
+It can hold latent field information, but it cannot yet define contrast, direction, phase comparison, activation threshold, or closure.
+
+A two-point information state creates the first distinction:
+
+```text
+n = 2 -> open relation, polarity, difference
+```
+
+This permits a channel-like relation, but it is not internally stable. With only one relation, the system has no third reference for distinguishing motion of the source, motion of the receiver, or drift of the relation itself. It defines a line-like/open transfer, not a closed manifesting circuit.
+
+The first closed information circuit appears at three relational channels:
+
+```text
+A -> B -> C -> A
+```
+
+This is the smallest structure able to support comparison, orientation, feedback, and closure. In MCIFT notation, the minimal closure object is therefore triadic:
+
+```text
+I_AB I_BC I_CA
+```
+
+with a phase-like closure residue:
+
+```text
+Phi_ABC = arg(I_AB I_BC I_CA)
+```
+
+For fewer than three channels, this closed product is undefined. Therefore the model-level rule is:
+
+```text
+M_n = 0                    for n < 3
+M_3 ~ |I_AB I_BC I_CA| C_ABC Theta(C_ABC - C_0)
+```
+
+where:
+
+```text
+M_n      manifesting activation for n relational channels
+I_AB     information transfer from A to B
+C_ABC    triadic closure/coherence score
+C_0      activation threshold
+Theta    gate/threshold function
+```
+
+This does not claim that physical reality is proven to begin from exactly three literal particles or three spatial points. It states a narrower internal MCIFT principle:
+
+```text
+stable manifestation requires closed relational information,
+and the smallest closed relational structure is triadic.
+```
+
+Thus the v0.96 three-loop surface object `L_3` is not only a geometric update. It is also the first minimal activation circuit capable of converting latent field potential into stable manifestable structure.
+
 ## 9. Updated action scaffold
 
 The simplified action becomes:
