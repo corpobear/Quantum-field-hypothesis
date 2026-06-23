@@ -2,14 +2,15 @@
 
 **Status:** experimental image-processing applications inspired by MCIFT reducer math.
 
-This folder contains two related workflows:
+This folder contains three related workflows:
 
 ```text
 bubble_inflation_upscaler.py          enlargement-first workflow
 bubble_reconstruction_upscaler.py     restoration-first workflow for low-quality inputs
+bubble_edge_closure_upscaler.py       edge-recalculation workflow for bad/blocky boundaries
 ```
 
-Neither workflow claims to reconstruct lost ground-truth detail. They create configurable enhancement and reconstruction layers for practical image upscaling experiments.
+None of these workflows claim to reconstruct lost ground-truth detail. They create configurable enhancement and reconstruction layers for practical image upscaling experiments.
 
 ## Install
 
@@ -61,8 +62,6 @@ source image
 -> final sharpening
 ```
 
-Example:
-
 ```bash
 python applications/image_upscaling/bubble_reconstruction_upscaler.py \
   low_quality_input.png \
@@ -80,19 +79,58 @@ presets/restoration_balanced.json     default low-quality input workflow
 presets/restoration_strong.json       stronger deblock/detail/texture pass
 ```
 
-The reconstruction workflow writes these debug files when `--save-debug` is used:
+---
+
+## 3. Bubble Edge Closure Upscaler
+
+Use this when the reconstruction output still has bad edges: blocky contours, doubled halos, crunchy outlines, or smeared boundaries.
+
+This workflow does not merely detect edges after upscaling. It recalculates a separate edge closure field before reconstruction:
+
+```text
+source image
+-> artifact sink / preclean
+-> raw low-res edge estimate
+-> edge tangent + normal field
+-> tangent-direction closure smoothing
+-> isolated edge pruning
+-> high-res edge re-projection through bubble remap
+-> edge-guided residual reconstruction
+-> normal-preserving closure guard
+-> final sharpening
+```
+
+```bash
+python applications/image_upscaling/bubble_edge_closure_upscaler.py \
+  low_quality_input.png \
+  edge_closed_4x.png \
+  --preset applications/image_upscaling/presets/edge_closure_balanced.json \
+  --compare \
+  --save-debug debug/edge_closure
+```
+
+Edge-closure preset:
+
+```text
+presets/edge_closure_balanced.json    default edge-recalculation workflow
+```
+
+The edge-closure workflow writes these debug files when `--save-debug` is used:
 
 ```text
 01_source.png
 02_artifact_sink.png
-03_base_upscale.png
-04_bubble_inflation.png
-05_bubble_field.png
-06_a3_field.png
-07_edge_confidence.png
-08_candidate_reconstruction.png
-09_texture_layer_visual.png
-10_final.png
+03_edge_raw_low_to_high.png
+04_edge_closed_recalculated.png
+05_edge_tangent_field.png
+06_base_upscale.png
+07_bubble_inflation.png
+08_bubble_field.png
+09_a3_field.png
+10_edge_confidence_used.png
+11_candidate_reconstruction.png
+12_texture_layer_visual.png
+13_final.png
 config.json
 ```
 
@@ -134,9 +172,20 @@ sharpen_amount         final unsharp-mask-like gain
 sharpen_radius         blur radius used by final sharpening
 ```
 
+## Edge recalculation parameters
+
+```text
+edge_recalculate          enables separate edge closure field calculation
+edge_closure_strength     how strongly the closed edge field replaces raw edge confidence
+edge_closure_iterations   number of tangent-closure passes
+edge_tangent_smoothing    smoothing distance along the recalculated edge tangent
+edge_normal_preserve      how strongly reconstruction avoids smearing across the edge normal
+edge_prune_threshold      removes isolated weak edge fragments before upscaling
+```
+
 ## MCIFT-inspired part
 
-Both workflows use a flat-image projection of the repository's compact threefold activation form:
+All workflows use a flat-image projection of the repository's compact threefold activation form:
 
 ```text
 A3 = 1 + epsilon3 * radial_band * cos(3 phi + psi3)
@@ -155,7 +204,7 @@ The image applications use this as a controllable processing field only. They do
 Good:
 
 ```text
-Bubble Reconstruction Upscaler is an experimental MCIFT-inspired restoration-first upscaling workflow with artifact suppression, bubble inflation, threefold residual reconstruction, and closure-guarded sharpening.
+Bubble Edge Closure Upscaler is an experimental MCIFT-inspired restoration workflow that recalculates a boundary field before reconstruction, then uses tangent-guided smoothing and normal-preserving closure to reduce blocky or smeared edges.
 ```
 
 Avoid:
