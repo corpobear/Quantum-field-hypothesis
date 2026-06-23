@@ -1,10 +1,15 @@
-# Bubble Inflation Upscaler
+# MCIFT Image Upscaling Applications
 
-**Status:** experimental image-processing application inspired by MCIFT reducer math.
+**Status:** experimental image-processing applications inspired by MCIFT reducer math.
 
-Bubble Inflation Upscaler is a practical, tunable image enlargement script. It starts with ordinary high-quality interpolation, then applies a bubble-style radial inflation field, optional threefold modulation, local detail boosting, sharpening, and optional grain.
+This folder contains two related workflows:
 
-It does **not** claim to reconstruct lost ground-truth detail. It creates configurable enhancement layers that may be useful for visual upscaling experiments.
+```text
+bubble_inflation_upscaler.py          enlargement-first workflow
+bubble_reconstruction_upscaler.py     restoration-first workflow for low-quality inputs
+```
+
+Neither workflow claims to reconstruct lost ground-truth detail. They create configurable enhancement and reconstruction layers for practical image upscaling experiments.
 
 ## Install
 
@@ -14,7 +19,11 @@ From the repository root:
 python -m pip install -r applications/image_upscaling/requirements.txt
 ```
 
-## Basic usage
+---
+
+## 1. Bubble Inflation Upscaler
+
+Use this when the source image is already decent and you mostly want enlargement plus tunable detail/sharpening.
 
 ```bash
 python applications/image_upscaling/bubble_inflation_upscaler.py \
@@ -26,16 +35,7 @@ python applications/image_upscaling/bubble_inflation_upscaler.py \
   --save-debug debug/bubble_upscale
 ```
 
-This writes:
-
-```text
-output.png                         final image
-output_compare.png                 base interpolation beside final output
-debug/bubble_upscale/*.png         intermediate layers
-debug/bubble_upscale/config.json   merged run configuration
-```
-
-## Presets
+Presets:
 
 ```text
 presets/gentle.json       mild inflation and sharpening
@@ -43,18 +43,62 @@ presets/balanced.json     default practical starting point
 presets/aggressive.json   stronger bubble/detail/sharpening pass
 ```
 
-A preset can be overridden from the command line:
+---
 
-```bash
-python applications/image_upscaling/bubble_inflation_upscaler.py input.png output.png \
-  --preset applications/image_upscaling/presets/balanced.json \
-  --scale 3 \
-  --bubble-strength 0.22 \
-  --edge-boost 0.4 \
-  --sharpen-amount 0.5
+## 2. Bubble Reconstruction Upscaler
+
+Use this when the source is low-quality, blocky, smeared, or visibly compressed.
+
+This workflow adds a restoration-first stage before enlargement:
+
+```text
+source image
+-> artifact sink / preclean
+-> structure field extraction
+-> bubble inflation remap
+-> threefold residual reconstruction
+-> closure guard / anti-ringing
+-> final sharpening
 ```
 
-## Main parameters
+Example:
+
+```bash
+python applications/image_upscaling/bubble_reconstruction_upscaler.py \
+  low_quality_input.png \
+  restored_4x.png \
+  --preset applications/image_upscaling/presets/restoration_balanced.json \
+  --compare \
+  --save-debug debug/bubble_reconstruction
+```
+
+Restoration presets:
+
+```text
+presets/restoration_gentle.json       safer cleanup, low synthetic texture
+presets/restoration_balanced.json     default low-quality input workflow
+presets/restoration_strong.json       stronger deblock/detail/texture pass
+```
+
+The reconstruction workflow writes these debug files when `--save-debug` is used:
+
+```text
+01_source.png
+02_artifact_sink.png
+03_base_upscale.png
+04_bubble_inflation.png
+05_bubble_field.png
+06_a3_field.png
+07_edge_confidence.png
+08_candidate_reconstruction.png
+09_texture_layer_visual.png
+10_final.png
+config.json
+```
+
+---
+
+## Main inflation parameters
 
 ```text
 scale              final size multiplier, e.g. 2, 3, 4
@@ -67,20 +111,32 @@ center_y           bubble center y, 0.0 top to 1.0 bottom
 threefold          enable/disable MCIFT-style threefold modulation
 epsilon3           strength of the threefold modulation
 psi3               phase offset of the threefold pattern
-denoise_radius     optional blur before detail extraction
-detail_strength    amount of local high-frequency detail added back
-edge_boost         extra detail gain on detected edges
-edge_threshold     edge mask threshold
-sharpen_amount     final unsharp-mask-like gain
-sharpen_radius     blur radius used by final sharpening
-grain              optional fine texture amount
-seed               random seed for reproducible grain
 quality            JPEG quality, ignored for PNG
+```
+
+## Main reconstruction parameters
+
+```text
+artifact_suppression   global strength of the pre-upscale artifact sink
+deblock_strength       strength of JPEG/block-boundary smoothing
+jpeg_grid_size         expected compression block grid, usually 8
+chroma_smooth_radius   color-smear cleanup radius
+luma_smooth_radius     mild luminance cleanup radius
+structure_strength     edge/shape reinforcement strength
+edge_confidence        how strongly edge confidence controls reconstruction
+residual_gain          how much controlled residual detail is added back
+texture_strength       synthetic fine texture amount
+texture_scale          synthetic texture grain scale
+closure_strength       strength of residual limiting / anti-halo guard
+halo_limit             maximum allowed residual swing around the bubble base
+anti_ringing_radius    softening radius before closure guard
+sharpen_amount         final unsharp-mask-like gain
+sharpen_radius         blur radius used by final sharpening
 ```
 
 ## MCIFT-inspired part
 
-The optional threefold modulation uses a flat-image projection of the repository's compact activation form:
+Both workflows use a flat-image projection of the repository's compact threefold activation form:
 
 ```text
 A3 = 1 + epsilon3 * radial_band * cos(3 phi + psi3)
@@ -92,30 +148,14 @@ In the theoretical reducer this is related to:
 A_3(theta, phi) = 1 + epsilon_3 sin(theta)^2 cos(3 phi + psi_3)
 ```
 
-The image application uses it as a controllable processing field only. It is not a claim that the image contains physical MCIFT structure.
-
-## Debug outputs
-
-With `--save-debug some_dir`, the script writes:
-
-```text
-01_base_interpolation.png
-02_bubble_inflation.png
-03_bubble_field.png
-04_edge_mask.png
-05_detail_enhanced.png
-06_final_rgb.png
-config.json
-```
-
-These files make it easier to see whether the bubble field, edge mask, and detail enhancement are helping or overcooking an image.
+The image applications use this as a controllable processing field only. They do not claim that the image contains physical MCIFT structure.
 
 ## Safe wording
 
 Good:
 
 ```text
-Bubble Inflation Upscaler is an experimental MCIFT-inspired image upscaler with tunable radial inflation, threefold modulation, detail boost, and sharpening.
+Bubble Reconstruction Upscaler is an experimental MCIFT-inspired restoration-first upscaling workflow with artifact suppression, bubble inflation, threefold residual reconstruction, and closure-guarded sharpening.
 ```
 
 Avoid:
