@@ -86,6 +86,14 @@ derived, fitted anchor, assumed, placeholder, not tested, pass-like, close-not-p
 
 ---
 
+## License
+
+Unless otherwise noted, this repository is licensed under the **GNU Affero General Public License v3.0**. See [`LICENSE`](LICENSE).
+
+Commercial use is allowed under the AGPL only when the user complies with the AGPL's reciprocal source-code obligations, including the network-use source availability requirement. Organizations that want proprietary, closed-source, paid-product, or other non-AGPL commercial terms should review [`COMMERCIAL-LICENSE.md`](COMMERCIAL-LICENSE.md) and contact Adrian Newton / corpobear for a separate written commercial license.
+
+---
+
 ## Citation / attribution
 
 If referencing this framework, please attribute it to Adrian Newton / corpobear and this repository.
