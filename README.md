@@ -1,32 +1,26 @@
 # Multi-Channel Information Field Theory (MCIFT)
 
-**Status:** speculative theoretical framework / toy-field, collider, cosmology, weak-field gravity, entanglement, femtoscopy, and geometric-scaffold research  
+**Status:** speculative theoretical framework and executable toy-model research scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v1.01 dimensional simplex scope clarification built on the existing v0.97-v0.99 threefold reducer and mapping chain
+**Current version:** v1.07 tetrahedral facet-core toy benchmark chain
 
-> MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, toy calculations, geometric clarifications, and increasingly testable scaffolds.
+> MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, geometric checks, toy simulations, mapping experiments, and testable scaffolds.
 
 ---
 
 ## Start here
 
 ```text
-CURRENT_STATUS.md                                  current v1.01 status
-models/mcift_v1.01_dimensional_simplex_scope.md    dimensional-scope clarification
-reports/mcift_v0.99_cern_mapping_report.md         latest collider mapping
-reports/mcift_v0.98_cosmology_mapping_report.md    latest cosmology mapping
-reports/mcift_v0.97_threefold_reducer_report.md    shared threefold reducer
-models/mcift_v0.96_threefold_bubble_knot_first_principle.md
-                                                   threefold surface model
-docs/mcift_findings_v0.1_to_v0.80.md               consolidated earlier history
+CURRENT_STATUS.md
+models/mcift_v1.07_tetrahedral_facet_core_toy_chain.md
+models/mcift_v1.01_dimensional_simplex_scope.md
+reports/mcift_v0.99_cern_mapping_report.md
+reports/mcift_v0.98_cosmology_mapping_report.md
+reports/mcift_v0.97_threefold_reducer_report.md
 ```
 
----
-
-## Current focus
-
-The active late-version chain is:
+## Active version chain
 
 ```text
 v0.92  bubble light-cone projection
@@ -38,91 +32,138 @@ v0.97  shared threefold reducer
 v0.98  cosmology mapping from shared reducer
 v0.99  CERN/collider mapping from shared reducer
 v1.01  dimensional simplex scope clarification
+v1.02  explicit mobile-core tetrahedral precursor
+v1.03  emergent four-face reservoir overlap core
+v1.04  damped perturbation-recovery toy dynamics
+v1.05  one scalar plus three directional facet-mode decomposition
+v1.06  undamped breathing and symmetry-breaking sweep
+v1.07  nonlinear central-overload breakpoint benchmark
 ```
 
-v1.01 is a conceptual and geometric correction. It does not introduce a new simulation, fit, collider score, cosmology score, or empirical validation.
+The v1.02-v1.07 chain introduces executable tetrahedral toy experiments. It does not alter the stored v0.97-v0.99 collider or cosmology mappings.
 
 ---
 
-## v1.01 clarification
+## Main v1.03-v1.07 findings
 
-The current threefold model remains valid as a three-channel pattern on the two-dimensional causal bubble surface used by the reducer.
+### Emergent geometric center
 
-v1.01 separates three statements that were previously too close together:
-
-```text
-1. A simple closed relational cycle requires at least three distinct nodes.
-2. Three non-collinear points define a nondegenerate triangle in 2D.
-3. Four non-coplanar points define a nondegenerate tetrahedron in 3D.
-```
-
-More generally:
+Four inward face-normal channels of a regular tetrahedron intersect at the tetrahedral center and produce isotropic localization:
 
 ```text
-A nondegenerate d-dimensional simplex requires d + 1 affinely independent vertices.
+four-way overlap score = 4.0
+localization condition number = 1.0
 ```
 
-This is a standard geometric statement. It does not prove that physical dimensions emerge from simplex construction, that the historical mode 4 is depth, or that a tetrahedral reducer would improve any existing MCIFT result.
+A four-channel planar square also produces a center, but with anisotropic localization:
 
-The historical `R_4` central reservoir is therefore retained as a model-specific object. Reinterpreting it as a fourth spatial node is a future hypothesis to test, not a v1.01 result.
+```text
+localization condition number = 2.0
+```
+
+Therefore the current diagnostic distinguishes the tetrahedron by 3D isotropy, not by the mere existence of a center.
+
+### Four facet modes
+
+For regular tetrahedral inward normals:
+
+```text
+J0 = mean(Jf)
+S  = (3/4) sum_f Jf nf
+Jf = J0 + nf . S
+```
+
+This is an exact decomposition of four facet inputs into:
+
+```text
+one symmetric scalar mass/breathing mode
+three directional sink modes
+```
+
+The six edges remain structural relations, not six mass sinks.
+
+### Toy dynamic behavior
+
+Under the stated assumed dynamics:
+
+```text
+- disturbed tetrahedral states recovered under damped restoring forces
+- symmetric loading generated mass gain and radial breathing with zero translation
+- removing damping produced persistent centered radial vibration
+- any nonzero single-facet asymmetry activated bounded translation
+- no finite instability threshold appeared in the linear restoring model
+```
+
+### Nonlinear overload benchmark
+
+An explicitly assumed nonlinear radius law produced a sampled transition between stable breathing and an inner-channel collapse branch:
+
+```text
+last sampled stable amplitude = 0.6666667
+first sampled collapse amplitude = 0.7037037
+```
+
+This breakpoint is a property of the selected toy law, which includes an assumed quadratic turnover and an explicit collapse radius. It is not evidence for a physical black-hole or Big Bang threshold.
 
 ---
 
-## Existing v0.99 mapping outputs
-
-The v0.99 mapping remains unchanged.
-
-Inputs inherited from v0.97:
+## Strict current status
 
 ```text
-load_proxy = 0.009817928223
-mean_shear_proxy = 0.063915576742
-beta4_needed_for_balance = 0.170868625373
+supported geometry:
+    tetrahedron is the minimum nondegenerate 3D simplex
+
+supported representation:
+    four tetrahedral facet fluxes = one scalar mode + three directional modes
+
+supported internal toy result:
+    coherent tetrahedral face normals create isotropic central localization
+
+not established:
+    physical dimension emergence
+    a tetrahedral Standard Model Higgs field
+    physical mass generation by the toy scalar mode
+    physical black-hole or Big Bang formation
+    a parameter-free collapse threshold
+
+unchanged:
+    all v0.97-v0.99 outputs and their previous caveats
 ```
-
-Mapping outputs:
-
-```text
-Gamma_model = 4.109958967868 MeV
-CMS HZZ residual = 0.526 sigma
-D_proxy = -0.504201958707
-ATLAS D residual = 1.717 sigma
-CMS D residual = -0.880 sigma
-```
-
-These values were produced from the existing threefold surface reducer. They are not evidence for tetrahedral dynamics.
 
 ---
 
-## Strict status
+## Reproducing v1.07
+
+The committed benchmark is:
 
 ```text
-clarified: triadic closure is the minimum simple relational cycle
-clarified: a triangle is the minimum nondegenerate 2D simplex
-clarified: a tetrahedron is the minimum nondegenerate 3D simplex
-unchanged: v0.97-v0.99 numerical outputs and their previous labels
-not implemented: tetrahedral reducer
-not tested: tetrahedral perturbation stability
-not claimed: physical dimensional emergence or R4 as physical depth
-not claimed: full CERN validation, full cosmology validation, or replacement of established physics
+simulations/mcift_v1_07_mass_breakpoint_benchmark_gif.py
+analysis/results_v1.07/mass_breakpoint_benchmark_metrics.json
 ```
+
+It requires:
+
+```text
+numpy
+matplotlib
+Pillow
+```
+
+The script regenerates the GIF locally. Generated animations are visualization artifacts; the source and JSON metrics are the auditable outputs.
+
+The measured v1.02-v1.06 precursor findings and their limitations are consolidated in `models/mcift_v1.07_tetrahedral_facet_core_toy_chain.md`. Their equations should be consolidated and reviewed before the precursor source files are promoted as canonical repository models.
 
 ---
 
 ## Next target
 
 ```text
-Implement a minimal tetrahedral comparison layer with:
-- four node states
-- six edge relations
-- four triangular face closures
-- affine-rank and Gram-determinant checks
-- nonzero tetrahedral volume
-- perturbation response
-- direct comparison against the existing threefold surface reducer
+Derive a nonlinear transfer and shell-coupling law from explicit MCIFT
+assumptions, then test asymmetric shell rupture and parameter-free threshold
+behavior before making any external physical mapping.
 ```
 
-Only after that comparison should any cosmology or collider remapping be considered.
+Only after the equations and parameters are frozen should any collider, cosmology, black-hole, or early-universe comparison be attempted.
 
 ---
 
