@@ -1,13 +1,13 @@
-# Current MCIFT Status: v1.01 Dimensional Simplex Scope Clarification
+# Current MCIFT Status: v1.07 Tetrahedral Facet-Core Toy Benchmark Chain
 
-**Status:** speculative source-bookkeeping, mapping, and geometric-scope scaffold.  
-**Current layer:** v1.01 dimensional simplex scope clarification.  
-**Previous numerical layer:** v0.99 CERN/collider mapping from the v0.97 shared threefold reducer.
+**Status:** speculative geometric and toy-dynamics scaffold; not established physics.  
+**Current layer:** v1.07 nonlinear central-overload benchmark built on v1.03-v1.06 tetrahedral facet-core tests.  
+**Previous physical-mapping layer:** v0.99 CERN/collider mapping from the v0.97 shared threefold reducer.
 
 ## Verdict
 
 ```text
-DIMENSIONAL_SCOPE_CLARIFIED_NO_NEW_PHYSICAL_RESULT
+TETRAHEDRAL_FACET_CORE_TOY_CHAIN_IMPLEMENTED_NO_PHYSICAL_VALIDATION
 ```
 
 ## Latest chain
@@ -22,73 +22,146 @@ v0.97: shared threefold reducer
 v0.98: cosmology mapping from shared reducer
 v0.99: CERN/collider mapping from shared reducer
 v1.01: dimensional simplex scope clarification
+v1.02: explicit mobile-core tetrahedral precursor
+v1.03: emergent face-reservoir overlap core
+v1.04: damped tetrahedral recovery toy dynamics
+v1.05: four facet inputs -> one scalar plus three directional modes
+v1.06: undamped breathing and symmetry-breaking sweep
+v1.07: nonlinear overload breakpoint benchmark
 ```
 
-## What v1.01 establishes
+## What is now implemented
 
-At the level of graph structure and Euclidean affine geometry:
+### Tetrahedral geometry
 
 ```text
-- A simple closed cycle requires at least three distinct vertices.
-- Three non-collinear points form a nondegenerate triangle in 2D.
-- Four non-coplanar points form a nondegenerate tetrahedron in 3D.
-- A nondegenerate d-simplex has d + 1 affinely independent vertices.
+4 vertices
+6 edges
+4 triangular faces
+nonzero tetrahedral volume
+rank and Gram-determinant checks
 ```
 
-For edge matrix:
+### Emergent face-channel center
+
+The preferred v1.03 construction does not prescribe the core coordinate. It infers the core as the weighted least-squares intersection of four inward face-normal channels.
+
+Regular tetrahedral result:
 
 ```text
-E_d = [x_1 - x_0, ..., x_d - x_0]
+core at centroid
+four-way overlap score = 4.0
+localization condition number = 1.0
 ```
 
-nondegeneracy requires:
+Planar control:
 
 ```text
-rank(E_d) = d
+four planar square channels also form a center
+localization condition number = 2.0
 ```
 
-or equivalently:
+The current geometric signature is therefore isotropic 3D localization, not center formation by itself.
+
+### Exact facet-mode decomposition
 
 ```text
-det(E_d^T E_d) > 0
+J0 = mean(Jf)
+S  = (3/4) sum_f Jf nf
+Jf = J0 + nf . S
 ```
 
-These are geometric conditions. They are not by themselves a dynamical stability proof or a derivation of physical dimensions.
-
-## Corrected MCIFT scope
+This separates:
 
 ```text
-triadic closure:
-    minimum simple relational cycle
-
-threefold reducer:
-    model of three-channel organization on a 2D causal bubble surface
-
-tetrahedral closure:
-    minimum nondegenerate volumetric simplex in 3D
-
-dynamical stability:
-    not established without an evolution law and perturbation test
+1 scalar symmetric mass/breathing mode
+3 directional sink modes
 ```
 
-The existing historical object `R_4` remains a model-specific central reservoir. v1.01 does not identify it with physical depth or with a fourth tetrahedral node.
+Maximum observed reconstruction error:
 
-## Existing v0.97 shared reducer outputs
+```text
+1.1102e-16
+```
 
-The numerical values are unchanged:
+The six edges are retained as structural and closure relations, not six independent sinks.
+
+## Toy dynamic findings
+
+### Damped recovery
+
+```text
+edge RMS error: 0.1083569 -> 0.0000084750
+channel mismatch: 0.0349572 -> 2.9503e-10
+localization condition: 1.4266946 -> 1.0000702
+final kinetic energy: 3.3658e-11
+```
+
+This recovery depends on assumed edge stiffness, reservoir pressure, relaxation, and damping.
+
+### Undamped symmetric breathing
+
+```text
+peak mass = 3.01346
+peak radius = 0.232997
+late radial amplitude = 0.005290
+maximum directional sink = 0
+maximum center displacement = 0
+```
+
+Under ideal symmetry, radial activity remains separated from translation even without damping.
+
+### Undamped symmetry breaking
+
+```text
+any tested single-facet asymmetry epsilon > 0 activated translation
+all tested responses remained bounded
+no finite instability threshold appeared in the linear restoring model
+```
+
+### Nonlinear overload branch
+
+The v1.07 benchmark assumes:
+
+```text
+R_eq(M) = R0 [1 + a DeltaM - b (DeltaM)^2]
+R0 = 0.16
+a = 0.34
+b = 0.18
+collapse radius = 0.06
+inner-channel radius = 0.036
+```
+
+Sampled transition:
+
+```text
+last stable amplitude = 0.6666667
+peak mass = 3.859280
+minimum radius = 0.063616
+
+first collapse amplitude = 0.7037037
+peak mass = 4.018129
+minimum radius = 0.010318
+collapse time = 5.824
+```
+
+Strict interpretation:
+
+```text
+The finite breakpoint is behavior of the selected nonlinear toy law.
+It is not an independent black-hole, Big Bang, singularity, or Higgs prediction.
+```
+
+## Existing v0.97-v0.99 outputs
+
+The older mapping values are unchanged. They remain outputs of the threefold surface reducer and are not regenerated by the tetrahedral chain.
 
 ```text
 load_proxy = 0.009817928223
 mean_shear_proxy = 0.063915576742
 beta4_needed_for_balance = 0.170868625373
 H_proxy_relative = 0.977215138494
-```
 
-## Existing v0.99 mapping result
-
-The mapping values are unchanged:
-
-```text
 Gamma_model = 4.109958967868 MeV
 mu_inclusive_model = 1.000000000000
 CMS HZZ residual = 0.526 sigma
@@ -97,37 +170,55 @@ ATLAS D residual = 1.717 sigma
 CMS D residual = -0.880 sigma
 ```
 
-These remain outputs of the threefold surface reducer and its mapping layer. They are not validation of tetrahedral dynamics.
-
 ## Strict status
 
 ```text
-supported geometry: simplex vertex counts and affine nondegeneracy tests
-supported model statement: current A3 reducer is a threefold surface model
-unchanged: all v0.97-v0.99 outputs and their previous caveats
-not implemented: four-node tetrahedral reducer
-not tested: tetrahedral perturbation stability
-not established: physical dimension emergence
-not established: R4 as depth or a fourth spatial node
-not claimed: full CERN validation, full cosmology validation, QFT, GR, or Standard Model replacement
+supported geometry:
+    simplex nondegeneracy and tetrahedral volume checks
+
+supported representation:
+    exact one-scalar plus three-directional decomposition of four facet fluxes
+
+supported internal toy behavior:
+    isotropic face-channel center
+    damped perturbation recovery under selected forces
+    undamped centered breathing under exact symmetry
+    bounded translation under tested asymmetry
+    finite collapse branch under an explicitly nonlinear selected law
+
+not established:
+    physical Higgs tetrahedral microstructure
+    physical mass generation
+    physical dimensional emergence
+    parameter-free collapse threshold
+    black-hole formation
+    Big Bang formation
+
+unchanged:
+    v0.97-v0.99 numerical mappings and caveats
+
+not claimed:
+    replacement of QFT, GR, the Standard Model, or Lambda-CDM
 ```
 
 ## Files
 
 ```text
+models/mcift_v1.07_tetrahedral_facet_core_toy_chain.md
+simulations/mcift_v1_07_mass_breakpoint_benchmark_gif.py
+analysis/results_v1.07/mass_breakpoint_benchmark_metrics.json
 models/mcift_v1.01_dimensional_simplex_scope.md
-main.md
-README.md
 reports/mcift_v0.99_cern_mapping_report.md
 reports/mcift_v0.98_cosmology_mapping_report.md
 reports/mcift_v0.97_threefold_reducer_report.md
-models/mcift_v0.96_threefold_bubble_knot_first_principle.md
 ```
 
 ## Next
 
 ```text
-Implement and audit a minimal tetrahedral comparison layer before changing any cosmology or collider mapping.
+Derive the nonlinear transfer, restoring, and rupture laws from explicit
+MCIFT assumptions. Then test asymmetric shell rupture against inward collapse
+without inserting the desired threshold by hand.
 ```
 
-The minimum implementation should include affine-rank, Gram-determinant, tetrahedral-volume, face-closure, and perturbation-response checks under the same normalization used for the threefold baseline.
+No new collider, cosmology, black-hole, or early-universe mapping should be promoted before that derivation and an out-of-sample observable test exist.
