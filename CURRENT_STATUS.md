@@ -1,13 +1,14 @@
-# Current MCIFT Status: v1.07 Tetrahedral Facet-Core Toy Benchmark Chain
+# Current MCIFT Status: v1.08 Primordial Tetrahedron Intrinsic Stability
 
-**Status:** speculative geometric and toy-dynamics scaffold; not established physics.  
-**Current layer:** v1.07 nonlinear central-overload benchmark built on v1.03-v1.06 tetrahedral facet-core tests.  
+**Status:** speculative intrinsic-geometry and vortex-energy toy scaffold; not established physics.  
+**Current layer:** v1.08 free-vertex tetrahedral stability and planar-buckling benchmark.  
+**Previous layer:** v1.07 nonlinear overload benchmark with an explicitly selected collapse branch.  
 **Previous physical-mapping layer:** v0.99 CERN/collider mapping from the v0.97 shared threefold reducer.
 
 ## Verdict
 
 ```text
-TETRAHEDRAL_FACET_CORE_TOY_CHAIN_IMPLEMENTED_NO_PHYSICAL_VALIDATION
+PRIMORDIAL_TETRAHEDRON_INTRINSIC_STABILITY_PASS_WITHIN_SELECTED_TOY_ENERGY
 ```
 
 ## Latest chain
@@ -28,133 +29,182 @@ v1.04: damped tetrahedral recovery toy dynamics
 v1.05: four facet inputs -> one scalar plus three directional modes
 v1.06: undamped breathing and symmetry-breaking sweep
 v1.07: nonlinear overload breakpoint benchmark
+v1.08: primordial tetrahedron intrinsic-stability benchmark
 ```
 
-## What is now implemented
+## v1.08 intrinsic construction
 
-### Tetrahedral geometry
+The v1.08 state uses:
 
 ```text
-4 vertices
-6 edges
+4 freely moving vertices
 4 triangular faces
-nonzero tetrahedral volume
-rank and Gram-determinant checks
+4 face-vortex amplitudes
 ```
 
-### Emergent face-channel center
-
-The preferred v1.03 construction does not prescribe the core coordinate. It infers the core as the weighted least-squares intersection of four inward face-normal channels.
-
-Regular tetrahedral result:
+For each face:
 
 ```text
-core at centroid
-four-way overlap score = 4.0
-localization condition number = 1.0
+A_f = triangular area
+Q_f = sum over face vertices |x_i - face centroid|^2
+c_tri = 27/2800
 ```
 
-Planar control:
+The selected intrinsic potential is
 
 ```text
-four planar square channels also form a center
-localization condition number = 2.0
+F = sum_f A_f [
+      0.5 (rho c_tri Q_f - k_f) Omega_f^2
+      + beta/4 Omega_f^4
+    ]
+
+k_f = g H_f chi_f - alpha
 ```
 
-The current geometric signature is therefore isotropic 3D localization, not center formation by itself.
-
-### Exact facet-mode decomposition
+The benchmark normalization is
 
 ```text
-J0 = mean(Jf)
-S  = (3/4) sum_f Jf nf
-Jf = J0 + nf . S
+alpha = g = beta = rho = chi = 1
 ```
 
-This separates:
+No target edge length, target volume, edge spring, target core radius, damping, collapse switch, or preferred Cartesian direction is used.
+
+## Finite regular branch
+
+Under equal face loading `k_f=k`, the regular tetrahedral stationary branch is
 
 ```text
-1 scalar symmetric mass/breathing mode
-3 directional sink modes
+L_eq^2 = k / (3 rho c_tri)
+Omega_eq^2 = 2 k / (3 beta)
 ```
 
-Maximum observed reconstruction error:
+Thus finite size is not supplied as a target length inside this benchmark; it follows from the selected face-coupling/circulation energy competition.
+
+## Full stability spectrum
+
+The full state has 16 coordinates:
 
 ```text
-1.1102e-16
+12 vertex coordinates
+4 vortex amplitudes
 ```
 
-The six edges are retained as structural and closure relations, not six independent sinks.
-
-## Toy dynamic findings
-
-### Damped recovery
+Across
 
 ```text
-edge RMS error: 0.1083569 -> 0.0000084750
-channel mismatch: 0.0349572 -> 2.9503e-10
-localization condition: 1.4266946 -> 1.0000702
-final kinetic energy: 3.3658e-11
+H = 1.01, 1.05, 1.10, 1.25, 1.50, 2.0, 3.0, 5.0, 10.0
 ```
 
-This recovery depends on assumed edge stiffness, reservoir pressure, relaxation, and damping.
-
-### Undamped symmetric breathing
+every tested regular state had
 
 ```text
-peak mass = 3.01346
-peak radius = 0.232997
-late radial amplitude = 0.005290
-maximum directional sink = 0
-maximum center displacement = 0
+negative modes = 0
+zero modes = 6
+positive modes = 10
 ```
 
-Under ideal symmetry, radial activity remains separated from translation even without damping.
+The six zero modes are consistent with the three translations and three rigid rotations expected for an intrinsic potential.
 
-### Undamped symmetry breaking
+Reference `H=1.5`:
 
 ```text
-any tested single-facet asymmetry epsilon > 0 activated translation
-all tested responses remained bounded
-no finite instability threshold appeared in the linear restoring model
+L_eq = 4.1573970964
+Omega_eq = 0.5773502692
+mass proxy = 1.6631489236
+softest positive eigenvalue = 0.06415002991
+softest unit-inertia frequency = 0.2532785619
 ```
 
-### Nonlinear overload branch
+The mass proxy is a normalized positive localized vortex-energy bookkeeping quantity, not physical mass.
 
-The v1.07 benchmark assumes:
+## Undamped nonlinear perturbations
+
+At `H=1.5`, randomized free-vertex/vortex perturbations remained nondegenerate and bounded over the simulated interval.
 
 ```text
-R_eq(M) = R0 [1 + a DeltaM - b (DeltaM)^2]
-R0 = 0.16
-a = 0.34
-b = 0.18
-collapse radius = 0.06
-inner-channel radius = 0.036
+5% perturbation:
+    max edge CV = 0.0182872
+    min volume = 7.5776453
+
+10% perturbation:
+    max edge CV = 0.0350478
+    min volume = 6.6141303
+
+20% perturbation:
+    max edge CV = 0.0803135
+    min volume = 4.4994656
 ```
 
-Sampled transition:
+No damping was used.
+
+## Planar control
+
+The symmetric planar four-point square at `H=1.5` had
 
 ```text
-last stable amplitude = 0.6666667
-peak mass = 3.859280
-minimum radius = 0.063616
+negative modes = 1
+zero modes = 6
+positive modes = 9
+unstable eigenvalue = -0.05555555556
+```
 
-first collapse amplitude = 0.7037037
-peak mass = 4.018129
-minimum radius = 0.010318
-collapse time = 5.824
+The negative mode is alternating out-of-plane vertex motion. A tiny perturbation along that mode produced nonzero 3D volume in the undamped simulation:
+
+```text
+initial sampled volume = 0.0311148
+maximum sampled volume = 9.7566331
+minimum sampled edge CV = 0.00172718
 ```
 
 Strict interpretation:
 
 ```text
-The finite breakpoint is behavior of the selected nonlinear toy law.
-It is not an independent black-hole, Big Bang, singularity, or Higgs prediction.
+This is a 3D-buckling instability of the planar control under the selected
+toy energy. It is not evidence by itself that physical spacetime emerges
+from a two-dimensional state.
+```
+
+## Relationship to v1.07
+
+v1.07 inserted:
+
+```text
+nonlinear radius turnover
+collapse radius
+inner-channel target radius
+```
+
+and therefore demonstrated only the behavior of that selected collapse law.
+
+v1.08 removes those elements. Over `H=1.01..10`, no regular-branch instability appeared; the tested branch instead became stiffer with loading.
+
+However:
+
+```text
+channel inversion is not represented by the current v1.08 coordinates
+```
+
+so v1.08 establishes neither the existence nor impossibility of an inverted-channel branch.
+
+## Earlier retained results
+
+```text
+v1.03:
+    regular tetrahedral face channels give isotropic central localization
+
+v1.05:
+    J0 = mean(Jf)
+    S = (3/4) sum_f Jf nf
+    exact one-scalar plus three-directional facet decomposition
+
+v1.06:
+    ideal symmetric loading separates breathing from translation
+    nonzero single-face asymmetry activates bounded directional motion
 ```
 
 ## Existing v0.97-v0.99 outputs
 
-The older mapping values are unchanged. They remain outputs of the threefold surface reducer and are not regenerated by the tetrahedral chain.
+The older mapping values are unchanged and are not regenerated by v1.08.
 
 ```text
 load_proxy = 0.009817928223
@@ -181,17 +231,18 @@ supported representation:
 
 supported internal toy behavior:
     isotropic face-channel center
-    damped perturbation recovery under selected forces
-    undamped centered breathing under exact symmetry
-    bounded translation under tested asymmetry
-    finite collapse branch under an explicitly nonlinear selected law
+    finite regular tetrahedral branch under the selected v1.08 intrinsic energy
+    positive physical Hessian spectrum across the tested regular branch
+    bounded undamped free-vertex perturbations at H=1.5
+    planar four-point out-of-plane buckling instability
 
 not established:
     physical Higgs tetrahedral microstructure
     physical mass generation
     physical dimensional emergence
-    parameter-free collapse threshold
-    black-hole formation
+    a primordial cosmic center
+    channel inversion
+    parameter-free black-hole formation
     Big Bang formation
 
 unchanged:
@@ -204,9 +255,11 @@ not claimed:
 ## Files
 
 ```text
+models/mcift_v1.08_primordial_tetrahedron_intrinsic_stability.md
+simulations/mcift_v1_08_primordial_tetrahedron_stability.py
+analysis/results_v1.08/primordial_tetrahedron_stability_metrics.json
+analysis/results_v1.08/primordial_tetrahedron_stability_sweep.csv
 models/mcift_v1.07_tetrahedral_facet_core_toy_chain.md
-simulations/mcift_v1_07_mass_breakpoint_benchmark_gif.py
-analysis/results_v1.07/mass_breakpoint_benchmark_metrics.json
 models/mcift_v1.01_dimensional_simplex_scope.md
 reports/mcift_v0.99_cern_mapping_report.md
 reports/mcift_v0.98_cosmology_mapping_report.md
@@ -216,9 +269,13 @@ reports/mcift_v0.97_threefold_reducer_report.md
 ## Next
 
 ```text
-Derive the nonlinear transfer, restoring, and rupture laws from explicit
-MCIFT assumptions. Then test asymmetric shell rupture against inward collapse
-without inserting the desired threshold by hand.
+1. Test unequal face loading with fully free vertices and compare the derived
+   deformation direction with the exact v1.05 vector S.
+2. Derive a channel orientation/inversion coordinate and add it to the same
+   intrinsic energy without a hand-coded collapse trigger.
+3. Search for competing nonplanar four-point minima and parameter-family
+   failures of the regular branch.
+4. Freeze equations and acceptance criteria before any new external mapping.
 ```
 
-No new collider, cosmology, black-hole, or early-universe mapping should be promoted before that derivation and an out-of-sample observable test exist.
+No new collider, cosmology, black-hole, or early-universe mapping should be promoted before those derivations and out-of-sample tests exist.

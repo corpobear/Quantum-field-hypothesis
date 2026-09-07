@@ -1,0 +1,107 @@
+{
+  "status": "primordial_tetrahedron_intrinsic_stability_pass_within_toy_energy",
+  "scope": {
+    "physical_higgs_claim": false,
+    "physical_mass_claim": false,
+    "black_hole_claim": false,
+    "channel_inversion_degree_of_freedom_present": false,
+    "edge_springs_used": false,
+    "target_edge_length_used": false,
+    "target_volume_used": false,
+    "collapse_switch_used": false,
+    "damping_used_in_dynamic_tests": false
+  },
+  "intrinsic_energy": {
+    "triangle_vortex_integral": "I_f=(27/2800)*A_f*Q_f",
+    "Q_f": "sum over face vertices of |x_i-face_centroid|^2",
+    "potential": "sum_f A_f[0.5*(rho*c*Q_f-k_f)*Omega_f^2 + beta/4*Omega_f^4]",
+    "normalized_parameters": {
+      "alpha": 1.0,
+      "g": 1.0,
+      "beta": 1.0,
+      "rho": 1.0,
+      "chi": 1.0,
+      "c": 0.009642857142857142
+    }
+  },
+  "regular_branch": {
+    "L_eq_formula": "sqrt(k/(3*rho*c))",
+    "Omega_eq_formula": "sqrt(2*k/(3*beta))",
+    "H_range_tested": [1.01, 10.0],
+    "all_tested_negative_mode_counts": [0,0,0,0,0,0,0,0,0],
+    "all_tested_zero_mode_counts": [6,6,6,6,6,6,6,6,6],
+    "all_tested_positive_mode_counts": [10,10,10,10,10,10,10,10,10]
+  },
+  "planar_control_H_1_5": {
+    "square_side": 3.600411499115478,
+    "negative_modes": 1,
+    "zero_modes": 6,
+    "positive_modes": 9,
+    "unstable_eigenvalue": -0.055555555555556184,
+    "unstable_vertex_mode": [
+      [-5.913229382988299e-16,3.646062218545094e-15,0.5000000000000039],
+      [1.1558162496727665e-15,-4.0584468760379225e-15,-0.500000000000001],
+      [2.9175957561557198e-15,-4.1289536210610174e-15,0.49999999999999734],
+      [3.8275034279536965e-15,8.734945741445049e-16,-0.4999999999999975]
+    ],
+    "interpretation": "The sole negative mode is alternating out-of-plane vertex motion; the planar configuration is a saddle against 3D buckling."
+  },
+  "undamped_nonlinear_dynamics_H_1_5": {
+    "planar_buckling": {
+      "mean_edge_min": 3.9562949980826634,
+      "mean_edge_max": 4.556504080925376,
+      "edge_cv_max": 0.19054669985889972,
+      "edge_cv_min": 0.0017271829652527127,
+      "volume_min": 0.03111475370351789,
+      "volume_max": 9.756633104184168,
+      "omega_mean_min": 0.5433890481398572,
+      "omega_mean_max": 0.5905000024053743,
+      "relative_energy_drift": 2.540937943408458e-07
+    },
+    "regular_10pct": {
+      "mean_edge_min": 3.831796563708212,
+      "mean_edge_max": 4.466105282580821,
+      "edge_cv_max": 0.035047812036452304,
+      "edge_cv_min": 0.009359644750400188,
+      "volume_min": 6.614130259975901,
+      "volume_max": 10.40232267147279,
+      "omega_mean_min": 0.5330169221507371,
+      "omega_mean_max": 0.6182751996084017,
+      "relative_energy_drift": 3.3976372604335923e-06
+    },
+    "regular_20pct": {
+      "mean_edge_min": 3.3936619890781583,
+      "mean_edge_max": 4.827301584153971,
+      "edge_cv_max": 0.08031345906475724,
+      "edge_cv_min": 0.019683374126737548,
+      "volume_min": 4.499465628499885,
+      "volume_max": 12.863285579804701,
+      "omega_mean_min": 0.46522686455900614,
+      "omega_mean_max": 0.6657421684962215,
+      "relative_energy_drift": 2.3563414874047522e-05
+    },
+    "regular_5pct": {
+      "mean_edge_min": 4.0069240644324235,
+      "mean_edge_max": 4.304436704263684,
+      "edge_cv_max": 0.018287231034099082,
+      "edge_cv_min": 0.004466411659747834,
+      "volume_min": 7.577645342995827,
+      "volume_max": 9.371787563502611,
+      "omega_mean_min": 0.5572995331798698,
+      "omega_mean_max": 0.5969442489363683,
+      "relative_energy_drift": 6.891101946107188e-07
+    }
+  },
+  "interpretation": "Within this normalized intrinsic toy energy, the regular tetrahedral four-vortex branch has exactly six observer/symmetry zero modes and ten positive physical modes throughout H=1.01..10. Perturbed free vertices remain rank-3 and bounded without damping. A planar square control has one negative out-of-plane buckling mode. No loss of regular-branch stability or channel inversion appears in the tested range; channel inversion is not represented by the current degrees of freedom and therefore cannot be claimed absent in an extended model.",
+  "sweep": [
+    {"H":1.01,"k":0.010000000000000009,"L_eq":0.5879447357921315,"Omega_eq":0.08164965809277264,"mass_proxy":1.3305191388732147e-05,"negative_modes":0,"zero_symmetry_modes":6,"positive_physical_modes":10,"softest_positive_eigenvalue":2.5660011963982473e-05,"softest_mode_frequency_unit_inertia":0.005065571237677195,"largest_positive_eigenvalue":0.002022454055673758},
+    {"H":1.05,"k":0.050000000000000044,"L_eq":1.3146843962443597,"Omega_eq":0.18257418583505544,"mass_proxy":0.0016631489235915185,"negative_modes":0,"zero_symmetry_modes":6,"positive_physical_modes":10,"softest_positive_eigenvalue":0.0006415002990995598,"softest_mode_frequency_unit_inertia":0.025327856188385938,"largest_positive_eigenvalue":0.050561351391843964},
+    {"H":1.1,"k":0.10000000000000009,"L_eq":1.8592445034090574,"Omega_eq":0.2581988897471612,"mass_proxy":0.013305191388732141,"negative_modes":0,"zero_symmetry_modes":6,"positive_physical_modes":10,"softest_positive_eigenvalue":0.0025660011963983265,"softest_mode_frequency_unit_inertia":0.05065571237677274,"largest_positive_eigenvalue":0.2022454055673757},
+    {"H":1.25,"k":0.25,"L_eq":2.939723678960656,"Omega_eq":0.408248290463863,"mass_proxy":0.20789361544893925,"negative_modes":0,"zero_symmetry_modes":6,"positive_physical_modes":10,"softest_positive_eigenvalue":0.016037507477489783,"softest_mode_frequency_unit_inertia":0.1266392809419328,"largest_positive_eigenvalue":1.264033784796096},
+    {"H":1.5,"k":0.5,"L_eq":4.15739709641549,"Omega_eq":0.5773502691896257,"mass_proxy":1.663148923591514,"negative_modes":0,"zero_symmetry_modes":6,"positive_physical_modes":10,"softest_positive_eigenvalue":0.06415002990995779,"softest_mode_frequency_unit_inertia":0.25327856188386294,"largest_positive_eigenvalue":5.056135139184386},
+    {"H":2.0,"k":1.0,"L_eq":5.879447357921312,"Omega_eq":0.816496580927726,"mass_proxy":13.305191388732112,"negative_modes":0,"zero_symmetry_modes":6,"positive_physical_modes":10,"softest_positive_eigenvalue":0.25660011963983653,"softest_mode_frequency_unit_inertia":0.5065571237677312,"largest_positive_eigenvalue":20.224540556737537},
+    {"H":3.0,"k":2.0,"L_eq":8.31479419283098,"Omega_eq":1.1547005383792515,"mass_proxy":106.4415311098569,"negative_modes":0,"zero_symmetry_modes":6,"positive_physical_modes":10,"softest_positive_eigenvalue":1.0264004785593246,"softest_mode_frequency_unit_inertia":1.0131142475354518,"largest_positive_eigenvalue":80.89816222695018},
+    {"H":5.0,"k":4.0,"L_eq":11.758894715842624,"Omega_eq":1.632993161855452,"mass_proxy":851.5322488788552,"negative_modes":0,"zero_symmetry_modes":6,"positive_physical_modes":10,"softest_positive_eigenvalue":4.1056019142373845,"softest_mode_frequency_unit_inertia":2.026228495070925,"largest_positive_eigenvalue":323.5926489078006},
+    {"H":10.0,"k":9.0,"L_eq":17.638342073763937,"Omega_eq":2.449489742783178,"mass_proxy":9699.484522385708,"negative_modes":0,"zero_symmetry_modes":6,"positive_physical_modes":10,"softest_positive_eigenvalue":20.784609690826628,"softest_mode_frequency_unit_inertia":4.559014113909567,"largest_positive_eigenvalue":1638.1877850957412}
+  ]
+}
