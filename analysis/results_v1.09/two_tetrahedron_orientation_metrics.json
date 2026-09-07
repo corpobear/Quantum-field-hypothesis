@@ -1,0 +1,23 @@
+{
+  "status": "orientation_hypothesis_fails_for_face_vortex_coupling_but_passes_vertex_control",
+  "scope": {
+    "physical_gravity_claim": false,
+    "orbit_tested": false,
+    "capture_tested": false,
+    "rigid_orientation_only": true,
+    "apex_alignment_term_used": false,
+    "global_down_direction_used": false
+  },
+  "geometry": {
+    "edge_length": 1.0,
+    "relation": "face centroid opposite vertex i equals -vertex_i/3 for a centered regular tetrahedron"
+  },
+  "interaction": "U=-G sum_ab w_a w_b / distance_ab",
+  "summary": {
+    "face_vortex_coupling_classes": ["FACE_INWARD", "FACE_INWARD", "FACE_INWARD", "FACE_INWARD", "FACE_INWARD"],
+    "vertex_control_classes": ["APEX_INWARD", "APEX_INWARD", "APEX_INWARD", "APEX_INWARD", "APEX_INWARD"],
+    "face_vortex_result": "At every tested separation, the minimum-energy orientation places a triangular face toward T0, not an apex.",
+    "vertex_control_result": "At every tested separation, the minimum-energy orientation places one apex toward T0."
+  },
+  "interpretation": "The desired inverted-pyramid orientation is not a generic consequence of tetrahedral geometry plus attraction. It depends on where the inter-tetrahedron coupling is carried. Direct face-centroid coupling prefers face-inward, while vertex-carried coupling prefers apex-inward."
+}
