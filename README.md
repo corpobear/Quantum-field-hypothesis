@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework and executable toy-model research scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v1.08 primordial tetrahedron intrinsic-stability benchmark
+**Current version:** v1.09 relational formation and orbit benchmark
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, geometric checks, toy simulations, mapping experiments, and testable scaffolds.
 
@@ -13,12 +13,11 @@
 
 ```text
 CURRENT_STATUS.md
+models/mcift_v1.09_relational_formation_and_orbit.md
 models/mcift_v1.08_primordial_tetrahedron_intrinsic_stability.md
 models/mcift_v1.07_tetrahedral_facet_core_toy_chain.md
 models/mcift_v1.01_dimensional_simplex_scope.md
 reports/mcift_v0.99_cern_mapping_report.md
-reports/mcift_v0.98_cosmology_mapping_report.md
-reports/mcift_v0.97_threefold_reducer_report.md
 ```
 
 ## Active version chain
@@ -40,39 +39,109 @@ v1.05  one scalar plus three directional facet-mode decomposition
 v1.06  undamped breathing and symmetry-breaking sweep
 v1.07  nonlinear central-overload breakpoint benchmark
 v1.08  primordial tetrahedron intrinsic-stability benchmark
+v1.09  relational second-cell formation and bound-orbit benchmark
 ```
 
-The v1.02-v1.08 chain is an executable tetrahedral toy-model development path. It does not alter the stored v0.97-v0.99 collider or cosmology mappings.
+The v1.02-v1.09 chain is an executable tetrahedral toy-model development path. It does not alter the stored v0.97-v0.99 collider or cosmology mappings.
 
 ---
 
-## Main v1.08 finding
+## Main v1.09 finding
 
-v1.08 replaces the hand-selected v1.07 collapse-radius experiment with an intrinsic four-face vortex-energy test. Four freely moving vertices and four face-vortex amplitudes evolve under a potential that depends only on triangular face area, face-centered second moment, vortex amplitude, and normalized face coupling.
+v1.09 asks what happens when a second tetrahedral cell forms after the stable v1.08 cell already exists.
 
-The benchmark uses no:
-
-```text
-target edge length
-edge spring
-target volume
-target core radius
-damping
-collapse switch
-preferred Cartesian direction
-```
-
-For equal face loading, the regular tetrahedral branch is
+The central relational rule tested is:
 
 ```text
-L_eq^2 = k / (3 rho c_tri)
-Omega_eq^2 = 2 k / (3 beta)
-c_tri = 27/2800
+Phi0(x) = gamma M0 / |x|
+
+k_f(t) = k_self(t)
+       + mean_{v in face f} Phi0(x_v)
 ```
 
-with `k = g H chi - alpha`.
+T0's field is sampled at T1's four proto-vertices; each triangular face receives the mean of the three vertex samples on that face. No apex alignment term is used.
 
-Across the tested normalized range `H=1.01..10`, the full 16-coordinate Hessian gave:
+Across formation tests from four random initial orientations, vertex-sampled face drive produced:
+
+```text
+APEX_INWARD
+APEX_INWARD
+APEX_INWARD
+APEX_INWARD
+```
+
+while direct face-centroid sampling produced the opposite dual orientation:
+
+```text
+FACE_INWARD
+FACE_INWARD
+FACE_INWARD
+FACE_INWARD
+```
+
+The candidate mechanism is incidence-based: a proto-vertex closer to T0 contributes to three faces, creating a three-strong / one-weak face-drive pattern that selects that vertex as the inward apex.
+
+### Integrated formation during orbit
+
+The formation-bias term itself did not provide a satisfactory stable orbital potential, so v1.09 keeps two roles separate:
+
+```text
+relational orientation/mass formation:
+    vertex-sampled T0 field -> T1 face-vortex drive
+
+orbital binding control:
+    existing weak-field/Newtonian bridge
+```
+
+With T0 fixed and using the v1.08 `H=1.5` normalized mass proxy as the source, T1 self-drive was ramped during the first orbital period.
+
+Bound cases:
+
+```text
+0.9 v_c:
+    radius = 8.1681 .. 12.0000
+    M1/M0 = 0.1940
+    minimum apex alignment after 10% mass = 0.9999964
+
+1.0 v_c:
+    radius = 12.0000 .. 12.000015
+    M1/M0 = 0.08431
+    minimum apex alignment after 10% mass = 0.9999738
+
+1.1 v_c:
+    radius = 12.0000 .. 18.3772
+    M1/M0 = 0.08431
+    minimum apex alignment after 10% mass = 0.9974071
+```
+
+All retained finite tetrahedral volume and modest edge deformation.
+
+Super-escape control:
+
+```text
+1.45 v_c:
+    positive orbital energy
+    radius -> 79.47 before test exit
+    M1/M0 = 0.00975
+    no stable apex-inward formation orbit
+```
+
+Strict interpretation:
+
+```text
+v1.09 shows compatibility of relational apex selection during T1 mass gain
+with separately modeled weak-field bound orbits. It does not derive physical
+gravity from the tetrahedral vortex energy and does not demonstrate true
+capture from an initially unbound trajectory.
+```
+
+---
+
+## v1.08 retained result
+
+The v1.08 intrinsic four-face vortex-energy benchmark uses no target edge length, edge spring, target volume, target core radius, damping, collapse switch, or preferred Cartesian direction.
+
+Across `H=1.01..10`, the full regular-branch Hessian gave:
 
 ```text
 negative modes = 0
@@ -80,63 +149,7 @@ zero symmetry modes = 6
 positive physical modes = 10
 ```
 
-The six zero modes are consistent with three translations and three rigid rotations. Undamped 5%, 10%, and 20% perturbation runs remained bounded and retained nonzero tetrahedral volume.
-
-### Planar control
-
-A symmetric planar four-point square under the same toy energy had:
-
-```text
-negative modes = 1
-zero modes = 6
-positive modes = 9
-```
-
-The negative mode is alternating out-of-plane vertex motion. A tiny out-of-plane perturbation therefore drives the planar control into nonzero 3D volume and it passes close to a regular tetrahedral edge pattern during the undamped run.
-
-Strict interpretation:
-
-```text
-This is a stability/buckling result of the selected intrinsic toy energy.
-It is not a derivation that physical spacetime emerges from a plane.
-```
-
----
-
-## Earlier tetrahedral findings retained
-
-### Emergent geometric center
-
-Four inward face-normal channels of a regular tetrahedron intersect at the tetrahedral center and produce isotropic localization:
-
-```text
-four-way overlap score = 4.0
-localization condition number = 1.0
-```
-
-A four-channel planar square also produces a center, but with anisotropic localization:
-
-```text
-localization condition number = 2.0
-```
-
-Therefore center formation itself is not unique to the tetrahedron; the earlier diagnostic distinguished isotropic 3D localization.
-
-### Four facet modes
-
-For regular tetrahedral inward normals:
-
-```text
-J0 = mean(Jf)
-S  = (3/4) sum_f Jf nf
-Jf = J0 + nf . S
-```
-
-This is an exact decomposition of four facet inputs into one symmetric scalar mode plus three directional modes. The six edges remain structural relations rather than six independent sinks.
-
-### v1.07 overload control
-
-v1.07 demonstrated a finite collapse branch only after an explicit nonlinear radius turnover and collapse radius were selected. v1.08 does not reuse that switch.
+Undamped 5%, 10%, and 20% perturbation runs remained bounded and nondegenerate. A symmetric planar four-point control had one alternating out-of-plane negative mode.
 
 ---
 
@@ -150,19 +163,23 @@ supported representation:
     four tetrahedral facet fluxes = one scalar mode + three directional modes
 
 supported internal toy results:
-    coherent tetrahedral face normals create isotropic central localization
-    the v1.08 selected intrinsic energy has a finite regular tetrahedral branch
-    all tested v1.08 regular-branch physical modes are positive
-    tested undamped perturbations remain bounded and nondegenerate
-    the planar four-point control has an out-of-plane buckling instability
+    v1.08 selected intrinsic energy has a finite stable regular tetrahedral branch
+    tested v1.08 undamped perturbations remain bounded and nondegenerate
+    planar four-point control has an out-of-plane buckling instability
+    direct face-centroid inter-cell sampling prefers face-inward orientation
+    vertex-sampled face drive selects apex-inward T1 formation in tested cases
+    apex-inward T1 formation is compatible with bound weak-field orbit controls
+    super-escape control remains unbound
 
 not established:
     physical dimension emergence
     a tetrahedral Standard Model Higgs field
-    physical mass generation
+    physical mass generation/calibration
+    gravity derived from tetrahedral vortex energy
     a primordial cosmic center
-    a physical black-hole or Big Bang mechanism
-    channel inversion or a parameter-free collapse threshold
+    true capture from an initially unbound trajectory
+    N-body hierarchy formation
+    physical black-hole/channel inversion
 
 unchanged:
     all v0.97-v0.99 outputs and their previous caveats
@@ -170,39 +187,43 @@ unchanged:
 
 ---
 
-## Reproducing v1.08
+## Reproducing v1.09
 
 Canonical files:
 
 ```text
-models/mcift_v1.08_primordial_tetrahedron_intrinsic_stability.md
-simulations/mcift_v1_08_primordial_tetrahedron_stability.py
-analysis/results_v1.08/primordial_tetrahedron_stability_metrics.json
-analysis/results_v1.08/primordial_tetrahedron_stability_sweep.csv
+models/mcift_v1.09_relational_formation_and_orbit.md
+simulations/mcift_v1_09_two_tetrahedron_orientation_benchmark.py
+simulations/mcift_v1_09_second_tetrahedron_mass_gain_under_t0.py
+simulations/mcift_v1_09_formation_during_orbit.py
+analysis/results_v1.09/two_tetrahedron_orientation_metrics.json
+analysis/results_v1.09/two_tetrahedron_orientation_sweep.csv
+analysis/results_v1.09/second_tetrahedron_mass_gain_metrics.json
+analysis/results_v1.09/formation_during_orbit_metrics.json
 ```
 
-Python dependencies:
+Python dependencies across the v1.09 scripts:
 
 ```text
 numpy
 pandas
+scipy
 torch
 ```
-
-The simulation generates its detailed dynamics trace locally. The committed JSON metrics and loading sweep are the compact auditable outputs.
 
 ---
 
 ## Next target
 
 ```text
-1. Test unequal face loading with free vertices and compare the derived
-   deformation direction with the exact v1.05 facet-mode vector S.
-2. Derive an inward/outward channel-orientation degree of freedom and its
-   energy, then search for an inversion branch without a hand-coded trigger.
-3. Add nonplanar competing four-point controls and parameter-family sweeps.
-4. Freeze equations, parameters, and acceptance criteria before any new
-   collider, cosmology, black-hole, or early-universe mapping.
+1. Add explicit conservative coupling between T1 orbital motion and its
+   internal shape/breathing/vortex modes.
+2. Launch T1 with positive orbital energy and test whether internal excitation
+   can make the late orbital energy negative while total energy is conserved.
+3. Only if true capture appears, release the fixed-T0 approximation and test
+   two-body backreaction, then successive/N-body tetrahedral formation.
+4. Keep black-hole/channel-inversion work separate until its own internal
+   degree of freedom is derived without a hand-coded trigger.
 ```
 
 ---
