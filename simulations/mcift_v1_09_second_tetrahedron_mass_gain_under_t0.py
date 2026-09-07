@@ -52,8 +52,10 @@ from scipy.spatial.transform import Rotation
 torch.set_default_dtype(torch.float64)
 
 HERE = Path(__file__).resolve().parent
-METRICS_PATH = HERE / "mcift_v109_second_tetrahedron_mass_gain_metrics.json"
-TRACE_PATH = HERE / "mcift_v109_second_tetrahedron_mass_gain_trace.csv"
+RESULTS_DIR = HERE.parent / "analysis" / "results_v1.09"
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+METRICS_PATH = RESULTS_DIR / "second_tetrahedron_mass_gain_metrics.json"
+TRACE_PATH = RESULTS_DIR / "second_tetrahedron_mass_gain_trace.csv"
 
 C_TRI = 27.0 / 2800.0
 R0 = 6.0
