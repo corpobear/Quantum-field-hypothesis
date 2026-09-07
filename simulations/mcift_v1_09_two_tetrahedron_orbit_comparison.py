@@ -6,9 +6,11 @@ import pandas as pd
 from scipy.spatial.transform import Rotation
 
 HERE = Path(__file__).resolve().parent
-METRICS_PATH = HERE / "mcift_v109_two_tetrahedron_orbit_metrics.json"
-TRACES_PATH = HERE / "mcift_v109_two_tetrahedron_orbit_traces.csv"
-ROBUST_PATH = HERE / "mcift_v109_two_tetrahedron_orbit_robustness.csv"
+RESULTS_DIR = HERE.parent / "analysis" / "results_v1.09"
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+METRICS_PATH = RESULTS_DIR / "two_tetrahedron_orbit_metrics.json"
+TRACES_PATH = RESULTS_DIR / "two_tetrahedron_orbit_traces.csv"
+ROBUST_PATH = RESULTS_DIR / "two_tetrahedron_orbit_robustness.csv"
 
 G = 1.0
 M = 1.0
