@@ -1,0 +1,40 @@
+{
+  "status": "T0_BIASED_MASS_GAIN_SELECTS_APEX_INWARD_ONLY_WHEN_SOURCE_FIELD_IS_SAMPLED_AT_VERTICES_BEFORE_FEEDING_FACE_VORTICES",
+  "scope": {
+    "physical_higgs_claim": false,
+    "physical_gravity_claim": false,
+    "physical_mass_claim": false,
+    "formation_center_fixed": true,
+    "orbit_tested_here": false,
+    "alignment_spring_used": false,
+    "target_side_length_used": false,
+    "target_volume_used": false,
+    "global_down_used": false,
+    "optimizer_is_equilibrium_solver_not_physical_damping": true
+  },
+  "parameters": {
+    "T1_center_distance": 6.0,
+    "normalized_source_strength_gamma_M0": 0.5,
+    "k_self_ramp": [-0.05, -0.008333333333333338, 0.033333333333333326, 0.075, 0.11666666666666665, 0.15833333333333333, 0.2],
+    "random_orientation_seeds": [11, 22, 33, 44]
+  },
+  "results": {
+    "face_centroid_field": {
+      "classifications": ["FACE_INWARD", "FACE_INWARD", "FACE_INWARD", "FACE_INWARD"],
+      "apex_scores": [0.33673388135170695, 0.33240561145006575, 0.3323431780789085, 0.33244685972336274],
+      "face_scores": [0.9999852217335289, 0.9999999219347278, 0.9999999124228581, 0.999999871566208],
+      "edge_cv": [0.001439932724088454, 0.0014389530714015995, 0.0014389537033408465, 0.0014389564266082432],
+      "volumes": [3.623532333291148, 3.6235325357931867, 3.623532535664712, 3.623532535109788]
+    },
+    "vertex_sampled_field": {
+      "classifications": ["APEX_INWARD", "APEX_INWARD", "APEX_INWARD", "APEX_INWARD"],
+      "apex_scores": [0.9999999982774787, 0.9999999959292574, 0.9999999972407427, 0.9999999943749688],
+      "face_scores": [0.3734534632626414, 0.3734631947713988, 0.37347716711943524, 0.373531184115552],
+      "edge_cv": [0.04501291720113202, 0.0450127136989079, 0.045012856416216586, 0.04501282289045949],
+      "volumes": [3.803888693401223, 3.803889262518793, 3.803888842891293, 3.8038889891848435],
+      "representative_omega_faces": [0.4354578176530475, 0.427121825541138, 0.4354559308456763, 0.43545695016037234],
+      "representative_k_faces": [0.29108051191497797, 0.27209016324475865, 0.29107977044479505, 0.2910802954680303]
+    }
+  },
+  "interpretation": "During quasi-static mass gain, a source field from older/heavier T0 provides a relational radial gradient. Face-centroid sampling converges face-inward; vertex sampling followed by three-vertex averaging into each face converges apex-inward from every tested random orientation. This is a candidate derived mechanism for the pyramid direction, not a physical coupling claim."
+}
