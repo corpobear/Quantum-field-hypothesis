@@ -1,0 +1,75 @@
+{
+  "status": "FORMATION_AND_APEX_DIRECTION_COMPATIBLE_WITH_BOUND_ORBITS_UNDER_SEPARATE_WEAK_FIELD_MASS_DYNAMICS",
+  "scope": {
+    "physical_higgs_claim": false,
+    "physical_gravity_claim": false,
+    "primordial_cosmology_claim": false,
+    "true_unbound_capture_claim": false,
+    "T0_fixed_test_particle_approximation": true,
+    "internal_damping_used": false,
+    "alignment_spring_used": false,
+    "target_orbit_force_used": false,
+    "internal_solver": "adiabatic local-equilibrium continuation",
+    "mass_retention": "monotonic max of positive localized mass proxy"
+  },
+  "parameters": {
+    "M0_v108_reference_proxy": 1.663148923591514,
+    "R0": 12.0,
+    "circular_speed": 0.3722844928715487,
+    "nominal_period": 202.52851013101449,
+    "k_self_start": -0.12,
+    "k_self_end": 0.08,
+    "formation_ramp_duration": "1 nominal circular period",
+    "simulation_duration": "3 nominal circular periods"
+  },
+  "results": {
+    "0.9": {
+      "radius_min": 8.168118187508174,
+      "radius_max": 11.999997187171548,
+      "orbital_energy_max": -0.08246446746142118,
+      "retained_mass_final": 0.3226631370976257,
+      "mass_ratio_M1_over_M0": 0.1940073630934057,
+      "apex_min_after_10pct_mass": 0.9999963938558621,
+      "edge_cv_max_after_10pct_mass": 0.05719995865032616,
+      "volume_min_after_10pct_mass": 1.3102222902163667,
+      "bound_orbit": true,
+      "apex_inward_formation_orbit": true
+    },
+    "1.0": {
+      "radius_min": 11.999999999999778,
+      "radius_max": 12.000014804388503,
+      "orbital_energy_max": -0.06929787181620711,
+      "retained_mass_final": 0.14021335166738041,
+      "mass_ratio_M1_over_M0": 0.08430595100563479,
+      "apex_min_after_10pct_mass": 0.9999738211040344,
+      "edge_cv_max_after_10pct_mass": 0.018598624399626083,
+      "volume_min_after_10pct_mass": 0.8046798826457896,
+      "bound_orbit": true,
+      "apex_inward_formation_orbit": true
+    },
+    "1.1": {
+      "radius_min": 12.000003108934115,
+      "radius_max": 18.377202231946455,
+      "orbital_energy_max": -0.054745300004029905,
+      "retained_mass_final": 0.1402118723505803,
+      "mass_ratio_M1_over_M0": 0.08430506153820398,
+      "apex_min_after_10pct_mass": 0.9974070631013892,
+      "edge_cv_max_after_10pct_mass": 0.016792081432905434,
+      "volume_min_after_10pct_mass": 0.8233210418105253,
+      "bound_orbit": true,
+      "apex_inward_formation_orbit": true
+    },
+    "1.45": {
+      "completed": false,
+      "radius_max": 79.46803299524129,
+      "orbital_energy_min": 0.00710303186167302,
+      "retained_mass_final": 0.016219323787365895,
+      "mass_ratio_M1_over_M0": 0.00975217766569022,
+      "apex_mean_after_10pct_mass": 0.47555262709737955,
+      "apex_min_after_10pct_mass": 0.4175719981615437,
+      "bound_orbit": false,
+      "apex_inward_formation_orbit": false
+    }
+  },
+  "interpretation": "When orbital and formation roles are separated, T1 can gain vortex mass under T0's vertex-sampled radial influence while its center follows the older/heavier T0 weak-field orbit. Circular and mildly eccentric cases preserve apex-inward orientation once T1 has appreciable mass. The super-escape control is not captured. This shows compatibility, not true unbound capture or a derivation of physical gravity."
+}
