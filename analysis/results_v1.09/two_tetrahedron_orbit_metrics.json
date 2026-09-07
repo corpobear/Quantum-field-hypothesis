@@ -1,0 +1,56 @@
+{
+  "status": "VERTEX_COUPLING_PASSES_INVERTED_PYRAMID_ORBIT_FACE_COUPLING_FAILS_ORIENTATION_CRITERION",
+  "scope": {
+    "physical_gravity_claim": false,
+    "capture_from_unbound_trajectory_tested": false,
+    "rigid_tetrahedra": true,
+    "damping_used": false,
+    "alignment_spring_used": false,
+    "target_orbit_force_used": false,
+    "source_tetrahedron_fixed": true
+  },
+  "nominal_conditions": {
+    "center_separation": 3.0,
+    "initial_spin": "synchronous with orbital rate",
+    "duration_orbits": 8
+  },
+  "nominal_results": {
+    "face_vortex_centroids": {
+      "radius_min": 2.995272020319021,
+      "radius_max": 2.999999998628394,
+      "apex_mean": 0.33691976520123784,
+      "apex_min": 0.3333333335099096,
+      "apex_p05": 0.3337104731243705,
+      "face_mean": 0.9999851568980553,
+      "face_min": 0.9999600242313677,
+      "face_p05": 0.9999642220050642,
+      "bound_orbit": true,
+      "inverted_pyramid_orbit": false,
+      "face_inward_orbit": true
+    },
+    "vertex_lumped_control": {
+      "radius_min": 2.8727739526565332,
+      "radius_max": 2.999999965826545,
+      "apex_mean": 0.9981314369768353,
+      "apex_min": 0.9938843881957329,
+      "apex_p05": 0.9953962498714399,
+      "face_mean": 0.3781862201139929,
+      "bound_orbit": true,
+      "inverted_pyramid_orbit": true,
+      "face_inward_orbit": false
+    }
+  },
+  "zero_spin_control": {
+    "face_vortex_centroids": {
+      "bound_orbit": true,
+      "inverted_pyramid_orbit": false,
+      "face_inward_orbit": false
+    },
+    "vertex_lumped_control": {
+      "bound_orbit": true,
+      "inverted_pyramid_orbit": false,
+      "face_inward_orbit": false
+    }
+  },
+  "interpretation": "Both control couplings support bounded motion. Face-centroid coupling locks face-inward; vertex coupling locks apex-inward in the synchronous solution. Zero-spin controls remain bound but do not self-lock, so true capture/spin locking requires internal energy transfer."
+}
