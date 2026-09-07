@@ -3,7 +3,7 @@
 **Status:** speculative theoretical framework and executable toy-model research scaffold  
 **Author:** Adrian Newton / corpobear  
 **Repository:** Quantum-field-hypothesis  
-**Current version:** v1.07 tetrahedral facet-core toy benchmark chain
+**Current version:** v1.08 primordial tetrahedron intrinsic-stability benchmark
 
 > MCIFT is not established physics and is not a replacement for quantum field theory, general relativity, the Standard Model of particle physics, or the standard cosmology model. This repository contains exploratory mechanics, geometric checks, toy simulations, mapping experiments, and testable scaffolds.
 
@@ -13,6 +13,7 @@
 
 ```text
 CURRENT_STATUS.md
+models/mcift_v1.08_primordial_tetrahedron_intrinsic_stability.md
 models/mcift_v1.07_tetrahedral_facet_core_toy_chain.md
 models/mcift_v1.01_dimensional_simplex_scope.md
 reports/mcift_v0.99_cern_mapping_report.md
@@ -38,13 +39,71 @@ v1.04  damped perturbation-recovery toy dynamics
 v1.05  one scalar plus three directional facet-mode decomposition
 v1.06  undamped breathing and symmetry-breaking sweep
 v1.07  nonlinear central-overload breakpoint benchmark
+v1.08  primordial tetrahedron intrinsic-stability benchmark
 ```
 
-The v1.02-v1.07 chain introduces executable tetrahedral toy experiments. It does not alter the stored v0.97-v0.99 collider or cosmology mappings.
+The v1.02-v1.08 chain is an executable tetrahedral toy-model development path. It does not alter the stored v0.97-v0.99 collider or cosmology mappings.
 
 ---
 
-## Main v1.03-v1.07 findings
+## Main v1.08 finding
+
+v1.08 replaces the hand-selected v1.07 collapse-radius experiment with an intrinsic four-face vortex-energy test. Four freely moving vertices and four face-vortex amplitudes evolve under a potential that depends only on triangular face area, face-centered second moment, vortex amplitude, and normalized face coupling.
+
+The benchmark uses no:
+
+```text
+target edge length
+edge spring
+target volume
+target core radius
+damping
+collapse switch
+preferred Cartesian direction
+```
+
+For equal face loading, the regular tetrahedral branch is
+
+```text
+L_eq^2 = k / (3 rho c_tri)
+Omega_eq^2 = 2 k / (3 beta)
+c_tri = 27/2800
+```
+
+with `k = g H chi - alpha`.
+
+Across the tested normalized range `H=1.01..10`, the full 16-coordinate Hessian gave:
+
+```text
+negative modes = 0
+zero symmetry modes = 6
+positive physical modes = 10
+```
+
+The six zero modes are consistent with three translations and three rigid rotations. Undamped 5%, 10%, and 20% perturbation runs remained bounded and retained nonzero tetrahedral volume.
+
+### Planar control
+
+A symmetric planar four-point square under the same toy energy had:
+
+```text
+negative modes = 1
+zero modes = 6
+positive modes = 9
+```
+
+The negative mode is alternating out-of-plane vertex motion. A tiny out-of-plane perturbation therefore drives the planar control into nonzero 3D volume and it passes close to a regular tetrahedral edge pattern during the undamped run.
+
+Strict interpretation:
+
+```text
+This is a stability/buckling result of the selected intrinsic toy energy.
+It is not a derivation that physical spacetime emerges from a plane.
+```
+
+---
+
+## Earlier tetrahedral findings retained
 
 ### Emergent geometric center
 
@@ -61,7 +120,7 @@ A four-channel planar square also produces a center, but with anisotropic locali
 localization condition number = 2.0
 ```
 
-Therefore the current diagnostic distinguishes the tetrahedron by 3D isotropy, not by the mere existence of a center.
+Therefore center formation itself is not unique to the tetrahedron; the earlier diagnostic distinguished isotropic 3D localization.
 
 ### Four facet modes
 
@@ -73,37 +132,11 @@ S  = (3/4) sum_f Jf nf
 Jf = J0 + nf . S
 ```
 
-This is an exact decomposition of four facet inputs into:
+This is an exact decomposition of four facet inputs into one symmetric scalar mode plus three directional modes. The six edges remain structural relations rather than six independent sinks.
 
-```text
-one symmetric scalar mass/breathing mode
-three directional sink modes
-```
+### v1.07 overload control
 
-The six edges remain structural relations, not six mass sinks.
-
-### Toy dynamic behavior
-
-Under the stated assumed dynamics:
-
-```text
-- disturbed tetrahedral states recovered under damped restoring forces
-- symmetric loading generated mass gain and radial breathing with zero translation
-- removing damping produced persistent centered radial vibration
-- any nonzero single-facet asymmetry activated bounded translation
-- no finite instability threshold appeared in the linear restoring model
-```
-
-### Nonlinear overload benchmark
-
-An explicitly assumed nonlinear radius law produced a sampled transition between stable breathing and an inner-channel collapse branch:
-
-```text
-last sampled stable amplitude = 0.6666667
-first sampled collapse amplitude = 0.7037037
-```
-
-This breakpoint is a property of the selected toy law, which includes an assumed quadratic turnover and an explicit collapse radius. It is not evidence for a physical black-hole or Big Bang threshold.
+v1.07 demonstrated a finite collapse branch only after an explicit nonlinear radius turnover and collapse radius were selected. v1.08 does not reuse that switch.
 
 ---
 
@@ -116,15 +149,20 @@ supported geometry:
 supported representation:
     four tetrahedral facet fluxes = one scalar mode + three directional modes
 
-supported internal toy result:
+supported internal toy results:
     coherent tetrahedral face normals create isotropic central localization
+    the v1.08 selected intrinsic energy has a finite regular tetrahedral branch
+    all tested v1.08 regular-branch physical modes are positive
+    tested undamped perturbations remain bounded and nondegenerate
+    the planar four-point control has an out-of-plane buckling instability
 
 not established:
     physical dimension emergence
     a tetrahedral Standard Model Higgs field
-    physical mass generation by the toy scalar mode
-    physical black-hole or Big Bang formation
-    a parameter-free collapse threshold
+    physical mass generation
+    a primordial cosmic center
+    a physical black-hole or Big Bang mechanism
+    channel inversion or a parameter-free collapse threshold
 
 unchanged:
     all v0.97-v0.99 outputs and their previous caveats
@@ -132,38 +170,40 @@ unchanged:
 
 ---
 
-## Reproducing v1.07
+## Reproducing v1.08
 
-The committed benchmark is:
+Canonical files:
 
 ```text
-simulations/mcift_v1_07_mass_breakpoint_benchmark_gif.py
-analysis/results_v1.07/mass_breakpoint_benchmark_metrics.json
+models/mcift_v1.08_primordial_tetrahedron_intrinsic_stability.md
+simulations/mcift_v1_08_primordial_tetrahedron_stability.py
+analysis/results_v1.08/primordial_tetrahedron_stability_metrics.json
+analysis/results_v1.08/primordial_tetrahedron_stability_sweep.csv
 ```
 
-It requires:
+Python dependencies:
 
 ```text
 numpy
-matplotlib
-Pillow
+pandas
+torch
 ```
 
-The script regenerates the GIF locally. Generated animations are visualization artifacts; the source and JSON metrics are the auditable outputs.
-
-The measured v1.02-v1.06 precursor findings and their limitations are consolidated in `models/mcift_v1.07_tetrahedral_facet_core_toy_chain.md`. Their equations should be consolidated and reviewed before the precursor source files are promoted as canonical repository models.
+The simulation generates its detailed dynamics trace locally. The committed JSON metrics and loading sweep are the compact auditable outputs.
 
 ---
 
 ## Next target
 
 ```text
-Derive a nonlinear transfer and shell-coupling law from explicit MCIFT
-assumptions, then test asymmetric shell rupture and parameter-free threshold
-behavior before making any external physical mapping.
+1. Test unequal face loading with free vertices and compare the derived
+   deformation direction with the exact v1.05 facet-mode vector S.
+2. Derive an inward/outward channel-orientation degree of freedom and its
+   energy, then search for an inversion branch without a hand-coded trigger.
+3. Add nonplanar competing four-point controls and parameter-family sweeps.
+4. Freeze equations, parameters, and acceptance criteria before any new
+   collider, cosmology, black-hole, or early-universe mapping.
 ```
-
-Only after the equations and parameters are frozen should any collider, cosmology, black-hole, or early-universe comparison be attempted.
 
 ---
 
