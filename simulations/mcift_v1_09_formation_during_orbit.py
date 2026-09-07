@@ -55,8 +55,10 @@ from scipy.spatial.transform import Rotation
 torch.set_default_dtype(torch.float64)
 
 HERE = Path(__file__).resolve().parent
-METRICS_PATH = HERE / "mcift_v109_formation_during_orbit_metrics.json"
-TRACE_PATH = HERE / "mcift_v109_formation_during_orbit_trace.csv"
+RESULTS_DIR = HERE.parent / "analysis" / "results_v1.09"
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+METRICS_PATH = RESULTS_DIR / "formation_during_orbit_metrics.json"
+TRACE_PATH = RESULTS_DIR / "formation_during_orbit_trace.csv"
 
 G = 1.0
 M0 = 1.663148923591514
