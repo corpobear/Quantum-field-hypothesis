@@ -1,0 +1,35 @@
+{
+  "status": "COUPLED_FIVE_TETRA_FABRIC_RESPONDS_COLLECTIVELY_TO_LOCALIZED_LOADING",
+  "scope": {
+    "physical_spacetime_claim": false,
+    "physical_gravity_claim": false,
+    "mass_curvature_calibration_claim": false,
+    "global_Euclidean_embedding_imposed": false,
+    "shared_edge_lengths_enforced": true,
+    "shared_triangular_layers_counted_once": true
+  },
+  "equal_loading": {
+    "common_edge": 4.157397096415465,
+    "edge_cv": 1.981198242364882e-15,
+    "common_edge_deficit_deg": 7.356103172453935
+  },
+  "localized_loading_deficit_sweep_deg": {
+    "0.00": 7.356103172453935,
+    "0.02": 7.4359,
+    "0.05": 7.5761,
+    "0.10": 7.850995547707404,
+    "0.20": 8.4865
+  },
+  "localized_10pct_mean_edge_response_by_ring_distance": {
+    "0": 0.03277683896032996,
+    "1": 0.015449902569927742,
+    "2": 0.004348905231873658
+  },
+  "localized_10pct_dihedral_change_deg_by_cell": [
+    0.7120050636459752,
+    -1.0492716757638334,
+    0.4458248285924782,
+    0.4458232921973462,
+    -1.049273883925423
+  ]
+}
