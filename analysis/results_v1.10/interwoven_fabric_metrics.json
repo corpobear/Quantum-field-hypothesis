@@ -1,0 +1,37 @@
+{
+  "status": "INTERWOVEN_TETRAHEDRAL_SPATIAL_FABRIC_GEOMETRY_PASS",
+  "scope": {
+    "physical_spacetime_claim": false,
+    "physical_gravity_claim": false,
+    "mass_curvature_law_claim": false,
+    "time_dimension_implemented": false
+  },
+  "boundary_closure": {
+    "d2_d3_zero": true
+  },
+  "equal_layer_weave": {
+    "eigenvalues": [2.666666666666667, 2.666666666666667, 2.666666666666667],
+    "rank": 3,
+    "relative_isotropy_error": 0.0
+  },
+  "v109_anisotropic_weave": {
+    "normalized_weights_omega_squared": [1.0, 0.962080350346108, 0.9999913341627731, 0.9999960157251706],
+    "eigenvalues": [2.6287366500298393, 2.628743328168616, 2.6666554222696486],
+    "principal_axis_alignment_with_weak_face_normal": 0.9999999980610251,
+    "axial_gap": 0.03791543317042079
+  },
+  "two_tetra_shared_face": {
+    "shared_face_cancels": true,
+    "outer_boundary_face_count": 6,
+    "unique_vertices": 5,
+    "unique_edges": 9,
+    "unique_faces": 7,
+    "tetrahedra": 2,
+    "euler_characteristic": 1
+  },
+  "edge_deficit": {
+    "regular_dihedral_deg": 70.52877936550931,
+    "five_regular_tet_deficit_deg": 7.356103172453426,
+    "six_regular_tet_deficit_deg": -63.172676193055885
+  }
+}
