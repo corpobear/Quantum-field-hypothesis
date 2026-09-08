@@ -1,0 +1,32 @@
+{
+  "status": "SIGNED_PHASE_TEST_CONFIRMS_OUTWARD_BREATHING_AND_DIRECTIONAL_ROTATING_WAVE_RESPONSE",
+  "scope": {
+    "physical_gravitational_wave_claim": false,
+    "physical_spacetime_claim": false,
+    "rigid_rotation_claim": false,
+    "rotating_internal_anisotropy": true,
+    "unit_edge_inertia_normalized_time": true,
+    "damping_used": false
+  },
+  "frequencies": {
+    "breathing_angular": 0.9028978070451008,
+    "rotating_angular": 1.188023430322501
+  },
+  "breathing": {
+    "outer_amplitudes": [0.01695760135324811, 0.016914964808485707, 0.016957617719124532, 0.016957620622096953],
+    "source_amplitude": 0.018,
+    "gain_outer_per_drive": [0.9420889640693395, 0.9397202671380949, 0.9420898732846963, 0.942090034560942],
+    "fit_r2": [0.9030538409305039, 0.9032800258438293, 0.9030541613941023, 0.9030542192811211],
+    "phase_lag_rad": [-0.9653325792223004, -0.9867728080349925, -0.9653313427144461, -0.9653311228980179],
+    "post_drive_relative_energy_band": 5.893014622539155e-08
+  },
+  "rotating_internal_anisotropy": {
+    "outer_amplitudes": [0.0019862817088022074, 0.000004056619734231177, 0.0020499529373979334, 0.002082424506707602],
+    "driven_face_gains": [0.08427079593845067, null, 0.08697213738884163, 0.08834978940011974],
+    "fit_r2": [0.6372587936581667, 0.014482863647578337, 0.6705350311254716, 0.6614686712453598],
+    "phase_lag_rad": [-3.1224756083483705, null, 3.1317809754472687, -3.1132114496653527],
+    "post_drive_relative_energy_band": 1.7169037916585642e-09
+  },
+  "combined_post_drive_relative_energy_band": 5.874913078704185e-08,
+  "interpretation": "A central breathing drive produces nearly symmetric same-frequency response on outer-apex edges that are not directly driven. A smoothly rotating internal face anisotropy produces weaker face-dependent amplitude and phase; the preferred-axis face has zero transverse rotating drive by construction. After forcing stops, the undamped fabric continues ringing with conserved energy."
+}

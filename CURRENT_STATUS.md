@@ -1,302 +1,233 @@
-# Current MCIFT Status: v1.09 Relational Formation and Orbit
+# Current MCIFT Status: v1.10 Interwoven Tetrahedral Dynamic Fabric
 
-**Status:** speculative two-cell tetrahedral geometry/dynamics scaffold; not established physics.  
-**Current layer:** v1.09 second-cell relational mass formation and bound-orbit compatibility benchmark.  
-**Previous layer:** v1.08 primordial tetrahedron intrinsic-stability benchmark.  
-**Previous physical-mapping layer:** v0.99 CERN/collider mapping from the v0.97 shared threefold reducer.
+**Status:** speculative intrinsic tetrahedral geometry and normalized-dynamics scaffold; not established physics.  
+**Current layer:** v1.10 interwoven spatial-fabric, shared-curvature, time-stress, and central-source outward-wave benchmark.  
+**Previous layer:** v1.09 relational second-cell formation and background-orbit compatibility.  
+**Previous physical-mapping layer:** v0.99 CERN/collider mapping from the v0.97 reducer.
 
 ## Verdict
 
 ```text
-RELATIONAL_APEX_FORMATION_COMPATIBLE_WITH_BOUND_WEAK_FIELD_ORBITS_IN_TOY_MODEL
+INTERWOVEN_TETRAHEDRAL_DYNAMIC_FABRIC_PASS_WITH_NORMALIZED_OUTWARD_WAVE_RESPONSE
 ```
 
-## Latest chain
+## What changed in v1.10
+
+v1.10 corrects a sequencing gap in v1.09: the orbit tests assumed a background weak-field space before the tetrahedral model had derived a fabric on which motion could occur.
+
+The current order is:
 
 ```text
-v0.92: bubble light-cone projection
-v0.93: simplified first-principle bubble formula
-v0.94: central failed-mode-4 seed
-v0.95: central-seed reducer
-v0.96: threefold bubble-knot formula
-v0.97: shared threefold reducer
-v0.98: cosmology mapping from shared reducer
-v0.99: CERN/collider mapping from shared reducer
-v1.01: dimensional simplex scope clarification
-v1.02: explicit mobile-core tetrahedral precursor
-v1.03: emergent face-reservoir overlap core
-v1.04: damped tetrahedral recovery toy dynamics
-v1.05: four facet inputs -> one scalar plus three directional modes
-v1.06: undamped breathing and symmetry-breaking sweep
-v1.07: nonlinear overload breakpoint benchmark
-v1.08: primordial tetrahedron intrinsic-stability benchmark
-v1.09: relational second-cell formation and bound-orbit benchmark
+v1.08 stable tetrahedral cell
+v1.09 relational second-cell orientation/mass formation
+v1.10 interwoven shared spatial fabric + normalized dynamics
+future: motion/orbit/capture on the derived fabric
 ```
 
-## v1.09 question
+## Interwoven geometry
 
-v1.08 supplied a stable first tetrahedral cell `T0` inside the selected intrinsic toy energy. v1.09 asks what happens to a later cell `T1` when `T0` already exists.
-
-The test does not introduce a global up/down axis. The only relational inward direction for T1 is
+One tetrahedron consists of four oriented triadic face closures:
 
 ```text
-r_hat = (c0 - c1) / |c0 - c1|
+partial[0123] = [123] - [023] + [013] - [012]
+partial^2[0123] = 0
 ```
 
-where `c0` and `c1` are the cell centers.
+Two tetrahedra sharing one triangular face cancel that face from the combined external boundary.
 
-## Static coupling-location control
-
-Two finite-body 1/r control locations were first compared for an already-formed T1:
+For face tangent projectors `P_f = I - n_f n_f^T`, define
 
 ```text
-face-vortex centroids -> face-inward energy minimum
-vertices              -> apex-inward energy minimum
+W = sum_f w_f P_f.
 ```
 
-The distinction follows the regular-tetrahedron duality
+Equal regular face weights give
 
 ```text
-face centroid opposite vertex i = -vertex_i / 3
+W = (8/3) I
+rank = 3
+relative isotropy error = 0
 ```
 
-so apex-inward alignment cannot be claimed from tetrahedral attraction alone; the coupling location matters.
+The representative v1.09 three-strong/one-weak state produces one principal weave axis aligned with the weak-face normal / opposite-apex axis at `0.9999999981`.
 
-## Formation-time relational field
+## Angular-deficit geometry
 
-T0 supplies a normalized radial source field
+Use the intrinsic control
 
 ```text
-Phi0(x) = gamma M0 / |x|
+delta_e = 2 pi - sum theta_{T,e}.
 ```
 
-T1 keeps the v1.08 face-vortex energy but its face drive is modified while mass is gained.
-
-Direct face-centroid sampling:
+Regular tetrahedron dihedral angle:
 
 ```text
-k_f = k_self + Phi0(g_f)
+70.5287793655 deg
 ```
 
-produced face-inward formation in all four tested random initial orientations.
-
-Vertex-sampled face drive:
+Five regular tetrahedra around one edge:
 
 ```text
-k_f = k_self + (1/3) sum_{v in face f} Phi0(x_v)
+delta = +7.3561031725 deg
 ```
 
-produced apex-inward formation in all four tested random initial orientations.
+Fully coupled equal-loading optimization retains the same regular geometry and deficit rather than self-flattening.
 
-Final apex scores:
+## Loading -> deformation -> deficit
+
+Using the v1.08 free-vertex energy, unequal face-vortex drive changes tetrahedral shape without prescribing deformation.
+
+Representative weak/strong drive ratio `0.93475` gives a `0.677007 deg` split between weak-face-edge and opposite-apex-edge deficit controls.
+
+In the fully coupled five-tetra ring, localized loading changes the common-edge deficit:
 
 ```text
-0.9999999983
-0.9999999959
-0.9999999972
-0.9999999944
+0%  -> 7.3561 deg
+2%  -> 7.4359 deg
+5%  -> 7.5761 deg
+10% -> 7.8510 deg
+20% -> 8.4865 deg
 ```
 
-Representative face-drive split:
+At +10% loading, mean edge response decays with ring distance:
 
 ```text
-0.2910805
-0.2720902
-0.2910798
-0.2910803
+0 -> 3.278%
+1 -> 1.545%
+2 -> 0.435%
 ```
 
-Representative vortex amplitudes:
+## Normalized time stress
+
+Shared edges evolve under
 
 ```text
-0.4354578
-0.4271218
-0.4354559
-0.4354570
+q_e = ln L_e
+d2 q_e / dt2 = - partial F / partial q_e
 ```
 
-The selected normalized T1 remained finite-volume with approximately 4.5% edge CV.
+with unit edge inertia and no damping.
 
-Strict interpretation:
+Five-ring edge-mode spectrum:
 
 ```text
-The three-strong / one-weak face pattern is a candidate derived mechanism for
-relational apex selection because one nearer proto-vertex belongs to three
-faces. This does not establish the physical coupling location or a physical
-Higgs mechanism.
+positive modes = 16
+negative modes = 0
+zero intrinsic modes = 0
 ```
 
-## Orbital-role separation
-
-The formation-bias interaction was not promoted as the orbital binding law. In the tested effective reduction it produced radial behavior too steep to provide the desired stable circular branch.
-
-The integrated benchmark therefore separates:
+At 1% impulse and 0.05% strain threshold, dominant response appears in topological order:
 
 ```text
-T1 formation/orientation:
-    vertex-sampled T0 radial field -> T1 face-vortex drive
-
-T1 center motion:
-    existing weak-field/Newtonian bridge
+distance 0: t = 0.15
+distance 1: t = 0.30
+distance 2: t = 25.375
 ```
 
-The weak-field bridge remains a control layer, not a derivation of gravity from the v1.08 vortex energy.
-
-## Integrated formation during orbit
-
-Reference source:
+The nonlinear extension remains bounded through normalized impulse `0.40`:
 
 ```text
-M0 = 1.663148923591514
+max |Delta ln L| = 0.17506
+minimum tetra volume = 6.70396
+relative energy band ~= 9.91e-7
 ```
 
-from the v1.08 `H=1.5` normalized positive localized mass proxy.
+Tiny analytic oscillator tails mean this does not prove a strict causal cone or physical signal speed.
 
-Formation ramp:
+## Central-source outward-wave test
+
+A separate five-tetra topology consists of one central tetrahedron plus four outer tetrahedra attached to its four faces.
+
+Rigid-body rotation is invisible to intrinsic edge lengths. Therefore the rotational source is represented as a smoothly rotating **internal face-vortex anisotropy** around the v1.09 preferred axis.
+
+### Breathing source
+
+The outer apex edges are not directly driven, yet signed response at the central breathing frequency is:
 
 ```text
-k_self: -0.12 -> 0.08
-ramp duration: 1 nominal circular period
-run duration: 3 nominal circular periods
+outer amplitude ~= 0.01691 .. 0.01696
+source amplitude = 0.018
+gain ~= 0.940 .. 0.942
+fit R^2 ~= 0.903
+phase lag ~= -0.97 rad
 ```
 
-T1 internal state is solved by adiabatic local-equilibrium continuation. This removes an otherwise arbitrary vortex inertia/relaxation timescale from the benchmark.
+The response is approximately isotropic over all four outer tetrahedra.
 
-### `0.9 v_c`
+### Rotating internal anisotropy
+
+Three transverse faces are driven by the rotating pattern while the preferred-axis face has zero transverse drive by construction.
+
+For the driven faces:
 
 ```text
-radius min = 8.16811819
-radius max = 11.99999719
-orbital energy < 0 throughout
-M1/M0 = 0.19400736
-apex min after 10% retained mass = 0.99999639
-max edge CV after 10% retained mass = 0.05719996
-min volume after 10% retained mass = 1.31022229
+outer amplitude ~= 0.00199 .. 0.00208
+gain ~= 0.084 .. 0.088
+fit R^2 ~= 0.64 .. 0.67
+phase relation ~= pi relative to local face drive
 ```
 
-Verdict:
+This is a weaker, directional, phase-structured outward response.
+
+After drive shutoff, undamped post-drive energy bands remain approximately:
 
 ```text
-bound orbit = PASS
-apex-inward formation orbit = PASS
+breathing: 5.89e-8
+rotating:  1.72e-9
+combined:  5.87e-8
 ```
-
-### `1.0 v_c`
-
-```text
-radius min = 12.00000000
-radius max = 12.00001480
-orbital energy < 0 throughout
-M1/M0 = 0.08430595
-apex min after 10% retained mass = 0.99997382
-max edge CV after 10% retained mass = 0.01859862
-min volume after 10% retained mass = 0.80467988
-```
-
-Verdict:
-
-```text
-bound orbit = PASS
-apex-inward formation orbit = PASS
-```
-
-### `1.1 v_c`
-
-```text
-radius min = 12.00000311
-radius max = 18.37720223
-orbital energy < 0 throughout
-M1/M0 = 0.08430506
-apex min after 10% retained mass = 0.99740706
-max edge CV after 10% retained mass = 0.01679208
-min volume after 10% retained mass = 0.82332104
-```
-
-Verdict:
-
-```text
-bound orbit = PASS
-apex-inward formation orbit = PASS
-```
-
-### `1.45 v_c` super-escape control
-
-```text
-positive orbital energy ~= 0.007103
-radius max = 79.46803300 before test exit
-M1/M0 = 0.00975218
-apex mean after 10% mass = 0.47555263
-```
-
-Verdict:
-
-```text
-bound orbit = FAIL
-apex-inward formation orbit = FAIL
-```
-
-The benchmark therefore does not convert the super-escape trajectory into a captured orbit.
-
-## Relationship to v1.08
-
-v1.08 established the stable first-cell scaffold under the selected intrinsic face-vortex energy. v1.09 does not modify that result. It adds a second-cell relational experiment in which an already-existing source breaks T1's otherwise rotationally degenerate formation environment.
-
-The first/second distinction is model ordering, not an established cosmological history.
 
 ## Strict status
 
 ```text
 supported internal toy behavior:
-    v1.08 finite stable regular tetrahedral branch
-    v1.08 bounded undamped perturbations and planar buckling control
-    face-centroid inter-cell sampling prefers face-inward orientation
-    vertex-sampled face drive selects apex-inward T1 formation in tested cases
-    bound weak-field orbit controls are compatible with apex-inward T1 formation
-    super-escape control remains unbound
+    four triadic faces close into one tetrahedral 3-cell
+    equal regular layers reconstruct isotropic rank-3 weave
+    v1.09 asymmetric face loading produces one intrinsic weave axis
+    shared tetrahedral complexes carry angular-deficit geometry
+    vortex loading changes shape and angular deficits
+    localized loading deforms neighboring cells through shared structure
+    undamped shared-edge dynamics are stable across tested impulses
+    central breathing emits near-isotropic outward oscillatory response
+    rotating internal anisotropy emits weaker directional/phase response
 
 not established:
-    physical Higgs tetrahedral microstructure
-    physical mass generation/calibration
+    physical spacetime emergence
+    physical time calibration
+    fundamental causal speed or c
     gravity derived from the tetrahedral vortex energy
-    physical dimensional emergence
-    a primordial cosmic center
-    true capture from an initially unbound trajectory
-    spontaneous dissipative spin/orbit locking
-    two-body backreaction
-    N-body hierarchy formation
-    channel inversion
-    parameter-free black-hole formation
-    Big Bang formation
+    physical gravitational waves
+    physical mass-curvature calibration
+    continuum / large-N limit
+    physical orbit/capture on the derived fabric
+    physical Higgs tetrahedral microstructure
+    black-hole/channel inversion
+
+historical controls only:
+    v1.09 weak-field/Newtonian orbit compatibility runs
 
 unchanged:
     v0.97-v0.99 numerical mappings and caveats
-
-not claimed:
-    replacement of QFT, GR, the Standard Model, or Lambda-CDM
 ```
 
 ## Canonical files
 
 ```text
-models/mcift_v1.09_relational_formation_and_orbit.md
-simulations/mcift_v1_09_two_tetrahedron_orientation_benchmark.py
-simulations/mcift_v1_09_second_tetrahedron_mass_gain_under_t0.py
-simulations/mcift_v1_09_formation_during_orbit.py
-analysis/results_v1.09/two_tetrahedron_orientation_metrics.json
-analysis/results_v1.09/two_tetrahedron_orientation_sweep.csv
-analysis/results_v1.09/second_tetrahedron_mass_gain_metrics.json
-analysis/results_v1.09/formation_during_orbit_metrics.json
+models/mcift_v1.10_interwoven_tetrahedral_dynamic_fabric.md
+simulations/mcift_v1_10_interwoven_tetrahedral_fabric_benchmark.py
+simulations/mcift_v1_10_vortex_loading_to_curvature_benchmark.py
+simulations/mcift_v1_10_five_tetra_coupled_fabric_benchmark.py
+simulations/mcift_v1_10_five_tetra_time_stress_test.py
+simulations/mcift_v1_10_five_tetra_time_stress_extension.py
+simulations/mcift_v1_10_central_tetra_wave_emission_phase_test.py
+analysis/results_v1.10/
 ```
 
 ## Next
 
 ```text
-1. Replace the adiabatic internal solver with an explicit conservative internal
-   kinetic term whose inertia is derived rather than chosen arbitrarily.
-2. Couple T1 orbital motion to shape/breathing/vortex modes and test true
-   positive-energy -> negative-energy capture with total-energy conservation.
-3. If capture survives, release the fixed-T0 approximation and test two-body
-   backreaction before attempting successive/N-body tetrahedral hierarchy.
-4. Keep channel inversion/black-hole work as a separate derived degree-of-
-   freedom problem, not as an interpretation of the current orbit result.
+1. Scale to a much larger tetrahedral complex and derive omega(k).
+2. Measure long-wavelength group velocity and dispersion without assigning c.
+3. Make vortex amplitudes dynamically explicit with derived inertia.
+4. Only then return to orbital/capture dynamics on the fabric itself.
 ```

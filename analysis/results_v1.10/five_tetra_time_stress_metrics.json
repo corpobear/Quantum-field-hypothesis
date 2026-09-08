@@ -1,0 +1,39 @@
+{
+  "status": "UNDAMPED_SHARED_EDGE_DYNAMICS_STABLE_WITH_FINITE_ORDERED_RESPONSE",
+  "scope": {
+    "physical_time_claim": false,
+    "physical_signal_speed_claim": false,
+    "physical_gravity_claim": false,
+    "unit_edge_inertia_normalization": true,
+    "damping_used": false,
+    "global_reoptimization_used": false,
+    "face_vortices_adiabatically_eliminated": true
+  },
+  "equilibrium": {
+    "edge_count": 16,
+    "tetra_count": 5,
+    "hessian_positive_count": 16,
+    "hessian_zero_count": 0,
+    "hessian_negative_count": 0,
+    "softest_frequency": 0.986693,
+    "fastest_frequency": 1.59978
+  },
+  "primary_1pct_impulse": {
+    "arrival_threshold": 0.0005,
+    "mean_arrival_time_by_ring_distance": {
+      "0": 0.15,
+      "1": 0.30,
+      "2": 25.375
+    },
+    "relative_energy_band": 6.101958467864066e-10,
+    "minimum_tetra_volume": 8.432787000678422,
+    "max_abs_log_edge_strain": 0.0040569018771428045
+  },
+  "nonlinear_extension_0_40": {
+    "completed": true,
+    "relative_energy_band": 9.9087062687141e-07,
+    "minimum_tetra_volume": 6.703959438071204,
+    "max_abs_log_edge_strain": 0.17505937061214683
+  },
+  "interpretation": "The normalized undamped shared-edge dynamics are bounded and energy-conserving across tested impulses. Threshold response is topologically ordered at meaningful amplitudes, but arbitrarily small oscillator tails prevent a strict causal-front claim."
+}
