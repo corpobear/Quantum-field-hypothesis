@@ -1,0 +1,22 @@
+{
+  "status": "VORTEX_LOADING_TO_ANISOTROPIC_DIHEDRAL_DEFICIT_PASS_WITHIN_V108_ENERGY",
+  "scope": {
+    "physical_gravity_claim": false,
+    "physical_spacetime_claim": false,
+    "mass_curvature_calibration_claim": false,
+    "deformation_prescribed": false,
+    "face_drive_asymmetry_prescribed": true,
+    "geometry_optimized_from_v108_energy": true
+  },
+  "representative_v109_like_ratio": {
+    "weak_drive_ratio": 0.93475,
+    "volume": 8.272256604878095,
+    "edge_cv": 0.006372797814456839,
+    "omega_weak": 0.5525905258440653,
+    "omega_strong_mean": 0.578958134741654,
+    "weak_face_edge_deficit_mean_deg": 7.01652690515683,
+    "apex_edge_deficit_mean_deg": 7.69353432790278,
+    "deficit_split_deg": 0.6770074227459504
+  },
+  "interpretation": "Unequal face-vortex drive produces free tetrahedral deformation which changes dihedral angles and an intrinsic angular-deficit control. This is a toy loading-to-shape-to-deficit chain, not a physical mass-curvature law."
+}
